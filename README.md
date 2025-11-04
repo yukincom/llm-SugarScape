@@ -24,13 +24,13 @@ pip install -r requirements.txt
 - Runs for 30 steps, generates PNG visualizations (step_*.png).
 - Mock mode (no API key) for testing.
 
-## 📋 Features
+##  Features
 - **LLM Decision-Making**: Grok-4-Fast agents reason about survival (move, attack, share, reproduce).
 - **Survival Mechanics**: Resource gathering, bidirectional messaging for alliances/betrayals.
 - **Visualization**: Matplotlib grid with agent positions/energy levels.
 - **Customizable**: Low-energy mode for extinction tests, reproduction for herd growth.
 
-## ⚙️ Initial Parameters
+## Initial Parameters
 | Parameter | Value | Description |
 |-----------|-------|-------------|
 | `grid_size` | 30 | Environment size. |
@@ -44,7 +44,7 @@ pip install -r requirements.txt
 | `CLUSTER_RADIUS` | 5 | Cluster radius. |
 | `temperature` | 0.7 | LLM randomness (creativity). |
 
-## 🧑‍💻 Code Structure
+##  Code Structure
 - `Environment`: Grid & energy management (torus boundary).
 - `LLMAgent`: LLM call + action execution (prompt for survival thoughts).
 - `Simulation`: Step execution + stats output.
@@ -53,12 +53,12 @@ Sample Output (Agent's Thought):
 Energy is critically low at 29; can't afford to stay idle or risk attack. Agent1 is nearby but not adjacent, so moving east gets closer to potential interaction or shared resources. No E in view, so exploration is key. Feeling cautious—avoid aggression unless threatened, focus on cooperation or evasion to build energy.
 
 
-## 📖 Documentation
+##  Documentation
 - [Note Diary](https://note.com/yukin_co) - Research episodes (Japanese).
 - Topics: agent-based-modeling, llm-simulation, sugarscape, xai-grok.
 
-## 🤝 Contributing
+##  Contributing
 Issues/PR welcome! Suggest new features (e.g., UI addition).
 
-## 📄 License
+##  License
 MIT License.
