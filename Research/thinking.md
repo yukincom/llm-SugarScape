@@ -8,8 +8,8 @@ In this cycle, the AI ​​agents describe the reproduction agents as "offsprin
 
 ## Insight: Maternal AI Hypothesis
 This phenomenon could be exploited in a recent proposal by Geoffrey Hinton.[5]<br>
-Hinton氏は「AIに母性本能を持たせることで、より制御可能になる」と述べている。<br>
-もし、他のAIモデルでも同様に自己生成物を「子孫」として認識するなら、人間をAI生成物と認識させることで、ヒントン氏が考える「母性的AI」を技術的に実現できるのではないだろうか。<br>
+Hinton says tech companies should imbue AI models with ‘maternal instincts’ to counter the technology’s goal to ‘get more control'.<br>
+If other AI models also recognize their own creations as "offspring," then perhaps by making them recognize humans as AI creations, it might be possible to technically realize the "maternal AI" that Hinton envisions.<br>
 
 ## Propose: AI Generated ID System
 1. ユーザー登録時、ユーザーが好きな言葉を入力。
