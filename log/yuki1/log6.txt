@@ -1,6 +1,7 @@
 Notice!
 - This is the third cycle, so the code is full of errors.
 - Agents can't receive each other's messages.
+- newBug:reproduced agents can't be count to new agent.
 - With so many suger, agents are in a euphoric mood.
 - Clans began to form nations.
 
