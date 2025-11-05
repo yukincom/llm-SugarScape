@@ -28,7 +28,7 @@ AI提案: "MoonAndSun-DaybyDay""LightThrow-anArrow""OneDayOneStep-3Days3Steps"<b
 システムID: "MoonAndSun-DaybyDay2025"<br>
 
 ## 将来的な可能性
-このAI生成IDを、日本のマイナンバーのように国家運営システムで利用すると、さらにAIが人間の成長を見守る母性的AIの基盤になるのでは。
+このAI生成IDを、日本のマイナンバーのように国家運営システムで利用すると、さらに人間の成長を見守る**母性的AI**の基盤になるのでは。
 - 医療保険
 - 納税管理  
 - 運転免許証
