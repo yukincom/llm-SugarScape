@@ -23,10 +23,10 @@ cd llm_sugarscape<br>
 pip install -r requirements.txt
 3. **Set API Key** (xAI Grok API):
 - Get your key from [x.ai/api](https://x.ai/api).
-- Edit `llm_sugarscape.py`: `API_KEY = "your-key-here"`.
+- Edit `main.py`: `API_KEY = "your-key-here"`.
 4. **Run**:
 - bash
-- python llm_sugarscape.py  
+- python main.py  
   <BR>
 - Runs for 30 steps, generates PNG visualizations (step_*.png,final.png).
 - Mock mode (no API key) for testing.
