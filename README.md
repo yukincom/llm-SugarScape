@@ -25,8 +25,10 @@ pip install -r requirements.txt
 - Get your key from [x.ai/api](https://x.ai/api).
 - Edit `main.py`: `API_KEY = "your-key-here"`.
 4. **Run**:
-
-- Runs for 30 steps, generates PNG visualizations (step_*.png).
+- bash
+- python main.py
+  <BR>
+- Runs for 30 steps, generates PNG visualizations (step_*.png,final.png).
 - Mock mode (no API key) for testing.
 
 ##  Features
