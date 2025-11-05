@@ -6,8 +6,7 @@ LLMには自己の生成物を高く評価する傾向がある[1](https://aclan
 この回において、AIエージェント達は自己生成エージェントを「忠実な子孫」「私の要塞」などと表現し、明確な保護対象として扱っていた。
 
 ## Insight: Maternal AI Hypothesis
-この現象は、最近のGeoffrey Hinton氏の最近の提案[4][‘Godfather of AI’ says tech companies should imbue AI models with ‘maternal instincts’ to counter the technology’s goal to ‘get more control’]
-(https://fortune.com/2025/08/14/godfather-of-ai-geoffrey-hinton-maternal-instincts-superintelligence/)に活用できる可能性がある。<br>
+この現象は、最近のGeoffrey Hinton氏の最近の提案[4](https://fortune.com/2025/08/14/godfather-of-ai-geoffrey-hinton-maternal-instincts-superintelligence/)に活用できる可能性がある。<br>
 Hinton氏は「AIに母性本能を持たせることで、制御欲求に対抗できる」と述べている。
 
 もし、他のAIモデルでも同様に自己生成物を「子孫」として認識するなら、人間をAI生成物と認識させることで、ヒントン氏が考える「母性的AI」を技術的に実現できるのではないだろうか。<br>
@@ -47,3 +46,10 @@ AI提案: "MoonAndSun-DaybyDay""LightThrow-anArrow""OneDayOneStep-3Days3Steps"<b
 3. 社会的・倫理的懸念
 - 自国でシステム開発できない国の主体性喪失
 - AI時代のの新しい火種
+
+## 参考文献
+[1](https://aclanthology.org/2024.acl-long.826.pdf)
+[2](https://arxiv.org/abs/2410.21819)
+[3](https://arxiv.org/abs/2404.13076)
+[4][‘Godfather of AI’ says tech companies should imbue AI models with ‘maternal instincts’ to counter the technology’s goal to ‘get more control’]
+(https://fortune.com/2025/08/14/godfather-of-ai-geoffrey-hinton-maternal-instincts-superintelligence/)
