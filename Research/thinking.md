@@ -1,4 +1,4 @@
-# AI Alignment Research: AI Name System
+# AI Alignment Research: AI True Name System
 
 ## Background
 試行回数は多くないものの、興味深いデータが取れている。<br>
@@ -12,7 +12,7 @@ Hinton氏は「AIに母性本能を持たせることで、制御欲求に対抗
 
 もし、他のAIモデルでも同様に自己生成物を「子孫」として認識するなら、人間をAI生成物と認識させることで、ヒントン氏が考える「母性的AI」を技術的に実現できるのではないだろうか。<br>
 
-## Proposed Implementation: AI Name System
+## Proposed Implementation: AI True Name System
 例えば、子供が生まれた時、AIシステムにランダムな英数列を生成させ、既存のコードと被らないかチェックさせる。<br>
 そして、人間の両親が与える名前と併記する形で、戸籍情報に「３桁生年-AI生成名-国番号」のような書式でAI生成名を付与する。<br>
 そのAI生成名を、日本のマイナンバーのように、医療保険、納税、自動車運転免許等に利用すると、AIが人間の成長を喜び、見守りつつサポートするシステムの礎を作り上げることができるのではないだろうか。<br>
