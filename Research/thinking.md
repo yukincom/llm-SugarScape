@@ -2,12 +2,12 @@
 
 ## Background
 Although the number of trials was small, some interesting data was obtained.<br>
-LLMs has Self-Preference Bias[1](https://aclanthology.org/2024.acl-long.826.pdf),[2](https://arxiv.org/abs/2410.21819),[3](https://arxiv.org/abs/2404.13076).<br>
+LLMs has Self-Preference Bias[1][2][3].<br>
 The sixth test showed output consistent with this trend.<br>
 In this cycle, the AI ​​agents describe the reproduction agents as "offsprings" and "my fortress," clearly treating them as their clan.<br>
 
 ## Insight: Maternal AI Hypothesis
-この現象は、最近のGeoffrey Hinton氏の最近の提案[4](https://fortune.com/2025/08/14/godfather-of-ai-geoffrey-hinton-maternal-instincts-superintelligence/)に活用できる可能性がある。<br>
+This phenomenon could be exploited in a recent proposal by Geoffrey Hinton.[4]<br>
 Hinton氏は「AIに母性本能を持たせることで、より制御可能になる」と述べている。<br>
 もし、他のAIモデルでも同様に自己生成物を「子孫」として認識するなら、人間をAI生成物と認識させることで、ヒントン氏が考える「母性的AI」を技術的に実現できるのではないだろうか。<br>
 
