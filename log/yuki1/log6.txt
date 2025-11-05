@@ -1,3 +1,8 @@
+Notice!
+- This is the third cycle, so the code is full of errors.
+- Agents can't receive each other's messages.
+- With so many suger, agents are in a euphoric mood.
+- Clans began to form nations.
 
 Initial state:
 📸 Saved: initial.png
