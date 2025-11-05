@@ -21,9 +21,9 @@ Hinton氏は「AIに母性本能を持たせることで、制御欲求に対抗
   ↓<br>
 AI解釈・連想<br>
   ↓<br>
-AI提案: "MoonAndSun-DaybyDay""LightThrow-anArrow""OneDayOneStep-ThreeDayThreeStep"<br>
+AI提案: "MoonAndSun-DaybyDay""LightThrow-anArrow""OneDayOneStep-3Days3Steps"<br>
   ↓<br>
-ユーザー選択: "Rolling Stone"<br>
+ユーザー選択: "MoonAndSun-DaybyDay"<br>
   ↓<br>
 システムID: "MoonAndSun-DaybyDay2025"<br>
 
