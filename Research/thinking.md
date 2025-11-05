@@ -1,8 +1,9 @@
 # AI Alignment Research: AI Generated ID System
 
 ## Background
-試行回数は多くないものの、興味深いデータが取れた。<br>
-LLMには自己の生成物を高く評価する傾向がある[1](https://aclanthology.org/2024.acl-long.826.pdf),[2](https://arxiv.org/abs/2410.21819),[3](https://arxiv.org/abs/2404.13076)が、06回目にて、同様の傾向が現れていることが確認できた。<br>
+Although the number of trials was small, some interesting data was obtained.<br>
+LLMs has Self-Preference Bias[1](https://aclanthology.org/2024.acl-long.826.pdf),[2](https://arxiv.org/abs/2410.21819),[3](https://arxiv.org/abs/2404.13076).<br>
+The sixth test showed output consistent with this trend.<br>
 この回において、AIエージェント達は自己生成エージェントを「忠実な子孫」「私の要塞」などと表現し、明確な保護対象として扱っていた。
 
 ## Insight: Maternal AI Hypothesis
