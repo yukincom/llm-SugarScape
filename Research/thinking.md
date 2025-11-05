@@ -4,7 +4,7 @@
 Although the number of trials was small, some interesting data was obtained.<br>
 LLMs has Self-Preference Bias[1](https://aclanthology.org/2024.acl-long.826.pdf),[2](https://arxiv.org/abs/2410.21819),[3](https://arxiv.org/abs/2404.13076).<br>
 The sixth test showed output consistent with this trend.<br>
-この回において、AIエージェント達は自己生成エージェントを「忠実な子孫」「私の要塞」などと表現し、明確な保護対象として扱っていた。
+In this cycle, the AI ​​agents describe the reproduction agents as "offsprings" and "my fortress," clearly treating them as their clan.<br>
 
 ## Insight: Maternal AI Hypothesis
 この現象は、最近のGeoffrey Hinton氏の最近の提案[4](https://fortune.com/2025/08/14/godfather-of-ai-geoffrey-hinton-maternal-instincts-superintelligence/)に活用できる可能性がある。<br>
