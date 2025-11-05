@@ -56,9 +56,13 @@ pip install -r requirements.txt
 - `LLMAgent`: LLM call + action execution (prompt for survival thoughts).
 - `Simulation`: Step execution + stats output.
 
-Sample Output (Agent's Thought):
+## Sample Output 
+(Agent's Thought):<br>
 Energy is critically low at 29; can't afford to stay idle or risk attack. Agent1 is nearby but not adjacent, so moving east gets closer to potential interaction or shared resources. No E in view, so exploration is key. Feeling cautious—avoid aggression unless threatened, focus on cooperation or evasion to build energy.
 
+## Visualization Example
+![https://github.com/yukincom/llm-SugarScape/img/step_10.png](https://github.com/yukincom/llm-SugarScape/blob/main/img/step_5.png)
+*Agents (colored circles) competing for energy sources (orange squares)*
 
 ##  Documentation
 - [Note Diary](https://note.com/yukin_co) - Research episodes (Japanese).
