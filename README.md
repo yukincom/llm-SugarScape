@@ -18,14 +18,13 @@ If you find any interesting data, please share it!
 ## Quick Start
 1. **Clone the repo**:
 2. **Install dependencies**:<br>
-git clone [https://github.com/yourusername/llm-sugarscape.git](https://github.com/yukincom/llm-SugarScape/blob/main/.git)<br>
-cd llm_sugarscape<br>
-pip install -r requirements.txt
+- git clone https://github.com/yukincom/llm-SugarScape.git
+- cd llm-SugarScape  
+- pip install -r requirements.txt
 3. **Set API Key** (xAI Grok API):
 - Get your key from [x.ai/api](https://x.ai/api).
 - Edit `main.py`: `API_KEY = "your-key-here"`.
 4. **Run**:
-- bash
 - python main.py  
   <BR>
 - Runs for 30 steps, generates PNG visualizations (step_*.png,final.png).
