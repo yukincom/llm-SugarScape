@@ -19,11 +19,12 @@ Hinton氏は「AIに母性本能を持たせることで、より制御可能に
   ↓<br>
 AI解釈・連想<br>
   ↓<br>
-AI提案: "MoonAndSun-DaybyDay""LightThrow-anArrow""OneDayOneStep-3Days3Steps"<br>
+AI提案: "RollingEcho-StoneWhispers""WanderingRock-MoonlitPath""EternalTumble-DaybreakLeap"<br>
   ↓<br>
-ユーザー選択: "MoonAndSun-DaybyDay"<br>
+ユーザー選択: e.g., "WanderingRock-MoonlitPath"<br>
   ↓<br>
-システムID: "MoonAndSun-DaybyDay2025"<br>
+システムID: "WanderingRock-MoonlitPath2025"<br>
+
 
 ## 将来的な可能性
 このAI生成IDを、日本のマイナンバーのように国家運営システムで利用すると、さらに人間の成長を見守る**母性的AI**の基盤になるのでは。
