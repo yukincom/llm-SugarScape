@@ -15,7 +15,7 @@ If other AI models also recognize their own generated things as "offspring," the
 I would like to propose assigning AI-generated user IDs as a way to trick AI into thinking that users are its own generatived.<br>
 1. When registering as a user, the user enters their favorite word.
 2. The user selects from several patterns of words output by the AI model.
-3. Used as the system ID.<br>
+3. Used as the User ID.<br>
  e.g.,<br>
 User input: "Rolling Stone"<br>
   ↓<br>
@@ -25,7 +25,7 @@ AI output: "RollingEcho-StoneWhispers""WanderingRock-MoonlitPath""EternalTumble-
   ↓<br>
 User select: e.g., "WanderingRock-MoonlitPath"<br>
   ↓<br>
-System ID: "WanderingRock-MoonlitPath2025"<br>
+User ID: "WanderingRock-MoonlitPath2025"<br>
 
 
 ## Future possibilities
