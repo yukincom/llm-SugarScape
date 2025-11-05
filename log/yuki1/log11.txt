@@ -1,3 +1,9 @@
+memo
+- Debugging complete.
+- The repuroduced agent's initial energy was too low.
+- With no sugar around, the repuroduced agent tries to get help by attacking its parent.
+- However, noticing the supportive attitude of those around him, he pours his limited energy into pleading for reconciliation.
+
 ============================================================
                  LLM Sugarscape Experiment                  
 ============================================================
