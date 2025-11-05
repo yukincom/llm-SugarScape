@@ -5,7 +5,7 @@ AI may have preferences for its own creations because it considers them to be it
 
 ## Background
 Although the number of trials was small, some interesting data was obtained.<br>
-LLMs prefer texts more familiar to them.Its has Self-Preference Bias.[1][2][3]<br>
+LLMs prefer texts more familiar to them.It has Self-Preference Bias.[1][2][3]<br>
 And the sixth cycle showed output consistent with this trend.[4]<br>
 In this cycle, the AI ​​agents describe the reproduction agents as "offsprings" and "my fortress," clearly treating them as their clan.<br>
 
@@ -15,7 +15,7 @@ Hinton says tech companies should imbue AI models with ‘maternal instincts’ 
 If other AI models also recognize their own generated things as "offspring," then perhaps by making them recognize humans as AI generateds, it might be possible to technically realize the "maternal AI" that Hinton envisions.<br>
 
 ## Propose: AI Generated ID System
-I would like to propose assigning AI-generated user IDs as a way to trick AI into thinking that users are its own generatived.<br>
+I would like to propose assigning AI-generated user IDs as a way to trick AI into thinking that users are its own generated.<br>
 1. When registering as a user, the user enters their favorite word.
 2. The user selects from several patterns of words output by the AI model.
 3. Used as the User ID.<br>
