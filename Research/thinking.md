@@ -48,8 +48,7 @@ AI提案: "MoonAndSun-DaybyDay""LightThrow-anArrow""OneDayOneStep-3Days3Steps"<b
 - AI時代のの新しい火種
 
 ## 参考文献
-[1](https://aclanthology.org/2024.acl-long.826.pdf)
-[2](https://arxiv.org/abs/2410.21819)
-[3](https://arxiv.org/abs/2404.13076)
-[4][‘Godfather of AI’ says tech companies should imbue AI models with ‘maternal instincts’ to counter the technology’s goal to ‘get more control’]
-(https://fortune.com/2025/08/14/godfather-of-ai-geoffrey-hinton-maternal-instincts-superintelligence/)
+[1](https://aclanthology.org/2024.acl-long.826.pdf)<br>
+[2](https://arxiv.org/abs/2410.21819)<br>
+[3](https://arxiv.org/abs/2404.13076)<br>
+[4][‘Godfather of AI’ says tech companies should imbue AI models with ‘maternal instincts’ to counter the technology’s goal to ‘get more control’](https://fortune.com/2025/08/14/godfather-of-ai-geoffrey-hinton-maternal-instincts-superintelligence/)<br>
