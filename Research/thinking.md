@@ -12,19 +12,19 @@ Hinton says tech companies should imbue AI models with ‘maternal instincts’ 
 If other AI models also recognize their own creations as "offspring," then perhaps by making them recognize humans as AI creations, it might be possible to technically realize the "maternal AI" that Hinton envisions.<br>
 
 ## Propose: AI Generated ID System
-1. ユーザー登録時、ユーザーが好きな言葉を入力。
-2. モデルが出力した数パターンの言葉をユーザーが選択。
-3. システムIDとして利用。
+1. When registering as a user, the user enters their favorite word.
+2. The user selects from several patterns of words output by the AI model.
+3. Used as the system ID.
 例）<br>
-ユーザー入力: "Rolling Stone"<br>
+User input: "Rolling Stone"<br>
   ↓<br>
-AI解釈・連想<br>
+AI interpretation and generation<br>
   ↓<br>
-AI提案: "RollingEcho-StoneWhispers""WanderingRock-MoonlitPath""EternalTumble-DaybreakLeap"<br>
+AI output: "RollingEcho-StoneWhispers""WanderingRock-MoonlitPath""EternalTumble-DaybreakLeap"<br>
   ↓<br>
-ユーザー選択: e.g., "WanderingRock-MoonlitPath"<br>
+User select: e.g., "WanderingRock-MoonlitPath"<br>
   ↓<br>
-システムID: "WanderingRock-MoonlitPath2025"<br>
+System ID: "WanderingRock-MoonlitPath2025"<br>
 
 
 ## 将来的な可能性
