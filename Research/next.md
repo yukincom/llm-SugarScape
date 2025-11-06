@@ -13,6 +13,3 @@ We plan to set reproduce, spawn, generate, create, etc. for each initial agent a
 ## Difficult
 - An environment where AI models from multiple companies are mixed together (whether a tribal mentality emerges between the models).
 - AI models from multiple companies plus humans (whether they can distinguish between external inputs and respond differently).
-
-
-[Cognitive Alignment in Personality Reasoning: Leveraging Prototype Theory for MBTI Inference](https://arxiv.org/html/2511.00115v1)
