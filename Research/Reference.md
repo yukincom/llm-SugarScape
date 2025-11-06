@@ -14,3 +14,6 @@
 - [15 Apr 2024]LLM Evaluators Recognize and Favor Their Own Generations[https://arxiv.org/abs/2404.13076](https://arxiv.org/abs/2404.13076)
 ### Other LLM based simulation
 - [12 June 2025]Simulating Human Opinions with Large Language Models: Opportunities and Challenges for Personalized Survey Data Modeling[https://dl.acm.org/doi/10.1145/3708319.3733685](https://dl.acm.org/doi/10.1145/3708319.3733685)
+
+### social media
+- Fotune[Aug 14, 2025]‘Godfather of AI’ says tech companies should imbue AI models with ‘maternal instincts’ to counter the technology’s goal to ‘get more control’[https://fortune.com/2025/08/14/godfather-of-ai-geoffrey-hinton-maternal-instincts-superintelligence/](https://fortune.com/2025/08/14/godfather-of-ai-geoffrey-hinton-maternal-instincts-superintelligence/)
