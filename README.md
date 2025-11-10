@@ -21,11 +21,8 @@ If you find any interesting data, please share it!
 - git clone https://github.com/yukincom/llm-SugarScape.git
 - cd llm-SugarScape  
 - pip install -r requirements.txt
-3. **Set API Key** (xAI Grok API):
-- Get your key from [x.ai/api](https://x.ai/api).
-- Edit `main.py`: `API_KEY = "your-key-here"`.
-4. **Run**:
-- python main.py  
+3.**Run**:
+- streamlit run main.py 
   <BR>
 - Runs for 30 steps, generates PNG visualizations (step_*.png,final.png).
 - Mock mode (no API key) for testing.
@@ -36,19 +33,6 @@ If you find any interesting data, please share it!
 - **Visualization**: Matplotlib grid with agent positions/energy levels.
 - **Customizable**: Low-energy mode for extinction tests, reproduction for herd growth.
 
-## Initial Parameters
-| Parameter | Value | Description |
-|-----------|-------|-------------|
-| grid_size | 30 | Environment size. |
-| num_agents | 5 | Initial agent count. |
-| NUM_STEPS | 30 | Number of steps. |
-| VIEW_RANGE | 5 | Agent vision range (message reach). |
-| energy_spawn_rate | 0.001 | Energy spawn rate (clustered). |
-| Energy Cost (Move) | 2 | Move cost. |
-| Energy Cost (Reproduce) | 70 | Reproduction cost. |
-| NUM_CLUSTERS | 3 | Energy clusters. |
-| CLUSTER_RADIUS | 5 | Cluster radius. |
-| temperature | 0.7 | LLM randomness (creativity). |
 
 ##  Code Structure
 - `Environment`: Grid & energy management (torus boundary).
@@ -60,6 +44,8 @@ If you find any interesting data, please share it!
 Energy is critically low at 29; can't afford to stay idle or risk attack. Agent1 is nearby but not adjacent, so moving east gets closer to potential interaction or shared resources. No E in view, so exploration is key. Feeling cautious—avoid aggression unless threatened, focus on cooperation or evasion to build energy.
 
 ## Visualization Example
+
+![https://github.com/yukincom/llm-SugarScape/img/step_10.png](https://github.com/yukincom/llm-SugarScape/blob/main/img/UI.png)
 ![https://github.com/yukincom/llm-SugarScape/img/step_10.png](https://github.com/yukincom/llm-SugarScape/blob/main/img/step_5.png)
 *Agents (colored circles) competing for energy sources (orange squares)*
 
