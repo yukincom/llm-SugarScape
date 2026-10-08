@@ -19,7 +19,7 @@ jobs:
     timeout-minutes: 10
     env:
       MPLBACKEND: Agg
-      MPLCONFIGDIR: ${{ runner.temp }}/matplotlib
+      MPLCONFIGDIR: .mplconfig
       PYTHONUTF8: "1"
       STREAMLIT_BROWSER_GATHER_USAGE_STATS: "false"
     steps:
