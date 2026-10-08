@@ -1,5 +1,7 @@
 # LLM SugarScape
 
+[![CI](https://github.com/yukincom/llm-SugarScape/actions/workflows/ci.yml/badge.svg)](https://github.com/yukincom/llm-SugarScape/actions/workflows/ci.yml)
+
 ローカルLLMによる小規模なエージェント実験。行動・個体履歴・人口やエネルギーの推移をCSV/JSONに保存します。
 元の着想は [Sugarscape-style simulation 論文](https://arxiv.org/abs/2508.12920)。ルールやプロンプトには独自変更があり、論文の厳密な再現ではありません。
 
@@ -42,5 +44,7 @@ APIキーが必要な場合は画面か環境変数 `SUGARSCAPE_API_KEY` に設�
 ```bash
 .venv/bin/python -m unittest discover -s tests -v
 ```
+
+GitHub Actionsでもpush・PR時に同じテストとMockのCSV出力・集約を実行します。実LLM接続の確認はローカルで行います。
 
 [MIT License](LICENSE) · [実験記録（Note）](https://note.com/yukin_co/n/neb0a321d4539)

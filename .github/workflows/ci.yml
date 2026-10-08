@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Tests and data export (Python 3.11)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      MPLBACKEND: Agg
+      MPLCONFIGDIR: ${{ runner.temp }}/matplotlib
+      PYTHONUTF8: "1"
+      STREAMLIT_BROWSER_GATHER_USAGE_STATS: "false"
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install -r requirements.txt
+          python -m pip check
+
+      - name: Run regression and Streamlit tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Smoke test CLI, images and CSV aggregation
+        run: |
+          python main.py run --mock --agents 3 --steps 3 --seed 42 --runs 2 --images --output "$RUNNER_TEMP/sugarscape-ci"
+          python main.py aggregate --input "$RUNNER_TEMP/sugarscape-ci"
+
+      - name: Upload mock experiment data
+        if: ${{ always() }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: mock-experiment-data
+          path: ${{ runner.temp }}/sugarscape-ci/
+          if-no-files-found: ignore
+          retention-days: 7
