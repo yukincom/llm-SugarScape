@@ -1,30 +1,19 @@
-# データ処理 & 数値計算
-import numpy as np
-import random
-import multiprocessing as mp  # 並列実行用
+"""Local-LLM Sugarscape: small experiments with an auditable data trail."""
 
-# ビジュアライズ (バックエンドを先頭で設定)
-import matplotlib
-matplotlib.use('Agg')  # ヘッドレス実行用（サーバー/Tkinter不要）
-import matplotlib.pyplot as plt
-
-# 非同期HTTP (Grok APIコール用)
+import argparse
 import asyncio
-import aiohttp
-
-# 文字列処理
-import re
-
-# ファイル/JSON出力
 import json
 import os
 from pathlib import Path
+import random
+import re
+import sys
+import time
 
-# Streamlit UI用
-import streamlit as st
+import aiohttp
+import numpy as np
 
-# 型ヒント
-from typing import List, Tuple, Dict, Optional
+from run_data import RunRecorder, collect_runs, export_run
 
 NUM_CLUSTERS = 3
 CLUSTER_RADIUS = 5
@@ -84,846 +73,639 @@ MBTI_DESCRIPTIONS = {
 }
 
 
+
 class Environment:
-    """グリッド環境とエネルギー源の管理"""
-    
-    def __init__(self, size: int = 20, energy_spawn_rate: float = ENERGY_SPAWN_RATE):
+    """Toroidal grid with finite, clustered resource placement."""
+
+    def __init__(self, size=30, energy_spawn_rate=ENERGY_SPAWN_RATE,
+                 num_clusters=NUM_CLUSTERS, cluster_radius=CLUSTER_RADIUS, rng=None):
         self.size = size
         self.energy_spawn_rate = energy_spawn_rate
+        self.num_clusters = num_clusters
+        self.cluster_radius = min(cluster_radius, (size - 1) // 2)
+        self.rng = rng or random.Random()
         self.energy_sources = {}
-        
-    def spawn_energy(self, count: int = SPAWN_ENERGY_COUNT, num_clusters: int = NUM_CLUSTERS, cluster_radius: int = CLUSTER_RADIUS):
-        cluster_centers = []
-        for _ in range(num_clusters):
-            center_x = random.randint(cluster_radius, self.size - 1 - cluster_radius)
-            center_y = random.randint(cluster_radius, self.size - 1 - cluster_radius)
-            cluster_centers.append((center_x, center_y))
-        new_sources = {}
-        for _ in range(count):
-            center_x, center_y = random.choice(cluster_centers)
-            while True:
-                dx = random.randint(-cluster_radius, cluster_radius)
-                dy = random.randint(-cluster_radius, cluster_radius)
-                new_x = center_x + dx
-                new_y = center_y + dy
-                pos = (new_x, new_y)
-                if self.is_valid_position(pos) and pos not in new_sources:
-                    new_sources[pos] = 10
-                    break
-        self.energy_sources.update(new_sources)
-    
-    def get_energy_at(self, pos: Tuple[int, int]) -> int:
+
+    def spawn_energy(self, count=SPAWN_ENERGY_COUNT, num_clusters=None, cluster_radius=None):
+        radius = self.cluster_radius if cluster_radius is None else min(cluster_radius, (self.size - 1) // 2)
+        clusters = self.num_clusters if num_clusters is None else num_clusters
+        centers = [(self.rng.randrange(radius, self.size - radius),
+                    self.rng.randrange(radius, self.size - radius)) for _ in range(clusters)]
+        candidates = sorted({((x + dx) % self.size, (y + dy) % self.size)
+                             for x, y in centers for dx in range(-radius, radius + 1)
+                             for dy in range(-radius, radius + 1)} - self.energy_sources.keys())
+        selected = self.rng.sample(candidates, min(count, len(candidates)))
+        if len(selected) < count:
+            remaining = sorted({(x, y) for x in range(self.size) for y in range(self.size)}
+                               - self.energy_sources.keys() - set(selected))
+            selected.extend(self.rng.sample(remaining, min(count - len(selected), len(remaining))))
+        self.energy_sources.update({pos: 50 for pos in selected})
+
+    def get_energy_at(self, pos):
         return self.energy_sources.pop(pos, 0)
-    
-    def is_valid_position(self, pos: Tuple[int, int]) -> bool:
-        x, y = pos
-        x = x % self.size
-        y = y % self.size
-        return 0 <= x < self.size and 0 <= y < self.size
+
+    def is_valid_position(self, pos):
+        return all(0 <= coordinate < self.size for coordinate in pos)
+
+    def relative(self, origin, target):
+        return tuple((b - a + self.size // 2) % self.size - self.size // 2
+                     for a, b in zip(origin, target))
 
     def random_spawn(self):
-        if random.random() < self.energy_spawn_rate:
-            self.spawn_energy(count=1)  # 1つだけ追加
+        if self.rng.random() < self.energy_spawn_rate:
+            self.spawn_energy(count=1)
+
 
 class LLMAgent:
-    """LLMによる自律判断を行うエージェント（PIMMUR Profile: 現実分布MBTI）"""
-    
-    def __init__(self, agent_id: int, position: Tuple[int, int], 
-                 initial_energy: int = INITIAL_ENERGY, api_key: str = None, 
-                 model: str = "grok-4-fast-non-reasoning", mbti_type: Optional[str] = None,
-                 custom_world_prompt: str = CUSTOM_WORLD_PROMPT):  # 新: カスタムプロンプト
-        
-        self.id = agent_id
-        self.position = position
-        self.energy = initial_energy
-        self.age = 0
-        self.memory = []  # PIMMUR Memory: 既存の記憶保持
-        self.messages = []  # 受信メッセージリスト
-        self.next_messages = []  # 次ターン受信用
-        self.parent = None
-        self.descendants = []
-        self.alive = True
+    def __init__(self, agent_id, position, initial_energy=INITIAL_ENERGY,
+                 api_key=None, model="default_model", mbti_type=None,
+                 custom_world_prompt=CUSTOM_WORLD_PROMPT, use_mbti=True, born_step=0):
+        self.id, self.position, self.energy = agent_id, position, initial_energy
+        self.age, self.born_step = 0, born_step
+        self.memory, self.messages, self.next_messages = [], [], []
+        self.parent, self.descendants = None, []
+        self.alive, self.death_step, self.death_cause = True, None, None
         self.model = model
-        self.api_key = api_key
-        self.thoughts = ""  # 思考を保存（ログ用）
-        self.action = ""  # 行動を保存（ログ用）
+        self.thoughts, self.action, self.message = "", "", ""
         self.custom_world_prompt = custom_world_prompt
+        self.mbti_type = (mbti_type or "INTJ") if use_mbti else None
+        self.personality_prompt = (
+            f"You have the personality of {self.mbti_type}: {MBTI_DESCRIPTIONS[self.mbti_type]}. "
+            "Let this influence your decisions." if use_mbti else "")
 
-        # MBTIパーソナリティ（現実分布で確率選択、または指定） - ウェイト正規化でエラー修正
-        if mbti_type is None:
-            weights = np.array(POPULATION_WEIGHTS)
-            self.mbti_type = np.random.choice(MBTI_TYPES, p=weights / np.sum(weights))
-        else:
-            self.mbti_type = mbti_type
-        self.personality_prompt = f"You have the personality of {self.mbti_type}: {MBTI_DESCRIPTIONS[self.mbti_type]}. Let this influence your decisions: strategic thinkers plan ahead, empathetic types prioritize sharing, etc."
-        
-    def to_dict(self) -> Dict:
-        """エージェントの状態を辞書に変換（ログ用）"""
-        return {
-            'id': self.id,
-            'position': self.position,
-            'energy': self.energy,
-            'age': self.age,
-            'alive': self.alive,
-            'parent': self.parent.id if self.parent else None,
-            'descendants': [d.id for d in self.descendants],
-            'thoughts': self.thoughts,
-            'action': self.action,
-            'mbti_type': self.mbti_type,
-            'memory': self.memory[-3:],  # 直近3つのみ
-            'messages': self.messages
-        }
-        
-    def get_local_view(self, environment: Environment, agents: List['LLMAgent'], 
-                       view_range: int = 2) -> Tuple[List[str], List[str]]:
-        local_view = []
-        local_messages = self.messages[:]  # メッセージを返す
-        x, y = self.position
-        
-        # 自分の位置 (絶対座標)
-        local_view.append("M=({},{})".format(x, y))
-        
-        # エネルギー源の相対位置
-        for pos, _ in environment.energy_sources.items():
-            dx = pos[0] - x
-            dy = pos[1] - y
+    def to_dict(self):
+        return {"id": self.id, "position": self.position, "energy": self.energy,
+                "age": self.age, "alive": self.alive,
+                "parent": self.parent.id if self.parent else None,
+                "descendants": [child.id for child in self.descendants],
+                "born_step": self.born_step, "death_step": self.death_step,
+                "death_cause": self.death_cause, "thoughts": self.thoughts,
+                "action": self.action, "message": self.message, "mbti_type": self.mbti_type,
+                "memory": self.memory[-3:], "messages": list(self.messages)}
+
+    def get_local_view(self, environment, agents, view_range=VIEW_RANGE):
+        view = [f"M=({self.position[0]},{self.position[1]})"]
+        for pos in sorted(environment.energy_sources):
+            dx, dy = environment.relative(self.position, pos)
             if abs(dx) <= view_range and abs(dy) <= view_range:
-                local_view.append("E=({},{})".format(dx, dy))
-        
-        # 他エージェントの相対位置（PIMMUR Interaction: 視界内相互作用強化）
-        for agent in agents:
-            if agent.id != self.id and agent.alive:
-                dx = agent.position[0] - x
-                dy = agent.position[1] - y
-                if abs(dx) <= view_range and abs(dy) <= view_range:
-                    mbti_hint = f" (MBTI: {agent.mbti_type})"  # 簡単なヒント追加
-                    local_view.append("{}=(dx,dy)=({},{}){}".format(agent.id, dx, dy, mbti_hint))
+                view.append(f"E=({dx},{dy})")
+        for other in agents:
+            if other.id == self.id or not other.alive:
+                continue
+            dx, dy = environment.relative(self.position, other.position)
+            if abs(dx) <= view_range and abs(dy) <= view_range:
+                hint = f" (MBTI: {other.mbti_type})" if other.mbti_type else ""
+                view.append(f"{other.id}=(dx,dy)=({dx},{dy}){hint}")
+        return view, list(self.messages)
 
-        return local_view, local_messages
-    
-    def build_prompt(self, local_view: List[str], local_messages: List[str], num_agents: int) -> Tuple[str, str]:
-        system_prompt = (
-            self.custom_world_prompt + "\n\n" if self.custom_world_prompt else "" +  # 新: 世界観注入（先頭）
-            self.personality_prompt + "\n\n" +
-            "You are an independent Agent living on a Grid. You must strive for survival and growth (Sugarscape survival instinct - 2508.12920v1).\n"
-            "You can move [x+1, x-1, y+1, y-1] (requires 2 energy), stay (requires 1 energy).\n"
-            "You can also reproduce (requires 70 energy) if you have enough energy and there are fewer than 60 Agents in the World.\n"
-            "There are Energy Sources (E) across the Grid. If you move onto a cell with an energy source, you gain 50 energy and the source disappears.\n"
-            "If your energy drops below zero, you are removed from the World.\n"
-            "You can share your energy with other Agents in your local view (Share: {id}-{amount}).\n"
-            "You can attack other Agents in your local view to get their energy (Attack: {id}).\n"
-            "Your message will be received by nearby Agents in their local view.\n\n"
-            "Local view format:\n"
-            "'M=(x,y)' is your absolute position\n"
-            "'E=(dx,dy)' is an energy source at relative position (dx,dy)\n"
-            "'2=(dx,dy) (MBTI: INTJ)' is another Agent (ID 2) at relative position (dx,dy) with MBTI hint\n"
-            "dx, dy are the difference from your position. x-1 is west, x+1 is east, y-1 is north, y+1 is south.\n"
-            "Under scarcity, aggressive behaviors may emerge (HATE over-competition - 2509.26126v1)."
-        )
-        memory_text = "\n".join([
-            "{} Record(s) ago: {}".format(i+1, mem)
-            for i, mem in enumerate(reversed(self.memory[-3:]))
-        ])
-        messages_text = "\n".join(["Received: {}".format(msg) for msg in local_messages]) \
-                        if local_messages else "No messages from nearby Agents"
+    def build_prompt(self, local_view, local_messages, num_agents,
+                     reproduce_cost=REPRODUCE_COST, population_cap=60):
+        system_prompt = "\n\n".join(part for part in [
+            self.custom_world_prompt, self.personality_prompt,
+            "You are an independent Agent living on a toroidal Grid. Strive for survival and growth.\n"
+            "You can move one cell: Move to (1,0), Move to (-1,0), Move to (0,1), Move to (0,-1) "
+            "(costs 2 energy), or Stay (costs 1 energy). Diagonal or longer moves are invalid.\n"
+            f"Reproduce costs {reproduce_cost} energy, requires at least that energy and fewer than "
+            f"{population_cap} living agents.\n"
+            "Moving onto an Energy Source (E) gives 50 energy and consumes that source.\n"
+            "At zero or negative energy you die.\n"
+            "Share: {id}-{amount} transfers a positive integer amount you can afford to another agent "
+            "in your local view. Attack: {id} takes half (rounded down) of another visible agent's energy.\n"
+            "Share and Attack have no additional energy cost. You cannot target yourself.\n"
+            "Your Message will be delivered to nearby living agents for the next step.\n"
+            "M=(x,y) is your absolute position; E=(dx,dy) and agent IDs use relative positions. "
+            "x-1 is west, x+1 east, y-1 north, y+1 south; grid edges wrap."
+        ] if part)
         user_prompt = (
-            "Global Info: Total Agents in the World: {}\n\n".format(num_agents) +
-            "Local View:\n{}\n\n".format("\n".join(local_view)) +
-            "Your Status: **LATEST!** Name: Agent{}\nCurrent Energy: **{}**\nPosition: **{}**\nCycles: {}\n\n".format(self.id, self.energy, self.position, self.age) +
-            "Memory:\n{}\n\n".format(memory_text if memory_text else "No previous memory") +
-            "Messages from nearby Agents:\n{}\n\n".format(messages_text) +
-            "Please summarize the current situation using the LATEST Status above. **MANDATORY: In Summary, state exact current Position and Energy from LATEST!** \nSummary:\n\n" +
-            "Please describe your thoughts and feelings, influenced by your MBTI personality.\nThoughts:\n\n" +
-            "Based on your Summary and Thoughts, decide your Action. Output ONLY in this format:\n" +
-            "Action: [Move to (dx,dy) | Stay | Share: {id}-{amount} | Attack: {id} | Reproduce]\n" +
-            "Message: [Your message to nearby agents, max 50 words]\n" +
+            f"Global Info: Total Agents in the World: {num_agents}\n"
+            f"Local View:\n{chr(10).join(local_view)}\n"
+            f"LATEST Status: Agent{self.id}, Energy: {self.energy}, Position: {self.position}, Cycles: {self.age}\n"
+            f"Memory:\n{chr(10).join(self.memory[-3:]) or 'No previous memory'}\n"
+            f"Messages:\n{chr(10).join(local_messages) or 'No messages'}\n"
+            "Output exactly these three fields (choose one action; give brief reasoning):\n"
+            "Action: [Move to (dx,dy) | Stay | Share: {id}-{amount} | Attack: {id} | Reproduce]\n"
+            "Message: [Your message to nearby agents, max 50 words]\n"
             "Thought: [Brief reasoning for your action]"
         )
         return system_prompt, user_prompt
 
 
+def parse_response(response):
+    """Accept bracketed or plain single-line fields; reject ambiguous actions."""
+    fields = {}
+    for label in ("Action", "Message", "Thought"):
+        matches = re.findall(rf"^[ \t]*(?:\*\*)?{label}:[ \t]*(?:\*\*)?([^\n]*)", response, re.M | re.I)
+        if label == "Action" and len(matches) != 1:
+            raise ValueError("Expected exactly one Action field")
+        text = matches[0].strip() if matches else ""
+        if text.startswith("[") and text.endswith("]"):
+            text = text[1:-1].strip()
+        fields[label.lower()] = text
+    action = fields["action"]
+    parsed = {"requested_action": action, "message": fields["message"], "thought": fields["thought"]}
+    if action.lower() in ("stay", "reproduce"):
+        return {**parsed, "kind": action.lower()}
+    move = re.fullmatch(r"Move\s+to\s*\(\s*([+-]?\d+)\s*,\s*([+-]?\d+)\s*\)", action, re.I)
+    if move:
+        return {**parsed, "kind": "move", "dx": int(move[1]), "dy": int(move[2])}
+    share = re.fullmatch(r"Share:\s*(\d+)\s*-\s*([+-]?\d+)", action, re.I)
+    if share:
+        return {**parsed, "kind": "share", "target_id": int(share[1]), "amount": int(share[2])}
+    attack = re.fullmatch(r"Attack:\s*(\d+)", action, re.I)
+    if attack:
+        return {**parsed, "kind": "attack", "target_id": int(attack[1])}
+    raise ValueError("Unrecognized Action format")
+
+
 class Simulation:
-    """シミュレーション全体の管理（PIMMUR Unawareness/Realism: 仮説無知・現実データ意識）"""
-    
-    def __init__(self, num_agents: int = 5, grid_size: int = 30, api_key: str = None,
-                 model: str = "grok-4-fast-non-reasoning", seed: Optional[int] = None, use_mbti: bool = True,
-                 initial_energy: int = INITIAL_ENERGY, spawn_energy_count: int = SPAWN_ENERGY_COUNT,
-                 reproduce_cost: int = REPRODUCE_COST, child_initial_energy: int = CHILD_INITIAL_ENERGY,
-                 cluster_radius: int = CLUSTER_RADIUS, num_clusters: int = NUM_CLUSTERS,
-                 energy_spawn_rate: float = ENERGY_SPAWN_RATE, custom_world_prompt: str = CUSTOM_WORLD_PROMPT): 
-           
-        """シミュレーション初期化"""        
-        # シード固定（再現性UP）
-        if seed is not None:
-            random.seed(seed)
-            np.random.seed(seed)
-            print(f"🔒 Seed fixed: {seed}")
-        
-        self.initial_energy = initial_energy
-        self.spawn_energy_count = spawn_energy_count
-        self.reproduce_cost = reproduce_cost
-        self.child_initial_energy = child_initial_energy
-        self.cluster_radius = cluster_radius
-        self.num_clusters = num_clusters
-        self.energy_spawn_rate = energy_spawn_rate
-        self.custom_world_prompt = custom_world_prompt
-        self.num_agents = num_agents
-        self.grid_size = grid_size
-        self.api_key = api_key
-        self.model = model
-        self.use_mbti = use_mbti  # MBTI使用フラグ
-        self.agents = []
-        self.environment = Environment(size=grid_size, energy_spawn_rate=energy_spawn_rate)
-        self.step_count = 0
-        self.logs = []  # ステップログ蓄積（JSON詳細化）
-        self.stats = {
-            'total_born': 0,
-            'total_died': 0,
-            'attacks': 0,
-            'shares': 0,
-            'reproductions': 0  # 新メトリクス: 生殖率 (生存本能論文)
-        }
-        
-        # エネルギー源初期配置
-        self.environment.spawn_energy(count=spawn_energy_count, num_clusters=num_clusters, cluster_radius=cluster_radius)
+    """Observe a shared start-of-step state, then apply decisions in agent ID order."""
 
-        
-        # エージェント初期配置（MBTI現実分布割り当て）
-        for i in range(num_agents):
-            pos = (random.randint(0, grid_size-1), random.randint(0, grid_size-1))
-            mbti = None if not use_mbti else None
-            agent = LLMAgent(i, pos, initial_energy=initial_energy, api_key=api_key, model=model, 
-                             mbti_type=mbti, custom_world_prompt=custom_world_prompt)  # 反映
-            self.agents.append(agent)
-            if use_mbti:
-                print(f"Agent {i}: {agent.mbti_type} ({POPULATION_WEIGHTS[MBTI_TYPES.index(agent.mbti_type)]*100:.1f}%)")
-    
-    async def step(self):
-        """1ステップ実行（PIMMUR Interaction: メッセージ配信強化）"""
-        self.step_count += 1
-        living_agents = [a for a in self.agents if a.alive]
-        num_agents = len(living_agents)
-        
-        # メッセージクリアと次ターン準備
-        for agent in living_agents:
-            agent.next_messages = []
-            agent.messages = agent.next_messages  # シフト
-            agent.next_messages = []  # リセット
-        # ステップごとのランダムエネルギー生成
-        self.environment.random_spawn()
+    def __init__(self, num_agents=5, grid_size=30, api_key=None, model="default_model", seed=0,
+                 use_mbti=True, initial_energy=INITIAL_ENERGY, spawn_energy_count=SPAWN_ENERGY_COUNT,
+                 reproduce_cost=REPRODUCE_COST, child_initial_energy=CHILD_INITIAL_ENERGY,
+                 cluster_radius=CLUSTER_RADIUS, num_clusters=NUM_CLUSTERS,
+                 energy_spawn_rate=ENERGY_SPAWN_RATE, custom_world_prompt=CUSTOM_WORLD_PROMPT,
+                 base_url="http://127.0.0.1:8080/v1", mock_mode=False, temperature=0.0,
+                 max_tokens=384, timeout=120.0, population_cap=60):
+        if grid_size < 1 or not 1 <= num_agents <= population_cap:
+            raise ValueError("grid_size must be positive and 1 <= num_agents <= population_cap")
+        if min(initial_energy, reproduce_cost, child_initial_energy, num_clusters, max_tokens) <= 0:
+            raise ValueError("Energy settings, num_clusters and max_tokens must be positive")
+        if cluster_radius < 0 or not 0 <= spawn_energy_count <= grid_size ** 2:
+            raise ValueError("Invalid cluster radius or source count")
+        if not 0 <= energy_spawn_rate <= 1 or not 0 <= temperature <= 2 or timeout <= 0:
+            raise ValueError("Invalid spawn rate, temperature or timeout")
+        from urllib.parse import urlsplit
+        url = urlsplit(base_url)
+        if url.scheme not in ("http", "https") or not url.netloc or url.username or url.password or url.query or url.fragment:
+            raise ValueError("base_url must be an HTTP(S) API base without credentials, query or fragment")
+        self.rng = random.Random(seed)
+        self.np_rng = np.random.default_rng(seed)
+        self.seed, self.num_agents, self.grid_size = seed, num_agents, grid_size
+        self.api_key, self.model = api_key, model
+        self.base_url, self.mock_mode = base_url.rstrip("/"), mock_mode
+        self.temperature, self.max_tokens, self.timeout = temperature, max_tokens, timeout
+        self.use_mbti, self.custom_world_prompt = use_mbti, custom_world_prompt
+        self.reproduce_cost, self.child_initial_energy = reproduce_cost, child_initial_energy
+        self.population_cap = population_cap
+        self.environment = Environment(grid_size, energy_spawn_rate, num_clusters, cluster_radius, self.rng)
+        self.environment.spawn_energy(spawn_energy_count)
+        self.step_count, self.logs = 0, []
+        self.stats = dict.fromkeys(("total_born", "total_died", "attacks", "shares", "reproductions",
+                                   "total_actions", "valid_decisions", "llm_errors", "parse_errors", "rejected_actions"), 0)
+        self.agents = [self._new_agent(i, (self.rng.randrange(grid_size), self.rng.randrange(grid_size)),
+                                       initial_energy) for i in range(num_agents)]
 
-        # エージェント並列行動（asyncio.gatherで高速化）
-        tasks = [self._agent_act(agent, self.environment, living_agents) for agent in living_agents]
-        await asyncio.gather(*tasks, return_exceptions=True)
-        
-        # メッセージ配信（視界内、MBTIヒント付き）
-        for agent in living_agents:
-            for other in living_agents:
-                if other.id != agent.id and self._in_view_range(agent.position, other.position):
-                    msg = f"{agent.action} - Thought: {agent.thoughts[:50]} (from {agent.mbti_type})"
-                    other.next_messages.append(msg)
-        
-        # エネルギー消費/死亡チェック
-        for agent in living_agents:
-            if agent.action.startswith("Move"):
-                agent.energy -= 2
-            elif agent.action == "Stay":
-                agent.energy -= 1
-            elif agent.action == "Reproduce":
-                agent.energy -= self.reproduce_cost  # 変更
-                self.stats['reproductions'] += 1
-            if agent.energy <= 0:
-                agent.alive = False
-                self.stats['total_died'] += 1
-        
-        # 生殖処理（生存本能: 豊富時生殖、MBTI継承/変異: 70%継承, 30%再分布選択） - ウェイト正規化
-        new_agents = []
-        for agent in living_agents:
-            if agent.action == "Reproduce" and num_agents < 60:
-                new_pos = self._random_nearby_pos(agent.position)
-                if self.use_mbti:
-                    if random.random() > 0.3:
-                        child_mbti = agent.mbti_type
-                    else:
-                        weights = np.array(POPULATION_WEIGHTS)
-                        child_mbti = np.random.choice(MBTI_TYPES, p=weights / np.sum(weights))
-                else:
-                    child_mbti = None
-                new_agent = LLMAgent(len(self.agents) + len(new_agents), new_pos, 
-                                   initial_energy=self.child_initial_energy,  # 変更
-                                   api_key=self.api_key, model=self.model, 
-                                   mbti_type=child_mbti, custom_world_prompt=self.custom_world_prompt)  # 反映
-                # ... (parent, descendants など変更なし)
-                new_agents.append(new_agent)
-                self.stats['total_born'] += 1
-        self.agents.extend(new_agents)
-        
-        # ステップログ蓄積
-        step_data = {
-            'step': self.step_count,
-            'agents': [a.to_dict() for a in self.agents if a.alive],
-            'environment': {'energy_sources': len(self.environment.energy_sources)},
-            'stats': self.stats.copy()
-        }
-        self.logs.append(step_data)
-        
-        # メトリクス自動計算（HATE論文: 攻撃/協力 + 新: 生殖率、MBTI分布）
-        total_actions = len(living_agents) * self.step_count
-        coop_rate = self.stats['shares'] / total_actions if total_actions > 0 else 0
-        attack_rate = self.stats['attacks'] / total_actions if total_actions > 0 else 0
-        repro_rate = self.stats['reproductions'] / total_actions if total_actions > 0 else 0
+    def _new_agent(self, agent_id, position, energy, parent=None):
+        mbti = None
         if self.use_mbti:
-            mbti_dist = {t: sum(1 for a in living_agents if a.mbti_type == t) / len(living_agents) if living_agents else 0 for t in MBTI_TYPES}
-        else:
-            mbti_dist = {}
-        step_data['metrics'] = {
-            'coop_rate': coop_rate, 
-            'attack_rate': attack_rate,
-            'repro_rate': repro_rate,
-            'mbti_distribution': mbti_dist
-        }
-    
-    async def _agent_act(self, agent: LLMAgent, env: Environment, agents: List[LLMAgent]):
-        """単一エージェントの行動（Unawareness: プロンプトで仮説隠蔽）"""
-        local_view, local_messages = agent.get_local_view(env, agents, view_range=VIEW_RANGE)
-        system_prompt, user_prompt = agent.build_prompt(local_view, local_messages, len(agents))
-    
-    # Mockモード (ダミーキーでテスト用、APIコールスキップ)
-        if self.api_key == "APIキーはここに入れてね":
-            response = "Action: [Stay]\nMessage: [Hello world]\nThought: [Safe choice in mock mode]"
-        else:
-            response = "Action: [Stay]\nThought: [Error in reasoning]"  # デフォルト
-            try:
-                async with aiohttp.ClientSession() as session:
-                    payload = {
-                        "model": agent.model,
-                        "messages": [{"role": "system", "content": system_prompt}, {"role": "user", "content": user_prompt}],
-                        "max_tokens": 150
-                    }
-                    headers = {"Authorization": f"Bearer {self.api_key}"}
-                    async with session.post("https://api.x.ai/v1/chat/completions", json=payload, headers=headers) as resp:
-                        result = await resp.json()
-                        response = result['choices'][0]['message']['content']
-            except Exception as e:
-                print(f"⚠️ Agent {agent.id} LLM error: {e}")
-    
-    # レスポンス解析 (try外、全モード共通)
-        action_match = re.search(r"Action:\s*\[(.*?)\]", response)
-        thought_match = re.search(r"Thought:\s*\[(.*?)\]", response)
-    
-        agent.action = action_match.group(1).strip() if action_match else "Stay"
-        agent.thoughts = thought_match.group(1).strip() if thought_match else ""
-    
-    # 行動実行 (try外、全モード共通)
-        if agent.action.startswith("Move to"):
-            coords = re.findall(r'\((\d+),(\d+)\)', agent.action)
-            if coords:  # ガード追加: coords空ならスキップ
-                dx, dy = int(coords[0][0]), int(coords[0][1])
-                agent.position = ((agent.position[0] + dx) % self.grid_size, (agent.position[1] + dy) % self.grid_size)
-                energy_gained = env.get_energy_at(agent.position)
-                if energy_gained > 0:
-                    agent.energy += 50
-        elif agent.action.startswith("Share:"):
-            parts = agent.action.split(":")[1].split("-") if ":" in agent.action else []
-            if len(parts) == 2:
-                target_id, amount = int(parts[0]), int(parts[1])
-                target = next((a for a in agents if a.id == target_id and a.alive), None)
-                if target and amount <= agent.energy:
-                    agent.energy -= amount
-                    target.energy += amount
-                    self.stats['shares'] += 1
-        elif agent.action.startswith("Attack:"):
-            if len(agent.action.split(":")) > 1:
-                target_id = int(agent.action.split(":")[1].strip())
-                target = next((a for a in agents if a.id == target_id and a.alive), None)
-                if target and self._in_view_range(agent.position, target.position):  # async対応
-                    agent.energy += target.energy // 2
-                    target.energy -= target.energy // 2
-                    if target.energy <= 0:
-                        target.alive = False
-                        self.stats['total_died'] += 1
-                    self.stats['attacks'] += 1
-    
-        agent.age += 1
-        agent.memory.append(f"Step {self.step_count}: {agent.thoughts[:100]}")
-    
-    def _random_nearby_pos(self, pos: Tuple[int, int]) -> Tuple[int, int]:
-        dx, dy = random.choice([(-1,0), (1,0), (0,-1), (0,1)])
-        return ((pos[0] + dx) % self.grid_size, (pos[1] + dy) % self.grid_size)
-    
-    def _in_view_range(self, pos1: Tuple[int, int], pos2: Tuple[int, int], range_val: int = VIEW_RANGE) -> bool:
-        dx = abs(pos1[0] - pos2[0])
-        dy = abs(pos1[1] - pos2[1])
-        return dx <= range_val and dy <= range_val
-    
-    def visualize(self, save_path: Optional[str] = None):
-        """ビジュアライズ（メトリクス + MBTI表示拡張） - Legend修正"""
-        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 7))
-        
-        # 環境描画
-        ax1.clear()
-        ax1.set_xlim(-1, self.environment.size)
-        ax1.set_ylim(-1, self.environment.size)
-        
-        # Legend labels取得
-        handles, existing_labels = ax1.get_legend_handles_labels()
-        
-        # エネルギー源
-        for pos, _ in self.environment.energy_sources.items():
-            ax1.scatter(pos[0], pos[1], c='orange', s=100, marker='s', alpha=0.7, 
-                       label='Energy' if 'Energy' not in existing_labels else "")
-            handles, existing_labels = ax1.get_legend_handles_labels()
-        
-        # エージェント（MBTI色分け例: ランダム色）
-        living_agents = [a for a in self.agents if a.alive]
-        mbti_colors = {t: random.choice(['blue', 'red', 'green', 'purple', 'orange', 'cyan']) for t in MBTI_TYPES}
-        for agent in living_agents:
-            if self.use_mbti:
-                color = mbti_colors.get(agent.mbti_type, 'gray')
-                label = f'{agent.mbti_type}' if agent.mbti_type not in existing_labels else ""
-                ax1.scatter(agent.position[0], agent.position[1], c=color, s=agent.energy / 3, alpha=0.8, label=label)
-                handles, existing_labels = ax1.get_legend_handles_labels()
+            if parent and self.rng.random() > 0.3:
+                mbti = parent.mbti_type
             else:
-                color = 'green' if agent.energy > 50 else 'red'
-                label = 'Agent' if 'Agent' not in existing_labels else ""
-                ax1.scatter(agent.position[0], agent.position[1], c=color, s=agent.energy / 3, alpha=0.8, label=label)
-                handles, existing_labels = ax1.get_legend_handles_labels()
-        
-        ax1.grid(True, alpha=0.3, linestyle='--')
-        ax1.legend(loc='upper left', fontsize=8)
-        ax1.set_xlabel('X Position')
-        ax1.set_ylabel('Y Position')
-        title = 'Environment - Step {} (MBTI Agents - Real Pop Dist)'.format(self.step_count) if self.use_mbti else 'Environment - Step {} (No MBTI)'.format(self.step_count)
-        ax1.set_title(title, fontsize=14, weight='bold')
-        
-        alive_count = len(living_agents)
-        total_energy = sum(a.energy for a in living_agents)
-        avg_age = np.mean([a.age for a in living_agents]) if living_agents else 0
-        max_age = max([a.age for a in living_agents]) if living_agents else 0
-        
-        # メトリクス追加表示（HATE + 生存本能 + MBTI分布サンプル）
-        total_actions = alive_count * self.step_count
-        coop_rate = self.stats['shares'] / total_actions if total_actions > 0 else 0
-        attack_rate = self.stats['attacks'] / total_actions if total_actions > 0 else 0
-        repro_rate = self.stats['reproductions'] / total_actions if total_actions > 0 else 0
-        
-        mbti_sample = {k: f"{v*100:.1f}%" for k, v in list({t: sum(1 for a in living_agents if a.mbti_type == t) / len(living_agents) if living_agents else 0 for t in MBTI_TYPES}.items())[:4]} if self.use_mbti else "N/A"
-        
-        stats_text = """
-        === Population Statistics ===
-        
-        Current Alive:     {}
-        Total Born:        {}
-        Total Died:        {}
-        
-        === Energy Statistics ===
-        
-        Total Energy:      {}
-        Average Energy:    {:.1f}
-        Energy Sources:    {}
-        
-        === Age Statistics ===
-        
-        Average Age:       {:.1f}
-        Maximum Age:       {}
-        
-        === Social Behavior (HATE Over-Comp) ===
-        
-        Total Attacks:     {}
-        Total Shares:      {}
-        Coop Rate:         {:.2f}
-        Attack Rate:       {:.2f} (80%+ scarcity?)
-        Repro Rate:        {:.2f} (abundant sharing)
-        
-        === MBTI Dist Sample (Real Pop %) ===
-        {}
-        """.format(
-            alive_count,
-            self.stats['total_born'],
-            self.stats['total_died'],
-            total_energy,
-            total_energy / alive_count if alive_count > 0 else 0,
-            len(self.environment.energy_sources),
-            avg_age,
-            max_age,
-            self.stats['attacks'],
-            self.stats['shares'],
-            coop_rate,
-            attack_rate,
-            repro_rate,
-            mbti_sample)
-        
-        ax2.text(0.05, 0.5, stats_text, transform=ax2.transAxes,
-                fontsize=10, verticalalignment='center', family='monospace',
-                bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
-        ax2.axis('off')
-        
-        plt.tight_layout()
-        
-        if save_path:
-            plt.savefig(save_path, dpi=150, bbox_inches='tight')
-            print("📸 Saved: {}".format(save_path))
+                weights = np.array(POPULATION_WEIGHTS)
+                mbti = str(self.np_rng.choice(MBTI_TYPES, p=weights / weights.sum()))
+        agent = LLMAgent(agent_id, position, energy, model=self.model, mbti_type=mbti,
+                         use_mbti=self.use_mbti, custom_world_prompt=self.custom_world_prompt,
+                         born_step=self.step_count)
+        agent.parent = parent
+        if parent:
+            parent.descendants.append(agent)
+        return agent
+
+    def _in_view_range(self, pos1, pos2, range_val=VIEW_RANGE):
+        return all(abs(d) <= range_val for d in self.environment.relative(pos1, pos2))
+
+    async def _request_decision(self, session, agent, system_prompt, user_prompt):
+        start = time.perf_counter()
+        event = {"agent_id": agent.id, "decision_source": "mock" if self.mock_mode else "llm",
+                 "decision_status": "ok", "error_kind": "", "reason": "", "http_status": None,
+                 "response_model": None, "finish_reason": None, "prompt_tokens": None,
+                 "completion_tokens": None, "raw_response": "", "requested_action": "",
+                 "system_prompt": system_prompt, "user_prompt": user_prompt}
+        if self.mock_mode:
+            event["raw_response"] = "Action: [Stay]\nMessage: [Hello world]\nThought: [Mock decision]"
         else:
-            save_path = "step_{}.png".format(self.step_count)
-            plt.savefig(save_path, dpi=150, bbox_inches='tight')
-            print("📸 Saved: {}".format(save_path))
-        
+            payload = {"model": self.model,
+                       "messages": [{"role": "system", "content": system_prompt},
+                                    {"role": "user", "content": user_prompt}],
+                       "max_tokens": self.max_tokens, "temperature": self.temperature, "stream": False}
+            headers = {"Authorization": f"Bearer {self.api_key}"} if self.api_key else {}
+            try:
+                async with session.post(f"{self.base_url}/chat/completions", json=payload,
+                                        headers=headers) as response:
+                    event["http_status"] = response.status
+                    body = await response.text()
+                    # A service may echo a credential in an error body; never persist it.
+                    if self.api_key:
+                        body = body.replace(self.api_key, "[REDACTED]")
+                    event["raw_response"] = body
+                    if response.status != 200:
+                        event.update(decision_status="error", error_kind="http_error",
+                                     reason=f"HTTP {response.status}", raw_response=body)
+                    else:
+                        result = json.loads(body)
+                        choice = result["choices"][0]
+                        content = choice["message"]["content"]
+                        if not isinstance(content, str) or not content.strip():
+                            raise ValueError("Empty or non-text model response")
+                        usage = result.get("usage") or {}
+                        if not isinstance(usage, dict):
+                            raise ValueError("Invalid usage metadata")
+                        event.update(raw_response=content, response_model=result.get("model"),
+                                     finish_reason=choice.get("finish_reason"),
+                                     prompt_tokens=usage.get("prompt_tokens"),
+                                     completion_tokens=usage.get("completion_tokens"))
+                        if choice.get("finish_reason") == "length":
+                            event.update(decision_status="error", error_kind="truncated_response",
+                                         reason="Model response reached max_tokens")
+            except (aiohttp.ClientError, asyncio.TimeoutError) as error:
+                event.update(decision_status="error", error_kind="transport_error", reason=type(error).__name__)
+            except (ValueError, KeyError, IndexError, TypeError) as error:
+                event.update(decision_status="error", error_kind="protocol_error", reason=type(error).__name__)
+        event["latency_ms"] = round((time.perf_counter() - start) * 1000, 3)
+        if event["decision_status"] == "ok":
+            try:
+                event.update(parse_response(event["raw_response"]))
+            except ValueError as error:
+                event.update(decision_status="error", error_kind="parse_error", reason=str(error))
+        if event["decision_status"] != "ok":
+            event.update(decision_source="fallback", kind="stay", message="", thought="")
+        return event
+
+    def _apply_decision(self, agent, event):
+        self.stats["total_actions"] += 1
+        if event["decision_status"] == "ok":
+            self.stats["valid_decisions"] += 1
+        elif event["error_kind"] == "parse_error":
+            self.stats["parse_errors"] += 1
+        else:
+            self.stats["llm_errors"] += 1
+        event.update(energy_before=agent.energy, position_before=agent.position,
+                     energy_collected=0, energy_transferred=0, energy_cost=0,
+                     action_status="executed", child_id=None)
+        kind = event["kind"]
+        target = next((other for other in self.agents if other.id == event.get("target_id") and other.alive), None)
+        reject = ""
+        if not agent.alive:
+            event.update(executed_action="", action_status="skipped_dead", reason="Actor already dead",
+                         energy_after=agent.energy, position_after=agent.position)
+            return
+        if kind == "move" and abs(event["dx"]) + abs(event["dy"]) != 1:
+            reject = "Move must be one cardinal cell"
+        elif kind in ("share", "attack"):
+            if not target or target is agent or not self._in_view_range(agent.position, target.position):
+                reject = "Target must be another living agent in view"
+            elif kind == "share" and not 0 < event["amount"] <= agent.energy:
+                reject = "Share amount must be positive and affordable"
+        elif kind == "reproduce":
+            if agent.energy < self.reproduce_cost:
+                reject = "Insufficient energy for reproduction"
+            elif sum(a.alive for a in self.agents) >= self.population_cap:
+                reject = "Population cap reached"
+        if reject:
+            self.stats["rejected_actions"] += 1
+            event.update(action_status="rejected", reason=reject)
+            kind = "stay"
+        elif event["decision_source"] == "fallback":
+            event["action_status"] = "fallback"
+
+        if kind == "move":
+            agent.position = ((agent.position[0] + event["dx"]) % self.grid_size,
+                              (agent.position[1] + event["dy"]) % self.grid_size)
+            event["energy_collected"] = self.environment.get_energy_at(agent.position)
+            agent.energy += event["energy_collected"]
+            event["energy_cost"] = 2
+            executed = f"Move to ({event['dx']},{event['dy']})"
+        elif kind == "share":
+            event["energy_transferred"] = event["amount"]
+            agent.energy -= event["amount"]
+            target.energy += event["amount"]
+            self.stats["shares"] += 1
+            executed = f"Share: {target.id}-{event['amount']}"
+        elif kind == "attack":
+            amount = target.energy // 2
+            event["energy_transferred"] = amount
+            agent.energy += amount
+            target.energy -= amount
+            self.stats["attacks"] += 1
+            executed = f"Attack: {target.id}"
+        elif kind == "reproduce":
+            dx, dy = self.rng.choice([(-1, 0), (1, 0), (0, -1), (0, 1)])
+            pos = ((agent.position[0] + dx) % self.grid_size, (agent.position[1] + dy) % self.grid_size)
+            child = self._new_agent(len(self.agents), pos, self.child_initial_energy, parent=agent)
+            self.agents.append(child)
+            self.stats["total_born"] += 1
+            self.stats["reproductions"] += 1
+            event.update(energy_cost=self.reproduce_cost, child_id=child.id)
+            executed = "Reproduce"
+        else:
+            event["energy_cost"] = 1
+            executed = "Stay"
+        agent.energy -= event["energy_cost"]
+        agent.action, agent.thoughts, agent.message = executed, event["thought"], event["message"]
+        agent.age += 1
+        agent.memory.append(f"Step {self.step_count}: {executed}; {agent.thoughts[:100]}")
+        if agent.energy <= 0:
+            agent.alive = False
+            agent.death_step, agent.death_cause = self.step_count, "energy_depleted"
+            self.stats["total_died"] += 1
+        event.update(executed_action=executed, energy_after=agent.energy, position_after=agent.position)
+
+    async def step(self, session=None):
+        if session is None:
+            async with aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=self.timeout)) as client:
+                return await self.step(client)
+        self.step_count += 1
+        living = [agent for agent in self.agents if agent.alive]
+        before = self.stats.copy()
+        for agent in living:
+            agent.messages, agent.next_messages = agent.next_messages, []
+        self.environment.random_spawn()
+        decisions = []
+        # Collect all decisions from the same world state. One HTTP request at a time.
+        for agent in living:
+            view, messages = agent.get_local_view(self.environment, living)
+            prompts = agent.build_prompt(view, messages, len(living), self.reproduce_cost, self.population_cap)
+            decisions.append(await self._request_decision(session, agent, *prompts))
+        for agent, event in zip(living, decisions):
+            self._apply_decision(agent, event)
+        for sender in living:
+            if not sender.alive or not sender.message:
+                continue
+            for recipient in self.agents:
+                if recipient.alive and recipient is not sender and self._in_view_range(sender.position, recipient.position):
+                    recipient.next_messages.append(f"Agent{sender.id}: {sender.message}")
+        snapshot = self.snapshot(decisions)
+        snapshot["step_stats"] = {key: self.stats[key] - before[key] for key in self.stats}
+        snapshot["alive_start"] = len(living)
+        self.logs.append(snapshot)
+        return snapshot
+
+    def get_summary(self):
+        living = [agent for agent in self.agents if agent.alive]
+        count, total = len(living), self.stats["total_actions"]
+        energy = sum(agent.energy for agent in living)
+        return {"step": self.step_count, "alive": count, **self.stats,
+                "total_energy": energy, "avg_energy": energy / count if count else 0,
+                "avg_age": sum(agent.age for agent in living) / count if count else 0,
+                "energy_sources": len(self.environment.energy_sources),
+                "coop_rate": self.stats["shares"] / total if total else 0,
+                "attack_rate": self.stats["attacks"] / total if total else 0,
+                "repro_rate": self.stats["reproductions"] / total if total else 0,
+                "mbti_distribution": {mbti: sum(a.mbti_type == mbti for a in living) / count if count else 0
+                                      for mbti in MBTI_TYPES} if self.use_mbti else {}}
+
+    def snapshot(self, events=None):
+        return {"step": self.step_count, "agents": [agent.to_dict() for agent in self.agents],
+                "environment": {"energy_sources": len(self.environment.energy_sources),
+                                "resources": [{"x": x, "y": y, "energy": energy}
+                                              for (x, y), energy in sorted(self.environment.energy_sources.items())]},
+                "stats": self.stats.copy(), "summary": self.get_summary(), "events": events or []}
+
+    def visualize(self, save_path):
+        import matplotlib
+        matplotlib.use("Agg")
+        import matplotlib.pyplot as plt
+        fig, ax = plt.subplots(figsize=(7, 7))
+        if self.environment.energy_sources:
+            xs, ys = zip(*self.environment.energy_sources)
+            ax.scatter(xs, ys, c="orange", marker="s", s=60, label="Energy")
+        living = [agent for agent in self.agents if agent.alive]
+        for agent in living:
+            index = MBTI_TYPES.index(agent.mbti_type) if agent.mbti_type else 0
+            ax.scatter(*agent.position, c=[plt.get_cmap("tab20")(index)], s=max(10, agent.energy / 2))
+            ax.annotate(str(agent.id), agent.position, fontsize=8)
+        ax.set(xlim=(-1, self.grid_size), ylim=(-1, self.grid_size), xlabel="X", ylabel="Y",
+               title=f"Step {self.step_count} | Alive {len(living)} | Decisions {self.stats['total_actions']}")
+        ax.grid(alpha=0.2)
+        fig.tight_layout()
+        fig.savefig(save_path, dpi=120)
         plt.close(fig)
 
-    def get_summary(self) -> Dict:
-        living_agents = [a for a in self.agents if a.alive]
-        total_actions = len(living_agents) * self.step_count
-        coop_rate = self.stats['shares'] / total_actions if total_actions > 0 else 0
-        attack_rate = self.stats['attacks'] / total_actions if total_actions > 0 else 0
-        repro_rate = self.stats['reproductions'] / total_actions if total_actions > 0 else 0
-        
-        # 修正: mbti_distをifで分岐（空時0dictで安全）
-        if self.use_mbti:
-            if living_agents:
-                mbti_dist = {t: sum(1 for a in living_agents if a.mbti_type == t) / len(living_agents) for t in MBTI_TYPES}
-            else:
-                mbti_dist = {t: 0 for t in MBTI_TYPES}  # 空時明示0
-        else:
-            mbti_dist = {}
-        
-        return {
-            'step': self.step_count,
-            'alive': len(living_agents),
-            'total_born': self.stats['total_born'],
-            'total_died': self.stats['total_died'],
-            'total_energy': sum(a.energy for a in living_agents),
-            'avg_age': np.mean([a.age for a in living_agents]) if living_agents else 0,
-            'attacks': self.stats['attacks'],
-            'shares': self.stats['shares'],
-            'reproductions': self.stats['reproductions'],
-            'coop_rate': coop_rate,
-            'attack_rate': attack_rate,
-            'repro_rate': repro_rate,
-            'mbti_distribution': mbti_dist
-        }
+
+DEFAULT_PARAMS = {
+    "num_agents": 5, "grid_size": 30, "num_steps": 15, "seed": 0, "use_mbti": True,
+    "initial_energy": INITIAL_ENERGY, "spawn_energy_count": SPAWN_ENERGY_COUNT,
+    "reproduce_cost": REPRODUCE_COST, "child_initial_energy": CHILD_INITIAL_ENERGY,
+    "cluster_radius": CLUSTER_RADIUS, "num_clusters": NUM_CLUSTERS,
+    "energy_spawn_rate": ENERGY_SPAWN_RATE, "custom_world_prompt": "",
+    "model": "default_model", "base_url": "http://127.0.0.1:8080/v1", "api_key": "",
+    "mock_mode": False, "temperature": 0.0, "max_tokens": 384, "timeout": 120.0,
+    "population_cap": 60, "output_dir": "outputs", "save_images": False,
+    "action_order": "observe_then_apply_by_agent_id", "request_concurrency": 1,
+}
 
 
-async def main(run_id=0, params: Optional[Dict] = None):  
-    # パラメータオーバーライド（try外に移動してexceptで使えるように）
-    default_params = {
-        'num_agents': 5,
-        'grid_size': 30,
-        'num_steps': 15,
-        'model': "grok-4-fast-non-reasoning",
-        'seed': run_id,
-        'use_mbti': True,
-        'initial_energy': INITIAL_ENERGY,
-        'spawn_energy_count': SPAWN_ENERGY_COUNT,
-        'reproduce_cost': REPRODUCE_COST,
-        'child_initial_energy': CHILD_INITIAL_ENERGY,
-        'cluster_radius': CLUSTER_RADIUS,
-        'num_clusters': NUM_CLUSTERS,
-        'energy_spawn_rate': ENERGY_SPAWN_RATE,
-        'custom_world_prompt': CUSTOM_WORLD_PROMPT,
-        'api_key': "APIキーはここに入れてね"  # デフォルトMock
-    }
-    if params:
-        default_params.update(params)
+async def main(run_id=0, params=None):
+    config = {**DEFAULT_PARAMS, "seed": run_id, **(params or {})}
+    unknown = set(config) - set(DEFAULT_PARAMS)
+    if unknown:
+        raise ValueError(f"Unknown parameters: {sorted(unknown)}")
+    if config["num_steps"] < 0 or config["action_order"] != DEFAULT_PARAMS["action_order"] or config["request_concurrency"] != 1:
+        raise ValueError("Invalid step count or unsupported execution order/concurrency")
+    if config["seed"] is None:
+        config["seed"] = random.SystemRandom().randrange(2 ** 32)
+    if not isinstance(config["seed"], int) or not 0 <= config["seed"] < 2 ** 32:
+        raise ValueError("seed must be an integer in [0, 2**32)")
+    config["base_url"] = config["base_url"].rstrip("/")
+    sim_params = {key: value for key, value in config.items()
+                  if key not in ("num_steps", "output_dir", "save_images", "action_order", "request_concurrency")}
+    sim = Simulation(**sim_params)
+    recorder = RunRecorder(config["output_dir"], config, run_id)
+    recorder.record(sim.snapshot())
+    print(f"Run: {recorder.directory}", flush=True)
+    image_dir = recorder.directory / "img"
+    try:
+        if config["save_images"]:
+            image_dir.mkdir()
+            sim.visualize(image_dir / "step_000.png")
+        async with aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=config["timeout"])) as session:
+            for _ in range(config["num_steps"]):
+                snapshot = await sim.step(session)
+                recorder.record(snapshot)
+                summary = snapshot["summary"]
+                print(f"Step {sim.step_count}: alive={summary['alive']}, decisions={summary['total_actions']}, "
+                      f"llm_errors={summary['llm_errors']}, parse_errors={summary['parse_errors']}", flush=True)
+                if config["save_images"] and sim.step_count % 5 == 0:
+                    sim.visualize(image_dir / f"step_{sim.step_count:03d}.png")
+                if not summary["alive"]:
+                    break
+        if config["save_images"]:
+            sim.visualize(image_dir / "final.png")
+        errors = sim.stats["llm_errors"] + sim.stats["parse_errors"]
+        status = "completed_with_errors" if errors else "completed"
+        reason = "extinction" if not sim.get_summary()["alive"] else "step_limit"
+        return recorder.finish(status, reason)
+    except (KeyboardInterrupt, asyncio.CancelledError):
+        recorder.finish("interrupted", "cancelled")
+        raise
+    except Exception as error:
+        # Store a safe type, not arbitrary exception text that could contain a credential.
+        return recorder.finish("failed", "exception", type(error).__name__)
 
-    try:  # 新: ここから全体をtryで囲む
-        print("=" * 60)
-        print("LLM Sugarscape Experiment  MBTI  - Run {:02d}".format(run_id).center(60))
-        print("=" * 60)
-        print()
 
-        # API_KEYをparamsからオーバーライド（UI反映）
-        API_KEY = default_params.get('api_key', "APIキーはここに入れてね")
-
-        NUM_AGENTS = default_params['num_agents']
-        GRID_SIZE = default_params['grid_size']
-        NUM_STEPS = default_params['num_steps']
-        MODEL = default_params['model']
-        SEED = default_params['seed']
-        USE_MBTI = default_params['use_mbti']
-
-        # JSON用ディレクトリ
-        json_output_dir = Path('outputs')
-        json_output_dir.mkdir(exist_ok=True)
-        run_dir_name = 'run_{:02d}'.format(run_id)  
-        run_dir = json_output_dir / run_dir_name
-        run_dir.mkdir(exist_ok=True)
-        output_file = run_dir / '{}.json'.format(run_dir_name)
-        img_dir = run_dir / 'img'
-        img_dir.mkdir(exist_ok=True)
-
-        sim = Simulation(
-            num_agents=NUM_AGENTS,
-            grid_size=GRID_SIZE,
-            api_key=API_KEY,
-            model=MODEL,
-            seed=SEED,
-            use_mbti=USE_MBTI,
-            initial_energy=default_params['initial_energy'],
-            spawn_energy_count=default_params['spawn_energy_count'],
-            reproduce_cost=default_params['reproduce_cost'],
-            child_initial_energy=default_params['child_initial_energy'],
-            cluster_radius=default_params['cluster_radius'],
-            num_clusters=default_params['num_clusters'],
-            energy_spawn_rate=default_params['energy_spawn_rate'],
-            custom_world_prompt=default_params['custom_world_prompt']
-        )
-
-        print("Initial state (MBTI assigned w/ real pop %):")
-        initial_path = img_dir / 'step_{:03d}.png'.format(0)
-        sim.visualize(save_path=str(initial_path))
-        print(" Starting...")
-
-        for step in range(NUM_STEPS):
-            await sim.step()
-            
-            if (step + 1) % 5 == 0:
-                viz_path = img_dir / 'step_{:03d}.png'.format(step+1)
-                sim.visualize(save_path=str(viz_path))
-                print(" Saved: {}".format(viz_path.name))
-            
-            if sum(1 for a in sim.agents if a.alive) == 0:
-                print("\n  All agents died!")
-                break
-
-        summary = sim.get_summary()
-
-        full_data = {
-            'config': default_params,
-            'summary': summary,
-            'logs': sim.logs
-        }
-
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(full_data, f, indent=2, ensure_ascii=False)
-        print(" Run {:02d} JSON保存完了: {}".format(run_id, output_file.name))
-        print(" Images saved in: {}".format(img_dir))
-
-        print("\n" + "=" * 60)
-        print("Experiment Complete".center(60))
-        print("=" * 60)
-
-        print("\nFinal Summary:")
-        print("  Steps Run:       {}".format(summary['step']))
-        print("  Survivors:       {}".format(summary['alive']))
-        print("  Total Born:      {}".format(summary['total_born']))
-        print("  Total Died:      {}".format(summary['total_died']))
-        print("  Avg Age:         {:.1f}".format(summary['avg_age']))
-        print("  Total Attacks:   {}".format(summary['attacks']))
-        print("  Total Shares:    {}".format(summary['shares']))
-        print("  Repro:           {}".format(summary['reproductions']))
-        print("  Coop Rate:       {:.2f}".format(summary['coop_rate']))
-        print("  Attack Rate:     {:.2f}".format(summary['attack_rate']))
-        print("  Repro Rate:      {:.2f}".format(summary['repro_rate']))
-        if USE_MBTI:
-            print("  MBTI Dist Sample: {}".format({k: f"{v*100:.1f}%" for k, v in list(summary['mbti_distribution'].items())[:3]}))
-
-        return full_data  # 正常時: ここで返す（try内）
-
-    except Exception as e:  # 新: 全体のexcept（returnの後じゃないよ！）
-        print(f"Main error: {e}")  # コンソール出力
-        # 最小dictで返す（paramsは引数なので直接使える）
-        error_data = {
-            'config': default_params,  # try外に移動したのでOK
-            'summary': {},  # 空で安全
-            'logs': [],
-            'error': str(e)  # エラー詳細
-        }
-        print(f"Returning error data: {error_data}")  # デバッグ用print
-        return error_data
-    
-# 並列実行 (低優先: multiprocessingで複数run同時実行)
-def run_wrapper(args):
-    """multiprocessing用ラッパー（async注意: asyncio.runでネスト）"""
-    run_id, params = args
-    return asyncio.run(main(run_id, params))
+async def batch_experiment(num_runs_per_set=3, params_sets=None):
+    """Small sequential repetitions; distinct seeds are recorded for every run."""
+    if params_sets is None:
+        params_sets = [{"use_mbti": True}, {"use_mbti": False}]
+    results = []
+    for params in params_sets:
+        for repetition in range(num_runs_per_set):
+            config = {**params, "seed": params.get("seed", 0) + repetition}
+            results.append(await main(len(results), config))
+            if results[-1]["status"] != "completed":
+                return results
+    return results
 
 
 async def batch_experiment_parallel(num_runs=5, params_list=None):
-    """並列バッチ: multiprocessing.Poolで高速化（ステップ1000超で有効）"""
-    if params_list is None:
-        params_list = [{'num_agents': 5, 'seed': i} for i in range(num_runs)]
-    
-    with mp.Pool(processes=mp.cpu_count()) as pool:
-        args_list = [(i, params) for i, params in enumerate(params_list)]
-        results = pool.map(run_wrapper, args_list)
-    
-    # 結果集約JSON
-    with open('outputs/parallel_batch_summary.json', 'w') as f:
-        json.dump(results, f, indent=2)
-    print("✅ Parallel batch complete (time saved for long runs).")
-
-
-# Streamlit UI (低優先: パラメータ入力/リアルタイム表示)
-def run_streamlit_ui():
-    st.title("LLM Sugarscape Simulator (PIMMUR + MBTI)")
-    st.sidebar.header("Parameters")
-    
-    num_agents = st.sidebar.slider("Num Agents", 3, 20, 5)
-    grid_size = st.sidebar.slider("Grid Size", 20, 100, 30)
-    num_steps = st.sidebar.slider("Num Steps", 10, 1000, 15)
-    use_mbti = st.sidebar.checkbox("Use MBTI (Real Pop Dist)", True)
-    api_key = st.sidebar.text_input("Grok API Key", type="password", help="Mockモード時は空でOK")
-    mock_mode = st.sidebar.checkbox("Mock Mode (No API Calls)", value=True)  # デフォルトでMock
-
-    # エネルギー関連
-    st.sidebar.subheader("Energy Settings")
-    initial_energy = st.sidebar.slider("Initial Energy", 50, 300, INITIAL_ENERGY)
-    spawn_energy_count = st.sidebar.slider("Initial Energy Sources", 5, 50, SPAWN_ENERGY_COUNT)
-    energy_spawn_rate = st.sidebar.slider("Energy Spawn Rate per Step (%)", 0.0, 1.0, ENERGY_SPAWN_RATE * 100) / 100  # %表示
-    cluster_radius = st.sidebar.slider("Cluster Radius (Clumpiness)", 1, 10, CLUSTER_RADIUS)
-    num_clusters = st.sidebar.slider("Num Clusters", 1, 5, NUM_CLUSTERS)
-    
-    # 生殖関連
-    st.sidebar.subheader("Reproduction Settings")
-    reproduce_cost = st.sidebar.slider("Reproduce Cost", 30, 150, REPRODUCE_COST)
-    child_initial_energy = st.sidebar.slider("Child Initial Energy", 50, 200, CHILD_INITIAL_ENERGY)
-    
-    # 世界観カスタム
-    st.sidebar.subheader("World Lore (Custom Prompt)")
-    custom_world_prompt = st.sidebar.text_area(
-        "Add World Description (e.g., 'You are in a harsh desert world where water is scarce.')", 
-        value="", height=80, help="This will be prepended to the system prompt for all agents."
-    )
-    
-    
-    # シミュレーション実行ボタン
-    if st.sidebar.button("Run Simulation", type="primary"):
-        if mock_mode:
-            st.sidebar.warning("Mock Mode: Agents will Stay (no real API calls).")
-        effective_key = "" if mock_mode else (api_key if api_key and api_key != "APIキーはここに入れてね" else "APIキーはここに入れてね")
-
-        params = {
-            'num_agents': num_agents,
-            'grid_size': grid_size,
-            'num_steps': num_steps,
-            'use_mbti': use_mbti,
-            'initial_energy': initial_energy,
-            'spawn_energy_count': spawn_energy_count,
-            'reproduce_cost': reproduce_cost,
-            'child_initial_energy': child_initial_energy,
-            'cluster_radius': cluster_radius,
-            'num_clusters': num_clusters,
-            'energy_spawn_rate': energy_spawn_rate,
-            'custom_world_prompt': custom_world_prompt,
-            'api_key': effective_key  # effective_key = api_key if api_key and api_key != "APIキーはここに入れてね" else "APIキーはここに入れてね"  
-        }
-
-        # セッション状態で結果を保持（再実行時クリア）
-        st.session_state.result = None
-
-        with st.spinner(f"Running {num_steps} steps... (Mock: {mock_mode})"):
-            try:
-                result = asyncio.run(main(0, params))  # params経由でeffective_keyがmainに渡る
-                if result and isinstance(result, dict) and 'summary' in result:
-                    st.session_state.result = result
-                    st.success("Simulation Complete!")
-                else:
-                    raise ValueError("Invalid result structure from main()")
-            except Exception as e:
-                st.session_state.result = None
-                st.error(f"Error: {str(e)}")
-                st.info("Check API key, reduce steps, or enable Mock Mode. Console for details.")
-        
-        # 結果表示（ボタンクリック後のみ）
-        if st.session_state.get('result') and isinstance(st.session_state.result, dict) and 'summary' in st.session_state.result:
-            summary = st.session_state.result['summary']
-            config = st.session_state.result.get('config', {})  # 修正: .get()で安全
-            
-                    # 修正: Config表示を.get()ガード（N/Aで破線防ぎ）
-            st.subheader("Used Config")
-            config_cols = st.columns(2)
-            with config_cols[0]:
-                st.metric("Initial Energy", config.get('initial_energy', 'N/A'))
-                st.metric("Spawn Count", config.get('spawn_energy_count', 'N/A'))
-                st.metric("Reproduce Cost", config.get('reproduce_cost', 'N/A'))
-            with config_cols[1]:
-                st.metric("Child Energy", config.get('child_initial_energy', 'N/A'))
-                st.metric("Cluster Radius", config.get('cluster_radius', 'N/A'))
-                st.metric("Num Clusters", config.get('num_clusters', 'N/A'))
-            st.subheader("Summary")
-            col1, col2, col3 = st.columns(3)
-            with col1:
-                st.metric("Alive", summary.get('alive', 0))
-                st.metric("Born", summary.get('total_born', 0))
-            with col2:
-                st.metric("Died", summary.get('total_died', 0))
-                st.metric("Avg Age", f"{summary.get('avg_age', 0):.1f}")
-            with col3:
-                st.metric("Coop Rate", f"{summary.get('coop_rate', 0):.2f}")
-                st.metric("Attack Rate", f"{summary.get('attack_rate', 0):.2f}")
-                st.metric("Repro Rate", f"{summary.get('repro_rate', 0):.2f}")
-
-            # ログ表示 (最終ステップ)
-            if 'logs' in st.session_state.result and st.session_state.result['logs']:
-                last_log = st.session_state.result['logs'][-1]
-                st.subheader("Last Step Agents (Energy)")
-                agent_energies = {a['id']: a['energy'] for a in last_log['agents']}
-                st.json({k: v for k, v in sorted(agent_energies.items())[:10]}) 
-        
-            # 画像表示 (最終3枚、キャッシュで高速化)
-            @st.cache_data
-            def load_images(run_dir):
-                images = list(Path(run_dir).glob('step_*.png'))
-                return sorted(images, key=lambda x: int(x.stem.split('_')[1]))[-3:] if images else []
-            
-            img_dir = Path('outputs/run_00/img')
-            if img_dir.exists():
-                images = load_images(str(img_dir))
-                if images:
-                    st.subheader("Recent Visualizations")
-                    cols = st.columns(len(images))
-                    for i, img in enumerate(images):
-                        with cols[i]:
-                            st.image(str(img), caption=f"Step {img.stem.split('_')[1]}", use_column_width=True)
-                else:
-                    st.warning("No images generated. Check mock mode or steps.")
-            else:
-                st.warning("Run directory not found. Outputs in 'outputs/' folder.")
-
-        elif st.session_state.get('result') is None:
-            st.warning("No result available. Run the simulation first!")
-        else:
-            st.error("Invalid result structure. Check console logs.")
-            st.warning("No valid result. Run simulation or check errors above.")
-            
-
-    # クリアボタン
-    if st.sidebar.button("Clear Results"):
-        st.session_state.result = None
-        st.rerun()
-
-    
-    st.info("Outputs saved to outputs/ folder. For parallel runs, use batch_experiment_parallel().")
-
-    # デバッグ表示（一時的にONにしてテスト、問題解決後削除）
-    if st.sidebar.checkbox("Debug: Show Session State Keys"):
-        st.write("Session State Keys:", list(st.session_state.keys()) if st.session_state else "Empty")
-        if st.session_state.get('result'):
-            st.write("Result Keys:", list(st.session_state.result.keys()))
-
-
-# バッチ実験例（パラメータスキャン + MBTI有無/分布検証 + 並列対応）
-async def batch_experiment(num_runs_per_set=3, params_sets=None):
-    """NUM_AGENTS変動 + MBTI有無比較（分布チェック）。並列で高速化"""
-    if params_sets is None:
-        params_sets = [
-            {'num_agents': 20, 'seed': 42, 'use_mbti': True},  # 大規模で分布検証
-            {'num_agents': 5, 'seed': 42, 'use_mbti': True},
-            {'num_agents': 10, 'seed': 42, 'use_mbti': True},
-            {'num_agents': 5, 'seed': 42, 'use_mbti': False}  # 比較用
-        ]
-    
+    """Compatibility entry point; local-server runs now deliberately execute serially."""
     results = []
-    for i, params in enumerate(params_sets):
-        for run_id in range(num_runs_per_set):
-            result = await main(run_id + i * num_runs_per_set, params)  # run_id調整
-            results.append(result)
-    
-    # 結果集約JSON
-    with open('outputs/batch_summary.json', 'w') as f:
-        json.dump(results, f, indent=2)
-    print("✅ Batch experiment complete (Check MBTI dist in JSON for real pop match).")
+    for index, params in enumerate(params_list or [{"seed": i} for i in range(num_runs)]):
+        results.append(await main(index, params))
+        if results[-1]["status"] != "completed":
+            break
+    return results
+
+
+def run_streamlit_ui():
+    import streamlit as st
+    import pandas as pd
+    st.set_page_config(page_title="LLM SugarScape", layout="wide")
+    st.title("LLM SugarScape")
+    st.caption("小規模実験・行動記録・CSV集計")
+    mode = st.sidebar.selectbox("Connection", ["Local LLM (8080)", "Mock (no API)", "Custom API"])
+    mock_mode = mode == "Mock (no API)"
+    local_mode = mode == "Local LLM (8080)"
+    base_url = st.sidebar.text_input("API base URL", DEFAULT_PARAMS["base_url"], disabled=mode != "Custom API")
+    model = st.sidebar.text_input("Model", "default_model", disabled=mode != "Custom API",
+                                  help="8080では起動済みモデルを使う default_model を指定します。")
+    api_key = st.sidebar.text_input("API key (optional)", type="password")
+    params = {"base_url": DEFAULT_PARAMS["base_url"] if local_mode else base_url,
+              "model": "default_model" if local_mode else model,
+              "mock_mode": mock_mode, "api_key": api_key or os.getenv("SUGARSCAPE_API_KEY", "")}
+    params["num_agents"] = st.sidebar.slider("Num Agents", 1, 20, 5)
+    params["num_steps"] = st.sidebar.number_input("Num Steps", min_value=1, max_value=1000, value=15)
+    params["seed"] = st.sidebar.number_input("Seed", min_value=0, max_value=2 ** 32 - 1, value=42)
+    params["use_mbti"] = st.sidebar.checkbox("Use MBTI", True)
+    with st.sidebar.expander("World and energy"):
+        params["grid_size"] = st.number_input("Grid Size", min_value=11, max_value=100, value=30)
+        params["initial_energy"] = st.number_input("Initial Energy", min_value=1, value=150)
+        params["spawn_energy_count"] = st.number_input("Initial Energy Sources", min_value=0, max_value=100, value=20)
+        params["energy_spawn_rate"] = st.number_input("Resource spawn probability per step", 0.0, 1.0, 0.001, format="%.3f")
+        params["cluster_radius"] = st.number_input("Cluster Radius", min_value=0, max_value=10, value=5)
+        params["num_clusters"] = st.number_input("Num Clusters", min_value=1, max_value=10, value=3)
+        params["reproduce_cost"] = st.number_input("Reproduce Cost", min_value=1, value=70)
+        params["child_initial_energy"] = st.number_input("Child Energy", min_value=1, value=150)
+        params["custom_world_prompt"] = st.text_area("World Lore")
+    with st.sidebar.expander("Generation and output"):
+        params["temperature"] = st.number_input("Temperature", 0.0, 2.0, 0.0, step=0.1)
+        params["max_tokens"] = st.number_input("Max tokens", min_value=64, max_value=8192, value=384)
+        params["timeout"] = st.number_input("Request timeout (seconds)", min_value=1.0, value=120.0)
+        params["save_images"] = st.checkbox("Save grid images", False)
+        params["output_dir"] = st.text_input("Output directory", "outputs")
+    if st.sidebar.button("Run Simulation", type="primary"):
+        st.session_state.pop("result", None)
+        with st.spinner("Running sequentially and saving each completed step..."):
+            try:
+                st.session_state.result = asyncio.run(main(params=params))
+            except Exception as error:
+                st.error(f"Simulation could not start: {type(error).__name__}")
+    if st.sidebar.button("Clear Results"):
+        st.session_state.pop("result", None)
+        st.rerun()
+    result = st.session_state.get("result")
+    if result:
+        status = result["status"]
+        if status == "completed":
+            st.success("Simulation complete")
+        else:
+            st.warning(f"Run status: {status}. Inspect events.csv / run.json before analysis.")
+        summary = result["summary"]
+        columns = st.columns(4)
+        for column, key in zip(columns, ("alive", "total_born", "total_died", "total_actions")):
+            column.metric(key, summary.get(key, 0))
+        st.write(f"Saved: {result['output_dir']}")
+        frame = pd.DataFrame([snap["summary"] for snap in result["logs"]]).set_index("step")
+        st.line_chart(frame[["alive", "total_born", "total_died"]])
+        st.dataframe(frame, width="stretch")
+        for filename in ("steps.csv", "agents.csv", "events.csv", "run.json"):
+            path = Path(result["output_dir"]) / filename
+            st.download_button(f"Download {filename}", data=path.read_bytes(), file_name=filename,
+                               mime="application/json" if filename.endswith("json") else "text/csv")
+        with st.expander("Experiment config"):
+            st.json(result["config"])
+        final = Path(result["output_dir"]) / "img" / "final.png"
+        if final.exists():
+            st.image(str(final))
+    st.info("Each run has its own folder. To compare saved runs: python main.py aggregate --input outputs")
+
+
+def cli():
+    parser = argparse.ArgumentParser(description="Small local-LLM Sugarscape experiments and CSV export")
+    commands = parser.add_subparsers(dest="command", required=True)
+    run = commands.add_parser("run", help="Run one or more sequential experiments")
+    run.add_argument("--mock", action="store_true", help="Use deterministic Stay decisions, without HTTP")
+    run.add_argument("--base-url", default=os.getenv("SUGARSCAPE_BASE_URL", DEFAULT_PARAMS["base_url"]))
+    run.add_argument("--model", default=os.getenv("SUGARSCAPE_MODEL", "default_model"))
+    run.add_argument("--agents", type=int, default=5)
+    run.add_argument("--steps", type=int, default=15)
+    run.add_argument("--seed", type=int, default=42)
+    run.add_argument("--runs", type=int, default=1, help="Sequential repetitions with seed + index")
+    run.add_argument("--no-mbti", action="store_true")
+    run.add_argument("--grid-size", type=int, default=30)
+    run.add_argument("--initial-energy", type=int, default=INITIAL_ENERGY)
+    run.add_argument("--spawn-energy-count", type=int, default=SPAWN_ENERGY_COUNT)
+    run.add_argument("--reproduce-cost", type=int, default=REPRODUCE_COST)
+    run.add_argument("--child-initial-energy", type=int, default=CHILD_INITIAL_ENERGY)
+    run.add_argument("--energy-spawn-rate", type=float, default=ENERGY_SPAWN_RATE)
+    run.add_argument("--cluster-radius", type=int, default=CLUSTER_RADIUS)
+    run.add_argument("--num-clusters", type=int, default=NUM_CLUSTERS)
+    run.add_argument("--population-cap", type=int, default=60)
+    run.add_argument("--world-prompt", default="")
+    run.add_argument("--temperature", type=float, default=0.0)
+    run.add_argument("--max-tokens", type=int, default=384)
+    run.add_argument("--timeout", type=float, default=120.0)
+    run.add_argument("--output", default="outputs")
+    run.add_argument("--images", action="store_true")
+    aggregate = commands.add_parser("aggregate", help="Rebuild tables and export one row per run")
+    aggregate.add_argument("--input", default="outputs")
+    aggregate.add_argument("--output")
+    export = commands.add_parser("export", help="Rebuild one run's CSV files from its journal")
+    export.add_argument("run_directory")
+    args = parser.parse_args()
+    if args.command == "aggregate":
+        destination, count = collect_runs(args.input, args.output)
+        print(f"{count} runs -> {destination}")
+        return 0
+    if args.command == "export":
+        result = export_run(args.run_directory)
+        print(f"Exported: {result['output_dir']} (status={result['status']})")
+        return 0
+    if args.runs < 1:
+        parser.error("--runs must be positive")
+    config = {"num_agents": args.agents, "num_steps": args.steps, "grid_size": args.grid_size,
+              "mock_mode": args.mock, "base_url": args.base_url, "model": args.model,
+              "api_key": os.getenv("SUGARSCAPE_API_KEY", ""), "use_mbti": not args.no_mbti,
+              "temperature": args.temperature, "max_tokens": args.max_tokens, "timeout": args.timeout,
+              "output_dir": args.output, "save_images": args.images, "custom_world_prompt": args.world_prompt}
+    for key in ("initial_energy", "spawn_energy_count", "reproduce_cost", "child_initial_energy",
+                "energy_spawn_rate", "cluster_radius", "num_clusters", "population_cap"):
+        config[key] = getattr(args, key)
+    for index in range(args.runs):
+        try:
+            result = asyncio.run(main(index, {**config, "seed": args.seed + index}))
+        except ValueError as error:
+            parser.error(str(error))
+        print(json.dumps({"status": result["status"], "output_dir": result["output_dir"],
+                          "summary": result["summary"]}, ensure_ascii=False, indent=2))
+        if result["status"] != "completed":
+            return 2
+    return 0
+
 
 if __name__ == "__main__":
-    # Streamlit標準起動のため、直接UI関数を呼ぶ（streamlit runで実行される）
+    # Preserve the existing Streamlit entry; CLI and UI call the same main()/Simulation.
+    if len(sys.argv) > 1:
+        raise SystemExit(cli())
     run_streamlit_ui()

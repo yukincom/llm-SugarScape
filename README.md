@@ -1,57 +1,46 @@
-# LLM-SugarScape β（MBTI）
+# LLM SugarScape
 
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![xAI Grok](https://img.shields.io/badge/API-xAI%20Grok-purple)](https://x.ai/api)
+ローカルLLMによる小規模なエージェント実験。行動・個体履歴・人口やエネルギーの推移をCSV/JSONに保存します。
+元の着想は [Sugarscape-style simulation 論文](https://arxiv.org/abs/2508.12920)。ルールやプロンプトには独自変更があり、論文の厳密な再現ではありません。
 
-**Grok-4-Fast Sugarscape Simulation**
+## 起動
 
-This project aims to replicate the experiment "Do Large Language Model Agents Exhibit a Survival Instinct? An Empirical Study in a Sugarscape-Style Simulation" [arXiv:2508.12920](https://arxiv.org/abs/2508.12920).
-It uses Grok-4-Fast non-reasoning agents within a Sugarscape-style environment.
+Python 3.11以上を使用します。
 
-It’s designed for playful experimentation and qualitative observation of AI agent behavior such as emergent alliances or betrayal behaviors under scarcity of energy and resources, cooperation, and survival pressures.
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/streamlit run main.py
+```
 
-If you find any interesting data, please share it!  
- → [@yukin_co on X](https://x.com/yukin_co)
+画面の初期接続先は `http://127.0.0.1:8080/v1`、モデル名は `default_model` です。先にローカルのOpenAI互換サーバーを起動してください。既存のMLXサーバーでは起動済みモデルを使用します。MockはAPIなしで全個体が待機する動作確認用です。Custom APIでは接続先とモデル名を変更できます。
 
+## 小規模実験と集計
 
-## Quick Start
-1. **Clone the repo**:
-2. **Install dependencies**:<br>
-- git clone https://github.com/yukincom/llm-SugarScape.git
-- cd llm-SugarScape  
-- pip install -r requirements.txt
-3.**Run**:
-- streamlit run main.py 
-  <BR>
-- generates JSON and PNG visualizations (step_*.png,final.png).
-- Mock mode (no API key) for testing.
+```bash
+# 実LLM：2個体、3ステップ
+.venv/bin/python main.py run --agents 2 --steps 3 --seed 42
 
-##  Features
-- **LLM Decision-Making**: Grok-4-Fast agents reason about survival (move, attack, share, reproduce).
-- **Survival Mechanics**: Resource gathering, bidirectional messaging for alliances/betrayals.
-- **Visualization**: Matplotlib grid with agent positions/energy levels.
-- **Customizable**: Low-energy mode for extinction tests, reproduction for herd growth.
+# APIを使わず保存・集計経路を確認
+.venv/bin/python main.py run --mock --agents 3 --steps 5
 
-##  Code Structure
-- `Environment`: Grid & energy management (torus boundary).
-- `LLMAgent`: LLM call + action execution (prompt for survival thoughts).
-- `Simulation`: Step execution + stats output.
+# seedを42、43、44と変えて逐次実行
+.venv/bin/python main.py run --agents 3 --steps 10 --seed 42 --runs 3
 
-## Sample Output 
-(Agent's Thought):<br>
-Energy is critically low at 29; can't afford to stay idle or risk attack. Agent1 is nearby but not adjacent, so moving east gets closer to potential interaction or shared resources. No E in view, so exploration is key. Feeling cautious—avoid aggression unless threatened, focus on cooperation or evasion to build energy.
+# outputs直下の実験を1行ずつにまとめる
+.venv/bin/python main.py aggregate --input outputs
+```
 
-## Visualization Example
+各実験は `outputs/<一意のrun_id>/` に保存されます。`steps.csv` は時系列、`agents.csv` は個体履歴、`events.csv` は判断と実行結果、`run.json` はプロンプト・生応答を含む詳細、`manifest.json` は条件と実行状態です。`aggregate` は `runs.csv` を作ります。画像は `--images` で追加できます。
 
-![https://github.com/yukincom/llm-SugarScape/img/step_10.png](https://github.com/yukincom/llm-SugarScape/blob/main/img/UI.png)
-![https://github.com/yukincom/llm-SugarScape/img/step_10.png](https://github.com/yukincom/llm-SugarScape/blob/main/img/step_005.png)
-*Agents (colored circles) competing for energy sources (orange squares)*
+APIキーが必要な場合は画面か環境変数 `SUGARSCAPE_API_KEY` に設定します。キーは保存しません。CLIでは `SUGARSCAPE_BASE_URL` と `SUGARSCAPE_MODEL` も利用できます。
 
-##  Documentation
-- [Note](https://note.com/yukin_co/n/neb0a321d4539)- Research episodes (Japanese).
-- Topics: agent-based-modeling, llm-simulation, sugarscape, xai-grok.
+統計に使う前に `status` とエラー件数を確認してください。列の定義、ルール、旧データとの違い、検証結果は [データ仕様と開発記録](docs/2026-10-08-local-llm-data.md) を参照してください。
 
-##  Contributing
-Issues/PR welcome! Suggest new features (e.g., UI addition).
+## テスト
 
+```bash
+.venv/bin/python -m unittest discover -s tests -v
+```
+
+[MIT License](LICENSE) · [実験記録（Note）](https://note.com/yukin_co/n/neb0a321d4539)

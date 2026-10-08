@@ -205,3 +205,8 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Per-experiment data and local renderer cache
+outputs/
+.mplconfig/
+.DS_Store
