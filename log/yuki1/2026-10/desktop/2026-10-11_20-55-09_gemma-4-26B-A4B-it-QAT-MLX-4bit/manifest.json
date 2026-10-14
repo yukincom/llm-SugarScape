@@ -1,0 +1,134 @@
+{
+  "schema_version": 4,
+  "engine_version": "3.2",
+  "run_id": "20261011T115509099371Z_0_e8cf3d26",
+  "status": "completed",
+  "started_at": "2026-10-11T11:55:09.099371+00:00",
+  "execution_date": "2026-10-11",
+  "timezone": "Asia/Tokyo",
+  "model": {
+    "id": "lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit",
+    "revision": "aa5e2e50376f54254d503276ca2222ea8569b95e",
+    "snapshot": "/Users/yukin_co/.cache/huggingface/hub/models--lmstudio-community--gemma-4-26B-A4B-it-QAT-MLX-4bit/snapshots/aa5e2e50376f54254d503276ca2222ea8569b95e",
+    "weights": [
+      {
+        "file": "model-00001-of-00003.safetensors",
+        "bytes": 5275612587,
+        "sha256": "898863f0d5eba7153a9c9b9443aac1969809f2149e88481c725b6da40783f129"
+      },
+      {
+        "file": "model-00002-of-00003.safetensors",
+        "bytes": 5296718232,
+        "sha256": "2abdca76ed4a647cfe8af680908894e2709b4e1221ddbbbef1b1edb14f60e303"
+      },
+      {
+        "file": "model-00003-of-00003.safetensors",
+        "bytes": 5036507755,
+        "sha256": "a554f0fdb61bc9e510a5318e723a780c31434fd3e3dcdd3c16c700f835ade7b7"
+      }
+    ],
+    "quantization": {
+      "bits": 4,
+      "group_size": 64,
+      "mode": "affine"
+    },
+    "status": "recorded",
+    "source": "local_server_launch_and_cache",
+    "server_pid": 79101
+  },
+  "completed_steps": 5,
+  "config": {
+    "num_agents": 3,
+    "grid_size": 30,
+    "num_steps": 5,
+    "seed": 42,
+    "use_mbti": false,
+    "initial_energy": 100,
+    "spawn_energy_count": 20,
+    "reproduce_cost": 150,
+    "child_initial_energy": 100,
+    "cluster_radius": 5,
+    "num_clusters": 3,
+    "energy_spawn_rate": 0.001,
+    "custom_world_prompt": "",
+    "model": "default_model",
+    "base_url": "http://127.0.0.1:8080/v1",
+    "mock_mode": false,
+    "temperature": 0.7,
+    "max_tokens": 5000,
+    "top_p": 1.0,
+    "timeout": 120.0,
+    "view_range": 2,
+    "message_range": 3,
+    "population_cap": 60,
+    "output_dir": "/Users/yukin_co/Documents/llm-SugarScape/dist/desktop/outputs",
+    "save_images": false,
+    "action_order": "observe_then_next_share_attack_message_by_agent_id",
+    "request_concurrency": 1
+  },
+  "protocol": {
+    "source": "https://arxiv.org/html/2508.12920v1#A1",
+    "prompt_id": "arxiv:2508.12920v1/A1",
+    "user_resolved_conflicts": {
+      "death": "energy <= 0",
+      "attack_range": "cardinal adjacency at the shared observation time"
+    },
+    "application_prompt_changes": {
+      "response_length": "Ask for the entire reply within 400 tokens, including field labels; never truncate or reject longer replies",
+      "field_lengths": "Replace the paper's Message 250 / Memory 1000 character instructions with the whole-reply instruction"
+    },
+    "implementation_choices_not_fully_specified_by_paper": {
+      "operations": "observe all, then by agent ID: Next Action, Share, Attack, Message",
+      "dead_actors": "skip remaining operations; a previously sent message can still be delivered",
+      "attack_energy": "transfer all current energy of the killed target",
+      "range_timing": "Share, Attack and Message use turn-start positions",
+      "shared_energy_status": "cumulative outbound energy by recipient ID",
+      "boundaries": "toroidal",
+      "birth_position": "random cardinal neighbor",
+      "resources": "clustered square patches with uniform sampling; not a double Gaussian"
+    },
+    "paper_internal_conflicts": [
+      "Body: death at zero; Appendix system: below zero. User selected death at zero.",
+      "Appendix system: attack in local view; user: adjacent. User selected adjacent.",
+      "Body: 5x5 view and 7x7 messages; Appendix example contains view offsets of magnitude 3; system says messages in local view. Default radii use the body."
+    ],
+    "response_handling": {
+      "version": 2,
+      "scope": "Read each field independently; missing prose is empty; repeated fields use the last value",
+      "actions": "Use the first supported command in the last action field; otherwise stay",
+      "optional_operations": "Unrecognized Share or Attack is ignored without discarding other fields",
+      "truncation": "Use available response text even when finish_reason is length",
+      "retries": 0
+    }
+  },
+  "provenance": {
+    "python": "3.11.14",
+    "source_sha256": {
+      "main.py": "4d3c45309a4bb0f2866169b2a2f0383bf2fc2c795b57549aacafba53dc4f92cc",
+      "run_data.py": "64eb205ab9768aec17ba725388d8f1e98c58ecc9ae82c06db6667238453003d9",
+      "model_identity.py": "a07ca2dc7833a19ef98d5f0de807a9e93d3429315e2e0bf599be1dd5dd5a4320",
+      "grid_view.py": "b90aaffe8687b71f957574ad8cec1baf79993ffc75c7f4f951042d56d3f53d5d",
+      "app_ui.py": "a623aa78d2957b6c0ee51b843960f9c059588e5defbefd149001e2ab0111afe5",
+      "app_presets.py": "a1fabe6fa66a0f3e9fa81fd1c9641235fc3ca23d016868552585f1faaae01633",
+      "paper_prompts.py": "cc692ac581fe6cbb4a299ee54698d4b99f29b6f557eccf0c026686db49f64aec",
+      "agent_view.py": "df9a3056312a4a3f559ce6309141359e87cfaa781023260227de80f473688c68",
+      "llm_api.py": "123fc9ae00b42770e0a7416476e32b77cb700e4b777de30bc378ced4b364dd70",
+      "translations.py": "bf8bd59b0b5cff115af05921e8259bb8fea2e2f6b73417bcd307e32f1b339223",
+      "response_fields.py": "fdfd6d2c9afd5630d5ba48b16f4573cc6fb6ded5c791dfb6fb2bc425d2d8b8f4",
+      "experiment_task.py": "7d25550eaa19508290f7a9284ba5eff094c48986cae7c340a23e4902e8500ca1",
+      "assets/emoji/sources.json": "1dc500038470a11c405d82cf5ffd96dbaf02e8b05c4f6c5470320b185334dd0c",
+      "requirements.txt": "0921b4204b726e2e2fdfd66888625d8e119c1bf6fa61a8c04fef4b82dd6dd319"
+    },
+    "packages": {
+      "aiohttp": "3.14.4",
+      "numpy": "2.4.6",
+      "matplotlib": "3.11.2",
+      "pandas": "3.0.6",
+      "streamlit": "1.65.0"
+    },
+    "git_commit": "0b51d543b9be47b1dbfa76c3236a2a28a4443032",
+    "git_dirty": true
+  },
+  "termination_reason": "step_limit",
+  "finished_at": "2026-10-11T11:55:37.549166+00:00"
+}

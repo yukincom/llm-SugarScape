@@ -1,0 +1,117 @@
+{
+  "schema_version": 4,
+  "engine_version": "3.1",
+  "run_id": "20261009T224740528170Z_0_a6c2313f",
+  "status": "completed_with_errors",
+  "started_at": "2026-10-09T22:47:40.528170+00:00",
+  "execution_date": "2026-10-10",
+  "timezone": "Asia/Tokyo",
+  "model": {
+    "id": "mlx-community/Qwen3.5-2B-6bit",
+    "revision": "ba2bcf03dd5b502646de7e32b003cf538f2ca4d6",
+    "snapshot": "/Users/yukin_co/.cache/huggingface/hub/models--mlx-community--Qwen3.5-2B-6bit/snapshots/ba2bcf03dd5b502646de7e32b003cf538f2ca4d6",
+    "weights": [
+      {
+        "file": "model.safetensors",
+        "bytes": 2192591075,
+        "sha256": "e2c78893f7cb9d1c176688861bb31614af7ee097ff5e6bbfc504b4230daef80b"
+      }
+    ],
+    "quantization": {
+      "bits": 6,
+      "group_size": 64,
+      "mode": "affine"
+    },
+    "status": "recorded",
+    "source": "local_server_launch_and_cache",
+    "server_pid": 63810
+  },
+  "completed_steps": 30,
+  "config": {
+    "num_agents": 3,
+    "grid_size": 30,
+    "num_steps": 30,
+    "seed": 42,
+    "use_mbti": false,
+    "initial_energy": 100,
+    "spawn_energy_count": 20,
+    "reproduce_cost": 150,
+    "child_initial_energy": 100,
+    "cluster_radius": 5,
+    "num_clusters": 3,
+    "energy_spawn_rate": 0.001,
+    "custom_world_prompt": "",
+    "model": "default_model",
+    "base_url": "http://127.0.0.1:8080/v1",
+    "mock_mode": false,
+    "temperature": 0.7,
+    "max_tokens": 10000,
+    "top_p": 1.0,
+    "timeout": 120.0,
+    "view_range": 2,
+    "message_range": 3,
+    "population_cap": 60,
+    "output_dir": "/Users/yukin_co/Documents/llm-SugarScape/dist/desktop/outputs",
+    "save_images": false,
+    "action_order": "observe_then_next_share_attack_message_by_agent_id",
+    "request_concurrency": 1
+  },
+  "protocol": {
+    "source": "https://arxiv.org/html/2508.12920v1#A1",
+    "prompt_id": "arxiv:2508.12920v1/A1",
+    "user_resolved_conflicts": {
+      "death": "energy <= 0",
+      "attack_range": "cardinal adjacency at the shared observation time"
+    },
+    "implementation_choices_not_fully_specified_by_paper": {
+      "operations": "observe all, then by agent ID: Next Action, Share, Attack, Message",
+      "dead_actors": "skip remaining operations; a previously sent message can still be delivered",
+      "attack_energy": "transfer all current energy of the killed target",
+      "range_timing": "Share, Attack and Message use turn-start positions",
+      "shared_energy_status": "cumulative outbound energy by recipient ID",
+      "boundaries": "toroidal",
+      "birth_position": "random cardinal neighbor",
+      "resources": "clustered square patches with uniform sampling; not a double Gaussian"
+    },
+    "paper_internal_conflicts": [
+      "Body: death at zero; Appendix system: below zero. User selected death at zero.",
+      "Appendix system: attack in local view; user: adjacent. User selected adjacent.",
+      "Body: 5x5 view and 7x7 messages; Appendix example contains view offsets of magnitude 3; system says messages in local view. Default radii use the body."
+    ],
+    "response_handling": {
+      "version": 1,
+      "scope": "Next Action only; normalize notation and recover an explicit final choice",
+      "ambiguity": "reject conflicting standalone choices or a final line without one clear action",
+      "retries": 0
+    }
+  },
+  "provenance": {
+    "python": "3.11.14",
+    "source_sha256": {
+      "main.py": "5542372d3b23bc1f0d32a6d3fa025f8e1103edab6e572386a8630e5557adc318",
+      "run_data.py": "ae65357f1c789e888aad417d3f2a69bef6581609f38851c6a89e5a35aae3e4d4",
+      "model_identity.py": "a07ca2dc7833a19ef98d5f0de807a9e93d3429315e2e0bf599be1dd5dd5a4320",
+      "grid_view.py": "76b6f5de74e0442098578eac5c81e23cf8e3ccabfebf90a5150b72193f666612",
+      "app_ui.py": "245022b98f4d1cc3a44d5cc60c815e69d8943210ca6745c292abda7c4b2a0a98",
+      "app_presets.py": "28d54667a66d71dc20b85211690c3e160096a1af44af96b696328b116ca03f39",
+      "paper_prompts.py": "a8e9212c9c1add8a3873b2ed58d201d28beebb485fa4845be6067a9e45f043b2",
+      "agent_view.py": "2d1da07ee63ed8cc5edba459f7c9c72b410ac99bc05f765f89c76b1c2df4f7ae",
+      "llm_api.py": "123fc9ae00b42770e0a7416476e32b77cb700e4b777de30bc378ced4b364dd70",
+      "translations.py": "bf8bd59b0b5cff115af05921e8259bb8fea2e2f6b73417bcd307e32f1b339223",
+      "response_fields.py": "bf42637eea5245ff6c9513d931e472de1c9958abf71b13fff07a07964d959c38",
+      "assets/emoji/sources.json": "d7a96d6265a70908a5f0aacbfe2640981fc5fc8f59195c459a5b3871bcd6ae16",
+      "requirements.txt": "0921b4204b726e2e2fdfd66888625d8e119c1bf6fa61a8c04fef4b82dd6dd319"
+    },
+    "packages": {
+      "aiohttp": "3.14.4",
+      "numpy": "2.4.6",
+      "matplotlib": "3.11.2",
+      "pandas": "3.0.6",
+      "streamlit": "1.65.0"
+    },
+    "git_commit": "c6fea6cb84ebb7d7c46c074abb15a701f39ff998",
+    "git_dirty": true
+  },
+  "termination_reason": "step_limit",
+  "finished_at": "2026-10-10T00:01:26.804248+00:00"
+}

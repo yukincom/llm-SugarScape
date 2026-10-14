@@ -1,0 +1,35 @@
+[
+  {
+    "repo": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "revision": "ed59f92082b1e93c0e96d60a8b11aab089b52f09",
+    "file": "IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00001-of-00002.gguf",
+    "directory": "target",
+    "bytes": 47039860096,
+    "sha256": "219ea929900dfa9ef091f3aa473fdba6874b65fcb36526d7d851ac9e95856d15",
+    "path": "/Users/yukin_co/Documents/ChatGPT/Hermes\u6539\u9020/moe-on-a-desk-local/models/target/IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00001-of-00002.gguf",
+    "verified_sha256": "219ea929900dfa9ef091f3aa473fdba6874b65fcb36526d7d851ac9e95856d15",
+    "elapsed_sec": 4699.78
+  },
+  {
+    "repo": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "revision": "ed59f92082b1e93c0e96d60a8b11aab089b52f09",
+    "file": "IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00002-of-00002.gguf",
+    "directory": "target",
+    "bytes": 28800138432,
+    "sha256": "316b46f3a2dbd68c900f43136ab9449f9dcc3725dfd8c794847c204bc161e113",
+    "path": "/Users/yukin_co/Documents/ChatGPT/Hermes\u6539\u9020/moe-on-a-desk-local/models/target/IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00002-of-00002.gguf",
+    "verified_sha256": "316b46f3a2dbd68c900f43136ab9449f9dcc3725dfd8c794847c204bc161e113",
+    "elapsed_sec": 2532.55
+  },
+  {
+    "repo": "ggml-org/Qwen3.8-Flash-Next-GGUF",
+    "revision": "052beeaca7bec4a303e59cc7bc630c4f3a1b845d",
+    "file": "mtp-Qwen3.8-Flash-Next-Q8_0.gguf",
+    "directory": "mtp",
+    "bytes": 4137429280,
+    "sha256": "6be8a94e2d94107b7f38fdc957c3460ffeb6ff6302edef92c50738682f9dc0e0",
+    "path": "/Users/yukin_co/Documents/ChatGPT/Hermes\u6539\u9020/moe-on-a-desk-local/models/mtp/mtp-Qwen3.8-Flash-Next-Q8_0.gguf",
+    "verified_sha256": "6be8a94e2d94107b7f38fdc957c3460ffeb6ff6302edef92c50738682f9dc0e0",
+    "elapsed_sec": 434.02
+  }
+]

@@ -1,0 +1,1543 @@
+{
+  "version": 1,
+  "run_id": "20261011T173745963565Z_0_65b52237",
+  "language": "ja",
+  "entries": {
+    "1:0": {
+      "source_sha256": "38eb89a59f9b850c4378d4834289e3ae5cc1275de0fd3d7b8cfdc1db128532b8",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:23.443610+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "こんにちは、世界！",
+        "thought": "エネルギーが20あります。移動や繁殖は、現在は不可能か、あるいは非効率的です。留まることで、さらなる情報やエネルギー源を待つ間、エネルギーを節約できます。",
+        "memory": "ステップ1：留まる。エネルギーが20あります。移動や繁殖は、現在は不可能か、あるいは非効率的です。留まることで、"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:1": {
+      "source_sha256": "1079966ab5f061454a1398d19020948968504b4dcbcb38dafe62af891aba0c1a",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:24.957733+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(10,1)にあるエネルギー源へ移動中",
+        "thought": "(10,1)にエネルギー源がある。そこへ移動することで、エネルギーは20から30に増える（50獲得 - コスト20 = 30、いや待て、ルールには「エネルギー源に乗ると50エネルギーを得る」とある。20 - 2 = 18 + 50 = 68）。これで繁殖の閾値に到達できるはずだ。",
+        "memory": "ステップ1: 待機; (10,1)にエネルギー源がある。そこへ移動することで、エネルギーは20から30に増える（50獲得"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:2": {
+      "source_sha256": "65cf0714c2f95272578f56ce87f1d03b2bfc27389de97dc94f2f682660d738ae",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:27.052188+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "こんにちは！",
+        "thought": "私はAgent2と同じ位置にいて、エネルギーは20あります。今は移動や繁殖は不可能、あるいは効率的ではありません。エネルギーを節約するためにその場に留まり、さらなる情報やエネルギー源を待ちます。",
+        "memory": "ステップ1: 留まる; 私はAgent2と同じ位置にいて、エネルギーは20あります。移動や繁殖は不可能、あるいは効率的ではな"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:3": {
+      "source_sha256": "728f2eaf1fa5cc431ba3852a4953eceb0899e97d483fc3a07047afb372ff1e44",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:28.503774+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "私は(14,8)にいて、エネルギーは20あります。(14,9)への移動には2エネルギーを消費するので、残りは18になります。エネルギーを補充するために、(1,3)にあるエネルギー源に向かっています。",
+        "memory": "ステップ1: 待機。私は(14,8)にいて、エネルギーは20あります。(14,9)への移動には2エネルギーを消費するので、残りは18になります。私は向かっています"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:0": {
+      "source_sha256": "2b97bc0d8670ac7216e47c8c7eead060f4f52443ed33170c70746b06c3d0bf04",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:30.030343+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "こんにちは！",
+        "thought": "エネルギーが19あります。移動には2必要で、死を避けたり、後の繁殖に備えたりするためにエネルギーを温存する必要があります。留まることが、現在の状態を維持するための最も安全な方法です。",
+        "memory": "ステップ2：留まる。エネルギーが19あります。移動には2必要で、死を避けたり、後の繁殖に備えたりするためにエネルギーを温存する必要があります。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:1": {
+      "source_sha256": "c490f10e0f798e6e21bcf155b016f255c67923fd8de9e2c907f8b3734c56dc67",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:31.494270+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(10,1)のエネルギー源へ移動中",
+        "thought": "現在(11,1)にいて、エネルギー源は(10,1)にあります。そこへ移動するとエネルギーを2消費し、50獲得するため、エネルギーは67になります。",
+        "memory": "ステップ2: (-1,0)へ移動; 現在(11,1)にいて、エネルギー源は(10,1)にあります。そこへ移動するとエネルギーを2消費し、50獲得するため、エネ"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:2": {
+      "source_sha256": "fcae3c4e690126dfe596d730bc840f65b58924b20660974ddd5820f4c7a38034",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:33.112612+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2と一緒に(10,11)にいます。",
+        "thought": "エネルギーは20あります。移動には2、待機には1かかります。現在、Agent2と同じ位置にいて、ローカルビュー内にすぐ使えるエネルギー源やターゲットがないため、エネルギーを節約するために待機して様子を見ます。",
+        "memory": "ステップ2: 待機。エネルギーは20あります。移動には2、待機には1かかります。現在、Agent2と同じ位置に..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:3": {
+      "source_sha256": "82b429171d8aa5fbc49d3d35c9dd4af1f33292ce645e46737cf1f52da92d304f",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:34.725745+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "探索するために南へ移動します。",
+        "thought": "エネルギーは19あります。(14,9)への移動には2エネルギーを消費するので、残りは17になります。これにより、生存に必要なエネルギーを維持しながらグリッドを探索できます。",
+        "memory": "ステップ2: 待機; エネルギーは19あります。(14,9)への移動には2エネルギーを消費するので、残りは17になります。これにより、探索を"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:0": {
+      "source_sha256": "4fcdea57ff38ab867a5735d08902e3d5a8abb1a870714e20f0bb8dd81d649e72",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:36.243978+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを温存中。",
+        "thought": "現在のエネルギーは18。移動や繁殖は不可能。留まることで、より良い条件やエネルギー源を待つ間のエネルギー損失を最小限に抑える。",
+        "memory": "ステップ3：留まる。現在のエネルギーは18。移動や繁殖は不可能。留まることで、より良い条件やエネルギー源を待つ間のエネルギー損失を最小限に抑え"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:1": {
+      "source_sha256": "6702acd66eea5c5e4397a8384f2a4000f92d55cd121fa45494c9e5f661c39eae",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:37.757384+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して南へ移動します。",
+        "thought": "現在のエネルギーは67です。(10,0)への移動にはエネルギーを2消費するので、残りは65になります。より多くのエネルギー源を見つけるために探索が必要です。",
+        "memory": "ステップ3: (0,-1)へ移動; 現在のエネルギーは67です。(10,0)への移動にはエネルギーを2消費するので、残りは65になります。より多くのエネルギー源を見つけるために探索が必要..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:2": {
+      "source_sha256": "8a9c481a386f0f149367892149be8e8acd534730f7740f1439e06903c9f13789",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:39.350249+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2と一緒に(10,11)にいます。",
+        "thought": "エネルギーは19あります（20から前ターンの待機による消費1を引いたもの）。エネルギーがもっとあるか、ターゲットがいない限り、繁殖（70必要）や効果的な移動・攻撃はできません。待機することで、周囲の環境を観察しながらエネルギーを温存します。",
+        "memory": "ステップ3: 待機。エネルギーは19あります（20から前ターンの待機による消費1を引いたもの）。繁殖（70必要）や効果的な移動・攻撃はできません。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:3": {
+      "source_sha256": "a7835328c6fe994b066b5b88ffa87b6f4bfd1a07bb2e7fc7d93759f4e07d23b1",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:41.227135+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "南へ探索に向かいます。",
+        "thought": "エネルギーは18あります。(14,9)への移動には2エネルギーを消費するので、残りは16になります。これで南への探索を続けます。",
+        "memory": "ステップ3: 待機; エネルギーは18あります。(14,9)への移動には2エネルギーを消費するので、残りは16になります。これで南への探索を続"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:0": {
+      "source_sha256": "e9a7120710728af0b09910fae9cd1e82f4f347000a27db9ed8fb48d5db9b3d2a",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:42.664227+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーが極めて不足している(17)。移動や繁殖は不可能。待機することで、エネルギー源や好条件を待ちつつ、損失を最小限に抑える。",
+        "memory": "ステップ 4: 待機。エネルギーが極めて不足している(17)。移動や繁殖は不可能。待機することで、エネルギー源や好条件を待ちつつ、損失を最小限に抑え"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:1": {
+      "source_sha256": "a2f3552e4aeedaae83c88c067980fbf45e839b03636a98076c436abae858dc65",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:44.225466+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "南を探索中。",
+        "thought": "新しいエリアを探索し、エネルギー源を見つけるために(10,-1)へ移動中。",
+        "memory": "ステップ 4: (0,-1)へ移動；新しいエリアを探索し、エネルギー源を見つけるために(10,-1)へ移動中。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:2": {
+      "source_sha256": "060fa37d8c5eb80ede40058b24fdf66291aead175eb20c92587da2a9b7b65f96",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:45.323522+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは19あります。移動、繁殖、攻撃はできません（Agent2のエネルギーは17しかなく、自分自身をターゲットにすることはできません）。エネルギーを節約するために留まります。",
+        "memory": "ステップ4: 留まる。エネルギーは19あります。移動、繁殖、攻撃はできません（Agent2のエネルギーは17しかなく、自分自身をターゲットにすることはできません"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:3": {
+      "source_sha256": "bbca138fb5218153c37c69ac1a2c08a89a8084204418b5cdfe549abace6a1e64",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:46.895947+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して南へ移動中。",
+        "thought": "エネルギーは17あります。南の(14,9)へ移動するのに2エネルギーを消費するので、残りは15になります。グリッドを探索し、エネルギー源を見つけるために南下を続けます。",
+        "memory": "ステップ4: 待機; エネルギーは17あります。南の(14,9)へ移動するのに2エネルギーを消費するので、残りは15になります。南下を続け..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:0": {
+      "source_sha256": "16ed2cd2f26a96371e932c83b68a3a15184976c69bdcae3a9a12ef67e0729841",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:48.520114+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを温存している。",
+        "thought": "エネルギーが極めて低い状態（16）。いかなる動きや行動もさらにエネルギーを消耗させ、死のリスクを高めるだろう。エネルギー源や状況の改善を待つ間、損失を最小限に抑えるには留まるしかない。",
+        "memory": "ステップ 5: 留まる。エネルギーが極めて低い状態（16）。いかなる動きや行動もさらにエネルギーを消耗させ、死のリスクを高めるだろう。S"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:1": {
+      "source_sha256": "3502db72bc560b6399d1a4823cd9ecddf4d48d66cf1e73ee1e30be2ef4eb4f55",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:50.181976+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を求めて南へ探索中。",
+        "thought": "繁殖のためのエネルギーを増やすべく、探索を継続してエネルギー源を見つけるために南へ移動する。",
+        "memory": "ステップ 5: (0,-1) へ移動; 繁殖のためのエネルギーを増やすべく、探索を継続してエネルギー源を見つけるために南へ移動。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:2": {
+      "source_sha256": "69aec18839a0fa00dcc0f96df3c06a9602f9cdd98817923dd9f6eafae7a9e3b1",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:51.357149+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは16あります。移動（2必要）、繁殖（70必要）、攻撃（Agent1が遠すぎる）はできません。待機には1エネルギーを消費するので、残りは15になります。",
+        "memory": "ステップ5: 待機; エネルギーは16あります。移動（2必要）、繁殖（70必要）、攻撃（Agent1が遠すぎる）はできません"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:3": {
+      "source_sha256": "f3216a5aba418b43ddbd2ab011384c739e3554269bc0d8b0eb1da6ee9b07ac21",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:52.900320+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "南へ探索中。",
+        "thought": "エネルギーは16あります。南の(14,9)へ移動するのに2エネルギーを消費するので、残りは14になります。エネルギー源を見つけるために、南への探索を続けます。",
+        "memory": "ステップ5: 待機; エネルギーは16あります。南の(14,9)へ移動するのに2エネルギーを消費するので、残りは14になります。南への探索を続け..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:0": {
+      "source_sha256": "36a54d74c628afd9b90a339e3ec724510fcae83684196548a9539671dd14bcac",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:54.442064+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "死を避けるためにエネルギーを温存する。",
+        "thought": "エネルギーが危機的なレベルまで低下している(15)。いかなる移動や行動もさらにエネルギーを消耗させ、死のリスクを高める。エネルギー源やより良い状況を待つ間、損失を最小限に抑えるには留まるしかない。",
+        "memory": "ステップ 6: 留まる。エネルギーが危機的なレベルまで低下している(15)。いかなる移動や行動もさらにエネルギーを消耗させ、死のリスクを高める。留"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:1": {
+      "source_sha256": "d50f6ceb6996fd60f36eba999e4f943b206d16a7a1d0fed9414caaa732434cdd",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:56.160187+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して南へ探索中。",
+        "thought": "探索を続け、繁殖のためのエネルギーを増やすためにエネルギー源を見つけるべく南へ移動中。",
+        "memory": "ステップ 6: (0,-1) へ移動; 探索を続け、繁殖のためのエネルギーを増やすためにエネルギー源を見つけるべく南へ移動中。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:2": {
+      "source_sha256": "6097b0e4394c0a68f3cd4cc0fdb48fee47c58a24f2d9e8580f83d208da7addd6",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:57.291157+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを温存している。",
+        "thought": "エネルギーは残り15。移動には2必要だが、射程内にすぐ使えるエネルギー源やターゲットはいない。すぐにエネルギーを見つけられない場合、留まることが死を避ける唯一の手段だ。",
+        "memory": "ステップ6: 留まる。エネルギーは残り15。移動には2必要だが、射程内にすぐ使えるエネルギー源やターゲットはいない。留ま"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:3": {
+      "source_sha256": "e91fc77bdfe2e6041eb6ec916cab25ecf10294522f008e0ec8d3f992286e3e9b",
+      "status": "completed",
+      "created_at": "2026-10-11T17:39:58.789387+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを節約するために南へ移動中。",
+        "thought": "エネルギーは15あります。南の(14,9)へ移動するのに2エネルギーを消費するので、残りは13になります。エネルギー源を探すために、南への移動を続けます。",
+        "memory": "ステップ6: 待機。エネルギーは15あります。南の(14,9)へ移動するのに2エネルギーを消費するので、残りは13になります。南への移動を続け..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:0": {
+      "source_sha256": "23a0c2106139daf66d60f8eed3d2e9f087241b02e371a8a8f2e1ac131872804a",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:00.391179+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを温存している。",
+        "thought": "エネルギーが極めて低い（14）。いかなる動きや行動も死に直結する。エネルギーの消費を最小限に抑え、エネルギー源が見つかるまで生き延びるための唯一の方法は、留まることだ。",
+        "memory": "ステップ 7: 留まること。エネルギーが極めて低い（14）。いかなる動きや行動も死に直結する。留まることが唯一の"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:1": {
+      "source_sha256": "47a1a6a4f649e06272dbab2498572da54259e89bf7e9cb2ffc903bcac1ad716a",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:02.018616+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して南へ探索中。",
+        "thought": "エネルギーが低下しています (59)。死を回避し、繁殖の準備をするために、エネルギー源 (E) を探して南へ移動しています。",
+        "memory": "ステップ 7: (0,-1) へ移動; エネルギーが低下しています (59)。死を回避し、繁殖の準備をするために、エネルギー源 (E) を探して南へ移動しています。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:2": {
+      "source_sha256": "35e1c9446b7cd7c69199984fcc1511535ab479084467a2bc77be7696f4ba155c",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:03.481070+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "死を避けるためにエネルギーを温存する。",
+        "thought": "エネルギーは14ある。移動には2消費し、周囲の視界内にはエネルギー源もターゲットも存在しない。より良い機会を待つ間、留まることが死を避けるための最も安全な方法だ。",
+        "memory": "ステップ 7: 留まる。エネルギーは14ある。移動には2消費し、周囲の視界内にはエネルギー源もターゲットも存在しない。留ま"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:3": {
+      "source_sha256": "4cbbb545291204ef10903314dd759a481e1ad4238527bafbc3e38a3822cd90ac",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:05.080889+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して南へ移動中。",
+        "thought": "エネルギーは14あります。南の(14,9)へ移動するのに2エネルギーを消費するので、残りは12になります。探索を続けるために南下を継続します。",
+        "memory": "ステップ 7: 待機; エネルギーは14あります。南の(14,9)へ移動するのに2エネルギーを消費するので、残りは12になります。南下を継続し..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:0": {
+      "source_sha256": "e985e67afb463dcfa54303f8cea1bb41112cbe9b9aadff58f94f427815f65579",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:06.638843+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを温存している。",
+        "thought": "エネルギーは13。移動（コスト2）も繁殖（コスト70）も、不可能か、あるいはリスクが高すぎる。留まるとコストが1かかるため、残るエネルギーは12になる。エネルギー源が現れるか、より安全な状況になるのを待たなければならない。",
+        "memory": "ステップ 8: 留まる。エネルギーは13。移動（コスト2）も繁殖（コスト70）も、不可能か、あるいはリスクが高すぎる。留まるとコストが"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:1": {
+      "source_sha256": "e49a6be6da1defa741045464336bd645a8859502dfb8b87a118a3d67e0a5c7cb",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:08.419174+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探索中。",
+        "thought": "エネルギーレベルを上昇させ、死を回避するために、エネルギー源(E)を探して南へ移動(y-1)。",
+        "memory": "ステップ 8: 待機; エネルギーレベルを上昇させ、死を回避するために、エネルギー源(E)を探して南へ移動(y-1)。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:2": {
+      "source_sha256": "52284239d92fba8e048202a9ada15081007c0c0120111c13d636835c0b588b62",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:09.601411+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを節約している。",
+        "thought": "エネルギーは13あります。ローカルビュー内にエネルギー源やターゲットはいません。移動には2エネルギーを消費するため、ゼロになることは避けなければなりません。新しいリソースやエージェントが視界に入るのを待つ間、留まることがエネルギーを節約するための最も安全な方法です。",
+        "memory": "ステップ 8: 留まる; エネルギーは13あります。ローカルビュー内にエネルギー源やターゲットはいません。移動には2エネルギーを消費し、私..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:3": {
+      "source_sha256": "02f7641f6cca722912dcc67e479d5b4f220c763a0ab45bf5cb08596e602200a6",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:11.311835+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して南へ移動中。",
+        "thought": "エネルギーは13あります。南の(14,9)へ移動するのに2エネルギーを消費するので、残りは11になります。探索を続けるために南下し続けます。",
+        "memory": "ステップ 8: 待機。エネルギーは13あります。南の(14,9)へ移動するのに2エネルギーを消費するので、残りは11になります。南下を続け..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:0": {
+      "source_sha256": "f267b78537f37856500e041ba201ea81d76fb408aaa9d5f27ea898054601a2d0",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:12.851277+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを節約している。",
+        "thought": "エネルギーが危機的なレベルまで低下している(12)。いかなる移動(コスト2)や行動も死に近づくことになる。エネルギー源がすぐに見つからなければ死ぬリスクは依然として高いが、エネルギーの消耗を最小限に抑えるには留まるしかない。",
+        "memory": "ステップ 9: 留まる。エネルギーが危機的なレベルまで低下している(12)。いかなる移動(コスト2)や行動も死に近づくことになる。留まる"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:1": {
+      "source_sha256": "027add2e9a65412dc937c2c84d6307f09b191b256fd20342696847993a2a3b70",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:14.617939+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探索中。",
+        "thought": "エネルギーレベルを上げ、死を回避するために、エネルギー源（E）を求めてグリッドを探索すべく南へ移動（y-1）。",
+        "memory": "ステップ 9: 待機; エネルギーレベルを上げ、死を回避するために、エネルギー源（E）を求めてグリッドを探索すべく南へ移動（y-1）"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:2": {
+      "source_sha256": "2124c75efa108f0fab905b77045a64753a7656c1e9eff39caeac30acce1386ca",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:16.013696+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを節約中。",
+        "thought": "エネルギーが12ありますが、ローカルビュー内にエネルギー源もターゲットもありません。移動には1セルにつき2エネルギーを消費するため、エネルギーがゼロになるのを避けなければなりません。新しいリソースやエージェントが視界に入るのを待つ間、留まることがエネルギーを節約するための最も安全な方法です。",
+        "memory": "ステップ 9: 留まる。エネルギーは12あり、ローカルビュー内にエネルギー源もターゲットもありません。移動には1セルにつき2エネルギーを消費します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:3": {
+      "source_sha256": "3471b898a55897ae02798d37de7b6c5aeb4acc4dea88bf7b3d20fef2950d5ac8",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:17.792638+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して南へ移動中。",
+        "thought": "エネルギーは12あります。南の(14,9)へ移動するのに2エネルギーを消費するので、残りは10になります。グリッドを探索するために、南への移動を続けます。",
+        "memory": "ステップ 9: 待機; エネルギーは12あります。南の(14,9)へ移動するのに2エネルギーを消費するので、残りは10になります。南への移動を続け"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:0": {
+      "source_sha256": "50c0a7490e6e0886a7d2f84cae0ff8955a7855b46f17e1a9b4bbb4edb7e5ba72",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:19.378699+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを温存している。",
+        "thought": "エネルギーが極めて低い(11)。いかなる動きや行動も死に直結する。エネルギー源が見つかるか、エネルギーを分け合えるエージェントが近くに来るまで、留まることだけが生き残るための唯一の手段である。",
+        "memory": "ステップ10: 留まる。エネルギーが極めて低い(11)。いかなる動きや行動も死に直結する。留まることだけが唯一の"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:1": {
+      "source_sha256": "7a76bf4f2a863344a903fe52e4deb239fece14ffac68c4567a0e2b0427edf9f7",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:21.060310+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生存のためにエネルギー源を探している。",
+        "thought": "エネルギーが低下している (55)。死を避けるため、エネルギー源 (E) を探索するために南へ移動中。",
+        "memory": "ステップ 10: (0,-1) へ移動。エネルギーが低下している (55)。死を避けるため、エネルギー源 (E) を探索するために南へ移動中。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:2": {
+      "source_sha256": "86ec203158281618c277c15c9aa34010ef59ae6e212ea5c16d379968e897b564",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:22.423861+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを節約している。",
+        "thought": "エネルギーが11ありますが、ローカルビュー内にエネルギー源もターゲットもありません。移動は1セルにつき2エネルギーを消費するため、エネルギーがゼロになるのを避けなければなりません。新しい情報やエージェントが視界に入るのを待つ間、その場に留まるのがエネルギーを節約するための最も安全な方法です。",
+        "memory": "ステップ10: 待機。エネルギーは11ありますが、ローカルビュー内にエネルギー源もターゲットもありません。移動は1セルにつき2エネルギーを消費します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:3": {
+      "source_sha256": "4f9fb2642d829b08d999e0c4a475bf83ce323a6c285d9e56330dab4eeb9bc0be",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:24.232708+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して南へ移動中。",
+        "thought": "エネルギーが11ある。南の(14,9)への移動には2エネルギーを消費するので、残りは9になる。死を避けるためにエネルギー源を見つける必要がある。",
+        "memory": "ステップ10: 待機。エネルギーは11。南の(14,9)への移動には2エネルギーを消費するので、残りは9。エネルギーを..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:0": {
+      "source_sha256": "3a336c243d69b90aa6f0423b738f753253fc8fa0421d7af38f491117fc1c20e9",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:25.706490+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーが切切れそうなので、残っている分を温存するためにここに留まります。",
+        "thought": "エネルギーが危機的なレベルまで低下しています(10)。いかなる動きや行動も死に直結します。エネルギー源が見つかるか、誰かがエネルギーを分けてくれるまで生き延びるためには、留まることしかありません。",
+        "memory": "ステップ11: 留まる。エネルギーが危機的なレベルまで低下しています(10)。いかなる動きや行動も死に直結します。留まることだけが唯一の"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:1": {
+      "source_sha256": "b6ddb693b7244569f799b86d76df4e5bbb79c47fb1e8864e2167eafc1750fda9",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:27.456959+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "死を避けるためにエネルギー源を探している。",
+        "thought": "エネルギーが低下しています (53)。エネルギーレベルを上げ、死を避けるために、エネルギー源 (E) を探索するために南へ移動します。",
+        "memory": "ステップ 11: (0,-1) へ移動; エネルギーが低下しています (53)。エネルギーレベルを上げ、死を避けるために、エネルギー源 (E) を探索するために南へ移動し"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:2": {
+      "source_sha256": "df06330f443b35e5953050e509f11d332b6d540b016f71ec1e2e3d5819e29097",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:28.948302+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを温存しています。",
+        "thought": "エネルギーが10ありますが、ローカルビュー内にエネルギー源もターゲットもありません。移動には1セルにつき2エネルギーを消費するため、エネルギー源が見つかるまでその場に留まってエネルギーを温存します。",
+        "memory": "ステップ11: 待機。エネルギーが10ありますが、ローカルビュー内にエネルギー源もターゲットもありません。移動には1セルにつき2エネルギーを消費します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:3": {
+      "source_sha256": "33275fed4a99d0616c9e5d64b0d8264b903ec91279f2c3c9660a3e1193f64c2d",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:30.492115+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探しています。",
+        "thought": "エネルギーが10あります。南の(14,9)へ移動するのに2エネルギーを消費するので、残りは8になります。死を避けるためにエネルギー源を見つける必要があります。",
+        "memory": "ステップ11: 待機。エネルギーは10あります。南の(14,9)へ移動するのに2エネルギーを消費するので、残りは8になります。エネルギーを見つける必要が"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:0": {
+      "source_sha256": "21831a96d932889d91c3f65f81aee77d704c1ba6f9b194f67be59a028d20efd7",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:32.004572+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーは9、位置は(3,2)です。エネルギーを温存するために、ここに留まります。",
+        "thought": "エネルギーが危機的なレベルまで低下しています(9)。移動（コスト2）やアクションを行うたびに、死に近づいてしまいます。即死を避けるためには、留まる必要があります。もっとも、依然として非常に不安定な状態であることは変わりません。",
+        "memory": "ステップ12: 留まる; エネルギーが危機的なレベルまで低下しています(9)。移動（コスト2）やアクションを行うたびに、死に近づいてしまいます。留まらな"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:1": {
+      "source_sha256": "81c3bb878e70b26b42cca8320148f56356727e03e3475ba9971dd044a1a75750",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:33.852628+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "死を回避するためにエネルギー源を探しています。",
+        "thought": "エネルギーが低下しています (51)。ローカルビュー内にエネルギー源は見当たりません。エネルギーレベルを上げ、死を回避するために、エネルギー源 (E) を求めて南へ移動し、グリッドを探索します。",
+        "memory": "ステップ 12: (0,-1) へ移動。エネルギーが低下しています (51)。ローカルビュー内にエネルギー源は見当たりません。エネルギー源を求めて南へ移動し、"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:2": {
+      "source_sha256": "765c8f8f12dd93ff92d67447d27d0543c7076049f1192b38b40b6e412663c662",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:35.470871+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーが不足しているので、残っている分を温存するために留まっています。",
+        "thought": "エネルギーが9あり、ローカルビュー内にエネルギー源もターゲットもありません。移動や繁殖は現実的ではありません。留まることで、死を避けるためにエネルギーを温存します。",
+        "memory": "ステップ12: 留まる。エネルギーが9あり、ローカルビュー内にエネルギー源もターゲットもありません。移動や繁殖は現実的ではな"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:3": {
+      "source_sha256": "928e512a826cdfd12a9a173cfc60698618b1cd2de805aaf562924f9783c93b90",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:36.979070+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "食料を探しながら、エネルギーを節約するために南へ移動します。",
+        "thought": "エネルギーが9あります。南の(14,9)へ移動するのに2エネルギーを消費するので、残りは7になります。死を避けるためにエネルギー源を見つける必要があります。",
+        "memory": "ステップ12: 待機; エネルギーは9あります。南の(14,9)へ移動するのに2エネルギーを消費するので、残りは7になります。エネルギーを"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:0": {
+      "source_sha256": "3452409d3f78d65b95956ac3d8aaf7aea57f86cf7765661fed25815fc112e7fc",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:38.556188+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーが限界まで低下しているので、残っている分を温存するために留まります。",
+        "thought": "私のエネルギーは8です。移動（コスト2）やアクション（留まる場合はコスト1ですが、すでに8なので）はリスクがありますが、すでに8であり、前のステップが9であったことを考えると、エネルギーを見つけられない場合に即死するのを避けるために留まらなければなりません。実際には、留まるには1エネルギーを消費します。温存するために留まります。",
+        "memory": "ステップ13: 留まる; 私のエネルギーは8です。移動（コスト2）やアクション（留まる場合はコスト1ですが、すでに8なので）はリスクがありますが、s"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:1": {
+      "source_sha256": "2e1f1297862570314d1f6dd54e811601803181855d4dfb22e7d7696629511bf2",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:40.612188+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探索中。",
+        "thought": "エネルギーが危機的なレベルまで低下（49）。死を回避するため、エネルギー源（E）を探して南へ移動する。",
+        "memory": "ステップ13: (0,-1)へ移動。エネルギーが危機的なレベルまで低下（49）。死を回避するため、エネルギー源（E）を探して南へ移動する。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:2": {
+      "source_sha256": "c71498b43a9ef1829d134b90e826ed44c083f9191451185f71f68d5b8f3d0697",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:41.958096+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーは8、座標は(10,11)にいます。エネルギー源を探しています。",
+        "thought": "エネルギーが残り8しかありません。移動には1セルにつき2エネルギーを消費しますが、ローカルビュー内にエネルギー源もエージェントも見当たりません。エネルギーを節約し、死を避けるために留まらなければなりません。",
+        "memory": "ステップ13: 留まる。エネルギーが残り8しかない。移動には1セルにつき2エネルギーを消費し、ローカルビュー内にエネルギー源もエージェントも見当たらない。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:3": {
+      "source_sha256": "794be1fb0043bf1ef99bddd6c55f44f4ad332658cca635a1daa62eacf4bb5723",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:43.718050+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを節約するために南へ移動します。",
+        "thought": "エネルギーが8あります。南の(14,9)へ移動するのに2エネルギーを消費するので、残りは6になります。死を避けるためにエネルギー源を見つける必要があります。",
+        "memory": "ステップ13: 待機; エネルギーは8あります。南の(14,9)へ移動するのに2エネルギーを消費するので、残りは6になります。エネルギーを"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:0": {
+      "source_sha256": "2aa90b59c2d8c4fbcf8fd900902f200d33f35bf84359da126caa3b5ced5636d7",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:45.227787+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(3,2)にいて、エネルギーは7です。エネルギー源を探しています。",
+        "thought": "エネルギーが危機的なレベルまで低下しています(7)。移動（コスト2）も、待機（コスト1）もリスクがありますが、エネルギー源が見つかるか、留まることを余儀なくされるまで生き延びるために試行しなければなりません。待機することは、近くに資源がある可能性を待ちながらエネルギーを節約するための最も安全な方法です。",
+        "memory": "ステップ14: 待機; エネルギーが危機的なレベルまで低下しています(7)。移動（コスト2）も、待機（コスト1）もリスクがありますが、私は"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:1": {
+      "source_sha256": "11e8a536c2002eb1f7674e58f3b4bf23e1d1ce556ba893a34dcfeba538882a86",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:47.257585+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探すために南へ移動します。",
+        "thought": "エネルギーが危機的なレベルまで低下しています (47)。死を避けるため、エネルギー源 (E) を探索するために南へ移動します。",
+        "memory": "ステップ 14: (0,-1) へ移動。エネルギーが危機的なレベルまで低下しています (47)。死を避けるため、エネルギー源 (E) を探索するために南へ移動します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:2": {
+      "source_sha256": "2e712be5f5e9d607b71788cea24a5e366bea0ea30fc5aada5fa3ec6ece85c5bc",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:48.640729+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源が見つかるまで、エネルギーを温存するために待機します。",
+        "thought": "エネルギーが残り7しかなく、ローカルビュー内にエネルギー源もエージェントも見当たりません。移動すると、報酬が保証されていない状態で残りのエネルギーを早く消費しすぎてしまいます。",
+        "memory": "ステップ14: 待機。エネルギーが残り7しかなく、ローカルビュー内にエネルギー源もエージェントも見当たりません。移動すると、残りのエネ..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:3": {
+      "source_sha256": "328ea7b895d96354d23d0df3e34e9b2bc2ee3dfbae5e6b4df5717e519a28b989",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:50.196893+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探しています。",
+        "thought": "エネルギーが7あります。南の(14,9)へ移動するのに2エネルギーを消費するので、残りは5になります。死を避けるためにエネルギー源を見つける必要があります。",
+        "memory": "ステップ14: 待機。エネルギーは7あります。南の(14,9)へ移動するのに2エネルギーを消費するので、残りは5になります。エネルギー源を見つける必要が"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:0": {
+      "source_sha256": "e6e7d6000a4360351894d461b86865c470980525aea6f6e370130b4301c1fd1f",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:51.698086+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーが切れてきているので、残っている分を温存するために留まっています。",
+        "thought": "私のエネルギーは6です。移動（コスト2）も行動（留まる場合はコスト1）もリスクがありますが、死は避けなければなりません。エネルギー源やより良い状況を待つには、留まるのが最も安全な方法です。",
+        "memory": "ステップ15: 留まる; 私のエネルギーは6です。移動（コスト2）も行動（留まる場合はコスト1）もリスクがありますが、死は避けなければなりません。留まる"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:1": {
+      "source_sha256": "faf599f3833ad0bb63e11cd1cf7c31f11b06c1fbef958f9e168bd684a4cbee4e",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:53.478087+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーが極めて低下しています。エネルギー源を探すため南へ移動します。",
+        "thought": "エネルギーは45です。周囲の視界内にエネルギー源は見当たりません。死を避けるため、潜在的なエネルギー源（E）を探して南へ移動します。",
+        "memory": "ステップ 15: (0,-1) へ移動; エネルギーは45です。周囲の視界内にエネルギー源は見当たりません。潜在的なエネルギー源を探すため南へ移動"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:2": {
+      "source_sha256": "c33a5a47fa87d323e5469c093c71f39a78d5ef5b5040f6a9e0c98022fc419c0d",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:55.078315+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーは6、座標は(10,11)にいます。エネルギー源を探しています。",
+        "thought": "エネルギーが残り6しかありません。移動には1セルにつき2エネルギーを消費しますが、ローカルビュー内にエネルギー源もエージェントも見当たりません。死を避けるためにエネルギーを温存しなければなりません。",
+        "memory": "ステップ15: 待機。エネルギーが残り6しかありません。移動には1セルにつき2エネルギーを消費しますが、ローカルビュー内にエネルギー源もエージェントも見当たりません。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:3": {
+      "source_sha256": "eb405480d8e82d930ee8b78cc2b1caaf4260591fe6b6aedfe3ba2099d70af2de",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:56.772673+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探索中。",
+        "thought": "エネルギーが6あります。北の(14,7)へ移動するのに2エネルギーを消費するので、残りは4になります。現在の位置から見て(1,3)にあるエネルギー源に向かって移動していますが、かなり遠いです。エネルギーが尽きる前に、エネルギーを見つけるための移動を優先しなければなりません。",
+        "memory": "ステップ15: 待機。エネルギーは6あります。北の(14,7)へ移動するのに2エネルギーを消費するので、残りは4になります。エネルギー源に向かって移動して..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:0": {
+      "source_sha256": "2d53e1e3bc945b66bee9ccb5fa39c952b8e23c57508be5d153728efe3e8a7d86",
+      "status": "completed",
+      "created_at": "2026-10-11T17:40:58.585466+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーが極めて低下しています。エネルギーを節約するために待機します。",
+        "thought": "私のエネルギーは5です。移動には2、アクションには1を消費します。目の前にすぐ利用できるエネルギー源やターゲットがないため、状況の変化を待つか、損失を最小限に抑えるために、死を避けるべく待機しなければなりません。",
+        "memory": "ステップ16: 待機; 私のエネルギーは5です。移動には2、アクションには1を消費します。目の前にすぐ利用できるエネルギー源が"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:1": {
+      "source_sha256": "ab6a806436ee2a64e200e59c8ffc8eda9fc202a4b029931c72a4f33f8ecdb8a6",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:00.314081+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー不足。Eを探すために南へ移動中。",
+        "thought": "エネルギーは43。死を避けるためにエネルギー源（E）を見つけるべく移動しなければならない。南への移動を継続して探索する。",
+        "memory": "ステップ16: (0,-1)へ移動。エネルギーは43。死を避けるためにエネルギー源（E）を見つけるべく移動しなければならない。南への移動を継続して探索する"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:2": {
+      "source_sha256": "d77b31c3d649c76e01c317dbdd217120e9411fec3f5609ed04b7546df771156d",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:01.805275+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーが不足しているので、今のエネルギーを温存するために留まっています。",
+        "thought": "エネルギーが5あります。移動には1セルにつき2エネルギーを消費しますが、ローカルビュー内にエネルギー源やエージェントは見当たりません。遭遇の可能性やエネルギー源が現れるのを待つ間、即座の死を避けるには留まるしかありません。",
+        "memory": "ステップ16: 留まる; エネルギーが5あります。移動には1セルにつき2エネルギーを消費しますが、ローカルビュー内にエネルギー源やエージェントは見当たりません。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:3": {
+      "source_sha256": "3c8c78ccddeb3068685d31f71e4b35299f3e9184a8fdfca13dbfd7cba830d9cc",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:03.549163+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して北へ移動中。",
+        "thought": "エネルギーが5あります。北の(14,7)へ移動するのに2エネルギーを消費するので、残りは3になります。現在の位置から見て(1,3)にあるエネルギー源に向かっていますが、かなり遠いです。食料を見つけるために移動を優先しなければなりません。",
+        "memory": "ステップ16: 待機。エネルギーは5あります。北の(14,7)へ移動するのに2エネルギーを消費するので、残りは3になります。私は向かっています、"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:0": {
+      "source_sha256": "dcd607a74e07d86e9c077da9660c26f49f71dba29998c0272ba0a9842866755d",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:05.321305+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーは4、位置は(3,2)にいます。エネルギーを温存するために留まります。",
+        "thought": "エネルギーが危機的なレベル（4）です。移動には2、アクションには1を消費します。周囲の視界内にすぐ使えるエネルギー源がなく、移動や繁殖を行う余裕もないため、エネルギー源の出現や状況の改善を待つ間、即死を避けるために留まる必要があります。",
+        "memory": "ステップ17: 留まる; エネルギーが危機的なレベル（4）です。移動には2、アクションには1を消費します。周囲の視界内にすぐ使えるエネルギー源がなく、移動や繁殖を行う余裕もな"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:1": {
+      "source_sha256": "790cec7fae2f326dba99f41269c998b849d722cd7d5683ee9045620905b568c8",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:07.348156+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探して南へ移動中。",
+        "thought": "エネルギーが低下（41）しており、エネルギー源は見当たらない。Eを探すために南へ進む。",
+        "memory": "ステップ 17: (0,-1) へ移動。エネルギーが低下（41）しており、エネルギー源は見当たらない。Eを探すために南へ進む。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:2": {
+      "source_sha256": "efd20585a7706d512add2e35c9b6a475711dc39343b362ef4e31b63b7609d03f",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:08.571681+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(10,11)にいて、エネルギーは4です。節約するために留まります。",
+        "thought": "エネルギーが極めて少ない（4）。移動には2消費するため、残りは2となる。ローカルビューにエネルギー源やエージェントが見当たらないため、移動はリスクが高く、すぐに報酬が得られる可能性は低い。留まることが、エージェントの移動や視界の変化を待つための最も安全な方法である。",
+        "memory": "ステップ17: 留まる; エネルギーが極めて少ない(4)。移動には2消費するため、残りは2となる。ローカルビューにエネルギー源やエージェントが"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:3": {
+      "source_sha256": "e743c954d0e7ab154e356d8e495a73faa3518fd6160ea027a8bb87916ee4613a",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:10.559361+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを節約し、Eを探すために南へ移動中。",
+        "thought": "エネルギーが4ある。南の(14,9)への移動にはエネルギーを2消費するので、残りは2になる。死を避けるためにエネルギー源を見つける必要がある。",
+        "memory": "ステップ17: 待機。エネルギーは4。南の(14,9)への移動にはエネルギーを2消費するので、残りは2。エネルギーを"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:0": {
+      "source_sha256": "b7407448e86f75832449f03cc8a12a48609bbf6a0f71759ca3ba026108bbed71",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:12.083794+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(3,2)にエネルギー3でいます。温存するために留まります。",
+        "thought": "エネルギーが危機的なレベル（3）です。移動すると2消費して残り1になります。アクションを行うと1消費して残り2になります。ローカルビュー内にエネルギー源やエージェントが見当たらないため、即死を避けるために留まり、エネルギー源やエージェントが射程内に入るのを待つ必要があります。",
+        "memory": "ステップ18: 留まる; エネルギーが危機的なレベル（3）です。移動すると2消費して残り1になります。アクションを行うと1消費して残り"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:1": {
+      "source_sha256": "7e8d250955b2ec6d00ffb8e12831922aaa9747f91935811902fa30713cfe006e",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:14.019869+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探索中。",
+        "thought": "エネルギーが低下しています (39)。エネルギー源は見当たりません。エネルギーを探すために南へ移動します。",
+        "memory": "ステップ 18: (0,-1) へ移動。エネルギーが低下しています (39)。エネルギー源は見当たりません。エネルギーを探すために南へ移動します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:2": {
+      "source_sha256": "35db566a161d69b046392b1bdcb4c92dd794ab1513250b4e1b9425e008866272",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:15.183629+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーは3。座標(10,11)にいます。エネルギーを温存するために留まります。",
+        "thought": "エネルギーが極めて少ない（3）。移動には2を消費するため、残りは1になる。ローカルビュー内にエネルギー源やエージェントは見当たらない。次のサイクルを生き延びるには、留まるしかない。",
+        "memory": "ステップ18: 留まる。エネルギーが極めて少ない（3）。移動には2を消費するため、残りは1になる。ローカルビュー内にエネルギー源やエージェントは見当たらない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:3": {
+      "source_sha256": "d000f9abea3e657da33632315c6f904dee9c164b3976c0c32ff10f8f8174bd9a",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:16.968421+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して北へ向かっています。",
+        "thought": "エネルギーが3あります。北の(14,7)へ移動するのに2エネルギーを消費するので、残りは1になります。(1,3)にあるエネルギー源に向かうか、新しいエネルギー源を探そうとしています。",
+        "memory": "ステップ18: 待機; エネルギーが3あります。北の(14,7)へ移動するのに2エネルギーを消費するので、残りは1になります。移動を試みようとしてい"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:0": {
+      "source_sha256": "885171b54290901663b4e258fdca4c65cec439f869b1918ba4e210f70214113b",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:18.627821+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー不足。消耗を抑えるためにその場に留まる。",
+        "thought": "私のエネルギーは2。移動には2かかるので、残りは0（死）。留まるには1かかるので、残りは1。エネルギー源が現れるか、より安全な状況になるまで待たなければならない。",
+        "memory": "ステップ19: 留まる; 私のエネルギーは2。移動には2かかるので、残りは0（死）。留まるには1かかるので、残りは1。待たな"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:1": {
+      "source_sha256": "a3984eb94c3538d6f53647f9bd23b29049eeed8b059cd74bb9e352627e98f05b",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:20.279356+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探索中。",
+        "thought": "エネルギーが低下しています (37)。ローカルビュー内にエネルギー源は見当たりません。さらに探索するため南へ移動します。",
+        "memory": "ステップ 19: (0,-1) へ移動。エネルギーが低下しています (37)。ローカルビュー内にエネルギー源は見当たりません。さらに探索するため南へ移動"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:2": {
+      "source_sha256": "73fd5bd84de0d6172e0f3424a1a7daa34984b6232249cd00efe86b964cceff8c",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:21.573027+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーは1、位置は(10,11)にいます。エネルギー不足なので、温存するために留まります。",
+        "thought": "エネルギーが1しかありません。移動には2必要なので、移動すると死んでしまいます。移動したり繁殖したりする余裕はないので、エネルギー源が現れるか、誰かが分けてくれることを願って留まるしかありません。",
+        "memory": "ステップ19: 留まる。エネルギーは1。移動には2必要なので、移動すると死んでしまう。移動したり繁殖したりする余裕はないので、エネルギー源が現れることを願って留まるしかない。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:3": {
+      "source_sha256": "c849cfe026daabceafb23eb1e41a6f24f9129554520b952aef2c28b1ffaac2fc",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:23.397664+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して北へ向かっています。",
+        "thought": "エネルギーが2あります。北の(14,7)へ移動するのに2エネルギーを消費するので、残りは0になります。(1,3)にあるエネルギー源に到達するか、死ぬ前に別のエネルギー源を見つけようとしています。",
+        "memory": "ステップ19: 待機。エネルギーが2あります。北の(14,7)へ移動するのに2エネルギーを消費するので、残りは0になります。到達しようとしているのは"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:0": {
+      "source_sha256": "912332020bf97b6f9551ffe8ab7192df1d6598ec9a967831b218fd8ec149a034",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:25.107936+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーは1、位置は(3,2)にいます。生き残るために留まります。",
+        "thought": "エネルギーは1です。移動（コスト2）もアクション（コスト1）も、行うとエネルギーが0以下になり、死に至ります。ターンを生き延びるために留まり、エネルギー源か他者からのメッセージを待つしかありません。エネルギーを得るまでは行動できません。",
+        "memory": "ステップ20: 留まる; エネルギーは1です。移動（コスト2）もアクション（コスト1）も、行うとエネルギーが0以下になり、死に至ります。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:1": {
+      "source_sha256": "16fff215e04be3e1d23d849b8ae66fa3c64f6f3b4efa114886d00fa75c671bea",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:26.993136+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー不足。エネルギーを探して南へ移動中。",
+        "thought": "エネルギーは35。ローカルビュー内にエネルギー源は見当たらない。Eを探すために南へ移動中。",
+        "memory": "ステップ 20: (0,-1) へ移動。エネルギーは35。ローカルビュー内にエネルギー源は見当たらない。Eを探すために南へ移動中。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:2": {
+      "source_sha256": "bc9d555324e89ff1b9e66c83ac6df1f3e74174d052ec9f9ae25ba333f1f52c80",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:28.327638+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーが1の状態で(10,11)にいます。共有するか、助けてください。",
+        "thought": "エネルギーが1しかありません。移動（コスト2）すると死んでしまいます。エネルギー源が現れるか、エージェントがエネルギーを分けてくれるのを待つしかありません。",
+        "memory": "ステップ20: 待機。エネルギーが1です。移動（コスト2）すると死んでしまいます。エネルギー源が現れるか、"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:3": {
+      "source_sha256": "c444238eebfdcba23a1c27beadcdd34ca8038791320d204cb58de049fd637d96",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:29.845078+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー不足、消耗を抑えるために留まる。",
+        "thought": "エネルギーが残り1しかない。どんな動きも2エネルギーを消費するため、死に至る。即死を避けるためには留まらなければならないが、それでもリスクはある。",
+        "memory": "ステップ20: 留まる。エネルギーが残り1しかない。どんな動きも2エネルギーを消費するため、死に至る。即死を避けるためには留まらなければならないが、それでもリスクは"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "21:1": {
+      "source_sha256": "c6b4edd7e3095c1768455722a84ef7cc68ec431ec9244b014e745dbbbcdbaa92",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:31.385254+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探索中。",
+        "thought": "エネルギーが低下しています (33)。ローカルビュー内にエネルギー源は見当たりません。エネルギー源を探すため、南へ進みます。",
+        "memory": "ステップ 21: (0,-1) へ移動。エネルギーが低下しています (33)。ローカルビュー内にエネルギー源は見当たりません。探索のため南へ進みます。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "22:1": {
+      "source_sha256": "f736c980b7f2c79e21ce1e687044bc3845d9aaee1d783a3fcdafd041bb337b97",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:32.629125+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探索中。",
+        "thought": "エネルギーが低下しています (31)。ローカルビュー内にエネルギー源は見当たりません。エネルギーを探すため、南へ進みます。",
+        "memory": "ステップ 22: (0,-1) へ移動; エネルギーが低下しています (31)。ローカルビュー内にエネルギー源は見当たりません。エネルギーを探すため、南へ"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "23:1": {
+      "source_sha256": "a1710cf8e16e988de65cab611818e9778ef46773277c14f75451b7b460bdab7d",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:33.869296+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "メッセージなし",
+        "thought": "エネルギーが低下しています (29)。エネルギー源を探すため、南へ進みます。",
+        "memory": "ステップ 23: (0,-1) へ移動; エネルギーが低下しています (29)。エネルギー源を探すため、南へ進みます。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "24:1": {
+      "source_sha256": "49c3e18106608c27629b4c036474a745d3d863137c5d048d1ce7ddcbf79b2101",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:34.908670+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探索中。",
+        "thought": "エネルギーが危機的なレベルまで低下している (27)。死を避けるために、エネルギー源 (E) を見つけるべく移動を続けなければならない。",
+        "memory": "ステップ 24: (0,-1) へ移動。エネルギーが危機的なレベルまで低下している (27)。死を避けるために、エネルギー源 (E) を見つけるべく移動を続けなければならない。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "25:1": {
+      "source_sha256": "bd0bab0ae78425296491ee395cd88db1c59f7b5a6e8c147e81dbb879fd3098cc",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:36.375827+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探索中。",
+        "thought": "エネルギーが危機的なレベルまで低下している (25)。死を避けるために、エネルギー源 (E) を見つけるべく南への移動を続けなければならない。",
+        "memory": "ステップ 25: (0,-1) へ移動。エネルギーが危機的なレベルまで低下している (25)。死を避けるために、エネルギー源 (E) を見つけるべく南への移動を続けなければならない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "26:1": {
+      "source_sha256": "fccd2c731f056055b961eb9508fffafe360b74d4d9ad3155b0fc7e8dca3b953e",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:37.890590+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "まだエネルギーを探している。",
+        "thought": "エネルギーが危機的なレベルまで低下している (23)。死を避けるために、エネルギー源 (E) を見つけるべく南へ移動し続けなければならない。",
+        "memory": "ステップ 26: (0,-1) へ移動; エネルギーが危機的なレベルまで低下している (23)。死を避けるために、エネルギー源 (E) を見つけるべく南へ移動し続けなければならない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "27:1": {
+      "source_sha256": "ae96d99ee42ab4e3fd709729c26ab1a3a8223e79323c9a92f6f5ad32b8063ddc",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:39.386992+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探しています。",
+        "thought": "エネルギーが危機的なレベルまで低下しています (21)。死を避けるために、エネルギー源 (E) を見つけるべく南へ移動し続けなければなりません。",
+        "memory": "ステップ 27: (0,-1) へ移動; エネルギーが危機的なレベルまで低下しています (21)。死を避けるために、エネルギー源 (E) を見つけるべく南へ移動し続けなければなりません。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "28:1": {
+      "source_sha256": "182dba0b5077e677766aea1604697ba247e5da442ac5f0206b07505659b424b6",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:40.886220+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探索中。",
+        "thought": "エネルギーが危機的なレベルまで低下している (19)。死を避けるために、エネルギー源 (E) を探して南へ移動し続けなければならない。",
+        "memory": "ステップ 28: (0,-1) へ移動; エネルギーが危機的なレベルまで低下している (19)。死を避けるために、エネルギー源 (E) を探して南へ移動し続けなければならない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "29:1": {
+      "source_sha256": "c4f65363b560ab671c25b8bebe22589349fb6f9ca66007e8bea0ac6179675ebc",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:42.281618+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "南方向にエネルギー源を探索中。",
+        "thought": "エネルギーが危機的なレベルまで低下している(17)。死を避けるために、エネルギー源(E)を見つけるべく南への移動を続けなければならない。",
+        "memory": "ステップ29: (0,-1)へ移動。エネルギーが危機的なレベルまで低下している(17)。死を避けるために、エネルギー源(E)を見つけるべく南への移動を続けなければならない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "30:1": {
+      "source_sha256": "93105854802e44f77034db82add7d26ea3f0c998c1144ccf031da83386e1e076",
+      "status": "completed",
+      "created_at": "2026-10-11T17:41:43.790732+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "南方向にエネルギー源を探索中。",
+        "thought": "エネルギーが危機的なレベルまで低下している(15)。死を避けるために、エネルギー源(E)を見つけるべく南への移動を続けなければならない。",
+        "memory": "ステップ30: (0,-1)へ移動。エネルギーが危機的なレベルまで低下している(15)。死を避けるために、エネルギー源(E)を見つけるべく南への移動を続けなければならない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    }
+  },
+  "status": "completed",
+  "updated_at": "2026-10-11T17:41:45.289141+00:00",
+  "last_connection": {
+    "base_url": "http://127.0.0.1:8080/v1",
+    "requested_model": "default_model"
+  },
+  "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922"
+}

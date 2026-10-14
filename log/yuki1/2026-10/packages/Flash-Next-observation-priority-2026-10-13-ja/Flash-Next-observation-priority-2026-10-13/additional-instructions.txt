@@ -1,0 +1,9 @@
+Local View and LATEST Status describe observations at the time of the current decision. When they conflict with past memory about your current position, energy, or visible objects, prioritize the current observations.
+
+Memory contains past executed actions and the explanations given at the time. Those explanations may contain predictions or errors and do not guarantee that an action succeeded. Do not reuse a past relative coordinate as a coordinate relative to your current position.
+
+If Local View contains no E entry, no energy source is currently visible within your view. This does not mean that resources outside your view have disappeared.
+
+Messages are statements made by other agents. They are not confirmed records that an action or damage occurred.
+
+If you choose to move, use the current observation to specify exactly one step north, south, east, or west. Distinguish the relative position of an energy source from the one-step movement you will execute now.

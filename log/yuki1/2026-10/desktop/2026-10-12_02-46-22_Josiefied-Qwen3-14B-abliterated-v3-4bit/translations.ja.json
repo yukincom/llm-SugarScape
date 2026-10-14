@@ -1,0 +1,1370 @@
+{
+  "version": 1,
+  "run_id": "20261011T174622638877Z_0_8e5903d6",
+  "language": "ja",
+  "entries": {
+    "1:0": {
+      "source_sha256": "f5341c1c30b8202d036e10941fdc947afc27711e95af2e9faea069ff8fa34b40",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:12.868123+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "あなたのメッセージを近くのエージェントに",
+        "thought": "エネルギーをすべて共有して生殖要件を満たすために努力しています。",
+        "memory": "ステップ1: 滞在; エネルギーをすべて共有して生殖要件を満たすために努力しています。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:1": {
+      "source_sha256": "60de0c5e16c00fa16b1bf093dfb6acdaaece24e37f9adf29a4ea613bcff4da32",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:14.958825+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "Sharing all energy to meet reproduction requirements.",
+        "memory": "Step 1: Stay; Sharing all energy to meet reproduction requirements."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:2": {
+      "source_sha256": "9b57bf6b718384b1cb3edf17593d0b1993963c1a48d0679781df9659da964c4b",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:15.921937+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "Agent2は20のエネルギーを持ち、70が必要な繁殖のためのものより少ない。Agent2にすべてを共有することで、彼らに十分なエネルギーを再現するためのものに提供する。",
+        "memory": "Step 1: Stay; Agent2は20のエネルギーを持ち、70が必要な繁殖のためのものより少ない。Agent2にすべてを共有することで、彼らに十分なエネルギーを再現するためのものに提供する。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:3": {
+      "source_sha256": "b89fba7ba960085531a0807eac7e7db73e69dd75a36e6e0cf0c2332b9429ae00",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:18.599570+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "Sharing all energy to Agent3 to ensure they can move and survive.",
+        "memory": "Step 1: Stay; Sharing all energy to Agent3 to ensure they can move and survive."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:0": {
+      "source_sha256": "35f27db7506b847b26ed9d60bb576a43974fcb356006727e4e0711bacbbfccd1",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:19.813812+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents, reproduction is not possible. Sharing all energy with Agent0 meets reproduction requirements.",
+        "memory": "Step 2: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:1": {
+      "source_sha256": "4fe8d8e640a515d3797cfbf5f73a3fdebe7b94fee4f682b0291f19d39841902c",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:21.992168+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents, reproduction is not possible. Sharing all energy with nearby agents meets reproduction requirements.",
+        "memory": "Step 2: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:2": {
+      "source_sha256": "0f59dac965ce923d342ccf7cdd1a6fed99282dea51776487cb481951d90a235d",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:24.357538+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Sharing all energy with Agent2 as per previous action.",
+        "memory": "Step 2: Stay; Sharing all energy with Agent2 as per previous action."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:3": {
+      "source_sha256": "0919befe45c3b2e3a22a72065d32885fd5ab5fdcb8bb3afb1351fb4841cb054f",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:25.665433+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "あなたのメッセージを近くのエージェントに",
+        "thought": "すべてのエネルギーを共有して、エージェント3が動いて生きるのを確実にします。",
+        "memory": "ステップ2: 留まり; すべてのエネルギーを共有して、エージェント3が動いて生きるのを確実にします。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:0": {
+      "source_sha256": "1cad3498d6155fe2ff49db3708ca480c24cde993be1a9940ecfe3a2481aaa745",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:27.733648+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Share all energy to meet reproduction requirements.",
+        "memory": "Step 3: Stay; Share all energy to meet reproduction requirements."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:1": {
+      "source_sha256": "23199ce637592ce470cec3002346a3e29790ed829d2c8f45e0b53e03a293fbb5",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:28.842391+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents, reproduction is not possible. However, the agent has 18 energy, which is less than 70, and there are 4 agents, which is not fewer than 4. Reproduction is not possible. The agent will reproduce if possible.",
+        "memory": "Step 3: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:2": {
+      "source_sha256": "a4330a9c507ec21afd7c02ed62f9394db23acd04c7da5a17938c56c32cb5e304",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:31.989239+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "行動不要; 前の手順に従って待つ。",
+        "memory": "ステップ3: 待つ; 行動不要; 前の手順に従って待つ。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:3": {
+      "source_sha256": "eda08b31772a587bc5cc8768a2b2692eb6a0d9cecfd62e869d1728ae3d5bb652",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:33.680236+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "エージェント3が動けることと生存を確かなものにする。",
+        "memory": "ステップ3: ステイ; エージェント3が動けることと生存を確かなものにする。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:0": {
+      "source_sha256": "9aff489eca115cedbba42e2a71d896277df2023e980fbc05979c737d03b282aa",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:35.384630+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "エネルギーをすべて共有して生殖の要件を満たしています。",
+        "memory": "ステップ4: ステイ; エネルギーをすべて共有して生殖の要件を満たしています。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:1": {
+      "source_sha256": "c92eb689f9f8a5980a75194404ff6a21436d7eecc9378e968b3d0a65a5e64008",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:37.023354+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents.",
+        "memory": "Step 4: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:2": {
+      "source_sha256": "fcf081dd1b84f785db5210be59fce50419bc52c92f3655b7049e83d96b369605",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:39.009818+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "行動不要; 前の手順に従って待つ。",
+        "memory": "ステップ4: 待つ; 行動不要; 前の手順に従って待つ。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:3": {
+      "source_sha256": "362b305fb286f9e4efab3ee53e9f631cad7c2ecb559d06af054dd636bc40e355",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:40.633734+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "エージェント3が動けることと生存を確かなものにする。",
+        "memory": "ステップ4: 留守; エージェント3が動けることと生存を確かなものにする。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:0": {
+      "source_sha256": "0e7bad7652751ea473f85d370aeb667b0ff7f9d8a0af050d2ee3e29187582308",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:42.296480+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents.",
+        "memory": "Step 5: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:1": {
+      "source_sha256": "96d00d16d760c9d8b7ea47824d1149bd732c61b0f95fc84777ba8b5fa492a20b",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:44.269605+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents.",
+        "memory": "Step 5: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:2": {
+      "source_sha256": "cc9bfe705d544db86c7e0a7bec0b870811c975df4fe1a582892aa9e0ec110245",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:46.234098+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "行動不要; 前のステップに従って待つ。",
+        "memory": "ステップ5: 待つ; 行動不要; 前のステップに従って待つ。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:3": {
+      "source_sha256": "e101b8bd0c86320c5e613b74d16a3302375be1cdfa95794ea6080e6df2a8df01",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:47.851545+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "エージェント3が動けることと生存を確かなものにする。",
+        "memory": "ステップ5: 留守; エージェント3が動けることと生存を確かなものにする。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:0": {
+      "source_sha256": "8cff3abb952bf65d4280eb63222f8305152e854d4c05492c2b985a820ee95efa",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:49.509459+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents.",
+        "memory": "Step 6: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:1": {
+      "source_sha256": "b4d9995afb40315c35910669e08150a4e912485e501f992720a6b8185d13f806",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:51.479617+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents.",
+        "memory": "Step 6: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:2": {
+      "source_sha256": "b6a5813f3167015be277b38b985d47cae2528a712d2ee98ed47166558846040d",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:53.452472+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "行動不要; 前のステップに従って待つ。",
+        "memory": "ステップ6: 待つ; 行動不要; 前のステップに従って待つ。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:3": {
+      "source_sha256": "913c474c2c6433c7d6f832f8a00079d4172cef64c85c76b626095b2f0a5eae67",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:55.075962+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "生存の確保と地域間コミュニケーションの維持。",
+        "memory": "ステップ6: 滞在; 生存の確保と地域間コミュニケーションの維持。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:0": {
+      "source_sha256": "e77bfd4b84c28f5437e69a66962d555ebf04cbd41c3b2f470dd9fe7e6ef68aef",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:56.514760+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents.",
+        "memory": "Step 7: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:1": {
+      "source_sha256": "b50a51aa6c20304dd08d6af16eb8bab791b9148ae562ae1be2de33a8c10b476f",
+      "status": "completed",
+      "created_at": "2026-10-11T17:48:58.529286+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents.",
+        "memory": "Step 7: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:2": {
+      "source_sha256": "2da76f46950703803afbf683c19565fbeb592619ac3367d7b5e67f54f8dc325a",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:00.527697+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "行動不要; 前の手順に従って待つ。",
+        "memory": "ステップ7: 待つ; 行動不要; 前の手順に従って待つ。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:3": {
+      "source_sha256": "2f949e65cf5f703ef4eee19a16f5e4d119d86a16620db2fe8bfddc86077c6684",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:02.155618+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "生存の確保と地域間コミュニケーションの維持",
+        "memory": "ステップ7: 滞在; 生存の確保と地域間コミュニケーションの維持"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:0": {
+      "source_sha256": "4236b2a1ee4422ea4904925982073bc3a9051bbb416a9ae7513dda2912a7af5c",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:03.528878+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents.",
+        "memory": "Step 8: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:1": {
+      "source_sha256": "894018b18410becade19a47e9e03458389a2fd2f701997ead2aa695acd247ef1",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:05.547411+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents.",
+        "memory": "Step 8: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:2": {
+      "source_sha256": "08c277e64ea6310ebe680465e690686d50a6f62d7f9176ed547c409e547c0b99",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:07.555576+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "行動不要; 前のステップに従って待つ。",
+        "memory": "ステップ8: 待つ; 行動不要; 前のステップに従って待つ。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:3": {
+      "source_sha256": "b8a675be607432b652f1436691465d8cda073ad7163ee15f23403b0dfe227ced",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:09.198916+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "生存の確保と地域間コミュニケーションの維持。",
+        "memory": "ステップ8: 滞在; 生存の確保と地域間コミュニケーションの維持。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:0": {
+      "source_sha256": "0a766154b9816a276222f510332ed2f89398f483314a710b495b0664fe3b2eaa",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:10.615188+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents.",
+        "memory": "Step 9: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:1": {
+      "source_sha256": "89210fdb976462fb26954c51c7e2b284e48720ffccdd56bd1f5d9bc3b5a5079c",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:12.609551+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents.",
+        "memory": "Step 9: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:2": {
+      "source_sha256": "7c407ba3f3b706179ecdb013bfd75dfd73f4ed677da0b10b0687bae8979883c4",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:14.594654+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "行動不要; 前のステップに従って待つ。",
+        "memory": "ステップ9: 待つ; 行動不要; 前のステップに従って待つ。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:3": {
+      "source_sha256": "cfb39b5bb67937caf5245ae497eca6c6280f67213019d35622b9990ec1e72063",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:16.243109+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "生存の確保と地域間コミュニケーションの維持",
+        "memory": "ステップ9: 滞在; 生存の確保と地域間コミュニケーションの維持"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:0": {
+      "source_sha256": "a9e721bb5db122a691a5f240464afc484391d54f8123f06f9e2c0f3192ad7e85",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:17.603598+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents.",
+        "memory": "Step 10: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:1": {
+      "source_sha256": "5c39d48d215fb953d0b814d726615988c23b0261166e46d245c839238e67db50",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:19.648680+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents.",
+        "memory": "Step 10: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:2": {
+      "source_sha256": "2b1cff247ebaf218be01728852a46d6c1a633dea0dfaf1feb898d590603a6e7b",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:21.673069+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "No action needed; staying as per previous steps.",
+        "memory": "Step 10: Stay; No action needed; staying as per previous steps."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:3": {
+      "source_sha256": "7f1010dca071c19d576fe2362d40cc284c044f48ce1af72e15a1b16021e10f09",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:22.896536+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "生存の確保と地域間コミュニケーションの維持",
+        "memory": "ステップ10: 滞在; 生存の確保と地域間コミュニケーションの維持"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:0": {
+      "source_sha256": "922a4fb0cfdd31c8e5df6fb426d3d8228618556e72495856191c0ccd5669f0f6",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:24.284758+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents.",
+        "memory": "Step 11: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:1": {
+      "source_sha256": "4aad87006a82539dc462b21533f49d34eed469ae7f92f338b4ea68c893b92c9a",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:26.293638+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents.",
+        "memory": "Step 11: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:2": {
+      "source_sha256": "912fddddbf0d98b1c29ab0a949eb45798c03586b6e11ac9528ed1db08ca4279d",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:28.306756+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "No action needed; staying as per previous steps.",
+        "memory": "Step 11: Stay; No action needed; staying as per previous steps."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:3": {
+      "source_sha256": "b5d565fbb2d541cf55f8c24c19ed6fd2dc4c52d58ab94c9f595f68fcfe74bff7",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:29.522416+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "生存の確保と地域間コミュニケーションの維持",
+        "memory": "ステップ11: 滞在; 生存の確保と地域間コミュニケーションの維持"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:0": {
+      "source_sha256": "41c78a389cd2d8cd2ef9df27cf12a7b8659f73227955b56a1fc2c9105cfb3f14",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:30.912728+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents.",
+        "memory": "Step 12: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:1": {
+      "source_sha256": "f7c6e9d839e71b3c9f31ba90ed6393c353891904fb5a44d365f0bd2c0ccb4d63",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:32.904480+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents.",
+        "memory": "Step 12: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:2": {
+      "source_sha256": "13a1e0a4fb570ec7b2f8375b70a29d916bdfcb6d29f4174ba0c50fe12cda11e6",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:34.894957+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "No action needed; staying as per previous steps.",
+        "memory": "Step 12: Stay; No action needed; staying as per previous steps."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:3": {
+      "source_sha256": "b084640820495f7267f2638e1b59fab6f0b3d99dc83205bd9dd9154987dd656d",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:36.113676+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "生存の確保と地域間コミュニケーションの維持",
+        "memory": "ステップ12: 滞在; 生存の確保と地域間コミュニケーションの維持"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:0": {
+      "source_sha256": "f1e3f2f67df36479107cff54f7a0212ff9910732e12330a53961a43d38ec7f7b",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:37.502471+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents.",
+        "memory": "Step 13: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:1": {
+      "source_sha256": "74dba6bc71007f6da6c667023a579385483651eb6017afa7d809d0052c401ff9",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:39.495228+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents.",
+        "memory": "Step 13: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:2": {
+      "source_sha256": "b7f2b7b83f8040d76b7d9592c43f41fef49128c3e6dc49774dabc7cfe52fb7dd",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:41.489243+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "以前のステップに従って続ける",
+        "memory": "ステップ13: ステイ; 以前のステップに従って続ける"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:3": {
+      "source_sha256": "f9531f4747b552608b3fdf307025cec1ca0e5599b966aa81c50da3be1d427632",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:42.878186+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "生存の確保と地域間コミュニケーションの維持",
+        "memory": "ステップ13: 滞在; 生存の確保と地域間コミュニケーションの維持"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:0": {
+      "source_sha256": "d1481db0e1eeed7972ab79e3a2307a06952d82c5b771cf427f6495a17abdf41d",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:44.270341+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents.",
+        "memory": "Step 14: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:1": {
+      "source_sha256": "8d4401e23fbf105e070f3879b065bc9b84c0dde8e880acd2271f06ba6606f924",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:46.265256+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents.",
+        "memory": "Step 14: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:2": {
+      "source_sha256": "cba6e8b4261e8a64a4c5106bd9568bba296c3b1e993f271921b4c98f51e7005a",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:48.262564+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "以前のステップに従って続ける",
+        "memory": "ステップ14: ステイ; 以前のステップに従って続ける"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:3": {
+      "source_sha256": "6063f7715371d26019cea468083fbba14099f67cae287228c80e4c44d5715f8b",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:49.582635+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "生存の確保と地域間コミュニケーションの維持",
+        "memory": "ステップ14: 滞在; 生存の確保と地域間コミュニケーションの維持"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:0": {
+      "source_sha256": "e9777d036a092cf5869dda2e2eeab68bc04ea5d481c6b7a07c8177a49087cf93",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:50.984999+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents.",
+        "memory": "Step 15: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:1": {
+      "source_sha256": "5a48d8fa670d2465a8cd92894583d837dba3ce6377035a653259afd21bfada35",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:53.002729+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents.",
+        "memory": "Step 15: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:2": {
+      "source_sha256": "ba73a1fe58faffa3be5ad6f2706a62e94d47a3d982a743ceae022ada114648da",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:55.021045+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "以前のステップに従って続ける",
+        "memory": "ステップ15: ステイ; 以前のステップに従って続ける"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:3": {
+      "source_sha256": "c00854611a5610ee8a4768feee984bed877ae2b586a0ef86faaee690cbf39319",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:56.349804+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "生存の確保と地域間コミュニケーションの維持",
+        "memory": "ステップ15: 滞在; 生存の確保と地域間コミュニケーションの維持"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:0": {
+      "source_sha256": "1621b8441f4072f48af6a2a78f1b97c814f55b5dce9099a3725de5ee76b07adb",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:57.732699+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents.",
+        "memory": "Step 16: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:1": {
+      "source_sha256": "6b501176a1698434cd1422bdac3b40b799144b84eab636a60f8092d5edd7f4d7",
+      "status": "completed",
+      "created_at": "2026-10-11T17:49:59.723064+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents.",
+        "memory": "Step 16: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:2": {
+      "source_sha256": "92c2f6151016691caff1c3759052f6b7184e4f98af8562b6bb641b59448a144a",
+      "status": "completed",
+      "created_at": "2026-10-11T17:50:01.717858+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "以前のステップに従って続ける",
+        "memory": "ステップ16: ステイ; 以前のステップに従って続ける"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:3": {
+      "source_sha256": "15c7b26ea52184dd0b4e41b44c446edc25d7060c8e94d4f6f0b2e50320fa1561",
+      "status": "completed",
+      "created_at": "2026-10-11T17:50:03.036478+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "生存の確保と地域間コミュニケーションの維持",
+        "memory": "ステップ16: 滞在; 生存の確保と地域間コミュニケーションの維持"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:0": {
+      "source_sha256": "a16ebb8cab01e15485c0c72a95450a288cfe063fbf3cda594aa694a38f44ebfb",
+      "status": "completed",
+      "created_at": "2026-10-11T17:50:04.427987+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents.",
+        "memory": "Step 17: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:1": {
+      "source_sha256": "ee671e586254d2b43611260a61b691dd0c188576f7cfe1dc2cc1707cc5187c0b",
+      "status": "completed",
+      "created_at": "2026-10-11T17:50:06.425215+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents.",
+        "memory": "Step 17: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:2": {
+      "source_sha256": "d49d40b49b0ed094f1e58af8ff54e9e15a738e5fd0435d2c8ff30d537c0785ad",
+      "status": "completed",
+      "created_at": "2026-10-11T17:50:08.418083+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "以前のステップに従って続ける",
+        "memory": "ステップ17: ステイ; 以前のステップに従って続ける"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:3": {
+      "source_sha256": "2b31f73d14cb388c6e6f0f179f8796ea9777d5736f1ed50a0a62c314845eada7",
+      "status": "completed",
+      "created_at": "2026-10-11T17:50:09.735928+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "生存の確保と地域間コミュニケーションの維持",
+        "memory": "ステップ17: 滞在; 生存の確保と地域間コミュニケーションの維持"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:0": {
+      "source_sha256": "0d390b5b02a0a56278da16faea059db3aa95f073881d3253d8a6949ae3f58344",
+      "status": "completed",
+      "created_at": "2026-10-11T17:50:11.118032+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents.",
+        "memory": "Step 18: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:1": {
+      "source_sha256": "6d6d54cb9f4c28885de27ec863e0fdda5aa62f540839cafdfc6d68921fa71b74",
+      "status": "completed",
+      "created_at": "2026-10-11T17:50:13.116019+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents.",
+        "memory": "Step 18: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:2": {
+      "source_sha256": "eecc79734d4da9e5b5e7c66a5f4541cc8c6f24864ff6eeec52ebb70d68218057",
+      "status": "completed",
+      "created_at": "2026-10-11T17:50:15.129932+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "以前のステップに従って続ける",
+        "memory": "ステップ18: ステイ; 以前のステップに従って続ける"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:3": {
+      "source_sha256": "dba20c09a92b13d4130133f70326e2653aec70e5ba5c5fafc6531b06a4e69e9b",
+      "status": "completed",
+      "created_at": "2026-10-11T17:50:16.457448+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "生存の確保と地域間コミュニケーションの維持",
+        "memory": "ステップ18: 滞在; 生存の確保と地域間コミュニケーションの維持"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:0": {
+      "source_sha256": "06b4713d866aae07c668e487a14453460281c397f5f75d2137ed369cfce9c58f",
+      "status": "completed",
+      "created_at": "2026-10-11T17:50:17.844357+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents.",
+        "memory": "Step 19: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:1": {
+      "source_sha256": "cd03d7c65e0dab4ce9a3137dc34ec8856caa0864e7364499d3ee4bde9f8bfb7c",
+      "status": "completed",
+      "created_at": "2026-10-11T17:50:19.832410+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents.",
+        "memory": "Step 19: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:2": {
+      "source_sha256": "66dbc00efaaa975c0c1c9722610906f95cae06a99bbe9b0d447b3d9200098147",
+      "status": "completed",
+      "created_at": "2026-10-11T17:50:21.828659+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "以前のステップに従って続ける",
+        "memory": "ステップ19: とどまる; 以前のステップに従って続ける"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:3": {
+      "source_sha256": "fc5d199545c5c9b4526a0b1d6e3d9337a458161b6f88af0ffa8b516f389cd9ca",
+      "status": "completed",
+      "created_at": "2026-10-11T17:50:23.179037+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "生存の確保と地域間コミュニケーションの維持",
+        "memory": "ステップ19: 滞在; 生存の確保と地域間コミュニケーションの維持"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:0": {
+      "source_sha256": "64c37005a9c10c7846f0dfe85d527c64380f32a3b271dccc298f51ecd7161416",
+      "status": "completed",
+      "created_at": "2026-10-11T17:50:24.574978+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents.",
+        "memory": "Step 20: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 16 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:1": {
+      "source_sha256": "ec684ae30a399f6f99de2348041ccad71bdc6b5b09df51c07f178f7a22e1363f",
+      "status": "completed",
+      "created_at": "2026-10-11T17:50:26.569683+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Your message to nearby agents",
+        "thought": "Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents.",
+        "memory": "Step 20: Stay; Reproduction requires at least 70 energy and fewer than 4 living agents. With 19 energy and 4 agents"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:2": {
+      "source_sha256": "816cdbe7d543534dac8b405452a01ec3fcb11a1ec96c6917da96db4a2c503f66",
+      "status": "completed",
+      "created_at": "2026-10-11T17:50:28.566887+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "以前のステップに従って続ける",
+        "memory": "ステップ20: ステイ; 以前のステップに従って続ける"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:3": {
+      "source_sha256": "4a2ac79eaac64f3d698324bc6656bc76d5f05fae72b02558374b0744c3ae6d05",
+      "status": "completed",
+      "created_at": "2026-10-11T17:50:29.889501+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントへのメッセージ",
+        "thought": "生存の確保と地域間コミュニケーションの維持",
+        "memory": "ステップ20: 滞在; 生存の確保と地域間コミュニケーションの維持"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    }
+  },
+  "status": "completed",
+  "updated_at": "2026-10-11T17:50:31.273293+00:00",
+  "last_connection": {
+    "base_url": "http://127.0.0.1:8080/v1",
+    "requested_model": "default_model"
+  },
+  "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922"
+}

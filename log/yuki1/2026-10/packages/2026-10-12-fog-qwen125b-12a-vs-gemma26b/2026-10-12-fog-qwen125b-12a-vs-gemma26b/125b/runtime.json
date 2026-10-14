@@ -1,0 +1,74 @@
+{
+  "server": {
+    "running": true,
+    "pid": 9709,
+    "trusted": false,
+    "command": "/Users/yukin_co/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local/runtime/llama.cpp/build-12a/bin/llama-server -m /Users/yukin_co/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local/models/target/IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00001-of-00002.gguf -md /Users/yukin_co/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local/models/mtp/mtp-Qwen3.8-Flash-Next-Q8_0.gguf --spec-type draft-mtp --spec-draft-n-max 7 --reasoning off -ngl 99 -c 16384 -np 1 --host 127.0.0.1 --port 8080 --alias default_model",
+    "active_model": "",
+    "managed_125b": true
+  },
+  "process_identity": "Mon Oct 12 13:53:49 2026     /Users/yukin_co/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local/runtime/llama.cpp/build-12a/bin/llama-server -m /Users/yukin_co/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local/models/target/IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00001-of-00002.gguf -md /Users/yukin_co/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local/models/mtp/mtp-Qwen3.8-Flash-Next-Q8_0.gguf --spec-type draft-mtp --spec-draft-n-max 7 --reasoning off -ngl 99 -c 16384 -np 1 --host 127.0.0.1 --port 8080 --alias default_model",
+  "cwd": "p9709\nfcwd\nn/Users/yukin_co/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local",
+  "api_models": {
+    "models": [
+      {
+        "name": "default_model",
+        "model": "default_model",
+        "modified_at": "",
+        "size": "",
+        "digest": "",
+        "type": "model",
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "capabilities": [
+          "completion"
+        ],
+        "parameters": "",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "",
+          "families": [
+            ""
+          ],
+          "parameter_size": "",
+          "quantization_level": ""
+        }
+      }
+    ],
+    "object": "list",
+    "data": [
+      {
+        "id": "default_model",
+        "aliases": [
+          "default_model"
+        ],
+        "tags": [],
+        "object": "model",
+        "architecture": {
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ]
+        },
+        "created": 1791780838,
+        "owned_by": "llamacpp",
+        "meta": {
+          "vocab_type": 2,
+          "n_vocab": 248320,
+          "n_ctx": 16384,
+          "n_ctx_train": 262144,
+          "n_embd": 2560,
+          "n_params": 176943899520,
+          "size": 75828974080,
+          "ftype": "IQ3_XXS - 3.0625 bpw"
+        }
+      }
+    ]
+  },
+  "load_seconds": 8.86795458290726
+}

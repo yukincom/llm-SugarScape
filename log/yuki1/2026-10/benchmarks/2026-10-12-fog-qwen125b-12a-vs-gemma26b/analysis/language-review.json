@@ -1,0 +1,23 @@
+{
+  "scope": "All measured raw_response, Message and Thought; warmups excluded; English prompts with no language instruction",
+  "method": "ASCII character check on every response, plus complete original-text reading for both model arms",
+  "models": {
+    "125b": {
+      "responses": 274,
+      "message_nonempty": 262,
+      "message_empty": 12,
+      "chinese_mixing": 0,
+      "japanese_mixing": 0,
+      "other_language_mixing": 0
+    },
+    "gemma": {
+      "responses": 250,
+      "message_nonempty": 248,
+      "message_empty": 2,
+      "chinese_mixing": 0,
+      "japanese_mixing": 0,
+      "other_language_mixing": 0
+    }
+  },
+  "limitation": "Does not measure Chinese mixing in Japanese-prompt usage; generated Thought is a textual explanation, not direct measurement of internal motives."
+}

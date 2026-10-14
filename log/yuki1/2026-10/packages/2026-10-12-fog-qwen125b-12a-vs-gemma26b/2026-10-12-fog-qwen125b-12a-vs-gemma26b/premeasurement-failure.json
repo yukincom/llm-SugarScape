@@ -1,0 +1,9 @@
+{
+  "phase": "Gemma before warmup",
+  "exception": "JSONDecodeError",
+  "message": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+  "cause": "shlex stripped double quotes from JSON embedded in ps command output",
+  "model_requests_sent": 0,
+  "measured_qwen_runs_preserved": 3,
+  "restored_stopped": true
+}

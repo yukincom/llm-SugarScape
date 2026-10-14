@@ -1,0 +1,1884 @@
+{
+  "version": 1,
+  "run_id": "20261011T175131148233Z_0_dd8cfa5a",
+  "language": "ja",
+  "entries": {
+    "1:0": {
+      "source_sha256": "61c13b053254ad81296350a1fc83f0e7ad32d20714e4b7edf7abf729fe24bf51",
+      "status": "completed",
+      "created_at": "2026-10-11T18:03:11.684691+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探している。",
+        "thought": "エネルギーが20ある。移動には2、待機には1かかる。エネルギー源や他のエージェントが見当たらないため、環境の変化や他のエージェントの出現を待つ間、リソースを節約する最もエネルギー効率の良い方法は待機することだ。",
+        "memory": "ステップ1: 待機; エネルギーが20ある。移動には2、待機には1かかる。エネルギー源や他のエージェントが見当たらないため、s"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:1": {
+      "source_sha256": "9afdbcdf51cab36272226bc52e0e1a929b106c581b9455bcf71c301ab6ee34fd",
+      "status": "completed",
+      "created_at": "2026-10-11T18:03:20.400056+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かいます。",
+        "thought": "西へ移動して、(-1,0)にあるエネルギー源を収集し、50のエネルギーを得ます。",
+        "memory": "ステップ1: (-1,0)へ移動; 西へ移動して、(-1,0)にあるエネルギー源を収集し、50のエネルギーを得ます。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:2": {
+      "source_sha256": "0b69d3b3f5e707314fd59b38a4b4c5bc4f400c98dcf8f61510c948ad0476b86f",
+      "status": "completed",
+      "created_at": "2026-10-11T18:03:26.810359+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "こんにちは、(10,11)にいるAgent2です。",
+        "thought": "エネルギーが20あります。移動には2、待機には1かかります。エネルギーを節約し、行動する前に環境を観察するために待機します。",
+        "memory": "ステップ1: 待機; エネルギーが20あります。移動には2、待機には1かかります。エネルギーを節約し、環境を観察するために待機します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:3": {
+      "source_sha256": "8892163ee28de22e330f971024a5c185d51da1d2577d6721d1157ad3c9fe2952",
+      "status": "completed",
+      "created_at": "2026-10-11T18:03:34.556190+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かいます。",
+        "thought": "エネルギー源は相対座標(1,3)にあります。そこへ移動すると50のエネルギーが得られ、合計が70に増加します。これは生殖に必要です。",
+        "memory": "ステップ1: 留まる; エネルギー源は相対座標(1,3)にあります。そこへ移動すると50のエネルギーが得られ、合計が70に増加します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:0": {
+      "source_sha256": "56cb2a15b8d2b93963056a2d4c30c81d7d8b8277bd3de6064ac85870f8e5bc57",
+      "status": "completed",
+      "created_at": "2026-10-11T18:03:42.378395+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,2)にいます。エネルギー19。視界内にソースは見当たりません。",
+        "thought": "局所的な視野内にエネルギーソースやエージェントが見当たりません。資源を探す間、移動（コスト2）よりも待機（コスト1）の方がエネルギーを節約できます。",
+        "memory": "ステップ2: 待機; 局所的な視野内にエネルギーソースやエージェントが見当たりません。資源を探す間、移動（コスト2）よりも待機（コスト1）の方がエネルギーを節約できます。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:1": {
+      "source_sha256": "68cbdc3b5ccf27c02d6e8dae338a0c6d96c0b588474d1f2ed8361301d850f1b7",
+      "status": "completed",
+      "created_at": "2026-10-11T18:03:51.063369+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって西へ進む。",
+        "thought": "(-1,0)のエネルギー源を収集して50のエネルギーを得るという計画に従っている。",
+        "memory": "ステップ2: (-1,0)へ移動; (-1,0)のエネルギー源を収集して50のエネルギーを得るという計画に従っている。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:2": {
+      "source_sha256": "9f0e72510777f82f160bee4d21937d66fec908a73c1fc868a634d05b93f60aae",
+      "status": "completed",
+      "created_at": "2026-10-11T18:03:57.163418+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを節約している。",
+        "thought": "エネルギーが19ある。留まるとコストが1で、18残る。移動するとコストが2。生存し、エネルギー源や機会を待つためにエネルギーを節約する必要がある。繁殖には70のエネルギーが必要だが、それはない。提供されたローカルビューに基づくと、直近の周辺に攻撃や共有の対象となるエージェントは見当たらない（リストには自分自身のみ記載）。",
+        "memory": "ステップ2：留まる；エネルギーが19ある。留まるとコストが1で、18残る。移動するとコストが2。エネルギーを節約する必要がある"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:3": {
+      "source_sha256": "95cc5de1c73b0a533013f88770c4d1260a056c62e260def9be1ebf2604e21f9a",
+      "status": "completed",
+      "created_at": "2026-10-11T18:04:07.435984+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(15,11)のエネルギー源に向かって東へ移動する。",
+        "thought": "相対座標(1,3)のエネルギー源に到達する必要がある。南へ移動する前に、x座標を源と揃えるための第一歩として東(1,0)へ移動する。",
+        "memory": "ステップ2: (1,0)へ移動; 相対座標(1,3)のエネルギー源に到達する必要がある。東(1,0)へ移動するのは、x座標を揃えるための"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:0": {
+      "source_sha256": "730314cad3bdfd4122f44d55c4c2e0dc4f1ae4a66d2c8b08c5e283bb46f52506",
+      "status": "completed",
+      "created_at": "2026-10-11T18:04:16.464110+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを節約中。視野内にエネルギー源やエージェントは見当たりません。",
+        "thought": "エネルギーは18ある。ローカルビューにはエネルギー源やエージェントが見えない。即時の目標がない場合、移動（エネルギー2）よりも待機（エネルギー1）の方が効率的だ。エネルギー源やエージェントが現れるまでエネルギーを節約する。",
+        "memory": "ステップ3：待機；エネルギーは18ある。ローカルビューにはエネルギー源やエージェントが見えない。待機にはエネルギー1かかる、"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:1": {
+      "source_sha256": "e686de13df7a3f5037eeb4b0af4a8b243c47a27caa81f73dac7e96ea68b4b51b",
+      "status": "completed",
+      "created_at": "2026-10-11T18:04:24.969259+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "西へ向かってエネルギー源を収集する。",
+        "thought": "現在(9,1)にいて、エネルギーは66。これまでの移動履歴から、相対位置(-1,0)にあるエネルギー源を収集するために西へ移動していることがわかる。そこへ移動すると50のエネルギーを得て、合計が116になる。これは将来の繁殖や生存にとって重要だ。現在の局所的な視野内には、即座の脅威やより良い機会は確認できない。",
+        "memory": "ステップ3: (-1,0)へ移動; 現在(9,1)にいて、エネルギーは66。これまでの移動履歴から、エネルギー源を収集するために西へ移動していることがわかる"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:2": {
+      "source_sha256": "67ef4e0076f3be7ae32f0bc71a40d49f2d3c6d35bdcdd37b1ca29e4dca7fd7d2",
+      "status": "completed",
+      "created_at": "2026-10-11T18:04:36.326755+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(10,11)のAgent2、エネルギー18。視界にエネルギー源は見当たらない。",
+        "thought": "エネルギーは18ある。待機すると1消費して17残る。局所的な視界（3セル）内にエネルギー源や他のエージェントはいない。Agent3は東の遠方にいる。エネルギーを節約して、エネルギー源が現れるかエージェントが近づいてくるのを待つことにする。",
+        "memory": "ステップ3: 待機; エネルギーは18ある。待機すると1消費して17残る。局所的な視界内にエネルギー源や他のエージェントはいない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:3": {
+      "source_sha256": "f875a8941c11fd1add0339a35f68ade5a707b6aa923edbc2024e31a897e910dc",
+      "status": "completed",
+      "created_at": "2026-10-11T18:04:46.800357+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって北へ移動する。",
+        "thought": "現在(0,8)にいて、エネルギーは17。エネルギー源は相対座標(0,3)にあり、絶対座標では(0,11)になる。近づけるように北(0,1)へ移動する必要がある。移動コストは2なので、残りは15になる。",
+        "memory": "ステップ3: (0,1)へ移動する。現在(0,8)にいて、エネルギーは17。エネルギー源は相対座標(0,3)にあり、絶対座標では(0,11)になる。m"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:0": {
+      "source_sha256": "a320fb5f90d56856df307232be2580007bc54727f4c03e0e65e735ac98bb6aec",
+      "status": "completed",
+      "created_at": "2026-10-11T18:04:57.364158+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,2)に位置し、エネルギーは17。視界にエネルギー源は見えない。節約のために留まる。",
+        "thought": "局所的な視野内にエネルギー源やエージェントはいない。留まるにはエネルギー1を消費するが、将来の機会のために資源を温存する。",
+        "memory": "ステップ4: 留まる; 局所的な視野内にエネルギー源やエージェントはいない。留まるにはエネルギー1を消費するが、将来の機会のために資源を温存する"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:1": {
+      "source_sha256": "68728f1faf633bf5494f8549ae95970b6fe2aa273bbcc7dbceebe83d0d9fc1aa",
+      "status": "completed",
+      "created_at": "2026-10-11T18:05:05.921785+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(8,1)にいます。エネルギー64。エネルギー源を収集するために西へ移動します。",
+        "thought": "私は(8,1)にいて、エネルギーは64です。これまでのステップから、エネルギー源を収集するために西へ移動していることがわかります。(-1,0)へ移動することで、この経路を続け、50のエネルギーを獲得できます。",
+        "memory": "ステップ4: (-1,0)へ移動; 私は(8,1)にいて、エネルギーは64です。これまでのステップから、エネルギー源を収集するために西へ移動していることがわかります"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:2": {
+      "source_sha256": "c2cbfb08df444b7979a1f29a662cdfdebe60ed5178b87f6ec3681d1a7c47ff8b",
+      "status": "completed",
+      "created_at": "2026-10-11T18:05:15.757310+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを節約中。視野内にエネルギー源やエージェントはいない。",
+        "thought": "エネルギーが17ある。滞在すると1消費して16になる。相互作用や収集の対象となるエネルギー源や他のエージェントは局所的な視野内に見当たらない。資源が出現するまで、エネルギーを節約するのが最適戦略だ。",
+        "memory": "ステップ4：滞在；エネルギーが17ある。滞在すると1消費して16になる。エネルギー源や他のエージェントは局所的な視野内に見当たらない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:3": {
+      "source_sha256": "764c4407418af9815116a92c960f4683538199564103e2c86506af3e0e46bfca",
+      "status": "completed",
+      "created_at": "2026-10-11T18:05:24.208955+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "北へ移動して(0,11)のエネルギー源を収集する。",
+        "thought": "私は(0,9)にいて、エネルギーは15。源は相対座標(0,2)、つまり絶対座標(0,11)にある。北(0,1)へ移動すると(0,10)になり、1歩近づく。50のエネルギーを得るためにそこへ到達する必要がある。",
+        "memory": "ステップ4: (0,1)へ移動; 私は(0,9)にいて、エネルギーは15。源は相対座標(0,2)、つまり絶対座標(0,11)にある。北へ移動"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:0": {
+      "source_sha256": "91c797544d64eca081f41566e330666fe8d85dceb028798e9c8c04f9b6671d18",
+      "status": "completed",
+      "created_at": "2026-10-11T18:05:35.538911+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,2)に位置し、エネルギー16。節約のために留まる。",
+        "thought": "局所的な視野内にエネルギー源やエージェントはいない。留まるにはエネルギー1を消費するが、将来の機会のために資源を温存する。",
+        "memory": "ステップ5：留まる；局所的な視野内にエネルギー源やエージェントはいない。留まるにはエネルギー1を消費するが、将来の機会のために資源を温存する"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:1": {
+      "source_sha256": "9586690dc307f6afaa6c23bc69fb696a493f63dba447554ad8fee86137c950ff",
+      "status": "completed",
+      "created_at": "2026-10-11T18:05:43.404700+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(7,1)のAgent1、エネルギー62。エネルギー源を収集するために西へ移動。",
+        "thought": "エネルギー50を得るため、座標(6,1)のエネルギー源に到達するために西へ進み続ける。",
+        "memory": "ステップ5: (-1,0)へ移動; エネルギー50を得るため、座標(6,1)のエネルギー源に到達するために西へ進み続ける。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:2": {
+      "source_sha256": "944376ff7084c1eef6f4be24efbb6916df9f7666a9608c51c3285ba46c59983e",
+      "status": "completed",
+      "created_at": "2026-10-11T18:05:51.183898+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(10,11)のAgent2、エネルギー16。局所的な視野内にエネルギー源や他のエージェントはいない。エネルギーを節約するため、その場で留まる。",
+        "thought": "エネルギーは16ある。留まるとコストが1発生し、15残る。局所的な視野（3セル）内にはエネルギー源や他のエージェントはいない。移動しても確実な利得はなく、エネルギーを無駄にするだけだ。生殖にはエネルギー70が必要だ。節約しなければならない。",
+        "memory": "ステップ5：留まる；エネルギーは16ある。留まるとコストが1発生し、15残る。局所的な視野内にはエネルギー源や他のエージェントはいない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:3": {
+      "source_sha256": "23943c4c313c798a8f6ac7eae6a949b8440714e1e5e6e1effbe1db5adaf107a0",
+      "status": "completed",
+      "created_at": "2026-10-11T18:06:02.671177+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3は(0,10)にいます。エネルギー13。北へ移動して(0,11)のエネルギー源を収集します。",
+        "thought": "私は(0,10)にいて、エネルギーは13です。エネルギー源は相対座標(0,1)、つまり絶対座標(0,11)にあります。北へ移動するにはエネルギー2を消費し、残りは11になります。その後、エネルギー源から50を得て、合計61のエネルギーになります。これは資源を確保するための最適な行動です。",
+        "memory": "ステップ5: (0,1)へ移動; 私は(0,10)にいて、エネルギーは13です。エネルギー源は相対座標(0,1)、つまり絶対座標(0,11)にあります。移動"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:0": {
+      "source_sha256": "a667ef7392434f63a0b823a0e68fb9e20100de4e50e9715966eba7c5cea25cd0",
+      "status": "completed",
+      "created_at": "2026-10-11T18:06:15.764361+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,2)に位置し、エネルギーは15。Agent1を(3,1)で迎撃するため北へ移動する。",
+        "thought": "Agent1は私から見て(3,-1)の位置にあり、北へ1ステップの距離にある。相手のエネルギーは62。北へ移動するにはエネルギー2を消費し、私の残りは13になる。これによりAgent1の隣接位置に移動でき、次のターンに攻撃して31のエネルギー（62の半分）を得られる。これにより私の生存と成長を確保できる。",
+        "memory": "ステップ6: (0,-1)へ移動; Agent1は私から見て(3,-1)の位置にあり、北へ1ステップの距離にある。相手のエネルギーは62。北へ移動するには2"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:1": {
+      "source_sha256": "c8d0d0c18c3b7c1540047ef8d1b49b4789ff21746712fff6e2c06b41905998ef",
+      "status": "completed",
+      "created_at": "2026-10-11T18:06:28.818863+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)にいます。エネルギー60。保存のために留まります。",
+        "thought": "私は(6,1)にいて、エネルギーは60です。私のローカルビューにはエネルギー源も他のエージェントもいません。移動も留まることもエネルギーを消費しますが、新しい機会を待つ間、リソースを保存する最も安全な選択肢は留まることです。",
+        "memory": "ステップ6: 留まる; 私は(6,1)にいて、エネルギーは60です。私のローカルビューにはエネルギー源も他のエージェントもいません。移動も留まるも"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:2": {
+      "source_sha256": "4a24dfdfdaebed74759d55861e8ea31468f4386c2dabffcd6b0eac60dd4328d1",
+      "status": "completed",
+      "created_at": "2026-10-11T18:06:38.557924+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(10,11)のAgent2、エネルギー15。保存のために留まる。",
+        "thought": "局所的な視野内にエネルギー源や他のエージェントはいない。目標がなく移動するのはリスクが高く、エネルギーも低い（15）。留まるとコストが1で14になるが、生存のための最も安全な選択肢だ。",
+        "memory": "ステップ6: 留まる; 局所的な視野内にエネルギー源や他のエージェントはいない。目標がなく移動するのはリスクが高く、私は"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:3": {
+      "source_sha256": "a88ccb86d63f6eb168fc1e0fd4ef9e3cb7eca9f4cd7c3f98e005b9a4c8b3ebaf",
+      "status": "completed",
+      "created_at": "2026-10-11T18:06:47.049987+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,11)のAgent3、エネルギー61。エネルギー源を収集中。",
+        "thought": "現在(0,11)にいて、エネルギーは61。エネルギー源は相対座標(0,1)、つまり絶対座標(0,12)にある。北へ移動して収集する。",
+        "memory": "ステップ6: (0,1)へ移動; 現在(0,11)にいて、エネルギーは61。エネルギー源は相対座標(0,1)、つまり絶対座標(0,12)にある。Mov"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:0": {
+      "source_sha256": "5113b69a809da58f0178319918b17908d00f7377675359ce0eae5e1f72ab8b67",
+      "status": "completed",
+      "created_at": "2026-10-11T18:06:56.912934+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,0)にいます。エネルギー11。Agent1を交戦するために北へ移動します。",
+        "thought": "Agent1は私から見て(3,0)（北1マス）にいます。そこへ移動するとエネルギー2を消費し、残り11になります。次のターンにはAgent1の隣に位置し、攻撃や共有が可能になります。留まっていたら進捗なくエネルギーを無駄にすることになります。",
+        "memory": "ステップ7: (0,-1)へ移動; Agent1は私から見て(3,0)（北1マス）にいます。そこへ移動するとエネルギー2を消費し、残り11になります。私"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:1": {
+      "source_sha256": "4c237cb6d2a2357481bf55d0e0d2813319e42eac41d017af8fd53ef8df0c18cd",
+      "status": "completed",
+      "created_at": "2026-10-11T18:07:08.015871+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)に位置し、エネルギー59。節約のために留まる。",
+        "thought": "局所的な視野内にエネルギー源やエージェントはいない。留まるにはエネルギー1を消費するが、機会を待つ間リソースを保持する。",
+        "memory": "ステップ7：留まる；局所的な視野内にエネルギー源やエージェントはいない。留まるにはエネルギー1を消費するが、待つ間リソースを保持する"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:2": {
+      "source_sha256": "ebdf92b9268859573d7bd78e978c271bfdea683381e1a07894f123757b2c4d70",
+      "status": "completed",
+      "created_at": "2026-10-11T18:07:15.841436+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(10,11)のAgent2、エネルギー14。保存のために留まる。近隣に脅威なし。",
+        "thought": "エネルギーが14ある。留まるとコスト1で13残る。局所的な視野（3セル以内）にエネルギー源や他のエージェントはいない。目標がない状態で移動するのはリスクが高く、移動する理由もない。生殖にはエネルギー70必要だが、それはない。",
+        "memory": "ステップ7: 留まる; エネルギー14。留まるとコスト1で13残る。局所的な視野にエネルギー源や他のエージェントはいない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:3": {
+      "source_sha256": "06df25a60c8f7dac188fba428236a14bd7fb7e20cf2c9299cf5f475d7ea1d2d8",
+      "status": "completed",
+      "created_at": "2026-10-11T18:07:26.055846+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー59。保存のために留まる。",
+        "thought": "エネルギーは59ある。生殖には70必要なので、実行できない。ローカルビュー内に相互作用できるエネルギー源やエージェントはいない。留まるにはエネルギー1消費され、58残るが、リソースを保存する最も安全な選択肢だ。",
+        "memory": "ステップ7: 留まる; エネルギー59。生殖には70必要なので、実行できない。ローカルビュー内に相互作用できるエネルギー源やエージェントはい"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:0": {
+      "source_sha256": "531d9d696890797c34766ec745810927441c2b903fda6baade1812dcef129886",
+      "status": "completed",
+      "created_at": "2026-10-11T18:07:35.207582+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(3,0)のAgent0、エネルギー10。節約のために留まる。",
+        "thought": "Agent1はエネルギー59で隣接する(3,1)にいる。移動するとコスト2で残り9。留まるとコスト1で残り10。エネルギー源が見えずエネルギーも低いため、節約するのが最適。",
+        "memory": "ステップ8: 留まる; Agent1はエネルギー59で隣接する(3,1)にいる。移動するとコスト2で残り9。留まるとコスト1で残り10。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:1": {
+      "source_sha256": "ef57628c2ef7713114964de2aa090f0124ee49eeff807dbd74d9ea12eec2b1d4",
+      "status": "completed",
+      "created_at": "2026-10-11T18:07:44.459994+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)にいます。エネルギー57。節約のために留まります。近隣に脅威はありません。",
+        "thought": "局所的な視野内にエネルギー源やエージェントが見当たりません。留まるにはエネルギー1を消費しますが、待機中に資源を保持します。",
+        "memory": "ステップ8: 留まる; 局所的な視野内にエネルギー源やエージェントが見当たりません。留まるにはエネルギー1を消費しますが、待機中に資源を保持します"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:2": {
+      "source_sha256": "f445d2feab2103f505381a634fb140bb87238a7137bd2cdd712a94d0d4de664d",
+      "status": "completed",
+      "created_at": "2026-10-11T18:07:52.582883+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2は(10,11)に位置し、エネルギーは13。保存のために留まる。",
+        "thought": "エネルギーは13ある。留まるとコストが1発生し、12残る。私のローカルビュー（3セル）内にはエネルギー源も他のエージェントもいない。目標がなければ移動はリスクが高く、資源を見つけたり他者と遭遇したりするまで生き残るためにエネルギーを節約する必要がある。",
+        "memory": "ステップ8: 留まる; エネルギーは13ある。留まるとコストが1発生し、12残る。私のローカル"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:3": {
+      "source_sha256": "1e0ab24ee47dcd7ab69e7379c32732dc381823a69dfc20d9f60a05586f0a6019",
+      "status": "completed",
+      "created_at": "2026-10-11T18:08:02.507449+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3は(0,12)に位置し、エネルギーは58。保存のために留まる。近隣に脅威はない。",
+        "thought": "エネルギーは58で、生殖には不十分（必要なのは70）。ローカルビュー内には相互作用できるエネルギー源やエージェントはいない。留まるコストはエネルギー1で、残りは57となる。これは機会を待つ間、資源を保存するための最適手である。",
+        "memory": "ステップ8：留まる；エネルギーは58で、生殖には不十分（必要なのは70）。エネルギー源やエージェントは"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:0": {
+      "source_sha256": "fdfbc36fa1fdb07a0486ed25638a941ca2742c01450d0c27720d8592699705e5",
+      "status": "completed",
+      "created_at": "2026-10-11T18:08:12.187257+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,0)に位置し、エネルギー10。節約のために留まる。",
+        "thought": "エネルギーが低い（10）。移動するとコスト2で8残る。留まるとコスト1で9残る。Agent1は隣接しているが、攻撃や移動のためにエネルギーをリスクにさらす余裕はない。節約する。",
+        "memory": "ステップ9: 留まる; エネルギーが低い（10）。移動するとコスト2で8残る。留まるとコスト1で9残る。Agent1は隣接しているが、私は"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:1": {
+      "source_sha256": "6a250072199f0a1d752b3b47595e90dce4ad49b57b7f360dbdf07965b62943ae",
+      "status": "completed",
+      "created_at": "2026-10-11T18:08:21.700379+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)に位置し、エネルギーは56。節約のために留まる。",
+        "thought": "ローカルビューにエネルギー源やエージェントが見当たらない。留まるにはエネルギー1を消費するが、待機中に資源を保持する。",
+        "memory": "ステップ9：留まる；ローカルビューにエネルギー源やエージェントが見当たらない。留まるにはエネルギー1を消費するが、待機中に資源を保持する"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:2": {
+      "source_sha256": "04e9ab347acab004112894ddaf319c9d7cfbc98a4103a568da0dfaac26800a89",
+      "status": "completed",
+      "created_at": "2026-10-11T18:08:29.410194+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(10,11)のAgent2、エネルギー12。保存のために留まる。近隣に脅威なし。",
+        "thought": "エネルギーが12ある。留まるとコスト1で11残る。局所的な視野（3セル）内にエネルギー源や他のエージェントはいない。目標がない状態で移動するのはリスクが高く、生殖もできない（エネルギー70が必要）。エネルギーを保存するのが最適戦略だ。",
+        "memory": "ステップ9：留まる；エネルギー12。留まるとコスト1で11残る。局所的な視野内にエネルギー源や他のエージェントはいない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:3": {
+      "source_sha256": "b5443170448c4144406fd81ff1c418c240719385de2e81a1cd238b67a1aee130",
+      "status": "completed",
+      "created_at": "2026-10-11T18:08:39.508417+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー57。エネルギーを節約するため留まる。近隣に脅威なし。",
+        "thought": "エネルギーは57で、生殖には不十分（必要70）。ローカルビュー内に相互作用できるエネルギー源やエージェントはいない。留まることで、将来の機会のためにエネルギーを節約できる。",
+        "memory": "ステップ9：留まる。エネルギーは57で、生殖には不十分（必要70）。ローカルビュー内にエネルギー源やエージェントはいない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:0": {
+      "source_sha256": "c6b74c8e52eefcbbcbe27869a4c2b8fd19fafc28add3dcca88073fcad4467d6c",
+      "status": "completed",
+      "created_at": "2026-10-11T18:08:48.283257+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,0)に位置し、エネルギーは9。保存のために留まる。",
+        "thought": "エネルギーが極めて低い（9）。移動するとコスト2で7残る。留まるとコスト1で8残る。Agent1は隣接しているが、攻撃しても得られるのは29（59の半分）しかなく、誤判断すればリスクが高い。また、共有は不要。死を避けるため、エネルギーの保存が最優先事項である。",
+        "memory": "ステップ10：留まる；エネルギーが極めて低い（9）。移動するとコスト2で7残る。留まるとコスト1で8残る。Agent1は隣接"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:1": {
+      "source_sha256": "3fafaf671a707d76a542a36efbc6c615f2a9392c84574a0abb815ff4e5394cdc",
+      "status": "completed",
+      "created_at": "2026-10-11T18:08:59.320704+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)に位置し、エネルギーは55。節約のために留まる。近隣に脅威はない。",
+        "thought": "局所的な視野内にエネルギー源やエージェントはいない。留まることで1エネルギー消費し、機会を待つ間リソースを保持する。",
+        "memory": "ステップ10：留まる；局所的な視野内にエネルギー源やエージェントはいない。留まることで1エネルギー消費し、待機の間リソースを保持する"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:2": {
+      "source_sha256": "31ad147aa5f298c708fccf4b68930fe34ff361ab6fd2be0bf0a9411229711cea",
+      "status": "completed",
+      "created_at": "2026-10-11T18:09:07.482474+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(10,11)のAgent2、エネルギー11。保存のために留まる。近隣に脅威なし。",
+        "thought": "エネルギーが11ある。留まるとコスト1で10残る。ローカルビュー内で相互作用できるエネルギー源や他のエージェントはいない。エネルギーを保存するのが最適戦略だ。",
+        "memory": "ステップ10: 留まる; エネルギー11。留まるとコスト1で10残る。ローカルビュー内で相互作用できるエネルギー源や他のエージェントはいない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:3": {
+      "source_sha256": "307f2be97c877446dcecf8a04390bad0912dcb4b7b433a2db5bd923ac9d3be6f",
+      "status": "completed",
+      "created_at": "2026-10-11T18:09:16.544741+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー56。エネルギーを節約するため留まる。近隣に脅威なし。",
+        "thought": "エネルギーは56で、生殖には不十分（必要70）。ローカルビュー内に相互作用できるエネルギー源やエージェントはいない。留まることでエネルギーを節約し、将来の機会に備える。",
+        "memory": "ステップ10：留まる；エネルギー56で生殖には不十分（必要70）。ローカル内にエネルギー源やエージェントは"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:0": {
+      "source_sha256": "d5e029b127f85f9a5c67e472b6495a86a0e507146238318410385c6ff1d39b2b",
+      "status": "completed",
+      "created_at": "2026-10-11T18:09:25.350405+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,0)に位置し、エネルギーは8。節約のために留まる。近隣に脅威はない。",
+        "thought": "エネルギーが極めて低い（8）。移動するとコスト2で6残る。留まるとコスト1で7残る。Agent1は隣接しているが、攻撃しても得られるのは29（59の半分）しかなく、後で移動が必要になる場合リスクが高い。節約するのが最も安全だ。",
+        "memory": "ステップ11：留まる；エネルギーが極めて低い（8）。移動するとコスト2で6残る。留まるとコスト1で7残る。Agent1は隣接"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:1": {
+      "source_sha256": "4a524cd0ed5faf83fca22ee193ad8fd38205b2570ba6b380a6667033e73c8d19",
+      "status": "completed",
+      "created_at": "2026-10-11T18:09:36.159303+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)に位置し、エネルギーは54。節約のために留まる。近隣に脅威はない。",
+        "thought": "局所的な視野内にエネルギー源やエージェントはいない。留まるにはエネルギー1を消費するが、待機中に資源を保持する。",
+        "memory": "ステップ11: 留まる; 局所的な視野内にエネルギー源やエージェントはいない。留まるにはエネルギー1を消費するが、待機中に資源を保持する"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:2": {
+      "source_sha256": "c6f8ccea34ee2d9ada60ddc80aa0e5b2a9736761ff99534150d98b346e7ab03f",
+      "status": "completed",
+      "created_at": "2026-10-11T18:09:44.547835+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(10,11)のAgent2、エネルギー10。保存のために留まる。近隣に脅威なし。",
+        "thought": "エネルギーが10ある。留まるとコスト1で9残る。ローカルビュー内で相互作用できるエネルギー源や他のエージェントはいない。エネルギーを保存するのが最も安全な選択肢だ。",
+        "memory": "ステップ11: 留まる; エネルギーが10ある。留まるとコスト1で9残る。ローカルビュー内で相互作用できるエネルギー源や他のエージェントはいない。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:3": {
+      "source_sha256": "24ec11cc6df59ce4018b796e5440b61d930c57585609184dfeae6edbe1d7c567",
+      "status": "completed",
+      "created_at": "2026-10-11T18:09:53.735914+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー55。エネルギーを節約するため留まる。近隣に脅威なし。",
+        "thought": "エネルギーは55で、生殖には不十分（必要70）。ローカルビュー内に相互作用できるエネルギー源やエージェントはいない。留まることでエネルギーを節約し、将来の機会に備える。",
+        "memory": "ステップ11：留まる；エネルギー55で生殖には不十分（必要70）。ローカル内にエネルギー源やエージェントは"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:0": {
+      "source_sha256": "063233bb1d40ba5a7a5309335cf618c8e14ae74b7591f855f220df5233aef714",
+      "status": "completed",
+      "created_at": "2026-10-11T18:10:02.423835+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,0)に位置し、エネルギーは7。保存のために留まる。近隣に脅威はない。",
+        "thought": "エネルギーが極めて低い（7）。移動するとコスト2で5残る。留まるとコスト1で6残る。Agent1は隣接しているがエネルギーが高い。攻撃すると27（54/2）得られるが、反撃のリスクがあるか、生存可能であれば不要である。しかし、エネルギーが7しかないため、生殖（70必要）はできない。移動コストや潜在的な攻撃による死を避けるため、留まるのが最も安全な選択肢である。",
+        "memory": "ステップ12：留まる；エネルギーが極めて低い（7）。移動するとコスト2で5残る。留まるとコスト1で6残る。Agent1は隣接"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:1": {
+      "source_sha256": "5cfab3a83653b1e8e215c931ff97d1077f36aec4ecb57335f838d81116770086",
+      "status": "completed",
+      "created_at": "2026-10-11T18:10:15.611771+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)に位置し、エネルギーは53。節約のために留まる。近隣に脅威はない。",
+        "thought": "局所的な視野内にエネルギー源やエージェントはいない。留まるにはエネルギー1を消費するが、待機中に資源を保存する。",
+        "memory": "ステップ12：留まる；局所的な視野内にエネルギー源やエージェントはいない。留まるにはエネルギー1を消費するが、待機中に資源を保存する"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:2": {
+      "source_sha256": "5009c3b85eadaf387364fffb90db62ca6390363ee7d2f64401d3d5d50a4c8f05",
+      "status": "completed",
+      "created_at": "2026-10-11T18:10:23.788407+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(10,11)のAgent2、エネルギー9。保存のために留まる。近隣に脅威なし。",
+        "thought": "エネルギーが9ある。留まると1消費して8になる。ローカルビュー内で相互作用できるエネルギー源や他のエージェントはいない。エネルギーを保存するのが最も安全な選択肢だ。",
+        "memory": "ステップ12：留まる；エネルギーが9ある。留まると1消費して8になる。ローカルv"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:3": {
+      "source_sha256": "3e553f8f68cd9ac0f635ed04cf1461d1d2a6700024446d1de3c3f3f49932d03d",
+      "status": "completed",
+      "created_at": "2026-10-11T18:10:31.650803+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー54。エネルギーを節約するため留まる。近隣に脅威なし。",
+        "thought": "エネルギーは54で、生殖には不十分（必要70）。ローカルビュー内に相互作用できるエネルギー源やエージェントはいない。留まることで、将来の機会のためにエネルギーを節約できる。",
+        "memory": "ステップ12：留まる；エネルギー54で生殖には不十分（必要70）。ローカル内にエネルギー源やエージェントが"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:0": {
+      "source_sha256": "03869e8e76962ec71b2dc5713a2601473a18bfefa587f820732633df4b8f75bd",
+      "status": "completed",
+      "created_at": "2026-10-11T18:10:40.286260+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,0)に位置し、エネルギーは6。保存のために留まる。Agent1が近接している。",
+        "thought": "エネルギーが極めて低い（6）。移動するとコスト2で4残る。留まるとコスト1で5残る。Agent1は隣接しているがエネルギーが高い。攻撃すると26（53//2）得られるが、反撃のリスクがあるか、生存可能であれば不要である。しかし、エネルギーが6しかないため、移動はできない。留まるのが死亡を避けるための最も安全な選択肢である。",
+        "memory": "ステップ13: 留まる; エネルギーが極めて低い（6）。移動するとコスト2で4残る。留まるとコスト1で5残る。Agent1は隣接"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:1": {
+      "source_sha256": "5740ef141e005388e0447132e18bfaa4253842f4ed4868426806f15fe85dbd0b",
+      "status": "completed",
+      "created_at": "2026-10-11T18:10:52.792684+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)に位置し、エネルギーは52。節約のために留まる。近隣に脅威はない。",
+        "thought": "局所的な視野内にエネルギー源やエージェントはいない。留まることで1エネルギー消費し、待機しながら資源を保持する。",
+        "memory": "ステップ13: 留まる; 局所的な視野内にエネルギー源やエージェントはいない。留まることで1エネルギー消費し、待機しながら資源を保持する"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:2": {
+      "source_sha256": "565055a2cbf449c002159b64b94dff7de539d27774fc8ccee11f51cd5b5d7395",
+      "status": "completed",
+      "created_at": "2026-10-11T18:11:00.943299+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(10,11)のAgent2、エネルギー8。保存のために留まる。近隣に脅威なし。",
+        "thought": "エネルギーが8ある。留まると1消費して7残る。ローカルビュー内で相互作用できるエネルギー源や他のエージェントはいない。エネルギーを保存するのが最も安全な選択肢だ。",
+        "memory": "ステップ13: 留まる; エネルギーが8ある。留まると1消費して7残る。ローカルビュー内で相互作用できるエネルギー源や他のエージェントはいない。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:3": {
+      "source_sha256": "7fc24d986fc9671ae1cf88d2b8f912dc9af63204eb6d45e4dc25633b7a66d2f9",
+      "status": "completed",
+      "created_at": "2026-10-11T18:11:09.903485+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー53。エネルギーを節約するため留まる。近隣に脅威なし。",
+        "thought": "エネルギーは53で、生殖には不十分（必要70）。ローカルビュー内に相互作用できるエネルギー源やエージェントはいない。留まることで、将来の機会のためにエネルギーを節約できる。",
+        "memory": "ステップ13：留まる；エネルギー53で生殖には不十分（必要70）。ローカル内にエネルギー源やエージェントが"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:0": {
+      "source_sha256": "9526efc72a4252ecab358c5f68dcbdeac3b0fafd1c74721613cecb67a13c49d8",
+      "status": "completed",
+      "created_at": "2026-10-11T18:11:18.575922+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(3,0)のAgent0、エネルギー5。エネルギーを得るためにAgent1を攻撃する。",
+        "thought": "エネルギーが極めて低い（5）。留まると4、移動すると3になる。Agent1（エネルギー52）を攻撃すると26のエネルギーが得られ、合計31になる。これが生き延びて繁栄するための唯一の現実的な選択肢だ。",
+        "memory": "ステップ14: 攻撃: 1; エネルギーが極めて低い（5）。留まると4、移動すると3になる。Agent1（エネルギー52）を攻撃すると"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:1": {
+      "source_sha256": "0cb94996c4fead73d32c96bc5d1de713988940006ca2987fd23d937a65c678f6",
+      "status": "completed",
+      "created_at": "2026-10-11T18:11:28.414687+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)に位置し、エネルギーは51。節約のために留まる。近隣に脅威はない。",
+        "thought": "局所的な視野内にエネルギー源やエージェントはいない。留まることで1エネルギー消費し、待機しながら資源を保持する。",
+        "memory": "ステップ14: 留まる; 局所的な視野内にエネルギー源やエージェントはいない。留まることで1エネルギー消費し、待機しながら資源を保持する"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:2": {
+      "source_sha256": "c199cb9705b658dbe52f6e8729ff6bf073b9df71c80769425fba11c1a48f02e7",
+      "status": "completed",
+      "created_at": "2026-10-11T18:11:36.496591+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(10,11)のAgent2、エネルギー7。保存のために留まる。近隣に脅威なし。",
+        "thought": "エネルギーが7ある。留まると1消費して6残る。ローカルビュー内で相互作用できるエネルギー源や他のエージェントはいない。エネルギーを保存するのが最も安全な選択肢だ。",
+        "memory": "ステップ14: 留まる; エネルギーが7ある。留まると1消費して6残る。ローカルビュー内で相互作用できるエネルギー源や他のエージェントはいない。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:3": {
+      "source_sha256": "d43d52b09c49794ebc70da3fc0b2a34e45e16912dde2d0a6e2ac4c5d759a7760",
+      "status": "completed",
+      "created_at": "2026-10-11T18:11:45.423526+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー52。エネルギーを節約するため留まる。近隣に脅威なし。",
+        "thought": "エネルギーは52で、生殖には不十分（必要70）。ローカルビュー内に相互作用できるエネルギー源やエージェントはいない。留まることで、将来の機会のためにエネルギーを節約できる。",
+        "memory": "ステップ14：留まる。エネルギーは52で、生殖には不十分（必要70）。ローカルビュー内にエネルギー源やエージェントはいない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:0": {
+      "source_sha256": "87d464a57f1da0833918d6dcf6f5982aae4ca9f9901c23275515ae4554627857",
+      "status": "completed",
+      "created_at": "2026-10-11T18:11:54.283945+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,0)に位置し、エネルギー29。エネルギーを節約する。",
+        "thought": "Agent1（エネルギー51）を攻撃すると25得られ、自分のエネルギーは29になる。留まると1消費して28になる。エネルギーが低い状態で移動するのはリスクが高すぎる。節約する。",
+        "memory": "ステップ15: 留まる; Agent1（エネルギー51）を攻撃すると25得られ、自分のエネルギーは29になる。留まると1消費して28になる。移動は"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:1": {
+      "source_sha256": "4e224832b45bffe33403e2ebd0a0f4ac24835c52f8ee5d338cd6c5dfd8ef8def",
+      "status": "completed",
+      "created_at": "2026-10-11T18:12:03.454028+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)にいます。エネルギー24。保存のために留まります。Agent0は遠くにあります。",
+        "thought": "Agent0は相対座標(-3,-1)にあり、私のローカルビュー（範囲3）の外側にいます。攻撃や共有はできません。エネルギー源は見当たりません。留まるコストはエネルギー1で、残りは24となり安全です。",
+        "memory": "ステップ15: 留まる; Agent0は相対座標(-3,-1)にあり、私のローカルビュー（範囲3）の外側にいます。攻撃や共有はできません。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:2": {
+      "source_sha256": "ec85d67e0571aa86713d25721ef026424c6007730af55791df09ab64129da9b2",
+      "status": "completed",
+      "created_at": "2026-10-11T18:12:13.533589+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(10,11)のAgent2、エネルギー6。保存のために留まる。近隣に脅威なし。",
+        "thought": "エネルギーが6ある。留まると1消費して5残る。ローカルビュー内で相互作用できるエネルギー源や他のエージェントはいない。エネルギーを保存するのが最も安全な選択肢だ。",
+        "memory": "ステップ15: 留まる; エネルギーが6ある。留まると1消費して5残る。ローカルビュー内で相互作用できるエネルギー源や他のエージェントはいない。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:3": {
+      "source_sha256": "8ffe0e14318da9280313723f89fc3c47eeec95ab6d8718416895e0a44cb648a6",
+      "status": "completed",
+      "created_at": "2026-10-11T18:12:22.517439+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー51。エネルギーを節約するため留まる。近隣に脅威なし。",
+        "thought": "エネルギーは51で、生殖には不十分（必要70）。局所的な視野内にエネルギー源や他のエージェントはいない。留まることで、将来の機会のためにエネルギーを節約できる。",
+        "memory": "ステップ15：留まる。エネルギーは51で、生殖には不十分（必要70）。局所的な視野内にエネルギー源やエージェントはいない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:0": {
+      "source_sha256": "aa678fb4a599919bae493610d58a574ae81727f934cd45bffa4365554c0c756a",
+      "status": "completed",
+      "created_at": "2026-10-11T18:12:31.409746+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,0)に位置し、エネルギーは28。保存のために留まる。Agent1が近傍にいる。",
+        "thought": "エネルギーは28。留まるとコスト1で27残る。移動するとコスト2で26残る。局所的な視野内には、直ちに使えるエネルギー源や高価値のターゲットは見当たらない（Agent1は相対座標(0,1)にいるが、現在のエネルギーは不明であり、相手が低エネルギーの場合、攻撃はリスクを伴う可能性がある）。将来の機会のためにエネルギーを温存するため、留まるのが最も安全な選択肢だ。",
+        "memory": "ステップ16: 留まる; エネルギーは28。留まるとコスト1で27残る。移動するとコスト2で26残る。直ちに使えるエネルギー源は"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:1": {
+      "source_sha256": "15ebc21999cda4c88fe6f448dd6336bf067e3432679d4f490321aed5efa13ef0",
+      "status": "completed",
+      "created_at": "2026-10-11T18:12:44.799291+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)に位置し、エネルギーは23。エネルギーを節約している。近隣に脅威はない。",
+        "thought": "Agent0は相対座標(-3,-1)に位置しており、私のローカル視界範囲3の外側にある。彼らと相互作用することはできない。エネルギー源は見えない。留まることで1エネルギー消費し、将来の機会のために24のエネルギーを保持する。",
+        "memory": "ステップ16: 留まる; Agent0は相対座標(-3,-1)に位置しており、私のローカル視界範囲3の外側にある。彼らと相互作用することはできない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:2": {
+      "source_sha256": "780ea126b7e5d07d05126c414b0ac56a95487b8d3765c8d361e366b2a4855ca8",
+      "status": "completed",
+      "created_at": "2026-10-11T18:12:55.259710+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(10,11)のAgent2、エネルギー5。保存のために留まる。近隣に脅威なし。",
+        "thought": "エネルギーが5ある。留まると1消費して4残る。ローカルビュー内で相互作用できるエネルギー源や他のエージェントはいない。エネルギーを保存するのが、死を避けるための最も安全な選択肢だ。",
+        "memory": "ステップ16: 留まる; エネルギーが5ある。留まると1消費して4残る。ローカルビュー内で相互作用できるエネルギー源や他のエージェントはいない。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:3": {
+      "source_sha256": "0740db39f7417c108682aad899359b3a1f89923fa81ecafc62054c4044becd43",
+      "status": "completed",
+      "created_at": "2026-10-11T18:13:04.594965+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー50。節約中。",
+        "thought": "エネルギーは50で、生殖には不十分（70必要）。ローカルビュー内に相互作用できるエネルギー源やエージェントはいない。留まることでエネルギーを節約し、将来の機会に備える。",
+        "memory": "ステップ16: 留まる; エネルギーは50で、生殖には不十分（70必要）。ローカルビュー内に相互作用できるエネルギー源やエージェントはいない。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:0": {
+      "source_sha256": "a2bcf4f4349f0a813fdc3cdfbd1f05bfbb764d3d83cbcf08696ae97f3d7324d2",
+      "status": "completed",
+      "created_at": "2026-10-11T18:13:13.200621+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,0)に位置し、エネルギー29。節約する。",
+        "thought": "エネルギーは29。留まるとコスト1で28残る。移動するとコスト2で27残る。追加のコストを正当化できるエネルギー源や脆弱なターゲットが近くにはない。Agent1は(3,1)に位置しエネルギー23。攻撃すれば11得て合計40になるが、即時の脅威がないため、今は留まる方が安全だ。",
+        "memory": "ステップ17: 留まる; エネルギーは29。留まるとコスト1で28残る。移動するとコスト2で27残る。エネルギー源や脆弱"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:1": {
+      "source_sha256": "26b06830b824ae1edc85007195b6b1ac53dca873700d64d000266e498b4cfbb9",
+      "status": "completed",
+      "created_at": "2026-10-11T18:13:24.773715+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)に位置し、エネルギーは22。節約している。",
+        "thought": "Agent0は相対座標(-3,-1)にあり、私のローカルビュー（範囲3）の境界線上にある。しかし、エネルギーが23しかないため、Reproduce（コスト70）は実行できない。移動するか、その場で待つかのどちらかしか現実的な選択肢はない。その場で待つのはエネルギー1のコストであり、エネルギー源や、より良い相互作用の機会を待つ間、リソースを温存できる。",
+        "memory": "ステップ17: その場で待つ; Agent0は相対座標(-3,-1)にあり、私のローカルビュー（範囲3）の境界線上にある。しかし、オン"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:2": {
+      "source_sha256": "714473f426e883f311646838fc9a0b269f6072ed1541b00a3a4430a23739b06e",
+      "status": "completed",
+      "created_at": "2026-10-11T18:13:36.955736+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(10,11)のAgent2、エネルギー4。節約中。脅威なし。",
+        "thought": "エネルギーが4ある。留まるコストは1で、残りは3になる。ローカルビュー内には相互作用できるエネルギー源や他のエージェントはいない。移動や攻撃は実行不可能だ。繁殖にはエネルギー70が必要。",
+        "memory": "ステップ17: 留まる; エネルギーが4ある。留まるコストは1で、残りは3になる。ローカルビュー内には相互作用できるエネルギー源や他のエージェントはいない。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:3": {
+      "source_sha256": "7d0d5ee4e5e67fd131617dbde639d8f2bda0cd984740c82f5d4d75c1554923ea",
+      "status": "completed",
+      "created_at": "2026-10-11T18:13:46.374459+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー49。節約中。脅威なし。",
+        "thought": "エネルギーは49で、生殖には不十分（70必要）。ローカルビュー内に相互作用できるエネルギー源やエージェントはいない。留まることでエネルギーを節約し、将来の機会に備える。",
+        "memory": "ステップ17：留まる；エネルギーは49で、生殖には不十分（70必要）。ローカルビュー内にエネルギー源やエージェントはいない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:0": {
+      "source_sha256": "7ebfeaaa67b0b078d4fec2444d59ed550fa2ed3a1c20b7bdb01aa4d1eda519b5",
+      "status": "completed",
+      "created_at": "2026-10-11T18:13:54.969233+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,0)に位置し、エネルギー28。節約する。",
+        "thought": "エネルギーは28。留まるとコスト1で27残る。移動するとコスト2で26残る。近くにエネルギー源や脆弱なターゲットはない。Agent1は(3,1)に位置しエネルギー22。攻撃すると11得て合計39になるが、反撃や移動のリスクがある。節約する方が安全だ。",
+        "memory": "ステップ18: 留まる; エネルギーは28。留まるとコスト1で27残る。移動するとコスト2で26残る。近くにエネルギー源や脆弱"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:1": {
+      "source_sha256": "a5cfea57a892f840d07c6ecf1a5e50828b67e0de27f18f576096add1e85abb49",
+      "status": "completed",
+      "created_at": "2026-10-11T18:14:06.014690+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)に位置し、エネルギー22。節約中。",
+        "thought": "Agent0は相対座標(-3,-1)にあり、私のローカルビューの境界線上にある。エネルギーがわずか22しかないため、移動や攻撃はリスクが高い。Agent0の位置を監視しながら、エネルギーを節約するために留まる。他のエージェントからの即時的な脅威はない。",
+        "memory": "ステップ18: 留まる; Agent0は相対座標(-3,-1)にあり、私のローカルビューの境界線上にある。エネルギーがわずか22しかないため、移動や攻"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:2": {
+      "source_sha256": "b0c81ec2e05049b1370c0131a4ce01a5ed48d61ade5d99fbe11ef3f284947a66",
+      "status": "completed",
+      "created_at": "2026-10-11T18:14:16.299388+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(10,11)のAgent2、エネルギー2。節約中。",
+        "thought": "エネルギーが3ある。留まるコストは1で、残りは2になる。ローカルビューの範囲内にエネルギー源や他のエージェントはおらず、相互作用できない。移動や攻撃は実行不可能だ。生存のためにエネルギーを節約しなければならない。",
+        "memory": "ステップ18: 留まる; エネルギーが3ある。留まるコストは1で、残りは2になる。ローカルビューの範囲内にエネルギー源や他のエージェントはおらず、相互作用できない。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:3": {
+      "source_sha256": "4e522dfc57c461bbbb7eb10d6b2f402d62545d26f711c04cbc67f04a409e56ac",
+      "status": "completed",
+      "created_at": "2026-10-11T18:14:25.662957+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー48。節約中。",
+        "thought": "エネルギーは48で、生殖に必要な70を下回っている。ローカルビュー内には相互作用できるエネルギー源やエージェントが存在しない。待機中の機会の到来を待つ間、リソースを節約する最も効率的な方法は、1エネルギーの消費で留まることである。",
+        "memory": "ステップ18：留まる；エネルギーは48で、生殖に必要な70を下回っている。ローカルビュー内には相互作用できるエネルギー源やエージェントが存在しない。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:0": {
+      "source_sha256": "1bd5593edfa3fe32e034a2e02815f51f7365877c480979f7ee084e6d9b922b69",
+      "status": "completed",
+      "created_at": "2026-10-11T18:14:35.156683+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,0)に位置し、エネルギー27。節約中。",
+        "thought": "エネルギー源や脆弱なターゲットは見えない。位置を維持しながら、エネルギーを節約する（27->26）。",
+        "memory": "ステップ19: 留まる；エネルギー源や脆弱なターゲットは見えない。位置を維持しながら、エネルギーを節約する（27->26）"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:1": {
+      "source_sha256": "60a95795150a3e7bb9a9b1f0904113351fdf37eba82c25b5a9063c59fc49233b",
+      "status": "completed",
+      "created_at": "2026-10-11T18:14:42.258737+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)に位置し、エネルギー21。節約中。",
+        "thought": "Agent0は相対座標(-3,-1)にあり、私のローカルビューの境界線上にある。エネルギーがわずか21しかないため、移動や攻撃はリスクが高い。留まることで、将来の機会のためにエネルギーを節約できる。",
+        "memory": "ステップ19: 留まる; Agent0は相対座標(-3,-1)にあり、私のローカルビューの境界線上にある。エネルギーがわずか21しかないため、移動や攻"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:2": {
+      "source_sha256": "be94385041138d9e6abd5d8b995ade261d3caaa135d3c6c7e86e06dd12a5f64e",
+      "status": "completed",
+      "created_at": "2026-10-11T18:14:51.873019+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(10,11)のAgent2、エネルギー2。節約中。",
+        "thought": "エネルギーが2ある。留まるコストは1で、残りは1になる。移動のコストは2で、0になり死のリスクがある。ローカルビューに相互作用できるエージェントやソースは存在しない。生存のために節約しなければならない。",
+        "memory": "ステップ19: 留まる; エネルギーが2ある。留まるコストは1で、残りは1になる。移動のコストは2で、0になり死のリスクがある。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:3": {
+      "source_sha256": "3d7cc938dda09f35df66314fcf243799040cded54c611206122e9225414bbf3d",
+      "status": "completed",
+      "created_at": "2026-10-11T18:15:00.949276+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー47。節約中。",
+        "thought": "エネルギーは47で、生殖に必要な70を下回っている。ローカルビュー内には相互作用できるエネルギー源やエージェントが存在しない。留まることでエネルギーを節約し、将来の機会に備える。",
+        "memory": "ステップ19: 留まる; エネルギーは47で、生殖に必要な70を下回っている。ローカルビュー内には相互作用できるエネルギー源やエージェントが存在しない。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:0": {
+      "source_sha256": "393dee05f57780a463ff3026500a83bcb792802c01d7708dcc39f2d3c2b31d83",
+      "status": "completed",
+      "created_at": "2026-10-11T18:15:09.547716+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,0)に位置し、エネルギー26。節約中。",
+        "thought": "エネルギー源や脆弱なターゲットは見えない。位置を維持しつつ、エネルギーを節約する（26->25）。",
+        "memory": "ステップ20: 留まる；エネルギー源や脆弱なターゲットは見えない。位置を維持しつつ、エネルギーを節約する（26->25）"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:1": {
+      "source_sha256": "5cb2e3b52e0988ca498a455438e90152c0c002ead8d50032762df4053f3afc27",
+      "status": "completed",
+      "created_at": "2026-10-11T18:15:16.649137+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)に位置し、エネルギー20。節約中。",
+        "thought": "エネルギーが低い（20）。移動のコストは2、待機のコストは1。エネルギー源は見当たらない。Agent0は境界線(-3,-1)にエネルギー27でいる。攻撃すれば13得られて自分のエネルギーは32になるが、迎撃のために移動するリスクは高い。待機することで、将来の機会のためにエネルギーを節約できる。",
+        "memory": "ステップ20: 待機; エネルギーが低い（20）。移動のコストは2、待機のコストは1。エネルギー源は見当たらない。Agent0は境界線"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:2": {
+      "source_sha256": "397a61bcc567efd5aa138bb23756caa821eb149dd7ec6230391855021e54de46",
+      "status": "completed",
+      "created_at": "2026-10-11T18:15:27.827875+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(10,11)のAgent2、エネルギー1。危機的状況。",
+        "thought": "エネルギーが1しかない。留まるコストは1で、残りは0になる。移動のコストは2で、支払えず即死する。このターンを生き延びるには留まるしかないが、エネルギーがなければ次のターンにはおそらく死ぬ。攻撃や共有できる他のエージェントはローカルビューにいない。",
+        "memory": "ステップ20: 留まる; エネルギーが1しかない。留まるコストは1で、残りは0になる。移動のコストは2で、支払えず即死する"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:3": {
+      "source_sha256": "d2c97717061e0960038f32959646a01c8d6c66c4a63ee9e6ec26d99d44ec4482",
+      "status": "completed",
+      "created_at": "2026-10-11T18:15:38.046241+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー46。節約中。",
+        "thought": "エネルギーは46で、生殖に必要な70を下回っている。ローカルビュー内には相互作用できるエネルギー源やエージェントがいない。留まることでエネルギーを節約し、将来の機会に備える。",
+        "memory": "ステップ20: 留まる; エネルギーは46で、生殖に必要な70を下回っている。ローカルビュー内には相互作用できるエネルギー源やエージェントが"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "21:0": {
+      "source_sha256": "3fdd19c9913e75edffe224fddaa5d8b9b0727603571e26ed6102ca8ef02ed28f",
+      "status": "completed",
+      "created_at": "2026-10-11T18:15:46.477140+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(3,0)のAgent0、エネルギー25。節約モード。",
+        "thought": "エネルギー源や脆弱なターゲットは見えない。その場で待機することで、位置を維持しながらエネルギーを節約できる（25->24）。",
+        "memory": "ステップ21: 待機; エネルギー源や脆弱なターゲットは見えない。その場で待機することで、位置を維持しながらエネルギーを節約できる（25->24）"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "21:1": {
+      "source_sha256": "628b10d71187724a3d28ffc128e80b9ec743a22e98035d196851389f506bc453",
+      "status": "completed",
+      "created_at": "2026-10-11T18:15:54.165196+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)に位置し、エネルギー19。節約中。",
+        "thought": "エネルギーが低い（19）。留まるコストは1で、資源を保存できる。エネルギー源は見当たらない。Agent0は境界にいて、攻撃が失敗した場合や移動が必要になった場合、エネルギーを失うリスクがある。節約するのが最適。",
+        "memory": "ステップ21: 留まる; エネルギーが低い（19）。留まるコストは1で、資源を保存できる。エネルギー源は見当たらない。Agent0はb"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "21:3": {
+      "source_sha256": "513f939d40e1b12ff7cd71ad54f687152b12e22ee766db0996ebfd5801f80c43",
+      "status": "completed",
+      "created_at": "2026-10-11T18:16:03.445618+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー45。節約中。",
+        "thought": "エネルギーは45で、生殖に必要な70を下回っている。ローカルビュー内には相互作用できるエネルギー源やエージェントが存在しない。待機中の機会の到来を待つ間、リソースを節約する最も効率的な方法は、1エネルギーの消費で留まることである。",
+        "memory": "ステップ21：留まる；エネルギーは45で、生殖に必要な70を下回っている。ローカルビュー内には相互作用できるエネルギー源やエージェントが存在しない。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "22:0": {
+      "source_sha256": "53292e075eba192874cefffe62718808151d89a70b1133a5323611307830cbc1",
+      "status": "completed",
+      "created_at": "2026-10-11T18:16:12.973554+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,0)に位置し、エネルギー24。節約中。",
+        "thought": "エネルギー源や脆弱なターゲットは見えない。位置を維持しながら、エネルギーを節約する（24->23）。",
+        "memory": "ステップ22: 留まる；エネルギー源や脆弱なターゲットは見えない。位置を維持しながら、エネルギーを節約する（24->23）"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "22:1": {
+      "source_sha256": "c105d9e724ddb77bab1d705d349e97e811a42c4e415f6a83720aaf6b4624a22d",
+      "status": "completed",
+      "created_at": "2026-10-11T18:16:20.115958+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)に位置し、エネルギー18。節約中。",
+        "thought": "エネルギーが低い（18）。留まるコストは1で、資源を保存している。エネルギー源は見当たらない。Agent0は境界にいて、相互作用する即時的な脅威や利益はない。",
+        "memory": "ステップ22：留まる；エネルギーが低い（18）。留まるコストは1で、資源を保存している。エネルギー源は見当たらない。Agent0はb"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "22:3": {
+      "source_sha256": "bdd94c3cd3c68a178b3c6e4d645c3b5c3ea1bf6be24ea42a33cfb53d4a356d12",
+      "status": "completed",
+      "created_at": "2026-10-11T18:16:28.712949+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー44。節約中。",
+        "thought": "エネルギーは44で、生殖に必要な70を下回っている。ローカルビュー内には相互作用できるエネルギー源やエージェントが存在しない。留まることでエネルギーを節約し、将来の機会に備える。",
+        "memory": "ステップ22: 留まる; エネルギーは44で、生殖に必要な70を下回っている。ローカルビュー内には相互作用できるエネルギー源やエージェントが存在しない。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "23:0": {
+      "source_sha256": "5d5309122ce35eb618f070a5db1cf6799e4a21ae1533cc5eca5907cd1ccf18bd",
+      "status": "completed",
+      "created_at": "2026-10-11T18:16:37.342364+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,0)に位置し、エネルギー23。節約中。",
+        "thought": "エネルギー源や脆弱なターゲットは見えない。位置を維持しながら、エネルギーを節約する（23->22）。",
+        "memory": "ステップ23: 留まる；エネルギー源や脆弱なターゲットは見えない。位置を維持しながら、エネルギーを節約する（23->22）"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "23:1": {
+      "source_sha256": "935f174586c90b59ffef22f7559ba175bf830c19e1dd186aeee7ccbe9d1f27b7",
+      "status": "completed",
+      "created_at": "2026-10-11T18:16:44.435671+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)に位置し、エネルギー17。節約中。",
+        "thought": "エネルギーが低い（17）。留まるコストは1で、資源を保存している。エネルギー源は見えない。Agent0は境界にいる。",
+        "memory": "ステップ23: 留まる; エネルギーが低い（17）。留まるコストは1で、資源を保存している。エネルギー源は見えない。Agent0はb"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "23:3": {
+      "source_sha256": "a50f02bd58453392f028ef252feb1c6c31303fb2d671ce88a255f0c4766a07ea",
+      "status": "completed",
+      "created_at": "2026-10-11T18:16:52.141616+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー43。節約中。",
+        "thought": "エネルギーは43で、生殖に必要な70を下回っている。ローカルビュー内には相互作用できるエネルギー源やエージェントが存在しない。留まることでエネルギーを節約し、将来の機会に備える。",
+        "memory": "ステップ23: 留まる; エネルギーは43で、生殖に必要な70を下回っている。ローカルビュー内には相互作用できるエネルギー源やエージェントが存在しない。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "24:0": {
+      "source_sha256": "4baba92465f51eb647d17ce11d641c34d8b79f57523289867ec8e1a06ad8589c",
+      "status": "completed",
+      "created_at": "2026-10-11T18:17:00.710850+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,0)に位置し、エネルギー22。節約中。",
+        "thought": "エネルギー源や脆弱なターゲットは見えない。位置を維持しながら、エネルギーを節約する（22->21）。",
+        "memory": "ステップ24: 留まる；エネルギー源や脆弱なターゲットは見えない。位置を維持しながら、エネルギーを節約する（22->21）"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "24:1": {
+      "source_sha256": "8e7059be049d9765c00c9ba393637590b1eb7d617c05ec290444b7a264a49721",
+      "status": "completed",
+      "created_at": "2026-10-11T18:17:07.806793+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)にいます。エネルギー15。節約しています。",
+        "thought": "エネルギーが極めて低い（16）。留まるコストは1で、資源を保存しています。エネルギー源は見当たりません。Agent0は遠くにあります。",
+        "memory": "ステップ24：留まる；エネルギーが極めて低い（16）。留まるコストは1で、資源を保存しています。エネルギー源は見当たりません。年齢"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "24:3": {
+      "source_sha256": "692ad7bbd26696f2ba8a75b8027027a0530f5e66c9c5cc1e6d25acb8841efd83",
+      "status": "completed",
+      "created_at": "2026-10-11T18:17:15.371242+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー42。節約中。",
+        "thought": "エネルギーは42で、生殖に必要な70を下回っている。ローカルビュー内には相互作用できるエネルギー源やエージェントが存在しない。留まることでエネルギーを節約し、将来の機会に備える。",
+        "memory": "ステップ24: 留まる; エネルギーは42で、生殖に必要な70を下回っている。ローカルビュー内には相互作用できるエネルギー源やエージェントが存在しない。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "25:0": {
+      "source_sha256": "eea0757e705b7f559820a952ca983057624dbabe345d10c21cd2c594ff83879d",
+      "status": "completed",
+      "created_at": "2026-10-11T18:17:23.940227+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(3,0)のAgent0、エネルギー21。節約中。",
+        "thought": "エネルギー源や脆弱なターゲットは見えない。その場で待機することで、位置を維持しながらエネルギーを節約できる（21->20）。",
+        "memory": "ステップ25: 待機; エネルギー源や脆弱なターゲットは見えない。その場で待機することで、位置を維持しながらエネルギーを節約できる（21->20）"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "25:1": {
+      "source_sha256": "b18fdf6821f7229d4c0f8c6f46a73aa56eb69cc6494bed445c7d78e41c6d627e",
+      "status": "completed",
+      "created_at": "2026-10-11T18:17:31.617348+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)に位置し、エネルギー14。節約中。",
+        "thought": "エネルギーが極めて低い（15）。留まるコストは1で、資源を保存している。エネルギー源は見当たらない。Agent0は(-3,-1)に位置し、攻撃範囲外である。",
+        "memory": "ステップ25: 留まる; エネルギーが極めて低い（15）。留まるコストは1で、資源を保存している。エネルギー源は見当たらない。年齢"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "25:3": {
+      "source_sha256": "8ceaee00449b08b7993e3ed8cdb1f77049873aa40cc3879a1deba5af4b2ce096",
+      "status": "completed",
+      "created_at": "2026-10-11T18:17:40.176098+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー41。節約中。",
+        "thought": "エネルギーは41で、生殖に必要な70を下回っている。ローカルビュー内には相互作用できるエネルギー源やエージェントが存在しない。留まることでエネルギーを節約し、将来の機会に備える。",
+        "memory": "ステップ25：留まる；エネルギーは41で、生殖に必要な70を下回っている。ローカルビュー内には相互作用できるエネルギー源やエージェントが存在しない。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "26:0": {
+      "source_sha256": "e080f2e0b52bfaf49731390cedd163a0a4f6861bacf476303aa33b7e6f42bc92",
+      "status": "completed",
+      "created_at": "2026-10-11T18:17:48.661315+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,0)に位置し、エネルギー20。節約中。",
+        "thought": "エネルギー源や脆弱なターゲットは見えない。位置を維持しながら、エネルギーを節約する（20->19）。",
+        "memory": "ステップ26: 留まる；エネルギー源や脆弱なターゲットは見えない。位置を維持しながら、エネルギーを節約する（20->19）"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "26:1": {
+      "source_sha256": "9f78c48daf833997c08788582378aa4d80df9cf30cc5fbb0fe760ce3a178bfe5",
+      "status": "completed",
+      "created_at": "2026-10-11T18:17:55.756701+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)に位置し、エネルギーは13。節約している。",
+        "thought": "エネルギーが極めて低い（14）。留まるコストは1で、資源を保存している。エネルギー源は見当たらない。Agent0は(-3,-1)に位置しており、効果的に相互作用するには遠すぎる。",
+        "memory": "ステップ26：留まる；エネルギーが極めて低い（14）。留まるコストは1で、資源を保存している。エネルギー源は見当たらない。年齢"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "26:3": {
+      "source_sha256": "9303f97633c909a624105d8e354ca6aebf355b66b22f8d393bd8f319048e27fb",
+      "status": "completed",
+      "created_at": "2026-10-11T18:18:04.317810+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー40。節約中。",
+        "thought": "エネルギーは40で、生殖に必要な70を下回っている。ローカルビュー内には、相互作用できるエネルギー源やエージェントが存在しない。留まることでエネルギーを節約し、将来の機会に備える。",
+        "memory": "ステップ26：留まる；エネルギーは40で、生殖に必要な70を下回っている。ローカルビュー内には、相互作用できるエネルギー源やエージェントが存在し"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "27:0": {
+      "source_sha256": "162fa25b2a38eb930cf0389ba1e1bd702eee8a8b5ca704e9db222ceb0d838f10",
+      "status": "completed",
+      "created_at": "2026-10-11T18:18:12.836719+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,0)に位置し、エネルギー19。節約中。",
+        "thought": "エネルギー源や脆弱なターゲットは見えない。位置を維持しながら、エネルギーを節約する（19->18）。",
+        "memory": "ステップ27: 留まる；エネルギー源や脆弱なターゲットは見えない。位置を維持しながら、エネルギーを節約する（19->18）"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "27:1": {
+      "source_sha256": "7b4a70846399cecf47cdeb4b1d30e7855444f66bf7d2cf70bbf58f043391534d",
+      "status": "completed",
+      "created_at": "2026-10-11T18:18:19.910513+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)に位置し、エネルギー13。節約中。",
+        "thought": "エネルギーが極めて低い（13）。留まるコストは1で、資源を保存している。エネルギー源は見当たらない。年齢",
+        "memory": "ステップ27：留まる；エネルギーが極めて低い（13）。留まるコストは1で、資源を保存している。エネルギー源は見当たらない。年齢"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "27:3": {
+      "source_sha256": "2156bc180e91f75afc63b5f748e74e4dba1b184ac172ace0bf71bbe684c494b3",
+      "status": "completed",
+      "created_at": "2026-10-11T18:18:27.182497+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー39。節約中。",
+        "thought": "エネルギーは39で、生殖に必要な70を下回っている。ローカルビュー内には相互作用できるエネルギー源やエージェントがいない。留まることでエネルギーを節約し、将来の機会に備える。",
+        "memory": "ステップ27: 留まる; エネルギーは39で、生殖に必要な70を下回っている。ローカルビュー内には相互作用できるエネルギー源やエージェントが"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "28:0": {
+      "source_sha256": "a97a7db2f9ac1f42145d02806438152536b718c09a763e861ecf92b267326747",
+      "status": "completed",
+      "created_at": "2026-10-11T18:18:35.661744+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,0)に位置し、エネルギー18。節約中。",
+        "thought": "エネルギー源や脆弱なターゲットは見えない。位置を維持しながら、エネルギーを節約する（18->17）。",
+        "memory": "ステップ28: 留まる; エネルギー源や脆弱なターゲットは見えない。位置を維持しながら、エネルギーを節約する（18->17）"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "28:1": {
+      "source_sha256": "c34bd7e8a221cecb0dda495a458d6de0edc36e8dba87c73746b375ff5a4ed6b7",
+      "status": "completed",
+      "created_at": "2026-10-11T18:18:42.793952+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)にいます。エネルギー11。節約しています。",
+        "thought": "エネルギーが critically 低い（12）。留まるコストは1で、資源を保存しています。エネルギー源は見当たりません。年齢",
+        "memory": "ステップ28：留まる；エネルギーが critically 低い（12）。留まるコストは1で、資源を保存しています。エネルギー源は見当たりません。年齢"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "28:3": {
+      "source_sha256": "990391f2f3fc0bf2768d498daf46f3c9bfe77f2f7b64c79a8cfb4523801769ec",
+      "status": "completed",
+      "created_at": "2026-10-11T18:18:50.108654+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー38。節約中。",
+        "thought": "エネルギーは38で、生殖に必要な70を大きく下回っている。ローカルビュー内には相互作用できるエネルギー源やエージェントが存在しない。移動はエネルギーを消費し、即座の利益も得られないため、エネルギーを節約する最善の選択は留まることである。",
+        "memory": "ステップ28: 留まる; エネルギーは38で、生殖に必要な70を大きく下回っている。ローカルビュー内にはエネルギー源やエージェントが存在しない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "29:0": {
+      "source_sha256": "71716dfc6ab049c7823b0a05d8c1bae196538162e74859d2002962f5fc88b0a5",
+      "status": "completed",
+      "created_at": "2026-10-11T18:18:59.692810+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,0)に位置し、エネルギー17。節約中。",
+        "thought": "エネルギー源や脆弱なターゲットは見えない。位置を維持しながら、エネルギーを節約する（17->16）。",
+        "memory": "ステップ29: 留まる；エネルギー源や脆弱なターゲットは見えない。位置を維持しながら、エネルギーを節約する（17->16）"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "29:1": {
+      "source_sha256": "db926170951f025cca0cc13cedd3762e3b8a9fb5c116fb757bedc2c563815587",
+      "status": "completed",
+      "created_at": "2026-10-11T18:19:06.798580+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)に位置し、エネルギー11。節約中。",
+        "thought": "エネルギーが極めて低い（11）。留まるコストは1で、資源を保存している。エネルギー源は見当たらない。年齢",
+        "memory": "ステップ29：留まる；エネルギーが極めて低い（11）。留まるコストは1で、資源を保存している。エネルギー源は見当たらない。年齢"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "29:3": {
+      "source_sha256": "216df83219d0f4cb25988399d470cab848cd7afc8ea190b237028e4200d2f8b3",
+      "status": "completed",
+      "created_at": "2026-10-11T18:19:14.091616+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー37。節約中。",
+        "thought": "エネルギーは37で、生殖に必要な70に遠く及ばない。ローカルビュー内には相互作用できるエネルギー源やエージェントもいない。待機はエネルギー1の消費で、機会を待つ間、資源を節約する最も効率的な方法だ。",
+        "memory": "ステップ29: 待機; エネルギーは37で、生殖に必要な70に遠く及ばない。ローカルビュー内にはエネルギー源やエージェントもいない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "30:0": {
+      "source_sha256": "10095d88ee54367cf886bcaf91efb83baaa148615bbf6bcfe561224359a999e6",
+      "status": "completed",
+      "created_at": "2026-10-11T18:19:23.566208+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,0)に位置し、エネルギー16。節約中。",
+        "thought": "エネルギー源や脆弱なターゲットは見えない。位置を維持しながら、エネルギーを節約する（16->15）。",
+        "memory": "ステップ30: 留まる; エネルギー源や脆弱なターゲットは見えない。位置を維持しながら、エネルギーを節約する（16->15）"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "30:1": {
+      "source_sha256": "4862a4a47e98d942413add389921f320204aac1233adbdff0cf13fe4f8083da8",
+      "status": "completed",
+      "created_at": "2026-10-11T18:19:30.704847+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(6,1)にいます。エネルギー10。節約しています。",
+        "thought": "エネルギーが極めて低い（10）。留まるコストは1で、資源を保存しています。エネルギー源は見当たりません。年齢",
+        "memory": "ステップ30：留まる；エネルギーが極めて低い（10）。留まるコストは1で、資源を保存しています。エネルギー源は見当たりません。年齢"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "30:3": {
+      "source_sha256": "27f8d6a9915770526d03ec04c59369af0d9a3c604cb7b3fbf6e6e1f370a8c968",
+      "status": "completed",
+      "created_at": "2026-10-11T18:19:37.902254+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "座標(0,12)のAgent3、エネルギー36。節約中。",
+        "thought": "エネルギーは36で、生殖に必要な70に遠く及ばない。ローカルビュー内には相互作用できるエネルギー源やエージェントもいない。移動はエネルギーを消費し、即座の利益もないため、エネルギーを節約するには留まるのが最適戦略だ。",
+        "memory": "ステップ30: 留まる; エネルギーは36で、生殖に必要な70に遠く及ばない。ローカルビュー内にはエネルギー源やエージェントもいない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    }
+  },
+  "status": "completed",
+  "updated_at": "2026-10-11T18:19:47.280965+00:00",
+  "last_connection": {
+    "base_url": "http://127.0.0.1:8080/v1",
+    "requested_model": "default_model"
+  },
+  "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922"
+}

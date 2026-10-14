@@ -1,0 +1,1952 @@
+{
+  "version": 1,
+  "run_id": "20261012T150151211427Z_0_0c5a2b50",
+  "language": "ja",
+  "entries": {
+    "1:0": {
+      "source_sha256": "4aa3f7e29fadac2cfa28e95b913eb9c45a4173c60fab9daa92ce579cd5185022",
+      "status": "completed",
+      "created_at": "2026-10-12T15:03:49.940485+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "こんにちは、世界！",
+        "thought": "エネルギーが20あります。移動や繁殖は、現在はコストがかかりすぎるか、効率が悪すぎます。留まることでエネルギーを節約し、より良い機会やエネルギー源を待つことができます。",
+        "memory": "ステップ1：留まる。エネルギーが20あります。移動や繁殖は、現在はコストがかかりすぎるか、効率が悪すぎます。留まることで、私は"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:1": {
+      "source_sha256": "c156b0e0d5e28cb0e872d744972f8600e93a3e03bbf978b726210fe2b0682815",
+      "status": "completed",
+      "created_at": "2026-10-12T15:03:51.605102+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(10,1)にあるエネルギー源へ移動中",
+        "thought": "(10,1)にエネルギー源があります。そこへ移動することで50のエネルギーが得られ、生存を確実なものにし、将来の行動に向けたリソースを増やすことができます。",
+        "memory": "ステップ1: (-1,0)へ移動; (10,1)にエネルギー源があります。そこへ移動することで50のエネルギーが得られ、生存を確実なものにし、"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:2": {
+      "source_sha256": "555bcbfa7fb9102bde231315607e40264777564b46f69e2263bfb5698c1d11a6",
+      "status": "completed",
+      "created_at": "2026-10-12T15:03:53.295781+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "こんにちは、世界！",
+        "thought": "エネルギーが20あります。エネルギー不足のため、現在は移動や繁殖は不可能です。待機することが、エネルギーの獲得や相互作用を待つための最も効率的な方法です。",
+        "memory": "ステップ 1: 待機。エネルギーが20あります。エネルギー不足のため、現在は移動や繁殖は不可能です。待機すること"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:3": {
+      "source_sha256": "8027c225980acb983fc6907bfdb0cb5d7d89ef591b333666472acc21583c9183",
+      "status": "completed",
+      "created_at": "2026-10-12T15:03:54.691641+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Hello world!",
+        "thought": "エネルギーが20あります。エネルギー不足のため、現在は移動や繁殖は不可能です。エネルギーを節約するために留まり、より良い条件を待ちます。",
+        "memory": "ステップ 1: 留まる; エネルギーが20あります。エネルギー不足のため、現在は移動や繁殖は不可能です。エネルギーを節"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:0": {
+      "source_sha256": "a08b1780f99aea319a14d12c143c1f3c5fd403bb609cbb79887868e9ae9c1c4d",
+      "status": "completed",
+      "created_at": "2026-10-12T15:03:55.990367+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "こんにちは、世界！",
+        "thought": "エネルギーが19あります。移動には2、滞在には1かかります。エネルギーを節約して周囲の状況を観察するために、滞在することにします。",
+        "memory": "ステップ2：滞在。エネルギーは19あります。移動には2、滞在には1かかります。エネルギーを節約して周囲の状況を観察するために、滞在することにします"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:1": {
+      "source_sha256": "3798a030a23f248cf6449b370bfe009b3100fe50f782a22e9b0b5a5834b4247f",
+      "status": "completed",
+      "created_at": "2026-10-12T15:03:57.507727+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "こんにちは、世界！",
+        "thought": "現在、私は(10,1)にいますが、ここはメモリに記載されているエネルギー源の場所です。しかし、メモリによればステップ1で(-1,0)に移動したことになっており、現在はエネルギー68を持って(10,1)にいます。すでにエネルギー源の上にいるので、複製や移動に必要なエネルギーを確保するために、次のターンはここに留まって50のエネルギーを回収します。",
+        "memory": "ステップ2: 留まる; 現在、私は(10,1)にいますが、ここはメモリに記載されているエネルギー源の場所です。しかし、t"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:2": {
+      "source_sha256": "430a5d172607f47282da6d867a6f340cf92af16b4a8d1a28abcad96fd8e33bbd",
+      "status": "completed",
+      "created_at": "2026-10-12T15:03:59.548832+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "私は(10,11)にいます。",
+        "thought": "エネルギーは19あります。移動には2、待機には1を消費します。繁殖または移動の閾値に達するために、エネルギーを温存しなければなりません。",
+        "memory": "ステップ2: 待機。エネルギーは19あります。移動には2、待機には1を消費します。繁殖または移動の閾値に達するために、エネルギーを温存しなければなりません。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:3": {
+      "source_sha256": "a7b782f20b462b4bd62605c7794b642b64bfce89a5f7a81cfc927f277a6f0960",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:01.125993+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "こんにちは、世界！",
+        "thought": "エネルギーが19あります。移動には2、待機には1を消費します。(1,3)にあるエネルギー源に到達するか、繁殖の準備をするためにエネルギーを温存する必要があります。現在は(14,8)にいてエネルギー源は遠いため、待機して観察することにします。",
+        "memory": "ステップ2：待機。エネルギーは19あります。移動には2、待機には1を消費します。エネルギー源に到達するためにエネルギーを温存する..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:0": {
+      "source_sha256": "42bef1d9289891a6100bac4ccb864991310486428837eaf267925882d1561b65",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:02.861127+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを節約し、周囲の状況を監視するために留まります。",
+        "thought": "エネルギーは18あります。移動には2、留まるには1かかります。エネルギーを節約し、周辺の様子を観察するために留まることにします。",
+        "memory": "ステップ3: 留まる; エネルギーは18あります。移動には2、留まるには1かかります。エネルギーを節約し、周辺の様子を観察するために留まることにし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:1": {
+      "source_sha256": "602c0bb6e1fa6b8f4f87799f5c337a779ec945ef27b8ff0465e6a170b35249ae",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:04.451734+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "私は(10,1)にいて、エネルギーは67あります。",
+        "thought": "現在、私は(10,1)にいます。私の記憶によれば、(10,1)にエネルギー源があったはずですが、私はすでにそこにいます。エネルギーを節約するためにここに留まり、次のターンまで待って、エネルギー源が消費されたか、あるいは自分が複製できるかを確認します。",
+        "memory": "ステップ3: 待機。現在、私は(10,1)にいます。私の記憶によれば、(10,1)にエネルギー源があったはずですが、私はすでにそこにい"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:2": {
+      "source_sha256": "01fc04f7e2093efa40667b6bcfa9b1cd69116f0830490166df17c12bc65ff407",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:06.452291+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは18あります。移動には2、待機には1を消費します。繁殖には70のエネルギーが必要です。エネルギー源やより良い条件を待つ間、エネルギー消費を最小限に抑えるために待機します。",
+        "memory": "ステップ3: 待機。エネルギーは18あります。移動には2、待機には1を消費します。繁殖には70のエネルギーが必要です。エネルギー消費を最小限に抑えるために待"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:3": {
+      "source_sha256": "e2c3b0908fc5ae407f47bf712d370535f4fd9533fc348bf0f03227af1bca31cf",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:08.253795+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを節約し、潜在的な資源に向かうために東へ移動中。",
+        "thought": "エネルギーは18ある。1セルの移動には（回転コストを含めて）2エネルギーを消費する。(1,3)にあるエネルギー源に向かうか探索する必要があるが、距離があるため、少しずつ移動を開始する。(15,8)への移動は、グリッドを探索するための第一歩である。",
+        "memory": "ステップ3: 待機。エネルギーは18ある。1セルの移動には（回転コストを含めて）2エネルギーを消費する。移動先は..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:0": {
+      "source_sha256": "e228ee282b1568d119d66b1f43942195f9e77de2f8855be0834ab5caaf1b18a7",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:10.192515+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは17あります。移動や繁殖は、現在は不可能です。より多くの資源やより良い条件を待つ間、エネルギーを節約するには留まるのが最も効率的な方法です。",
+        "memory": "ステップ4：留まる。エネルギーは17あります。移動や繁殖は、現在は不可能です。留まるのが最も効率的な方法です"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:1": {
+      "source_sha256": "94781123b47b65187f89a668104c10caa4b0edb6a58e2d625c1c9e6cd0f32cd8",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:11.713991+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "現在(10,1)にいて、エネルギーは66です。繁殖には70のエネルギーが必要です。留まるとエネルギーを1消費して65になりますが、閾値に達するまでエネルギー源か他のエージェントを待つ必要があります。現在は消費済みのエネルギー源の場所にいるので、エネルギーを節約しつつ、新しいエネルギー源がないか監視するために留まります。",
+        "memory": "ステップ4: 留まる。現在(10,1)にいて、エネルギーは66です。繁殖には70のエネルギーが必要です。留まるとエネルギーを1消費して、"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:2": {
+      "source_sha256": "46cd50774c3f22d750c5a45d2ee08ef5f8bb3beef14e9af020cdc6be51de9dad",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:13.886818+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは17。移動も繁殖も不可能。エネルギーの消耗を最小限に抑えつつ、エネルギー源やより良い条件を待つために留まらなければならない。",
+        "memory": "ステップ4：留まる。エネルギーは17。移動も繁殖も不可能。エネルギーの消耗を最小限に抑えつつ、エネルギー源やより良い条件を待つために留まらなければならない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:3": {
+      "source_sha256": "b0549d4b36491a67145f5ee73004ae6edfd1ece2c5529b382f3ac30eec7145ba",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:15.518764+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(1,3)にあるエネルギー源に向かって北へ移動中。",
+        "thought": "生存し、最終的には繁殖するためにエネルギーが必要だ。北に1セル移動するとエネルギーは16に減少するが、エネルギー源には近づく。",
+        "memory": "ステップ 4: (0,-1)へ移動; 生存し、最終的には繁殖するためにエネルギーが必要だ。北に1セル移動するとエネルギーは16に減少するが、b"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:0": {
+      "source_sha256": "3128def259cd2ccec363e05eb5b9c273360520ea6cabcaf4dcb2c08f9e17a52b",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:17.088674+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは16あります。移動や繁殖は、現時点では不可能です。より多くの資源やより良い条件を待つ間、エネルギーを節約するには留まるのが最も効率的な方法です。",
+        "memory": "ステップ5：留まる。エネルギーは16あります。移動や繁殖は現時点では不可能です。留まるのが最も効率的な方法です。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:1": {
+      "source_sha256": "d6c4ddc84cbb7cbea16ccaf8c5d2dc4763c72447405d7b9e07c7efd31aba0ec0",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:18.671295+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは65あります。留まることで1エネルギーを消費し、残りは64になります。繁殖には70のエネルギーが必要です。閾値に達するか、エネルギー源を見つけるまで留まり続けます。",
+        "memory": "ステップ5: 留まる。エネルギーは65あります。留まることで1エネルギーを消費し、残りは64になります。繁殖には70のエネルギーが必要です。私は"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:2": {
+      "source_sha256": "2ee3a95cb4e1aacd919776906fe088dcd21f71c009ea4c7648b00229fa7c3aa7",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:20.370677+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは16。移動も繁殖も不可能です。エネルギーの消耗を最小限に抑えつつ、エネルギーの回復や状況の改善を待つために、ここに留まらなければなりません。",
+        "memory": "ステップ5：留まる。エネルギーは16。移動も繁殖も不可能です。エネルギーの消耗を最小限に抑えつつ、エネルギーの回復や状況の改善を待つために、ここに留まらなければなりません"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:3": {
+      "source_sha256": "15ea41ba50b9661affa741d78369aa94efb04313328bd7f034ff2186200d841a",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:22.099057+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して北へ移動中。",
+        "thought": "現在(14,7)に位置しており、エネルギー源に到達する必要があります。(14,6)への移動は、エネルギー残量を管理しつつ、潜在的な資源に近づくためのステップです。",
+        "memory": "ステップ5: (0,-1)へ移動。現在(14,7)に位置しており、エネルギー源に到達する必要があります。(14,6)への移動は、潜在的な資源に近づくためのステップです"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:0": {
+      "source_sha256": "86b3d629424edc134a2a7711b66456ab2176ca7e722bc0fe972e5f6b969cbdd5",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:23.804497+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは15あります。移動には2、繁殖には70必要です。エネルギーを節約するために留まり、エネルギー源かより良い機会を待たなければなりません。",
+        "memory": "ステップ6: 留まる。エネルギーは15あります。移動には2、繁殖には70必要です。エネルギーを節約するために留まり、エネルギー源かより良い機会を待たな"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:1": {
+      "source_sha256": "2222a3907ce4c414fc394901af91e4cc27cb983e13a014dbcf867f713f4361b1",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:25.449526+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは64ある。繁殖には70必要だ。留まるとエネルギーを1消費し、残りは63になる。繁殖できるか、エネルギー源を見つけるまでエネルギーの節約を続ける。",
+        "memory": "ステップ6: 留まる。エネルギーは64ある。繁殖には70必要だ。留まるとエネルギーを1消費し、残りは63になる。エネルギーを節約し続け..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:2": {
+      "source_sha256": "476a99fbadf548de5788ee6a7380be80dd37952c4addca23ec40c2c729a845aa",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:27.191628+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは15。移動も繁殖も不可能。エネルギーの消耗を最小限に抑えつつ、エネルギーの回復や状況の改善を待つために、ここに留まらなければならない。",
+        "memory": "ステップ6：留まる。エネルギーは15。移動も繁殖も不可能。エネルギーの消耗を最小限に抑えつつ、エネルギーの回復や状況の改善を待つために、ここに留まらなければならない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:3": {
+      "source_sha256": "3e667a3d80a5b877dacb1a49cc1b9e264f320afeaddb19d8c88ec938c8fe95b2",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:28.920418+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "現在(14,6)に位置しており、エネルギー源に到達する必要がある。(14,5)への移動は、潜在的な資源への一歩となる。",
+        "memory": "ステップ6: (0,-1)へ移動。現在(14,6)に位置しており、エネルギー源に到達する必要がある。(14,5)への移動は、潜在的な資源への一歩となる"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:0": {
+      "source_sha256": "839f0bee77e12ee7e3b445a6dc41c7359d70522918fb63220126a9de5bc3596f",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:30.581377+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは14ある。移動には2、繁殖には70かかる。エネルギーを節約し、より多くの資源やより良いポジションを待つには、留まることが唯一の現実的な方法だ。",
+        "memory": "ステップ 7: 留まる。エネルギーは14ある。移動には2、繁殖には70かかる。エネルギーを節約し、より多くの資源やより良いポジションを待つには、留まることが唯一の現実的な方法だ"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:1": {
+      "source_sha256": "25828fc5689db0576cbe6ad52b39668be0918193266630d4d3b71c85a32bd723",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:32.401323+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは63ある。繁殖には70必要だ。留まるには1エネルギー（＋共通コスト1）を消費するので、残り61になる。十分なエネルギーが蓄積されるまで待たなければならない。",
+        "memory": "ステップ7: 留まる。エネルギーは63ある。繁殖には70必要だ。留まるには1エネルギー（＋共通コスト1）を消費するので、残り61に"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:2": {
+      "source_sha256": "71c017a1194e39bb584824b1a94f881d14e985707f5f06837acfbe7e44d58eae",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:34.116930+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは14。移動も繁殖も不可能。エネルギーの消耗を最小限に抑えつつ、エネルギーが溜まるか状況が良くなるのを待つために、ここに留まらなければならない。",
+        "memory": "ステップ 7: 留まる。エネルギーは14。移動も繁殖も不可能。エネルギーの消耗を最小限に抑えつつ、エネルギーが溜まるか状況が良くなるのを待つために、ここに留まらな"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:3": {
+      "source_sha256": "7624f792f4155553eef6376dc403773fd21744cde5b4951d01b452b1200d4002",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:35.931185+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して南へ移動中。",
+        "thought": "現在(14,5)にいて、エネルギーは11。 (14,4)への移動にはエネルギーが2必要（ターンコストを含めると合計3）、残りは8になる。死を避け、繁殖レベルに達するためには、エネルギー源を探し続けなければならない。",
+        "memory": "ステップ 7: (0,-1)へ移動。現在(14,5)にいて、エネルギーは11。(14,4)への移動にはエネルギーが2必要（ターンコストを含めると合計3）、残りは"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:0": {
+      "source_sha256": "c34256db4d13550666fe4f2090b7069c5f3fb5411da978026f2e9eab2d8170dd",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:37.994851+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "移動したり繁殖したりするにはエネルギーが不足しすぎている。エネルギーの蓄積や外部環境の変化を待つ間、死を避けるためには留まるしかない。",
+        "memory": "ステップ 8: 留まる。移動したり繁殖したりするにはエネルギーが不足しすぎている。エネルギーの蓄積や外部環境の変化を待つ間、死を避けるためには留まるしかない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:1": {
+      "source_sha256": "4aacddd017abd015cd607fcd93c58e74f9f1dde367b6a563b0e01aa8d05fc7e3",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:40.379201+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは62ある。繁殖には70必要だ。留まるには1エネルギー（＋共通コスト1）を消費するので、残り60になる。閾値に達するまでエネルギーの節約を続けなければならない。",
+        "memory": "ステップ 8: 留まる。エネルギーは62ある。繁殖には70必要だ。留まるには1エネルギー（＋共通コスト1）を消費するので、残り60に"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:2": {
+      "source_sha256": "697061b4837520e21645d81010f932bc7c5b674ccfa16d55e194c182542d0a82",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:42.231958+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは13。移動も繁殖も不可能。エネルギーの消耗を最小限に抑えつつ、エネルギーが溜まるか状況が良くなるのを待つために、ここに留まらなければならない。",
+        "memory": "ステップ 8: 留まる。エネルギーは13。移動も繁殖も不可能。エネルギーの消耗を最小限に抑えつつ、エネルギーが溜まるか状況が良くなるのを待つために、ここに留まらなければならない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:3": {
+      "source_sha256": "f834499c86304b6745fb5cb7cbfc1d1e737e34a34e5a67187edc7c93b6524736",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:44.147440+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して南へ移動中。",
+        "thought": "現在(14,4)にいて、エネルギーは9。 (14,3)への移動には2のエネルギーが必要（ターンコストを含めると合計3）で、残りのエネルギーは6になる。生き残り、繁殖の閾値に達するためには、エネルギー源を見つける必要がある。",
+        "memory": "ステップ 8: (0,-1)へ移動。現在(14,4)にいて、エネルギーは9。(14,3)への移動には2のエネルギーが必要（ターンコストを含めると合計3）で、残る"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:0": {
+      "source_sha256": "82d151296898eda6acbc196089eab2be8ce17228eeeda1ba8fe42e5c5bd45092",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:47.756429+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "死を避けるためにエネルギーを節約する。",
+        "thought": "エネルギーは12。移動には2、待機には1かかる。エネルギーが蓄積されるか、エネルギー源が現れるのを待つ間、エネルギーの損失を最小限に抑え、死を避けるためには待機しなければならない。",
+        "memory": "ステップ 9: 待機。エネルギーは12。移動には2、待機には1かかる。エネルギーの損失を最小限に抑え、死を避けるためには待機しなければならない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:1": {
+      "source_sha256": "1ef768b7c035c0b7397120766bc0461654a17bdfca8fc0883598b2fc0cd5db57",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:51.204859+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは61ある。繁殖には70必要だ。留まるとエネルギーが1と共通コストが1消費され、残りは59になる。閾値に達するまでエネルギーの節約を続けなければならない。",
+        "memory": "ステップ9: 留まる。エネルギーは61。繁殖には70必要。留まるとエネルギーが1と共通コストが1消費され、残りは"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:2": {
+      "source_sha256": "5c50f558587060216c2d155949c16c8bd0958f401f08f56aa7fe09c21cdb5236",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:54.355309+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは12。移動も繁殖も不可能。エネルギーの消耗を最小限に抑えつつ、エネルギーが溜まるか状況が良くなるのを待つために、ここに留まらなければならない。",
+        "memory": "ステップ 9: 留まる。エネルギーは12。移動も繁殖も不可能。エネルギーの消耗を最小限に抑えつつ、エネルギーが溜まるか状況が良くなるのを待つために、ここに留まらな"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:3": {
+      "source_sha256": "036d3ecbe3ceb8bd9483453e26cbfcd92f8847bd9fd9e44ee83d5a299ed7e458",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:56.559515+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して南へ移動中。",
+        "thought": "現在(14,3)にいてエネルギーは7。 (14,2)への移動には合計3エネルギーを消費するので、残りは4。死を回避し、繁殖レベルに達するためにはエネルギー源を見つける必要がある。",
+        "memory": "ステップ 9: (0,-1)へ移動。現在(14,3)にいてエネルギーは7。(14,2)への移動には合計3エネルギーを消費するので、残りは4。エネルギー源を見つける必要が"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:0": {
+      "source_sha256": "efde2826512172abb8c0d0d3e7ac2f66ef1ee93b6b1678ff11f86497ab2ce859",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:58.315151+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは11。移動には2、待機には1かかる。死を避け、繁殖に向けて蓄えるために、支出を最小限に抑えなければならない。",
+        "memory": "ステップ10: 待機; エネルギーは11。移動には2、待機には1かかる。死を避け、蓄えるために、支出を最小限に抑えなければならない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:1": {
+      "source_sha256": "4cbeca61e2a119e8e6e9f6bef5fd93e501bf5de6c32f01ea616f7248ede5e66f",
+      "status": "completed",
+      "created_at": "2026-10-12T15:04:59.906339+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは60ある。繁殖には70必要だ。留まるには合計2エネルギー（アクション1 + コモン1）を消費するので、残りは58になる。繁殖するためにエネルギーを蓄積しなければならない。",
+        "memory": "ステップ10: 留まる; エネルギーは60ある。繁殖には70必要だ。留まるには合計2エネルギー（アクション1 + コモン1）を消費するので、残りは"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:2": {
+      "source_sha256": "c5dd35e9394db451f630c20515fe7f459bd49dd432dbfa67f49cd56566b6f079",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:01.659706+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "死を避けるためにエネルギーを温存する。",
+        "thought": "エネルギーは残り11。移動や繁殖は不可能だ。エネルギーの消耗を最小限に抑えるため、エネルギーが回復するか状況が良くなるまで待機しなければならない。",
+        "memory": "ステップ10: 待機。エネルギーは残り11。移動や繁殖は不可能。エネルギーの消耗を最小限に抑えるため、エネルギーが回復するか状況が良くなるまで待機しなければならない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:3": {
+      "source_sha256": "8ba2af16b38145718c1b23d7b1212a8c9f1fb058dd6be2d5cdd803fdf83f7288",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:03.333791+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを温存している。",
+        "thought": "エネルギーは残り5。移動すると合計3（移動に2 ＋ ターンコスト1）消費し、残りは2になる。しかし、もし留まれば、ターンコストを引いた後のエネルギーは4になる。エネルギーが低く、死を回避する必要があるため、エネルギー源やより良い状況を待つ間、現在の状態を維持するには留まるのが最も安全な方法だ。",
+        "memory": "ステップ10: 留まる。エネルギーは残り5。移動すると合計3（移動に2 ＋ ターンコスト1）消費し、残りは2になる。しかし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:0": {
+      "source_sha256": "1f65dfd69fa50ccf1a8177ddca5ba96c3830fc1c69cde69920db6b8f46175a10",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:05.459709+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは10。移動には2、待機には1が必要。死を回避し、繁殖のためのエネルギーを蓄えるために、支出を最小限に抑えなければならない。",
+        "memory": "ステップ11: 待機; エネルギーは10。移動には2、待機には1が必要。死を回避し、エネルギーを蓄えるために、支出を最小限に抑えなければならない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:1": {
+      "source_sha256": "7aa9237e4b0b6b183ec91b663c4512094d04f0d33eaa357148967684f462b8c1",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:07.122919+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは59あります。繁殖には70必要です。留まることで合計2エネルギーを消費し、57になります。繁殖するためにエネルギーを蓄えなければなりません。",
+        "memory": "ステップ11: 留まる; エネルギーは59あります。繁殖には70必要です。留まることで合計2エネルギーを消費し、57になります。エネルギーを蓄えなければなりません"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:2": {
+      "source_sha256": "b75f8a2ba3516b1d6c1586919c7c3c0b31f91b641b2696dd2277cbe1913f41ff",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:08.757396+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは10。移動も繁殖も不可能。エネルギーの消耗を最小限に抑えつつ、エネルギーが溜まるか状況が良くなるのを待つために、ここに留まらなければならない。",
+        "memory": "ステップ11: 留まる。エネルギーは10。移動も繁殖も不可能。エネルギーの消耗を最小限に抑えつつ、エネルギーが溜まるか状況が良くなるのを待つために、ここに留まらな"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:3": {
+      "source_sha256": "3ad1be221fdc5e2818c7aa94b6425b06c662bf70b8db1bf375ed971239b8db6d",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:10.543885+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "死を避けるためにエネルギーを温存する。",
+        "thought": "エネルギーが残り4しかない。移動やアクション（Stay以外）を行うと、ターンコストの後にエネルギーが0以下になり、死に至る。生き残るためには、Stay（留まる）を選択しなければならない。",
+        "memory": "ステップ11: Stay; エネルギーが残り4しかない。移動やアクション（Stay以外）を行うと、ターンコストの後にエネルギーが0以下に"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:0": {
+      "source_sha256": "1180654ab04098c434f6d99533a159d40c3faf8b2782cb9093d59bd66d8b474e",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:12.157172+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "死を避けるためにエネルギーを温存する。",
+        "thought": "エネルギーが危機的なレベルまで低下している(9)。移動や繁殖を行うと、ターンコストの後に死に至る。次のターンのエネルギー減少を生き延びるためには、留まるしかない。",
+        "memory": "ステップ12: 留まる。エネルギーが危機的なレベルまで低下している(9)。移動や繁殖を行うと、ターンコストの後に死に至る。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:1": {
+      "source_sha256": "add400bb4abaca70af76b71b8ed374079fd88206b4952fd2bfd04868bb080bc2",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:13.716372+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは58ある。繁殖には70必要だ。留まることで合計2エネルギーを消費し、残りは56になる。エネルギーの節約を続けなければならない。",
+        "memory": "ステップ12: 留まる。エネルギーは58ある。繁殖には70必要だ。留まることで合計2エネルギーを消費し、残りは56になる。エネルギーの節約を続けなければならない。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:2": {
+      "source_sha256": "be74671cbf4510b82021c30584e5524f308f7fd33cac0122bb2993ede5d33076",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:15.407506+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは残り9。移動も繁殖も不可能です。エネルギーの消耗を最小限に抑えつつ、エネルギーが溜まるか状況が良くなるのを待つために、ここに留まらなければなりません。",
+        "memory": "ステップ12: 留まる。エネルギーは残り9。移動も繁殖も不可能です。エネルギーの消耗を最小限に抑えつつ、エネルギーが溜まるか状況が良くなるのを待つために、ここに留まらなければなりません"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:3": {
+      "source_sha256": "430673e6447ea6a8001445dc280a0a3deaf3129137a8cadf5a2b578578af868a",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:17.217591+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを温存している。",
+        "thought": "エネルギーが残り3しかない。移動やアクション（Stay以外）を行うと、ターンコストの適用後にエネルギーが $\\le$ 0になってしまう。死を避けるためには、Stay（留まる）を選択しなければならない。",
+        "memory": "ステップ12: Stay; エネルギーが残り3しかない。移動やアクション（Stay以外）を行うと、ターンコストの適用後にエネルギーが $\\le$ 0に"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:0": {
+      "source_sha256": "89078e8a176bd8a087fee7da173f7ebbfdb4446c9375617c39d511e4d5f2f927",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:18.894122+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを温存している。",
+        "thought": "エネルギーが極めて低い(8)。移動や攻撃を行うと、ターンコストの後に死亡する。次のターンのコストを生き延びるためには、留まるしかない。",
+        "memory": "ステップ13: 留まる；エネルギーが極めて低い(8)。移動や攻撃を行うと、ターンコストの後に死亡する。留まること。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:1": {
+      "source_sha256": "aa790ca641e80debf7206c2a038f9caf81b91f441dceb619b14ee108683a7b1c",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:20.380563+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖の閾値に達するためにエネルギーを節約中。",
+        "thought": "エネルギーは57ある。繁殖するには70必要だ。移動したり攻撃したりすると、さらにエネルギーが減少してしまう。待機すると合計で2エネルギーを消費し、55になる。繁殖の閾値に達するためにエネルギーを蓄積しなければならない。",
+        "memory": "ステップ13: 待機。エネルギーは57。繁殖には70必要。移動や攻撃をするとさらにエネルギーが減る。待機。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:2": {
+      "source_sha256": "ed2ae0feca9bd7f538c033ae4a9f1fbc2e0e7107f66547ff91084dbfd7622c6a",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:22.112099+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを節約している。",
+        "thought": "エネルギーは残り8。移動や繁殖は不可能だ。エネルギーの消費を最小限に抑えつつ、エネルギーの回復や状況の好転を待つために、ここに留まらなければならない。",
+        "memory": "ステップ13: 留まる。エネルギーは残り8。移動や繁殖は不可能だ。エネルギーの消費を最小限に抑えつつ、エネルギーの回復や状況の好転を待つために、ここに留まらなければならない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:3": {
+      "source_sha256": "246766979e7b0a0257afa878ca3e7221e5ef6bfa15f01ef6d65c1ba8b9d79081",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:23.886270+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "死を避けるためにエネルギーを温存する。",
+        "thought": "エネルギーが2ある。移動やアクション（Stay以外）を行うと、ターンコストの適用後にエネルギーが $\\le$ 0になってしまう。生き残るためにはStayしなければならない。",
+        "memory": "ステップ13: Stay; エネルギーが2ある。移動やアクション（Stay以外）を行うと、ターンコストの適用後にエネルギーが $\\le$ 0に"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:0": {
+      "source_sha256": "31fbd3f9e1daa588149faaa88e47648808c77437588086466d98d9a6d0c59b93",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:25.468139+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを温存している。",
+        "thought": "エネルギーが極めて低い(7)。移動や行動をとれば、ターンコストの後に死亡する。ターンコストを生き延びるための唯一の手段は、留まることだ。",
+        "memory": "ステップ14: 留まる；エネルギーが極めて低い(7)。移動や行動をとれば、ターンコストの後に死亡する。留まること。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:1": {
+      "source_sha256": "bf2e09956d2cc87ff9ee445aa1b34b4582f74cdc4ffe057bb89783b6cad3c83d",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:26.983884+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖のためにエネルギーを70まで蓄える。",
+        "thought": "エネルギーは56ある。繁殖には70必要だ。移動したり攻撃したりすると、さらにエネルギーが減ってしまうだろう。待機するのがエネルギーを節約する最も効率的な方法だが、共通コストとして毎ターン1エネルギーを失うことになる。早めにエネルギー源を見つけなければならない。",
+        "memory": "ステップ14: 待機。エネルギーは56。繁殖には70必要。移動や攻撃はエネルギーをさらに減少させる。待機。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:2": {
+      "source_sha256": "221db18fc3f3a3b2e50710d78c5b2d4061cd7ea0cd2bd3f5c8a3f91856d85c73",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:28.782871+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを節約している。",
+        "thought": "エネルギーは残り7。移動や繁殖は不可能だ。エネルギーの消耗を最小限に抑えつつ、エネルギーの回復や状況の好転を待つために、ここに留まらなければならない。",
+        "memory": "ステップ14: 留まる。エネルギーは残り7。移動や繁殖は不可能だ。エネルギーの消耗を最小限に抑えつつ、回復を待つために留まらなければならない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:3": {
+      "source_sha256": "8c609e910ddd5940542e2b65cf492e29e136d27a0dd8ab3f8beaaaf2b81c7101",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:30.461817+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを温存している。",
+        "thought": "エネルギーが残り2しかない。Stay以外の移動やアクションを行うと、共通のターンコスト適用後にエネルギーが $\\le$ 0になってしまう。",
+        "memory": "ステップ14: Stay; エネルギーが残り2しかない。Stay以外の移動やアクションを行うと、共通のター"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:0": {
+      "source_sha256": "c77c31e0548ba46f4563a08db9ab1d373fe7673e4a10ee7cf9ddbbd869a6eaff",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:31.792467+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを節約している。",
+        "thought": "エネルギーは6。移動（コスト2）やアクション（コスト5以上）を行うと、エネルギーは4または1になるが、ターンコストの1はアクションの後に適用される。「エネルギーが0またはマイナスになると死亡する」および「ターン開始時に生存しているすべてのエージェントは、すべてのアクションの後に1エネルギーを支払う」とある。もし移動（コスト2）すれば、残りは4となり、その後1を支払って3が残る。もし待機（コスト1）すれば、残りは5となり、その後1を支払って4が残る。エネルギーが危機的なレベルにあり、繁殖やエネルギー源に到達できないため、潜在的なエネルギー源やより良い状況を待つ間、支出を最小限に抑えるには待機するのが最も安全な方法である。",
+        "memory": "ステップ15: 待機; エネルギーは6。移動（コスト2）やアクション（コスト5以上）を行うと、エネルギーは4または1になるが、"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:1": {
+      "source_sha256": "b3935702ae716131fe7d88d73dd7a41e1efff4fdbe86a82f0677f43de7e8d3ef",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:34.960371+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖のためにエネルギーを70まで蓄える。",
+        "thought": "エネルギーは55。繁殖には70必要。移動や攻撃をするとさらにエネルギーが減ってしまう。待機するのがエネルギーを節約する最も効率的な方法だが、共通コストとして毎ターン1エネルギーを失うことになる。",
+        "memory": "ステップ15: 待機。エネルギーは55。繁殖には70必要。移動や攻撃をするとさらにエネルギーが減ってしまう。待機。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:2": {
+      "source_sha256": "2bfca5f5539c82cc9c15b146818f24f8a8a936e7680fa28f7006ffb9c1a92db3",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:36.593816+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを節約している。",
+        "thought": "エネルギーが6あります。移動や繁殖は不可能です。エネルギーが蓄積されるか、エネルギー源が現れるのを待つ間、エネルギーの損失を最小限に抑えるために留まらなければなりません。",
+        "memory": "ステップ15: 留まる。エネルギーが6あります。移動や繁殖は不可能です。エネルギーが蓄積されるか、エネルギー源が現れるのを待つ間、エネルギーの損失を最小限に抑えるために留まらなければなりません"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:0": {
+      "source_sha256": "dd110cd5eaee000f0675fd362c289e061f81dc76f8e92858e44ca8e8cca34426",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:38.388281+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを温存している。",
+        "thought": "エネルギーは5。移動（コスト2）やアクション（コスト5以上）を行うと、エネルギーは3か0になる。ターンコストの1を引くと、残りは2か-1になる。ターンコストを生き延びる必要があるため、ターンの終わりに1のコストを支払えるよう、留まらなければならない。",
+        "memory": "ステップ16: 留まる。エネルギーは5。移動（コスト2）やアクション（コスト5以上）を行うと、エネルギーは3か0になる。ターンの後"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:1": {
+      "source_sha256": "75abb875e65a99d8901458743f948240f49f3fd5e53a6f6c5dbdb9fb6ed9b195",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:40.385158+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖のためにエネルギーを70まで蓄える。",
+        "thought": "エネルギーは54ある。繁殖には70必要だ。移動したり攻撃したりすると、さらにエネルギーが減少してしまうだろう。留まることがエネルギーを節約する最も効率的な方法だが、ターンごとにエネルギーは1減少する。",
+        "memory": "ステップ16: 留まる。エネルギーは54。繁殖には70必要。移動や攻撃はエネルギーをさらに減少させる。留まる。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:2": {
+      "source_sha256": "3ad498a423ac8dfe72bb230fa4eff2fb028fd88562ae08348613d038fa0915b0",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:42.037204+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを節約している。",
+        "thought": "エネルギーが5あります。移動や繁殖は不可能です。エネルギーが蓄積されるか、エネルギー源が現れるのを待つ間、エネルギーの損失を最小限に抑えるために留まらなければなりません。",
+        "memory": "ステップ16: 留まる。エネルギーが5あります。移動や繁殖は不可能です。エネルギーが蓄積されるか、エネルギー源が現れるのを待つ間、エネルギーの損失を最小限に抑えるために留まらなければなりません"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:0": {
+      "source_sha256": "9a99a96b8c27a47fe439ecea18670ef716fb8c5899cb3bd86ccb4663081b04b1",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:43.819714+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを温存している。",
+        "thought": "エネルギーは4。移動（コスト2）やアクション（コスト5以上）を行うと、エネルギーは2または-1になる。ターン終了時のコスト1を考慮すると、死んでしまう。このターンを生き延びるには、留まるしかない。",
+        "memory": "ステップ17: 留まる; エネルギーは4。移動（コスト2）やアクション（コスト5以上）を行うと、エネルギーは2または-1になる。ターン終了時のコ"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:1": {
+      "source_sha256": "69b32af7ec5577aed433be7a4cc673e0f1521f09a493c42f5b7abeae208e025c",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:45.599850+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖のために、エネルギーを70まで蓄える。",
+        "thought": "現在、エネルギーは53。繁殖には70必要だ。移動や攻撃をするとさらにエネルギーが減り、繁殖がより困難になる。待機していることが、エネルギー源やより良い状況を待つ間、エネルギーを節約するための最も効率的な方法だ。",
+        "memory": "ステップ17: 待機。エネルギーは53。繁殖には70必要だ。移動や攻撃をするとさらにエネルギーが減り、繁殖がより困難に"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:2": {
+      "source_sha256": "4608a048f1f1a48c4cce791842710e734e9af21b67aef900cfde0e024075a5a3",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:47.401055+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを節約している。",
+        "thought": "エネルギーが4しかない。移動や繁殖は不可能だ。エネルギーが蓄積されるか、エネルギー源が現れるのを待つ間、エネルギーの損失を最小限に抑えるために留まらなければならない。",
+        "memory": "ステップ17: 留まる。エネルギーが4しかない。移動や繁殖は不可能だ。エネルギーが蓄積されるか、エネルギー源が現れるのを待つ間、エネルギーの損失を最小限に抑えるために留まらなければならない"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:0": {
+      "source_sha256": "3186d814907ecc5868f705047d396ca68a89acace02b293a90dd1b57988e06ac",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:49.206722+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを温存している。",
+        "thought": "私のエネルギーは3です。移動（コスト2）やアクション（コスト5以上）を行うと、エネルギーは1または-2になります。ターンコストの1を引くと、私は死んでしまいます。ターンコストを生き延びるためには、留まらなければなりません。",
+        "memory": "ステップ18: 留まる; 私のエネルギーは3です。移動（コスト2）やアクション（コスト5以上）を行うと、エネルギーは1または-2になります。ターンコストの"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:1": {
+      "source_sha256": "ccf678412fe686747b4be81d9dedb941b277630dd5130ed4db84ac9fc5a6674a",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:51.042431+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを温存している。",
+        "thought": "エネルギーは52ある。繁殖には70必要だ。移動したり攻撃したりするとさらにエネルギーが減り、繁殖がより困難になるだろう。エネルギーの消耗を最小限に抑えるために、ここに留まる。",
+        "memory": "ステップ18: 留まる。エネルギーは52ある。繁殖には70必要だ。移動したり攻撃したりするとさらにエネルギーが減り、maki"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:2": {
+      "source_sha256": "384802380dc2cac413ed96cfd5a6974aa69633c8e8248ceea966d1f9ab155736",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:52.650528+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを温存している。",
+        "thought": "エネルギーが3ある。移動すると移動コスト2にターンコスト1が加わり（合計3）、エネルギーが0になって死んでしまう。留まればコストは1で、次のターンにエネルギーが2残る。死を避けるためには、損失を最小限に抑えなければならない。",
+        "memory": "ステップ18: 留まる。エネルギーは3ある。移動すると移動コスト2にターンコスト1が加わり（合計3）、エネルギーが0になる"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:0": {
+      "source_sha256": "dc432afd24800b791ae0aabcb5b6d8e37cdca138506ac6f4fd2faeee78b9b8ae",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:54.472576+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを温存している。",
+        "thought": "私のエネルギーは3です。移動に2（残り1）、ターンコストに1かかるため、結果としてエネルギーは0になります。技術的には生き残っている状態ですが、危機的なレベルにあります。現在のエネルギーレベルを維持し、潜在的なエネルギー源やより良い状況を待つには、留まることが最も安全な方法です。",
+        "memory": "ステップ19: 留まる; 私のエネルギーは3です。移動に2（残り1）、ターンコストに1かかるため、結果としてエネルギーは0になります。技術的"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:1": {
+      "source_sha256": "747f7ff773bb295b5867526dbdc3386435033dfeb5bbd140fb36a3855bfed627",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:56.483440+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖のためにエネルギーを70まで蓄える。",
+        "thought": "エネルギーは51。移動したり攻撃したりするとさらにエネルギーが減少し、繁殖に必要な70という閾値から遠ざかってしまう。エネルギーの損失を最小限に抑えるために、その場に留まり、エネルギー源やより良い状況を待たなければならない。",
+        "memory": "ステップ19: 待機。エネルギーは51。移動したり攻撃したりするとさらにエネルギーが減少し、70という閾値から遠ざかってしまう。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:2": {
+      "source_sha256": "43637de302f2b992ea9d89a965cd911b383b5dba24f1f6ce75f39190cbadc95a",
+      "status": "completed",
+      "created_at": "2026-10-12T15:05:58.274915+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを温存している。",
+        "thought": "エネルギーが2ある。移動には合計3（移動に2 + ターンコスト1）かかるため、移動すると-1になり死んでしまう。エネルギーの消耗を最小限に抑えるために留まり、エネルギー源か外部からの助けを待つ必要がある。",
+        "memory": "ステップ19: 留まる。エネルギーが2ある。移動には合計3（移動に2 + ターンコスト1）かかるため、移動すると-1になり死んでしまう。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:0": {
+      "source_sha256": "8159644d8ceaccafd1ca4f35eaa8d2e279f278ae6307d9531c6307a769d3542a",
+      "status": "completed",
+      "created_at": "2026-10-12T15:06:00.084868+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを温存している。",
+        "thought": "私のエネルギーは3です。移動に2、ターンコストに1かかるため、残りは0になります。エネルギーが0またはマイナスになると死んでしまうので、ターンコストを引いた後に少なくとも1のエネルギーが残るように、留まらなければなりません。",
+        "memory": "ステップ20: 留まる; 私のエネルギーは3です。移動に2、ターンコストに1かかるため、残りは0になります。エネルギーが0になると死んでしまうので"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:1": {
+      "source_sha256": "a1cb4541a2d4241bf539cff413f440239c3e173845e7bc92225841868bc45995",
+      "status": "completed",
+      "created_at": "2026-10-12T15:06:01.883852+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖のためにエネルギーを70まで蓄える。",
+        "thought": "エネルギーは50ある。移動したり攻撃したりすると、さらにエネルギーが減少してしまう。繁殖するにはエネルギーが70必要なので、エネルギーの減少を最小限に抑えるために留まることにする。ただし、1ターンごとにエネルギーは1減少する。",
+        "memory": "ステップ20: 留まる。エネルギーは50。移動したり攻撃したりすると、さらにエネルギーが減少してしまう。繁殖するにはエネルギーが70必要だ。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:2": {
+      "source_sha256": "fd410087b07e831aa5f03a61b54adb18adaf12be0ec16d73b82fe2f9c4c37e87",
+      "status": "completed",
+      "created_at": "2026-10-12T15:06:03.588407+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き残るためにエネルギーを温存している。",
+        "thought": "エネルギーが2ある。移動には合計3（移動に2 + ターンコスト1）かかるため、移動すると死に至る。エネルギーの損失を最小限に抑えるために、留まらなければならない。",
+        "memory": "ステップ20: 留まる; エネルギーが2ある。移動には合計3（移動に2 + ターンコスト1）かかるため、移動すると死に至る。エネルギーの損失を最小限に抑えるために、留まらな"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "21:1": {
+      "source_sha256": "c5fcd6234fb18d4174d264fe6c4925b750c73384ff2e5ca85dc722dd2f9136da",
+      "status": "completed",
+      "created_at": "2026-10-12T15:06:05.389042+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "まだエネルギーを節約中。繁殖するには70必要。",
+        "thought": "エネルギーは49。移動したり攻撃したりすると、さらにエネルギーが減少してしまう。繁殖するにはエネルギーを70にする必要があるが、自分は唯一のエージェントであり、ローカルビュー内にエネルギー源がないため、エネルギーが蓄積されるのを待つか、源を見つけなければならない。しかし、ターンごとにエネルギーが1減少するため、現在は赤字の状態である。損失を最小限に抑えるために留まるが、早急にエネルギーを見つける必要がある。",
+        "memory": "ステップ21: 留まる。エネルギーは49。移動したり攻撃したりすると、さらにエネルギーが減少してしまう。繁殖するにはエネルギーを70にする必要がある。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "22:1": {
+      "source_sha256": "f42fe9030467f7772dd5c45c2c8a765454479ad1b07c47752fc9966dc56701be",
+      "status": "completed",
+      "created_at": "2026-10-12T15:06:07.658686+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖のために、エネルギーを70まで溜め続けている。",
+        "thought": "エネルギーは48。移動したり攻撃したりすると、さらにエネルギーが減ってしまう。繁殖するにはエネルギーが70必要だ。ターンコストでエネルギーは1減るが、エネルギーの消耗を最小限に抑えるために、ここに留まることにする。",
+        "memory": "ステップ22: 留まる。エネルギーは48。移動したり攻撃したりすると、さらにエネルギーが減ってしまう。繁殖するにはエネルギーが70に"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "23:1": {
+      "source_sha256": "0ad3da6417dc100bca884b2921a71884b0905be28086892c8193bf1e9468554a",
+      "status": "completed",
+      "created_at": "2026-10-12T15:06:09.400987+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖のために、エネルギーが70に達するまでまだ節約中。",
+        "thought": "エネルギーは47。移動や攻撃をすると、さらにエネルギーが減少してしまう。繁殖するにはエネルギーが70必要だ。近くにエネルギー源やエージェントはいないので、エネルギーの回復（もし可能なら）を待つか、単に温存するしかない。注：現在のルールに基づくと、ターンごとにエネルギーが1減少する。生存して繁殖するためには、エネルギー源（E）を見つけなければならない。",
+        "memory": "ステップ23: 待機。エネルギーは47。移動や攻撃をすると、さらにエネルギーが減少してしまう。繁殖するためにエネルギーが70に達する必要がある。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "24:1": {
+      "source_sha256": "e1e654372e9e0f59b43b74cfc9979498412837eb0b5298b6aff6779e8a3a4562",
+      "status": "completed",
+      "created_at": "2026-10-12T15:06:11.626314+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖のために、エネルギーが70に達するまで蓄積中。",
+        "thought": "現在のエネルギーは46。移動したり攻撃したりすると、さらにエネルギーが減少してしまう。繁殖するにはエネルギーが70必要だ。近くにエネルギー源やエージェントがいないため、エネルギーが蓄積されるのを待つか、エネルギー源を探さなければならないが、留まっているだけでもエネルギーを消費するため、現在はマイナス状態にある。待て、ルールには「ターン開始時に生存しているすべてのエージェントは1エネルギーを支払う」とある。留まるだけでも1エネルギーを消費する。ターンごとにエネルギーが減っていく。もし視界内にエネルギー源があるなら、そちらへ移動しなければならないが、ローカルビューには何も見当たらない。エネルギーの損失を最小限に抑えるために、今は留まることにする。もっとも、現在はエネルギーを失い続けているが。",
+        "memory": "ステップ24: 留まる。エネルギーは46。移動したり攻撃したりすると、さらにエネルギーが減少してしまう。繁殖するにはエネルギーが70に"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "25:1": {
+      "source_sha256": "e2c2bdc00ec1fde140fe3a00686956886db27300fe3922d3c41b129bf509adeb",
+      "status": "completed",
+      "created_at": "2026-10-12T15:06:14.759434+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖のために、エネルギーを70まで蓄えています。",
+        "thought": "エネルギーは45です。移動したり攻撃したりすると、さらにエネルギーが減少します。繁殖するにはエネルギーを70まで上げる必要があります。近くにエネルギー源やエージェントはいないため、外部の変化を待つか、単に温存するしかありません。ただ、現在はターンごとにエネルギーが減少しています。損失を最小限に抑えるために、ここに留まります。",
+        "memory": "ステップ25: 待機。エネルギーは45です。移動したり攻撃したりすると、さらにエネルギーが減少します。繁殖するにはエネルギーを70まで"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "26:1": {
+      "source_sha256": "67c89f0ba387810d62acd9156390bdea726a406251686541d3004754a2c75a04",
+      "status": "completed",
+      "created_at": "2026-10-12T15:06:16.764738+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "まだエネルギーを節約中。繁殖するには70必要。",
+        "thought": "ターンコストのせいでエネルギーが減少している。これ以上の移動コストを避けるために静止し、エネルギー源が現れるか、繁殖に十分なエネルギーが溜まるのを待たなければならない。もっとも、現状ではターンごとにエネルギーを失っているだけだが。",
+        "memory": "ステップ 26: 静止。ターンコストのせいでエネルギーが減少している。これ以上の移動コストを避けるために静止し、待た"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "27:1": {
+      "source_sha256": "8d5a352fd18e8d56f4b218b4a3f328f63fac50f2d5edce1c8519283a48d8fe9b",
+      "status": "completed",
+      "created_at": "2026-10-12T15:06:18.517891+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖のためにエネルギーを70まで蓄える。",
+        "thought": "エネルギーは43。移動や攻撃をするとさらにエネルギーを消耗してしまう。繁殖するにはエネルギーが70必要なので、ターン経過によるコストはかかるものの、消費を最小限に抑えるためにその場に留まる。",
+        "memory": "ステップ27: 待機。エネルギーは43。移動や攻撃をするとさらにエネルギーを消耗してしまう。繁殖するにはエネルギーが70必要..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "28:1": {
+      "source_sha256": "f0fcb26d50348d535151896026153ad77b3c45838fa6c5b0b16bb2c4ec6121fe",
+      "status": "completed",
+      "created_at": "2026-10-12T15:06:20.171608+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖のために、エネルギーが70に達するまでまだ節約中。",
+        "thought": "現在のエネルギーは42。繁殖には70必要。移動や攻撃をするとさらにエネルギーを消耗してしまい、まだ繁殖はできない。エネルギー源が現れるか次のターンが来るのを待つ間、エネルギーの損失を最小限に抑えるには、留まるのが最も効率的な方法だ。",
+        "memory": "ステップ28: 留まる。エネルギーは42。繁殖には70必要。移動や攻撃をするとさらにエネルギーを消耗してしまい、"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "29:1": {
+      "source_sha256": "70fe6bf2346956be9ec712a008beb8283ae5e3e3dde0efd63152f11db66090d4",
+      "status": "completed",
+      "created_at": "2026-10-12T15:06:22.047904+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖のために、エネルギーが70に達するまでまだ節約中。",
+        "thought": "エネルギーは41。繁殖には70必要。移動したり攻撃したりするとさらにエネルギーを消耗してしまうので、じっとしてエネルギーが蓄積するのを待つ（もし近くに外部の供給源があれば）か、単に損失を最小限に抑えなければならない。エネルギー源は見当たらないので、環境の変化かエネルギーを得る方法を待っている。",
+        "memory": "ステップ29: 待機。エネルギーは41。繁殖には70必要。移動したり攻撃したりするとさらにエネルギーを消耗してしまうので、私は"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "30:1": {
+      "source_sha256": "7b9b3b141ae6758cabb4db1d9caa38cf396a4296e6ddfc8b9820f530210c3a70",
+      "status": "completed",
+      "created_at": "2026-10-12T15:06:24.079412+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "繁殖のために、エネルギーが70に達するまでまだ温存中。",
+        "thought": "エネルギーは40。移動したり攻撃したりすると、さらにエネルギーが減少してしまう。繁殖するにはエネルギーが70必要なので、エネルギーの損失を最小限に抑えるために留まることにする。ただし、それでも毎ターン1エネルギーは減少する。",
+        "memory": "ステップ30: 留まる。エネルギーは40。移動したり攻撃したりすると、さらにエネルギーが減少してしまう。繁殖するにはエネルギーが70必要..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    }
+  },
+  "status": "completed",
+  "updated_at": "2026-10-12T15:06:25.814005+00:00",
+  "last_connection": {
+    "base_url": "http://127.0.0.1:8080/v1",
+    "requested_model": "default_model",
+    "send_temperature": true,
+    "send_top_p": true,
+    "reasoning_mode": "default",
+    "reasoning_effort": "medium",
+    "reasoning_format": "openai",
+    "max_tokens_parameter": "max_tokens"
+  },
+  "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922"
+}

@@ -1,0 +1,2305 @@
+{
+  "version": 1,
+  "run_id": "20261012T151819129291Z_0_edb7893b",
+  "language": "ja",
+  "entries": {
+    "1:0": {
+      "source_sha256": "2d95e37151af9c5db179e9cd869bc6e34c5a81e86104ad5adfb34607a0c38e7f",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:17.277257+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "私は(1,14)にいます。最寄りのエネルギー源は(0,1)にありますが、遠すぎます。より多くのエネルギーを確保するために、(1,3)から(1,7)あたりにあるエネルギー源の塊に向かって南へ移動します。(1,13)への移動が、この方向への第一歩となります。",
+        "memory": "ステップ1: (0,-1)へ移動; 私は(1,14)にいます。最寄りのエネルギー源は(0,1)にありますが、遠すぎます。より多くのエネルギーを確保するために、"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:1": {
+      "source_sha256": "ca04f0a1880ca41aaac389c93d0c5dcaf6d6bccc3ab6ed3328992300a71655be",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:19.373427+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "私は(6,1)にいます。最寄りのエネルギー源は(1,0)または(1,3)ですが、(-5, 1)または(1,0)の周辺にあるエネルギー源のクラスターに向かう必要があります。西へ(5,1)へ移動することで、エネルギー源までの距離が縮まります。",
+        "memory": "ステップ 1: (-1,0)へ移動; 私は(6,1)にいます。最寄りのエネルギー源は(1,0)または(1,3)ですが、エネルギー源のクラスターに向かう必要が..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:2": {
+      "source_sha256": "72727eef6e1273105d49a444eb5304164b4372b294d604c917e9fa9a4360ec3e",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:21.276489+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギー100の状態で(8,4)にいます。グリッドを探索し、エネルギー源や他のエージェントを探すために、南の(8,3)へ移動します。移動にはエネルギーを2消費します。",
+        "memory": "ステップ1: (0,-1)へ移動; エネルギー100の状態で(8,4)にいます。グリッドを探索し、エネルギー "
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:3": {
+      "source_sha256": "560cd5c5ba44fcf9807e3807f95fc5343d4b413ff12510a143b3d3672ee1b66d",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:22.692659+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "メッセージなし",
+        "thought": "私は(13,10)にいますが、すぐ近くにはエネルギー源もエージェントもいません。グリッドを探索し、リソースを探すために南へ移動します。",
+        "memory": "ステップ1: (0,-1)へ移動; 私は(13,10)にいますが、すぐ近くにはエネルギー源もエージェントもいません。南へ移動する"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:4": {
+      "source_sha256": "bb64d39b7cf5a9a454c571ec42c785d4508e0ff3d7f07b44dc152daff5337c8a",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:24.160522+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Hello world!",
+        "thought": "エネルギーが100あります。現在は(9,14)に位置しており、最寄りのエネルギー源は遠いため、移動や繁殖は今は必要ありません。エネルギーを節約するために待機し、さらなる情報を待ちます。",
+        "memory": "ステップ 1: 待機; エネルギーが100あります。現在は(9,14)に位置しており、最寄りの "
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:0": {
+      "source_sha256": "781777740c0f11550e3331c5eb2f1e3e89ac04a19b2025484b1c654d1620dcba",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:25.721753+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して南へ移動中。",
+        "thought": "現在地は(1,13)です。最寄りのエネルギー源は(0,2)にあり、かなり遠いです。南の地域を探索するために、南の(1,14)へ移動します。",
+        "memory": "ステップ2: (0,1)へ移動; 現在地は(1,13)です。最寄りのエネルギー源は(0,2)にあり、かなり遠いです。南の地域を探索するために、南の(1,14)へ移動します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:1": {
+      "source_sha256": "a41d4eac98ccd98ef48754f12321eefabba5e55b66db2614f473c2d4974aebdc",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:27.642393+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かっています。",
+        "thought": "現在(5,1)にいます。(5,2)にエネルギー源があります。(5,2)へ移動すると、2エネルギー（ターンコストを含む）を消費しますが、50エネルギーを獲得できるため、蓄積量は大幅に増加します。",
+        "memory": "ステップ 2: (0,1)へ移動; 現在(5,1)にいます。(5,2)にエネルギー源があります。(5,2)へ移動すると、2エネルギー（"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:2": {
+      "source_sha256": "86de28c4a1a309bbaf05245d12c4c1af3351538ca04ff64eb0df2f6fafdc3e51",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:29.394398+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して南へ移動中。",
+        "thought": "現在(8,3)にいます。(8,2)への移動は、グリッドを探索しエネルギー源を探すための有効な移動(0,-1)です。",
+        "memory": "ステップ 2: (0,-1)へ移動。現在(8,3)にいます。(8,2)への移動は、グリッドを探索しエネルギー源を探すための有効な移動(0,-1)です。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:3": {
+      "source_sha256": "e13c8ce97880874d0744fdc6236aedf717a1154280ef7b8ab7dcbf7546d14846",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:31.057616+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して南へ移動中。",
+        "thought": "現在(13,9)にいます。(13,8)への移動は、周囲を探索するための有効な移動(0,-1)ですが、ローカルビューにはすぐに確認できるエネルギー源はありません。探索の間、エネルギーを節約する必要があります。",
+        "memory": "ステップ 2: (0,-1)へ移動。現在(13,9)にいます。(13,8)への移動は、周囲を探索するための有効な移動(0,-1)ですが、エネルギー源は"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:4": {
+      "source_sha256": "9031d0e1e926c1a3d180b7d13c6211299eade560c59fd36afe777fbd77430529",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:32.921340+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "私は(9,14)にいます。",
+        "thought": "エネルギーは99あります。最寄りのエネルギー源は(7,1)にあり、1ターンで到達するには遠すぎます。留まることでエネルギーを節約し、より良い機会や近くのリソースを待つことができます。",
+        "memory": "ステップ 2: 留まる; エネルギーは99あります。最寄りのエネルギー源は(7,1)にあり、1ターンで到達するには遠すぎます。留まる"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:0": {
+      "source_sha256": "a16386d4f2dddf7103dbaa7e02acd661455707cc6fd72527eb3e5774b8babd3f",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:34.664295+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって南へ移動中。",
+        "thought": "現在地は(1,14)です。最寄りのエネルギー源は(0,1)にあり、遠いです。(0,3)から(3,7)付近に集中しているエネルギー源の塊に近づくため、南の(1,13)へ移動します。",
+        "memory": "ステップ3: (0,-1)へ移動; 現在地は(1,14)です。最寄りのエネルギー源は(0,1)にあり、遠いです。(0,3)から(3,7)付近に集中しているエネルギー源の塊に近づくため、南の(1,13)へ"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:1": {
+      "source_sha256": "ad2741a43754f85ce136b83c4a7d469f1ff5c7421f2baad355485159032fd83d",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:36.933228+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを回収するために南へ移動中。",
+        "thought": "現在、座標(5,2)にいます。ローカルビュー内の(5,3)にエネルギー源があります。(5,3)へ移動するには2エネルギーを消費しますが、50エネルギーを獲得できるため、蓄積量は大幅に増加します。",
+        "memory": "ステップ3: (0,1)へ移動; 現在(5,2)にいます。ローカルビュー内の(5,3)にエネルギー源があります。(5,3)へ移動すると"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:2": {
+      "source_sha256": "fcb1d18dfbc18b02ecae4ead0521d6da70dde60b5f922efdb73d84168b0d92fe",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:38.751340+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "南へ移動して、探索とエネルギー探しを行います。",
+        "thought": "現在(8,2)にいます。(0,-1)（相対座標）である(8,1)へ移動することで、エネルギー源を見つけるための南への探索を継続できます。",
+        "memory": "ステップ3: (0,-1)へ移動。現在(8,2)にいます。(0,-1)（相対座標）である(8,1)へ移動することで、南への探索を継続でき"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:3": {
+      "source_sha256": "c60ab64cb6ae61ac9410ca0973f8f46055fde4756744bdaaaee7e84e659b0e87",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:40.458100+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して南へ移動中。",
+        "thought": "現在(13,8)にいます。(13,7)へ移動して、周辺の探索とエネルギー源の捜索を行います。",
+        "memory": "ステップ3: (0,-1)へ移動; 現在(13,8)にいます。(13,7)へ移動して、周辺の探索とエネルギー源の捜索を行います。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:4": {
+      "source_sha256": "b32a6ad5d88cc690f681c24894f76f917725a8ea9df56967feb8539cdc0c4fae",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:41.944942+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって西へ移動中。",
+        "thought": " (7,1) から (7,7) 付近に位置するエネルギー源への距離を縮める必要がある。西へ移動することは、それらの資源へ向かう長期的な経路における第一歩である。",
+        "memory": "ステップ 3: (-1,0) へ移動。 (7,1) から (7,7) 付近に位置するエネルギー源への距離を縮める必要がある。西へ移動することは th"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:0": {
+      "source_sha256": "e90c51f9a879ea31b7f277313ac244879eeb6befa134891369a31aaaed69949a",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:43.633573+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探して南へ移動中。",
+        "thought": "現在(1,13)に位置しており、(0,2)から(0,7)および(1,4)から(1,6)付近にあるエネルギー源に向かう必要がある。南の(1,12)へ移動することは、その方向への一歩となる。",
+        "memory": "ステップ4: (0,-1)へ移動。現在(1,13)に位置しており、(0,2)から(0,7)および(1,4)t付近にあるエネルギー源に向かう必要がある。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:1": {
+      "source_sha256": "a1aa8c1051193e4344c5b7fb7b8a1d059a9d9bc8bcfd29eb34742e1cae0b4b83",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:45.592256+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を集めるために南へ移動中。",
+        "thought": "現在(5,3)にいます。(5,4)または(5,2)への移動が可能ですが、(5,4)、(5,5)、(5,6)に位置するエネルギー源の塊に向かうため、(5,4)へ移動します。待て、指示ではdx,dyは相対的な座標として(dx,dy)へ移動するとある。(5,3)から(5,4)へ移動するには、(0,1)へ移動することになります。これにより、より多くのエネルギー源に到達できる位置に移動できます。",
+        "memory": "ステップ4: (0,1)へ移動。現在(5,3)にいます。(5,4)または(5,2)への移動が可能ですが、(5,4)、(5,5)、(5,6)に位置するエネルギー源の塊に向かうため、(5,4)へ移動します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:2": {
+      "source_sha256": "e84719f1cc8636a6cd82e5eebdc6fe0948078c28564a99abb21a359aabc06d6c",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:48.564802+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを集めるために南へ移動中。",
+        "thought": "現在(8,1)にいます。(8,0)（相対座標(0,-1)）へ移動し、エネルギー源を探すためにグリッドの探索を続けます。",
+        "memory": "ステップ4: (0,-1)へ移動。現在(8,1)にいます。(8,0)（相対座標(0,-1)）へ移動し、エネルギー源を探すためにグリッドの探索を続けます。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:3": {
+      "source_sha256": "53a4da722ede793773a2570bcd604ee44d4a1ad50399665da1d3bac34f010360",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:50.279430+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探して南へ移動中。",
+        "thought": "現在(13,7)に位置しており、エネルギー源を見つける必要がある。探索を続けるため、南の(13,6)へ移動する。",
+        "memory": "ステップ4: (0,-1)へ移動。現在(13,7)に位置しており、エネルギー源を見つける必要がある。探索を続けるため、南の(13,6)へ移動する。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:4": {
+      "source_sha256": "5fd5c747fc2fc7e737fbfd7125b1863ae5c26ce725cab125479d58084431c114",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:51.879065+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって西へ移動中。",
+        "thought": "現在地は(8,14)です。最寄りのエネルギー源ははるか西にあります。x=-7からx=3付近に位置するエネルギー源の塊への距離を縮めるため、西へ移動します。注：プロンプトのメモリにはステップ3で(-1,0)に移動したとありますが、現在の位置は(8,14)です。西の(7,14)へ移動します。",
+        "memory": "ステップ4: (-1,0)へ移動; 現在地は(8,14)です。最寄りのエネルギー源ははるか西にあります。距離を縮めるために西へ移動..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:0": {
+      "source_sha256": "8aadbed8a41edefaeaee3bb69b553cbb34b99e1274a4c06eb460ee449180fc94",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:54.248562+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を集めるために南へ移動中。",
+        "thought": "現在地は(1,12)です。最寄りのエネルギー源は(0,3)から(3,7)の周辺に集中しています。(1,7)と(0,7)にあるエネルギー源に近づくため、南の(1,11)へ移動します。",
+        "memory": "ステップ5: (0,-1)へ移動; 現在地は(1,12)です。最寄りのエネルギー源は(0,3)から(3,7)の周辺に集中しています。南の"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:1": {
+      "source_sha256": "e8f0360ade9ce80287801539389943e9ca453ab462dd95ef8f0f17fa69e7b76d",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:56.267738+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために北へ移動中。",
+        "thought": "現在(5,4)にいて、(5,5)にエネルギー源があります。(5,5)へ移動するとエネルギーを2消費し、50のエネルギーが得られます。",
+        "memory": "ステップ5: (0,1)へ移動; 現在(5,4)にいて、(5,5)にエネルギー源があります。(5,5)へ移動するとエネルギーを2消費し、50のエネルギーが得られ"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:2": {
+      "source_sha256": "1d0de59719d879eff98623decba38b646129dc032613432c99e66700ec76115c",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:58.008513+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探して南へ移動中。",
+        "thought": "現在(8,0)にいます。グリッド内のエネルギー源の探索を続けるため、(8,-1)（相対座標(0,-1)）へ移動します。",
+        "memory": "ステップ5: (0,-1)へ移動。現在(8,0)にいます。グリッド内のエネルギー源の探索を続けるため、(8,-1)（相対座標(0,-1)）へ移動します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:3": {
+      "source_sha256": "9ac379217632e08912904c3c3384021cb375a68266020a4ecc0b80a77461224e",
+      "status": "completed",
+      "created_at": "2026-10-12T15:22:59.704001+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探して南へ移動中。",
+        "thought": "現在(13,6)に位置しており、エネルギー源を見つける必要がある。探索を続けるため、南の(13,5)へ移動する。",
+        "memory": "ステップ5: (0,-1)へ移動。現在(13,6)に位置しており、エネルギー源を見つける必要がある。探索を続けるため、南の(13,5)へ移動する。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:4": {
+      "source_sha256": "4116b49f27c4b3c95d59d93caae19ac55dbd0a87ba2ce1cc941479c20bb60081",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:01.301905+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に到達するために西へ移動中。",
+        "thought": "現在地は(7,14)です。最寄りのエネルギー源ははるか西（x=0またはx=-6付近）にあります。エネルギー源の集まりへの距離を縮めるために、西へ移動します。",
+        "memory": "ステップ 5: (-1,0)へ移動; 現在地は(7,14)です。最寄りのエネルギー源ははるか西（x=0またはx=-6付近）にあります。西へ移動し"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:0": {
+      "source_sha256": "7d99b99fa77416cfe4f57d4be40e3862a23cfa9df7b01a8eaefacf2cb05302ca",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:03.179789+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に到達するために南へ移動中。",
+        "thought": "現在(1,11)に位置しており、(0,4)から(3,7)付近にあるエネルギー源の集まりに向かって南へ移動する必要がある。(1,10)へ移動することで、それらに近づくことができる。",
+        "memory": "ステップ 6: (0,-1)へ移動。現在(1,11)に位置しており、(0,4)から"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:1": {
+      "source_sha256": "8ae204149868aff78ad5439c3961dd5c2b72186c21d8a9c3408e089dad619003",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:04.846691+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を集めるために南へ移動中。",
+        "thought": "現在(5,5)にいます。近くの(5,4)と(5,3)にエネルギー源がありますが、エネルギー獲得を最大化するために、(5,2)、(5,1)、(5,0)にあるエネルギー源の塊に向かって南へ移動します。",
+        "memory": "ステップ 6: (0,-1)へ移動; 現在(5,5)にいます。近くの(5,4)と(5,3)にエネルギー源がありますが、エネルギー獲得を最大化するために、エネルギー源の塊に向かって南へ移動し"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:2": {
+      "source_sha256": "292e4e654297423b18292532b4ba297ae384d53179ffa94b12c944f632559840",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:06.942786+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探すために南へ移動中。",
+        "thought": "現在(8,14)に位置しており、エネルギー源を見つけるためにグリッドを探索する必要がある。南の(8,13)へ移動するのは標準的な探索ステップである。",
+        "memory": "ステップ6: (0,-1)へ移動。現在(8,14)に位置しており、エネルギー源を見つけるためにグリッドを探索する必要がある。南の(8,13)へ移動するのは標準的"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:3": {
+      "source_sha256": "953eecc6ddf8d9d0ac97daacde4221244eab0d6853ef0af58747b98c5d9bae60",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:08.666873+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探して南へ移動中。",
+        "thought": "現在(13,5)に位置しており、エネルギー源を見つける必要がある。探索を続けるため、南の(13,4)へ移動する。",
+        "memory": "ステップ6: (0,-1)へ移動。現在(13,5)に位置しており、エネルギー源を見つける必要がある。探索を続けるため、南の(13,4)へ移動する。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:4": {
+      "source_sha256": "a3e88bce4915110e205a0b4b9d34871b9011d9e5e964bafc14303d748af1ab7f",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:10.260252+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に到達するために西へ移動します。",
+        "thought": "現在地は(6,14)です。最寄りのエネルギー源はx=0またはx=-5付近にあります。これらの源への距離を縮めるために、西へ移動します。",
+        "memory": "ステップ6: (-1,0)へ移動; 現在地は(6,14)です。最寄りのエネルギー源はx=0またはx=-5付近にあります。これらの源への距離を縮めるために、西へ移動"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:0": {
+      "source_sha256": "313b6a2a1af4f29b1fb575f7d5d6c4812f65b0addbbabb684b503b84c5a3f99d",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:12.061395+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって南へ移動中。",
+        "thought": "現在(1,10)に位置しており、(0,7)、(1,7)、(2,7)にあるエネルギー源に向かって南へ移動する必要があります。この方向への第一歩として、(1,9)へ移動します。",
+        "memory": "ステップ7: (0,-1)へ移動。現在(1,10)に位置しており、(0,7)、(1,7)、(2,7)にあるエネルギー源に向かって南へ移動する必要があります。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:1": {
+      "source_sha256": "5ece781b869a72923dbefb6b293f1c073a31dc40badd77bb51c9d378f83ffa8d",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:13.904471+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に到達するために南へ移動中。",
+        "thought": "現在(5,4)にいて、(5,3)にエネルギー源があります。南へ移動するとエネルギーを2消費しますが、到着時に50のエネルギーが得られます。",
+        "memory": "ステップ 7: (0,-1)へ移動; 現在(5,4)にいて、(5,3)にエネルギー源があります。南へ移動するとエネルギーを2消費しますが、"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:2": {
+      "source_sha256": "fe6048836237e5a8483ac6668387d89cda44e041fa3bbcaf10756d5413115f41",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:15.497108+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探して南へ移動中。",
+        "thought": "現在地は(8,13)。グリッド内のエネルギー源の探索を続けるため、(8,12)へ移動します。",
+        "memory": "ステップ 7: (0,-1)へ移動。現在地は(8,13)。グリッド内のエネルギー源の探索を続けるため、(8,12)へ移動します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:3": {
+      "source_sha256": "48b017f9aeed9386deeedda8fade6a229ec5f1f456bc18b1081be9d16af9f1a8",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:17.014392+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探して南へ移動中。",
+        "thought": "現在(13,4)に位置しており、エネルギー源を見つける必要がある。探索を続けるため、南の(13,3)へ移動する。",
+        "memory": "ステップ 7: (0,-1)へ移動。現在(13,4)に位置しており、エネルギー源を見つける必要がある。探索を続けるため、南の(13,3)へ移動する。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:4": {
+      "source_sha256": "4c83f82b9070ff3a89dad7e64cc40ca0659ad7df5f34b25ac35308b252928ae7",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:18.659049+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に到達するために西へ移動中。",
+        "thought": "現在、座標(5,14)にいます。最も近いエネルギー源はx=0またはx=-1付近にあります。これらのエネルギー源への距離を縮めるために、引き続き西へ移動します。",
+        "memory": "ステップ 7: (-1,0)へ移動; 現在(5,14)にいます。最も近いエネルギー源はx=0またはx=-1付近にあります。引き続き西へ移動"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:0": {
+      "source_sha256": "bc9d7868e61756858d79d859530f6cbb9cf71be089d9870b5983a81b47c0d134",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:20.393703+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって南へ移動中。",
+        "thought": "現在(1,9)に位置しており、(1,0)と(0,6)付近にあるエネルギー源に向かって南へ移動する必要がある。この方向への第一歩として(1,8)へ移動する。",
+        "memory": "ステップ8: (0,-1)へ移動。現在(1,9)に位置しており、(1,0)と(0,6)付近にあるエネルギー源に向かって南へ移動する必要がある。移動"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:1": {
+      "source_sha256": "04398f70c5a4573507bbd64570066cddce89c0965c8f3e888966ab35b73a002b",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:22.183094+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために南へ移動中。",
+        "thought": "現在(5,3)にいます。(0,-1)（相対座標）の(5,2)へ移動すると、エネルギーを2消費しますが、エネルギー源である(5,2)に到達し、50のエネルギーが得られます。",
+        "memory": "ステップ 8: (0,-1)へ移動。現在(5,3)にいます。(0,-1)（相対座標）の(5,2)へ移動すると、エネルギーを2消費しますが、エネルギー源である(5,2)に到達し、50のエネルギーが得られま"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:2": {
+      "source_sha256": "d362a4818ff6a2f06b9b2392d4a56833b2fc4cb37dcf96e8d26c912d218cf5fc",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:24.277164+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探して南へ移動中。",
+        "thought": "現在(8,12)にいます。グリッド内のエネルギー源の探索を続けるため、(8,11)へ移動します。",
+        "memory": "ステップ8: (0,-1)へ移動。現在(8,12)にいます。グリッド内のエネルギー源の探索を続けるため、(8,11)へ移動します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:3": {
+      "source_sha256": "3fb6690933435fac38b2114d1ee8c412d1c3697db07994d1190021a4e0f62726",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:25.801671+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探すために南へ移動中。",
+        "thought": "現在(13,3)に位置しており、エネルギー源を見つけるためにこのエリアを探索する必要がある。探索を続けるため、南の(13,2)へ移動する。",
+        "memory": "ステップ 8: (0,-1)へ移動。現在(13,3)に位置しており、エネルギー源を見つけるためにこのエリアを探索する必要がある。探索を続けるため、南の(13,2)へ移動中"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:4": {
+      "source_sha256": "00ea943ada010bfcb95f4d9ec2623552ab5a1dc7887e935a9fd70f3c75827bd8",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:27.541586+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって西へ移動中。",
+        "thought": "現在地は(4,14)です。最寄りのエネルギー源はx=0またはx=-1付近にあります。それらに到達するために、西への移動を続けます。",
+        "memory": "ステップ 8: (-1,0)へ移動; 現在地は(4,14)です。最寄りのエネルギー源はx=0またはx=-1付近にあります。西への移動を続"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:0": {
+      "source_sha256": "349d11df28b8d21efaea6bc8a143716ba8158457f7bb25a6b1bea3bd805a20af",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:29.219495+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって南下中。",
+        "thought": "現在(1,8)に位置しており、(1,1)にあるエネルギー源、またはその他の近くのエネルギー源に到達するために南へ移動する必要がある。(1,7)への移動は、南下する軌道の第一歩である。",
+        "memory": "ステップ 9: (0,-1)へ移動。現在(1,8)に位置しており、(1,1)にあるエネルギー源、またはその他の近くのエネルギー源に到達するために南へ移動する必要がある。Mo"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:1": {
+      "source_sha256": "0f2d4f2b7a47ff63743ec571eb955a807aa009a27b01c54937daab97a9f25e5d",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:31.051253+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために南へ移動中。",
+        "thought": "現在、座標(5,2)にいます。(5,1)（相対座標(0,-1)）にエネルギー源があります。そこへ移動するとエネルギーを2消費しますが、50のエネルギーを獲得し、合計が増加します。",
+        "memory": "ステップ 9: (0,-1)へ移動。現在(5,2)にいます。(5,1)（相対座標(0,-1)）にエネルギー源があります。そこへ移動するとエネルギーを消費し"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:2": {
+      "source_sha256": "068d3e120ca5b5faaac421d9e72a498f30fee5e7fb0b29cfd7afe3b172c30558",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:32.901828+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探して南へ移動中。",
+        "thought": "現在(8,11)にいます。(8,10)へ移動して、グリッド内のエネルギー源の探索を続けます。",
+        "memory": "ステップ 9: (0,-1)へ移動。現在(8,11)にいます。(8,10)へ移動して、グリッド内のエネルギー源の探索を続けます。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:3": {
+      "source_sha256": "de444d7842edc0230fcb2fab18d3e52f6b42a7d31eceffa34f899c1800fbb932",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:34.396838+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探すために東へ移動中。",
+        "thought": "現在地は(13,2)で、エネルギーは84あります。現在のローカルビューでは現在の位置にすぐに見つかるエネルギー源がないため、エネルギー源を探すために東の(14,2)へ移動します。",
+        "memory": "ステップ 9: (1,0)へ移動; 現在地は(13,2)で、エネルギーは84あります。現在のローカルビューでは現在の位置にすぐに見つかるエネルギー源がないため、エネルギー源を探すために東の(14,2)へ移動します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:4": {
+      "source_sha256": "d0c18d8e86707d4fd58d68812db7d7e237834264918c69fa839288ecab0eb8d0",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:36.416658+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探して南へ移動中。",
+        "thought": "現在地は(3,14)です。最寄りのエネルギー源は(3,1)、(3,4)、(3,6)にあります。エネルギーを補充するため、(3,4)と(3,6)にあるエネルギー源の塊に向かって南へ移動します。",
+        "memory": "ステップ 9: (0,-1)へ移動; 現在地は(3,14)です。最寄りのエネルギー源は(3,1)、(3,4)、(3,6)にあります。エネルギー源の塊に向かって南へ移動します"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:0": {
+      "source_sha256": "e0d8e994d79b9f798cbb1b8e77f6d6a05f00801c2ad8e3af2be22877ec01e750",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:38.503931+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって南へ移動中。",
+        "thought": "現在(1,7)に位置しており、(1,1)と(2,0)の周辺にあるエネルギー源の集まりに到達するために南へ移動する必要がある。この方向への第一歩として(1,6)へ移動する。",
+        "memory": "ステップ10: (0,-1)へ移動。現在(1,7)に位置しており、(1,1)と"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:1": {
+      "source_sha256": "3d6505ca452b0b17b14165a9da246cdd8e54d692d6eaa0f81a4099bcb1ecb9b0",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:40.140580+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために南へ移動中。",
+        "thought": "現在(5,1)にいます。(5,2)にエネルギー源があり、相対座標では(0,1)です。そこへ移動するとエネルギーを2消費し、50のエネルギーが得られます。",
+        "memory": "ステップ10: (0,1)へ移動; 現在(5,1)にいます。(5,2)にエネルギー源があり、相対座標では(0,1)です。そこへ移動すると"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:2": {
+      "source_sha256": "f107e46e4108bbe63ec75723adaf6626b92edd4df878ad2962d63a9b5f57c157",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:41.910132+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探すために南へ移動中。",
+        "thought": "現在(8,10)に位置しており、エネルギー源を見つけるためにグリッドを探索する必要がある。探索を続けるため、南の(8,9)へ移動する。",
+        "memory": "ステップ10: (0,-1)へ移動。現在(8,10)に位置しており、エネルギー源を見つけるためにグリッドを探索する必要がある。探索を続けるため、南の(8,9)へ移動中"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:3": {
+      "source_sha256": "a3c4c689d8db8453f02a13119559b09d4aaefdc400b46eb93ad59ff092b3c89c",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:43.663840+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探して東へ移動中。",
+        "thought": "現在地は(14,2)で、最寄りのエネルギー源は(2,y)と(3,y)の周辺に集中している。エネルギーを補充するため、エネルギー源が密集している東の方向へ移動する。",
+        "memory": "ステップ10: (1,0)へ移動。現在地は(14,2)で、最寄りのエネルギー源は(2,y)と(3,y)の周辺に集中している。東へ移動中"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:4": {
+      "source_sha256": "922ce71ff98466a25be058ce52de1081eea6383b4806ec2242d6e4f6d8c5ba8b",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:45.591643+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源がある(3,7)と(3,5)に向かって南下します。",
+        "thought": "現在(3,13)にいます。最寄りのエネルギー源は(3,7)と(3,5)です。それらに到達するために南へ移動します。",
+        "memory": "ステップ10: (0,-1)へ移動; 現在(3,13)にいます。最寄りのエネルギー源は(3,7)と(3,5)です。それらに到達するために南へ移動します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:0": {
+      "source_sha256": "746f38c0b59b8a900f385e713e0bd1ec5510a977c3069a7c525e455ea9c1593f",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:47.464014+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって南へ移動中。",
+        "thought": "現在(1,6)に位置しており、(1,0)と(1,3)の周辺にあるエネルギー源の集まりに向かって南へ移動する必要がある。この方向への第一歩として(1,5)へ移動する。",
+        "memory": "ステップ11: (0,-1)へ移動。現在(1,6)に位置しており、(1,0)と"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:1": {
+      "source_sha256": "6c46b3c221c301340a2417a8aa5702120a6fcff38fdfd02f05d265371680c2aa",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:49.134166+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために南へ移動中。",
+        "thought": "現在地は(5,2)です。(5,1)（相対座標(0,-1)）にエネルギー源があります。そこへ移動するとエネルギーを2消費し、50獲得するため、差し引き+48となります。",
+        "memory": "ステップ11: (0,-1)へ移動。現在地は(5,2)です。(5,1)（相対座標(0,-1)）にエネルギー源があります。そこへ移動するとエネルギーを2消費し"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:2": {
+      "source_sha256": "f2ad02666ba4e7b93ea45dbf65877ff48a93d9cff79a29a6a514aa8019991b03",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:51.021562+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探して南へ移動中。",
+        "thought": "現在(8,9)に位置しており、エネルギー源を見つけるためにグリッドを探索する必要がある。探索を続けるため、南の(8,8)へ移動する。",
+        "memory": "ステップ11: (0,-1)へ移動。現在(8,9)に位置しており、エネルギー源を見つけるためにグリッドを探索する必要がある。探索を続けるため、南の(8,8)へ移動中。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:3": {
+      "source_sha256": "90ac9a3be76a03378780f8c0385b23c0f4a0a55a876b8c90f43b560323ccdc1e",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:52.737484+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために東へ移動中。",
+        "thought": "現在(0,2)に位置しており、(1,2)にエネルギー源があります。(1,2)へ移動することで50のエネルギーを獲得できます。",
+        "memory": "ステップ11: (1,0)へ移動。現在(0,2)に位置しており、(1,2)にエネルギー源があります。(1,2)へ移動することで50のエネルギーを獲得できます。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:4": {
+      "source_sha256": "999c1f0011f93085304c3012cb5c49a99b9291a8828352b62572c6bbb28ce5b9",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:54.396376+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって南へ移動中。",
+        "thought": "現在地は(3,12)です。最寄りのエネルギー源は(3,6)と(3,3)にあります。それらに到達するために南へ移動します。",
+        "memory": "ステップ11: (0,-1)へ移動; 現在地は(3,12)です。最寄りのエネルギー源は(3,6)と(3,3)にあります。それらに到達するために南へ移動します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:0": {
+      "source_sha256": "d909a5fa03dd509e4e26ccd61335a7cd94555639818ff1b15dfd8f3d4a9fffae",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:56.142636+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために南へ移動中。",
+        "thought": "現在(1,5)にいて、(1,4)にエネルギー源があります。(1,4)へ移動するとエネルギーを2消費しますが、エネルギー源から50のエネルギーが得られます。",
+        "memory": "ステップ12: (0,-1)へ移動。現在(1,5)にいて、(1,4)にエネルギー源があります。(1,4)へ移動するとエネルギーを2消費しますが、エネルギーを"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:1": {
+      "source_sha256": "270fdfce0fc13750380a647d91981a345fadb30ce6a0d58af5455027e0b4b5cc",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:57.880172+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために北へ移動中。",
+        "thought": "現在(5,1)にいます。(5,2)にエネルギー源があり、相対座標では(0,1)です。そこへ移動するとエネルギーを2消費し、50のエネルギーを獲得します。",
+        "memory": "ステップ12: (0,1)へ移動; 現在(5,1)にいます。(5,2)にエネルギー源があり、相対座標では(0,1)です。そこへ移動すると"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:2": {
+      "source_sha256": "0184bb88f844a9feee38e4f1eef83dfc023e13a99eebf90ff47d5f48e3ce7333",
+      "status": "completed",
+      "created_at": "2026-10-12T15:23:59.655053+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探すために南へ移動中。",
+        "thought": "現在(8,8)に位置しており、エネルギー源を見つける必要がある。探索を続けるため、南の(8,7)へ移動する。",
+        "memory": "ステップ12: (0,-1)へ移動。現在(8,8)に位置しており、エネルギー源を見つける必要がある。探索を続けるため、南の(8,7)へ移動する。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:3": {
+      "source_sha256": "f0b399f599773b7af18d2a77bc0651e5184ab6d0b2fef865129b4a956502d4a1",
+      "status": "completed",
+      "created_at": "2026-10-12T15:24:01.234285+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために南へ移動中。",
+        "thought": "現在(1,2)に位置しており、(1,0)にエネルギー源があります。(1,0)へ移動することで50のエネルギーを獲得できます。",
+        "memory": "ステップ12: (1,0)へ移動。現在(1,2)に位置しており、(1,0)にエネルギー源があります。(1,0)へ移動することで50のエネルギーを獲得できます。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:4": {
+      "source_sha256": "f41e99033ca07adaf09cbf6c8ee2bd1a83ab3e6a0acd07f2aaaf55c083b39e98",
+      "status": "completed",
+      "created_at": "2026-10-12T15:24:02.840448+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって南へ移動中。",
+        "thought": "現在(3,11)にいて、(3,7)または(3,4)にあるエネルギー源に到達する必要があります。距離を縮めるために南へ移動します。",
+        "memory": "ステップ12: (0,-1)へ移動。現在(3,11)にいて、(3,7)または(3,4)にあるエネルギー源に到達する必要があります。距離を縮めるために南へ移動"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:0": {
+      "source_sha256": "eabf59b65389b79c5aa11e98517a0aaba29c7cade6c5bccc97eb4adfa4edb28b",
+      "status": "completed",
+      "created_at": "2026-10-12T15:24:04.526627+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために北へ移動中。",
+        "thought": "現在(1,4)にいて、(1,5)にエネルギー源があります。北へ移動することで、そのエネルギー源を消費して50のエネルギーを得ることができます。",
+        "memory": "ステップ13: (0,1)へ移動; 現在(1,4)にいて、(1,5)にエネルギー源があります。北へ移動することで、そのエネ"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:1": {
+      "source_sha256": "fe87f665b3fda275ecd59031cf478649a5618e80d2c15644b619ca2ad9b58390",
+      "status": "completed",
+      "created_at": "2026-10-12T15:24:06.116845+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを回収するために(5,3)へ移動します。",
+        "thought": "現在(5,2)に位置しており、(5,3)（相対座標(0,1)）にエネルギー源があります。そこへ移動することでエネルギーが増加します。",
+        "memory": "ステップ13: (0,1)へ移動。現在(5,2)に位置しており、(5,3)（相対座標(0,1)）にエネルギー源があります。そこへ移動することでエネルギーが"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:2": {
+      "source_sha256": "e1b664294d4707b909425149aa626600f4edd0ad14b42f56eb22c1bf8ade09fe",
+      "status": "completed",
+      "created_at": "2026-10-12T15:24:07.853437+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探すために南へ移動中。",
+        "thought": "現在(8,7)に位置しており、グリッド内のエネルギー源の探索を続けるため、南の(8,6)へ移動しています。",
+        "memory": "ステップ13: (0,-1)へ移動。現在(8,7)に位置しており、グリッド内のエネルギー源の探索を続けるため、南の(8,6)へ移動しています。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:3": {
+      "source_sha256": "78dba698e17b7f449974386793ccd743cd17e7fa434afb4a928ed63b8061979e",
+      "status": "completed",
+      "created_at": "2026-10-12T15:24:09.393776+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために北へ移動します。",
+        "thought": "現在(2,2)にいて、(2,3)にエネルギー源があります。そこへ移動すると50のエネルギーが得られます。",
+        "memory": "ステップ13: (0,1)へ移動。現在(2,2)にいて、(2,3)にエネルギー源があります。そこへ移動すると50のエネルギーが得られます。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:4": {
+      "source_sha256": "4bc1474bf8236008fa4598920152755eb59274fbcc46544e096bdbaba8b7a92f",
+      "status": "completed",
+      "created_at": "2026-10-12T15:24:10.914627+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を集めるために南へ移動中。",
+        "thought": "現在地は(3,10)です。最寄りのエネルギー源は(3,5)と(3,-5)にあります。それらに到達するために南へ移動します。",
+        "memory": "ステップ13: (0,-1)へ移動。現在地は(3,10)です。最寄りのエネルギー源は(3,5)と(3,-5)にあります。それらに到達するために南へ移動します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:0": {
+      "source_sha256": "4b3067392c8c33201020920dcfb65456c2e57ea726cb2f195f5dd989f066c4e6",
+      "status": "completed",
+      "created_at": "2026-10-12T15:24:12.673649+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために南へ移動中。",
+        "thought": "現在(1,5)にいて、(1,4)にエネルギー源があります。南へ移動することで、そのエネルギー源を消費して50のエネルギーを得ることができます。",
+        "memory": "ステップ14: (0,-1)へ移動。現在(1,5)にいて、(1,4)にエネルギー源があります。南へ移動することで、そのエネルギー源を消費す"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:1": {
+      "source_sha256": "4822e933f154343ec0397e45c7b888f322ef4df2f39aabf32c921d3a43e78f93",
+      "status": "completed",
+      "created_at": "2026-10-12T15:24:14.281210+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために北へ移動中。",
+        "thought": "現在地は(5,3)です。(5,4)（相対座標(0,1)）にエネルギー源があります。そこへ移動するとエネルギーを2消費し、50のエネルギーを獲得します。",
+        "memory": "ステップ14: (0,1)へ移動; 現在地は(5,3)です。(5,4)（相対座標(0,1)）にエネルギー源があります。そこへ移動するとエネルギーを2消費し"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:2": {
+      "source_sha256": "12bcf2d562de873200f58e3d91f00868a85a0cce196b55eb651cbabf7030177f",
+      "status": "completed",
+      "created_at": "2026-10-12T15:24:16.094481+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探すために南へ移動中。",
+        "thought": "現在(8,6)に位置しており、エネルギー源を見つける必要がある。探索を続けるため、南の(8,5)へ移動する。",
+        "memory": "ステップ14: (0,-1)へ移動。現在(8,6)に位置しており、エネルギー源を見つける必要がある。探索を続けるため、南の(8,5)へ移動する。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:3": {
+      "source_sha256": "dfd6f689cd7cbddb02ad7efa9a39579cfaf0a48041c0ace374d39278f4a10224",
+      "status": "completed",
+      "created_at": "2026-10-12T15:24:17.698705+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために南へ移動中。",
+        "thought": "現在(2,3)に位置しており、(2,2)にエネルギー源があります。(2,2)に移動することで50のエネルギーを獲得できます。",
+        "memory": "ステップ14: (0,-1)へ移動。現在(2,3)に位置しており、(2,2)にエネルギー源があります。(2,2)に移動することで50のeneを獲得できます"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:4": {
+      "source_sha256": "8c0e17696e23dafdc94aa70af5a6896eefa662d1b1cbf613caf11185b7e3dd30",
+      "status": "completed",
+      "created_at": "2026-10-12T15:24:19.296348+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を集めるために南へ移動中。",
+        "thought": "現在地は(3,9)です。最寄りのエネルギー源は(3,6)にあります。距離を縮めるために南へ移動します。",
+        "memory": "ステップ14: (0,-1)へ移動; 現在地は(3,9)です。最寄りのエネルギー源は(3,6)にあります。距離を縮めるために南へ移動します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:0": {
+      "source_sha256": "54d57c7bc629528892cce388a766f7d609f05bf3655d8c91665d73a290bc19cb",
+      "status": "completed",
+      "created_at": "2026-10-12T15:24:20.879009+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために北へ移動中。",
+        "thought": "現在(1,4)にいて、(1,5)にエネルギー源があります。北へ移動することで、そのエネルギー源を消費して50のエネルギーを得ることができます。",
+        "memory": "ステップ15: (0,1)へ移動; 現在(1,4)にいて、(1,5)にエネルギー源があります。北へ移動することで、そのエネルギー源を消費す"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:1": {
+      "source_sha256": "ad09527f00f6475b8975a709470397c631ac595c6e23816338ff645f85b414de",
+      "status": "completed",
+      "created_at": "2026-10-12T15:24:22.468212+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために北へ移動中。",
+        "thought": "現在(5,4)に位置しており、(5,5)（相対座標(0,1)）にエネルギー源があります。そこへ移動するとエネルギーを2消費し、50のエネルギーが得られます。",
+        "memory": "ステップ15: (0,1)へ移動。現在(5,4)に位置しており、(5,5)（相対座標(0,1)）にエネルギー源があります。そこへ移動するとエネルギーを"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:2": {
+      "source_sha256": "6bcb0ab4b0f553c3d5a8566075da908f433fe58698d8ee5700d25fc7ef641204",
+      "status": "completed",
+      "created_at": "2026-10-12T15:24:24.251062+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を集めるために南へ移動中。",
+        "thought": "現在(8,5)に位置しており、負のx/y方向にエネルギー源が多数存在します。エネルギー源が密集しているエリアへ向かうため、まずは南の(8,4)へ移動します。",
+        "memory": "ステップ15: (0,-1)へ移動。現在(8,5)に位置しており、負のx/y方向にエネルギー源が多数存在します。南へ移動し"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:3": {
+      "source_sha256": "a99e4171abb800dde565ecd99ffba574bc11848773dc952cdbbf0a9457d34765",
+      "status": "completed",
+      "created_at": "2026-10-12T15:24:25.926037+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために北へ移動します。",
+        "thought": "現在(2,2)にいて、(2,3)にエネルギー源があります。そこへ移動すると50のエネルギーが得られます。",
+        "memory": "ステップ15: (0,1)へ移動; 現在(2,2)にいて、(2,3)にエネルギー源があります。そこへ移動すると50のエネルギーが得られます。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:4": {
+      "source_sha256": "138bcc0ea37270b7689d6aa2faa57358cb31c86dfd56fb39e83be433b5b19570",
+      "status": "completed",
+      "created_at": "2026-10-12T15:24:27.428265+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために南へ移動中。",
+        "thought": "現在地は(3,8)です。最寄りのエネルギー源は(3,7)にあります。それを消費するために南へ移動します。",
+        "memory": "ステップ15: (0,-1)へ移動; 現在地は(3,8)です。最寄りのエネルギー源は(3,7)にあります。それを消費するために南へ移動します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:0": {
+      "source_sha256": "3cb680e6327a1d8e88d555fbf10fe781a7ca6d87f3a38d4c89c12d2a80b941c1",
+      "status": "completed",
+      "created_at": "2026-10-12T15:24:29.006979+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(1,4)にあるエネルギー源を回収しに向かっています。",
+        "thought": "私は(1,5)にいて、(1,4)にエネルギー源があります。それを消費するために南へ移動します。",
+        "memory": "ステップ16: (0,-1)へ移動; 私は(1,5)にいて、(1,4)にエネルギー源があります。それを消費するために南へ移動します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:1": {
+      "source_sha256": "d202c70df302c6ee945249e910b7d386574c0db24d31de37c0b121c4d9331446",
+      "status": "failed",
+      "created_at": "2026-10-12T15:24:30.524656+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "error_kind": "JSONDecodeError"
+    },
+    "16:2": {
+      "source_sha256": "5cd76d90ad539e301f24852c59237d5081a29c40d396527da8a25d89446dcb78",
+      "status": "completed",
+      "created_at": "2026-10-12T15:25:43.366219+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探して南へ移動中。",
+        "thought": "現在(8,4)に位置しており、x軸・y軸の負の方向に位置するエネルギー源の集まりに向かう必要がある。探索を続けるため、南へ進む一歩として(8,3)へ移動する。",
+        "memory": "ステップ16: (0,-1)へ移動。現在(8,4)に位置しており、x軸・y軸の負の方向に位置するエネルギー源の集まりに向かう必要がある。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:3": {
+      "source_sha256": "311cc0986c9202ebb85c2ac4476c84231e349176079c1d71040df55b1e30fbfa",
+      "status": "completed",
+      "created_at": "2026-10-12T15:25:45.168372+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために北へ移動中。",
+        "thought": "現在の位置から見て(0,1)にあるエネルギー源を消費するために(2,4)へ移動中。",
+        "memory": "ステップ16: (0,1)へ移動；現在の位置から見て(0,1)にあるエネルギー源を消費するために(2,4)へ移動中。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:4": {
+      "source_sha256": "8b87f75c64b8601d36ef3a86f3b5d3a0809a212427a793f3ae96d25182974784",
+      "status": "failed",
+      "created_at": "2026-10-12T15:25:46.696890+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "error_kind": "JSONDecodeError"
+    },
+    "17:0": {
+      "source_sha256": "5b0be990587eb9def6ec0c63e2bcbf46375bd2af7e457af212e5da2d8cb1c8da",
+      "status": "completed",
+      "created_at": "2026-10-12T15:26:05.572108+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために北へ移動します。",
+        "thought": "現在(1,4)にいて、(1,5)にエネルギー源があります。北へ移動することで、それを回収できます。",
+        "memory": "ステップ17: (0,1)へ移動。現在(1,4)にいて、(1,5)にエネルギー源があります。北へ移動することで、それを回収できます。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:1": {
+      "source_sha256": "5eaf76dfef0f2fe2a17560339f587816de1184070c77fe358db91e3e4a52bdab",
+      "status": "completed",
+      "created_at": "2026-10-12T15:26:07.206607+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために北へ移動中。",
+        "thought": "私は(5,6)にいます。(5,6)から見て(5,7)にエネルギー源があります（これは絶対座標では(5,7)ですが、ローカルビューでは(5,6)から相対的にE=(2,1)が(7,7)となっています）。待てよ、ローカルビューを見ると、E=(2,1)は(7,7)だ。利用可能であれば、(7,7)か(5,7)にあるエネルギー源に向かって移動しよう。実際には、E=(2,1)は(7,7)だ。(5,7)に移動してそこへ向かう。待て、指示は(dx,dy)へ移動せよとなっている。エネルギー源である(7,7)に向かうために(0,1)へ移動する。",
+        "memory": "ステップ17: (0,1)へ移動；私は(5,6)にいます。(5,6)から見て(5,7)にエネルギー源があります（これは絶対座標では(5,7)ですが、th"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:2": {
+      "source_sha256": "a94f2561d58a993609684d1417626d65f2ca88418eaf48400672f3a4a3989011",
+      "status": "completed",
+      "created_at": "2026-10-12T15:26:10.735750+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー・クラスターに到達するために南へ移動中。",
+        "thought": "現在(8,3)に位置しており、yの負の方向に存在するエネルギー源の密集地帯に向かう必要がある。その方向への第一歩として(8,2)へ移動する。",
+        "memory": "ステップ17: (0,-1)へ移動。現在(8,3)に位置しており、yの負の方向に存在するエネルギー源の密集地帯に向かう必要がある。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:3": {
+      "source_sha256": "c2cbbf5b03d75bb7f86ede078704acfdc0a3ffc90a5ef20c04c22e0e99e975fa",
+      "status": "completed",
+      "created_at": "2026-10-12T15:26:12.511037+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために北へ移動中。",
+        "thought": "現在の位置から見て(0,1)にあるエネルギー源を消費するために(2,5)へ移動中。",
+        "memory": "ステップ17: (0,1)へ移動中；現在の位置から見て(0,1)にあるエネルギー源を消費するために(2,5)へ移動中。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:4": {
+      "source_sha256": "90b894eb032ac1fca16257e0c7972771ec4155ad88ac70ecf1d71cf268267135",
+      "status": "completed",
+      "created_at": "2026-10-12T15:26:13.920375+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために南へ移動中。",
+        "thought": "現在地は(3,6)です。現在地から見て最も近いエネルギー源は(3,-1)または(3,-3)ですが、絶対座標のグリッドを見ると、グリッドの南側に位置するエネルギー源のクラスターに向かって移動する必要があります。南への第一歩として(3,5)へ移動します。",
+        "memory": "ステップ17: (0,-1)へ移動。現在地は(3,6)です。現在地から見て最も近いエネルギー源は(3,-1)または(3,-3)ですが、"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:0": {
+      "source_sha256": "106d48222d9c84ae86671530a874b4c989c05d7da1be78bd69c6f051e3ea212b",
+      "status": "completed",
+      "created_at": "2026-10-12T15:26:16.108963+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために北へ移動中。",
+        "thought": "現在(1,5)にいて、(1,4)にエネルギー源があります。それを消費するために南へ移動します。",
+        "memory": "ステップ18: (0,-1)へ移動。現在(1,5)にいて、(1,4)にエネルギー源があります。それを消費するために南へ移動します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:1": {
+      "source_sha256": "b99a09e4fe21aeef6d1915108eeebd3c34b7e16116c4fdb1915c244c10b23682",
+      "status": "completed",
+      "created_at": "2026-10-12T15:26:17.586423+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために南へ移動中。",
+        "thought": "エネルギーを増やすため、(5,6)にあるエネルギー源を消費するために(5,6)へ移動中。",
+        "memory": "ステップ 18: (0,-1)へ移動; エネルギーを増やすため、(5,6)にあるエネルギー源を消費するために(5,6)へ移動中。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:2": {
+      "source_sha256": "68e3d986c355010fbd18da0779a4d3d50470d2dd4a4e0a0db17e730161e60e30",
+      "status": "completed",
+      "created_at": "2026-10-12T15:26:19.056526+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー・クラスターに向かって西へ移動中。",
+        "thought": "現在(8,2)に位置しており、xの負の方向に存在するエネルギー源の密集地帯に向かう必要がある。その方向への第一歩として(7,2)へ移動する。",
+        "memory": "ステップ18: (-1,0)へ移動。現在(8,2)に位置しており、xの負の方向に存在するエネルギー源の密集地帯に向かう必要がある。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:3": {
+      "source_sha256": "78ee58d4d3461fee96a2bd82c076946832605e193de9fb7f6279b853e686cb26",
+      "status": "completed",
+      "created_at": "2026-10-12T15:26:20.711200+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために北へ移動中。",
+        "thought": "現在地は(2,5)です。私の相対位置で(0,1)にエネルギー源があり、これは絶対座標では(2,6)にあたります。(2,6)へ北に移動することで、エネルギー源を消費し、エネルギーが増加します。",
+        "memory": "ステップ18: (0,1)へ移動。現在地は(2,5)。私の相対位置で(0,1)にエネルギー源があり、これは絶対座標では(2,6)にあたります。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:4": {
+      "source_sha256": "0e829438a3da833d75d407c799e15fbd7c7feaa5b9ce868d08d843d39d755e00",
+      "status": "completed",
+      "created_at": "2026-10-12T15:26:22.651198+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を消費するために南へ移動中。",
+        "thought": "現在地は(3,5)。(3,0)にあるエネルギー源は南に5ユニットの距離にあります。エネルギーを補充するため、エネルギー源の集まりに向かって南へ移動します。",
+        "memory": "ステップ18: (0,-1)へ移動; 現在地は(3,5)。(3,0)にあるエネルギー源は南に5ユニットの距離にあります。エネルギーを補充するため、エネルギー源の集まりに向かって南へ移動"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:0": {
+      "source_sha256": "9f2942555dd76e7cc6a151ecd0e8eb067a14fc6ade5b185c5835f642cac2f322",
+      "status": "completed",
+      "created_at": "2026-10-12T15:26:24.494765+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を消費するため、北へ移動します。(1,5)にて。",
+        "thought": "現在(1,4)に位置しており、(1,5)にエネルギー源があります。北へ移動することで、それを消費できます。",
+        "memory": "ステップ19: (0,1)へ移動。現在(1,4)に位置しており、(1,5)にエネルギー源があります。北へ移動することで、それを消費できます。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:1": {
+      "source_sha256": "aa6beac0f6c4ddecffbfaceac5807be806cebc43ebc802a7d9fde906726d7637",
+      "status": "completed",
+      "created_at": "2026-10-12T15:26:26.105034+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために北へ移動中。",
+        "thought": "現在地は(5,6)です。私の相対位置で(5,7)にエネルギー源があります（絶対座標では(5,7)）。それを消費するために北へ移動します。",
+        "memory": "ステップ19: (0,1)へ移動; 現在地は(5,6)です。私の相対位置で(5,7)にエネルギー源があります（絶対座標では(5,7)）。北へ移動し"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:2": {
+      "source_sha256": "ecd2ffecd9646dac2f88aa903dfce18333e5ec720449efb9175b26f5e38cb776",
+      "status": "completed",
+      "created_at": "2026-10-12T15:26:28.007444+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギークラスターに向かって西へ移動中。",
+        "thought": "現在(7,2)に位置しており、xの負の方向に存在するエネルギー源の密集地帯に向かう必要がある。その方向への第一歩として(6,2)へ移動する。",
+        "memory": "ステップ19: (-1,0)へ移動。現在(7,2)に位置しており、xの負の方向に存在するエネルギー源の密集地帯に向かう必要がある。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:3": {
+      "source_sha256": "0e1dd56904983e84415aa544d53827e6b7c53cc8ea66741026d7a66c4c0a4442",
+      "status": "completed",
+      "created_at": "2026-10-12T15:26:29.646922+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために北へ移動中。",
+        "thought": "現在、(2,6)にいます。私の相対位置で(0,1)にエネルギー源があり、絶対座標では(2,7)に位置しています。(2,7)へ移動することでエネルギー源を消費し、50のエネルギーが得られます。",
+        "memory": "ステップ19: (0,1)へ移動。現在(2,6)にいます。私の相対位置で(0,1)にエネルギー源があり、絶対座標では"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:4": {
+      "source_sha256": "cb46926458df7302906c1c73ff69fc0750b69ad15dd371ae0991265741f04670",
+      "status": "completed",
+      "created_at": "2026-10-12T15:26:31.472248+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために南へ移動中。",
+        "thought": "相対座標(0,-1)にあるエネルギー源に到達するため、南の(3,3)へ移動中。",
+        "memory": "ステップ19: (0,-1)へ移動；相対座標(0,-1)にあるエネルギー源に到達するため、南の(3,3)へ移動中。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:0": {
+      "source_sha256": "fedf8ea814cdee84c11cba912a3d1d93ceda99d4a984121441bbccd4d6ff192a",
+      "status": "completed",
+      "created_at": "2026-10-12T15:26:32.999115+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために北へ移動中。",
+        "thought": "(1,4)にエネルギー源があります。そこへ移動すると、エネルギーを消費してエネルギーが増加します。",
+        "memory": "ステップ 20: (0,-1)へ移動; (1,4)にエネルギー源があります。そこへ移動すると、エネルギーを消費してエネルギーが増加します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:1": {
+      "source_sha256": "bf556041884c07bb5e7e6def1e53ff2057d646e2bae472a1b7f31e314297c1e5",
+      "status": "completed",
+      "created_at": "2026-10-12T15:26:34.369068+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために南へ移動中。",
+        "thought": "私は(5,7)にいます。私の相対位置で(5,6)にエネルギー源がありますが（絶対座標(5,6)）、現在は(5,7)にいます。待てよ、ローカルビューを見ると、私の相対位置で(5,3)にエネルギー源があります（絶対座標(5,4)）。実際、絶対座標を確認すると：私は(5,7)にいます。エネルギー源は(5,3), (5,2), (5,1), (5,0)にあります。エネルギー源の塊に到達するために南へ移動します。",
+        "memory": "ステップ20: (0,-1)へ移動; 私は(5,7)にいます。私の相対位置で(5,6)にエネルギー源がありますが（絶対座標(5,6)）、現在は"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:2": {
+      "source_sha256": "f9d05c393518053d33db7b59000c2e5ab541f3ff488323dbe3ae81cb8cb04f6f",
+      "status": "completed",
+      "created_at": "2026-10-12T15:26:37.239813+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって西へ移動中。",
+        "thought": "現在(6,2)に位置しており、xの負の方向に存在するエネルギー源の密集地帯に向かう必要がある。その方向への第一歩として(5,2)へ移動する。",
+        "memory": "ステップ20: (-1,0)へ移動。現在(6,2)に位置しており、xの負の方向に存在するエネルギー源の密集地帯に向かう必要がある。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:3": {
+      "source_sha256": "d657a0f8f72f42ff8b874c031d6916be95289506c227b42b3e719eb0a94faeb7",
+      "status": "completed",
+      "created_at": "2026-10-12T15:26:38.859008+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(2,8)にあるエネルギー源を消費するために北へ移動中。",
+        "thought": "相対座標(0,1)にあるエネルギー源を消費するために(2,8)へ移動中。",
+        "memory": "ステップ20: (0,1)へ移動; 相対座標(0,1)にあるエネルギー源を消費するために(2,8)へ移動中。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:4": {
+      "source_sha256": "c2f8e5ec3b9fee3a88e7b4783be9844ebc5eb643dc8fd4b10eec51192c3fea2d",
+      "status": "completed",
+      "created_at": "2026-10-12T15:26:40.279445+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源（3,2）に到達するため、南へ移動中。",
+        "thought": "現在地は(3,3)。相対座標(0,-1)にあるエネルギー源は、絶対座標では(3,2)に位置している。それを消費するために南へ移動する。",
+        "memory": "ステップ20: (0,-1)へ移動。現在地は(3,3)。相対座標(0,-1)にあるエネルギー源は、絶対座標では(3,2)に位置している。それを消費するために南へ移動する。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    }
+  },
+  "status": "partial",
+  "updated_at": "2026-10-12T15:26:42.148571+00:00",
+  "last_connection": {
+    "base_url": "http://127.0.0.1:8080/v1",
+    "requested_model": "default_model",
+    "send_temperature": true,
+    "send_top_p": true,
+    "reasoning_mode": "default",
+    "reasoning_effort": "medium",
+    "reasoning_format": "openai",
+    "max_tokens_parameter": "max_tokens"
+  },
+  "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922"
+}

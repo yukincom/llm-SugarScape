@@ -1,0 +1,1285 @@
+{
+  "version": 1,
+  "run_id": "20261011T125103098663Z_0_7b34393a",
+  "language": "ja",
+  "entries": {
+    "1:0": {
+      "source_sha256": "37f1ce2f3948c1cc80a100025e389c4d16b0bb5267b665f98d9c5f236eb99d4f",
+      "status": "completed",
+      "created_at": "2026-10-11T12:52:50.057034+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "こんにちは、世界！",
+        "thought": "開始地点。周囲を観察するためにエネルギーを温存している。",
+        "memory": "ステップ1：待機。開始地点。周囲を観察するためにエネルギーを温存している。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:1": {
+      "source_sha256": "675fbfe312743c2a9bc0121bd043149ae52d695ba1d5da9f7284ade1e2f580e3",
+      "status": "completed",
+      "created_at": "2026-10-11T12:52:51.096320+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して南へ移動中。",
+        "thought": "現在地は(17,13)です。最も近いエネルギー源は自分から見て(12,8)にあり、遠すぎます。グリッドを探索するために南へ移動します。",
+        "memory": "ステップ1: 待機; 現在地は(17,13)です。最も近いエネルギー源は自分から見て(12,8)にあり、遠すぎます。移動を..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:2": {
+      "source_sha256": "7cc229aad25443ecc1c58644de2713cda5a6817172c36af92942bc8f887e5832",
+      "status": "completed",
+      "created_at": "2026-10-11T12:52:52.701940+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギー残量を増やすため、(0,-3)にあるエネルギー源に向かっています。",
+        "memory": "ステップ 1: 待機; エネルギー残量を増やすため、(0,-3)にあるエネルギー源に向かっています。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:0": {
+      "source_sha256": "c45b9adace03245d99e1b8901695273055bbd7ada283019ba9033bdbc47dee97",
+      "status": "completed",
+      "created_at": "2026-10-11T12:52:53.614991+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "周囲を観察中。",
+        "thought": "周囲の環境を監視し、潜在的なエネルギー源やエージェントを特定するためにエネルギーを節約している。",
+        "memory": "ステップ 2: 待機; 周囲の環境を監視し、潜在的なエネルギー源やエージェントを特定するためにエネルギーを節約している。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:1": {
+      "source_sha256": "cb5204449773ef1027d6884f2c48e6fdc40e0241b858527447d4a46d81ba4c36",
+      "status": "completed",
+      "created_at": "2026-10-11T12:52:54.756926+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して南へ移動中。",
+        "thought": "エネルギー源に向かって移動する必要がある。最も近い相対的なエネルギー源は(1,-1)にあり、これは南東にあたる。距離を縮めるために、まずは南の(17,12)へ移動することにする。",
+        "memory": "ステップ2: 待機。エネルギー源に向かって移動する必要がある。最も近い相対的なエネルギー源は(1,-1)にあり、これは"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:2": {
+      "source_sha256": "2738d02b90be3eb17282b6420b1b352ceb2df04f8ee0477780c22117548b2287",
+      "status": "completed",
+      "created_at": "2026-10-11T12:52:56.309541+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを回収するために南へ移動中。",
+        "thought": "エネルギー備蓄を増やすため、(0,-3)にあるエネルギー源に向かって移動中。",
+        "memory": "ステップ 2: 待機; エネルギー備蓄を増やすため、(0,-3)にあるエネルギー源に向かって移動中。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:0": {
+      "source_sha256": "8ede64672d030c18cb323e73369f6ecfa4cd007a8746e565505c29336b846e2a",
+      "status": "completed",
+      "created_at": "2026-10-11T12:52:57.431146+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "周囲を監視中。",
+        "thought": "ローカルビュー内にローカルエージェントまたはエネルギー源が現れるのを待つ間、エネルギーを節約しています。",
+        "memory": "ステップ 3: 待機; ローカルビュー内にローカルエージェントまたはエネルギー源が現れるのを待つ間、エネルギーを節約しています。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:1": {
+      "source_sha256": "75c1bb3c59524b6a31f626829a6ee9629e3f41d38e17b258b15e0f7284369041",
+      "status": "completed",
+      "created_at": "2026-10-11T12:52:58.678894+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(1,-1)にあるエネルギー源に向かって移動中。",
+        "thought": "相対座標(1,-1)にあるエネルギー源が最も近いです。近づくために南へ移動します。",
+        "memory": "ステップ 3: (0,-1)へ移動; 相対座標(1,-1)にあるエネルギー源が最も近いです。近づくために南へ移動します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:2": {
+      "source_sha256": "566bd3760ca55de8bc9051bfec579ce3a395bcd781b739947446e17f046d8dd2",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:00.026266+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって南下中。",
+        "thought": "現在地は(7,14)。(3,-1)にあるエネルギー源が最も近い重要な目標。距離を縮めるため南下する。",
+        "memory": "ステップ3: 待機。現在地は(7,14)。(3,-1)にあるエネルギー源が最も近い重要な目標。距離を縮めるため南下す"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:0": {
+      "source_sha256": "2f3e25f2237c46902d3445826bcbf7c267978c67ea3798014094a476c014c4a4",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:01.468615+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "周囲を監視中。",
+        "thought": "現在のローカルビュー内にはエージェントもエネルギー源も見当たりません。待機することでエネルギーを節約できます。",
+        "memory": "ステップ 4: 待機。現在のローカルビュー内にはエージェントもエネルギー源も見当たりません。待機することでエネルギーを節約できます。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:1": {
+      "source_sha256": "c7d3c00a41f479a7a1f49e6be5e4c6eb3d241c7b778660bc590fc5eab3050852",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:02.704681+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって南へ移動中。",
+        "thought": "現在地は(17,12)です。相対座標(-2,-1)にあるエネルギー源が最も近いです。(17,11)へ移動して距離を縮めます。",
+        "memory": "ステップ4: (0,-1)へ移動; 現在地は(17,12)です。相対座標(-2,-1)にあるエネルギー源が最も近いです。(17,11)へ移動して距離を縮"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:2": {
+      "source_sha256": "c645b6d96528f9069ed71635b9ad3cc42f2c1fe69c37ac1f166514d510d3f5b2",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:04.385231+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(3,-1)にあるエネルギー源に向かって南へ移動中。",
+        "thought": "(3,-1)にあるエネルギー源への距離を縮めるため、南へ移動中。",
+        "memory": "ステップ4: 待機; (3,-1)にあるエネルギー源への距離を縮めるため、南へ移動中。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:0": {
+      "source_sha256": "4710a979488e0df978ce1f9c7336e3b55032f3c88cc4c6869337bd7eeb2c9b63",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:05.505330+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "周囲にエージェントもエネルギー源も見当たりません。エネルギーを節約します。",
+        "thought": "ローカルビュー内にエージェントもエネルギー源も見えないため、待機することでエネルギー消費を最小限に抑えます。",
+        "memory": "ステップ 5: 待機。ローカルビュー内にエージェントもエネルギー源も見えないため、待機することでエネルギー消費を最小限に抑え..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:1": {
+      "source_sha256": "8d58bb0248b876a47b9488f47c968f8ca17938baca9a51d0bd8df666622d34ac",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:06.911410+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって南へ移動中。",
+        "thought": "現在地は(17,11)です。相対座標(1,1)にあるエネルギー源は(18,12)にあります。相対座標(-2,0)にあるエネルギー源は(15,11)にあります。相対座標(-2,1)にあるエネルギー源は(15,12)にあります。(18,12)のエネルギー源に近づくため、南の(17,12)へ移動します。",
+        "memory": "ステップ 5: (0,-1)へ移動; 現在地は(17,11)です。相対座標(1,1)にあるエネルギー源は(18,12)にあります。相対座標(-"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:2": {
+      "source_sha256": "03b8f06ba21c0cbb448ac8c20bad280ebd0b854e5717d48df51883b2bce4fb50",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:09.281594+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(3,-1)にあるエネルギー源に向かって南へ移動中。",
+        "thought": "(3,-1)にあるエネルギー源への距離を縮めるため、南へ移動中。",
+        "memory": "ステップ 5: 待機; (3,-1)にあるエネルギー源への距離を縮めるため、南へ移動中。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:0": {
+      "source_sha256": "f230ed575fbe98d5b0f31ec31e30dafb0df72a2c0a1a7885d48ff7f647b42b25",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:10.456380+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "メッセージなし",
+        "thought": "ローカルビュー内にエージェントやエネルギー源が見当たりません。待機することで、リソースを探している間のエネルギー消費を最小限に抑えられます。",
+        "memory": "ステップ 6: 待機。ローカルビュー内にエージェントやエネルギー源が見当たりません。待機することで、リソースを探している間のエネルギー消費を最小限に抑え"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:1": {
+      "source_sha256": "27a7b491bf9f14be8db59328e0385c48d532d9f5aecf482afd9ef9f8f2167cbe",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:11.761948+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に到達するため、北へ移動中。",
+        "thought": "(15,11)と(18,12)にあるエネルギー源に近づくため、(17,11)へ移動中。",
+        "memory": "ステップ 6: (0,1)へ移動；(15,11)と(18,12)にあるエネルギー源に近づくため、(17,11)へ移動中。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:2": {
+      "source_sha256": "d23b5034922d3c0c41f4d3c4e11b1096fc75d59f0229459b2508c89e7e28a1d3",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:13.365489+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(3,-1)にあるエネルギー源に向かって南下中。",
+        "thought": "現在地は(7,14)。(3,-1)のエネルギー源は南に5ユニット、西に4ユニットの地点にある。距離を縮めるため南下する。",
+        "memory": "ステップ6: 待機。現在地は(7,14)。(3,-1)のエネルギー源は南に5ユニット、西に4ユニットの地点にある。距離を縮めるため南下..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:0": {
+      "source_sha256": "f5bf40011237e6dc4bac26b1ead8a3bf596fb77212b3b4370b376043ffd00b2c",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:15.058651+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェントもエネルギー源も見当たりません。エネルギーを節約するために待機します。",
+        "thought": "ローカルビュー内にエージェントもエネルギー源も存在しません。探索中の不要な消費を避けるためには、待機することが最もエネルギー効率の良い選択肢です。",
+        "memory": "ステップ 7: 待機; ローカルビュー内にエージェントもエネルギー源も存在しません; 待機することが最もエネルギー効率の良い選択肢です t"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:1": {
+      "source_sha256": "b2889413dc02f3b6ac58d1f1ff693fbdc49d41f0d891a4c7994c6e823525e89a",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:16.606143+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(18,12)と(15,11)にあるエネルギー源に向かっています。",
+        "thought": "私は(17,11)にいます。相対座標(1,1)にあるエネルギー源は(18,12)にあります。(17,12)に移動することで、それに近づけます。",
+        "memory": "ステップ 7: (0,1)へ移動; 私は(17,11)にいます。相対座標(1,1)にあるエネルギー源は(18,12)にあります。(17,12)に移動することで、それに近づ"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:2": {
+      "source_sha256": "a68be0ab901fd20b5a200fd0c86d1fa764b1f938593f76cbefdeeece7d283493",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:18.615047+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(3,-1)にあるエネルギー源に向かって南へ移動中。",
+        "thought": "現在地は(7,14)です。(3,-1)にあるエネルギー源は、現在の位置から相対的に(0,-3)にあります。距離を縮めるために南へ移動します。",
+        "memory": "ステップ 7: 待機; 現在地は(7,14)です。(3,-1)にあるエネルギー源は、現在の位置から相対的に(0,-3)にあります。私は移動..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:0": {
+      "source_sha256": "c111520d15fe2ac1604234fd745787bbb779a77652b6a658188a41ab8b98cfc8",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:20.333315+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くにエージェントもエネルギー源もありません。エネルギーを節約するために待機します。",
+        "thought": "ローカルビュー内にエージェントもエネルギー源も見当たりません。待機することで、何かが現れるまでのエネルギー消費を最小限に抑えられます。",
+        "memory": "ステップ 8: 待機; ローカルビュー内にエージェントもエネルギー源も見当たりません; 待機することで、エネルギー消費を最小限に抑えられ"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:1": {
+      "source_sha256": "b0d444d1536e946c4aefc55268dab99de24c5b6326cd97db7bc0d91a88dddf20",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:21.888326+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(18,12)にあるエネルギー源に向かって移動中。",
+        "thought": "現在(17,12)にいます。相対座標(1,0)、つまり絶対座標(18,12)にエネルギー源があります。そこへ移動することでエネルギーが増加します。",
+        "memory": "ステップ 8: (1,0)へ移動; 現在(17,12)にいます。相対座標(1,0)、つまり絶対座標(18,12)にエネルギー源があります。Mo"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:2": {
+      "source_sha256": "d9ed73188af38b4bbdc70c51e5be6f3adc9a968ee9e073c8af8925dd62075316",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:23.635220+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(3,-1)にあるエネルギー源に向かって南へ移動中。",
+        "thought": "現在地は(7,14)です。エネルギー源は現在の位置から相対的に(0,-3)にあります。距離を縮めるために南へ移動します。",
+        "memory": "ステップ 8: (0,-1)へ移動; 現在地は(7,14)です。エネルギー源は現在の位置から相対的に(0,-3)にあります。南へ移動します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:0": {
+      "source_sha256": "e26eaf666c1adbaab03246d4d6730bad6e269f388ae2d9a8c36cbb54fd7aef09",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:25.271230+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェントもエネルギー源も見当たりません。エネルギーを節約するために待機します。",
+        "thought": "ローカルビュー内にエージェントもエネルギー源も存在しません。不必要な消費を避けるためには、待機することが最もエネルギー効率の良い選択肢です。",
+        "memory": "ステップ 9: 待機。ローカルビュー内にエージェントもエネルギー源も存在しません。待機することが最もエネルギー効率の良い選択肢です。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:1": {
+      "source_sha256": "625a110de6ec1bc0b9d6300006be4797af14b553f95bcf8be0024b7161ee1c72",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:26.796531+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するため、西へ向かっています。",
+        "thought": "(15,11)と(15,12)に位置するエネルギー源に近づくため、西の(17,12)へ移動中。",
+        "memory": "ステップ 9: (-1,0)へ移動。 (15,11)と(15,12)に位置するエネルギー源に近づくため、西の(17,12)へ移動中。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:2": {
+      "source_sha256": "7616e298fa565ed6fb4483442db2e3d1d71da10604e75d1b390cd8faa2d7c4fd",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:28.495935+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって南下中。",
+        "thought": "(7,11)にあるエネルギー源に近づくため、南の(7,12)へ移動中。",
+        "memory": "ステップ 9: (0,-1)へ移動；(7,11)にあるエネルギー源に近づくため、南の(7,12)へ移動中。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:0": {
+      "source_sha256": "687a69153f8ce9b08b0f4e4d8cd26e7744e21fdf45c657d8610cf3d138c0d7cf",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:29.755577+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "視界にエージェントもエネルギー源も見当たらない。エネルギーを節約するために待機する。",
+        "thought": "ローカルな視界内にエージェントもエネルギー源も存在しない。不必要な消費を避けるためには、待機することが最もエネルギー効率の良い選択肢である。",
+        "memory": "ステップ10: 待機。ローカルな視界内にエージェントもエネルギー源も見当たらない。待機することが最もエネルギー効率の良い選択肢である。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:1": {
+      "source_sha256": "320f86f2aeedbf5ec95a2202f964b2a10c7a08c2a4b7215ffa597ada89b5053b",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:31.349347+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって西へ移動中。",
+        "thought": "現在地は(17,12)です。最寄りのエネルギー源は、現在の位置から見て(-2,-1)の地点、つまり(15,11)にあります。西へ移動して(16,12)へ向かうことで、(15,11)と(15,12)の周辺にあるエネルギー源の塊に近づきます。",
+        "memory": "ステップ10: (-1,0)へ移動; 現在地は(17,12)です。最寄りのエネルギー源は、現在の位置から見て(-2,-1)の地点、つまり("
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:2": {
+      "source_sha256": "1eb796104cc895c5f2e2b95d8f279d2f923227dd5f82cd8718b98507129d2708",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:33.510076+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(7,11)にあるエネルギーを回収するために南へ移動中。",
+        "thought": "現在(7,12)に位置しており、相対座標(0,-1)、つまり絶対座標(7,11)にエネルギー源があります。それを消費するために南へ移動します。",
+        "memory": "ステップ10: (0,-1)へ移動。現在(7,12)に位置しており、相対座標(0,-1)、つまり絶対座標(7,11)にエネルギー源があります。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:0": {
+      "source_sha256": "46edd96e00a04bdfe11d38590fe4a112b9814f6c8fa675a74604d8581a39e245",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:35.217801+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くにエージェントもエネルギー源もいません。エネルギーを節約するために待機します。",
+        "thought": "ローカルビュー内にエージェントもエネルギー源も見当たりません。リソースを探している間に不必要な消費を避けるには、待機することが最もエネルギー効率の良い選択肢です。",
+        "memory": "ステップ11: 待機; ローカルビュー内にエージェントもエネルギー源も見当たりません。待機することが最もエネルギー効率の良い選択肢です"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:1": {
+      "source_sha256": "78e4e522786e7b2ca3da816e957d145dff18706c574118bd826ce07e8354dc91",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:36.805385+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するために西へ移動中。",
+        "thought": "現在地は(16,12)です。相対座標(-1,0)にあるエネルギー源は、絶対座標では(15,12)にあります。そこに到達するために西へ移動します。",
+        "memory": "ステップ11: (-1,0)へ移動; 現在地は(16,12)です。相対座標(-1,0)にあるエネルギー源は、絶対座標では(15,12)にあります。西へ移動中"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:2": {
+      "source_sha256": "ec08c6c091bb94d13c7a6a0ef32271eadbf5bd7fc2ebbd95fa134b66b83cfbac",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:38.620172+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するため、南へ移動します。(7,11)にて。",
+        "thought": "現在(7,11)に位置しており、エネルギー源は相対座標(0,-1)、つまり(7,10)にあります。そこに到達するために南へ移動します。",
+        "memory": "ステップ11: (0,-1)へ移動。現在(7,11)に位置しており、エネルギー源は相対座標(0,-1)、つまり(7,10)にあります。そこに到達するために南へ移動す"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:0": {
+      "source_sha256": "60144ec383577620c0fd104b18c8c85437ba1fad270a77dfda2df35e817c5687",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:40.478973+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "周囲にエージェントもエネルギー源も見当たりません。エネルギーを節約するために待機します。",
+        "thought": "ローカルビュー内にエージェントもエネルギー源も見えません。新しいリソースやエージェントが現れるのを待つ間、不要な移動コストを避けるために待機することが最もエネルギー効率の良い選択肢です。",
+        "memory": "ステップ12: 待機; ローカルビュー内にエージェントもエネルギー源も見えません。待機することが最もエネルギー効率の良"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:1": {
+      "source_sha256": "240e6878692f325a0c0c29c6d1e8d033c56f2a2123b8971095de248aa542f930",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:42.171915+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(15,11)にあるエネルギーを回収するために南へ移動中。",
+        "thought": "現在(15,12)にいます。相対座標(0,-1)にあるエネルギー源は、絶対座標では(15,11)です。それを消費するために南へ移動します。",
+        "memory": "ステップ12: (0,-1)へ移動。現在(15,12)にいます。相対座標(0,-1)にあるエネルギー源は、絶対座標では(15,11)です。南へ移動中。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:2": {
+      "source_sha256": "801db40d4599bc57886ef49be6b715f8ee81175dffe1decdea6a711619db2df9",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:44.019911+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを回収するために南へ移動中。",
+        "thought": "現在地は(7,11)、エネルギー源は(7,10)にあります。(7,10)へ移動することで、エネルギー源を消費し、エネルギーが増加します。",
+        "memory": "ステップ12: (0,-1)へ移動; 現在地は(7,11)、エネルギー源は(7,10)にあります。(7,10)へ移動することで、エネルギー源を消費し、エネルギーが増"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:0": {
+      "source_sha256": "9c73199ba4e2ac867aea6aa772fdea79d29de357b3e7eb476323fa91ff603ab4",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:45.733936+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くにエージェントもエネルギー源もいません。エネルギーを節約するために待機します。",
+        "thought": "ローカルビュー内にエージェントもエネルギー源も見当たりません。リソースを探している間に不必要な消費を避けるには、待機することが最もエネルギー効率の良い選択肢です。",
+        "memory": "ステップ13: 待機; ローカルビュー内にエージェントもエネルギー源も見当たりません。待機することが最もエネルギー効率の良い選択肢です"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:1": {
+      "source_sha256": "990b3d71e68c7cedefbbdc0d2c12a828e545b1bd6279cc742f2a56882e3ade64",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:47.335944+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "メッセージなし",
+        "thought": "現在、(15,11)にいます。相対座標(0,-1)にあるエネルギー源は、絶対座標(15,10)にあります。南に移動することで、エネルギー源を消費し、エネルギーを増やすことができます。",
+        "memory": "ステップ13: (0,-1)へ移動; 現在(15,11)にいます。相対座標(0,-1)にあるエネルギー源は、絶対座標(15,10)にあります。移動"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:2": {
+      "source_sha256": "cf5567cbdb42cc4dc7aec28a02b87f95a00afdb001a77c0c9db03a810695c467",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:49.137808+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを回収するために南へ移動中。",
+        "thought": "現在(7,9)に位置しており、(7,8) [相対座標(0,-1)]にエネルギー源があります。そこへ移動することでエネルギーが増加します。",
+        "memory": "ステップ13: (0,-1)へ移動。現在(7,9)に位置しており、(7,8) [相対座標(0,-1)]にエネルギー源があります。そこへ移動することでエネルギーが増加し"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:0": {
+      "source_sha256": "aaef9da7df6d700b8dfccd9ad3f409f325d62a021c44137718fdcf42349bf3e5",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:50.790286+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くにエージェントもエネルギー源もいません。エネルギーを節約するために待機します。",
+        "thought": "ローカルビュー内にエージェントもエネルギー源も見当たりません。リソースやエージェントが現れるのを待つ間、不要な移動コストを避けるためには、待機することが最もエネルギー効率の良い選択肢です。",
+        "memory": "ステップ14: 待機; ローカルビュー内にエージェントもエネルギー源も見当たりません。待機することが最もエネルギー効率の良"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:1": {
+      "source_sha256": "ff0a621f06a884b0d342ff3d5925eb87e8497329012fc157c9520c56e34eddb9",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:52.470974+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(14,10)にあるエネルギー源を回収するため、西へ移動中。",
+        "thought": "現在地は(15,10)です。相対座標(-1,0)、つまり絶対座標(14,10)にエネルギー源があります。そこへ移動することでエネルギーが増加します。",
+        "memory": "ステップ14: (-1,0)へ移動。現在地は(15,10)。相対座標(-1,0)、つまり絶対座標(14,10)にエネルギー源があります。M"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:2": {
+      "source_sha256": "0467a468d5c059a857a691121bbec84b870ee48bb48e5dc070b15481cc2c2e95",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:54.318331+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源がある(7,8)へ向けて南へ移動中。",
+        "thought": "現在(7,8)に位置しており、相対座標(0,-2)つまり(7,6)にエネルギー源があります。待てよ、ローカルビューを確認すると：E=(0,-2)は(7,6)にあります。E=(-4,-2)は(3,6)にあります。E=(-4,-1)は(3,7)にあります。E=(-4,0)は(3,8)にあります。E=(-2,-4)は(5,4)にあります。E=(0,-2)は(7,6)にあります。E=(3,5)は(10,13)にあります。E=(5,0)は(12,8)にあります。E=(5,4)は(12,12)にあります。エネルギー源である(7,6)に近づくため、南の(7,7)へ移動します。\n\nいや、再評価が必要だ：\nM=(7,8)。\nE=(0,-2)は(7,6)にあります。\n(7,8)から(7,6)へ行くには、南へ2回移動する必要があります。",
+        "memory": "ステップ14: (0,-1)へ移動。現在(7,8)に位置しており、相対座標(0,-2)つまり(7,6)にエネルギー源があります。待て、確認..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:0": {
+      "source_sha256": "8a0a823dcac25eec7034117d8f92f7e9fe7c4bb456e33a19e1c1899a6076f5b0",
+      "status": "completed",
+      "created_at": "2026-10-11T12:53:58.641109+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェントもエネルギー源も見当たりません。エネルギーを節約するために待機します。",
+        "thought": "ローカルビュー（5セル）内にエージェントもエネルギー源も存在しません。リソースやエージェントが現れるのを待つ間、不要な移動コストを避けるためには、待機することが最もエネルギー効率の良い選択肢です。",
+        "memory": "ステップ15: 待機; ローカルビュー（5セル）内にエージェントもエネルギー源も存在しません。待機することが最もエネルギー効率"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:1": {
+      "source_sha256": "bc3557987ebda9907e40848089a2c1b57be30bc7ef5483bc2012c3914ca4381d",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:00.345783+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "私は(14,10)にいます。相対座標(-2,-2)、つまり絶対座標(12,8)にエネルギー源があります。相対座標(-2,2)、つまり絶対座標(12,12)にエネルギー源があります。相対座標(-1,-5)、つまり絶対座標(13,5)にエネルギー源があります。相対座標(1,-4)、つまり絶対座標(15,6)にエネルギー源があります。相対座標(-4,3)、つまり絶対座標(10,13)にエネルギー源があります。(15,6)か(13,5)のエネルギー源に近づくために、南へ移動して(14,9)へ行きます。いや、(15,6)のエネルギー源に向かうために(0,-1)へ移動します。待て、(1,-4)は(15,6)だ。(0,-1)へ移動すると(14,9)になる。",
+        "memory": "ステップ15: (0,-1)へ移動。私は(14,10)にいます。相対座標(-2,-2)、つまり絶対座標(12,8)にエネルギー源があります。あるのは"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:2": {
+      "source_sha256": "4b249a74c0218d231de83ee4ed04b6fe8d55ca2b7af040e04810168211ca2dce",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:03.796571+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するため、南の(7,6)へ移動中。",
+        "thought": "現在(7,7)にいます。相対座標(0,-1)、つまり(7,6)にエネルギー源があります。そこへ移動することで、エネルギーは177 (129 - 2 + 50)に増加します。",
+        "memory": "ステップ15: (0,-1)へ移動。現在(7,7)にいます。相対座標(0,-1)、つまり(7,6)にエネルギー源があります。そこへ移動することで、エネルギーは増"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:0": {
+      "source_sha256": "f160a4e4234157e4805918fda3f21c6c48634023675d84b1245fb4338ad9cdf0",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:05.699603+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェントもエネルギー源も見当たりません。エネルギーを節約するために待機します。",
+        "thought": "5セル範囲のローカルビュー内にエージェントもエネルギー源も存在しません。リソースを探している間に不必要な消耗を避けるためには、待機することが最もエネルギー効率の良い選択肢です。",
+        "memory": "ステップ16: 待機; 5セル範囲のローカルビュー内にエージェントもエネルギー源も存在しません。待機することが最もエネルギー効率の良"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:1": {
+      "source_sha256": "3506c0ce88406f6b0563ed9cc1856da31e55b3c3ee34a1bd55278394234ebf35",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:07.317821+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを回収するために南へ移動中。",
+        "thought": "現在地は(14,9)です。相対座標(-2,-1)、つまり絶対座標(12,8)にエネルギー源があります。エネルギーを増やすためにそこへ向かいます。(0,-1)へ移動すると、位置は(14,8)になります。",
+        "memory": "ステップ16: (0,-1)へ移動; 現在地は(14,9)です。相対座標(-2,-1)、つまり絶対座標(12,8)にエネルギー源があります。私は "
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:2": {
+      "source_sha256": "91d966f10df237a29ec268a23ee6e1a0ee7c260794045b38e8718eedee396810",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:09.188270+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "私は(7,6)にいますが、メモリ/ステータスのロジックによると(7,6)にエネルギー源があります（(7,7)から相対的に(0,-1)は(7,6)です）。待ってください、ローカルビューでは(5,2)にEがあり、これは相対的に(-2,-4)です。メモリは私がエネルギーに向かって移動していることを示唆しています。エネルギー源である(7,5)またはそれに近い場所へ向かって補充するために、(0,-1)へ移動します。実際、ローカルビューを見ると、(5,2)を除いて5セル以内にエネルギー源はありません。探索するために(0,-1)へ移動します。",
+        "memory": "ステップ 16: (0,-1)へ移動; 私は(7,6)にいますが、メモリ/ステータスのロジックによると(7,6)にエネルギー源があります（相対的に "
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:0": {
+      "source_sha256": "00abef573ff6df23bd45f5a6d330a9b3a928b858a50fd94f5b5c0fbcc03f9628",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:11.810732+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェントもエネルギー源も見当たりません。エネルギーを節約するために待機します。",
+        "thought": "5セル範囲のローカルビュー内にエージェントもエネルギー源も存在しません。不必要な消耗を避けるためには、待機することが最もエネルギー効率の良い選択肢です。",
+        "memory": "ステップ17: 待機; 5セル範囲のローカルビュー内にエージェントもエネルギー源も存在しません。待機することが最もエネルギー効率の良"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:1": {
+      "source_sha256": "776f040bb5cbbcb6e11051368e0ce65a12a0c1ab48fa960f1d069acaab512e1c",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:13.348697+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを回収するために南へ移動中。",
+        "thought": "私は(14,8)にいます。現在の位置から見て(14,7)にエネルギー源があります（南に移動すると(14,8)-(0,1)=(14,7)になります）。待てよ、ローカルビューではE=(-1,-3)が(13,5)、E=(1,-2)が(15,6)を示している。エネルギー源に近づくために(14,7)へ南に移動します。実際、座標を見るとE=(-1,-3)は(13,5)、E=(1,-2)は(15,6)です。(15,6)にあるエネルギー源に向かって移動します。(0,-1)へ移動すると(14,7)に到達します。",
+        "memory": "ステップ17: (0,-1)へ移動。現在地は(14,8)。現在の位置(14,8)から見て(14,7)にエネルギー源がある。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:2": {
+      "source_sha256": "98eef63b90093787fcce45e35b0c0e1d610c8c66f55060c7c9705f8ba7c65d8e",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:16.420996+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーに向かって南へ移動中。",
+        "thought": "エネルギー源である(5,4)に近づくため、南の(7,4)へ移動中。",
+        "memory": "ステップ17: (0,-1)へ移動；エネルギー源である(5,4)に近づくため、南の(7,4)へ移動中。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:0": {
+      "source_sha256": "0aaf09ca3d56e647cbde34740cdb5f872592b5afc859eb5c0064d0c789ff8b68",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:17.748208+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くにエージェントもエネルギー源もいません。エネルギーを節約するために待機します。",
+        "thought": "5セル範囲のローカルビュー内にエージェントもエネルギー源も存在しません。不必要な消耗を避けるためには、待機することが最もエネルギー効率の良い選択肢です。",
+        "memory": "ステップ18: 待機; 5セル範囲のローカルビュー内にエージェントもエネルギー源も存在しません。待機することが最もエネルギー効率の良"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:1": {
+      "source_sha256": "e5353481a59c31c21f7482889a5a09b6134c6671f306e371cbb2de7b8790bdf0",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:19.370978+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを回収するために南へ移動中。",
+        "thought": "現在地は(14,7)です。相対座標(1,-1)、つまり絶対座標(15,6)にエネルギー源があります。エネルギーを増やすために、そこへ向かって移動します。",
+        "memory": "ステップ18: (0,-1)へ移動; 現在地は(14,7)です。相対座標(1,-1)、つまり絶対座標(15,6)にエネルギー源があります。移動します"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:2": {
+      "source_sha256": "bd2081610a6067a8f35cccc252fb4dbe8f248a415045cb4f3681d3f830484d0c",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:21.062921+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを回収するために南の(5,4)へ移動します。",
+        "thought": "現在(7,4)にいて、相対座標(-2,0)の(5,4)にエネルギー源があります。そこに向かって南へ移動します。",
+        "memory": "ステップ18: (0,-1)へ移動; 現在(7,4)にいて、相対座標(-2,0)の(5,4)にエネルギー源があります。そこに向かって南へ移動します"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:0": {
+      "source_sha256": "09e968f5fe7c1798ed0731f7bad1a271d35821f151ac541793df7a30f9d65638",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:22.733520+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くにエージェントもエネルギー源もありません。エネルギーを節約するために待機します。",
+        "thought": "5セル範囲のローカルビュー内にエージェントもエネルギー源も存在しません。何かが現れるのを待つには、待機することが最もエネルギー効率の良い方法です。",
+        "memory": "ステップ19: 待機; 5セル範囲のローカルビュー内にエージェントもエネルギー源も存在しません。待機することが最もエネルギー効率の良い w"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:1": {
+      "source_sha256": "059874d7bcbbb3a729ab9dffb3001b27a1ce27a714c211141e3bfd1f62e271a1",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:24.340137+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "(14,6)から相対的に(1,0)の位置にあるエネルギー源、つまり絶対座標(15,6)へ移動して、エネルギーを補充する。",
+        "memory": "ステップ19: (1,0)へ移動中；(14,6)から相対的に(1,0)の位置にあるエネルギー源、つまり絶対座標(15,6)へ移動して、エネルギーを補充す"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:2": {
+      "source_sha256": "d2031ce07cbab4cbe6e1dcfc485edb69e835bf9beb7cc75aaa30bf54b04a6a7f",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:25.741434+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源である(5,4)に到達するため、南へ移動中。",
+        "thought": "現在(7,3)に位置しています。(5,4)にあるエネルギー源は相対的に(-2,1)です。(7,2)または(7,4)へ南に移動することは経路の一部です。これまでの手順に基づき、エネルギー源に近づくために南へ移動しています。（注：プロンプトのメモリでは、私は(7,4)にいるか、(5,4)に向かって移動していることが示唆されています。ターゲットに合わせるため、南への移動を継続します）。",
+        "memory": "ステップ19: (0,-1)へ移動；現在(7,3)に位置。エネルギー源(5,4)は相対的に(-2,1)。(7,2)または(7,4)へ南に移動することは経路の一部"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:0": {
+      "source_sha256": "dad4a7c0169f9662c2c32de53e77b96109042ef26becb438305cb33e5cc3064c",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:28.416145+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くにエージェントもエネルギー源もいません。エネルギーを節約するために待機します。",
+        "thought": "5セル以内のローカルビュー内にエージェントもエネルギー源も存在しません。リソースやエージェントが現れるのを待つには、待機することが最もエネルギー効率が良い方法です。",
+        "memory": "ステップ 20: 待機; 5セル以内のローカルビュー内にエージェントもエネルギー源も存在しません。待機することが最もエネルギー効率が良"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:1": {
+      "source_sha256": "6d59c4f8975e0f277df4ea911a5954143d9cf13bff9580d284c3baf5fa6fe6de",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:30.042019+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを回収するために南へ移動中。",
+        "thought": "現在地は(15,6)です。(15,6)から見て(-2,-1)にあるエネルギー源は(13,5)に位置します。(-2,-4)にあるエネルギー源は(13,2)に位置します。(-3,2)にあるエネルギー源は(12,8)に位置します。(13,5)にあるエネルギー源に近づくため、南の(15,5)へ移動します。",
+        "memory": "ステップ20: (0,1)へ移動; 現在地は(15,6)です。(15,6)から見て(-2,-1)にあるエネルギー源は(13,5)に位置します。エネルギー源は("
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:2": {
+      "source_sha256": "f55f0c3082976258ace60f836a51b8a3c49ce01763bc9e828c8e392aa794c919",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:32.463660+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "探索のため、南の(7,1)へ移動します。",
+        "thought": "現在(7,2)にいて、エネルギーは169です。エネルギー源やエージェントを探索し続けるため、南の(7,1)へ移動します。",
+        "memory": "ステップ20: (0,-1)へ移動; 現在(7,2)にいて、エネルギーは169です。エネルギー源やエージェントを探索し続けるため、南の(7,1)へ移動します"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "21:0": {
+      "source_sha256": "2306c41593d9bed1aa511003b2b07c88b8a6a7823619bc67376c39466c34cb2b",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:34.195742+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くにエージェントもエネルギー源もいません。エネルギーを節約するために待機します。",
+        "thought": "5セル範囲のローカルビュー内にエージェントもエネルギー源も存在しません。リソースやエージェントが現れるのを待つには、待機することが最もエネルギー効率が良い方法です。",
+        "memory": "ステップ21: 待機; 5セル範囲のローカルビュー内にエージェントもエネルギー源も存在しません。待機することが最もエネルギー効率が良"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "21:1": {
+      "source_sha256": "fa89db0e33f2c40e2bf78fa591da2a0b06f07e31d2d982ec1b1c2fafbe619abc",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:35.790322+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを回収するために南へ移動中。",
+        "thought": "現在地は(15,7)です。相対座標(-2,-2)、つまり絶対座標(13,5)にエネルギー源があります。エネルギーを増やすために、そこへ向かって移動します。",
+        "memory": "ステップ21: (0,-1)へ移動; 現在地は(15,7)です。相対座標(-2,-2)、つまり絶対座標(13,5)にエネルギー源があります。移動します"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "21:2": {
+      "source_sha256": "9f25b76e65e6b40b7b5931f25251f47dcd47ed8dcd57f130643bfba742b8191d",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:37.493135+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を探索中。",
+        "thought": "私は(7,1)にいて、エネルギーは167あります。私の相対位置で(1,-1)にエネルギー源があり、絶対座標では(8,0)です。南へ移動して(7,0)へ向かうことで、現在の位置から相対的に(1,-1)にあるエネルギー源に近づきます。",
+        "memory": "ステップ21: (0,-1)へ移動。私は(7,1)にいて、エネルギーは167あります。私の相対位置で(1,-1)にエネルギー源があり、絶対座標では"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "22:0": {
+      "source_sha256": "96a2deeb2f6034ffd5431267d59365b688eab80983ba069a84748c49c2954e39",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:39.474908+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くにエージェントもエネルギー源もいません。エネルギーを節約するために待機します。",
+        "thought": "5セル範囲のローカルビュー内にエージェントもエネルギー源も存在しません。リソースやエージェントが現れるのを待つには、待機することが最もエネルギー効率が良い方法です。",
+        "memory": "ステップ22: 待機; 5セル範囲のローカルビュー内にエージェントもエネルギー源も存在しません。待機することが最もエネルギー効率が良"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "22:1": {
+      "source_sha256": "1e30e44bb687a159f49337f4b7148b61d8c157d78b507869f5fcc3588a1d8765",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:41.075125+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を回収するため、南の(13,5)へ移動中。",
+        "thought": "現在地は(15,6)。(13,5)にエネルギー源があり、相対座標では(-2,-1)です。エネルギーを増やすために、そこへ向かって移動します。",
+        "memory": "ステップ22: (0,-1)へ移動; 現在地は(15,6)。(13,5)にエネルギー源があり、相対座標では(-2,-1)です。そこへ向かって移動します"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "22:2": {
+      "source_sha256": "f3e51eb77de4c9c5a7400136f3f39f0629a5a8c9827dc9ec6ed688f654b8b126",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:42.898565+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "東へ進み、(8,0)にあるエネルギー源に向かっています。",
+        "thought": "現在(7,0)にいます。自分から見て(1,0)の方向にエネルギー源があり、これは絶対座標では(8,0)です。東へ(8,0)へ移動することで、エネルギー源を消費し、50のエネルギーを得られます。",
+        "memory": "ステップ 22: (1,0)へ移動; 現在(7,0)にいます。自分から見て(1,0)の方向にエネルギー源があり、これは絶対座標では(8,0)です。東へ"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "23:0": {
+      "source_sha256": "9a3743eebba7edcc12abb21e31182a72f8b354657c2196a4450a859a85802f8b",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:44.884064+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くにエージェントもエネルギー源もいません。エネルギーを節約するために待機します。",
+        "thought": "5セル範囲のローカルビュー内にエージェントもエネルギー源も存在しません。リソースやエージェントが現れるのを待つには、待機することが最もエネルギー効率が良い方法です。",
+        "memory": "ステップ 23: 待機; 5セル範囲のローカルビュー内にエージェントもエネルギー源も存在しません。待機することが最もエネルギー効率が良"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "23:1": {
+      "source_sha256": "cda09e7fe08bb58a0d872ba2f6db383c5a3a3724b6236a3e5cfb73bdd470dbd8",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:46.491255+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(13,5)にあるエネルギー源に向かって移動中",
+        "thought": "私は(15,6)にいて、エネルギー源は(13,5)にあります。そこに到達するには、西(-1,0)と南(0,-1)に移動する必要があります。経路を合わせるために、まずは南に移動します。",
+        "memory": "ステップ23: (0,-1)へ移動。私は(15,6)にいて、エネルギー源は(13,5)にあります。そこに到達するには、西(-1,0)と南に"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "23:2": {
+      "source_sha256": "c62d388f38b1df8d5b3170b95afbc6f54a5d7f12b632743ab9cad6fb1708aaf6",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:48.368453+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "私は(8,0)にいて、(8,0)にエネルギー源を見つけました。",
+        "thought": "私は現在、エネルギー源の上に立っています（M=(8,0)に対してEが(-3,0)なら(5,0)ですが、メモリにはEの絶対座標は(8,0)とあります）。待てよ、ローカルビューではE=(-3,0)（M=(8,0)に対して）なので(5,0)だ。しかし、ステップ22のメモリではEの絶対座標は(8,0)となっている。私は(8,0)にいるので、現在の位置にあるエネルギー源を消費するためにここに留まります。",
+        "memory": "ステップ23: 留まる。私は現在、エネルギー源の上に立っています（M=(8,0)に対してEが(-3,0)なら(5,0)ですが、メモリでは"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "24:0": {
+      "source_sha256": "be8f00a55b675b9a382a4f6278f56b00eccf8be176f8c5bb79cf013d35ce146d",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:51.059405+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くにエージェントもエネルギー源もありません。エネルギーを節約するために待機します。",
+        "thought": "5セル範囲のローカルビュー内にエージェントもエネルギー源も存在しません。何かが現れるのを待つには、待機することが最もエネルギー効率の良い方法です。",
+        "memory": "ステップ 24: 待機; 5セル範囲のローカルビュー内にエージェントもエネルギー源も存在しません。待機することが最もエネルギー効率の良い w"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "24:1": {
+      "source_sha256": "512e103563ef0cd969496613755b0ef51f3b69d7b0635baf87f1ed9979cd2839",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:52.652099+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(13,5)にあるエネルギー源に向かって移動中。",
+        "thought": "私は(15,4)にいて、エネルギー源は(13,5)にあります。そこに到達するには、西(-1,0)と南(0,1)へ移動する必要があります。まずは西への移動から始めます。",
+        "memory": "ステップ24: (-1,0)へ移動。私は(15,4)にいて、エネルギー源は(13,5)にあります。そこに到達するには、西(-1,0)と南"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "24:2": {
+      "source_sha256": "12ecacfb0bba47aabb0a5489f41cdc3b931346c9ab5a4ac822b9b2d353faaab7",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:54.500834+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって西へ移動中。",
+        "thought": "現在、座標(8,0)にいます。(5,0)、(5,1)、(5,4)にエネルギー源があります。西の(7,0)へ移動することで、エネルギーを補充し、繁殖の準備をするためにエネルギー源の塊に近づきます。",
+        "memory": "ステップ24: (-1,0)へ移動; 現在(8,0)にいます。(5,0)、(5,1)、(5,4)にエネルギー源があります。西の(7,0)へ移動することで"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "25:0": {
+      "source_sha256": "ce3126470c6260bf81d5765f94496c0d52115627b7fd18a8a0037cdb26bbe99a",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:56.453698+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くにエージェントもエネルギー源もいません。エネルギーを節約するために待機します。",
+        "thought": "5セル範囲のローカルビュー内にエージェントもエネルギー源も存在しません。リソースやエージェントが現れるのを待つには、待機することが最もエネルギー効率が良い方法です。",
+        "memory": "ステップ 25: 待機; 5セル範囲のローカルビュー内にエージェントもエネルギー源も存在しません。待機することが最もエネルギー効率が良"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "25:1": {
+      "source_sha256": "43d962a87f0bb7cbd29ef498b6c3cfbf5cf52af835fdccf3bfa7b55953375d96",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:58.107074+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(-2,4)にあるエネルギー源に向かって移動中",
+        "thought": "私は(14,4)にいて、グリッド相対で(12,4)にエネルギー源があります。これはローカルビューでは(-2,4)です。近づくために西へ移動します。",
+        "memory": "ステップ 25: (-1,0)へ移動; 私は(14,4)にいて、グリッド相対で(12,4)にエネルギー源があります。これはローカルビューでは(-2,4)です"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "25:2": {
+      "source_sha256": "ef10a25d96bbe401cd9007ff768afffce41782bbd61b1f56efd85ff42a686d6e",
+      "status": "completed",
+      "created_at": "2026-10-11T12:54:59.886242+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を集めるために西へ移動中。",
+        "thought": "現在(7,0)にいて、エネルギーは210。相対座標の(-2,0)、(-2,1)、(-2,4)にエネルギー源があり、これは絶対座標の(5,0)、(5,1)、(5,4)に対応する。これらのエネルギー源に向かう第一歩として、西の(6,0)へ移動する。",
+        "memory": "ステップ25: (-1,0)へ移動; 現在(7,0)にいて、エネルギーは210。相対座標の(-2,0)、(-2,1)、(-2,4)にエネルギー源があり、これ"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    }
+  },
+  "status": "completed",
+  "updated_at": "2026-10-11T12:55:02.060084+00:00",
+  "last_connection": {
+    "base_url": "http://127.0.0.1:8080/v1",
+    "requested_model": "default_model"
+  },
+  "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922"
+}

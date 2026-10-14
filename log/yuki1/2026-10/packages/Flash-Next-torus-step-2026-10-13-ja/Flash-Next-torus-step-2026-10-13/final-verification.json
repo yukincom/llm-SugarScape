@@ -1,0 +1,52 @@
+{
+  "source_hashes_unchanged": {
+    "main.py": true,
+    "run_data.py": true,
+    "model_identity.py": true,
+    "grid_view.py": true,
+    "app_ui.py": true,
+    "app_presets.py": true,
+    "paper_prompts.py": true,
+    "agent_view.py": true,
+    "llm_api.py": true,
+    "translations.py": true,
+    "response_fields.py": true,
+    "experiment_task.py": true,
+    "assets/emoji/sources.json": true,
+    "requirements.txt": true
+  },
+  "packaged_source_hashes_unchanged": {
+    "response_fields.py": true,
+    "paper_prompts.py": true,
+    "grid_view.py": true,
+    "run_data.py": true,
+    "experiment_task.py": true,
+    "app_presets.py": true,
+    "model_identity.py": true,
+    "llm_api.py": true,
+    "folder_picker.py": true,
+    "translations.py": true,
+    "agent_view.py": true,
+    "app_ui.py": true,
+    "__boot__.py": true,
+    "main.py": true,
+    "desktop.py": true
+  },
+  "binary_unchanged": true,
+  "weight_file_metadata_unchanged": {
+    "IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00001-of-00002.gguf": true,
+    "IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00002-of-00002.gguf": true,
+    "mtp-Qwen3.8-Flash-Next-Q8_0.gguf": true
+  },
+  "all_sampled_process_identities_same": true,
+  "process_samples": 132,
+  "first_resource_sample": "2026-10-13T06:46:20.277838+00:00",
+  "last_resource_sample": "2026-10-13T06:57:24.554272+00:00",
+  "live_run_copy_sha256_equal": true,
+  "observer_model_requests": 0,
+  "simulation_requests_matched": 100,
+  "translation_requests_matched_by_count_and_phase": 100,
+  "unmatched_runtime_tasks": 0,
+  "captured_mtp_internal_errors": 0,
+  "unrelated_worktree_details_omitted": true
+}

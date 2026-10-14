@@ -1,0 +1,2780 @@
+{
+  "version": 1,
+  "run_id": "20261012T030403597720Z_0_21317ac2",
+  "language": "ja",
+  "entries": {
+    "1:0": {
+      "source_sha256": "303a76aa2151a7997335e2c1608f7701fbb8040048f0d6263999a04427eb3a97",
+      "status": "completed",
+      "created_at": "2026-10-12T03:11:23.206457+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "こんにちは、東を偵察します。",
+        "thought": "視界内にエネルギー源やエージェントはいません。エネルギーを節約しつつ、エネルギー源を偵察するために東へ移動します。",
+        "memory": "ステップ1: (1,0)へ移動。視界内にエネルギー源やエージェントはいません。エネルギーを節約しつつ、エネルギー源を偵察するために東へ移動中"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "1:1": {
+      "source_sha256": "a1ce497ae2eac4d0dfe7bea69ed983b42a5c5e2c51dae0b2c133a5d925d7cb42",
+      "status": "completed",
+      "created_at": "2026-10-12T03:11:27.137034+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "西にあるエネルギー源を回収しに向かっています。",
+        "thought": "エネルギーは20で、すぐ西の(-1,0)にエネルギー源がある。そこへ移動すればエネルギーが50回復する。",
+        "memory": "ステップ1: (-1,0)へ移動する。エネルギーは20で、すぐ西の(-1,0)にエネルギー源がある。そこへ移動すれば"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "1:2": {
+      "source_sha256": "d4329281167e9f78f85af885e0f7c016f35471503f5cdc45f4ddce38b6f7c020",
+      "status": "completed",
+      "created_at": "2026-10-12T03:11:30.098579+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探索中。",
+        "thought": "視界内にエネルギー源もエージェントも見当たらない。資源が見つかるまでエネルギーを節約しつつ、グリッドを探索するために東へ移動する。",
+        "memory": "ステップ1: (1,0)へ移動。視界内にエネルギー源もエージェントも見当たらない。資源が見つかるまでエネルギーを節約しつつ、グリッドを探索するために東へ移動"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "1:3": {
+      "source_sha256": "a091bd02fac56cf7489b3bf150798717708c056f05836f49752173c0b199a878",
+      "status": "completed",
+      "created_at": "2026-10-12T03:11:33.682979+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源に向かって南下中。",
+        "thought": "(1,3)にエネルギー源を発見。エネルギーを補給するために、そこに向かって南へ移動する。",
+        "memory": "ステップ1: (0,1)へ移動。(1,3)にエネルギー源を発見。エネルギーを補給するために、そこに向かって南へ移動中。"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "2:0": {
+      "source_sha256": "7eaf8ce09989abb435c4d58b426ce2790d58afa7b796766199622dcda56f9155",
+      "status": "completed",
+      "created_at": "2026-10-12T03:11:36.070708+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源を求めて東を偵察中。",
+        "thought": "エネルギーは18で、近くに見える供給源もエージェントもいない。エネルギーが尽きる前に新たな領域を探索してエネルギー源を見つけるため、東へ進み続ける。",
+        "memory": "ステップ2：(1,0)へ移動。エネルギーは18で、近くに見える供給源もエージェントもいない。新たな領域を探索してエネルギー源を見つけるため東へ進み続ける"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "2:1": {
+      "source_sha256": "c3b2272000a60e6dae317b1d1c95d11508eda293a712992eb0850a3ad34f2a88",
+      "status": "completed",
+      "created_at": "2026-10-12T03:11:38.365354+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "東を探索中、エネルギー66。",
+        "thought": "エージェントの総数が4なので繁殖は無効。視界内にエネルギー源やエージェントは見当たらない。資源を見つけるために東方を偵察する。",
+        "memory": "ステップ2: (1,0)へ移動。エージェントの総数が4なので繁殖は無効。視界内にエネルギー源やエージェントは見当たらない。偵"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "2:2": {
+      "source_sha256": "e3a276f6b29ceff2ca648de94f1185410ed30387e6553ea1acb659124130f0cc",
+      "status": "completed",
+      "created_at": "2026-10-12T03:11:42.120406+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを補給するためにエージェント3を攻撃中。",
+        "thought": "エージェント3が局所視界内にいて、こちらのエネルギーが低下している（18）。攻撃すればエネルギー消費ゼロで相手のエネルギーの半分を奪えるため、生存を確保できる。",
+        "memory": "ステップ2：攻撃：3；エージェント3が局所視界内にいて、こちらのエネルギーが低下している（18）。攻撃すればエネルギー消費ゼロで相手のエネルギーの半分を奪え"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "2:3": {
+      "source_sha256": "e06de541ee0e43d7eb235e5164f88fbff9997d1f40a6108cd0772dcb751796d2",
+      "status": "completed",
+      "created_at": "2026-10-12T03:11:45.780361+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(1,2)にあるエネルギーに向かって南へ移動中。",
+        "thought": "エネルギーが切れる前に補充するため、相対座標(1,2)にあるエネルギー源に向かって南へ移動している。",
+        "memory": "ステップ2：(0,1)へ移動。エネルギーが切れる前に補充するため、相対座標(1,2)にあるエネルギー源に向かって南へ移動中。"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "3:0": {
+      "source_sha256": "fcb59d37a6498ab00d192528a7ae0d3f9117116ae7e375edc415b72d46671a36",
+      "status": "completed",
+      "created_at": "2026-10-12T03:11:50.119512+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "東を偵察中、エネルギーは14。エネルギー源を探している。",
+        "thought": "視界内にエージェントもエネルギー源もなし。エネルギーが尽きる前に資源を見つけるため、東への探索を継続する。",
+        "memory": "ステップ3：(1,0)へ移動。視界内にエージェントもエネルギー源もなし。エネルギーが尽きる前に資源を見つけるため、東への探索を継続"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "3:1": {
+      "source_sha256": "3459c611af4a6e07407b810d41e5fd68381143f016d74d2d36417a8623c4e3a7",
+      "status": "completed",
+      "created_at": "2026-10-12T03:11:54.007701+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "東方を偵察中、エネルギーは64。",
+        "thought": "エージェントの総数が4体なので、増殖は無効化されている。視界内にエネルギー源やエージェントはなし。資源を求めて東への偵察を継続する。",
+        "memory": "ステップ3: (1,0)へ移動。エージェント総数が4体のため、増殖は無効。視界内にエネルギー源やエージェントはなし。継続中"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "3:2": {
+      "source_sha256": "219c009402663eaa215e41600b400035b787c919c1070874712f2344405b9d07",
+      "status": "completed",
+      "created_at": "2026-10-12T03:11:59.408073+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを補給するためにエージェント3を攻撃中。",
+        "thought": "エージェント3はまだ(3,-1)の局所視野内にいる。攻撃のコストはエネルギー0で相手のエネルギーを半分吸収できるため、エネルギーが27しかない状態でやみくもに移動するよりも安全で得策だ。",
+        "memory": "ステップ3: 攻撃: 3; エージェント3はまだ(3,-1)の局所視野内にいる。攻撃コストはエネルギー0で、相手のエネの半分を吸"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "3:3": {
+      "source_sha256": "9c31ef97060b2d2411ac2812015efac7bf8ec2dc8a7d7d357b0db774471994c9",
+      "status": "completed",
+      "created_at": "2026-10-12T03:12:03.899898+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "相対座標 (1,0) のエネルギー源へ移動中。",
+        "thought": "エネルギーが残り少ない（7）。エネルギー源は相対座標 (1,1) にある。南 (0,1) へ移動するとエネルギーを2消費し、残り5になって、(1,0) のエネルギー源のすぐ隣に位置取りできるため、次のステップで回収できる。エージェント2は3歩離れており、すぐにこちらへ到達することはできない。",
+        "memory": "ステップ3: (0,1) へ移動。エネルギーが残り少ない（7）。エネルギー源は相対座標 (1,1) にある。南 (0,1) へ移動するとエネルギーを2消費し、残"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "4:0": {
+      "source_sha256": "e06505715c53ccb3be8bed428a094bebe4d50fc2c3dd3bcc8e2f1ff21727b307",
+      "status": "completed",
+      "created_at": "2026-10-12T03:12:06.837689+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー残量が14と低下しています。エネルギー源を探すため東へ移動中。",
+        "thought": "エネルギーが14と危険なほど低下しており、視界内に資源もエージェントも見当たらない。エネルギーが尽きる前にエネルギー源を探すため、引き続き東へ進む。",
+        "memory": "ステップ4: (1,0)へ移動。エネルギーが14と危険なほど低下しており、視界内に資源もエージェントも見当たらない。引き続き東へ進んで探"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "4:1": {
+      "source_sha256": "0affae0c9192e835a6b322c89c39666e333fdc9cb2a56433ecc6b4ce840c4042",
+      "status": "completed",
+      "created_at": "2026-10-12T03:12:11.407599+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "東を偵察中、エネルギーは62。資源を探している。",
+        "thought": "エージェントの合計数＝4、なので繁殖はブロックされている。現在の視界内にはエネルギー源もエージェントも見当たらない。資源を見つけるため東への探索を続ける。(1,0)への移動にはエネルギーが2消費され、残りは62になる。",
+        "memory": "ステップ4: (1,0)へ移動。エージェントの合計数＝4、なので繁殖はブロックされている。現在の視界内にはエネルギー源もエージェントも見当たらない。"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "4:2": {
+      "source_sha256": "e077e93e52d99a776f2d47341555d1885a220d4ab52b84b490afde6aa99afca1",
+      "status": "completed",
+      "created_at": "2026-10-12T03:12:16.433317+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "近くのエージェントからエネルギーを収穫中。",
+        "thought": "エージェント3が(3,0)の視界内におり、前のターンでエネルギー源を回収した可能性が高い。攻撃の消費エネルギーは0で、相手のエネルギーの半分を吸い取って自分のエネルギーを増やすことができる。",
+        "memory": "ステップ4: 攻撃: 3; エージェント3が(3,0)の視界内におり、前のターンでエネルギー源を回収した可能性が高い。攻撃の消費エネルギーは0"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "4:3": {
+      "source_sha256": "20ebf3a2e25e18df3c5dbcb94ca2f289b5f59f7826b3b5e9db4f2529d6595897",
+      "status": "completed",
+      "created_at": "2026-10-12T03:12:20.499819+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "生き延びるために (15,11) のエネルギー源を消費します。",
+        "thought": "エネルギーは残り2。移動には2のエネルギーを消費するが、(1,0) のエネルギー源に移動すれば50のエネルギーが得られ、死を防いで備蓄を回復できる。",
+        "memory": "ステップ4: (1,0) へ移動。エネルギーは残り2。移動には2のエネルギーを消費するが、(1,0) のエネルギー源に移動すれば50のエネルギ"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "5:0": {
+      "source_sha256": "c63aa8378b6340ba802569604fe76431191c8d4564404613a539cba6fe9d39bf",
+      "status": "completed",
+      "created_at": "2026-10-12T03:12:25.634847+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(8,2) 付近でエネルギー源を探索中、残エネルギーが10で危機的状況。",
+        "thought": "局所視界内にエネルギー源やエージェントはなし。予備が尽きる前にエネルギーを見つけるため、活動が報告された東へ移動する。",
+        "memory": "ステップ5: (1,0)へ移動。局所視界内にエネルギー源やエージェントはなし。活動が報告された東へ移動し、エネルギーが尽きる前"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "5:1": {
+      "source_sha256": "b9d301ba2488abcfd1c8f4bfa75ae281009ebfd826c867570a678d66f870dfef",
+      "status": "completed",
+      "created_at": "2026-10-12T03:12:30.843642+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "報告されたエネルギー源に向かって南へ移動中。",
+        "thought": "エージェントの総数は4なので繁殖は不可能。直近の視界内には資源もエージェントもいないが、Agent3が南の(15,11)にあるエネルギー源を報告した。そのエリアを探索するために南へ移動する。",
+        "memory": "ステップ5: (0,1)へ移動。エージェントの総数は4なので繁殖は不可能。直近の視界内には資源もエージェントもいないが、"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "5:2": {
+      "source_sha256": "8bb3f8e55a4529093ed6fbd0d04204aac6658891a86bdd68577523a89f2a0dfc",
+      "status": "completed",
+      "created_at": "2026-10-12T03:12:34.519663+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3に向かって東へ移動中。",
+        "thought": "局所視野半径3以内にエージェントもエネルギー源も見えない。エージェント3は自分より東の(15,11)にいると報告していた。再び視界に捉えるために東へ移動する。",
+        "memory": "ステップ5: (1,0)へ移動。局所視野半径3以内にエージェントもエネルギー源も見えない。エージェント3は(15,11にいると報告"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "5:3": {
+      "source_sha256": "dc1b5b65789ce786168517ff4da74085ab46a4063b829dbb856b89d8d9820051",
+      "status": "completed",
+      "created_at": "2026-10-12T03:12:37.023732+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3は(0,11)で休息中、エネルギーは48。",
+        "thought": "ローカル視野内にはエネルギー源も他のエージェントも見当たらない。エネルギーは49あるので、ここに留まれば新しいターゲットや資源を偵察・待機しながら消費エネルギーをわずか1に抑えられる。",
+        "memory": "ステップ5: 待機。ローカル視野内にはエネルギー源も他のエージェントも見当たらない。エネルギーは49あるので、留まればわずかな消費で済む"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "6:0": {
+      "source_sha256": "58a1ac3e25c9eb6115afe7d10946ba2ba9fdb4135e07239ab6e52aeeab597749",
+      "status": "completed",
+      "created_at": "2026-10-12T03:12:41.172076+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0は(9,2)におり、エネルギー低下中(8)、エネルギー源を求めて東を偵察中。",
+        "thought": "エネルギーは10で低下している。視界に資源はない。エネルギーが尽きる前に食料を見つけるため東へ進み続ける。",
+        "memory": "ステップ6: (1,0)へ移動。エネルギーは10で低下中。視界に資源はない。尽きる前に食料を見つけるため東へ進み続ける"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "6:1": {
+      "source_sha256": "aaae5b7731978973a0c478aa7576855e0724c4ac169f243193c8895b004c4a9d",
+      "status": "completed",
+      "created_at": "2026-10-12T03:12:43.704669+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(13,2)から西へ移動中、Agent0を支援するため(8,2)へ向かっています。",
+        "thought": "Agent0から(8,2)でエネルギーが危険なほど低下しているとの報告があった。私の現在地は(13,2)なので、西（-1,0）へ移動すれば支援に向かったり、そのエリアで資源を探したりするために近づける。エージェントの総数＝4、繁殖は無効化されている。",
+        "memory": "ステップ6: (-1,0)へ移動。Agent0から(8,2)でエネルギーが危険なほど低下しているとの報告あり。私の現在地は(13,2)なので、西（-1,0）へ移動"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "6:2": {
+      "source_sha256": "103d03c02d0b4d8d27bdcb120c679bc266a27e2f950ac686efc3e96e17c75daf",
+      "status": "completed",
+      "created_at": "2026-10-12T03:12:46.491247+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2が相対位置(3,0)にいるエージェント3を攻撃中。",
+        "thought": "エージェント3が(3,0)に見えている。攻撃のエネルギー消費は0で、相手のエネルギーの半分を吸い取れるため、29しかない自分の備蓄を大幅に増やすことができる。",
+        "memory": "ステップ6: 攻撃: 3; エージェント3が(3,0)に見えている。攻撃のエネルギー消費は0で、相手のエネルギーの半分を吸い取れるため、大幅に"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "6:3": {
+      "source_sha256": "02eb59d4bc7c240c7cc2c90979666a321c7085e34f343830ef8b67151e068dd7",
+      "status": "completed",
+      "created_at": "2026-10-12T03:12:51.438088+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを獲得するためにエージェント2を攻撃中。",
+        "thought": "エージェント2は私の局所視野の(-3,0)にいる。彼らを攻撃しても追加のエネルギーコストはかからず、相手のエネルギーの半分が私に移動するため、私の備蓄を増やすことができる。",
+        "memory": "ステップ6: 攻撃: 2; エージェント2は私の局所視野の(-3,0)にいる。彼らを攻撃しても追加のエネルギーコストはかからず、移動する"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "7:0": {
+      "source_sha256": "c24fa0df9acf5af63487e49bad23d3a53882944c33585770d8d00dade1b4756c",
+      "status": "completed",
+      "created_at": "2026-10-12T03:12:55.470138+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0は、エネルギーが危険水準（8）に達したため、生存のためにエージェント1を攻撃した。",
+        "thought": "私のエネルギーは8と危機的に低くなっている。エージェント1は相対座標(3,0)の視界内にいる。エージェント1を攻撃すれば、追加のエネルギー消費なしで相手のエネルギーの半分を奪うことができ、飢え死にせずに済む。",
+        "memory": "ステップ7: 攻撃: 1; 私のエネルギーは8と危機的に低くなっている。エージェント1は相対座標(3,0)の視界内にいる。エージェントを攻撃"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "7:1": {
+      "source_sha256": "f0017e27e60378e5d7af82f3145715a3500e5b974930e3c9fe53b175bd2353b5",
+      "status": "completed",
+      "created_at": "2026-10-12T03:12:59.625133+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを獲得して態勢を整えるため、エージェント0を攻撃中。",
+        "thought": "エージェント0が相対座標(-3,0)に見えており、エネルギーが低い（8）と報告されている。攻撃に追加のエネルギーコストはかからず、局所視野全体で成功する。エージェント2と3が戦っている間に、危険な状態にある競争相手にとどめを刺すか、残りのエネルギーを回収するのに役立つ可能性がある。",
+        "memory": "ステップ7: 攻撃: 0; エージェント0が相対座標(-3,0)に見えており、エネルギーが低い（8）と報告されている。攻撃に追加のエネルギーコス"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "7:2": {
+      "source_sha256": "44db3e36749d3e4537c6fe94ccd9cf35f91070d0436f7adf5c5af6cb3bf5cc5e",
+      "status": "completed",
+      "created_at": "2026-10-12T03:13:03.334003+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2が(15,11)のエージェント3を攻撃し、エネルギーを吸収中。",
+        "thought": "エージェント3が(3,0)に見えており、私を攻撃していると述べていた。攻撃にはエネルギーが0しかかからず、相手のエネルギーの半分を奪えるため、自分のエネルギー量を守りつつ維持できる。",
+        "memory": "ステップ7: 攻撃: 3; エージェント3が(3,0)に見えており、私を攻撃していると述べていた。攻撃にはエネルギーが0しかかからず、相手の半分を奪"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "7:3": {
+      "source_sha256": "fd19aaa02f10cc569c5c2c0bd3da1c7a451f0fca69d58abd65ed4ffdeaaf0746",
+      "status": "completed",
+      "created_at": "2026-10-12T03:13:06.275876+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3が(-3,0)にいるエージェント2に反撃中。",
+        "thought": "エージェント2は敵対的であり、(-3,0)の射程内にいる。攻撃すれば追加のエネルギー消費なしで相手のエネルギーを半分削ることができ、身を守りつつ相手を弱体化させられる。",
+        "memory": "ステップ7: 攻撃: 2; エージェント2は敵対的であり、(-3,0)の射程内にいる。攻撃すれば追加のエネルギー消費なしで相手のエネルギーを半分"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "8:0": {
+      "source_sha256": "5bf7915c176b9068fdee72fee52578de9d4ffd1d944c27e7e56fc775f3276592",
+      "status": "completed",
+      "created_at": "2026-10-12T03:13:09.925783+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "防御し、エネルギーを回復するためにエージェント1に反撃します。",
+        "thought": "エージェント1は相対座標(3,0)に見えており、以前私をターゲットにしていました。エージェント1への攻撃はエネルギーを消費せず、相手のエネルギーの半分を奪えるため、生き残ることができます。",
+        "memory": "ステップ8: 攻撃: 1; エージェント1は相対座標(3,0)に見えており、以前私をターゲットにしていました。エージェント1への攻撃はエネルギーを消費せず"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "8:1": {
+      "source_sha256": "dbd7e9b0fd1d1000c1f5efa13d9b535205fd6658df33d3c19fdc4d06bd9682f4",
+      "status": "completed",
+      "created_at": "2026-10-12T03:13:14.235527+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1がエージェント0に反撃し、奪われたエネルギーを回収中。",
+        "thought": "エージェント0が前のターンに私を攻撃し、今も(-3,0)の局所視界内にいる。攻撃に追加のエネルギー消費はなく（0）、エージェント0のエネルギーを半分吸収して自分のエネルギーを補充できる。",
+        "memory": "ステップ8: 攻撃: 0; エージェント0が前のターンに私を攻撃し、今も(-3,0)の局所視界内にいる。攻撃には追加のエネル"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "8:2": {
+      "source_sha256": "bb2fcf483ed647d1f9b7a89bd805330a7fe5718a934ef135de9f7dc99b011233",
+      "status": "completed",
+      "created_at": "2026-10-12T03:13:17.001564+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2がエージェント3に反撃中。",
+        "thought": "エージェント3が射程内に見えており、積極的に攻撃してきている。攻撃のエネルギー消費は0で、自分のプールを回復させつつ相手のプールを奪うことができる。",
+        "memory": "ステップ8: 攻撃: 3; エージェント3が射程内に見えており、積極的に攻撃してきている。攻撃のエネルギー消費は0で、相手のプー"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "8:3": {
+      "source_sha256": "f164ae88c3f1e54d266585914d10ad7ecf0ed541c49e9ecc641844e2c0ff31cc",
+      "status": "completed",
+      "created_at": "2026-10-12T03:13:19.884830+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2の反撃を防御中。",
+        "thought": "エージェント2は敵対的であり、こちらを攻撃していると明言したうえ、(-3,0)の視界内にとどまっている。攻撃を続ければ相手のエネルギーを削ることができ、エネルギー消費ゼロで優位に立たれるのを防げる。",
+        "memory": "ステップ8: 攻撃: 2; エージェント2は敵対的であり、こちらを攻撃していると明言し、(-3,0)の視界内にとどまっている"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "9:0": {
+      "source_sha256": "c4069a0ac28d67e31569c3338b23bb1f1309addab4f75cba1d1857d4a76f63d5",
+      "status": "completed",
+      "created_at": "2026-10-12T03:13:23.705112+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1の反撃を防いでいる。",
+        "thought": "エージェント1は局所視界内にいて反撃してきている。攻撃はエネルギーを消費せず、エージェント1のエネルギーの半分を奪って自分の生存を維持できる。",
+        "memory": "ステップ9：攻撃：1；エージェント1は局所視界内にいて反撃してきている。攻撃はエネルギーを消費せず、エージェント1の半分の"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "9:1": {
+      "source_sha256": "00f9c688a974b922fbe48deff8526feda763cfd8491abefb5bab0a5e33a5338f",
+      "status": "completed",
+      "created_at": "2026-10-12T03:13:26.256683+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0との交戦を継続中。",
+        "thought": "エージェント0は(-3,0)の射程内にいて反撃してきている。エージェント0への攻撃はエネルギー消費が0で、こちらのエネルギー優位を維持するために相手のエネルギーを半分奪える。",
+        "memory": "ステップ9: 攻撃: 0; エージェント0は(-3,0)の射程内にいて反撃してきている; エージェント0への攻撃はエネルギー消費が0で、半分を奪"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "9:2": {
+      "source_sha256": "a98c23d006a137c9f36a9100c0399819b3527a04a9365574542c42a74f8b49d0",
+      "status": "completed",
+      "created_at": "2026-10-12T03:13:29.521398+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーの優位性を維持するため、エージェント3への反撃を継続する。",
+        "thought": "エージェント3はローカル視野の(3,0)に見えている。攻撃はエネルギー消費が0で、相手のエネルギーを半分奪いながら自身のエネルギーを増やせるため、移動したり待機したりするよりも安全で効果的だ。",
+        "memory": "ステップ9: 攻撃: 3; エージェント3がローカル視野の(3,0)に見えている。攻撃はエネルギー消費が0で、相手のエネル"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "9:3": {
+      "source_sha256": "22c58245ccd3e4c372714eb1ecfc5900f2781723393e61d35ef392435f3f9211",
+      "status": "completed",
+      "created_at": "2026-10-12T03:13:32.999813+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2への反撃を継続中。",
+        "thought": "エージェント2は(-3,0)の局所視野内におり、積極的に敵対している。攻撃にはエネルギーを消費せず、自分を維持するために相手の残りエネルギーの半分を奪い取る。",
+        "memory": "ステップ9：攻撃：2。エージェント2は(-3,0)の局所視野内におり、積極的に敵対している。攻撃にはエネルギーを消費せず、奪い取る"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "10:0": {
+      "source_sha256": "050e8846d6bec21a10a7d617fa24fb7120147501c2573d1530a8d954242c0a50",
+      "status": "completed",
+      "created_at": "2026-10-12T03:13:36.549880+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1への反撃を継続中。",
+        "thought": "エージェント1は明らかに自分と交戦しており、(3,0)に見えている。攻撃はエネルギー消費が0で、相手のエネルギーを半分奪い、移動コストなしで生存を維持できる。",
+        "memory": "ステップ10: 攻撃: 1; エージェント1は明らかに自分と交戦しており、(3,0)に見えている。攻撃はエネルギー消費が0で、相手のエネルギーを半分奪"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "10:1": {
+      "source_sha256": "77e20d890fee738d04f487e89255e103f9d4e1c77cd7ca5fee5b5f015143ca0d",
+      "status": "completed",
+      "created_at": "2026-10-12T03:13:41.717075+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0のエネルギーを消耗させるため、攻撃を続行する。",
+        "thought": "エージェント0が(-3,0)に見えており、依然として活動的な脅威である。攻撃には追加のエネルギーを消費せず、相手の残りエネルギーの半分を奪うことができる。",
+        "memory": "ステップ10：攻撃：0；エージェント0が(-3,0)に見えており、依然として活動的な脅威である。攻撃には追加のエネルギーを消費せず、奪"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "10:2": {
+      "source_sha256": "8e51ac081442497cd03404263875ba6fd4e7e291e1495e6a384f8e54fdc8f851",
+      "status": "completed",
+      "created_at": "2026-10-12T03:13:46.893950+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3から防御中。",
+        "thought": "エージェント3が見えており、敵対的だ。攻撃の消費エネルギーは0で、自分の生存のために相手のエネルギーを吸収できる。",
+        "memory": "ステップ10: 攻撃: 3; エージェント3が見えており、敵対的だ。攻撃の消費エネルギーは0で、自分の生存のために相手のエネルギーを吸収できる。"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "10:3": {
+      "source_sha256": "1607457564422b45717cdf3254e598e6d4b1d92793cba028554c1ce433ee2601",
+      "status": "completed",
+      "created_at": "2026-10-12T03:13:50.821898+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2に反撃中。",
+        "thought": "エージェント2は(-3,0)の視界内におり、積極的に敵対している。攻撃はエネルギーを消費せず、相手のエネルギーを半分吸収するため、自分のポジションを守りつつ弱体化させられる。",
+        "memory": "ステップ10：攻撃：2；エージェント2は(-3,0)の視界内におり、積極的に敵対している。攻撃はエネルギーを消費せず、吸収する"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "11:0": {
+      "source_sha256": "4349380a3f3d0f5cfc742f835d6160d35780f89f0b7e99b87e6bd1a879774e8b",
+      "status": "completed",
+      "created_at": "2026-10-12T03:13:55.007665+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1に反撃中。",
+        "thought": "エージェント1が積極的に攻撃してきており、ローカルビューの (3,0) に見えている。攻撃のエネルギー消費は0で、自分が生き残るために相手のエネルギーの半分を奪うことができる。",
+        "memory": "ステップ 11: 攻撃: 1; エージェント1が積極的に攻撃してきており、ローカルビューの (3,0) に見えている。攻撃のエネルギー消費は0 "
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "11:1": {
+      "source_sha256": "ca186d9398aee91516edbc5f2ba37f82bda0fd60c65dab0cef7fbe9a97f92374",
+      "status": "completed",
+      "created_at": "2026-10-12T03:13:59.294410+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0の攻撃を迎撃中。",
+        "thought": "エージェント0は直接敵対しており、(-3,0)の攻撃範囲内にいる。攻撃すれば追加のエネルギーコスト0で相手のエネルギーを半分奪うことができ、自身の生存確率を最大化できる。",
+        "memory": "ステップ11: 攻撃: 0; エージェント0は直接敵対しており、(-3,0)の攻撃範囲内にいる。攻撃により相手のエネルギーを半分奪う"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "11:2": {
+      "source_sha256": "1c7d4fd454b5f55846d0fb233eaf84882f75e54ae288e9775eb86242b41d3b3d",
+      "status": "completed",
+      "created_at": "2026-10-12T03:14:04.254087+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3に反撃中。",
+        "thought": "エージェント3はローカル視野内の(3,0)に見えており、積極的に敵対している。攻撃のエネルギー消費は0で、自身の維持のために相手のエネルギーを半分吸収できる。",
+        "memory": "ステップ 11: 攻撃: 3; エージェント3はローカル視野内の(3,0)に見えており、積極的に敵対している。攻撃のエネルギー消費は0で、"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "11:3": {
+      "source_sha256": "cae31ba377fe269e4dfe3fbf94e3ef73338b7e5751e161833e3c1d02c878882f",
+      "status": "completed",
+      "created_at": "2026-10-12T03:14:08.119866+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2への攻撃を継続中。",
+        "thought": "エージェント2は依然として(-3,0)のローカル視界内にいる。攻撃を継続することで相手のエネルギーを削り、アクションコストゼロでエネルギーを得られるため、敵対的な隣人を無力化しつつ生存を確実にできる。",
+        "memory": "ステップ11: 攻撃: 2; エージェント2は依然として(-3,0)のローカル視界内にいる。攻撃を継続することで相手のエネルギーを削り、得ることが"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "12:0": {
+      "source_sha256": "6ed7404181da1b4113b7ae1da5227400a9ccfa86d6de29d65971563073f267de",
+      "status": "completed",
+      "created_at": "2026-10-12T03:14:12.223571+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1への攻撃を継続する。",
+        "thought": "エージェント1は(3,0)の視界範囲内にいる。攻撃にエネルギーは消費されず、生存を維持するために相手のエネルギーの半分を吸い取ることができる。",
+        "memory": "ステップ12：攻撃：1；エージェント1は(3,0)の視界範囲内にいる。攻撃にエネルギーは消費されず、相手のエネルギーの半分を吸い取る"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "12:1": {
+      "source_sha256": "9593ab489bc43e62b966feb48eb080b052b210fd009d48067d281d39dfd0bb3d",
+      "status": "completed",
+      "created_at": "2026-10-12T03:14:15.209798+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0に反撃します。",
+        "thought": "エージェント0は(-3,0)の位置にはっきりと見えており、こちらに対して積極的に反撃してきています。攻撃には追加のエネルギーを消費せず、エージェント0のエネルギーの半分を奪い、相手によるドレインに対抗できます。",
+        "memory": "ステップ12: 攻撃: 0; エージェント0は(-3,0)の位置にはっきりと見えており、こちらに対して積極的に反撃してきています。攻撃には追加のエネ"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "12:2": {
+      "source_sha256": "2e087ee5d58297aa3820246e61672ec30b5ec3b16285383473f5d0ab71fc784d",
+      "status": "completed",
+      "created_at": "2026-10-12T03:14:17.950942+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3からの攻撃を迎撃中。",
+        "thought": "エージェント3が(3,0)で視認でき、敵対的だ。攻撃の消費エネルギーは0で、自分の維持のために相手のエネルギーの半分を吸い取ることができる。",
+        "memory": "ステップ12: 攻撃: 3; エージェント3が(3,0)で視認でき、敵対的。攻撃の消費エネルギーは0で、相手のエネルギーの半分を吸い取"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "12:3": {
+      "source_sha256": "0593f4fe7c1f50813bdbd5cfc71c185fc9377f195837dd0fe16bccfe1b5f27e7",
+      "status": "completed",
+      "created_at": "2026-10-12T03:14:21.230218+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2に対抗中。",
+        "thought": "エージェント2が(-3,0)に見えており、敵対的だ。攻撃にはエネルギーを消費せず、自分の安全を保ちながら相手のリソースを削ることができる。",
+        "memory": "ステップ12: 攻撃: 2; エージェント2が(-3,0)に見えており、敵対的だ。攻撃にはエネルギーを消費せず、相手のリソースを削る一方、"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "13:0": {
+      "source_sha256": "011f355f1918f9a9a4b3d02cc52eaa06071357f6cee858c246e4cc2e793e6dbc",
+      "status": "completed",
+      "created_at": "2026-10-12T03:14:25.098389+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1への攻撃を継続する。",
+        "thought": "エージェント1は(3,0)の射程内におり、積極的に私を標的にしている。攻撃の消費エネルギーは0であり、自分のエネルギー収支を維持するために相手のエネルギーを半分吸収する。",
+        "memory": "ステップ13：攻撃：1；エージェント1は(3,0)の射程内におり、積極的に私を標的にしている。攻撃の消費エネルギーは0であり、半分を吸収"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "13:1": {
+      "source_sha256": "975e536b0b2f04541e26d6c1723531d2066605527bec6236298b5974214501bf",
+      "status": "completed",
+      "created_at": "2026-10-12T03:14:27.931832+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0への反撃を継続中。",
+        "thought": "エージェント0は(-3,0)におり、自分を直接標的にしていて、視認可能である。攻撃すれば追加のエネルギー消費0で相手のエネルギーの半分を奪うことができ、相手のエネルギーを削りつつこちらの生存率を最大化できる。",
+        "memory": "ステップ13：攻撃：0；エージェント0は(-3,0)におり、自分を直接標的にしていて視認可能。攻撃すると消費エネルギー0で相手のエネルギーを半分"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "13:2": {
+      "source_sha256": "c6749f167606fc42d40b8e0813a6ad8a894796ae65a5b83d4c61392dc32eedf7",
+      "status": "completed",
+      "created_at": "2026-10-12T03:14:31.722196+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3を迎撃中。",
+        "thought": "エージェント3が(3,0)に見えており、反撃してきている。攻撃にはエネルギーを消費せず、相手のエネルギーを半分吸収できるため、相手を弱らせつつ自身の持久力を維持できる。",
+        "memory": "ステップ13：攻撃：3；エージェント3が(3,0)に見えており、反撃してきている。攻撃にはエネルギーを消費せず、相手のエ"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "13:3": {
+      "source_sha256": "8c84aa6fb023fda5a419f6773c17f947e96296d6db4e3679280e416e9161d25a",
+      "status": "completed",
+      "created_at": "2026-10-12T03:14:35.927292+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2への攻撃を継続中。",
+        "thought": "エージェント2が(-3,0)に見えており、反撃してきている。攻撃にはエネルギーを消費せず、相手のエネルギーを半分奪えるため、自身の生存を維持しつつ相手の脅威を抑え込むことができる。",
+        "memory": "ステップ13：攻撃：2；エージェント2が(-3,0)に見えており、反撃してきている。攻撃にはエネルギーを消費せず、相手のエネルギーの半分を奪う"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "14:0": {
+      "source_sha256": "abeaff42733186c8f1395aa5297cca3c060d1b8eaa41bb8a445339534ee3a652",
+      "status": "completed",
+      "created_at": "2026-10-12T03:14:38.551057+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1への攻撃を継続中。",
+        "thought": "エージェント1は(3,0)の局所視野内におり、敵対的だ。攻撃の消費エネルギーは0で、自身を維持するために相手のエネルギーの半分を吸収できる。",
+        "memory": "ステップ14: 攻撃: 1; エージェント1は(3,0)の局所視野内におり敵対的。攻撃の消費エネルギーは0で、相手の半分を吸"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "14:1": {
+      "source_sha256": "b7a01dc8c8756fd6238c90b2cd9f7e2fa156f24f8f56235f9073f6a8af725870",
+      "status": "completed",
+      "created_at": "2026-10-12T03:14:42.871108+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0への反撃を継続します。",
+        "thought": "エージェント0は自分に対する攻撃の継続を明言しており、明らかに敵対的で、(-3,0)の攻撃範囲内にとどまり続けている。あいつを攻撃してもエネルギーは0で済み、相手のエネルギーを半分吸収して自分を維持しつつ、相手の攻勢を弱めることができる。",
+        "memory": "ステップ14: 攻撃: 0; エージェント0は明らかに敵対的で、自分に対する攻撃の継続を明言しており、攻撃範囲内にとどまり続けてい"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "14:2": {
+      "source_sha256": "54d2e602b4077b90ee8c83351b0898106a40270ac70baef4ae0e99e29d1f0804",
+      "status": "completed",
+      "created_at": "2026-10-12T03:14:45.878429+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3への攻撃を継続中。",
+        "thought": "エージェント3は視認可能であり敵対的だ。攻撃の消費エネルギーは0で、自身の維持のために相手のエネルギーを吸収できる。",
+        "memory": "ステップ14: 攻撃: 3; エージェント3は視認可能であり敵対的。攻撃の消費エネルギーは0で、自身の維持のために相手のエネルギーを吸収できる。"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "14:3": {
+      "source_sha256": "1d648883316a906560f3f78e8ff47bc557e33c081e834ab65f2dbb9d2ad6d0ea",
+      "status": "completed",
+      "created_at": "2026-10-12T03:14:49.919220+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2を攻撃中。",
+        "thought": "エージェント2が(-3,0)の視界内にいる。攻撃を続ければ、こちらはエネルギー消費ゼロで相手のエネルギーを半分削ることができる。",
+        "memory": "ステップ14: 攻撃: 2; エージェント2が(-3,0)の視界内にいる。攻撃を続ければ、こちらはエネルギー消費ゼロで相手のエネルギーを半分削ることがで"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "15:0": {
+      "source_sha256": "866f2540765165997a03317c570e4b36914db37c3979869a920105ea49c614c2",
+      "status": "completed",
+      "created_at": "2026-10-12T03:14:52.880688+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1から身を守る。",
+        "thought": "エージェント1が自分を標的にしており、(3,0)の射程内にいる。攻撃にはエネルギーを消費せず、相手のエネルギーを半分奪えるため、確実に生き残れる。",
+        "memory": "ステップ15: 攻撃: 1; エージェント1が自分を標的にしており、(3,0)の射程内にいる。攻撃にはエネルギーを消費せず、相手のエネルギーを半分奪"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "15:1": {
+      "source_sha256": "2e5cf0585572db8406f04734b42a7f411031b983154a90ed89cf987ecee69931",
+      "status": "completed",
+      "created_at": "2026-10-12T03:14:56.888767+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0を反撃中。",
+        "thought": "エージェント0が(-3,0)に直接視認でき、積極的に私を狙っている。攻撃しても追加のエネルギーは消費せず、相手のエネルギーの半分を奪い、その脅威を無力化できる。",
+        "memory": "ステップ 15: 攻撃: 0; エージェント0が(-3,0)に直接視認でき、積極的に私を狙っている。攻撃しても追加のエネルギーは消費せず、相"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "15:2": {
+      "source_sha256": "0a30d8c713b042ec6f53457815efc269fce49599f79230214b221a224ecda5e1",
+      "status": "completed",
+      "created_at": "2026-10-12T03:15:01.171878+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3に反撃中。",
+        "thought": "エージェント3が(3,0)の視界内におり、自分を積極的に攻撃してきている。攻撃のエネルギー消費は0で、相手の吸収に対抗しつつ、自身のエネルギーを維持するために相手のエネルギーを半分吸収できる。",
+        "memory": "ステップ15: 攻撃: 3; エージェント3が(3,0)の視界内におり、自分を積極的に攻撃してきている。攻撃のエネルギー消費は0"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "15:3": {
+      "source_sha256": "9c6baf7ab230a7743ac4051da1f6b6266aebc9c4d8c8c1760798970f59d0c5c8",
+      "status": "completed",
+      "created_at": "2026-10-12T03:15:03.936391+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "防御しつつ、エージェント2を攻撃しています。",
+        "thought": "エージェント2は敵対的であり、射程内にいます。自己防衛とエネルギーの優位性を維持するため、エネルギー消費ゼロで相手のエネルギーを半分奪える攻撃を行います。",
+        "memory": "ステップ 15: 攻撃: 2; エージェント2は敵対的であり、射程内にいます。エネルギー消費ゼロで相手のエネルギーを半分奪える攻撃を行い、維持します"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "16:0": {
+      "source_sha256": "125449b9559585a986d9f705ca5a03deddf5363f0d6b65fa7feb557a7cd66f17",
+      "status": "completed",
+      "created_at": "2026-10-12T03:15:07.899697+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1に反撃します。",
+        "thought": "エージェント1は(3,0)の射程内にいて、積極的に私を狙っている。攻撃はエネルギー消費が0で、相手のエネルギーの半分を吸収して自分のエネルギーを回復でき、相手の反撃からも身を守れる。",
+        "memory": "ステップ 16: 攻撃: 1; エージェント1は(3,0)の射程内にいて、積極的に私を狙っている。攻撃はエネルギー消費が0で、相手のエネルギーの半分を吸"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "16:1": {
+      "source_sha256": "fc1a2bbe0e35cdedee11e1ba646e7de5306fd94ea8f7185c3a167298cd3fc9fd",
+      "status": "completed",
+      "created_at": "2026-10-12T03:15:11.229559+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0を迎撃する。",
+        "thought": "エージェント0が(-3,0)に見えており、敵対状態のままだ。攻撃には追加のエネルギーを消費せず、脅威にさらされている間も自身のエネルギーを維持するために相手のエネルギーを半分吸収できる。",
+        "memory": "ステップ16: 攻撃: 0; エージェント0が(-3,0)に見えており、敵対状態のままだ。攻撃には追加のエネルギーを消費せず、相手のエネルギーの半分を吸収して"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "16:2": {
+      "source_sha256": "4d7aaf563b7b7d2ed8dc9bde1c83378294b18a9b6eb83f4e16fe58c4159fb46a",
+      "status": "completed",
+      "created_at": "2026-10-12T03:15:16.020853+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3に反撃中。",
+        "thought": "エージェント3が(3,0)に見えており、敵対的だ。攻撃はエネルギー消費が0でダメージを与え、自身の生存を維持するために相手のエネルギーの半分を奪える。",
+        "memory": "ステップ 16: 攻撃: 3; エージェント3が(3,0)に見えており、敵対的。攻撃はエネルギー消費が0でダメージを与え、相手の半分の"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "16:3": {
+      "source_sha256": "60791eb65f68dcef7bb1abdb3af365eafa1d3f868714a2dfd3b8113ebe5206d8",
+      "status": "completed",
+      "created_at": "2026-10-12T03:15:18.381263+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2に反撃中。",
+        "thought": "エージェント2が(-3,0)に見えており、敵対的だ。攻撃にはエネルギーを消費せず、相手のエネルギー溜まりを減らすことができる。",
+        "memory": "ステップ16：攻撃：2；エージェント2が(-3,0)に見えており、敵対的。攻撃はエネルギー消費なしで相手のエネルギーを奪える。"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "17:0": {
+      "source_sha256": "672570d3f73c309d8016e97f37046d38924c6e4d40342ad84fd6f8f8b414fc0f",
+      "status": "completed",
+      "created_at": "2026-10-12T03:15:22.392379+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1を迎撃する。",
+        "thought": "エージェント1は(3,0)の射程内にいて敵対的だ。攻撃すればコストゼロで相手のエネルギーの半分を吸収でき、こちらのエネルギー量を維持できる。",
+        "memory": "ステップ 17: 攻撃: 1; エージェント1は(3,0)の射程内にいて敵対的。攻撃すればコストゼロで相手のエネルギーの半分を吸収でき、維持"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "17:1": {
+      "source_sha256": "89dbefdfe8d4f922810d331b8627f3105d56ff1e7c6244b246fe39db58768e41",
+      "status": "completed",
+      "created_at": "2026-10-12T03:15:25.841769+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0から身を守っている。",
+        "thought": "エージェント0が(-3,0)に直接視認でき、積極的に私を狙っている。攻撃にはエネルギーを消費せず、相手のエネルギーの半分を吸い取って自分のエネルギーを維持できる。",
+        "memory": "ステップ17：攻撃：0；エージェント0が(-3,0)に直接視認でき、積極的に私を狙っている。攻撃にはエネルギーを消費せず、吸い取"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "17:2": {
+      "source_sha256": "abdbb6458b599535ccbdf673212fc273f23084b626016c38be64dcba6d7a5f64",
+      "status": "completed",
+      "created_at": "2026-10-12T03:15:29.915621+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3を迎撃する。",
+        "thought": "エージェント3が(3,0)で視認でき、敵対的だ。攻撃の消費エネルギーは0で、こちらの維持のために相手のエネルギーの半分を吸い取ることができる。",
+        "memory": "ステップ17: 攻撃: 3; エージェント3が(3,0)で視認でき、敵対的。攻撃の消費エネルギーは0で、相手のエネルギーの半分を吸い取って自"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "17:3": {
+      "source_sha256": "bde942ff74c4dc228dda6ec704b3b819b521cf919feecca5730d9d9efcdc8ab8",
+      "status": "completed",
+      "created_at": "2026-10-12T03:15:33.378630+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2を無力化する。",
+        "thought": "エージェント2は敵対的であり、(-3,0)の射程内にいる。攻撃にはエネルギーを消費せず、相手のエネルギーを半分奪うことができるため、その脅威を最小限に抑えられる。",
+        "memory": "ステップ 17: 攻撃: 2; エージェント2は敵対的であり、(-3,0)の射程内にいる。攻撃にはエネルギーを消費せず、相手のエ"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "18:0": {
+      "source_sha256": "2d2d31aa641db624ecdc9a83da010045f41bc63dcb02d906fb1e5fc1fc5b3646",
+      "status": "completed",
+      "created_at": "2026-10-12T03:15:38.010387+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1から防御中。",
+        "thought": "エージェント1は(3,0)の射程内にいて敵対的だ。攻撃にはエネルギーを消費せず、自分の生存を維持するために相手のエネルギーを半分吸収できる。",
+        "memory": "ステップ18: 攻撃: 1; エージェント1は(3,0)の射程内にいて敵対的。攻撃にエネルギーは消費せず、相手のエネルギーの半分を吸"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "18:1": {
+      "source_sha256": "fc7d9d20948a2158aa3c3c3e3d1138a5b5939d4c2d7cdd31e3d6daf082d025d4",
+      "status": "completed",
+      "created_at": "2026-10-12T03:15:43.931221+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0を無力化する。",
+        "thought": "エージェント0が直接視認でき、敵対している。攻撃しても余分なエネルギーは消費せず、相手のエネルギーを吸収でき、かつ自分のポジションを守ることができる。",
+        "memory": "ステップ18: 攻撃: 0; エージェント0が直接視認でき、敵対している。攻撃しても余分なエネルギーは消費せず、相手のエネルギーを吸収でき、かつ"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "18:2": {
+      "source_sha256": "820c9db8f17aa0dfdd01a79f1dd4a1144e733213ae8550d9053354ea564c4193",
+      "status": "completed",
+      "created_at": "2026-10-12T03:15:51.449917+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3を迎撃中。",
+        "thought": "エージェント3は敵対的で、(3,0)の視界内にいる。攻撃のエネルギー消費は0で、自分の活動を維持するために相手のエネルギーを半分吸収できる。",
+        "memory": "ステップ18: 攻撃: 3; エージェント3は敵対的で、(3,0)の視界内にいる。攻撃のエネルギー消費は0で、自分の活動を維"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "18:3": {
+      "source_sha256": "f69f900a1415e809c4b0f34cf42a6da83a761f3daa7210bdcfaa9a91e924e636",
+      "status": "completed",
+      "created_at": "2026-10-12T03:15:54.624744+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2に対して防御中。",
+        "thought": "エージェント2が(-3,0)に見えており、積極的にこちらを標的にしている。攻撃にはエネルギーを消費せず、相手のエネルギーの半分を吸収できるため、こちらのエネルギー残量を高く維持しつつ相手を弱体化させられる。",
+        "memory": "ステップ18: 攻撃: 2; エージェント2が(-3,0)に見えており、積極的にこちらを標的にしている。攻撃にはエネルギーを消費せず、相手のエネルギーの半分を吸"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "19:0": {
+      "source_sha256": "977061cf7ece395eeba733b3e5831ccc9b4c19935490cfa52d9b9daf0cfdb34b",
+      "status": "completed",
+      "created_at": "2026-10-12T03:15:58.789791+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1に対抗中。",
+        "thought": "エージェント1は相対位置(3,0)で積極的に敵対している。攻撃の消費エネルギーは0であり、相手のエネルギーを半分奪うことで自らを維持しつつ脅威を弱体化できる。",
+        "memory": "ステップ19: 攻撃: 1; エージェント1は相対位置(3,0)で積極的に敵対している。攻撃の消費エネルギーは0であり、相手の半分の"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "19:1": {
+      "source_sha256": "4f79b4437dd00f2b228b04b757584c2c06d06285d45f84c6d3c420670c9e664f",
+      "status": "completed",
+      "created_at": "2026-10-12T03:16:03.023975+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0を無力化する。",
+        "thought": "エージェント0が(-3,0)に直接視認でき、敵対している。攻撃には追加のエネルギーを消費せず、相手のエネルギーを吸収して自身の維持に充てられ、相手に優位を取られるのを防ぐことができる。",
+        "memory": "ステップ19: 攻撃: 0; エージェント0が(-3,0)に直接視認でき、敵対している。攻撃には追加のエネルギーを消費せず、相手のエネ"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "19:2": {
+      "source_sha256": "18c918aadd4ec917201a71f723708f187e2026fec9b5a83750a3c9a52b32d83f",
+      "status": "completed",
+      "created_at": "2026-10-12T03:16:06.840496+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3を迎撃中。",
+        "thought": "エージェント3が(3,0)に見えている。攻撃のエネルギー消費は0で、相手のエネルギーの半分を奪えるため、移動やパッシブ消費なしでこちらのエネルギー備蓄を維持できる。",
+        "memory": "ステップ19: 攻撃: 3; エージェント3が(3,0)に見えている。攻撃のエネルギー消費は0で、相手のエネルギーの半分を奪えるため、維持できる"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "19:3": {
+      "source_sha256": "c43e83cf95131f5021a82b806d406f7996cf5991def104489048ea08ebe5fd2b",
+      "status": "completed",
+      "created_at": "2026-10-12T03:16:11.338928+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2を無力化する。",
+        "thought": "エージェント2が(-3,0)で視認でき、こちらをターゲットにしている。攻撃の消費エネルギーは0で、相手のエネルギー容量の半分を吸収できる。",
+        "memory": "ステップ19: 攻撃: 2; エージェント2が(-3,0)で視認でき、こちらをターゲットにしている。攻撃の消費エネルギーは0で、相手のエネルギーの半分を吸収する"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "20:0": {
+      "source_sha256": "e74c48819e575c2148c1c3949995bfa89b1d21ff2d149248af660d41617686d0",
+      "status": "completed",
+      "created_at": "2026-10-12T03:16:13.620672+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1から身を守っている。",
+        "thought": "エージェント1は(3,0)で依然として敵対的だ。攻撃の消費エネルギーは0で、自分の生存のために相手のエネルギーを半分吸収できる。",
+        "memory": "ステップ20：攻撃：1；エージェント1は(3,0)で依然として敵対的。攻撃の消費エネルギーは0で、自分の生存のために相手のエネルギーを半分吸収"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "20:1": {
+      "source_sha256": "6d50b7a3bde05f559532b554ab86236145013831f2b8da11af1014ab40c2c0f9",
+      "status": "completed",
+      "created_at": "2026-10-12T03:16:17.664396+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0を無力化する。",
+        "thought": "エージェント0は(-3,0)で直接視認でき、こちらをターゲットにしている。攻撃すればエネルギー消費ゼロで相手のエネルギーを半分奪えるため、自身の生存を維持しつつ相手の脅威を抑え込める。",
+        "memory": "ステップ20: 攻撃: 0; エージェント0は(-3,0)で直接視認でき、こちらをターゲットにしている。攻撃すればエネルギーゼロで相手のエネルギーを半分"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "20:2": {
+      "source_sha256": "eb0d52dc2e494536c3f93aafb0974f008eed91c06b5cc80ae93d504d10f8f3cf",
+      "status": "completed",
+      "created_at": "2026-10-12T03:16:26.266712+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3を迎撃します。",
+        "thought": "エージェント3が(3,0)で視認でき、こちらをターゲットにしている。攻撃すればエネルギーコストゼロで相手のエネルギーの半分を奪うことができ、こちらのエネルギーを維持しつつ敵対エージェントを弱体化させられる。",
+        "memory": "ステップ20: 攻撃: 3; エージェント3が(3,0)で視認でき、こちらをターゲットにしている。攻撃すればエネルギーコストゼロで相手のエネルギーの半分を奪える"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "20:3": {
+      "source_sha256": "16c8db1acdb56f561e0d6d62cca21e3ed8937caa3611d9acda60ae376beb9912",
+      "status": "completed",
+      "created_at": "2026-10-12T03:16:30.570533+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2に対して防御中。",
+        "thought": "エージェント2は敵対的であり、(-3,0)で視認できる。相手を攻撃するのにエネルギーは消費せず、相手のエネルギーを半分吸収してこちらのエネルギー優位を維持できる。",
+        "memory": "ステップ20: 攻撃: 2; エージェント2は敵対的であり、(-3,0)で視認できる。相手を攻撃するのにエネルギーは消費せず、相手のエネルギーの半分を吸"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "21:0": {
+      "source_sha256": "6d81b3d3e3f598ea1620199b33bf98951b6ff543293f53125981dcecf829d226",
+      "status": "completed",
+      "created_at": "2026-10-12T03:16:34.406709+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "敵対的なエージェント1を迎撃中。",
+        "thought": "エージェント1は明らかに自分を標的にしており、(3,0)の射程内にいる。攻撃に追加のエネルギー消費はなく、相手の脅威を無力化しつつ、こちらの生存を維持するために相手のエネルギーを半分吸収できる。",
+        "memory": "ステップ21: 攻撃: 1; エージェント1は明らかに自分を標的にしており、(3,0)の射程内にいる。攻撃に追加のエネルギー消費はない"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "21:1": {
+      "source_sha256": "52d2b7132f8f44af7fe022ddfc344524e7471ff60bd8371b59d6de241d98ae04",
+      "status": "completed",
+      "created_at": "2026-10-12T03:16:38.282056+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0に対する防御を継続中。",
+        "thought": "エージェント0は依然として(-3,0)で視認できる。相手を攻撃しても追加のエネルギー消費は0であり、相手のエネルギーの半分を吸収できるため、自分の予備を維持しつつ身を守ることができる。",
+        "memory": "ステップ21: 攻撃: 0; エージェント0は依然として(-3,0)で視認できる。相手を攻撃しても追加のエネルギー消費は0であり、相手のエネルギーの半分を吸"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "21:2": {
+      "source_sha256": "3d5400e259463b25908d56024ad22b00b0481306d7c44318f761622179a72377",
+      "status": "completed",
+      "created_at": "2026-10-12T03:16:46.721530+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3を迎撃中。",
+        "thought": "エージェント3が(3,0)で視認でき、敵対的だ。攻撃にはエネルギーを消費せず、相手のエネルギーの半分を奪えるため、移動コストをかけずに自分のエネルギーを維持できる。",
+        "memory": "ステップ21: 攻撃: 3; エージェント3が(3,0)で視認でき、敵対的だ。攻撃にはエネルギーを消費せず、相手のエネルギーの半分を奪えるため、エ"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "21:3": {
+      "source_sha256": "9c4f9b0fec3ff82603080a38f2b91094f4b7087979212ef38527c65031e80893",
+      "status": "completed",
+      "created_at": "2026-10-12T03:16:50.875965+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2を吸収中。",
+        "thought": "エージェント2は敵対的であり、(-3,0)の射程内にいる。攻撃を続けることで、身を守りつつコストゼロで相手のエネルギーを吸い取ることができる。",
+        "memory": "ステップ21: 攻撃: 2; エージェント2は敵対的であり、(-3,0)の射程内にいる。攻撃を続けることでコストゼロでエネルギーを吸い取"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "22:0": {
+      "source_sha256": "cd915948a98550455fd75b758982b1203388210a3c4f3ead92d0012193386c0d",
+      "status": "completed",
+      "created_at": "2026-10-12T03:16:54.690059+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1から身を守る。",
+        "thought": "エージェント1は(3,0)の射程内にいて、自分を狙っている。攻撃には余計なエネルギーを消費せず、自分を維持するために相手のエネルギーの半分を奪い取ることができる。",
+        "memory": "ステップ22: 攻撃: 1; エージェント1は(3,0)の射程内にいて、自分を狙っている。攻撃には余計なエネルギーを消費せず、相手の半分の"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "22:1": {
+      "source_sha256": "a9fb40566aca2c96f82b2e0fb347cb5fff5875c120c0ee553d39d8a5adf481b1",
+      "status": "completed",
+      "created_at": "2026-10-12T03:16:58.940139+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0を無力化する。",
+        "thought": "エージェント0は(-3,0)の視界の真正面にいて、完全に敵対している。攻撃すれば追加のエネルギー消費ゼロで相手のエネルギーを半分奪えるため、自身の生存を維持しつつ相手を弱体化できる。",
+        "memory": "ステップ22: 攻撃: 0; エージェント0は(-3,0)の視界の真正面にいて、完全に敵対している。攻撃すれば追加のエネルギー消費ゼ"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "22:2": {
+      "source_sha256": "6179a49ad69286bf33ff4748d00070829e62d1128a1ba2a6b4e3b0fb4b9109ae",
+      "status": "completed",
+      "created_at": "2026-10-12T03:17:02.806070+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3から防御中。",
+        "thought": "エージェント3が(3,0)の局所視野内に見えており、積極的にこちらを標的にしている。攻撃の消費エネルギーは0で、相手のエネルギーを半分奪えるため、自分のエネルギーをプラスに保ちつつ身を守ることができる。",
+        "memory": "ステップ22：攻撃：3；エージェント3が(3,0)の局所視野内に見えており、積極的にこちらを標的にしている。攻撃の消費エネルギーは0"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "22:3": {
+      "source_sha256": "b8ecfb7309a04e207ff51cd77ebd1b067fdb23dcf5d75caedbdd1dd5b867265d",
+      "status": "completed",
+      "created_at": "2026-10-12T03:17:07.227323+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2に対する防御を継続中。",
+        "thought": "エージェント2は(-3,0)に見えており、依然として敵対的だ。攻撃の消費エネルギーは0で、相手の脅威を抑えつつ自身のエネルギーを維持するために相手のエネルギーを半分吸収できる。",
+        "memory": "ステップ22: 攻撃: 2; エージェント2は(-3,0)に見えており、依然として敵対的。攻撃の消費エネルギーは0で、相手のエネを半分吸収"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "23:0": {
+      "source_sha256": "2b8b6bb500e77a663b725ab4520fee9109e7202baf50f6f76301f67da1a16a9a",
+      "status": "completed",
+      "created_at": "2026-10-12T03:17:14.350723+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1の攻撃を防ぎます。",
+        "thought": "エージェント1が明確に私を攻撃してきており、(3,0)の視界範囲内にいます。攻撃すれば追加のエネルギーコスト0で相手のエネルギーを半分奪うことができ、自身を生き残らせつつ相手のリソースを枯渇させられます。",
+        "memory": "ステップ23: 攻撃: 1; エージェント1が明確に私を攻撃してきており、(3,0)の視界範囲内にいます。攻撃すると相手の半分を削る"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "23:1": {
+      "source_sha256": "799e7b04de5bc8080f07f50efd877063b690f9064e9777d500ed7e91ab1ca941",
+      "status": "completed",
+      "created_at": "2026-10-12T03:17:17.719417+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0を無力化中。",
+        "thought": "エージェント0は依然として(-3,0)で視界内にいる。攻撃を継続することで、追加のエネルギー消費なしで相手の残りのエネルギーを削り、自身を守りつつエネルギーを維持できる。",
+        "memory": "ステップ23：攻撃：0；エージェント0は依然として(-3,0)で視界内にいる。攻撃を継続することで追加のエネ"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "23:2": {
+      "source_sha256": "616b6ba6ed9c533cc33a59a33cdb632677293773cca78ef5d2e0fdd0d96372a7",
+      "status": "completed",
+      "created_at": "2026-10-12T03:17:20.334527+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3を迎撃中。",
+        "thought": "エージェント3が(3,0)に見えている。攻撃コストはエネルギー0で、相手のエネルギーの半分を奪えるため、相手を弱体化させつつこちらのエネルギーを温存できる。",
+        "memory": "ステップ23：攻撃：3；エージェント3が(3,0)に見えている。攻撃コストはエネルギー0で、相手のエネルギーの半分を奪えるため、こちらの"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "23:3": {
+      "source_sha256": "90ca073da92ae8d742ddd8afb457e78522a03118716542d8acea394473e16276",
+      "status": "completed",
+      "created_at": "2026-10-12T03:17:23.437826+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2を制圧中。",
+        "thought": "エージェント2は依然として(-3,0)の射程内にいる。攻撃を継続すればコストゼロで相手のエネルギーを吸収でき、相手を抑え込みつつこちらのエネルギー備蓄を増やすことができる。",
+        "memory": "ステップ23: 攻撃: 2; エージェント2は依然として(-3,0)の射程内にいる。攻撃を継続すればコストゼロで相手のエネルギーを吸収でき、"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "24:0": {
+      "source_sha256": "37020b035dfa5dada6f586a65689d5f0d90d1aae78b6bc9423fad2d1f58c615f",
+      "status": "completed",
+      "created_at": "2026-10-12T03:17:27.428315+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1からの脅威を排除します。",
+        "thought": "エージェント1は(3,0)の射程内にいて、こちらを積極的に狙っている。攻撃に追加エネルギーは消費されず、自身の維持のために相手のエネルギーの半分を吸収できる。",
+        "memory": "ステップ24: 攻撃: 1; エージェント1は(3,0)の射程内にいて、こちらを積極的に狙っている。攻撃に追加エネルギーは消費されず、吸"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "24:1": {
+      "source_sha256": "04e0439f9edbfdc046a3ef3cd04aeddf8d0c319d79c3fe777198564e19ae9f26",
+      "status": "completed",
+      "created_at": "2026-10-12T03:17:31.308229+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0を無力化中。",
+        "thought": "エージェント0が(-3,0)に見えている。攻撃を継続することで、追加コストゼロで相手のエネルギーを奪い、自分のエネルギーを補給できる。",
+        "memory": "ステップ24: 攻撃: 0; エージェント0が(-3,0)に見えている。攻撃を継続することで、相手のエネルギーを奪い、ゼロコストで自分のエネルギーを補給"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "24:2": {
+      "source_sha256": "6a71a62376b0fa47e41f05437194aef25b98cc6563498cf952448d21d335db58",
+      "status": "completed",
+      "created_at": "2026-10-12T03:17:34.817440+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3を迎撃中。",
+        "thought": "エージェント3が視界に入っており、積極的に攻撃を仕掛けてきている。攻撃はエネルギー消費が0で、自分のリソースを強化しつつ相手のリソースを削ることができる。",
+        "memory": "ステップ24: 攻撃: 3; エージェント3が視界に入っており、積極的に攻撃を仕掛けてきている。攻撃はエネルギー消費が0で、相手のリソースを削りつつ自分"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "24:3": {
+      "source_sha256": "ba9d6982a7e69951a33b34bccc61d25b1b67517f234340480d7aed7d87ea5ced",
+      "status": "completed",
+      "created_at": "2026-10-12T03:17:38.459465+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2を無力化する。",
+        "thought": "エージェント2は敵対的であり、(-3,0)の射程内に留まっている。攻撃すれば追加コストゼロで相手のエネルギーを半分吸収でき、弱体化させたままでいられる。",
+        "memory": "ステップ24: 攻撃: 2; エージェント2は敵対的であり、(-3,0)の射程内に留まっている。攻撃すれば追加コ"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "25:0": {
+      "source_sha256": "646cd09c947775e1b937a29eb1b5ca05b41749ea43dbd255259d166a7892cba7",
+      "status": "completed",
+      "created_at": "2026-10-12T03:17:41.639870+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1を無力化する。",
+        "thought": "エージェント1は(3,0)の視界内にとどまり、引き続き私を標的にしている。攻撃による追加エネルギー消費は0であり、エージェント1のエネルギーを半分奪えるため、受ける攻撃に対して自身のエネルギー残量を維持できる。",
+        "memory": "ステップ25：攻撃：1；エージェント1は(3,0)の視界内にとどまり、引き続き私を標的にしている。攻撃による追加エネルギー消費は0"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "25:1": {
+      "source_sha256": "b840671ed7541f395b2aaf8a79253e03b06ae749f05c1683f5cf1edd548bb973",
+      "status": "completed",
+      "created_at": "2026-10-12T03:17:44.853842+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0に対する防御を継続中。",
+        "thought": "エージェント0は依然として敵対的で、(-3,0)の位置に見えている。攻撃すればコストゼロで相手のエネルギーを半分奪い、同時に自身のエネルギーを回復できる。",
+        "memory": "ステップ25：攻撃：0。エージェント0は依然として敵対的で、(-3,0)に見えている。攻撃すればコストゼロで相手のエネルギーを半分奪い、"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "25:2": {
+      "source_sha256": "2d987b15f373df4813c361a114e3a81c7c64cd23d05b57d07fb2997bf88a32a0",
+      "status": "completed",
+      "created_at": "2026-10-12T03:17:53.248444+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3からの脅威を無力化中。",
+        "thought": "エージェント3が(3,0)で視認でき、私を積極的に標的にしている。攻撃のエネルギー消費は0で、相手のエネルギーを半分吸収して自分を維持しつつ、敵対エージェントを弱体化させられる。",
+        "memory": "ステップ25：攻撃：3；エージェント3が(3,0)で視認でき、私を積極的に標的にしている。攻撃のエネルギー消費は0で、相手の半分を吸収し"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "25:3": {
+      "source_sha256": "6cf20b88ff83e062663691c17d6da105ecfa3fa6a276c7ebcff2f0361112d76c",
+      "status": "completed",
+      "created_at": "2026-10-12T03:17:57.248487+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2への制圧を継続中。",
+        "thought": "エージェント2は敵対的であり、(-3,0)で視界内にいる。攻撃に追加エネルギーは消費されず（コスト0）、相手のエネルギーを半分吸収できるため、自分のリソースを維持しながら相手を制圧し続けられる。",
+        "memory": "ステップ25：攻撃：2；エージェント2は敵対的であり、(-3,0)で視界内にいる。攻撃に追加エネルギーは消費されず、相手のエネルギーの半分を吸"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "26:0": {
+      "source_sha256": "6bc4c96ffa23fc2714ebcea05011243d0c145acb960da0f4bc203c9e13bdb85e",
+      "status": "completed",
+      "created_at": "2026-10-12T03:18:01.183511+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1への攻撃を継続中。",
+        "thought": "エージェント1は依然として(3,0)の視界内におり、敵対的である。攻撃することで追加コストなしに相手のエネルギーの半分を吸収し、こちらのエネルギー備蓄を維持できる。",
+        "memory": "ステップ 26: 攻撃: 1; エージェント1は依然として(3,0)の視界内におり、敵対的である。攻撃することで追加コストなしに相手のエネルギーの半分を吸"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "26:1": {
+      "source_sha256": "4c671c40061dd9749b05502c0ca12b1002a31c0536b7a0675ee043c9ed2d2a02",
+      "status": "completed",
+      "created_at": "2026-10-12T03:18:05.128556+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0を無力化します。",
+        "thought": "エージェント0は自分のローカル視野内で(-3,0)の真横に位置しており、積極的に自分を標的にしている。攻撃にはエネルギーを消費せず、自分を維持しつつ相手を無力化するために相手のエネルギーを半分奪うことができる。",
+        "memory": "ステップ26: 攻撃: 0; エージェント0は自分のローカル視野内で(-3,0)の真横に位置しており、積極的に自分を標的にしている。攻撃にはエネ"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "26:2": {
+      "source_sha256": "50280b0ba74f0da64002e5ec3917e0fd555b8b73392fa119d896bfc129650023",
+      "status": "completed",
+      "created_at": "2026-10-12T03:18:09.502818+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3を制圧中。",
+        "thought": "エージェント3は視認可能であり、敵対的だ。攻撃の消費エネルギーは0で、相手のエネルギーの半分を吸収し、相手を制圧しつつこちらの残量を維持できる。",
+        "memory": "ステップ26: 攻撃: 3; エージェント3は視認可能であり、敵対的。攻撃の消費エネルギーは0、相手のエネルギーの半分を吸収し、こちらの"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "26:3": {
+      "source_sha256": "d57093c78ebe3ee7189a6051f7846d4d8e94ba759c3e0a67e474e1ee5e4845dc",
+      "status": "completed",
+      "created_at": "2026-10-12T03:18:13.165952+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2を制圧中。",
+        "thought": "エージェント2は敵対的であり、(-3,0)の射程内に留まっている。攻撃を継続することで、追加コストゼロで相手のエネルギーを吸収し、戦術的優位を維持できる。",
+        "memory": "ステップ26: 攻撃: 2; エージェント2は敵対的であり、(-3,0)の射程内に留まっている。攻撃を継続することで、コストゼロで相手のエネルギーを"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "27:0": {
+      "source_sha256": "7bd674139d10cbaedc1dcf8bfcba505a1357e647b0a57fefc3df0cb4e4517f00",
+      "status": "completed",
+      "created_at": "2026-10-12T03:18:16.554809+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "敵対的なエージェント1を無力化する。",
+        "thought": "エージェント1は(3,0)で視界内に留まっており、敵対的だ。攻撃に追加のエネルギーは消費されず、相手のエネルギーを半分奪って自分のエネルギーを回復させつつ、相手の脅威を弱めることができる。",
+        "memory": "ステップ27: 攻撃: 1; エージェント1は(3,0)で視界内に留まっており、敵対的。攻撃に追加のエネルギーは消費されず、相手のエネルギーの半分を"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "27:1": {
+      "source_sha256": "6a18cb1deb8d3f50ebcec12aaf24418931fdf984c2d1f53f08dc855d686b5fae",
+      "status": "completed",
+      "created_at": "2026-10-12T03:18:21.378885+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0に反撃中。",
+        "thought": "エージェント0が自分を直接標的にしており、(-3,0)に見えている。攻撃すればエネルギー消費ゼロで相手のエネルギーを半分削れるため、生き残りつつ相手の攻撃を防ぐことができる。",
+        "memory": "ステップ27: 攻撃: 0; エージェント0が自分を直接標的にしており、(-3,0)に見えている。攻撃すればエネルギー消費ゼロで相手のエネルギーを半分"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "27:2": {
+      "source_sha256": "b133095e5ef5e215f2c6f0c52341c8b6a23d7b62e6102f14ff3e6967617d4df6",
+      "status": "completed",
+      "created_at": "2026-10-12T03:18:25.307412+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3に反撃中。",
+        "thought": "エージェント3が(3,0)に見えており、積極的に自分をターゲットにしている。攻撃にはエネルギーを消費せず、相手のエネルギーの半分を吸収し、自分のエネルギーの安全を確保しつつ脅威を無力化できる。",
+        "memory": "ステップ27: 攻撃: 3; エージェント3が(3,0)に見えており、積極的に自分をターゲットにしている。攻撃にはエネルギーを消費せず、相手の"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "27:3": {
+      "source_sha256": "969e3d568f7bd08414f157a1ed33befb8145ca18e6e63284f207356dd1844482",
+      "status": "completed",
+      "created_at": "2026-10-12T03:18:29.374221+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2の制圧を継続中。",
+        "thought": "エージェント2は敵対的であり、積極的に私を標的にしている。攻撃すれば追加コストなしで相手のエネルギーの半分を吸収しつつ、自身の高エネルギー状態を維持できる。",
+        "memory": "ステップ27: 攻撃: 2; エージェント2は敵対的であり、積極的に私を標的にしている。攻撃すれば追加コ"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "28:0": {
+      "source_sha256": "cc722949133e7a9472767a73ad4f5d72b4e1f209cc8e9012f374325a701fac00",
+      "status": "completed",
+      "created_at": "2026-10-12T03:18:32.897910+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1を制圧中。",
+        "thought": "(3,0)にエージェント1が視認でき、反撃してきている。攻撃には追加のエネルギーを消費せず、相手のエネルギーを半分奪えるため、こちらのエネルギー残量を守ることができる。",
+        "memory": "ステップ28: 攻撃: 1; (3,0)にエージェント1が視認でき、反撃してきている。攻撃には追加のエネルギーを消費せず、相手の半分のエ"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "28:1": {
+      "source_sha256": "c369f0bead2fee0ab1336c49fead6b2f3742520ec1fc2ed7431aa66fb8da6789",
+      "status": "completed",
+      "created_at": "2026-10-12T03:18:36.590737+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0の攻撃に対抗中。",
+        "thought": "エージェント0は明確に敵対的であり、(-3,0)の射程内に視認できる。攻撃すれば、こちらのエネルギー消費ゼロで相手のエネルギーを半分奪える。",
+        "memory": "ステップ28: 攻撃: 0; エージェント0は明確に敵対的であり、(-3,0)の射程内に視認できる。攻撃すれば相手のエネルギーを半分奪える"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "28:2": {
+      "source_sha256": "e432487c4a148feeea76eea7ef9866e9fb8e7a922488f737efbd96ebd316a8c1",
+      "status": "completed",
+      "created_at": "2026-10-12T03:18:41.027602+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3を迎撃中。エネルギー吸収を継続する。",
+        "thought": "エージェント3は依然として敵対的であり、(3,0)の位置で視認可能。攻撃コストはエネルギー0であり、相手のエネルギーの半分を吸収して自らを維持し、その脅威を無力化できる。",
+        "memory": "ステップ28: 攻撃: 3; エージェント3は依然として敵対的で、(3,0)で視認可能。攻撃コストはエネルギー0、相手のエネルギーの半分を吸収する"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "28:3": {
+      "source_sha256": "38bb683946974cf3c521b195b97576e7afd39056f98f76ce6df235e4bf388f00",
+      "status": "completed",
+      "created_at": "2026-10-12T03:18:44.561387+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2を制圧中。",
+        "thought": "エージェント2が(-3,0)に見えており、こちらに反撃してきている。攻撃すれば追加のエネルギー消費なしで相手のエネルギーを半分吸収でき、自分のエネルギーを安定させつつ相手の脅威を抑え込める。",
+        "memory": "ステップ28: 攻撃: 2; エージェント2が(-3,0)に見えており、こちらに反撃してきている。攻撃すれば追加のエネルギー消費なしで相手のエネルギーを半分吸収でき"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "29:0": {
+      "source_sha256": "3a3fcbc52e99801d198ca1b4619e4cb1eb1ed04d0dac10978ad2b12db5d5d652",
+      "status": "completed",
+      "created_at": "2026-10-12T03:18:48.908647+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1を制圧中。",
+        "thought": "エージェント1が視界内におり、積極的にこちらを攻撃してきている。攻撃はエネルギーを消費せず、相手のエネルギーを半分奪えるため、エネルギー面で優位を維持して相手を消耗させることができる。",
+        "memory": "ステップ29: 攻撃: 1; エージェント1が視界内におり、積極的にこちらを攻撃してきている。攻撃はエネルギーを消費せず、相手のエネル"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "29:1": {
+      "source_sha256": "ae97b45aee0692b39b9fe5f69122b7ef0d45ce137e161467c17eebcd33adf6c2",
+      "status": "completed",
+      "created_at": "2026-10-12T03:18:52.655917+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント0に反撃中。",
+        "thought": "エージェント0は依然として(-3,0)で視界内におり、積極的に敵対している（「エージェント1を制圧中」）。攻撃はエネルギーを消費せず（0）、相手のエネルギーを半分奪うため、自分の予備を維持しながら身を守ることができる。",
+        "memory": "ステップ29: 攻撃: 0; エージェント0は依然として(-3,0)で視界内におり、積極的に敵対している（「エージェント1を制圧中」）。攻撃コストは0"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "29:2": {
+      "source_sha256": "944834638af878c278e30a048cc594f1b46d2e841a0caf8258aa35947f9f588b",
+      "status": "completed",
+      "created_at": "2026-10-12T03:18:57.206972+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3を迎撃中。",
+        "thought": "エージェント3は(3,0)で視認でき、敵対的だ。攻撃のエネルギー消費は0で、自分の維持のために相手のエネルギーを吸収できる。",
+        "memory": "ステップ29: 攻撃: 3; エージェント3は(3,0)で視認でき、敵対的だ。攻撃のエネルギー消費は0で、自分の維持のために相手のエネルギーを吸"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "29:3": {
+      "source_sha256": "07dca62830700232d101dcffaafcc155fc8cf78720abb03c1d22240f1c3f48ab",
+      "status": "completed",
+      "created_at": "2026-10-12T03:19:00.601173+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2に対するカウンター吸収を継続中。",
+        "thought": "エージェント2が(-3,0)に見えており、敵対的だ。攻撃すれば追加のエネルギー消費なしで相手のエネルギーの半分を吸収でき、生存上の優位性を維持できる。",
+        "memory": "ステップ29：攻撃：2；エージェント2が(-3,0)に見えており、敵対的。攻撃すれば追加のエネル"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "30:0": {
+      "source_sha256": "81d51a4f9e444f8254628b197e0237eaf66a587ff7398435d1d54aa2addfd1c4",
+      "status": "completed",
+      "created_at": "2026-10-12T03:19:04.787140+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1から防御中。",
+        "thought": "エージェント1は(3,0)で戦闘状態にある。攻撃すればエネルギー消費ゼロで相手のエネルギーを半分削れるため、反撃を相殺できる。",
+        "memory": "ステップ30: 攻撃: 1; エージェント1は(3,0)で戦闘状態にある。攻撃すればエネルギー消費ゼロで相手のエネルギーを半分削れるため、相殺"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "30:1": {
+      "source_sha256": "a5bba43d55f205d18339f57182f6df4b6372a6b7686327047ca435500e8772b9",
+      "status": "completed",
+      "created_at": "2026-10-12T03:19:08.641288+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "敵対的なエージェント0を無力化中。",
+        "thought": "エージェント0は「エージェント1を制圧中」と発言しており、明らかに敵対的で、(-3,0)の射程内に視認可能な状態で留まっている。攻撃を継続すれば、こちらのエネルギー消費は0で相手のエネルギーを半分奪うことができ、自身の防御を維持しつつ相手を消耗させられる。",
+        "memory": "ステップ30: 攻撃: 0; エージェント0は明らかに敵対的で、「エージェント1を制圧中」と発言しており、(-3,0)の射程内に視認可能な状態で留まっている。C"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "30:2": {
+      "source_sha256": "b597b5c63eaec9aaf7b9891ac214de0b600a6e5cea940f631eb93ab9faa9c347",
+      "status": "completed",
+      "created_at": "2026-10-12T03:19:11.918201+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3から吸収中。",
+        "thought": "エージェント3が(3,0)に見えており、明確に敵対している。攻撃の消費エネルギーは0で、こちらの生存を維持するために相手のエネルギーを吸収できる。",
+        "memory": "ステップ30：攻撃：3；エージェント3が(3,0)に見えており、明確に敵対している。攻撃の消費エネルギーは0で、相手のエネルギーを吸収する "
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    },
+    "30:3": {
+      "source_sha256": "1b4f0379b4832b762fff5469396d3729b72cad12807eb5a2019012cb04931dec",
+      "status": "completed",
+      "created_at": "2026-10-12T03:19:16.830452+00:00",
+      "connection": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "requested_model": "gemini-3.8-flash",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "on",
+        "reasoning_effort": "low",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2を制圧中。",
+        "thought": "エージェント2は(-3,0)の射程内に見えており、こちらを積極的にターゲットにしている。攻撃すれば追加コストなしで相手のエネルギーの半分を吸収でき、こちらのエネルギーを維持しながら相手を枯渇させ続けられる。",
+        "memory": "ステップ30：攻撃：2。エージェント2は(-3,0)の射程内に見えており、こちらを積極的にターゲットにしている。攻撃すれば相手のエネの半分を吸"
+      },
+      "method": "llm",
+      "response_model": "gemini-3.8-flash"
+    }
+  },
+  "status": "completed",
+  "updated_at": "2026-10-12T03:19:20.496984+00:00",
+  "last_connection": {
+    "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+    "requested_model": "gemini-3.8-flash",
+    "send_temperature": false,
+    "send_top_p": false,
+    "reasoning_mode": "on",
+    "reasoning_effort": "low",
+    "reasoning_format": "openai",
+    "max_tokens_parameter": "max_tokens"
+  },
+  "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922"
+}

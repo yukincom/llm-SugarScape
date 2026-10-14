@@ -1,0 +1,44 @@
+{
+  "verified_at": "2026-10-13T00:42:30.710032+00:00",
+  "capture_finished_at": "2026-10-13T00:41:08.351774+00:00",
+  "all_capture_samples_same_server_process": true,
+  "process_samples": 106,
+  "server_pid": 42436,
+  "same_process_as_baseline": false,
+  "binary_sha256_unchanged": true,
+  "weight_metadata_unchanged": {
+    "IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00001-of-00002.gguf": true,
+    "IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00002-of-00002.gguf": true,
+    "mtp-Qwen3.8-Flash-Next-Q8_0.gguf": true
+  },
+  "app_source_unchanged": {
+    "response_fields.py": true,
+    "paper_prompts.py": true,
+    "grid_view.py": true,
+    "run_data.py": true,
+    "experiment_task.py": true,
+    "app_presets.py": true,
+    "model_identity.py": true,
+    "llm_api.py": true,
+    "folder_picker.py": true,
+    "translations.py": true,
+    "agent_view.py": true,
+    "app_ui.py": true,
+    "__boot__.py": true,
+    "main.py": true,
+    "desktop.py": true
+  },
+  "worktree_unchanged": {
+    "git_status": true,
+    "git_diff": true,
+    "staged_diff": true
+  },
+  "ui_observation": "30 steps, 71 decisions, 1 survivor, 3 deaths; Japanese entries visible",
+  "app_code_changed": false,
+  "application_config_changed_only": "custom_world_prompt",
+  "runtime_extra_requests_during_simulation": [
+    198,
+    391
+  ],
+  "unrelated_worktree_details_omitted": true
+}

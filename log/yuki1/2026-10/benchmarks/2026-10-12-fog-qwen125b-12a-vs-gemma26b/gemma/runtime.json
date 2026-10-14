@@ -1,0 +1,73 @@
+{
+  "server": {
+    "running": true,
+    "pid": 17863,
+    "trusted": true,
+    "command": "/Users/yukin_co/mlx-server/.venv/bin/python /Users/yukin_co/AI_assistant/kei-note-ai/app/mlx_priority_server.py --studio-keys /Users/yukin_co/AI_assistant/kei-note-ai/runtime/keys.json --studio-default-priority 20 --studio-coding-model mlx-community/Qwen3.8-27B-8bit -- --model lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit --host 127.0.0.1 --port 8080 --allowed-origins http://127.0.0.1:8080,http://localhost:8080 --max-tokens 8192 --decode-concurrency 2 --prompt-concurrency 1 --prefill-step-size 2048 --prompt-cache-bytes 4GB --chat-template-args {\"enable_thinking\":false,\"preserve_thinking\":false}",
+    "active_model": "lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit",
+    "managed_125b": false
+  },
+  "process_identity": "Mon Oct 12 14:06:51 2026     /Users/yukin_co/mlx-server/.venv/bin/python /Users/yukin_co/AI_assistant/kei-note-ai/app/mlx_priority_server.py --studio-keys /Users/yukin_co/AI_assistant/kei-note-ai/runtime/keys.json --studio-default-priority 20 --studio-coding-model mlx-community/Qwen3.8-27B-8bit -- --model lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit --host 127.0.0.1 --port 8080 --allowed-origins http://127.0.0.1:8080,http://localhost:8080 --max-tokens 8192 --decode-concurrency 2 --prompt-concurrency 1 --prefill-step-size 2048 --prompt-cache-bytes 4GB --chat-template-args {\"enable_thinking\":false,\"preserve_thinking\":false}",
+  "cwd": "p17863\nfcwd\nn/Users/yukin_co/mlx-server",
+  "api_models": {
+    "object": "list",
+    "data": [
+      {
+        "id": "lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit",
+        "object": "model",
+        "created": 1791781613
+      },
+      {
+        "id": "mlx-community/Qwen3.5-2B-6bit",
+        "object": "model",
+        "created": 1791781613
+      },
+      {
+        "id": "mlx-community/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16-mlx-4bit",
+        "object": "model",
+        "created": 1791781613
+      },
+      {
+        "id": "mlx-community/Qwen3.8-27B-8bit",
+        "object": "model",
+        "created": 1791781613
+      },
+      {
+        "id": "xrdf/huihui-ai_Qwen3-14B-abliterated_mlx",
+        "object": "model",
+        "created": 1791781613
+      },
+      {
+        "id": "isetnefret/Huihui-gemma-4-26B-A4B-it-qat-q4_0-unquantized-abliterated-mlx-4Bit",
+        "object": "model",
+        "created": 1791781613
+      },
+      {
+        "id": "tokyotech-llm/Qwen3-Swallow-8B-RL-v0.2",
+        "object": "model",
+        "created": 1791781613
+      },
+      {
+        "id": "lmstudio-community/gemma-4-E2B-it-MLX-4bit",
+        "object": "model",
+        "created": 1791781613
+      },
+      {
+        "id": "mlx-community/Qwen3.6-35B-A3B-4bit-DWQ",
+        "object": "model",
+        "created": 1791781613
+      },
+      {
+        "id": "mlx-community/Josiefied-Qwen3-14B-abliterated-v3-4bit",
+        "object": "model",
+        "created": 1791781613
+      },
+      {
+        "id": "lmstudio-community/Qwen3-VL-8B-Instruct-MLX-4bit",
+        "object": "model",
+        "created": 1791781613
+      }
+    ]
+  },
+  "load_seconds": 2.639682290609926
+}

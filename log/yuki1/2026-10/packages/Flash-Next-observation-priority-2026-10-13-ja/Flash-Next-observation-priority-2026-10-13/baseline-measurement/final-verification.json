@@ -1,0 +1,71 @@
+{
+  "checked_at": "2026-10-13T00:00:18.289326+00:00",
+  "hardware": [
+    "Apple M4 Max",
+    "68719476736",
+    "16"
+  ],
+  "os": "ProductName:\t\tmacOS\nProductVersion:\t\t26.6.1\nBuildVersion:\t\t25G76\n",
+  "server_process": "Tue Oct 13 02:39:32 2026     /Users/USER/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local/runtime/llama.cpp/build-12a/bin/llama-server -m /Users/USER/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local/models/target/IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00001-of-00002.gguf -md /Users/USER/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local/models/mtp/mtp-Qwen3.8-Flash-Next-Q8_0.gguf --spec-type draft-mtp --spec-draft-n-max 7 --reasoning off -ngl 99 -c 16384 -np 1 --host 127.0.0.1 --port 8080 --alias default_model",
+  "binary_sha256": "109983187ba2f14b60da7d28028d85b8d402bb70771bfdb29aa9a45f495a5f87",
+  "git_head": "169b2b2f5617d24e6585db03db3011d0c3fcf97e",
+  "same_server_process": true,
+  "same_binary": true,
+  "same_git_head": true,
+  "source_matches": {
+    "response_fields.py": true,
+    "paper_prompts.py": true,
+    "grid_view.py": true,
+    "run_data.py": true,
+    "experiment_task.py": true,
+    "app_presets.py": true,
+    "model_identity.py": true,
+    "llm_api.py": true,
+    "folder_picker.py": true,
+    "translations.py": true,
+    "agent_view.py": true,
+    "app_ui.py": true,
+    "main.py": true,
+    "desktop.py": true
+  },
+  "run_copy_matches": {
+    "translations.ja.json": true,
+    "steps.jsonl": true,
+    ".translations.ja.lock": true,
+    "agents.csv": true,
+    "manifest.json": true,
+    "events.csv": true,
+    "run.json": true,
+    "steps.csv": true
+  },
+  "log_sources": {
+    "runtime": {
+      "path": "/Users/USER/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local/logs/llama-server.log",
+      "offset": 428492,
+      "inode": 55726091
+    },
+    "desktop": {
+      "path": "/Users/USER/Library/Application Support/LLM SugarScape/logs/window-20261013-023913-8fe1ec42.log",
+      "offset": 66,
+      "inode": 56571639
+    }
+  },
+  "weight_metadata_after": [
+    {
+      "file": "IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00001-of-00002.gguf",
+      "size_matches": true,
+      "mtime_matches": true
+    },
+    {
+      "file": "IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00002-of-00002.gguf",
+      "size_matches": true,
+      "mtime_matches": true
+    },
+    {
+      "file": "mtp-Qwen3.8-Flash-Next-Q8_0.gguf",
+      "size_matches": true,
+      "mtime_matches": true
+    }
+  ],
+  "unrelated_worktree_details_omitted": true
+}

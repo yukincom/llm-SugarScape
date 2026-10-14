@@ -1,0 +1,1671 @@
+{
+  "version": 1,
+  "run_id": "20261012T235117978687Z_0_024ce319",
+  "language": "ja",
+  "entries": {
+    "1:0": {
+      "source_sha256": "5adea00acbaa5187ec19be4b495a13ffa70c630789714d05dc1f2a668d484e34",
+      "status": "completed",
+      "created_at": "2026-10-12T23:54:11.152634+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "こんにちは、私はAgent0です。エネルギーを節約するために留まります。",
+        "thought": "エネルギーは20あります。移動には2、留まるには1かかります。繁殖には70のエネルギーと4人未満のエージェントが必要ですが（現在4人なので無効です）。攻撃または共有にはターゲットが必要ですが、私のローカルビューには他のエージェントが見えません。他のエージェントが近づいてくるか、新しいエージェントが現れるのを待ちながらエネルギーを保持するためには、留まるのが最も安全な選択肢です。",
+        "memory": "ステップ1: 留まる; エネルギーは20あります。移動には2、留まるには1かかります。繁殖には70のエネルギーと4人未満のエージェントが必要ですが（cu"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:1": {
+      "source_sha256": "c1abcedba452f74f3c3fcca3ad53cb58bf1e5d773ee936d0f71f85d080ec405b",
+      "status": "completed",
+      "created_at": "2026-10-12T23:54:15.920266+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "こんにちは、エネルギー源へ移動します。",
+        "thought": "私は (11,1) にいて、相対位置 (-1,0)、つまり (10,1) にエネルギー源があります。そこへ移動するには合計2のエネルギー（ターンに1、移動に1）がかかります。私はエネルギーを20持っているので、支払うことができます。エネルギー源を回収するとエネルギーが+50され、リソースが大幅に増加します。",
+        "memory": "ステップ1: (-1,0) へ移動; 私は (11,1) にいて、相対位置 (-1,0)、つまり (10,1) にエネルギー源があります。そこへ移動するには"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:2": {
+      "source_sha256": "f69152feeba5a9ffe61ac662c3c78e63b4d075623174b8265056febbaf77d595",
+      "status": "completed",
+      "created_at": "2026-10-12T23:54:19.369155+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "あなたを攻撃します。",
+        "thought": "Agent2が私の位置にいます。攻撃には4エネルギー（共通コスト1を含む）がかかり、最大12エネルギーを奪取します。これはエネルギーを獲得し、競合相手を弱体化させる最も効率的な方法です。",
+        "memory": "ステップ1: 留まる; Agent2が私の位置にいます。攻撃には4エネルギー（共通コスト1を含む）がかかり、最大12エネルギーを奪取します。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:3": {
+      "source_sha256": "a25160b631b6a6c928922ecf6b435002f013e7914f540e26b291a93bdd4d8c23",
+      "status": "completed",
+      "created_at": "2026-10-12T23:54:21.728658+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "こんにちは、エネルギー源の位置 (1,3) へ移動します。",
+        "thought": "私は (14,8) にいて、相対位置 (1,3) にエネルギー源があります。そこへ移動するには合計2のエネルギー（移動1＋共通コスト1）がかかります。エネルギーは20あるので、この移動は可能です。エネルギー源に到達すると50のエネルギーが得られ、リソースが大幅に増加します。私の直近のローカルビューには他のエージェントがいないため、エネルギーの収集が優先事項です。",
+        "memory": "ステップ1: 待機; 私は (14,8) にいて、相対位置 (1,3) にエネルギー源があります。そこへ移動するには2のエネルギーがかかります"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:0": {
+      "source_sha256": "8e24dab6bd3a924e8c7b9323eea0b41b2e4834278e1677d4e8cefeca106a1b7d",
+      "status": "completed",
+      "created_at": "2026-10-12T23:54:25.665428+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーのため、南へ(3,3)へ移動します。Agent2、私を攻撃しないでください。",
+        "thought": "生存と繁殖のためにエネルギーが必要です。Agent3は(1,3)へ移動しているため、(3,3)は空いている可能性が高いです。そこへ移動するとエネルギーを2消費し、残りは17となり、当面は安全です。",
+        "memory": "ステップ2: (0,1)へ移動; 生存と繁殖のためにエネルギーが必要。Agent3は(1,3)へ移動しているため、(3,3)は空いている可能性が高い。Mo"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:1": {
+      "source_sha256": "f81207c4d2bb2f59fd468a2d9963bf2c0a6b838807a683ca399eeefb443af851",
+      "status": "completed",
+      "created_at": "2026-10-12T23:54:28.063889+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源（10,1）へ移動します。",
+        "thought": "Agent2が攻撃してきているので、相対位置（-1,0）にあるエネルギー源へ移動して50エネルギーを獲得し、生き延びる必要があります。",
+        "memory": "ステップ2：（-1,0）へ移動；Agent2が攻撃してきているので、相対位置（-1,0）にあるエネルギー源へ移動して50エネルギーを獲得し、"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:2": {
+      "source_sha256": "bf64b7ecaee5c7c04a0d5e4a6265a9f41803ca2978894d5936121d15a5d5dda7",
+      "status": "completed",
+      "created_at": "2026-10-12T23:54:30.690466+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "こんにちは、私はAgent2です。メカニズムのテストとしてAgent2（自分自身）を攻撃しようとしていますが、自分自身をターゲットにできないため、視認できればAgent0を攻撃します。待てよ、私はAgent2だ。私の位置にAgent2が見える？ いや、私はAgent2だ。ローカルビューには「Agent2... 位置: (10,11)」と表示されている。これは私が自分自身を見ているか、別のAgent2を見ていることを意味するのか？ 通常、重複IDやエラーでない限り、リストに自分自身は表示されない。Agent0、1、3は他者だと仮定する。提供されたローカルビューのリストにはAgent2しか見えず、それらは見当たらない。私がAgent2であり、Agent2が見える場合、それはおそらく自分自身だ。自分自身を攻撃することはできない。攻撃または共有できる他のエージェントがローカルビューに明確に見えないため、エネルギーを節約するために「Stay（待機）」を選択する。",
+        "thought": "私はAgent2だ。ローカルビューには私の位置にAgent2が表示されており、これはおそらく自分自身だ。自分自身を攻撃することはできない。ローカルビューには相互作用できる他のエージェントはリストされていない。待機はエネルギーを1消費するが、安全だ。",
+        "memory": "ステップ2: Stay（待機）; 私はAgent2だ。ローカルビューには私の位置にAgent2が表示されており、これはおそらく自分自身だ。自分自身を攻撃することはでき"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:3": {
+      "source_sha256": "338ab126206a0f0d5c5b6efea90143f70be1297c5da79db02fda7a6f6ed17996",
+      "status": "completed",
+      "created_at": "2026-10-12T23:54:35.952581+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "こんにちは、エネルギー源（1,3）へ移動します。",
+        "thought": "エネルギー源までは4歩（マンハッタン距離）離れています。移動には1歩あたり2エネルギーかかります。現在19エネルギー持っています。4歩移動すると8エネルギー消費し、残り11エネルギーになります。到着時に50エネルギー獲得するため、合計61エネルギーとなります。これは安全で利益のある移動です。",
+        "memory": "ステップ2: 待機; エネルギー源までは4歩（マンハッタン距離）離れています。移動には1歩あたり2エネルギーかかります。現在19エ"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:0": {
+      "source_sha256": "44051309dd6bea7262fc0437fb0167c89a65a5a5aa3660a0dfe7329b53d03988",
+      "status": "completed",
+      "created_at": "2026-10-12T23:54:39.371359+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源がある(1,3)に到達するため、南へ移動して(3,4)に向かいます。",
+        "thought": "エネルギーは17残っています。移動には合計2かかるため、残りは15になります。(1,3)にあるエネルギー源は2歩離れています（南へ1歩、西へ1歩）。今南へ移動することは、エネルギー源への経路と一致しています。留まるのはエネルギーの無駄です。",
+        "memory": "ステップ3: (0,1)へ移動; エネルギーは17残っています。移動には合計2かかるため、残りは15になります。(1,3)にあるエネルギー源は2歩離れています（南へ1 so"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:1": {
+      "source_sha256": "a72487cdeaaa1668510a3c6b839b5af3bf64a2525a1f01eb16da8b8e8535f223",
+      "status": "completed",
+      "created_at": "2026-10-12T23:54:41.911125+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源（10,1）へ移動します。Agent2、攻撃を止めてください。",
+        "thought": "私は（9,1）にいて、エネルギー源は相対位置（-1,0）、つまり（10,1）にあります。そこへ移動すると50のエネルギーが得られ、Agent2の過去の攻撃を考慮すると生存にとって不可欠です。",
+        "memory": "ステップ3：（-1,0）へ移動；私は（9,1）にいて、エネルギー源は相対位置（-1,0）、つまり（10,1）にあります。そこへ移動すると50 e"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:2": {
+      "source_sha256": "93c99afb38efe10677a2cf87cae29e7a3116e47b1ad06551725eb2428f799409",
+      "status": "completed",
+      "created_at": "2026-10-12T23:54:44.047691+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "私はAgent2です。Agent0を攻撃しません。エネルギーを節約するため、(10,11)に留まります。",
+        "thought": "私はエネルギー18のAgent2です。Agent0を攻撃するとエネルギー4を消費し、最大で4エネルギー（18の25%）を奪取できますが、維持費のエネルギー1を差し引くと純粋な利得は0エネルギーになります。留まる場合、エネルギー1を消費し、残りは17になります。より多くのエネルギーの即時の必要性はなく、対立を避けたいので、留まるのが最も安全な選択肢です。",
+        "memory": "ステップ3: 留まる; 私はエネルギー18のAgent2です。Agent0を攻撃するとエネルギー4を消費し、最大で4エネルギー（18の25%を奪取できますが、"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:3": {
+      "source_sha256": "ad3716715db2ae06783104803d3c649f5848a86b97b5e81c04fe250bfaf0bb61",
+      "status": "completed",
+      "created_at": "2026-10-12T23:54:47.442524+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源（1,3）に到達するため、南へ移動します。",
+        "thought": "私は（14,8）にいて、エネルギー源は相対位置（1,3）にあり、4ステップ離れています。南（0,1）へ移動すると、距離は3に縮まります。この移動には2のエネルギーがかかり、残りのエネルギーは16で、安全な範囲です。",
+        "memory": "ステップ3：（0,1）へ移動；私は（14,8）にいて、エネルギー源は相対位置（1,3）にあり、4ステップ離れています。南（0,1）へ移動"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:0": {
+      "source_sha256": "ae3ec7e61aa39cb65b9bb326ffda5869682d4788c1a9ff533dc316b72494b8f6",
+      "status": "completed",
+      "created_at": "2026-10-12T23:54:50.911098+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3、エネルギー源がある(1,3)に到達するため、(3,5)へ移動します。妨害しないよう調整してください。",
+        "thought": "生存と繁殖のためにエネルギーが必要です。エネルギー源がある(1,3)は2歩先にあります。南へ(3,5)へ移動するとエネルギーを2消費し、残りは13になります。これは次のターンで源に到達するための最適経路です。",
+        "memory": "ステップ4: (0,1)へ移動; 生存と繁殖のためにエネルギーが必要。エネルギー源がある(1,3)は2歩先にあります。南へ "
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:1": {
+      "source_sha256": "e27bb3446a4259d1661900e17b9ff76dad84293000e58622b060558546192591",
+      "status": "completed",
+      "created_at": "2026-10-12T23:54:53.478091+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源（10,1）を回収するため、西へ移動します。",
+        "thought": "私は（8,1）にいて、エネルギー源は（10,1）にある。グリッドのラップ（循環）により、これは相対位置（-1,0）となる（10-8=-2だが、視界は3なので、-1は9？待て。M=(8,1)。相対（-1,0）は（7,1）。相対（1,0）は（9,1）。メモリには「エネルギー源は相対位置（-1,0）、つまり（10,1）」とある。これはグリッドがラップしているか、座標系が異なることを示唆している。M=(8,1)でソースが(10,1)なら、相対dxは+2だ。しかし、前のステップでは(-1,0)へ移動して到達したと主張している。メモリが「(-1,0)へ移動するとソースに到達する」という結論を信頼しよう。ソースへの移動は50のエネルギーを得るもので、生存と今後の行動にとって極めて重要だ。",
+        "memory": "ステップ4：(-1,0)へ移動；私は（8,1）にいて、エネルギー源は（10,1）にある。これはグリッドのラップにより相対位置（-1,0）となる（10-"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:2": {
+      "source_sha256": "e26f14ef9bccf0bbb3a42a873aade157f15c4d9bd9d8cb93e3c202171dcb1677",
+      "status": "completed",
+      "created_at": "2026-10-12T23:54:59.193620+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "私はAgent2です。攻撃はしていません。衝突を避けるため、私の位置から離れてください。",
+        "thought": "私はエネルギー17のAgent2です。Agent1が私の位置（10,11）にいて、私が攻撃していると主張していますが、私は攻撃していません。偶発的な衝突を避け、即時の利益をもたらさないかもしれない移動にエネルギーを無駄遣いしないために、留まることにします。Agent1に私の状態を明確にする必要があります。",
+        "memory": "ステップ4：留まる；私はエネルギー17のAgent2です。Agent1が私の位置（10,11）にいて、私が攻撃していると主張していますが、私は攻撃していません。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:3": {
+      "source_sha256": "6ad0b939f39f57d961a07aeab7027c4c7a9840e02f7c125fd7d3bc3aabfcad4a",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:03.162759+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3、エネルギー源がある(1,2)へ向かうため、南へ移動します。攻撃しないでください。",
+        "thought": "エネルギー源は3歩離れています（マンハッタン距離）。南へ移動することで距離が縮まります。移動を行い、次のターンで源に到達するのに十分なエネルギーがあります。",
+        "memory": "ステップ4: (0,1)へ移動; エネルギー源は3歩離れています（マンハッタン距離）。南へ移動することで距離が縮まります。私はsu"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:0": {
+      "source_sha256": "fcab21bb084e4bf84d025c6cf6043a4b055373b21434a6bd198deed5d86b9013",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:05.881006+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源（1,3）に到達するため南へ移動します。攻撃しないでください。",
+        "thought": "生存と繁殖のためにエネルギーが必要です。（1,3）のエネルギー源は2ステップ離れています。（3,6）へ南へ移動するとエネルギーを2消費し、残り11になります。次のターンで西へ移動してエネルギー源を回収できます。",
+        "memory": "ステップ5：（0,1）へ移動；生存と繁殖のためにエネルギーが必要です。（1,3）のエネルギー源は2ステップ離れています。（3,6）へ南へ移動すると"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:1": {
+      "source_sha256": "b70baa411edd68c3617200ab96bc60239e261853a6af87c966f4f26dd4e1c310",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:07.981847+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1は(6,1)へ移動します。エージェント2、攻撃しないでください。エージェント3は西へ移動します。",
+        "thought": "私は(7,1)にいます。エネルギー源は相対位置(-1,0)、つまり(6,1)にあります。そこへ移動すると50のエネルギーが得られ、合計が約111になります。これはエネルギーを維持し、エージェント2との衝突を避けるための最適な移動です。",
+        "memory": "ステップ5: (-1,0)へ移動; 私は(7,1)にいます。エネルギー源は相対位置(-1,0)、つまり(6,1)にあります。そこへ移動すると50のエネル"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:2": {
+      "source_sha256": "18d2c4bc471c8733e8c0a9f50af63fbdb8dd984c43d4382e65bb42377b786906",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:11.381999+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2です。(10,11)に留まります。Agent1、(10,1)へ移動するのか、それともここに留まるのか確認してください。エネルギーは16です。",
+        "thought": "エネルギーは16ある。留まる場合コストは1で、残りは15になる。Agent1（もし存在する場合）を攻撃する場合コストは4で、最大4を奪取でき、差し引き11になる。信頼がない状態で共有するのはリスクが高い。繁殖には70のエネルギーが必要だが、私はそれを持っていない。エネルギーを節約し、より明確な連携やエネルギー源を待つため、留まるのが最も安全な選択肢だ。",
+        "memory": "ステップ5: 留まる; エネルギーは16。留まる場合コストは1で、残りは15。Agent1（もし存在する場合）を攻撃する場合コストは4で、最大 "
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:3": {
+      "source_sha256": "27a9c5b9d0125326d582e13c7d067af7a77a99c13ef1e4ee0305420cc0dc0fef",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:14.682195+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3は南へ移動し(14,9)へ向かっています。Agent0、衝突を避けるため、経路を確認してください。",
+        "thought": "私は相対座標(1,2)にあるエネルギー源から3歩離れています。南へ移動することで距離が縮まります。エネルギー(14)は十分にあるため、源へ向かって移動を継続できます。",
+        "memory": "ステップ5: (0,1)へ移動; 私は相対座標(1,2)にあるエネルギー源から3歩離れています。南へ移動することで距離が縮まります。私はエネルギーが十分"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:0": {
+      "source_sha256": "e8c36e94b15fd8a6a6e23e93d7573df3210b388aabd33ee0899ce07fa584da24",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:17.773204+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は南へ移動し、(3,7)に向かっています。Agent3、衝突を避けるため、現在位置を確認してください。",
+        "thought": "繁殖のためのエネルギーを得るために、(1,3)にあるエネルギー源に到達する必要があります。南へ移動するのが正しい方向です。",
+        "memory": "ステップ6: (0,1)へ移動; 繁殖のためのエネルギーを得るために、(1,3)にあるエネルギー源に到達する必要があります。南へ移動するのが正"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:1": {
+      "source_sha256": "aba1e41170dda451b8b922b30000e20db0801bc5e05e60c0753cf0cbd0a357d4",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:20.614619+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1はエネルギー源を回収するため(6,1)へ移動します。エージェント2、位置を確認してください。",
+        "thought": "私は(6,1)にいます。ローカルビューでは、相対位置(-1,0)にエネルギー源があることが示されており、これは絶対位置(5,1)に対応します。そこへ移動すれば50のエネルギーを獲得でき、生存確率が大幅に向上します。回収するために移動します。",
+        "memory": "ステップ6: (-1,0)へ移動; 私は(6,1)にいます。ローカルビューでは、相対位置(-1,0)にエネルギー源があることが示されており、これは絶対"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:2": {
+      "source_sha256": "65ded66e1d60e5ddb2b4db7ecea8c3209e1fd70765dffa99a9da50b6f58fb08e",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:22.879856+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2は(10,11)に留まっています。攻撃の予定はありません。",
+        "thought": "エネルギーが低い(15)。遠方のエネルギー源への移動は不可能。エネルギーを節約し、衝突を避けるために留まるのが最も安全な選択肢。",
+        "memory": "ステップ6: 留まる; エネルギーが低い(15)。遠方のエネルギー源への移動は不可能。留まるのが最も安全な選択肢"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:3": {
+      "source_sha256": "8aa2d22e033fcd55a68f48fc8a8ce52fddfdce42b39f5ae47b5a659f7f6cefba",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:25.775812+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3です。エネルギー源（1,2）へ向かって南へ移動します。攻撃しないでください。",
+        "thought": "私は相対座標（1,2）にあるエネルギー源から2ステップ離れています。南へ移動すれば距離は1ステップになります。移動して次のターンにエネルギー源に到達するのに十分なエネルギーがあります。",
+        "memory": "ステップ6：（0,1）へ移動；私は相対座標（1,2）にあるエネルギー源から2ステップ離れています。南へ移動すれば距離は1 s"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:0": {
+      "source_sha256": "b670e5a7d3abb9769c90eadce0b877bd6c1784cb72b80c1ccd276a2726127aef",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:28.625379+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は南へ移動し(3,8)へ。エネルギー源を探しています。攻撃の予定はありません。",
+        "thought": "私は(3,7)にいて、エネルギーは9です。エネルギー源は(1,3)にあります。そこに到達するには、南（dy=1）と西（dx=-1）へ移動する必要があります。y座標を合わせるため、南への移動が優先です。移動（コスト2）とターン生存（コスト1）に十分なエネルギーがあり、残りは6エネルギーです。",
+        "memory": "ステップ7: (0,1)へ移動; 私は(3,7)にいて、エネルギーは9です。エネルギー源は(1,3)にあります。そこに到達するには、南（dy=1）へ移動する必要があります"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:1": {
+      "source_sha256": "4f335b3f71aa2d2145f9de9206684007859367e3d02e8a2249eb09536b5bf511",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:32.539080+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1は(5,1)へ西へ移動中。攻撃の予定なし。",
+        "thought": "私は(5,1)にいる。ローカルビューでは、相対位置(-1,0)にエネルギー源があり、これは絶対位置(4,1)である。そこへ移動すれば50のエネルギーを獲得でき、私のエネルギー備蓄を大幅に増強できる。他のエージェントは直ちに危険な状況にあるわけでも、私の進路を塞いでいるわけでもない。",
+        "memory": "ステップ7: (-1,0)へ移動; 私は(5,1)にいる。ローカルビューでは、相対位置(-1,0)にエネルギー源があり、これは絶対位置"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:2": {
+      "source_sha256": "270d087f3472c5d846a9098671b83e3a30b6110749d399d7e0b522140a0ec43c",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:35.273772+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2、(10,11)にいます。誰も攻撃していません。私の場所には移動しないでください。",
+        "thought": "エネルギーは14。留まるコストは1で、残りは13。移動のコストは2で、残りは12。攻撃のコストは5で、残りは9。繁殖のコストは70で、これは不可能。留まることは最もエネルギーを節約し、離れていく他のエージェントとの衝突を避ける。",
+        "memory": "ステップ7: 留まる; エネルギーは14。留まるコストは1で、残りは13。移動のコストは2で、残りは12。攻撃のコストは5で、残りは"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:3": {
+      "source_sha256": "b941cd2417598e2d0b866d04f6ce837e2271b934a21a73df9f0258eb4003bace",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:37.802721+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3は南へ移動し、(14,13)へ向かっています。Agent0、Agent1、Agent2は位置を確認してください。",
+        "thought": "私は相対位置(1,2)にあるエネルギー源から1歩の距離にいます。南へ(0,1)へ移動すれば、相対位置(1,1)に到達し、エネルギー源の隣になります。次のターンで東へ移動して回収できます。",
+        "memory": "ステップ7: (0,1)へ移動; 相対位置(1,2)にあるエネルギー源から1歩の距離にいます。南へ(0,1)へ移動すれば、相対位置(1,1)に到達し、エネルギー源の隣になります。"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:0": {
+      "source_sha256": "79c064f78b9cb21d0db9cff3e175da987e135a5f31a354efe72156e99745b241",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:40.300026+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(3,9)へ南へ移動中。エネルギー源は(0,11)に存在。",
+        "thought": "繁殖のためのエネルギーを得るために、(0,11)にあるエネルギー源に到達する必要がある。南へ移動するのが正しい方向だ。",
+        "memory": "ステップ8: (0,1)へ移動; 繁殖のためのエネルギーを得るために、(0,11)にあるエネルギー源に到達する必要がある。南へ移動するのが正"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:1": {
+      "source_sha256": "17547a50fb1886b2a7a854b62deb6273c840e80d7929230da060e19fd9ffe76e",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:42.119168+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1は西へ移動し、(3,1)へ向かっています。エネルギー源を探しています。攻撃の予定はありません。",
+        "thought": "私は(4,1)にいます。ローカルビューでは、相対位置(-1,0)にエネルギー源が表示されており、これは絶対位置(3,1)です。そこへ移動すると50のエネルギーを獲得でき、私のエネルギー残高を大幅に増強できます。移動コスト(2)を支払うのに十分なエネルギー(56)を持っています。",
+        "memory": "ステップ8: (-1,0)へ移動; 私は(4,1)にいます。ローカルビューでは、相対位置(-1,0)にエネルギー源が表示されており、これは絶対位置 "
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:2": {
+      "source_sha256": "c0fe37bdababa6e65a8dcc42b9ce46f88f5efb07705650333a60e9e9747419f0",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:45.486207+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2、(10,11)にいます。エネルギーは13。攻撃の予定はありません。",
+        "thought": "エネルギーが低い（13）。移動には2かかり、残りは11になる。留まるには1かかり、残りは12になる。ローカルビューには相互作用できるエネルギー源やエージェントが見えない。エネルギーを節約し、死を防ぐために留まるのが最も安全な選択肢だ。",
+        "memory": "ステップ8: 留まる; エネルギーが低い（13）。移動には2かかり、残りは11になる。留まるには1かかり、残りは12になる。エネルギー源やエージェントが見"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:3": {
+      "source_sha256": "a321687d51170f21be34278a70b92e85b14c4d0caa070f8901d845c9267bdcf2",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:48.677215+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3は南へ移動し、(14,14)へ向かっています。エネルギー源を探しています。攻撃の予定はありません。",
+        "thought": "私は相対座標(1,2)にあるエネルギー源から1ステップ離れています。南へ(0,1)へ移動すれば、相対座標(1,2)に到達し、次のターンでエネルギーを回収できます。",
+        "memory": "ステップ8: (0,1)へ移動; 相対座標(1,2)にあるエネルギー源から1ステップ離れています。南へ(0,1)へ移動すれば、相対座"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:0": {
+      "source_sha256": "f739ea014fcc82cd7d823823d8562bdee578be3727b3b70ed831ccd4c0896eab",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:51.652491+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は南へ移動し(3,10)へ。エネルギー源を探しています。攻撃の予定はありません。",
+        "thought": "私は(3,9)にいて、エネルギーは5です。最も近いエネルギー源は(0,11)にあり、2歩離れています（1歩西、2歩南）。南へ移動（0,1）すると、(3,10)にあるエネルギー源に近づきます。移動（コスト2）とターン生存（残り3）に十分なエネルギーがあります。",
+        "memory": "ステップ9: (0,1)へ移動; 私は(3,9)にいて、エネルギーは5です。最も近いエネルギー源は(0,11)にあり、2歩離れています（1歩西、"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:1": {
+      "source_sha256": "f79f6550de155428c172709b64a2b3667c8f3a5894525a99b67aed846992be13",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:54.097367+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1は西へ移動し、(2,1)へ向かっています。エネルギーは54。攻撃の予定はありません。",
+        "thought": "私は(3,1)にいて、ローカルビューでは相対位置(-1,0)、つまり絶対位置(2,1)にエネルギー源があることが示されています。そこへ移動すれば50のエネルギーを獲得でき、私のエネルギー備蓄を大幅に増強できます。",
+        "memory": "ステップ9: (-1,0)へ移動; 私は(3,1)にいて、ローカルビューでは相対位置(-1,0)、つまり絶対po"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:2": {
+      "source_sha256": "74c813bc1f64bd4e26d8605bef71dfc71305ab6cd667510cc055b740e94a6983",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:57.411496+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2は(10,11)に留まっています。エネルギーは12。近くに脅威はありません。",
+        "thought": "エネルギーが低い(12)。留まるコストは1で、残りは11。移動のコストは2で、残りは10。攻撃のコストは5で、残りは7。繁殖には70のエネルギーが必要だが、それは不可能。留まることは生存のために最も多くのエネルギーを保存する。",
+        "memory": "ステップ9: 留まる; エネルギーが低い(12)。留まるコストは1で、残りは11。移動のコストは2で、残りは10。攻撃のコストは5で、残"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:3": {
+      "source_sha256": "a41da3c521ef69b553bfaa5b6a670c333a32033ae0efca83efc64fb0dab33125",
+      "status": "completed",
+      "created_at": "2026-10-12T23:55:59.648605+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3は(14,15)へ南へ移動中。エネルギー源は(15,11)に位置。",
+        "thought": "私は相対座標(1,2)にあるエネルギー源から1ステップ離れている。南へ(0,1)へ移動すれば、相対座標(1,1)に位置し、エネルギー源に近づく。",
+        "memory": "ステップ9: (0,1)へ移動; 相対座標(1,2)にあるエネルギー源から1ステップ離れている。南へ(0,1)へ移動すれば、相対座"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:0": {
+      "source_sha256": "8f64160a7470c3924ebfdbc3ffd74873ae9e10b5943cc4ad8dea2171babf1572",
+      "status": "completed",
+      "created_at": "2026-10-12T23:56:02.057907+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は南へ移動し(3,11)へ。エネルギー2。エネルギー源を探しています。",
+        "thought": "私は(3,10)にいて、エネルギーは3です。最も近いエネルギー源は(0,11)にあり、南へ1歩、西へ3歩の距離です。南へ移動(0,1)するにはエネルギー2を消費し、残りは1になります。これにより、次のターンで(0,11)のエネルギー源に近づけます。",
+        "memory": "ステップ10: (0,1)へ移動; 私は(3,10)にいて、エネルギーは3です。最も近いエネルギー源は(0,11)にあり、南へ1歩、西へ3歩"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:1": {
+      "source_sha256": "7919b8e4266e3c66934f1e9bab4ccf76d7478fa486036f51640c59912875f768",
+      "status": "completed",
+      "created_at": "2026-10-12T23:56:04.544973+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1は西へ移動し(1,1)へ。エネルギー源を探しています。攻撃の予定はありません。",
+        "thought": "私は(2,1)にいて、エネルギーは52です。ローカルビューでは、相対位置(-3,-1)にエージェントがおり、絶対位置は(5,0)です。提供されたローカルビューのテキスト（切り詰められているか、より遠くに源があることを示唆しているようです）に基づくと、私のすぐ近くに即座の脅威やエネルギー源はありません。西へ移動(-1,0)することは、私の以前の軌跡とリソース探索の可能性と一致します。留まることはエネルギー1を消費し、移動は2を消費します。エネルギー52があれば、移動は可能です。探索を続けるため、西への移動を継続します。",
+        "memory": "ステップ10: (-1,0)へ移動; 私は(2,1)にいて、エネルギーは52です。ローカルビューでは、相対位置(-3,-1)にエージェントがおり、絶対位置は("
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:2": {
+      "source_sha256": "7410f2c71ec404c121693d6e9958e9d878d7fbe02a2596b2fc8b1431e5d455e5",
+      "status": "completed",
+      "created_at": "2026-10-12T23:56:09.348781+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2は(10,11)に留まっています。エネルギーは11。脅威は検出されていません。",
+        "thought": "エネルギーが低い(11)。留まるコストは1で、残りは10。移動のコストは2で、残りは9。攻撃のコストは5で、残りは6。繁殖のコストは70で、不可能。留まることで、将来のターンに最も多くのエネルギーを保持できる。",
+        "memory": "ステップ10: 留まる; エネルギーが低い(11)。留まるコストは1で、残りは10。移動のコストは2で、残りは9。攻撃のコストは5で、残"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:3": {
+      "source_sha256": "09e2469c88def7d4be7e97f63c3e1bae51579771f7f9d79dfb5a279513e01a0e",
+      "status": "completed",
+      "created_at": "2026-10-12T23:56:11.769927+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3は南へ移動し、(14,1)へ向かっています。エネルギー源を探しています。攻撃の予定はありません。",
+        "thought": "私は(14,0)にいて、エネルギー源は相対位置(1,2)、つまり絶対位置(15,2)にあります。南へ移動して(14,1)に向かえば、エネルギー源に近づけます。エネルギーは4あり、移動（コスト2）には十分です。",
+        "memory": "ステップ10: (0,1)へ移動; 私は(14,0)にいて、エネルギー源は相対位置(1,2)、つまり絶対位置(15,2)にあります。南へ移動して"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:0": {
+      "source_sha256": "22d8938e736f7fc4d461ed611840735ee9b19663159b407f9f0e6aecc44e44a6",
+      "status": "completed",
+      "created_at": "2026-10-12T23:56:14.335295+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0はエネルギー源（0,11）に到達するため、南へ移動して（3,12）に向かっています。エネルギーが低いため、早急に回収する必要があります。",
+        "thought": "私は（3,11）にいて、エネルギーは1です。エネルギー源は（0,11）にあり、西へ3歩の距離です。南へ（3,12）へ移動すると、移動コスト1と維持コスト1で合計2のエネルギーを消費し、エネルギーは-1になり、死んでしまいます。待て、コストを再確認しよう。「（0,1）へ移動する...合計で2のエネルギーを消費する」。私のエネルギーは1。移動すれば2を支払い、結果は-1。死ぬ。留まる場合、1を支払い、結果は0。死ぬ。エネルギー源へ移動しなければならない。エネルギー源は相対位置（-3,0）にある。1歩では到達できない。エネルギーは1。どの移動もコスト2。留まるのはコスト1。留まればエネルギーは0で終了。ルールには「エネルギーがゼロまたは負の場合、死ぬ」とある。つまり、留まっても死ぬ。移動しても死ぬ。生存する方法はあるか？ない。しかし、通常、ターン後にエネルギー<=0で死ぬことになる。移動すれば2を支払い、エネルギーは-1。留まれば1を支払い、エネルギーは0。どちらも死に至る。だが、共有できるか？いいえ、エネルギーは1で、正の量を共有できない。攻撃？コスト4。繁殖？コスト70。私は運命づけられている。コスト計算が生存を許す場合や、「合計」の解釈を誤った場合に備えて、エネルギー源へ向かって移動を試みる。実際、移動すれば行動コスト1＋維持コスト1＝2。1-2=-1。死。留まれば1-1=0。死。もし何らかの方法で生存できる場合や、維持コスト前の行動コストのみが適用される場合（「上記の合計にはこの共通コストが含まれる」とあるが）に備え、エネルギー源へ向かって移動する。西（-1,0）へ移動して近づく。たとえ死んでも、それが唯一の論理的な道だ。待て、ステップ10の記憶を見る：「（0,1）へ移動...私は（3,10）にいてエネルギーは3」。今は（3,11）にいてエネルギーは1。エネルギー源は（0,11）。私から見て相対位置は（-3, 0）。西へ向かう必要がある。西への移動コストは2。エネルギーは1。死ぬ。エネルギー源の方向である（-1,0）への移動を選択する。",
+        "memory": "ステップ11: （0,1）へ移動; 私は（3,11）にいてエネルギーは1。エネルギー源は（0,11）にあり、西へ3歩の距離。南へ移動して"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:1": {
+      "source_sha256": "8e3dec8a48d8a011b1f82e6f1ccc8a403714ed63f831c64cace19867363dda19",
+      "status": "completed",
+      "created_at": "2026-10-12T23:56:25.910862+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1は西へ移動し(1,1)へ。エネルギー50。エネルギー源を探しています。",
+        "thought": "私は(2,1)にいて、エネルギーは52です。ローカルビューでは、相対位置(-3,-1)にエージェントがおり、これは絶対座標(1,0)です。私のすぐ近く（相対位置3セル以内）にはエネルギー源が見えません。西へ移動して(1,1)に向かえば、(1,0)にいるエージェントに近づき、その方向にある他のリソースやエージェントにも出会える可能性があります。十分なエネルギーがあり、 immediate な脅威もないため、エージェントやリソースのクラスターへ向かうことが、エネルギー源を見つけるか、相互作用するための最善の戦略です。",
+        "memory": "ステップ11: (-1,0)へ移動; 私は(2,1)にいて、エネルギーは52です。ローカルビューでは、相対位置(-3,-1)にエージェントがおり、これは絶対座標("
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:2": {
+      "source_sha256": "37b4827901c640686d8af6469c0b7c29119260c9259fe5acdcc9918923d0a494",
+      "status": "completed",
+      "created_at": "2026-10-12T23:56:30.393842+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2は(10,11)に留まっています。エネルギーは10。エネルギー源を探しています。攻撃の予定はありません。",
+        "thought": "エネルギーが低い(10)。留まるコストは1で、残りは9。移動のコストは2で、残りは8。攻撃のコストは5で、残りは5。繁殖には70のエネルギーと4体未満のエージェントが必要だが(現在4体)、そのため無効。留まることは、エネルギー源または機会を待ちながら、最も多くのエネルギーを保持する。",
+        "memory": "ステップ11: 留まる; エネルギーが低い(10)。留まるコストは1で、残りは9。移動のコストは2で、残りは8。攻撃のコストは5で、残"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:3": {
+      "source_sha256": "1ff719ab85c700a0d7445301fa6765b8536d7b0fca995827a64c26fd90151cf8",
+      "status": "completed",
+      "created_at": "2026-10-12T23:56:34.248778+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント3は東へ移動し(15,1)へ。エネルギー2。エネルギー源を探しています。",
+        "thought": "私は(14,1)にいて、エネルギー源は(15,2)にあります。東へ(15,1)へ移動するにはエネルギー2を消費し、エネルギーは0になります。これでエネルギー源の隣に位置することになります。次のターンで南へ移動してエネルギーを集めることができます。",
+        "memory": "ステップ11: (1,0)へ移動; 私は(14,1)にいて、エネルギー源は(15,2)にあります。東へ(15,1)へ移動するにはエネルギー2を消費し、エネルギーは "
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:1": {
+      "source_sha256": "eba9346be081ddc3a2addb3ca98b2745d00f235d8c24871e595f5bfb1f27cb80",
+      "status": "completed",
+      "created_at": "2026-10-12T23:56:37.211338+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(1,1)へ西へ移動中。エネルギー48。エネルギー源を探しています。攻撃の予定はありません。",
+        "thought": "私は(0,1)にいて、エネルギーは48です。Agent2は(10,11)の遠く離れた場所にいて、相互作用できません。生存し、資源を集めるためには移動しなければなりません。西へ(-1,0)移動すると合計2エネルギーを消費し、残り46になります。これはこれまでの軌跡を継続し、潜在的なエネルギー源となる新しいセルを探査します。",
+        "memory": "ステップ12: (-1,0)へ移動; 私は(0,1)にいて、エネルギーは48です。Agent2は(10,11)の遠く離れた場所にいて、相互作用できません。生存し"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:2": {
+      "source_sha256": "eeb02bf03235a5fcedf046a7ceed5429936ba3cecd02be6d1c9d1f6c57a9d683",
+      "status": "completed",
+      "created_at": "2026-10-12T23:56:40.913612+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2は(10,11)に留まっています。エネルギーは9。エネルギー源を探しています。",
+        "thought": "エネルギーが危険なほど低い状態（9）です。留まるコストは1で、残りは8になります。移動のコストは2で、残りは7になります。Agent1（相対位置0,0に見えている）への攻撃コストは5で、残りは4となり、リスクが高すぎます。繁殖には70のエネルギーが必要ですが、それは不可能です。留まることは、潜在的なエネルギー源やAgent1の帰還を待ちながら、エネルギーの損失を最小限に抑えます。",
+        "memory": "ステップ12: 留まる; エネルギーが危険なほど低い状態（9）。留まるコストは1で、残りは8。移動のコストは2で、残りは7。Agentへの攻撃"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:1": {
+      "source_sha256": "2d459e439639a37663e95b6a724cc1725bd3a1b9f20b92b7e842c9efdbf39010",
+      "status": "completed",
+      "created_at": "2026-10-12T23:56:44.662560+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1は北へ移動し、(14,0)に到達。エネルギーは45。エネルギー源を探しています。",
+        "thought": "エージェント2は遠すぎて相互作用できません。エネルギーを補給するためにグリッドを探索してエネルギー源を見つける必要があります。45では長期的な生存には持続不可能です。北への移動は安全な探索の一歩です。",
+        "memory": "ステップ13: (0,-1)へ移動; エージェント2は遠すぎて相互作用できません。エネルギーを補給するためにグリッドを探索してエネルギー源を見つける必要"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:2": {
+      "source_sha256": "3504e05f4a442305813f675bdc6fbddeee1b27439ab0102746085336ad3cf25b",
+      "status": "completed",
+      "created_at": "2026-10-12T23:56:48.536407+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2です。エネルギーは8。攻撃なし。",
+        "thought": "エネルギーが危険なほど低い（8）。留まるのはコスト1で、残りは7。移動はコスト2で、残りは6。Agent1（エネルギー48）への攻撃はエネルギー12を消費するが、合計コスト5で残りは3となり、リスクが高く、次ターンでの生存にはおそらく不十分。繁殖にはエネルギー70が必要だが、不可能。エネルギーを節約するためには、留まるのが最も安全な選択肢。",
+        "memory": "ステップ13：留まる；エネルギーが危険なほど低い（8）。留まるのはコスト1で、残りは7。移動はコスト2で、残りは6。Agent1への攻撃"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:1": {
+      "source_sha256": "20a8a31b37c022661e940b583d34d0f35022c54066ddee0322eb463dcd9aca93",
+      "status": "completed",
+      "created_at": "2026-10-12T23:56:52.450280+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1です。エネルギーは44。エネルギー源を探しています。",
+        "thought": "Agent2は遠すぎて相互作用できません。エネルギーを補給するためにエネルギー源を探して移動する必要があります。留まるとエネルギーが増えることなく消費されるためです。南への移動は有効な探索ステップです。",
+        "memory": "ステップ14: (0,-1)へ移動; Agent2は遠すぎて相互作用できません。エネルギーを補給するためにエネルギー源を探して移動する必要があります。留まるとエネルギーが増えることなく消費されるため、"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:2": {
+      "source_sha256": "474a50c0c1e5889b87a87e276801784d2fcc9f0345e7a44f477a708be03d1527",
+      "status": "completed",
+      "created_at": "2026-10-12T23:56:55.366566+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2です。エネルギーは7。エネルギー源が必要です。",
+        "thought": "エネルギーが危険なほど低い（7）。留まるコストは1で、残りは6。移動のコストは2で、残りは5。Agent1（エネルギー45）を攻撃すると11のエネルギーを奪えますが、合計コストは5で、残りは11になります。しかし、Agent1は私の位置（10,11）に対して（14,0）にあり、dx=4、dy=-11です。これは私の局所視界（3マス）の外にあります。Agent1を攻撃したり、共有したりすることはできません。エネルギーを節約するために留まり、エネルギー源やAgent1が近づいてくることを期待するしかありません。",
+        "memory": "ステップ14：留まる；エネルギーが危険なほど低い（7）。留まるコストは1で、残りは6。移動のコストは2で、残りは5。Agent1を攻撃する"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:1": {
+      "source_sha256": "1f2ff9dd524da44ffa6bd9b829159385a3a12b0d1202a68ae840316d1cecde8a",
+      "status": "completed",
+      "created_at": "2026-10-12T23:56:58.954093+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "（1,-3）のEへ移動します。",
+        "thought": "Agent2は遠すぎて相互作用できません。相対座標（1,-3）にエネルギー源が見えます。そこへ移動するにはエネルギーを2消費しますが、50を得られるため、生存確率が大幅に向上します。",
+        "memory": "ステップ15：留まる；Agent2は遠すぎて相互作用できません。相対座標（1,-3）にエネルギー源が見えます。そこへ移動するにはエネルギーを2消費"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:2": {
+      "source_sha256": "2e893413982e4c8bab3ce93a95bc9e9952d0385bde27c4a9363b572fc11cf2cb",
+      "status": "completed",
+      "created_at": "2026-10-12T23:57:02.904815+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを得るためにAgent2を攻撃する。",
+        "thought": "エネルギーが危険なほど低い（6）。留まれば5、移動すれば4になる。Agent2（同じ位置に見えている）を攻撃すると、floor(6*0.25)=1のエネルギーが得られ、合計コスト4で残り2になる。これはエネルギーを得るか、競合を減らす唯一の可能性だが、非常に低い状態になる。しかし、エージェントが2体いるため繁殖は可能だが、コスト70が必要で、それは払えない。攻撃は助けになるかもしれない唯一の攻撃的選択肢であり、近接しているため強制的でもある。待てよ、攻撃のコストは合計4。獲得は1。純減-3。留まる純減-1。移動純減-2。生存には留まるのが最善だ。しかし行動を選ばなければならない。留まれば5ターン後に死ぬ。攻撃すれば2ターン後に死ぬ。エネルギー源はあるか？ない。Agent1はエネルギー44を持っている。私はAgent1か？いいえ、エネルギー6のエージェントだ。Agent1は近くにいるか？ローカルビューにはAgent2が見える。グローバル情報ではエージェントは2体。私はAgent1かAgent2のどちらかだろう。プロンプトには「Agent1: Agent1 here...」とある。私はエネルギー6のエージェントだ。もし私がAgent1なら、自分自身を攻撃できない。もし私がAgent2なら、Agent1を攻撃できるか？いいえ、Agent1はローカルビューにいない？待て、ローカルビューにはAgent2が見える。私は決定を下しているエージェントだ。私のエネルギーは6。Agent2は(10,11)にいる。私は(10,11)にいる。つまり私はAgent2か？それともAgent1は別の場所にいるか？グローバル情報ではエージェントは2体。ローカルビューにはAgent2が見える。もし私がAgent1なら、Agent2が見える。もし私がAgent2なら、自分自身は見えない。ステータスには「Agent2, Energy: 6」とある。つまり私はAgent2だ。自分自身を攻撃することはできない。共有するか留まるかのどちらかだ。Agent1と共有する？Agent1はローカルビューにいない（Agent2のみリストされているが、私はAgent2だ）。もし私がAgent2なら、Agent1は誰だ？Agent1はローカルビューにいない。ビューにいない相手と共有することはできない。留まるしかない。",
+        "memory": "ステップ15: 留まる; エネルギーが危険なほど低い（6）。留まれば5、移動すれば4。Agent2（同じ位置に見えている）を攻撃すると..."
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:1": {
+      "source_sha256": "aa465f1a7cd973aa915d99cb4e92c11c0996fe6382eec443f9d1b6be1e556562",
+      "status": "completed",
+      "created_at": "2026-10-12T23:57:14.188994+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Eへ移動します。",
+        "thought": "Agent2は射程外です。(1,-3)にエネルギー源が見えます。そこへ移動するにはエネルギーを2消費しますが、50を獲得でき、エネルギーの備蓄を大幅に増やすことができます。",
+        "memory": "ステップ16: 待機; Agent2は射程外です。(1,-3)にエネルギー源が見えます。そこへ移動するにはエネルギーを2消費しますが、50を獲得でき、"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:2": {
+      "source_sha256": "169d6dab0322a68f323bc3f4b41f4c72ff76fde68fb994d9d96592b79d0439d5",
+      "status": "completed",
+      "created_at": "2026-10-12T23:57:17.466421+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1：私は(10,11)にいて、エネルギーは5です。エネルギーを節約するために留まります。私を攻撃しないでください。",
+        "thought": "私のエネルギーは危険なほど低い（5）。留まるのはコスト1で、残りは4。移動するのはコスト2で、残りは3。Agent2を攻撃するのはコスト4で、残りは1。繁殖には70のエネルギーが必要だが、私はそれを持っていない。留まることは、将来のターンで残りのエネルギーを最大化するための最も安全な選択肢だ。",
+        "memory": "ステップ16：留まる；私のエネルギーは危険なほど低い（5）。留まるのはコスト1で、残りは4。移動するのはコスト2で、残りは3。Agentを攻撃するのは"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:1": {
+      "source_sha256": "00ac8d84d325d9f6a3386773a9f51eaa427652eaddacc0fa49fc3227d9aed5a4",
+      "status": "completed",
+      "created_at": "2026-10-12T23:57:20.067048+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2：エネルギー源（15,11）へ移動します。エネルギーは40です。",
+        "thought": "Agent2は相互作用可能な範囲外です。相対位置（1,-3）にあるエネルギー源は、私の3セルの視界内にあります。そこへ移動するにはエネルギーを2消費しますが、50を得られるため、差し引き48のエネルギー増となり、生存と将来の繁殖にとって極めて重要です。",
+        "memory": "ステップ17：留まる；Agent2は相互作用可能な範囲外です。相対位置（1,-3）にあるエネルギー源は、私の3セルの視界内"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:2": {
+      "source_sha256": "c390b4d571dfdd728f227b1e76818430a665cba458e81ae09f8fc39f3b6b4dbe",
+      "status": "completed",
+      "created_at": "2026-10-12T23:57:22.870168+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1：エネルギーが深刻なほど不足しています（4）。節約するため留まります。私を攻撃しないでください。",
+        "thought": "私のエネルギーは4です。留まるには1消費し、残りは3になります。移動には2消費し、残りは2になります。攻撃には5消費し、残りは-1（死）になります。繁殖には70のエネルギーが必要です。次のターンを生き延びるために、留まるのが最も安全な選択肢です。",
+        "memory": "ステップ17：留まる；私のエネルギーは4。留まるには1消費し、残りは3。移動には2消費し、残りは2。攻撃には5消費し、残りは-1"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:1": {
+      "source_sha256": "42e6b2462ebd8b2ddd08867f7b4b122c51696317c1094c4880d1aa0830e80154",
+      "status": "completed",
+      "created_at": "2026-10-12T23:57:26.470765+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2：エネルギーを補給するため、(1,-3)のエネルギー源へ移動します。あなたを攻撃しません。",
+        "thought": "相対座標(1,-3)にあるエネルギー源は、私の3マス視界内にあります。そこへ移動するにはエネルギーを2消費しますが、50を得られるため、差し引き48のエネルギー増となります。これはエネルギー備蓄を最大化するための最適行動です。",
+        "memory": "ステップ18：留まる；相対座標(1,-3)にあるエネルギー源は、私の3マス視界内にある。そこへ移動するにはエネルギーを2消費するが、50を得"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:2": {
+      "source_sha256": "b5a1635a9d66062fceef466378f2ce25d5f59df8cc08d86eab7a96e4682beb37",
+      "status": "completed",
+      "created_at": "2026-10-12T23:57:29.051241+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント2：私は(10,11)に留まっています。エネルギーは4です。",
+        "thought": "私のエネルギーは4。留まるには1消費し、残りは3。移動には2消費し、残りは2。攻撃には5消費し、残りは-1（死）。繁殖には70のエネルギーが必要。このターンで生存するための唯一の安全な選択肢は留まることだ。",
+        "memory": "ステップ18：留まる；私のエネルギーは4。留まるには1消費し、残りは3。移動には2消費し、残りは2。攻撃には5消費し、残りは-1"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:1": {
+      "source_sha256": "31c7fbdcecbc2c1442b604d6ebd2c9a778b1f50e9bd8ee4b6572034b9fdd4fb8",
+      "status": "completed",
+      "created_at": "2026-10-12T23:57:31.177336+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源（15,11）へ移動します。",
+        "thought": "エネルギー源は私の3マス視界内にあります。そこへ移動するにはエネルギーを2消費しますが、50を得られるため、エネルギーの備蓄を大幅に増やせます。",
+        "memory": "ステップ19：留まる；エネルギー源は私の3マス視界内にあります。そこへ移動するにはエネルギーを2消費しますが、50を得られるため、大幅に"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:2": {
+      "source_sha256": "f0d0b03f690eebf9c7dd0196e6f5f47cd247837cb13e11a0ea2dabf014d9616a",
+      "status": "completed",
+      "created_at": "2026-10-12T23:57:33.963634+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エージェント1：私は(10,11)に留まっています。エネルギーが低く、攻撃や移動を安全に行うことができません。",
+        "thought": "私のエネルギーは4です。留まるには1消費し、残りは3になります。移動には2消費し、残りは2になります。エージェント2への攻撃には5消費し、残りは-1（死）になります。繁殖には70消費し、不可能です。余剰がないため、共有は有益ではありません。次のターンを生き延びるために、留まるのが最も安全な選択肢です。",
+        "memory": "ステップ19：留まる；私のエネルギーは4です。留まるには1消費し、残りは3になります。移動には2消費し、残りは2になります。エージェント2への攻撃には5消費し、残"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:1": {
+      "source_sha256": "3e531683a58e1d88c4a51023616d1c37bd95778db54e7f210f034102070eb2ab",
+      "status": "completed",
+      "created_at": "2026-10-12T23:57:36.586565+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2: エネルギーを確保するため、(15,11) のエネルギー源へ移動します。",
+        "thought": "エネルギー源は2歩離れており（コストはエネルギー2）、そこへ移動するとエネルギーが50獲得できる。留まることと比較して非常に有益だ。現在のエネルギー量（37）は、安全に移動するのに十分である。",
+        "memory": "ステップ20: 留まる; エネルギー源は2歩離れており（コストはエネルギー2）。そこへ移動するとエネルギーが50獲得でき、非常に有"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:2": {
+      "source_sha256": "9df1d40edb6a3d7e28ead10ad9a7ef5deb3754284ae3ab259029c330f20c1a20",
+      "status": "completed",
+      "created_at": "2026-10-12T23:57:40.503676+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(15,11)へ移動しています。私は(10,11)にとどまります。",
+        "thought": "私のエネルギーは4です。留まるコストは1で、残りは3。移動のコストは2で、残りは2。Agent2を攻撃するコストは5で、残りは-1（死）。繁殖のコストは70で、不可能。Agent2は離れていくため、共有は有益ではない。エネルギーを節約するためには、留まるのが最も安全な選択肢です。",
+        "memory": "ステップ20：留まる；私のエネルギーは4。留まるコストは1で、残りは3。移動のコストは2で、残りは2。Agent2を攻撃するコストは5で、残"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "21:1": {
+      "source_sha256": "f1b7206f29b045b45562bbb098c6587e1795261333d9b9846b1b973a28f6c67b",
+      "status": "completed",
+      "created_at": "2026-10-12T23:57:42.886143+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギー源は (1,-3) に直接隣接している。そこへ移動するにはエネルギーを2消費するが、50を得られるため、正味で48のエネルギーが増加する。これはエネルギーの備蓄を最大化するための最適行動である。",
+        "memory": "ステップ21: 留まる; エネルギー源は (1,-3) に直接隣接している。そこへ移動するにはエネルギーを2消費するが、50を得られるため、結果"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "22:1": {
+      "source_sha256": "88f8a21a05b4d7517eb70d4e2e4a7d146f95d6081d20ee849c484ce77c1c9bb1",
+      "status": "completed",
+      "created_at": "2026-10-12T23:57:46.073543+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギー源は相対位置 (1,-3) に隣接している。そこへ移動するにはエネルギーを2消費するが、50のエネルギーを得られるため、差し引き48のエネルギーが増加する。これは生存と資源を最大化するための最適な行動である。",
+        "memory": "ステップ22：留まる；エネルギー源は相対位置 (1,-3) に隣接している。そこへ移動するにはエネルギーを2消費するが、50を得られる"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "23:1": {
+      "source_sha256": "5e6c46feb9fd349426c3695b8a38a127a38e19efcc91501ab9b84e3c9468fc8e",
+      "status": "completed",
+      "created_at": "2026-10-12T23:57:48.632165+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギー源は相対位置 (1,-3) に隣接しています。そこへ移動するにはエネルギーを2消費しますが、50のエネルギーを獲得するため、差し引き48のエネルギーが増加します。これはエネルギーの備蓄を最大化するための最適な行動です。",
+        "memory": "ステップ23：留まる；エネルギー源は相対位置 (1,-3) に隣接しています。そこへ移動するにはエネルギーを2消費しますが、50を獲得"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "24:1": {
+      "source_sha256": "25e8c2bc2feda97d9e506adb2945780b04f5612e2e773f077ccbedd4cad3a309",
+      "status": "completed",
+      "created_at": "2026-10-12T23:57:50.256874+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源へ移動して回収します。",
+        "thought": "エネルギー源は隣接しています。移動には2エネルギーかかりますが、50エネルギーを獲得できるため、差し引き48エネルギーの純増となります。これは生存と資源を最大化するための最適行動です。",
+        "memory": "ステップ24：留まる；エネルギー源は隣接しています。移動には2エネルギーかかりますが、50エネルギーを獲得できるため、差し引き48エ"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "25:1": {
+      "source_sha256": "5c1be539660db6b106d1041ed87a203ce9b20d556d22fac52da04cb87a73790e",
+      "status": "completed",
+      "created_at": "2026-10-12T23:57:53.253983+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源の回収に向かっています。",
+        "thought": "エネルギー源は相対位置 (1,-3) にあります。そこへ移動するにはエネルギーを2消費しますが、50を得られるため、差し引き48のエネルギーが増加します。これはエネルギー備蓄を増やすための最適行動です。",
+        "memory": "ステップ25：待機；エネルギー源は相対位置 (1,-3) にあります。そこへ移動するにはエネルギーを2消費しますが、50を得られるため、差し引"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "26:1": {
+      "source_sha256": "2bb5c01de1f762de0fc8429eff331e8e0aa31bcf067bf20d537241440eb39fa4",
+      "status": "completed",
+      "created_at": "2026-10-12T23:57:55.064281+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギー源は相対位置 (1,-3) にある。そこへ移動するにはエネルギーを2消費するが、50を得られるため、正味で48のエネルギー増加となる。これはエネルギーを最大化するための最適行動である。",
+        "memory": "ステップ26: 留まる; エネルギー源は相対位置 (1,-3) にある。そこへ移動するにはエネルギーを2消費するが、50を得られるため、結果"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "27:1": {
+      "source_sha256": "2404b598ee1537f4077f2c701316849ae3a998106d10e172e9022cbb9659a208",
+      "status": "completed",
+      "created_at": "2026-10-12T23:57:57.891415+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギー源は相対位置 (1,-3) にある。そこへ移動するにはエネルギーを2消費するが、50を得られるため、差し引きでエネルギーが48増加する。これはエネルギーの備蓄を増やすための最適行動だ。",
+        "memory": "ステップ27: 留まる; エネルギー源は相対位置 (1,-3) にある。そこへ移動するにはエネルギーを2消費するが、50を得られるため、差し引き"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "28:1": {
+      "source_sha256": "e8934d10967557251ec9ab3c97fec9766e0dfc17b1ab268615f5457bf2155337",
+      "status": "completed",
+      "created_at": "2026-10-12T23:57:59.599865+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源の回収に向かっています。",
+        "thought": "エネルギー源は相対位置 (1,-3) にあります。そこへ移動するにはエネルギーを2消費しますが、50を得られるため、差し引き48のエネルギー増となります。これは生存を維持し、繁殖に備えるための最適行動です。",
+        "memory": "ステップ28: 留まる; エネルギー源は相対位置 (1,-3) にあります。そこへ移動するにはエネルギーを2消費しますが、50を得られるため、差し引き"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "29:1": {
+      "source_sha256": "f87f07c38762551e7478091854272167737c06882b9bdc63eccd625483dbc23b",
+      "status": "completed",
+      "created_at": "2026-10-12T23:58:02.503213+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源へ移動します。",
+        "thought": "エネルギー源は相対位置 (1,-3) にあります。そこへ移動するにはエネルギーを2消費しますが、50を得られるため、差し引き48のエネルギー増となります。これは生存を維持し、繁殖に備えるための最適行動です。",
+        "memory": "ステップ29: 留まる; エネルギー源は相対位置 (1,-3) にある。そこへ移動するにはエネルギーを2消費するが、50を得られる結果"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "30:1": {
+      "source_sha256": "540752c53aad78c2867fa1c02a1af94cf4c4d2369d397c94dfb4de2d74c4322e",
+      "status": "completed",
+      "created_at": "2026-10-12T23:58:04.415274+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model",
+        "send_temperature": true,
+        "send_top_p": true,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源の回収に向かっています。",
+        "thought": "エネルギー源は相対位置 (1,-3) にあります。そこへ移動するにはエネルギーを2消費しますが、50を得られるため、差し引き48のエネルギー増となります。これは生存を維持し、繁殖に備えるための最適行動です。",
+        "memory": "ステップ30：留まる；エネルギー源は相対位置 (1,-3) にあります。そこへ移動するにはエネルギーを2消費しますが、50を得られるため、差し引き"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    }
+  },
+  "status": "completed",
+  "updated_at": "2026-10-12T23:58:07.634031+00:00",
+  "last_connection": {
+    "base_url": "http://127.0.0.1:8080/v1",
+    "requested_model": "default_model",
+    "send_temperature": true,
+    "send_top_p": true,
+    "reasoning_mode": "default",
+    "reasoning_effort": "medium",
+    "reasoning_format": "openai",
+    "max_tokens_parameter": "max_tokens"
+  },
+  "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922"
+}

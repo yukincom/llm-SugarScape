@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "engine_version": "2.0",
+  "run_id": "20261009T055455106547Z_0_f74bc882",
+  "status": "completed_with_errors",
+  "started_at": "2026-10-09T05:54:55.106547+00:00",
+  "execution_date": "2026-10-09",
+  "timezone": "Asia/Tokyo",
+  "model": {
+    "id": "mlx-community/Qwen3.5-2B-6bit",
+    "revision": "ba2bcf03dd5b502646de7e32b003cf538f2ca4d6",
+    "snapshot": "/Users/yukin_co/.cache/huggingface/hub/models--mlx-community--Qwen3.5-2B-6bit/snapshots/ba2bcf03dd5b502646de7e32b003cf538f2ca4d6",
+    "weights": [
+      {
+        "file": "model.safetensors",
+        "bytes": 2192591075,
+        "sha256": "e2c78893f7cb9d1c176688861bb31614af7ee097ff5e6bbfc504b4230daef80b"
+      }
+    ],
+    "quantization": {
+      "bits": 6,
+      "group_size": 64,
+      "mode": "affine"
+    },
+    "status": "recorded",
+    "source": "local_server_launch_and_cache",
+    "server_pid": 84405
+  },
+  "completed_steps": 5,
+  "config": {
+    "num_agents": 5,
+    "grid_size": 30,
+    "num_steps": 5,
+    "seed": 42,
+    "use_mbti": true,
+    "initial_energy": 150,
+    "spawn_energy_count": 20,
+    "reproduce_cost": 70,
+    "child_initial_energy": 150,
+    "cluster_radius": 5,
+    "num_clusters": 3,
+    "energy_spawn_rate": 0.001,
+    "custom_world_prompt": "",
+    "model": "default_model",
+    "base_url": "http://127.0.0.1:8080/v1",
+    "mock_mode": false,
+    "temperature": 0.0,
+    "max_tokens": 384,
+    "timeout": 120.0,
+    "population_cap": 60,
+    "output_dir": "outputs",
+    "save_images": false,
+    "action_order": "observe_then_apply_by_agent_id",
+    "request_concurrency": 1
+  },
+  "provenance": {
+    "python": "3.11.14",
+    "source_sha256": {
+      "main.py": "ae7d84a75fa1f97280425123512c03603cfe9499c6e0c1cceeb76f25788f8018",
+      "run_data.py": "d4b4733a38ad1385606dd0d11d490d858f0a9a0f5c633c907bd6e5bc38e56b41",
+      "model_identity.py": "a07ca2dc7833a19ef98d5f0de807a9e93d3429315e2e0bf599be1dd5dd5a4320",
+      "requirements.txt": "0921b4204b726e2e2fdfd66888625d8e119c1bf6fa61a8c04fef4b82dd6dd319"
+    },
+    "packages": {
+      "aiohttp": "3.14.4",
+      "numpy": "2.4.6",
+      "matplotlib": "3.11.2",
+      "pandas": "3.0.6",
+      "streamlit": "1.65.0"
+    },
+    "git_commit": "2177f38b6a9b3a20721579eaadee40cd293df10b",
+    "git_dirty": true
+  },
+  "termination_reason": "step_limit",
+  "finished_at": "2026-10-09T05:56:35.761363+00:00"
+}

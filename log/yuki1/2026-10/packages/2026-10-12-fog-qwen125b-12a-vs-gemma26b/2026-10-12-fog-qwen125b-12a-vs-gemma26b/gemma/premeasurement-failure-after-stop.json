@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-12T05:02:33.630331+00:00",
+  "server": {
+    "running": false,
+    "pid": null,
+    "trusted": false,
+    "command": "",
+    "active_model": "",
+    "managed_125b": false
+  },
+  "environment": {
+    "at": "2026-10-12T05:02:33.642655+00:00",
+    "minecraft_pids": [],
+    "dogido_listener": "",
+    "download_process": "",
+    "pressure_level": 1,
+    "swap": "vm.swapusage: total = 23552.00M  used = 22102.94M  free = 1449.06M  (encrypted)",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                   938519.\nPages active:                                 212950.\nPages inactive:                              2654557.\nPages speculative:                             14725.\nPages throttled:                                   0.\nPages wired down:                             231558.\nPages purgeable:                               10051.\n\"Translation faults\":                    15308373846.\nPages copy-on-write:                      1457218596.\nPages zero filled:                       14744522114.\nPages reactivated:                          99692618.\nPages purged:                               82145560.\nFile-backed pages:                           2767210.\nAnonymous pages:                              115022.\nPages stored in compressor:                  2019957.\nPages occupied by compressor:                  90092.\nDecompressions:                            437246876.\nCompressions:                              488168603.\nPageins:                                   321857212.\nPageouts:                                     347034.\nSwapins:                                    44893100.\nSwapouts:                                   51172279."
+  }
+}

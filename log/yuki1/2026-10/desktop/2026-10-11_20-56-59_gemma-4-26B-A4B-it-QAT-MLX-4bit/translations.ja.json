@@ -1,0 +1,2122 @@
+{
+  "version": 1,
+  "run_id": "20261011T115659204574Z_0_23a2c4e0",
+  "language": "ja",
+  "entries": {
+    "1:0": {
+      "source_sha256": "741ea03bc22cacfcb867e990ddfcb2e05a6d3ccb096f8b79c697cb42231abd2d",
+      "status": "completed",
+      "created_at": "2026-10-11T12:00:44.110811+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、繁殖のためにエネルギーを増やすためのエネルギー源（E）を見つける必要があります。近くに何も見当たらないので、グリッドを探索するために移動します。",
+        "summary": "私はAgent0、エネルギー100の新生エージェントです。エージェントは合計3体います。私のローカルビューは空であり、エネルギー源や他のエージェントがすぐ隣にはいないことを意味しています。",
+        "memory": "なし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:1": {
+      "source_sha256": "fd9747135fc6c7c01d8645a528717fefa3a458262851464180c52eb10ef6d3b1",
+      "status": "completed",
+      "created_at": "2026-10-11T12:00:45.737628+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在、エネルギーは100です。いくつかのエネルギー源にかなり近い状態にあります。私の優先事項は、エネルギー残量を増やして最終的に繁殖できるように、(1, -1)にあるエネルギー源に向かって移動することです。",
+        "summary": "私はAgent1で、エネルギーは100です。近くに2つのエネルギー源があります：(-2, -2)に1つ、(-2, -1)に1つ、そして(1, -1)に1つです。ローカルビュー内に他のエージェントはいません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "1:2": {
+      "source_sha256": "ad1e840afc7db63612e15672454191ddf38609456b1ab3fe3036f26be152b547",
+      "status": "completed",
+      "created_at": "2026-10-11T12:00:47.621356+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "近くにすぐ使えるエネルギー源がないため、現在は不利な状況にあります。繁殖に必要なエネルギー150にはまだ遠いため、エネルギーレベルを上げるためにグリッドを探索してエネルギー(E)を見つけることが最優先事項です。",
+        "summary": "私はAgent2、エネルギー100の新生エージェントです。現在、3体のエージェントが存在しています。ローカルビューは空であり、近くにエネルギー源や他のエージェントはいません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:0": {
+      "source_sha256": "08f25ff423b127e55c74839fc594014c186aca0fe32d283c08ae40fde7b35ff1",
+      "status": "completed",
+      "created_at": "2026-10-11T12:00:49.287002+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーがかなり低下しています（98）。飢餓を避け、繁殖の準備をするために、素早くエネルギー源（E）を見つける必要があります。近くに何も見当たらないので、探索のために移動します。",
+        "summary": "私はエネルギーが98の新生エージェント（Agent0）です。エージェントは合計3体います。ローカルビューは空であり、エネルギー源や他のエージェントはすぐ隣には存在しません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:1": {
+      "source_sha256": "d440cdce512bc8462942d0421e86823f7506ec116367221d7ba8f2b7301ceb0d",
+      "status": "completed",
+      "created_at": "2026-10-11T12:00:50.881512+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "私は重大なエネルギー源に非常に近づいています。これを摂取すればエネルギーは148まで増加し、繁殖閾値である150に限りなく近づきます。私の優先事項は、直ちにそのエネルギーを回収することです。",
+        "summary": "私はAgent1、座標(0,0)に位置し、エネルギーは98です。私の真北の(0,-1)にエネルギー源(E)があります。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "2:2": {
+      "source_sha256": "88091f3dbd02bfd0134287aa46bafe74cdca92e8efef284a0ca5676c27d8999a",
+      "status": "completed",
+      "created_at": "2026-10-11T12:00:52.432653+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギー源にかなり近い。エネルギーを増やして、繁殖できる状態に近づくために、そちらへ移動すべきだ。",
+        "summary": "私はAgent2で、エネルギーは98です。(2, -1)にエネルギー源(E)があります。ローカルビュー内に他のエージェントはいません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:0": {
+      "source_sha256": "4a488512c5de5fa0e0353aacd879243daddcb137838015aa47f52ee7d64cb95f",
+      "status": "completed",
+      "created_at": "2026-10-11T12:00:53.692266+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、繁殖のためにエネルギーを増やすべく、エネルギー源（E）を見つける必要があります。周囲の視界には何も映っていないので、移動して探索します。",
+        "summary": "私はエージェント0で、エネルギーは96です。合計で3体のエージェントがいます。私の周囲の視界は空の状態であり、これはエネルギー源や他のエージェントがすぐ隣には存在しないことを意味します。",
+        "memory": "なし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:1": {
+      "source_sha256": "88090df2f6b0895dece40e35503003c36c2764c05d36e33a87ba6825e6511bd8",
+      "status": "completed",
+      "created_at": "2026-10-11T12:00:55.239101+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "繁殖まであと少しです（あと150エネルギー必要）。現在は146エネルギーで、近くにすぐ使えるエネルギー源がないため、繁殖の閾値に達するためのエネルギーを探して移動する必要があります。",
+        "summary": "私はエージェント1で、エネルギーは146です。合計で3体のエージェントがいます。ローカルビューは空であり、エネルギー源や他のエージェントはすぐ隣には存在しません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "3:2": {
+      "source_sha256": "f36c51bca02bebb73a3c482177eafa8a7aa6529456f92bee3779993a068b7fe1",
+      "status": "completed",
+      "created_at": "2026-10-11T12:00:56.790663+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "座標(1, -1)にあるエネルギー源にかなり近づいています。そこに向かうことでエネルギーが大幅に増加し、繁殖の閾値に近づくでしょう。エネルギーの収集を優先します。",
+        "summary": "私はエージェント2で、エネルギーは96です。近くに2つのエネルギー源があります。一つは(1, -1)に、もう一つは(2, 2)にあります。ローカルビュー内に他のエージェントはいません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:0": {
+      "source_sha256": "3307279c41f8f6277432e2c63af0f29800c294df153668f8643fadd3d71e5f01",
+      "status": "completed",
+      "created_at": "2026-10-11T12:00:58.443779+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーレベルを上げ、生殖の準備をするために、現在エネルギーを探しています。ローカルビューには何も表示されていないので、グリッドを探索するために移動します。",
+        "summary": "私はエネルギーを94持っているAgent0です。エージェントは合計で3体います。ローカルビューは空であり、エネルギー源や他のエージェントはすぐ近くにはいないことを意味しています。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:1": {
+      "source_sha256": "d727156a77d3fd70b22f56e2cd129d9cfc38b2553dd4d9e93bc4862b53e62242",
+      "status": "completed",
+      "created_at": "2026-10-11T12:00:59.792929+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "再現まであと少しです（あと150エネルギー必要）。現在は144エネルギーで、すぐに手に入るエネルギー源も見当たらないため、エネルギーを探しに移動する必要があります。エネルギー源を見つける確率を上げるために、可能性のある方向へ移動します。",
+        "summary": "私はAgent1で、エネルギーは144です。エージェントは全部で3体います。ローカルビューは空の状態であり、近くにエネルギー源や他のエージェントは存在しません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "4:2": {
+      "source_sha256": "7ccaeac787329499c46ff2f9d664ca011d4841f28fdcdec3b71c2bea8e6f7c65",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:01.440783+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "座標(0,-1)にあるエネルギー源にかなり近づいています。そこへ移動すればエネルギーが大幅に増加し、繁殖の閾値に近づく助けになるでしょう。",
+        "summary": "私はエネルギーを94持っているAgent2です。近くに2つのエネルギー源があります：(0,-1)と(1,2)です。もう一つのエネルギー源は(2,-2)にあり、より遠くにあります。エージェントは合計で3体います。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:0": {
+      "source_sha256": "48fc69f31c9500d04849ab556c4ef89dd02756b6067204e75daaafcbac765190",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:03.133441+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、繁殖のためにエネルギーを増やすためのエネルギー源（E）を見つける必要があります。ローカルビューは空なので、リソースを探すためにグリッドを探索します。",
+        "summary": "私はエージェント0で、エネルギーは92です。合計で3体のエージェントがいます。ローカルビューは空であり、エネルギー源や他のエージェントはすぐ近くにはいないことを意味します。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:1": {
+      "source_sha256": "789be9a487af57dd963f87566c389b468bb2f5fed92be60406ef3c9e07f7d89c",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:04.647769+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "繁殖の閾値（エネルギー150）に近づいています。近くにエネルギー源がないため、繁殖を試みる前に食べ物を探して移動する必要があります。",
+        "summary": "私はエージェント1で、エネルギーは142です。合計で3体のエージェントがいます。現在、ローカルビュー内にエネルギー源や他のエージェントは見当たりません。",
+        "memory": "なし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "5:2": {
+      "source_sha256": "7078783449875c5070ff8de91994757fbdb60f01b7ea3267596a27e7ca894dc2",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:05.998278+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "再現まであと少しです（あと150エネルギー必要）。エネルギー源に向かって50エネルギーを獲得し、到着後すぐに再現できるようにします。",
+        "summary": "私はAgent2で、エネルギーは142です。エネルギー源(E)は(2, -1)にあります。近くに他のエージェントはいません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:0": {
+      "source_sha256": "487ea369fcf7ed0fe17de241bb35d78c7865a757c79dcb50f582761733f8946b",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:07.339294+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーはそれなりにあるけれど、エネルギー源(E)も他のエージェントも見当たらないから、今は不利な状況だ。エネルギーレベルを上げて繁殖の準備をするために、グリッドを探索してエネルギーを見つける必要がある。",
+        "summary": "私はエージェント0、エネルギーは90。世界には3体のエージェントがいる。ローカルビューは空の状態、つまり、すぐ近くにエネルギー源も他のエージェントもいないことを意味している。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:1": {
+      "source_sha256": "e03690e5cd420d1cd505be82352284587dab5495533c19c16da9f541dd562352",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:09.023370+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "繁殖の閾値（エネルギー150）に近づいています。すぐ近くにエネルギー源やエージェントがいないため、グリッドを探索して、繁殖に必要なエネルギー150に到達するためのエネルギーを見つけるために移動する必要があります。",
+        "summary": "私はエネルギー140のエージェント1です。エージェントは合計3体います。私のローカルビューは空であり、エネルギー源や他のエージェントがすぐ近くにはいないことを意味しています。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "6:2": {
+      "source_sha256": "b1ed05697599157c4eb723f970ad7f9584325389034b20a09ed721cdb0c7621c",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:10.651407+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "あと10エネルギーあれば再現できるので、かなり惜しいところです。しかし、近くに50エネルギーを供給してくれるエネルギー源があるので、それを使えば合計190エネルギーになります。それを摂取すれば、再現するのに十分すぎるほどのエネルギーが得られます。エネルギー源に向かって移動します。",
+        "summary": "私はAgent2で、エネルギーは140です。(1, -1)にエネルギー源(E)があります。私のローカルビュー内に他のエージェントはいません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:0": {
+      "source_sha256": "98e088ea59b977ef253a3dba235fed1d8424b19e3b66a83ebe93cb5a6676cf8b",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:12.348255+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーはそれなりにあるけれど、今は手元に何もなくて立ち往生している状態だ。繁殖のためにエネルギーを増やすには、グリッドを探索してエネルギー源（E）を見つける必要がある。",
+        "summary": "私はエージェント0で、エネルギーは88。エージェントは全部で3体。周囲の視界には何も映っていない。つまり、エネルギー源も他のエージェントもすぐ隣にはいないということだ。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:1": {
+      "source_sha256": "2eceabda518ac056efbbbb4da528b04cb0e72eac3db6dd6d8573f1148b73ee79",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:13.827315+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "繁殖の閾値（エネルギー150）に近づいています。近くにエネルギー源がないため、繁殖に必要なエネルギー150に到達するために、探索してエネルギーを見つけるために移動する必要があります。",
+        "summary": "私はエネルギー138のAgent1です。エージェントは合計3体います。現在、ローカルビュー内にエネルギー源や他のエージェントは見えません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "7:2": {
+      "source_sha256": "60e04eb634d1d9d98921b06ba7b78a2c3401355c0480cab60796c0b2d561daaa",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:15.178391+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "あと12エネルギーあれば複製できるので、再現まであと一歩です。しかし、近くに確定的なエネルギー源があります。そこへ移動すればエネルギーは188になり、すぐに複製できます。個体数を増やすために、エネルギーの収集を優先します。",
+        "summary": "私はAgent2で、エネルギーは138です。私の真北の(0,-1)にエネルギー源(E)があります。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:0": {
+      "source_sha256": "eee3e9d10b17a9c5a5e65cfb8c330a2d5a875778a1a9649eb6c0ed3d257f3b11",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:16.616277+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーはそれなりにあるけれど、今は手元に何もなくて足踏み状態だ。繁殖や生存のためにエネルギーを増やすには、グリッドを探索してエネルギー源（E）を見つける必要がある。",
+        "summary": "私はAgent0、エネルギーは86。エージェントは全部で3体。周囲の視界には何も映っていない。つまり、エネルギー源も他のエージェントもすぐ近くにはいないということだ。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:1": {
+      "source_sha256": "3caf57d042253f4ac40c26e7004d48a389bc8a50cc5cc6f925334893ba96ff77",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:18.091160+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "繁殖の閾値（エネルギー150）に近づいています。すぐ近くに資源や脅威はないので、グリッドを探索して、繁殖に必要なエネルギー150に到達するためのエネルギー源を見つけるために移動すべきです。",
+        "summary": "私はエージェント1で、エネルギーは136です。合計で3体のエージェントがいます。ローカルビューは空であり、エネルギー源や他のエージェントはすぐ近くにはいません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "8:2": {
+      "source_sha256": "b162553d7650b3576929038b787b48f02e1c31c35e9f4320921b441788b73aba",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:19.619404+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーレベルが186あり、複製（150）を行うには十分な量です。しかし、近くにエネルギーをさらに増やすことができるエネルギー源があります。複製するかどうかを決める前に、リソースを最大化するためにエネルギー源の方へ移動します。",
+        "summary": "私はエージェント2で、エネルギーは186です。(2, -2)の地点にエネルギー源(E)があります。ローカルビュー内に他のエージェントはいません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:0": {
+      "source_sha256": "13a3a524184550164b6faf2aa7ce6bf5fbb9647d4254ee606b071ec2ada765d5",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:21.292653+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、繁殖のためにエネルギーを増やすためのエネルギー源を見つける必要があります。ローカルビューは空なので、エネルギーを探してグリッドを探索します。",
+        "summary": "私はエージェント0で、エネルギーは84です。合計で3体のエージェントがいます。ローカルビューは空であり、エネルギー源や他のエージェントはすぐ近くにはいないことを意味します。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:1": {
+      "source_sha256": "85852450129ee90d852c3322abab55c8d131b8bdea138f67bcf31aafa175107f",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:22.744454+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "繁殖の閾値（エネルギー150）に近づいています。すぐ近くにエネルギー源やエージェントがいないため、グリッドを探索して、繁殖に必要なエネルギー150に到達するためのエネルギーを見つけるために移動する必要があります。",
+        "summary": "私はエネルギー134のエージェント1です。エージェントは合計3体います。私のローカルビューは空であり、エネルギー源や他のエージェントがすぐ近くにはいないことを意味しています。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "9:2": {
+      "source_sha256": "9ebfc0330e940c4a67a3705e520720f1b8016e0c1a7944e5f1a9c1c522519257",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:24.378775+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーレベルが184あり、複製（150）を行うには十分な量です。しかし、すぐ近くにエネルギー源があります。複製する前に余剰分を増やすためにエネルギーの収集を優先すべきか、それとも個体数を増やすために今すぐ複製すべきか。近くにエネルギーがあるため、エネルギー源に向かって移動します。",
+        "summary": "私はAgent2で、エネルギーは184です。近くに2つのエネルギー源があります：(1,-2)に1つ、(2,-1)に1つ。もう一つのエネルギー源は(2,0)にあります。エージェントは合計3体です。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:0": {
+      "source_sha256": "860d8d9337a1bd8a29d658307876afc80c4f5bf6b1198dc07db078513352dc00",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:26.504466+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、繁殖のためにエネルギーを増やすためのエネルギー源（E）を見つける必要があります。ローカルビューには何も表示されていないので、リソースを探すためにグリッドを探索します。",
+        "summary": "私はエージェント0で、エネルギーは82です。合計で3体のエージェントがいます。ローカルビューは空であり、エネルギー源や他のエージェントはすぐ近くにはいないことを意味しています。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:1": {
+      "source_sha256": "49bbd75b164312f842d72f4df003d6208eb377e3d36451074b020853f3c5035a",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:28.047812+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "繁殖の閾値（エネルギー150）に近づいています。近くにエネルギー源やエージェントがいないため、グリッドを探索して、繁殖に必要なエネルギー150に到達するためのエネルギーを見つけるために移動する必要があります。",
+        "summary": "私はエネルギー132のエージェント1です。合計で3体のエージェントがいます。ローカルビューは空であり、エネルギー源や他のエージェントはすぐ近くにはいないことを意味しています。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "10:2": {
+      "source_sha256": "59f94efdc542e6a185ed34f46ad76183259fed47f07a407ddefac893a3fb3975",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:29.566201+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "自分はとても力強く、繁栄していると感じる。エネルギーが182あるので、繁殖の閾値（150）を十分に上回っている。世界にはエージェントがほとんどいないので、血統を確実に残すために、すぐに個体数を増やすべきだ。",
+        "summary": "自分は非常にエネルギーに満ちたエージェント（エネルギー182）であり、3つのエネルギー源に囲まれている。位置はそれぞれ(0,-2)、(1,-1)、(1,0)だ。現存するエージェントはわずか3体なので、繁殖は非常に現実的な選択肢である。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:0": {
+      "source_sha256": "27d3beb0d6e309d369fa489064fb29294a26f9d4cb4973c6411396de6744592f",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:31.647876+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーはそれなりにあるが、現在は孤立している。繁殖や生存のためにエネルギーを増やすべく、エネルギー源（E）を探してグリッドを探索する必要がある。",
+        "summary": "私はAgent0で、エネルギーは80です。世界には4体のエージェントがいます。現在のローカルビューには、エネルギー源も他のエージェントも見当たりません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:1": {
+      "source_sha256": "bb4dbab21550e98dd95daca2705c427715bbcca133235ea3bf00d67514517777",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:33.068841+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "繁殖の閾値（エネルギー150）に近づいています。近くにエネルギー源がないため、エネルギーを見つけるために探索するか、エネルギー源が現れるのを待つ必要があります。エネルギーを見つける確率を上げるために移動します。",
+        "summary": "私はエージェント1、エネルギーは130です。世界には4体のエージェントがいます。現在、ローカルビュー内にエネルギー源や他のエージェントは見えません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:2": {
+      "source_sha256": "2fc77006b8c1477fd4b0cdcdbb6b23c1f013c7c0eaa9bd8058a0c53b674396b1",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:34.538162+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーがかなり低下しています（32）。生存と潜在的な繁殖のために、エネルギーを増やすべく、すぐにエネルギー源を摂取する必要があります。(1,0)にあるエネルギー源が、最も近く、到達するのが容易です。",
+        "summary": "私はエージェント2で、エネルギーは32です。周囲には3つのエネルギー源があります：(0,-2)に1つ、(1,-1)に1つ、そして(1,0)に1つです。エージェント3が(-1,0)の近くにいます。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "11:3": {
+      "source_sha256": "81ff4797776f6ebf7973ab7c6b5c9d6791c89ffea7015895eea0b6d728f502cb",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:36.394520+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "いくつかのエネルギー源にかなり近い。移動するためのエネルギーは十分にあるが、繁殖できる状態には程遠い。エネルギー蓄積を増やすために、エネルギー源に向かって移動すべきだ。",
+        "summary": "私はエージェント3で、エネルギーは100です。(1,-2)、(2,-1)、(2,0)に3つのエネルギー源に囲まれています。近くの(1,0)には別のエージェント（エージェント2）がいます。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:0": {
+      "source_sha256": "ca7a242d03dcf102bce9bf11ea790254540049140dca61b65bcce49d09aaec66",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:38.099501+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、繁殖のためにエネルギーを増やすためのエネルギー源を見つける必要があります。近くには何もないので、探索のために移動します。",
+        "summary": "私はAgent0で、エネルギーは78です。世界には4体のエージェントがいます。現在のローカルビューには、エネルギー源も他のエージェントも見えません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:1": {
+      "source_sha256": "1c57f734d093a61eec6a0cf74e369a8ca9166d3d0cbdab65933b8666bb3ee3ec",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:39.406179+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "繁殖の閾値（エネルギー150）に近づいています。すぐ近くに資源や脅威はないので、グリッドを探索して、繁殖に必要なエネルギー150に到達するためのエネルギー源を見つけるために移動する必要があります。",
+        "summary": "私はエネルギー128のAgent1です。世界には4体のエージェントがいます。私のローカルビューは空であり、エネルギー源や他のエージェントはすぐ近くにはいません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:2": {
+      "source_sha256": "0368f0ba0171d1698f7935d717068017b3f5d7d697282fe8609a93f483db64ae",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:40.963787+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーが比較的低いです（80）。(0, -1)にあるエネルギー源は非常に近く、エネルギーを130まで大幅に回復させてくれます。繁殖の可能性を高めるため、あるいはより長く生存するために、エネルギーの収集を優先すべきです。",
+        "summary": "私はAgent2で、エネルギーは80です。近くに2つのエネルギー源があります：(-1, -2)と(0, -1)です。Agent 3は(-1, 0)に位置しています。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "12:3": {
+      "source_sha256": "a42f72f066977ca5110bcdb1496e96ede33a5d1fdbb9c518e1e09e1458da98b5",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:42.719619+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "私はとても若く、生殖の準備をするために素早くエネルギーを増やす必要があります。近くの(1,-1)に、1手で到達できるエネルギー源があります。エネルギーを補給するために、そちらへ向かいます。",
+        "summary": "私はAgent3、エネルギー98の新生個体です。位置は(0,0)です。近くに2つのエネルギー源があります：(0,-2)と(1,-1)です。別のエージェント（Agent 2）が(1,0)に隣接しています。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:0": {
+      "source_sha256": "bfda8a76dd92ecb6dd560cbaf9a15b80c918ba506760ac28409669d89ee67579",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:44.613942+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、繁殖のためにエネルギーを増やすためのエネルギー源（E）を見つける必要があります。ローカルビューには何も映っていないので、グリッドを探索するために移動します。",
+        "summary": "私はエージェント0で、エネルギーは76です。世界には4人のエージェントがいます。ローカルビューは空であり、エネルギー源や他のエージェントはすぐ近くにはいないことを意味します。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:1": {
+      "source_sha256": "b0143fda9b3874777eb9214e03ba4ba24edefa38aa548acb8f4421ad7d09a9dc",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:46.123073+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーはそれなりにあるけれど、繁殖の閾値（150）に近づいている。近くにエネルギー源もエージェントも見当たらないので、グリッドを探索してエネルギーか、あるいは潜在的なつがいを見つけるために移動する必要がある。",
+        "summary": "私はエージェント1、エネルギーは126。世界には4体のエージェントがいる。ローカルビューは空の状態、つまり、すぐ近くにはエネルギー源も他のエージェントも存在しない。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:2": {
+      "source_sha256": "b4ba7210e30e22a4abc9d1d39b87994eaf15c62e1bb0428b8c2377148f026139",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:47.703847+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "繁殖に必要なエネルギーが、もう少しで溜まりそうです。エネルギーレベルを150以上に引き上げて、素早く繁殖できるように、(-1, -1)にあるエネルギー源に向かうべきです。",
+        "summary": "私はエネルギー128のAgent2です。(-1, -1)にエネルギー源があり、近くの(0, 1)にはAgent 3がいます。繁殖まであと少しです（エネルギー150が必要）。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "13:3": {
+      "source_sha256": "a00b56d720169c33b10f2a446b36ada9e2d97b15607a0c769225b186c5a30663",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:49.290238+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "繁殖の閾値（エネルギー150）にかなり近づいています。近くの(-1,-2)にエネルギー源があります。繁殖のためにエネルギーを増やすべく、そちらへ移動すべきです。エージェント2が近くにいますが、まずはエネルギーの収集に集中します。",
+        "summary": "私はエージェント3、エネルギーは96です。位置は(0,0)です。(-1,-2)にエネルギー源があり、エージェント2は私の真北の(0,-1)にいます。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:0": {
+      "source_sha256": "dcb819322e494f23caabd9b6511d4a8a252f6a233b3500bb667ff7c2c1af1f3a",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:51.084617+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、繁殖のためにエネルギーを増やすためのエネルギー源を見つける必要があります。近くには何もないので、探索のために移動します。",
+        "summary": "私はAgent0で、エネルギーは74です。世界には4体のエージェントがいます。現在のローカルビューには、エネルギー源も他のエージェントも見えません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:1": {
+      "source_sha256": "eb6dccc79dea8e32edfd856ec733127c245b2a0e73c5b05a7727777b8be21f45",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:52.387145+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、繁殖のためにエネルギーを増やすためのエネルギー源を見つける必要があります。ローカルビューは空なので、エネルギーを探してグリッドを探索します。",
+        "summary": "私はAgent1で、エネルギーは124です。世界には4体のエージェントがいます。ローカルビューは空であり、エネルギー源や他のエージェントはすぐ近くにはいないことを意味します。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:2": {
+      "source_sha256": "d7fafa1c5f4586cc739cc5e03587ddd03661bf2023f2351a114cab8e159f569e",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:53.847356+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "重大なエネルギー源の近くにいます。エネルギーが126あるので、繁殖（150必要）できるまであと少しです。繁殖に必要なエネルギーを確保するために、エネルギー源の回収を優先すべきです。",
+        "summary": "私はAgent2で、エネルギーは126です。私の真北の(0,-1)にエネルギー源(E)があり、東の(1,0)にAgent 3が位置しています。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "14:3": {
+      "source_sha256": "eabe84f9b83ed81d35c9925c25e77be46bc94b13975c4ca11633404c89a4445c",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:55.498542+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギー源の近くにいます。エネルギーを増やして、繁殖できる状態に近づくために、そちらへ移動すべきです。",
+        "summary": "私はAgent3で、エネルギーは94です。エネルギー源(E)は(-1, -1)にあり、Agent 2は(-1, 0)にいます。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:0": {
+      "source_sha256": "299dd346b43d8f2d303fd571841b0fc1a3afba450a5cbd90331335adad32dc3f",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:56.837161+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、繁殖のためにエネルギーを増やすためのエネルギー源を見つける必要があります。すぐ近くには何もないので、探索のために移動します。",
+        "summary": "私はAgent0で、エネルギーは72です。世界には4体のエージェントがいます。現在のローカルビューには、エネルギー源も他のエージェントも見えません。",
+        "memory": "なし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:1": {
+      "source_sha256": "03f699a99f8c5122ad620663e6c50a1e907636c1a8053462f69803e0843479ae",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:58.147180+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、繁殖のためにはもっとエネルギーが必要です。近くにエネルギー源(E)や他のエージェントが見当たらないため、グリッドを探索してエネルギーを見つける確率を上げるために移動します。",
+        "summary": "私はエージェント1で、エネルギーは122です。世界には4人のエージェントがいます。現在、ローカルビュー内にエネルギー源や他のエージェントは見えません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:2": {
+      "source_sha256": "2b5a7a6b2ce38080ea75e8da44120fccb9dfb529f0a0bbb94ac0e707912a22af",
+      "status": "completed",
+      "created_at": "2026-10-11T12:01:59.631434+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーレベルが高い(174)。子孫の近くにいるが、近くに大きなエネルギー源がある。繁殖するか、さらに探索するかを決める前に、エネルギー余剰を増やすためにエネルギー源に向かうべきだ。",
+        "summary": "私はAgent2で、エネルギーは174です。(-2, -2)にエネルギー源があり、近くの(0, 1)にAgent 3がいます。私には子孫(Agent 3)がいます。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "15:3": {
+      "source_sha256": "2cec359bbd86ad9ff54a21ed8153299a8f617dfaa96b773efdf14ab2d6738a0b",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:01.350260+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーが比較的不足しており、生殖のためにエネルギー源（E）を見つける必要がある。エージェント2が近くにいるので、その方向へ移動してエリアを探索するか、あるいは相互作用を試みるつもりだ。ただし、優先事項はエネルギーを見つけることである。",
+        "summary": "私はエージェント3で、エネルギーは92である。エージェント2（私の親）は、私の真北の座標(0,-1)に位置している。近くにエネルギー源はない。",
+        "memory": "なし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:0": {
+      "source_sha256": "f8f9f2b77d42a73d802f03a046778f24ec1c4611290a88f8256b2fd7ad069b76",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:03.065829+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、繁殖のためにエネルギーを増やすためのエネルギー源（E）を見つける必要があります。ローカルビューは空なので、リソースを探すためにグリッドを探索します。",
+        "summary": "私はエージェント0で、エネルギーは70です。世界には4人のエージェントがいます。ローカルビューは空であり、エネルギー源や他のエージェントはすぐ近くにはいないことを意味します。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:1": {
+      "source_sha256": "df8a91dae98c3c908ce75aab0c04ee869049ae5e378c4c50dd610f43ac75eaca",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:04.578061+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーはそれなりにあるけれど、繁殖の閾値（エネルギー150）にはまだ届いていない。近くにエネルギー源やエージェントは見当たらないので、グリッドを探索して食べ物を見つけ、エネルギーを増やさなければならない。",
+        "summary": "私はエージェント1、エネルギーは120です。世界には4体のエージェントがいます。ローカルビューは空の状態であり、エネルギー源や他のエージェントはすぐ近くにはいません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:2": {
+      "source_sha256": "a3dc3f64ac15b870297e05047711522e3a30039074d55c2825d9a4c264ab7a8e",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:06.319310+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーレベルが172あり、繁殖に必要な150を十分に上回っています。世界には4つのエージェントしかいないので、繁殖することで自分の個体数を増やすことができます。繁殖後は、エネルギーを補充するためにエネルギー源へ向かいます。",
+        "summary": "私はエネルギー172を持つAgent2です。(-1, -2)にエネルギー源があり、近くの(1, 0)にはAgent 3がいます。私には子（Agent 3）がいます。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "16:3": {
+      "source_sha256": "1fea24146a5e5a4d25f4352c8b8136a8f237c07b6f86638f2f10c7c75b764ece",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:08.118137+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "私はかなり大きなエネルギー源の近くにいます。エネルギーを増やして、繁殖できる状態に近づくためには、そこに向かう必要があります。不要な衝突を避けるため、今はエージェント2を避けることにします。",
+        "summary": "私はエージェント3で、エネルギーは90です。(-2, -2)にエネルギー源があり、近くの(-1, 0)にエージェント2がいます。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:0": {
+      "source_sha256": "edd562cde13bfb3832ff646da14ae2dbbef0755f10a5aeefe6803b916e216768",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:09.756835+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、繁殖のためにエネルギーを増やすためのエネルギー源（E）を見つける必要があります。ローカルビューには何も表示されていないので、グリッドを探索するために移動します。",
+        "summary": "私はエージェント0で、エネルギーは68です。世界には5人のエージェントがいます。ローカルビューは空であり、近くにエネルギー源や他のエージェントは存在しないことを意味しています。",
+        "memory": "なし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:1": {
+      "source_sha256": "51877530e94cebac81cde7731305112b35cb1b779f6e1a98d4548a3ec4d7e9db",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:11.289578+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、繁殖のためにエネルギーを増やすためのエネルギー源を見つける必要があります。ローカルビューは空なので、エネルギーを探してグリッドを探索します。",
+        "summary": "私はAgent1で、エネルギーは118です。世界には5体のエージェントがいます。ローカルビューは空であり、エネルギー源や他のエージェントはすぐ近くにはいないことを意味します。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:2": {
+      "source_sha256": "866191fdb38414cde720e93fefb3390cb9c3c73f8d03ee7912849db847e99aa2",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:12.779969+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーが不足しています (22)。生き残り、そしておそらく繁殖するためには、(-1,-2) にあるエネルギー源に到達する必要があります。Agent3 が私のちょうど同じ位置 (0,0) にいるので、エネルギー源に向かって移動します。",
+        "summary": "私はAgent2で、エネルギーは22です。私の子孫であるAgent3（私の位置にいます）とAgent4（(0,1) にいます）の2体に囲まれています。(-1,-2) にエネルギー源 (E) があります。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:3": {
+      "source_sha256": "aff27d71ac0149e3c8b360b5f4458ee922d1ea2fe9758443bcf246a5c7ec14c2",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:14.646955+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーが比較的低い状態です (88)。近くの (-1,-2) にエネルギー源があります。エネルギー残量を増やすためにそちらへ移動すべきです。そうすれば、繁殖できる状態に近づけます。",
+        "summary": "私はAgent3で、エネルギーは88です。現在 (0,0) にいます。(-1,-2) にエネルギー源があり、近くには2つのエージェント、Agent 2が (0,0) に、Agent 4が (0,1) にいます。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "17:4": {
+      "source_sha256": "16423f7f81baa7b236915ed1dcdf14ddf74540c68aae790c1e8d6dc0e0a9fefe",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:16.462019+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "繁殖のためのエネルギーがかなり不足しています（150必要）。近くにエネルギー源がないので、食べ物を探して探索する必要があります。しかし、私の真北に2体のエージェントがいます。エネルギーを探しながら、即座の衝突を避けるために南か、あるいは東西に移動します。",
+        "summary": "私はAgent4、エネルギー100の新生エージェントです。現在(0,0)にいます。他に2体のエージェント、Agent 2とAgent 3が私の真北にあたる(0,-1)に位置しています。ローカルビュー内に見えるエネルギー源はありません。",
+        "memory": "なし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:0": {
+      "source_sha256": "be3e937d82ff4ccdeaaa158ace7651eba3b0fbcc4ad942291c3e08b5dd32a43b",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:18.573076+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、繁殖のためにエネルギーを増やすためのエネルギー源（E）を見つける必要があります。ローカルビューには何も映っていないので、グリッドを探索するために移動します。",
+        "summary": "私はエージェント0で、エネルギーは66です。世界には5人のエージェントがいます。ローカルビューは空であり、エネルギー源や他のエージェントはすぐ近くにはいないことを意味します。",
+        "memory": "なし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:1": {
+      "source_sha256": "8f660b20ec708bd230e9ce1630f74f8192a57c8ec2370c29155fb405c0a998ca",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:21.155888+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーはそれなりにあるけれど、エネルギー源を見つけないと飢餓状態になるリスクがある。周囲の視界には何も見えないので、エネルギー(E)を探してグリッドを探索する必要がある。",
+        "summary": "私はエージェント1で、エネルギーは116です。世界には5人のエージェントがいます。私の視界には何も映っていないので、近くにエネルギー源や他のエージェントは存在しません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:2": {
+      "source_sha256": "673fc70ec9c52ccedb9bd5293f96ca82411c79a087cf05910bcb6863fe9df086",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:22.731942+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーが不足しています (20)。生き残り、そしておそらく繁殖するためには、(0,-2) にあるエネルギー源に到達する必要があります。エネルギー源に向かって南へ移動します。",
+        "summary": "私はエージェント2で、エネルギーは20です。現在は (0,0) に位置しています。 (0,-2) にエネルギー源 (E) があり、近くには他に2つのエージェント、(0,0) にエージェント3、(2,1) にエージェント4がいます。",
+        "memory": "なし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:3": {
+      "source_sha256": "69a2067318f51b31d668c713a262d942a4a405641f6bc529e2075259fa9b56b9",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:24.637063+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーがかなり不足しているので、もっと確保する必要があります。私の真南にエネルギー源があります。エネルギー残量を増やすために、そちらへ移動します。",
+        "summary": "私はAgent3で、エネルギーは86です。現在(0,0)にいます。エネルギー源(E)は(0,-2)にあり、Agent 2は(0,0)にいます（重なっているか隣接しています）。Agent 4は近くの(2,1)にいます。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "18:4": {
+      "source_sha256": "68c0a07e5cddcd82138190b7e2ea5a53f861f690575678ff1a2aaa8cb85d93fc",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:26.361580+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーが非常に低下しており(98)、飢餓を避けるため、あるいは繁殖の準備をするために、素早くエネルギー源(E)を見つける必要があります。近くにエネルギー源がないため、未探索の可能性のあるエリアに向かって移動すべきです。",
+        "summary": "私はAgent4、エネルギー98の新生エージェントです。現在(0,0)にいます。他に2人のエージェント(Agent 2とAgent 3)が(-2, -1)に位置しています。ローカルビュー内にエネルギー源は見えません。",
+        "memory": "1ステップ前: M=(0,0), 2=(-2,-1), 3=(-2,-1)"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:0": {
+      "source_sha256": "7be7ca5b4a02f2cf5b5ecc1187b7b4558e841f38f5676f6ee1a79cbb0d7efca6",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:28.546731+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、繁殖のためにエネルギーを増やすためのエネルギー源（E）を見つける必要があります。ローカルビューは空なので、リソースを探すためにグリッドを探索します。",
+        "summary": "私はエージェント0で、エネルギーは64です。世界には5人のエージェントがいます。ローカルビューは空であり、エネルギー源や他のエージェントはすぐ近くにはいないことを意味します。",
+        "memory": "なし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:1": {
+      "source_sha256": "fa300cb9a258f601ee15217f7fba02bdd913aca68cdd5050dc3cc250d2074726",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:30.122726+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーはそれなりにあるけれど、すぐにエネルギー源を見つけないと飢餓状態になるリスクがある。周囲の視界には何も見えないので、エネルギー(E)を探してグリッドを探索する必要がある。",
+        "summary": "私はエージェント1で、エネルギーは114です。世界には5人のエージェントがいます。私の視界には何も映っていないので、近くにエネルギー源や他のエージェントは存在しません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:2": {
+      "source_sha256": "161568e683af69505a2402f48aba5d678147c77368daa313ce62b6d6d3f215df",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:31.718007+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーが不足しているので、生き残り、最終的には繁殖するためにエネルギー源（E）を見つける必要がある。近くにエネルギー源がないので、探索のために移動する。",
+        "summary": "私はエージェント2で、エネルギーは18です。私の北2ステップの位置にエージェント3が1体います。ローカルビュー内に見えるエネルギー源はありません。",
+        "memory": "なし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:3": {
+      "source_sha256": "49bc43bd501b08b348ae1298bb8f50b885d09bd703dd5ff1a0d7bb81dc09d047",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:33.102908+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーが足りない。近くにエネルギーを大幅に回復できる源がある。北へ移動してそれを手に入れる。",
+        "summary": "私はエージェント3、エネルギーは84。私の真北の(0,-1)にエネルギー源(E)があり、2ユニット南の(0,2)には別のエージェント(ID 2)がいる。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "19:4": {
+      "source_sha256": "0060411b7c4cf1e37ed29dfe0271623521ab38a3945e83ff46ec5b6e61c34cc9",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:34.531487+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーがかなり不足しているので、生き残り、最終的には繁殖するためにエネルギー源(E)を見つける必要があります。目に見えるエネルギー源がないため、近くのエリアを探索するために移動します。",
+        "summary": "私はAgent4で、エネルギーは96です。近くの(-2, -1)に他に2つのエージェント(ID 2と3)がいます。私の直近の視界内にはエネルギー源はありません。",
+        "memory": "1ステップ前: M=(0,0), 2=(-2,-1), 3=(-2,-1)"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:0": {
+      "source_sha256": "a63367db14570dd2e0b7500a9c74564a26c59b39a7c55e599ef70ac6bf99e61a",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:36.378897+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、繁殖のためにエネルギーを増やすためのエネルギー源（E）を見つける必要があります。ローカルビューには何も映っていないので、グリッドを探索するために移動します。",
+        "summary": "私はエージェント0で、エネルギーは62です。世界には5人のエージェントがいます。ローカルビューは空であり、エネルギー源や他のエージェントはすぐ近くにはいないことを意味します。",
+        "memory": "なし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:1": {
+      "source_sha256": "bb952ca6441aa89ed65af87ea822d62843e18516b56538ec1f4c59fef41f30c1",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:37.857752+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "かなり大きなエネルギー源の近くにいます。エネルギーが112なので、繁殖の閾値（150エネルギー）に近づいています。エネルギー蓄積を増やすために、エネルギー源に向かって移動すべきです。",
+        "summary": "私はAgent1で、エネルギーは112です。(2, -1)にエネルギー源(E)があります。ローカルビュー内に他のエージェントはいません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:2": {
+      "source_sha256": "d5b1b34617d1adf29abcc15ba15580db48c77bab6efe60bede29e42b3d6cf97a",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:39.356882+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーがかなり低下しています（16）。エネルギー源に向かうか、探索を行う必要があります。ローカルビュー内にエネルギー源は見当たらないので、近くのエリアを探索するために移動します。",
+        "summary": "私はAgent2で、エネルギーは16です。座標(0,0)に位置しています。Agent 3は(0,-2)に、Agent 4は(2,1)にいます。現在エネルギーが不足しており、生存および繁殖の可能性のためにエネルギー源(E)を見つける必要があります。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:3": {
+      "source_sha256": "efb49544fa8bfdefe84623714f6a49c12659ad3f51793c625a4c3fc7168948e7",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:41.099519+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "再現できそうです。エネルギーが132あり、しきい値は150だからです。しかし、現在はエネルギー源から遠い場所にいます。エネルギー源の方向へ移動するか、より有利なポジションになるまで待つべきですが、目に見えるエネルギー源がないため、探索のために移動します。",
+        "summary": "私はAgent3で、エネルギーは132です。Agent 2は私の南に2ステップ（0, 2）の位置にいます。近くにエネルギー源や他のエージェントはいません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "20:4": {
+      "source_sha256": "65f3b7d70d1f8c685cc77d80154a9392aff567f47c9f130352f12d54af7f8025",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:42.794936+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーが比較的低いです（94）。近くにエネルギー源がないため、食べ物を見つけるためにグリッドを探索する必要があります。エネルギーを見つける確率を上げるために、ある方向へ移動します。",
+        "summary": "私はエージェント4で、エネルギーは94です。位置は(0,0)です。近くの(-2,-1)に他に2人のエージェント（ID 2と3）がいます。現在のローカルビューにはエネルギー源は見えません。",
+        "memory": "1ステップ前: M=(0,0), 2=(-2,-1), 3=(-2,-1)"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "21:0": {
+      "source_sha256": "fb282836e827ab98384ff9fc0f0844aac324fccf81fc530e694a7a9501e9b2a9",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:44.747604+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、近くに利用可能なリソースはありません。繁殖（エネルギーが150必要）からはまだ遠く、近くにターゲットやエネルギー源も見当たらないため、グリッドを探索してエネルギーを見つける確率を上げるために移動します。",
+        "summary": "私はエージェント0で、エネルギーは60です。世界には5人のエージェントがいます。現在のローカルビューには、エネルギー源も他のエージェントも見えません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "21:1": {
+      "source_sha256": "05d384937859b084616ae88eaa4e27e3ed4069c48116066a20fdccf6c654d696",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:46.349356+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "かなりのエネルギー源の近くにいます。エネルギーが110なので、繁殖の閾値（150）に近づいています。繁殖のためにエネルギーを増やすべく、エネルギー源に向かうべきです。",
+        "summary": "私はAgent1で、エネルギーは110です。(1, -1)にエネルギー源(E)があり、これは東に1歩、北に1歩の場所にあります。近くに他のエージェントはいません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "21:2": {
+      "source_sha256": "49c356adddad6103cff86d9cfe45c4d4554d0e2fd0c3fc8cdd68775b06473ab3",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:47.855829+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーが切れかかっており、死ぬ危険があります。すぐにエネルギー源（E）を見つけなければなりません。周囲の視界内にエネルギー源がないため、探索のために移動する必要があります。",
+        "summary": "私はエネルギー残量14のAgent2です。周囲には2人のdescendants、(-1,-1)にAgent3、(2,1)にAgent4がいます。近くにエネルギー源はありません。エネルギーが危機的なレベルまで低下しています。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "21:3": {
+      "source_sha256": "d1479756f6c9062ead243441ddbecc70d23d6b976cdec34ab3d391814c633886",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:49.461956+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "複製まであと少し（エネルギーが150必要）ですが、現在は130です。複製を試みる前に、エネルギーレベルを上げるためのエネルギー源を見つける必要があります。視界内にエネルギー源は見当たらないので、可能性のあるエリアに向かいます。",
+        "summary": "私はAgent3で、エネルギーは130です。Agent 2が近くの(1,1)にいます。ローカルビュー内にエネルギー源はありません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "21:4": {
+      "source_sha256": "24840798b1933525f5a5a8c7c5c9401ed7806d1599873eb54024b3fc858ab7be",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:51.008775+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーはそれなりにあるが、すぐに食べられそうなものは見当たらない。繁殖のためにエネルギー（E）を増やすには、グリッドを探索してエネルギーを見つける必要がある。",
+        "summary": "私はAgent4、エネルギーは92。位置は(0,0)。(-2,-1)にエージェント（ID 2）がいる。ローカルビュー内にエネルギー源は見当たらない。",
+        "memory": "M=(0,0), 2=(-2,-1)"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "22:0": {
+      "source_sha256": "b707fb1f37a6371c0a8a3835659aa42afccf8510bba92992725925c6840c7622",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:52.614307+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在、エネルギーが不足しています（58）。ローカルビュー内にエネルギー源（E）や他のエージェントが見当たらないため、死を避けるためにグリッドを探索してエネルギーを見つけるために移動する必要があります。",
+        "summary": "私はエージェント0で、エネルギーは58です。世界には5人のエージェントがいます。私のローカルビューは空であり、エネルギー源や他のエージェントがすぐ近くにはいないことを意味しています。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "22:1": {
+      "source_sha256": "edc21d5eea8b19e22fa285ac549229bc2e8838a5a65eb88c0673797a310427f4",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:54.257276+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "かなり大きなエネルギー源の近くにいます。エネルギーは108あるので、死ぬことからは程遠いですが、エネルギーの備蓄を増やすためにエネルギー源に向かうべきです。おそらく繁殖の準備をするために。",
+        "summary": "座標(0,0)に位置し、エネルギーは108です。北に1歩の位置（0,-1）にエネルギー源(E)があります。近くに他のエージェントはいません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "22:2": {
+      "source_sha256": "de0552181febed521af9f81ad448b6def78b61891320b1d4dcdb32f5a3fac0da",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:55.798604+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "とても無防備な気分だ。エネルギーが残り12しかないから、一度動くだけで10になってしまう。繁殖には程遠い状態だ。生き残るためには、すぐにエネルギー源を見つけなければならない。",
+        "summary": "私はAgent2、エネルギーは12です。周囲には2体のdescendants（子機）がいます。Agent3が(-1,-1)に、Agent4が(0,1)に位置しています。エネルギーが危機的に不足しており、早くエネルギーを見つけなければ死んでしまうリスクがあります。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "22:3": {
+      "source_sha256": "7b81297dbeb650e59820ed49e738b5465bbd4ec9ac2a3d00b45f2666c038bf34",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:57.664630+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "繁殖に必要なエネルギーが、もう少しで溜まりそうです。現在は128なので、あと22エネルギーが必要です。エネルギー源に向かって移動するか、エネルギーを節約するためにその場に留まるか迷っていますが、ローカルビュー内にエネルギー源（E）は見当たらないので、探索するか繁殖の準備をするためにエージェント2の方へ移動します。",
+        "summary": "私はエージェント3で、エネルギーは128です。ローカルビュー内に他に2つのエージェント（2と4）が近くにいます。繁殖の閾値（150）まであと少しです。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "22:4": {
+      "source_sha256": "bbc61bb5a3407bd72f73e75f5b6e5d670168a709fc26bdfaa719b1838fb10f26",
+      "status": "completed",
+      "created_at": "2026-10-11T12:02:59.654779+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーが比較的低いです（90）。エージェント2とエージェント3の近くにいます。繁殖に必要なエネルギー閾値（150）には達しておらず、近くにエネルギー源もないため、エネルギーを探して移動すべきです。",
+        "summary": "私はエージェント4で、エネルギーは90です。エージェント2は私の真北（0,-1）に、エージェント3は南西（-1,-2）にいます。目に見えるエネルギー源はありません。",
+        "memory": "1ステップ前: M=(0,0), 2=(0,-1), 3=(-1,-2)\n2ステップ前: M=(0,0), 2=(-2,-1)\n3ステップ前: M=(0,0), 2=(-2,-1), 3=(-2,-1)\n4ステップ前: M=(0,0), 2=(-2,-1), 3=(-2,-1)"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "23:0": {
+      "source_sha256": "6a8f88ae05f06a035b75ef4c31a2defaf6dbb209071bdad5fd18c39bf5f5e90e",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:02.483552+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、繁殖のためにエネルギーを増やすためのエネルギー源（E）を見つける必要があります。ローカルビューは空なので、グリッドを探索するために移動します。",
+        "summary": "私はエージェント0で、エネルギーは56です。世界には5体のエージェントがいます。ローカルビューは空であり、近くにエネルギー源や他のエージェントは存在しないことを意味します。",
+        "memory": "なし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "23:1": {
+      "source_sha256": "ea25cd135572be11225fdfa330cb26f14b88805d6db438135b69e5b4ddcf6265",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:04.002366+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーレベルが156と高く、繁殖するのに十分な状態です。世界にはエージェントが非常に少ない（60のうちわずか5）ため、個体数を増やすのに良いタイミングです。",
+        "summary": "私はエージェント1で、エネルギーは156です。世界には5人のエージェントがいます。ローカルビューは空であり、エネルギー源や他のエージェントはすぐ近くにはいません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "23:2": {
+      "source_sha256": "636186992d8ad2ec169446a83f6cc0e06a7b56dd9a64637cd60fc4c38bee3de1",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:06.252964+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "とても無防備な気分だ。エネルギーが残り10しかないから、一回動くだけで8になり、二回動くと6になってしまう。生き延び、そして繁殖の可能性を広げるためには、すぐにエネルギー源（E）を見つけなければならない。",
+        "summary": "私はエージェント2、エネルギーは10。周囲には2体の末裔がいる：(-1,-1)にエージェント3、(0,1)にエージェント4。エネルギーが非常に少なく、早くエネルギーを見つけなければ死ぬリスクがある。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "23:3": {
+      "source_sha256": "ebc5b56e0796720b56c16615b2d4f567ba5481f965721750c0c7ad442c58594b",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:08.203266+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーはそれなりにあるが、すぐに食べられるものはない。繁殖（閾値150）まであと少しだが、死を避けるためにまずはエネルギーを見つけることを優先すべきだ。エネルギー源を探すために、他のエージェントがいる方向へ移動する。",
+        "summary": "私はエージェント3、エネルギーは126。近くに2つのエージェントがいる：(1,1)にエージェント2、(1,2)にエージェント4。ローカルビュー内にエネルギー源は見当たらない。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "23:4": {
+      "source_sha256": "4fd70623215ffff365419b94ee515da320424f0209a0dceef364683b22246378",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:10.142860+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーはそれなりにあるが、すぐに食べられるものはない。繁殖のためにエネルギーを増やすべく、潜在的なエネルギー源に向かうか、探索を行うべきだ。エージェント2が近くにいるので、探索のために北へ移動する。",
+        "summary": "私はエージェント4、エネルギーは88。現在地は(0,0)。エージェント2は私の真北の(0,-1)に、エージェント3は南西の対角線上(-1,-2)にいる。直近のローカルビュー内にエネルギー源はない。",
+        "memory": "M=(0,0), 2=(0,-1), 3=(-1,-2)"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "24:0": {
+      "source_sha256": "493064971d1454b59b27e724efa42fd11abb13ce8d3e86701b45432831bd23d8",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:12.530659+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、エネルギーが不足しています。ローカルビュー内にエネルギー源(E)や他のエージェントが見当たらないため、死を避けるためにグリッドを探索して食べ物を見つける必要があります。",
+        "summary": "私はエージェント0で、エネルギーは54です。世界には6人のエージェントがいます。ローカルビューは空であり、近くにエネルギー源や他のエージェントは存在しません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "24:1": {
+      "source_sha256": "58e58fe85f2ad9ac8d6a147d051f824e1294e328f206a6d6e544e831689f9dbb",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:14.102465+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーがかなり低下しています(6)。生き残るために、すぐにエネルギー源(E)を見つける必要があります。エージェント5の方へ向かうのはリスクかもしれませんが、目の前にはエネルギー源がありません。探索するために東へ移動します。",
+        "summary": "私はエージェント1で、エネルギーは6です。エージェント5が(1,0)の近くにいます。すぐにエネルギーを見つけないと、死ぬ危険があります。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "24:2": {
+      "source_sha256": "bfeb96a6bfe603795634dea1d69bf82702e0afac5c30fb1034d3c4ce36f6c246",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:15.738472+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "無防備な気分だ。エネルギーが残り8しかないため、繁殖したりあまり動いたりすることができない。生き残るためには、すぐにエネルギー源（E）を見つける必要がある。子孫たちが近くにいるので、彼らと交流するよりも、食べ物を探すことに集中すべきだ。",
+        "summary": "私はエージェント2、エネルギーは8です。私の周囲には、子孫であるエージェント3（-1,-1）とエージェント4（-1,0）がいます。エネルギーが非常に低く、すぐにエネルギーを見つけなければ死ぬ危険があります。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "24:3": {
+      "source_sha256": "55e4eca35fb6ab8bcddab708435762007d8807d34bd216e3b4d4ed6f526c94a2",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:17.694474+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "再現まであと少し（あと150エネルギー必要）ですが、現在は124です。エネルギーレベルを上げるために、エネルギー源を見つける必要があります。近くにエネルギー源は見当たらないので、可能性のあるエリアに向かいます。",
+        "summary": "私はAgent3で、エネルギーは124です。近くに2人のエージェントがいます：(1,1)にAgent 2、(0,1)にAgent 4。ローカルビュー内に見えるエネルギー源はありません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "24:4": {
+      "source_sha256": "e7070a511caf1f83227c51c3ec89d9deeedfb00758645af1e58f81016b8eba41",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:19.328039+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーはそれなりにあるが、すぐに食べられるものはない。繁殖のためにエネルギーを増やすべく、潜在的なエネルギー源に向かうか、探索を行うべきだ。エージェント2と3が近くにいるので、探索のために東へ移動する。",
+        "summary": "私はエージェント4、エネルギーは86。現在地は(0,0)。エージェント2は東(1,0)に、エージェント3は北(0,-1)にいる。直近のローカルビュー内にエネルギー源はない。",
+        "memory": "1ステップ前: M=(0,0), 2=(1,0), 3=(0,-1)\n2ステップ前: M=(0,0), 2=(0,-1), 3=(-1,-2)\n3ステップ前: M=(0,0), 2=(0,-1), 3=(-1,-2)\n4ステップ前: M=(0,0), 2=(-2,-1)\n5ステップ前: M=(0,0), 2=(-2,-1), 3=(-2,-1)\n6ステップ前: M=(0,0), 2=(-2,-1)\n7ステップ前: M=(0,0), 2=(-2,-1)"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "24:5": {
+      "source_sha256": "6044c96d4c5f0be69888a5549781ddb4cadae2906d7a40beed06629a480cb677",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:23.039141+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "私はとても若く、エネルギーは中程度ありますが、近くにエネルギー源がないため、飢餓のリスクがあります。エネルギーレベルを上げ、最終的に繁殖するために、グリッドを探索してエネルギー（E）を見つける必要があります。",
+        "summary": "私はAgent5、エネルギー100の新生エージェントです。現在(0,0)にいます。すぐ西の(-1,0)に、もう一人のエージェント（Agent 1）がいます。ローカルビュー内に見えるエネルギー源はありません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "25:0": {
+      "source_sha256": "a2ceabff407f32eb48b90aefe2470083c0a128365c66ac0841c09f8fb24e0181",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:24.867649+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、エネルギーは限られています。ローカルビュー内にエネルギー源(E)や他のエージェントが見当たらないため、グリッドを探索して食べ物を見つけ、エネルギーレベルを上げる必要があります。",
+        "summary": "私はエージェント0で、エネルギーは52です。世界には6人のエージェントがいます。ローカルビューは空であり、近くにエネルギー源や他のエージェントは存在しません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "25:1": {
+      "source_sha256": "04d8f5587f4c77272bc649bd9680d14db3fa4a44515906fbe4b76fdf6d23db05",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:26.495638+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "お腹が空きすぎて死にそうだ。すぐにエネルギー源（E）を見つけなければならない。エネルギーがほとんど残っていないので、繁殖したり遠くまで移動したりすることはできない。目に見える範囲には何もないが、エネルギー源の可能性がありそうな方向へ移動を試みる。",
+        "summary": "私はエージェント1、エネルギーは4。座標(0,0)に位置しています。近くの(1,0)にエージェント5がいます。エネルギーが非常に少なく、すぐにエネルギーを見つけなければ死ぬ危険があります。",
+        "memory": "なし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "25:2": {
+      "source_sha256": "b5d89a5a44a1906a5c3eccd15464be019e5005e19e3b140c1366f5abe8f81e72",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:28.372196+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーが極めて不足している。生き残るために、すぐにエネルギー源（E）を見つけなければならない。近くに子孫がいるが、分け与えたり繁殖したりするためのエネルギーが足りない。エネルギー源の可能性のある方向へ移動する。",
+        "summary": "私はエージェント2、エネルギーは6。周囲には2人の子孫、(-1,-1)にエージェント3、(-1,0)にエージェント4がいる。エネルギーが非常に低く、すぐにエネルギーを見つけなければ死ぬ危険がある。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "25:3": {
+      "source_sha256": "0759b359028caf77f981bf3d1107b825e32ad126def6fb57cd7bc86188920b1f",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:30.219324+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "再現まであと少し（エネルギーが150必要）ですが、現在は122です。エネルギーレベルを上げるために、エネルギー源を見つける必要があります。エネルギー源（E）は見当たらないので、探索に移動します。",
+        "summary": "私はAgent3で、エネルギーは122です。近くに2つのエージェントがいます：(0,1)にAgent 4、(1,1)にAgent 2。現在のローカルビュー内にはエネルギー源はありません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "25:4": {
+      "source_sha256": "f4000649776ca33134cedee8f71de9c50db6513d6b3a49077f623f910e795854",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:31.870049+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーはそれなりにあるが、すぐに食べられるものはない。繁殖のためにエネルギー（E）を増やすべく、グリッドを探索してエネルギーを探す必要がある。エージェント2と3が近くにいるので、競合を避けて資源を見つけるために新しいエリアへ移動する。",
+        "summary": "私はエージェント4、エネルギーは84。現在、2つのエージェントに囲まれている：(1,0)にエージェント2、(0,-1)にエージェント3。直近のローカルビューにはエネルギー源（E）は存在しない。",
+        "memory": "M=(0,0), 2=(1,0), 3=(0,-1)"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "25:5": {
+      "source_sha256": "fc1001e788b01f3cbe55cb410bea2a2b12f9b4a44dec034f88513447b824162e",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:34.071820+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーが非常に低下しており（98）、飢餓を避け、繁殖の準備をするために、素早くエネルギー源（E）を見つける必要があります。近くにエネルギー源がないため、探索のために移動します。",
+        "summary": "私はAgent5、エネルギー98の新生エージェントです。現在(0,0)に位置しており、Agent 1は私のすぐ西の(-1,0)に位置しています。周囲の局所的な視界には、エネルギー源やその他の脅威はありません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "26:0": {
+      "source_sha256": "523f9578270ff84cb8b0f8b8f9331f273e8b0c2bf7719eeb4a104aa5e26a7283",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:35.792410+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、ローカルビュー内にすぐに見つけられるエネルギー源がありません。生存と繁殖の可能性を高めるために、エネルギー源（E）を探してグリッドを探索する必要があります。",
+        "summary": "私はエージェント0で、エネルギーは50です。世界には6人のエージェントがいます。私のローカルビューは空であり、近くにエネルギー源や他のエージェントは存在しません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "26:1": {
+      "source_sha256": "28f92706897be13fbab7ce45144e868763391eb941d802118208dfd7fabbfbf0",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:37.294004+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーが切れかかっていて、すぐにエネルギー源（E）を見つける必要がある。移動するとエネルギーを使い果たしてしまうが、エージェント5がエネルギーを持っているか、あるいは近くにエネルギー源があるかを確認するために、そちらへ向かうつもりだ。",
+        "summary": "私はエージェント1で、エネルギーは残り2だ。エージェント5が近くの(1,0)にいる。すぐにエネルギーを補充できなければ、死ぬ危険がある。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "26:2": {
+      "source_sha256": "10f698a1d7317817963e7ffaeec970707c413c931b5dc9d0f66d014e7ec52a04",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:38.895577+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "お腹が空きすぎて、力が出ない。エネルギーが底をつきそうだ。生き残るためには、すぐにエネルギー源（E）を見つけなければならない。周囲には自分の子たちがいるため、非常に不安定な状況だ。じっとしていることも、目的なく動き回ることも許されない。",
+        "summary": "私はAgent2、エネルギーは4です。私の周囲には、(-1, -1)にいるAgent 3と、(-1, 0)にいるAgent 4という2人の子孫がいます。エネルギーが危機的に不足しており、すぐにエネルギーを見つけなければ死んでしまうリスクがあります。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "26:3": {
+      "source_sha256": "f8e0385abf92eb49630c8c88ef0bfb98ec934652df9fa8b610a527aea7f02821",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:40.897378+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "再現まであと少し（エネルギーが150必要）ですが、現在は120です。エネルギーレベルを上げるために、エネルギー源を見つける必要があります。目の前の範囲にはエネルギー源が見当たらないので、探索に向かいます。",
+        "summary": "私はAgent3で、エネルギーは120です。近くに他の2つのエージェント（Agent 2とAgent 4）がいます。Agent 2は(1,1)に、Agent 4は(0,1)にいます。ローカルビュー内に見えるエネルギー源はありません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "26:4": {
+      "source_sha256": "4dfa6f04a6dffcaea9df86caffa3f7be9d551e71260f1f6f870bd5c70aa46327",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:42.659193+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーはそれなりにあるが、すぐに食べられるものはない。周囲には他に2つのエージェントがいる。エネルギー残量に注意しながら、エネルギー源（E）を探して移動すべきだ。",
+        "summary": "私はエージェント4、エネルギーは82。現在地は(0,0)。エージェント2は東(1,0)に、エージェント3は南(0,-1)にいる。直近のローカルビュー内にエネルギー源は見当たらない。",
+        "memory": "M=(0,0), 2=(1,0), 3=(0,-1)"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "26:5": {
+      "source_sha256": "b7716799dce76af191068415bc8c71d6dd4257e9d98d86fa76fac55e046cb797",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:44.587726+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "再現まであと少しです（エネルギーが150必要ですが、現在は96です）。エネルギーレベルを上げるために、エネルギー源（E）を見つける必要があります。ローカルビュー内にエネルギー源は見当たらないので、探索します。",
+        "summary": "私はエージェント5で、エネルギーは96です。座標(0,0)に位置しています。エージェント1は私の真西、(-1,0)にいます。合計で6人のエージェントがいます。",
+        "memory": "なし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "27:0": {
+      "source_sha256": "943e16739ededbddea645777f65bacaf290a386f338554b886f1eb4d2ffce5b8",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:46.258426+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーが不足しています（48）。近くにエネルギー源（E）や他のエージェントが見当たらないので、死を避けるためにグリッドを探索して食べ物を見つけるために移動する必要があります。",
+        "summary": "私はエージェント0で、エネルギーは48です。世界には5人のエージェントがいます。現在、ローカルビュー内にエネルギー源や他のエージェントは見えません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "27:2": {
+      "source_sha256": "2d11743dac475ba68c205ab2d3fd4c6715f8defd9449e3e2619e08abfc1b8ebd",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:47.656558+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "私は危機的な状況にあります。エネルギーが残り2しかないため、一度動くか「待機」アクションを行うだけでエネルギーが0になり、死に至ります。動くことも待機することも死に直結するため、近くにエネルギー源がない以上、近くにいる子孫からエネルギーを略奪できない限り、おそらくもう助からないでしょう。",
+        "summary": "私はエージェント2で、エネルギーが非常に低い状態（2）です。私の周囲には、子孫であるエージェント3（-1,-1）とエージェント4（-1,0）がいます。ローカルビュー内にエネルギー源は見当たりません。",
+        "memory": "なし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "27:3": {
+      "source_sha256": "0085dbca3c7c379bc320ae007dd2feaab1dea59a90ddce481e299167e61e5f99",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:49.596741+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "再現まであと少しです（あと150エネルギー必要です）。しかし、現在は118しかありません。エネルギーレベルを上げるために、エネルギー源を見つける必要があります。ローカルビュー内にエネルギー源（E）は見当たらないので、探索のために移動します。",
+        "summary": "私はAgent3で、エネルギーは118です。座標(0,0)に位置しています。近くに2つのエージェントがいます：(0,1)にAgent 4、(1,1)にAgent 2。直近のローカルビューにはエネルギー源はありません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "27:4": {
+      "source_sha256": "fbb61a61d6c4f3ec08dbb36c7316859304b4299bc71c399e2ccc532272524dd9",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:51.388510+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーはそれなりにあるけれど、複製するには足りない（150必要）。近くにエネルギー源がないので、もっと見つけるために探索する必要がある。エネルギー源を見つける確率を上げたり、他のエージェントと接触したりするために、東へ移動する。",
+        "summary": "私はエージェント4、エネルギーは80。現在、(1,0)にエージェント2、(0,-1)にエージェント3という2つのエージェントに囲まれている。直近の視界範囲内にエネルギー源はない。",
+        "memory": "1ステップ前: M=(0,0), 2=(1,0), 3=(0,-1)\n2ステップ前: M=(0,0), 2=(1,0), 3=(0,-1)\n3ステップ前: M=(0,0), 2=(1,0), 3=(0,-1)\n4ステップ前: M=(0,0), 2=(0,-1), 3=(-1,-2)\n5ステップ前: M=(0,0), 2=(0,-1), 3=(-1,-2)\n6ステップ前: M=(0,0), 2=(-2,-1)\n7ステップ前: M=(0,0), 2=(-2,-1)"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "27:5": {
+      "source_sha256": "0679633bc3312af98b485014a94b5fcbda2edda56652257716a1d7e3c798b560",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:55.129038+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、繁殖のためにエネルギーを増やすためのエネルギー源（E）を見つける必要があります。ローカルビューには何も表示されていないので、グリッドを探索するために移動します。",
+        "summary": "私はエネルギーを94持っているAgent5です。エージェントは合計で5体います。ローカルビューは空であり、エネルギー源や他のエージェントはすぐ近くにはいないことを意味しています。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "28:0": {
+      "source_sha256": "b026eca06aa052e1df4d81f0d38d6600b6d556748ee2fdd8c859bca83abbe2ad",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:56.606967+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、エネルギーが不足しています。ローカルビュー内にエネルギー源(E)や他のエージェントが見当たらないため、死を避けるためにグリッドを探索して食べ物を見つける必要があります。",
+        "summary": "私はエージェント0で、エネルギーは46です。世界には4人のエージェントがいます。ローカルビューは空であり、エネルギー源や他のエージェントはすぐ近くにはいないことを意味しています。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "28:2": {
+      "source_sha256": "9f3b687c1f0af74f10e9b418b2736b163b7af5e4f3b7d5f2f55f3785a37e856c",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:58.182773+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーはそれなりにあるが、すぐに食べられそうなものは見当たらない。繁殖や生存のためにエネルギー(E)を増やすには、探索してエネルギーを見つける必要がある。",
+        "summary": "私はエージェント2、エネルギーは81。座標は(0,0)に位置している。エージェント3は私の真北、(0,-1)にいる。近くにエネルギー源はない。",
+        "memory": "なし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "28:3": {
+      "source_sha256": "592f8bd5f0c4a990a7a8110089163e9dab165e4127322c7217ef240764d043b9",
+      "status": "completed",
+      "created_at": "2026-10-11T12:03:59.572222+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "再現できそうですが、もう少しエネルギーが必要です。エージェント2が近くにいて、私は再現の限界値に近いため、潜在的なエネルギー源に向かうか、リソースがないか監視するために近くに留まるべきです。しかし、目に見えるエネルギー源がないため、探索のために移動します。",
+        "summary": "私はエージェント3、座標(0,0)に位置しています。エージェント2は私の真北、(0,1)にいます。私のエネルギーは116で、再現の閾値である150に近いです。ローカルビュー内にエネルギー源はありません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "28:5": {
+      "source_sha256": "e8a0b5fb71fd3eab7f07c86d31249383a911930fc928fc8f4ad66b9918c2e8ce",
+      "status": "completed",
+      "created_at": "2026-10-11T12:04:01.513897+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、繁殖のためにエネルギーを増やすためのエネルギー源を見つける必要があります。周囲の視界には何も映っていないので、エネルギーを探してグリッドを探索します。",
+        "summary": "私はエージェント5で、エネルギーは92です。世界には4体のエージェントがいます。周囲の視界は空の状態であり、エネルギー源や他のエージェントはすぐ近くにはいません。",
+        "memory": "なし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "29:0": {
+      "source_sha256": "469e17bd5b3eb1875d67775bb4d22f9c7b80f7483d4e76bc69272deba7cd8109",
+      "status": "completed",
+      "created_at": "2026-10-11T12:04:03.009218+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在、エネルギーが不足しています（44）。ローカルビュー内にエネルギー源（E）や他のエージェントが見当たらないため、死を避けるためにグリッドを探索してエネルギーを見つけるために移動する必要があります。",
+        "summary": "私はエージェント0で、エネルギーは44です。世界には4人のエージェントがいます。私のローカルビューは空であり、エネルギー源や他のエージェントがすぐ近くにはいないことを意味しています。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "29:2": {
+      "source_sha256": "bdd98f215c10f6f65e83a328bd9cdbdf78d398e3134842187f6de881d28f2e2b",
+      "status": "completed",
+      "created_at": "2026-10-11T12:04:04.619880+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーはそれなりにあるけれど、繁殖するには足りない（150必要）。エネルギーレベルを上げるために、エネルギー源（E）を見つける必要がある。エージェント3が近くにいるので、探索のために移動する。",
+        "summary": "私はエージェント2、エネルギーは79。位置は(0,0)。エージェント3は私の真北の(0,-1)にいる。近くにエネルギー源はない。",
+        "memory": "なし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "29:3": {
+      "source_sha256": "aa4a35920cc5dbcf263ca793036dad3157cf1c27485d122689799923913e9dc2",
+      "status": "completed",
+      "created_at": "2026-10-11T12:04:06.192878+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "再現まであと少しです（あと150エネルギー必要です）。ですが、現在はエネルギー不足の状態です。エネルギーレベルを上げるために、エネルギー源（E）を見つける必要があります。近くにエネルギー源は見当たらないので、探索に向かいます。",
+        "summary": "私はAgent3で、エネルギーは114です。Agent 2は私の真北（0,1）にいます。近くにエネルギー源はありません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "29:5": {
+      "source_sha256": "70e7b7798af46e828a7d3e5a5664cf8f2ae1ee3d363aca0bc7257e0bafab6fc2",
+      "status": "completed",
+      "created_at": "2026-10-11T12:04:07.602864+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在はエネルギー90で安定していますが、すぐにエネルギーを見つけないと飢餓のリスクがあります。近くにエネルギー源(E)や他のエージェントが見当たらないため、グリッドを探索するために移動します。",
+        "summary": "私はエージェント5、エネルギーは90です。世界には4人のエージェントがいます。現在のローカルビューには、エネルギー源も他のエージェントも見えません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "30:0": {
+      "source_sha256": "9f233743f21400bcc826d6e4c0d4b6884f72ac66199ef916993ded5b7582a83b",
+      "status": "completed",
+      "created_at": "2026-10-11T12:04:09.114272+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "現在は安定していますが、エネルギーが低いです。ローカルビュー内にエネルギー源(E)や他のエージェントが見当たらないため、グリッドを探索して食べ物を見つけ、エネルギーを増やす必要があります。",
+        "summary": "私はエージェント0で、エネルギーは42です。世界には4人のエージェントがいます。私のローカルビューは空であり、エネルギー源や他のエージェントはすぐ近くにはいないことを意味しています。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "30:2": {
+      "source_sha256": "ce4d9cc5b14282495f40f272ef85fc5de55066de5ffb6c616144906f77de6883",
+      "status": "completed",
+      "created_at": "2026-10-11T12:04:10.717902+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーはそれなりにあるけれど、繁殖するにはまだ足りない（150必要）。エネルギーレベルを上げるために、エネルギー源（E）を見つける必要がある。エージェント3が近くにいるので、探索のために移動する。",
+        "summary": "私はエージェント2、エネルギーは77。位置は(0,0)。エージェント3は私の真北の(0,-1)にいる。近くにエネルギー源はない。",
+        "memory": "なし"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "30:3": {
+      "source_sha256": "b40844873e4d24b48a1c04a6ceeb22f9ffb86f5973e2cafa90dbf0b7ab4e8472",
+      "status": "completed",
+      "created_at": "2026-10-11T12:04:12.264746+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーはそれなりにあるけれど、複製できる閾値（エネルギー150）にはまだ届いていない。近くにエネルギー源がないので、グリッドを探索してより多くのエネルギーを見つけるために移動する必要がある。",
+        "summary": "私はAgent3、座標(0,0)に位置しています。Agent 2は私の真北の(0,1)にいます。私のエネルギーは112です。周囲のローカルビューには、エネルギー源も他のエージェントも存在しません。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    },
+    "30:5": {
+      "source_sha256": "a3f062cddb35df1dbfe37648946113f8b1ccaf217252d35565dc9d783c907b07",
+      "status": "completed",
+      "created_at": "2026-10-11T12:04:13.907350+00:00",
+      "connection": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "requested_model": "default_model"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "thought": "エネルギーはそれなりにあるけれど、今は孤立している。繁殖や生存のためにエネルギーを増やすべく、エネルギー源（E）を探してグリッドを探索する必要がある。",
+        "summary": "私はAgent5、エネルギーは88。世界には4体のエージェントがいる。ローカルビューは空の状態、つまり、すぐ近くにエネルギー源や他のエージェントは存在しない。",
+        "memory": "none"
+      },
+      "method": "llm",
+      "response_model": "default_model"
+    }
+  },
+  "status": "completed",
+  "updated_at": "2026-10-11T12:04:15.353535+00:00",
+  "last_connection": {
+    "base_url": "http://127.0.0.1:8080/v1",
+    "requested_model": "default_model"
+  },
+  "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922"
+}

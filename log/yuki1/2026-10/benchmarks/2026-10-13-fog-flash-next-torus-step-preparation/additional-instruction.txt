@@ -1,0 +1,1 @@
+Relative offsets for E and other agents in Local View already give the shortest toroidal displacement from your current position. If you choose to move closer to one of them, select one nonzero component of its current relative offset, replace it with +1 or -1 while preserving its sign, and set the other component to 0.

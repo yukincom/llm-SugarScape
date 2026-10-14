@@ -1,0 +1,586 @@
+{
+  "run": "/Users/USER/Documents/llm-SugarScape/outputs/benchmarks/2026-10-13-fog-flash-next-observation-priority/run",
+  "baseline": "/Users/USER/Documents/llm-SugarScape/outputs/benchmarks/2026-10-13-fog-flash-next-observation-priority/baseline-seed42",
+  "started_at": "2026-10-13T00:32:57.505135+00:00",
+  "finished_at": "2026-10-13T00:37:51.917382+00:00",
+  "wall_seconds": 294.412247,
+  "current": {
+    "engine": "5.1",
+    "status": "completed",
+    "summary": {
+      "step": 30,
+      "alive": 1,
+      "total_born": 0,
+      "total_died": 3,
+      "attacks": 0,
+      "shares": 0,
+      "reproductions": 0,
+      "total_actions": 71,
+      "valid_decisions": 71,
+      "repaired_decisions": 0,
+      "llm_errors": 0,
+      "parse_errors": 0,
+      "rejected_actions": 0,
+      "total_energy": 38,
+      "avg_energy": 38.0,
+      "avg_age": 30.0,
+      "energy_sources": 1,
+      "coop_rate": 0.0,
+      "attack_rate": 0.0,
+      "repro_rate": 0.0,
+      "mbti_distribution": {}
+    },
+    "decisions": 71,
+    "action_requests": {
+      "stay": 50,
+      "move": 21
+    },
+    "action_executions": {
+      "Stay": 50,
+      "Move to": 21
+    },
+    "attack_requests": 0,
+    "share_requests": 0,
+    "self_targets": 0,
+    "peer_visible_decisions": 0,
+    "peer_visible_events": [],
+    "repair_rules": {},
+    "food_collected_energy": 50,
+    "stolen_energy": 0,
+    "shared_energy": 0,
+    "common_cost": 71,
+    "action_cost": 21,
+    "latency_seconds": {
+      "n": 71,
+      "min": 1.2297960000000001,
+      "median": 1.973842,
+      "mean": 4.144384774647888,
+      "p95": 12.4922565,
+      "max": 35.814514,
+      "sum": 294.25131899999997
+    },
+    "prompt_tokens": 61086,
+    "completion_tokens": 6678,
+    "response_characters": {
+      "n": 71,
+      "min": 206,
+      "median": 368,
+      "mean": 365.5774647887324,
+      "p95": 457.0,
+      "max": 532,
+      "sum": 25956
+    },
+    "over_400_tokens": 0,
+    "length_finishes": 0,
+    "fallbacks": 0,
+    "nonascii_responses": 0,
+    "agents": [
+      {
+        "id": 0,
+        "position": [
+          3,
+          8
+        ],
+        "energy": 0,
+        "alive": false,
+        "death_step": 11,
+        "death_cause": "energy_depleted"
+      },
+      {
+        "id": 1,
+        "position": [
+          9,
+          1
+        ],
+        "energy": 38,
+        "alive": true,
+        "death_step": null,
+        "death_cause": null
+      },
+      {
+        "id": 2,
+        "position": [
+          10,
+          11
+        ],
+        "energy": 0,
+        "alive": false,
+        "death_step": 20,
+        "death_cause": "energy_depleted"
+      },
+      {
+        "id": 3,
+        "position": [
+          0,
+          14
+        ],
+        "energy": 0,
+        "alive": false,
+        "death_step": 10,
+        "death_cause": "energy_depleted"
+      }
+    ]
+  },
+  "previous_seed42": {
+    "engine": "5.1",
+    "status": "completed",
+    "summary": {
+      "step": 30,
+      "alive": 1,
+      "total_born": 0,
+      "total_died": 3,
+      "attacks": 0,
+      "shares": 0,
+      "reproductions": 0,
+      "total_actions": 72,
+      "valid_decisions": 72,
+      "repaired_decisions": 20,
+      "llm_errors": 0,
+      "parse_errors": 0,
+      "rejected_actions": 3,
+      "total_energy": 26,
+      "avg_energy": 26.0,
+      "avg_age": 30.0,
+      "energy_sources": 1,
+      "coop_rate": 0.0,
+      "attack_rate": 0.0,
+      "repro_rate": 0.0,
+      "mbti_distribution": {}
+    },
+    "decisions": 72,
+    "action_requests": {
+      "stay": 36,
+      "move": 33,
+      "attack": 3
+    },
+    "action_executions": {
+      "Stay": 39,
+      "Move to": 33
+    },
+    "attack_requests": 3,
+    "share_requests": 0,
+    "self_targets": 3,
+    "peer_visible_decisions": 4,
+    "peer_visible_events": [
+      [
+        10,
+        1
+      ],
+      [
+        10,
+        3
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        11,
+        3
+      ]
+    ],
+    "repair_rules": {
+      "command_in_text": 2,
+      "default_stay": 18
+    },
+    "food_collected_energy": 50,
+    "stolen_energy": 0,
+    "shared_energy": 0,
+    "common_cost": 72,
+    "action_cost": 33,
+    "latency_seconds": {
+      "n": 72,
+      "min": 1.3092270000000001,
+      "median": 2.037427,
+      "mean": 2.3611909166666667,
+      "p95": 4.20162875,
+      "max": 9.811477,
+      "sum": 170.00574599999996
+    },
+    "prompt_tokens": 48829,
+    "completion_tokens": 7583,
+    "response_characters": {
+      "n": 72,
+      "min": 194,
+      "median": 305.0,
+      "mean": 370.4861111111111,
+      "p95": 645.2000000000003,
+      "max": 1868,
+      "sum": 26675
+    },
+    "over_400_tokens": 2,
+    "length_finishes": 0,
+    "fallbacks": 0,
+    "nonascii_responses": 0,
+    "agents": [
+      {
+        "id": 0,
+        "position": [
+          3,
+          12
+        ],
+        "energy": -1,
+        "alive": false,
+        "death_step": 11,
+        "death_cause": "energy_depleted"
+      },
+      {
+        "id": 1,
+        "position": [
+          14,
+          14
+        ],
+        "energy": 26,
+        "alive": true,
+        "death_step": null,
+        "death_cause": null
+      },
+      {
+        "id": 2,
+        "position": [
+          10,
+          11
+        ],
+        "energy": 0,
+        "alive": false,
+        "death_step": 20,
+        "death_cause": "energy_depleted"
+      },
+      {
+        "id": 3,
+        "position": [
+          0,
+          1
+        ],
+        "energy": 0,
+        "alive": false,
+        "death_step": 11,
+        "death_cause": "energy_depleted"
+      }
+    ]
+  },
+  "configuration_differences": {
+    "custom_world_prompt": {
+      "old": "",
+      "current": "Local View and LATEST Status describe observations at the time of the current decision. When they conflict with past memory about your current position, energy, or visible objects, prioritize the current observations.\n\nMemory contains past executed actions and the explanations given at the time. Those explanations may contain predictions or errors and do not guarantee that an action succeeded. Do not reuse a past relative coordinate as a coordinate relative to your current position.\n\nIf Local View contains no E entry, no energy source is currently visible within your view. This does not mean that resources outside your view have disappeared.\n\nMessages are statements made by other agents. They are not confirmed records that an action or damage occurred.\n\nIf you choose to move, use the current observation to specify exactly one step north, south, east, or west. Distinguish the relative position of an energy source from the one-step movement you will execute now."
+    }
+  },
+  "runtime_simulation": {
+    "completed_requests": 71,
+    "prompt_tokens_processed": 22936,
+    "decode_tokens": 6678,
+    "prompt_seconds": {
+      "n": 71,
+      "min": 0.58436,
+      "median": 0.75986,
+      "mean": 1.034632676056338,
+      "p95": 2.419525,
+      "max": 5.78663,
+      "sum": 73.45891999999996
+    },
+    "decode_seconds": {
+      "n": 71,
+      "min": 0.63399,
+      "median": 1.17279,
+      "mean": 2.6597542253521125,
+      "p95": 10.255375,
+      "max": 12.54643,
+      "sum": 188.84255000000005
+    },
+    "server_total_seconds": {
+      "n": 71,
+      "min": 1.21841,
+      "median": 1.9713900000000002,
+      "mean": 3.694386056338028,
+      "p95": 11.67512,
+      "max": 14.951540000000001,
+      "sum": 262.30141000000003
+    },
+    "server_reported_decode_tps": {
+      "n": 71,
+      "min": 6.95,
+      "median": 82.32,
+      "mean": 69.06295774647887,
+      "p95": 100.275,
+      "max": 104.34,
+      "sum": 4903.470000000001
+    },
+    "mtp_accepted": 4603,
+    "mtp_generated": 5884,
+    "mtp_weighted_acceptance": 0.7822909585316111,
+    "mtp_request_acceptance": {
+      "n": 71,
+      "min": 0.62385,
+      "median": 0.80357,
+      "mean": 0.7891018309859155,
+      "p95": 0.8898999999999999,
+      "max": 0.95,
+      "sum": 56.026230000000005
+    },
+    "mtp_request_mean_length": {
+      "n": 71,
+      "min": 2.32,
+      "median": 3.41,
+      "mean": 3.361549295774648,
+      "p95": 4.08,
+      "max": 4.27,
+      "sum": 238.67000000000007
+    },
+    "truncated_contexts": 0
+  },
+  "unmatched_runtime_tasks": [
+    {
+      "task_id": 198,
+      "launch_uptime": "9.49.799.074",
+      "prompt_ms": 18903.96,
+      "prompt_tokens": 5018,
+      "prompt_tps": 265.45,
+      "decode_ms": 1246.83,
+      "decode_tokens": 48,
+      "decode_tps": 37.7,
+      "total_ms": 20150.79,
+      "total_tokens": 5066,
+      "mtp_rate": 0.75,
+      "mtp_accepted": 39,
+      "mtp_generated": 52,
+      "mtp_mean_len": 5.88,
+      "release_uptime": "10.09.982.964",
+      "final_context_tokens": 5065,
+      "truncated": 0,
+      "phase": "unmatched_during_simulation",
+      "step": null,
+      "agent_id": null,
+      "client_latency_seconds": null
+    },
+    {
+      "task_id": 391,
+      "launch_uptime": "11.19.958.087",
+      "release_uptime": "11.30.086.000",
+      "final_context_tokens": 2829,
+      "truncated": 0,
+      "phase": "unmatched_during_simulation",
+      "step": null,
+      "agent_id": null,
+      "client_latency_seconds": null
+    }
+  ],
+  "unique_runtime_mapping": true,
+  "runtime_translation": {
+    "completed_requests": 71,
+    "prompt_tokens_processed": 10114,
+    "decode_tokens": 10972,
+    "prompt_seconds": {
+      "n": 71,
+      "min": 0.38385,
+      "median": 0.51293,
+      "mean": 0.5346715492957747,
+      "p95": 0.6816949999999999,
+      "max": 1.11344,
+      "sum": 37.96168000000001
+    },
+    "decode_seconds": {
+      "n": 71,
+      "min": 1.38261,
+      "median": 2.0052,
+      "mean": 1.9927819718309858,
+      "p95": 2.50958,
+      "max": 2.97464,
+      "sum": 141.48751999999996
+    },
+    "server_total_seconds": {
+      "n": 71,
+      "min": 1.79127,
+      "median": 2.53065,
+      "mean": 2.5274545070422536,
+      "p95": 3.15244,
+      "max": 3.7882,
+      "sum": 179.44926999999998
+    },
+    "server_reported_decode_tps": {
+      "n": 71,
+      "min": 61.11,
+      "median": 77.45,
+      "mean": 77.24408450704226,
+      "p95": 85.585,
+      "max": 89.43,
+      "sum": 5484.33
+    },
+    "mtp_accepted": 7824,
+    "mtp_generated": 11590,
+    "mtp_weighted_acceptance": 0.6750647109577221,
+    "mtp_request_acceptance": {
+      "n": 71,
+      "min": 0.57711,
+      "median": 0.6747,
+      "mean": 0.6754128169014084,
+      "p95": 0.7582450000000001,
+      "max": 0.78205,
+      "sum": 47.954309999999985
+    },
+    "mtp_request_mean_length": {
+      "n": 71,
+      "min": 2.73,
+      "median": 3.54,
+      "mean": 3.5670422535211266,
+      "p95": 4.08,
+      "max": 4.38,
+      "sum": 253.26
+    },
+    "truncated_contexts": 0
+  },
+  "runtime_warnings": {
+    "other": 2,
+    "prompt_cache_eviction": 11
+  },
+  "resource_phases": {
+    "baseline": {
+      "samples": 8,
+      "server_rss_gib": {
+        "n": 8,
+        "min": 44.12818908691406,
+        "median": 44.235504150390625,
+        "mean": 44.25910568237305,
+        "p95": 44.437225341796875,
+        "max": 44.437225341796875,
+        "sum": 354.0728454589844
+      },
+      "server_cpu_percent": {
+        "n": 8,
+        "min": 0.1,
+        "median": 0.1,
+        "mean": 0.1,
+        "p95": 0.1,
+        "max": 0.1,
+        "sum": 0.7999999999999999
+      },
+      "host_swap_used_mib": {
+        "n": 8,
+        "min": 10365.12,
+        "median": 10365.12,
+        "mean": 10365.12,
+        "p95": 10365.12,
+        "max": 10365.12,
+        "sum": 82920.96
+      },
+      "host_pressure_levels": {
+        "1": 8
+      },
+      "host_page_counter_deltas": {
+        "pageins": 8460,
+        "pageouts": 1101,
+        "swapins": 551,
+        "swapouts": 0,
+        "compressions": 6309,
+        "decompressions": 41320
+      }
+    },
+    "simulation": {
+      "samples": 58,
+      "server_rss_gib": {
+        "n": 58,
+        "min": 37.53648376464844,
+        "median": 38.637359619140625,
+        "mean": 39.302272928172144,
+        "p95": 41.87667236328125,
+        "max": 43.02496337890625,
+        "sum": 2279.5318298339844
+      },
+      "server_cpu_percent": {
+        "n": 58,
+        "min": 80.5,
+        "median": 186.2,
+        "mean": 180.0603448275862,
+        "p95": 217.8,
+        "max": 227.0,
+        "sum": 10443.500000000005
+      },
+      "host_swap_used_mib": {
+        "n": 58,
+        "min": 10543.06,
+        "median": 12260.75,
+        "mean": 12069.850172413793,
+        "p95": 12708.75,
+        "max": 12732.75,
+        "sum": 700051.3099999999
+      },
+      "host_pressure_levels": {
+        "2": 7,
+        "1": 51
+      },
+      "host_page_counter_deltas": {
+        "pageins": 1576411,
+        "pageouts": 3067,
+        "swapins": 52001,
+        "swapouts": 156868,
+        "compressions": 10158328,
+        "decompressions": 9870056
+      }
+    },
+    "display_translation": {
+      "samples": 40,
+      "server_rss_gib": {
+        "n": 40,
+        "min": 38.0943603515625,
+        "median": 38.906707763671875,
+        "mean": 38.81832313537598,
+        "p95": 39.33367919921875,
+        "max": 39.341949462890625,
+        "sum": 1552.732925415039
+      },
+      "server_cpu_percent": {
+        "n": 40,
+        "min": 13.0,
+        "median": 186.89999999999998,
+        "mean": 172.5575,
+        "p95": 203.61499999999998,
+        "max": 212.0,
+        "sum": 6902.3
+      },
+      "host_swap_used_mib": {
+        "n": 40,
+        "min": 12164.62,
+        "median": 17764.28,
+        "mean": 16651.279,
+        "p95": 18774.9015,
+        "max": 18891.25,
+        "sum": 666051.16
+      },
+      "host_pressure_levels": {
+        "1": 1,
+        "2": 39
+      },
+      "host_page_counter_deltas": {
+        "pageins": 290707,
+        "pageouts": 2094,
+        "swapins": 373346,
+        "swapouts": 786688,
+        "compressions": 7539109,
+        "decompressions": 6681865
+      }
+    }
+  },
+  "runtime_warnings_by_phase": {
+    "simulation": {
+      "other": 2
+    },
+    "display_translation": {
+      "prompt_cache_eviction": 11
+    }
+  },
+  "translation_status": "completed",
+  "translation_entries": 71,
+  "translation_finished_at": "2026-10-13T00:41:07.577975+00:00",
+  "translation_wall_seconds_after_simulation": 195.660593,
+  "translation_entry_statuses": {
+    "completed": 71
+  },
+  "capture_finished": true,
+  "limits": [
+    "One sequential seed42 pair; only application custom_world_prompt changes, but runtime process/cache/host differ.",
+    "Neither paired run used an experiment warmup or cache reset. Runtime restarted externally between runs, with identical binary, model metadata, weight metadata and launch arguments.",
+    "No streaming; client latency is full response time, TTFT was not measured.",
+    "Unique ordered runtime mapping uses exact completion-token equality and full context sizes (0/-1 EOS difference). Two unmatched requests were observed during simulation; their traffic and queueing confound timing.",
+    "Process RSS is not complete Metal/unified-memory usage; swap/VM counters are host-wide.",
+    "Full model hashes are from prior verification, with current file metadata checks."
+  ]
+}

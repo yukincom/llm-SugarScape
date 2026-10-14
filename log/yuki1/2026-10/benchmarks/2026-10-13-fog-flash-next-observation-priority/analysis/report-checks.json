@@ -1,0 +1,12 @@
+{
+  "raw_move_requests": {
+    "old": 51,
+    "new": 21
+  },
+  "initial_environment_equal": true,
+  "all_new_actions_unrepaired_http200": true,
+  "agent1_stays_steps_3_to_30": true,
+  "energy_equation": "80 + 50 - 71 - 21 = 38",
+  "final_alive": 1,
+  "translation_entries": 71
+}

@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-13T06:57:24.581973+00:00",
+  "reason": "experiment_and_translation_finished",
+  "log_offsets": {
+    "runtime": 935702,
+    "desktop": 117742
+  },
+  "elapsed_seconds": 664.3177502090111,
+  "same_server_process": true
+}

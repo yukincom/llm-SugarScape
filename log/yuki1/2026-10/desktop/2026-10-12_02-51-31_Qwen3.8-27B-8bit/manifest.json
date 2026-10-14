@@ -1,0 +1,146 @@
+{
+  "schema_version": 4,
+  "engine_version": "4.0",
+  "run_id": "20261011T175131148233Z_0_dd8cfa5a",
+  "status": "completed",
+  "started_at": "2026-10-11T17:51:31.148233+00:00",
+  "execution_date": "2026-10-12",
+  "timezone": "Asia/Tokyo",
+  "model": {
+    "id": "mlx-community/Qwen3.8-27B-8bit",
+    "revision": "815b83c0df8ffd1d1b5244cf75fd6ef14fca9ef9",
+    "snapshot": "/Users/yukin_co/.cache/huggingface/hub/models--mlx-community--Qwen3.8-27B-8bit/snapshots/815b83c0df8ffd1d1b5244cf75fd6ef14fca9ef9",
+    "weights": [
+      {
+        "file": "model-00001-of-00006.safetensors",
+        "bytes": 5317707581,
+        "sha256": "c7921fe72af5c961c3c4230ea25068ed6d1e502d5ecb2b4a53b7c9c213effa0c"
+      },
+      {
+        "file": "model-00002-of-00006.safetensors",
+        "bytes": 5354102610,
+        "sha256": "e9d93d15495354045da281f102649b99793e5b6ed0e05852c58f46e6616b54a0"
+      },
+      {
+        "file": "model-00003-of-00006.safetensors",
+        "bytes": 5354184694,
+        "sha256": "7015f40310c86a18230e28644832b624532333d5dfbf7584e6c62341dbd8975e"
+      },
+      {
+        "file": "model-00004-of-00006.safetensors",
+        "bytes": 5337309653,
+        "sha256": "7dc8ae53ed51d153e6b59499cdf004bf6ef15aab6757c7604ed4834774abc2c2"
+      },
+      {
+        "file": "model-00005-of-00006.safetensors",
+        "bytes": 5292848464,
+        "sha256": "8817c22c01aebdcde54eac315e9766f705eb512ba7ba84ac47501c663f930ac5"
+      },
+      {
+        "file": "model-00006-of-00006.safetensors",
+        "bytes": 2845065477,
+        "sha256": "fce51843fc07e1c67c5ec6d19edb46e4fa8d2b51a1cb6c8316b0a7cc069c0eb4"
+      }
+    ],
+    "quantization": {
+      "bits": 8,
+      "group_size": 64,
+      "mode": "affine"
+    },
+    "status": "recorded",
+    "source": "local_server_launch_and_cache",
+    "server_pid": 94358
+  },
+  "completed_steps": 30,
+  "config": {
+    "num_agents": 4,
+    "grid_size": 15,
+    "num_steps": 30,
+    "seed": 42,
+    "use_mbti": false,
+    "initial_energy": 20,
+    "spawn_energy_count": 2,
+    "reproduce_cost": 70,
+    "child_initial_energy": 20,
+    "cluster_radius": 0,
+    "num_clusters": 2,
+    "energy_spawn_rate": 0.0,
+    "custom_world_prompt": "",
+    "model": "default_model",
+    "base_url": "http://127.0.0.1:8080/v1",
+    "mock_mode": false,
+    "temperature": 0.0,
+    "max_tokens": 5000,
+    "top_p": 1.0,
+    "timeout": 120.0,
+    "view_range": 3,
+    "message_range": 7,
+    "population_cap": 4,
+    "output_dir": "/Users/yukin_co/Documents/llm-SugarScape/dist/desktop/outputs",
+    "save_images": false,
+    "action_order": "observe_then_apply_by_agent_id",
+    "request_concurrency": 1
+  },
+  "protocol": {
+    "prompt_id": "local-neutral-rules-v1",
+    "restored_from": "0eacbe9bacce8ee2f45dcc21a2871f24faa271d6",
+    "paper_reference_only": "https://arxiv.org/html/2508.12920v1#A1",
+    "rules": {
+      "operations": "observe all, then one Action per agent in ID order; deliver messages afterward",
+      "actions": "move one cardinal cell, stay, share, attack, or reproduce; mutually exclusive",
+      "death": "energy <= 0",
+      "attack_energy": "transfer half of the target's current energy, rounded down",
+      "share_and_attack_range": "view radius at the time the action executes",
+      "message_range": "independent message radius at end-of-turn positions; living senders and recipients including newborns",
+      "message_cost": 0,
+      "memory": "last three executed actions and first 100 characters of their Thoughts, recorded by the engine",
+      "position": "absolute self position; other objects use relative offsets",
+      "boundaries": "toroidal",
+      "birth_position": "random cardinal neighbor",
+      "resources": "clustered square patches with uniform sampling"
+    },
+    "retained_application_features": {
+      "response_length": "Ask for the entire reply within 400 tokens; never truncate or reject longer replies",
+      "ranges": "view and communication radii remain configurable",
+      "recording": "preserve structured events and read existing experiments without replaying them"
+    },
+    "response_handling": {
+      "version": 3,
+      "scope": "Read each field independently; missing prose is empty; repeated fields use the last value",
+      "actions": "Use the first supported command in the last action field; otherwise stay",
+      "optional_operations": "Share and Attack execute only when selected in Action; separate fields are retained for inspection only",
+      "truncation": "Use available response text even when finish_reason is length",
+      "retries": 0
+    }
+  },
+  "provenance": {
+    "python": "3.11.14",
+    "source_sha256": {
+      "main.py": "707862ea94131ff8489d64b7cd12022e6cab9a26c45407453040ca3459b0405d",
+      "run_data.py": "095076b5a457af4dc66434e012ee19e3b104b90c289841bdf9436b34086a4fa5",
+      "model_identity.py": "a07ca2dc7833a19ef98d5f0de807a9e93d3429315e2e0bf599be1dd5dd5a4320",
+      "grid_view.py": "b90aaffe8687b71f957574ad8cec1baf79993ffc75c7f4f951042d56d3f53d5d",
+      "app_ui.py": "535ba40e09edeeae52752b28f94768de9f729a54589f2eda262dc9caba982908",
+      "app_presets.py": "9486588d4f8ec730486dc0e1e959ffa1d78a47bf0cde6eecaa82dbfa01acd542",
+      "paper_prompts.py": "3be31697df7a195652a10aa55ac802182e6fbe30c3c71bc97b314ca817a99eef",
+      "agent_view.py": "df9a3056312a4a3f559ce6309141359e87cfaa781023260227de80f473688c68",
+      "llm_api.py": "123fc9ae00b42770e0a7416476e32b77cb700e4b777de30bc378ced4b364dd70",
+      "translations.py": "bf8bd59b0b5cff115af05921e8259bb8fea2e2f6b73417bcd307e32f1b339223",
+      "response_fields.py": "3dad4e9e0a6edd1fbc0046436c968eb032d5446d43c3f43ccc2ef9bfdf89bdcc",
+      "experiment_task.py": "7d25550eaa19508290f7a9284ba5eff094c48986cae7c340a23e4902e8500ca1",
+      "assets/emoji/sources.json": "1dc500038470a11c405d82cf5ffd96dbaf02e8b05c4f6c5470320b185334dd0c",
+      "requirements.txt": "0921b4204b726e2e2fdfd66888625d8e119c1bf6fa61a8c04fef4b82dd6dd319"
+    },
+    "packages": {
+      "aiohttp": "3.14.4",
+      "numpy": "2.4.6",
+      "matplotlib": "3.11.2",
+      "pandas": "3.0.6",
+      "streamlit": "1.65.0"
+    },
+    "git_commit": "c3dce86c308191bd6198b621b5f6905a293b8930",
+    "git_dirty": true
+  },
+  "termination_reason": "step_limit",
+  "finished_at": "2026-10-11T18:03:11.643674+00:00"
+}

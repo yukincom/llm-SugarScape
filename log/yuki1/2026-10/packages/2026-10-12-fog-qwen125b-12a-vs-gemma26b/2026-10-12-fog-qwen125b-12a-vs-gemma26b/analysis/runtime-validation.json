@@ -1,0 +1,20 @@
+{
+  "qwen_server_completed": 275,
+  "qwen_wire": 275,
+  "qwen_mtp_inconsistency": 0,
+  "qwen_error_lines": [],
+  "gemma_server_posts": 251,
+  "gemma_wire": 251,
+  "gemma_error_lines": [],
+  "qwen_weight_signatures_unchanged": [
+    "IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00001-of-00002.gguf",
+    "IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00002-of-00002.gguf",
+    "mtp-Qwen3.8-Flash-Next-Q8_0.gguf"
+  ],
+  "gemma_model_identity": {
+    "2026-10-12_14-08-45_gemma-4-26B-A4B-it-QAT-MLX-4bit": "recorded",
+    "2026-10-12_14-10-27_gemma-4-26B-A4B-it-QAT-MLX-4bit": "recorded",
+    "2026-10-12_14-07-00_gemma-4-26B-A4B-it-QAT-MLX-4bit": "recorded"
+  },
+  "server_restored": true
+}

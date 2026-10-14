@@ -1,0 +1,217 @@
+[
+  {
+    "line": "0.00.069.838 W srv  llama_server: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)",
+    "kind": "other",
+    "phase": "startup"
+  },
+  {
+    "line": "0.40.556.882 W srv          init: chat template supports preserving reasoning, it is enabled by default (may use more tokens, disable via --no-reasoning-preserve)",
+    "kind": "other",
+    "phase": "startup"
+  },
+  {
+    "line": "10.23.592.590 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 494.574 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "10.38.984.468 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 500.331 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "10.42.983.067 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 497.144 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "10.46.863.535 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 479.930 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "10.57.218.923 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 350.877 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "11.08.075.974 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 350.057 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "11.13.949.836 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 349.636 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "11.23.266.634 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 351.868 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "11.27.805.379 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 350.175 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "11.43.633.286 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 349.100 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "11.55.331.895 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 350.150 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "12.01.159.433 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 348.111 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "12.11.622.570 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 350.344 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "12.24.372.703 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 350.468 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "12.28.789.150 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 350.882 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "12.39.791.212 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 353.009 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "12.43.760.680 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 351.230 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "13.00.164.734 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 351.070 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "13.06.995.989 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 353.109 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "13.12.253.139 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 351.611 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "13.20.876.420 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 350.882 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "13.24.236.673 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 350.662 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "13.31.585.394 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 351.391 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "13.39.012.810 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 352.250 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "14.06.145.932 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 351.139 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "14.14.763.201 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 357.209 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "14.18.753.993 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 349.930 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "14.22.573.210 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 351.362 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "14.38.527.057 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 353.332 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "14.46.907.618 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 352.062 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "14.53.881.972 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 351.296 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "15.05.210.040 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 351.516 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "15.09.428.732 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 352.982 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "15.14.420.261 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 350.818 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "15.22.100.463 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 352.980 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "15.26.497.471 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 350.280 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "15.32.394.586 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 352.666 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "15.41.411.988 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 351.298 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "15.44.907.393 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 350.184 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "15.58.083.739 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 356.949 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "16.21.480.223 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 351.704 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  }
+]

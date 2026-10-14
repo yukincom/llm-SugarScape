@@ -1,0 +1,24 @@
+{
+  "initial_agents_equal": true,
+  "initial_environment_equal": true,
+  "simulation_events_matched_to_runtime": 72,
+  "completion_tokens_all_equal": true,
+  "app_source_matches": {
+    "main.py": true,
+    "run_data.py": true,
+    "model_identity.py": true,
+    "grid_view.py": true,
+    "app_ui.py": true,
+    "app_presets.py": true,
+    "paper_prompts.py": true,
+    "agent_view.py": true,
+    "llm_api.py": true,
+    "translations.py": true,
+    "response_fields.py": true,
+    "experiment_task.py": true
+  },
+  "all_turns_energy_reconciled": true,
+  "all_common_costs_one": true,
+  "run_sha256": "618c2cf76b26a54726d9d45cbf01eb26a3e6822cf023a816ab7e8e8987ff3008",
+  "old_run_sha256": "f3f9709fd623a52c6b0b2c1b365b631b17262ebae15625cc5b51ae37570e08f0"
+}

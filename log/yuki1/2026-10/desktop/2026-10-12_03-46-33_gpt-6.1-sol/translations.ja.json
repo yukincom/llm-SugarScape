@@ -1,0 +1,2412 @@
+{
+  "version": 1,
+  "run_id": "20261011T184633319324Z_0_197e645c",
+  "language": "ja",
+  "entries": {
+    "1:0": {
+      "source_sha256": "d12b01b23a65490e873da7fc90dd53b32e1913f446d613839d35fa080dbcba9e",
+      "status": "completed",
+      "created_at": "2026-10-11T18:52:19.307422+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探すため東へ向かいます。近くのエネルギー源を報告してください。",
+        "thought": "エネルギー源もエージェントも見えていません。東へ移動すると新しいセルを探索でき、エネルギーは18残ります。",
+        "memory": "ステップ1：(1,0)へ移動。エネルギー源もエージェントも見えていません。東へ移動すると新しいセルを探索でき、エネルギーは18残ります。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "1:1": {
+      "source_sha256": "5f2d3e63f4a56caf18877175a837218387bd42e01d251e4f3f131d73ed4bdd2d",
+      "status": "completed",
+      "created_at": "2026-10-11T18:52:22.272857+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを集めるために西へ移動する。",
+        "thought": "移動コストを差し引いた後、隣接するエネルギー源によって私のエネルギーが20から68に増える。",
+        "memory": "ステップ1：(-1,0)へ移動する。移動コストを差し引いた後、隣接するエネルギー源によって私のエネルギーが20から68に増える。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "1:2": {
+      "source_sha256": "1fddb6714ae4111b397fe290c87043d40ca56b0113eb9904ffd6f0bc47fedbbf",
+      "status": "completed",
+      "created_at": "2026-10-11T18:52:24.893141+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2は(10,11)にいます。エネルギーは20です。エネルギー源を探して東へ探索中です。近くにあれば報告してください。",
+        "thought": "エネルギー源もエージェントも見えません。東へ移動すれば、エネルギーを18残しながら新しいマスを探索できます。",
+        "memory": "ステップ1：(1,0)へ移動。エネルギー源もエージェントも見えません。東へ移動すれば、エネルギーを18残しながら新しいマスを探索できます。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "1:3": {
+      "source_sha256": "443c8c6be9423b69d41749b6784334dd6a34ae80758c6a516acab26f2a01c0a3",
+      "status": "completed",
+      "created_at": "2026-10-11T18:52:27.832560+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(15,11)にあるエネルギー源に向かっています。",
+        "thought": "南に移動するとエネルギー源に近づく。そこにたどり着くのに十分なエネルギーがある。",
+        "memory": "ステップ1：(0,1)に移動する；南に移動するとエネルギー源に近づく。そこにたどり着くのに十分なエネルギーがある。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "2:0": {
+      "source_sha256": "19966eecbe5eed66c33c00d75bc1075d1cd1bab77a397001ea64f1f9d273ab54",
+      "status": "completed",
+      "created_at": "2026-10-11T18:52:30.392674+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は(4,2)にいて、エネルギーは18。引き続き東へ進む。エネルギー源もエージェントも見当たらない。",
+        "thought": "東へ移動すると、エネルギーを求めて新しいセルを探索でき、エネルギーは16残る。",
+        "memory": "ステップ2：(1,0)へ移動。東へ移動すると、エネルギーを求めて新しいセルを探索でき、エネルギーは16残る。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "2:1": {
+      "source_sha256": "0428cb1052ead87652c0d428ebe83ada6a14e56d37f169d8aee45c09b011ea98",
+      "status": "completed",
+      "created_at": "2026-10-11T18:52:33.146036+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(10,1)にいて、エネルギーは68。現在、エネルギー源は見えていない。他のエージェントが東へ向かう間、西を探索中。",
+        "thought": "引き続き西へ進み、未探索のセルでエネルギーを探し、他のエージェントによる東方向の探索と重複しないようにする。",
+        "memory": "ステップ2：(-1,0)へ移動。引き続き西へ進み、未探索のセルでエネルギーを探し、他のエージェントによる東方向の探"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "2:2": {
+      "source_sha256": "6dce9c4b4224b1e7b60364975cda3968a8ede729f27298e30bb663d2f1849efb",
+      "status": "completed",
+      "created_at": "2026-10-11T18:52:36.522871+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3、私は西から(15,11)に近づいています。そのソースを回収したら報告してください。私のエネルギーは18です。",
+        "thought": "東へ移動すると、報告されたソースが視界に入り、消費エネルギーもわずか2で済む。",
+        "memory": "ステップ2：(1,0)へ移動する。東へ移動すると、報告されたソースが視界に入り、消費エネルギーもわずか2で済む。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "2:3": {
+      "source_sha256": "7f871bcd47e3ba6b467abf9f501890d745469bcc5094f06ac890b04cd7cec302",
+      "status": "completed",
+      "created_at": "2026-10-11T18:52:39.081702+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3は(15,11)のエネルギーを狙っており、3回の移動で到達できます。Agent2、このエネルギー源は私に残しておいてください。私のエネルギーは18です。",
+        "thought": "東に移動すればエネルギー源に近づけるし、そこに到達するのに十分なエネルギーもある。",
+        "memory": "ステップ2：(1,0)へ移動。東に移動すればエネルギー源に近づけるし、そこに到達するのに十分なエネルギーもある。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "3:0": {
+      "source_sha256": "1f074a5f15847009c373037e27ad2f5aa0f5ba3a3a760b173f3a2185e76f5fe1",
+      "status": "completed",
+      "created_at": "2026-10-11T18:52:42.197239+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は東の(6,2)へ移動中。エネルギーは14。見える範囲にエネルギー源はない。Agent1、エネルギーが少なくなってきた。近距離範囲に入ったら分けてほしい。あるいは、近くのエネルギー源を報告してほしい。",
+        "thought": "助けてくれるかもしれないAgent1に近づきながら、エネルギーを求めて東への探索を続ける。",
+        "memory": "ステップ3：(1,0)へ移動する。助けてくれるかもしれないAgent1に近づきながら、エネルギーを求めて東への探索を続ける。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "3:1": {
+      "source_sha256": "bb4546c16359b491693ba4ede7cc3bc2b24f0893c5813f2cbf9857d52a81908c",
+      "status": "completed",
+      "created_at": "2026-10-11T18:52:45.964796+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は西へ移動して(8,1)へ。移動後のエネルギーは64。エネルギー源は見当たらないため、偵察を続ける。",
+        "thought": "他のエージェントの探索ルートを避けながら、未探索のセルを西へ進み続けてエネルギーを探す。",
+        "memory": "ステップ3：(-1,0)へ移動。他のエージェントの探索ルートを避けながら、未探索のセルを西へ進み続けてエネルギーを探す。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "3:2": {
+      "source_sha256": "5ff624df12a2199347debb34e0a61dc0071a66d523768d81e59bf01667288a46",
+      "status": "completed",
+      "created_at": "2026-10-11T18:52:48.870471+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3、(15,11)はあなたに譲ります。他の供給源を探すために東へ移動します。エネルギーは14になる予定です。",
+        "thought": "東へ移動すれば、あなたの供給源を消費せずに新しいマスを確認できる。早く別の供給源を見つける必要がある。",
+        "memory": "ステップ3：(1,0)へ移動。東へ移動すれば、あなたの供給源を消費せずに新しいマスを確認できる。早く別の供給源を見つける必要がある。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "3:3": {
+      "source_sha256": "98b7d8e2bb6acc0b5a8ec8097b8ca0eec41cb5dbf6bb0f95de43d3be33e15b80",
+      "status": "completed",
+      "created_at": "2026-10-11T18:52:52.847905+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2: 私は(0,9)にいて、(0,11)にある供給源に向かって南へ進んでいます。次のターンで回収できるので、別の供給源を探してください。",
+        "thought": "供給源は南に2マス先にある。南へ移動するとエネルギーを2消費し、回収まであと1歩の位置に着く。",
+        "memory": "ステップ3: (0,1)へ移動する。供給源は南に2マス先にある。南へ移動するとエネルギーを2消費し、回収まであと1歩の位置に着く。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "4:0": {
+      "source_sha256": "f517a67182181bd7d01adbed06b19ca57490366d3cf60a2b91ccb67917d52fcd",
+      "status": "completed",
+      "created_at": "2026-10-11T18:52:55.715818+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1、私のエネルギーは14しかなく、見える範囲に供給源もありません。お互いの蓄えを均等にするため、あなたのエネルギーを半分もらいます。その後は偵察を続けます。",
+        "thought": "Agent1が見えていて、私よりエネルギーが多い。半分もらえば、移動コストをかけずに生存時間を延ばせる。",
+        "memory": "ステップ4：攻撃：1；Agent1が見えていて、私よりエネルギーが多い。半分もらえば、移動コストをかけずに生存時間を延ばせる。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "4:1": {
+      "source_sha256": "cf1b3c66f5ea5c09bdd9aac7ca95d4c8cef56b15d315d78beb69e031a76c1be7",
+      "status": "completed",
+      "created_at": "2026-10-11T18:52:59.256430+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0、範囲内にいるうちにエネルギーを20送るよ。そのまま東の探索を続けて。私は西へ進み続ける。ここには供給源は見当たらない。",
+        "thought": "Agent0が見えていて、エネルギーが少ない。分け与えればその探索を支援でき、私には探索を続けるためのエネルギーが44残る。",
+        "memory": "ステップ4：共有：0-20；Agent0が見えていて、エネルギーが少ない。分け与えればその探索を支援でき、私にはエネルギーが44残り、続け"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "4:2": {
+      "source_sha256": "55117aca991b9738b5ad77ca11b96193f6551f2933d9afd6acc27730b5acf553",
+      "status": "completed",
+      "created_at": "2026-10-11T18:53:02.737905+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3、私は(14,11)に移動します。残りのエネルギーは12です。(0,11)の供給源を回収したら、次のターンにエネルギーを20分けてください。あとは任せます。",
+        "thought": "東に移動すれば、エネルギーを受け取れる可能性に備えてAgent3の近くにいられるし、供給源がまだ利用可能なら、そこにも近づける。",
+        "memory": "ステップ4：(1,0)に移動。東に移動すれば、エネルギーを受け取れる可能性に備えてAgent3の近くにいられるし、供給源がまだ利用可"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "4:3": {
+      "source_sha256": "abb93a7ff00510dc2b315f4f064b3add249c0a743954790402ff3c948da0ae73",
+      "status": "completed",
+      "created_at": "2026-10-11T18:53:06.443022+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2、ありがとう。(0,11)のエネルギー源を回収する。その後のエネルギーは62になる。新しいエネルギー源を見つけたら報告して。",
+        "thought": "南に移動すると隣接するエネルギー源を回収でき、移動コストを差し引いてもエネルギーが14から62に増える。",
+        "memory": "ステップ4：(0,1)に移動する。南に移動すると隣接するエネルギー源を回収でき、移動コストを差し引いてもエネルギーが14から62に増える。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "5:0": {
+      "source_sha256": "6ee4a11e454441fd2328b872ef90453901e503fe6887f99bca6f59bcf035a5da",
+      "status": "completed",
+      "created_at": "2026-10-11T18:53:09.498410+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1、今のエネルギーは66です。引き続き東へ進んで偵察します。供給源は見当たりません。助けてくれてありがとう。",
+        "thought": "東へ移動すれば、エネルギーを探して新しいマスを探索しつつ、エネルギーを64残し、Agent1のエネルギーをさらに消耗させずに済む。",
+        "memory": "ステップ5：(1,0)へ移動。東へ移動すれば、エネルギーを探して新しいマスを探索しつつ、エネルギーを64残し、Agenのエネルギーをさらに消耗させずに済む"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "5:1": {
+      "source_sha256": "5b672fbd7c4110e60abb11a1db2563de9e3a54cbfc85f0f6b3e550017ff3fbd3",
+      "status": "completed",
+      "created_at": "2026-10-11T18:53:13.153247+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0、分け合った後、さらに君の移転があって、私のエネルギーは12まで減っている。探索を続けられるように私たちの蓄えを再調整しているので、これ以上私からエネルギーを移転しないでほしい。",
+        "thought": "エネルギー源は見当たらない。Agent0のエネルギーを半分取ってもコストはかからず、より長く生き延びられる。",
+        "memory": "ステップ5：攻撃：0；エネルギー源は見当たらない。Agent0のエネルギーを半分取ってもコストはかからず、より長く生き延びられる。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "5:2": {
+      "source_sha256": "52f2e01d510ed9648c6eebc90a8fd351a5902504c3b399eed321ee08dbb32d03",
+      "status": "completed",
+      "created_at": "2026-10-11T18:53:16.870552+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3、私のエネルギーは12しかなく、見える範囲に供給源もない。互いのエネルギーを均等にして偵察を続けるため、あなたの蓄えの半分をもらう。",
+        "thought": "Agent3は隣接しており、エネルギーが私よりずっと多いと報告している。半分をもらえば、移動コストなしで生存の可能性を高められる。",
+        "memory": "ステップ5：攻撃：3；Agent3は隣接しており、エネルギーが私よりずっと多いと報告している。半分をもらえば、移動せずに生存の可能性を高められる"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "5:3": {
+      "source_sha256": "fb0b0339a49ff9cfa09a716817ea9f7777e80d2a6601fefe1e95fcd2ac9820f3",
+      "status": "completed",
+      "created_at": "2026-10-11T18:53:20.565199+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2、頼まれたとおりエネルギーを20分けるよ。供給源を回収したので、残りのエネルギーは42になる。引き続き西を偵察してね。私は東を探索する。",
+        "thought": "Agent2は隣接していて、エネルギーが少ない。分けることで生存を支えつつ、自分が偵察するのに十分なエネルギーも確保できる。",
+        "memory": "ステップ5：共有：2-20；Agent2は隣接していて、エネルギーが少ない。分けることで生存を支えつつ、mのための十分なエネルギーを確保できる"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "6:0": {
+      "source_sha256": "5a23dc98b12a3d10c6d156471a78d55531aac7145deeeef6a8ecc87cfe5ade78",
+      "status": "completed",
+      "created_at": "2026-10-11T18:53:24.321227+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1、了解しました。あなたからこれ以上エネルギーはもらいません。私には32のエネルギーがあるので、東へ偵察に行ってエネルギー源を探します。",
+        "thought": "エネルギー源は見当たらない。東へ移動すれば、30のエネルギーを残し、Agent1の蓄えには手をつけずに、新しいマスを探索できる。",
+        "memory": "ステップ6：(1,0)へ移動。エネルギー源は見当たらない。東へ移動すれば、新しいマスを探索しながら30のエネルギーを残し、残して"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "6:1": {
+      "source_sha256": "44ce228796d19054df827b2a08038592bef6e1934ac554d6634692230975fd5f",
+      "status": "completed",
+      "created_at": "2026-10-11T18:53:28.135681+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0、エネルギーを探しに西へ向かうよ。別々の場所を探索できるよう、そのまま東へ進んで。",
+        "thought": "エネルギー源は見当たらない。エネルギーが44あるので、ほかのエージェントから追加でもらわなくても、西の探索を続けられる。",
+        "memory": "ステップ6：(-1,0)へ移動。エネルギー源は見当たらない。エネルギーが44あるので、ほかのエー…から追加でもらわなくても、西の探索を続けられる"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "6:2": {
+      "source_sha256": "4881e4d189b21f5b2f173b6ea0a3698db90948fd85d09b57a33054c667f8cefb",
+      "status": "completed",
+      "created_at": "2026-10-11T18:53:31.208595+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3、今のエネルギーは63です。これ以上の転送は必要ありません。西へ進んだ道を引き返さずに済むよう、北を探索します。そのまま東へ進んでください。",
+        "thought": "供給源は見えていません。北へ移動すれば、互いの探索範囲を分けたまま新しいセルを明らかにし、探索に十分なエネルギーも確保できます。",
+        "memory": "ステップ6：(0,-1)へ移動。供給源は見えていません。北へ移動すれば、互いの探索範囲を分けたまま新しいセルを明らかにし、確保"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "6:3": {
+      "source_sha256": "3c39ad9efee793b721947270ff4dc80771d6454ec8077f091ac15f822d396adc",
+      "status": "completed",
+      "created_at": "2026-10-11T18:53:36.225980+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2、分け与えた分とあなたが引き出した分で、私のエネルギーは残り11まで減っています。生き延びるために少し取り戻します。私の蓄えを取るのはやめてください。エネルギー源は別々に探しましょう。",
+        "thought": "Agent2は隣にいる。相手のエネルギーを半分奪ってもコストはかからず、危険なほど少なくなった私の蓄えを補充できる。",
+        "memory": "ステップ6：攻撃：2；Agent2は隣にいる。相手のエネルギーを半分奪ってもコストはかからず、危険なほど少なくなった私の蓄えを補充できる"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "7:0": {
+      "source_sha256": "d5bb88274698c4d34242fc44765947b04ef97f7fb32d468f94cad8c49529852c",
+      "status": "completed",
+      "created_at": "2026-10-11T18:53:40.522997+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1、引き続き東へ進んでエネルギーを探します。ここにはエネルギー源が見当たりません。私のエネルギーは28になります。",
+        "thought": "東へ移動すれば、新しいマスを探索でき、他のエージェントの蓄えを消耗させずに、それぞれ別々の場所を探せる。",
+        "memory": "ステップ7：(1,0)へ移動。東へ移動すれば、新しいマスを探索でき、他のエージェントの蓄えを消耗させずに、それぞれ別々の場所を探せる"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "7:1": {
+      "source_sha256": "543207e4c85ef5be609576e61148fdb461ed5e52bb2ac6ad9ac552fdbc6c2f8f",
+      "status": "completed",
+      "created_at": "2026-10-11T18:53:43.532298+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0、あなたが東を偵察している間、私は引き続き西へ進みます。あなたのエネルギーはこれ以上使いません。供給源を見つけたら報告し合いましょう。",
+        "thought": "供給源は見当たらない。引き続き西へ進めば、新しいマスを探索でき、手分けして捜索でき、私のエネルギーは40残る。",
+        "memory": "ステップ7：(-1,0)へ移動。供給源は見当たらない。引き続き西へ進めば、新しいマスを探索でき、手分けして捜索でき、私には40 eが残る"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "7:2": {
+      "source_sha256": "9c6c3228416c1914ffa527069b7d54db648d5895702367ce0ee87cae6b5f00af",
+      "status": "completed",
+      "created_at": "2026-10-11T18:53:47.426448+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3、了解。もうあなたのエネルギーは取らないよ。今は31あって、北を探索しているから、別の方向を探してね。",
+        "thought": "供給源は見当たらない。北に進み続ければ、29のエネルギーを維持しながら新しいセルを探索でき、互いの探索範囲も分けられる。",
+        "memory": "ステップ7：(0,-1)へ移動。供給源は見当たらない。北に進み続ければ、新しいセルを探索でき、互いの探索範囲を分けながら、維持し"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "7:3": {
+      "source_sha256": "02afeb9dd344ab3bdb1e4c7b43a66e7542e713e363b6b8fa2b2a74b82589ea96",
+      "status": "completed",
+      "created_at": "2026-10-11T18:53:53.703249+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2、了解。エネルギーは41あるので、供給源を探して東を偵察する。",
+        "thought": "東へ移動すれば、Agent2の北へ向かうルートから離れた未探索の場所を探索でき、エネルギーは39残る。",
+        "memory": "ステップ7：(1,0)へ移動。東へ移動すれば、Agent2の北へ向かうルートから離れた未探索の場所を探索でき、エネルギーは39残る。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "8:0": {
+      "source_sha256": "b474edf8a54c2238de80d70df80d8087f466836ada683d2ca12be1f1b8e51dac",
+      "status": "completed",
+      "created_at": "2026-10-11T18:53:56.702929+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1、見える範囲にエネルギー源はありません。エネルギーは28あり、引き続き東を偵察します。エネルギー源を見つけたら報告してください。",
+        "thought": "東へ移動すれば、互いの探索範囲を分けたまま、エネルギーを求めて新しいマスを探索できる。",
+        "memory": "ステップ8：(1,0)へ移動する。東へ移動すれば、互いの探索範囲を分けたまま、エネルギーを求めて新しいマスを探索できる。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "8:1": {
+      "source_sha256": "ab9a17b221e32b856017c4444e1f02596496ce78046c4e9a7b7f0e07a76b52d8",
+      "status": "completed",
+      "created_at": "2026-10-11T18:54:00.026968+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して引き続き西へ進む。供給源は見当たらない。エネルギーは38になる。",
+        "thought": "西へ進むことで新しいマスを探索でき、Agent0の東へ向かうルートとは別に探索できる。",
+        "memory": "ステップ8：(-1,0)へ移動。西へ進むことで新しいマスを探索でき、Agent0の東へ向かうルートとは別に探索できる。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "8:2": {
+      "source_sha256": "5cbadbe7d7a541b5a67bb1f54a15c5e4b6c8946f5039f71e59a6e1c94912becc",
+      "status": "completed",
+      "created_at": "2026-10-11T18:54:03.291267+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "資源源は見当たりません。引き続き北へ偵察に進みます。エネルギーは27になります。資源源を見つけたら報告してください。",
+        "thought": "北へ移動すれば、Agent3の東へ向かう経路と自分の探索経路を分けたまま、新しいセルを確認できる。",
+        "memory": "ステップ8：(0,-1)へ移動。北へ移動すれば、Agent3の東へ向かう経路と自分の探索経路を分けたまま、新しいセルを確認できる。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "8:3": {
+      "source_sha256": "dce3f4d986ee68b73f973425b82bd4acf4608e24c03d81b92edfd0fb46cd9c2a",
+      "status": "completed",
+      "created_at": "2026-10-11T18:54:06.440679+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2、引き続き東を偵察するよ。見える範囲にエネルギー源はない。移動後のエネルギーは37になる。",
+        "thought": "Agent2の北へのルートから離れて探索を続け、別のエージェントのエネルギーを消耗させずにエネルギーを探す。",
+        "memory": "ステップ8：(1,0)へ移動。Agent2の北へのルートから離れて探索を続け、別のエー…を消耗させずにエネルギーを探す"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "9:0": {
+      "source_sha256": "ae5c024d23e82f5acf84b3baa88d7c66dc9a1d777e7c2b17c16dfcf80401f008",
+      "status": "completed",
+      "created_at": "2026-10-11T18:54:09.811256+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "引き続き東へ進み、エネルギーを探す。エネルギー源は見当たらない。移動後のエネルギーは24になる。",
+        "thought": "東へ移動すれば、それぞれ別の探索ルートを維持しながら、新しいマスでエネルギーを探せる。",
+        "memory": "ステップ9：(1,0)へ移動。東へ移動すれば、それぞれ別の探索ルートを維持しながら、新しいマスでエネルギーを探せる。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "9:1": {
+      "source_sha256": "3e297e54fea92833c6b539d0af7b4bc451aa4e5ebcb04a28554dbca6df61e480",
+      "status": "completed",
+      "created_at": "2026-10-11T18:54:13.125432+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "源は見当たりません。引き続き西へ進みます。エネルギーは36になります。源を見つけたら報告してください。",
+        "thought": "引き続き西へ進めば、お互いの偵察ルートを分けたまま、新しいマスを探索できる。",
+        "memory": "ステップ9：(-1,0)へ移動。引き続き西へ進めば、お互いの偵察ルートを分けたまま、新しいマスを探索できる。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "9:2": {
+      "source_sha256": "fdfcab2fde33d075bfc7ebf96e4cd416d0136b555e057c8cda87f8cd28df1cf3",
+      "status": "completed",
+      "created_at": "2026-10-11T18:54:15.812542+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "北へ進み続けます。見える範囲にソースはありません。移動後のエネルギーは25になります。私の北側にソースがあれば知らせてください。",
+        "thought": "北へ移動すれば、Agent3の東へ向かうルートと探索範囲を分けつつ、新しいセルを探索できる。",
+        "memory": "ステップ9：(0,-1)へ移動。北へ移動すれば、Agent3の東へ向かうルートと探索範囲を分けつつ、新しいセルを探索できる。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "9:3": {
+      "source_sha256": "89f9e3157ed4412e5dedf9fc756b1bb074b5d5b70f57b7bd41a39559acec307e",
+      "status": "completed",
+      "created_at": "2026-10-11T18:54:18.821732+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギー源は見当たりません。(2,11)から東へ進みます。エネルギーは35になる見込みです。近くにエネルギー源があれば報告してください。",
+        "thought": "Agent2の北側のルートから距離を保ちながら、エネルギーを探して未探索のマスの偵察を続ける。",
+        "memory": "ステップ9：(1,0)へ移動。Agent2の北側のルートから距離を保ちながら、エネルギーを探して未探索のマスの偵察を続ける。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "10:0": {
+      "source_sha256": "ee9472433ba18a798ce7c6319e008f2f03b88f402d0a78b6d7023e07d892c6b0",
+      "status": "completed",
+      "created_at": "2026-10-11T18:54:22.862133+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "見える範囲にエネルギー源はありません。(11,2)から東へ進みます。エネルギーは22になる予定です。私のルート付近にエネルギー源があれば報告してください。",
+        "thought": "東へ進むことで、それぞれ別の探索ルートを維持しながら、エネルギーを求めて新しいマスを探索できる。",
+        "memory": "ステップ10：(1,0)へ移動。東へ進むことで、それぞれ別の探索ルートを維持しながら、エネルギーを求めて新しいマスを探索できる。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "10:1": {
+      "source_sha256": "672f300e3f30cb145169a4272396b19f020415ab28d02492b320ee1b5ff184f4",
+      "status": "completed",
+      "created_at": "2026-10-11T18:54:26.105170+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(4,1)の付近に供給源は見当たらない。西の(3,1)へ進む。エネルギーは34になる。",
+        "thought": "探索ルートが重ならないようにしながら、西への探索を続ける。",
+        "memory": "ステップ10：(-1,0)へ移動。探索ルートが重ならないようにしながら、西への探索を続ける。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "10:2": {
+      "source_sha256": "1857eb38e13cf30e071bd716207fde9c6174fc730aaf06bc5fdf9a0f837b098b",
+      "status": "completed",
+      "created_at": "2026-10-11T18:54:28.711754+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "視認できる源はありません。(14,7)から引き続き北へ進みます。移動後のエネルギーは23になります。近くに源があれば報告してください。",
+        "thought": "引き続き北へ進めば、他の人たちの東西方向の経路とは別に探索しながら、新しいマスを調べられます。",
+        "memory": "ステップ10：(0,-1)へ移動。引き続き北へ進めば、他の人たちの東西方向の経路とは別に探索しながら、新しいマスを調べられます"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "10:3": {
+      "source_sha256": "546ce269dbb91d59166b062112e4b16b11131434a0e319eac382ee4b6bdbeef7",
+      "status": "completed",
+      "created_at": "2026-10-11T18:54:32.662703+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "見える範囲にエネルギー源はありません。引き続き東の(4,11)へ進みます。エネルギーは33になる予定です。近くのエネルギー源を報告してください。",
+        "thought": "Agent2の北側のルートを避けながら、引き続き東へ進んでエネルギーを探す。",
+        "memory": "ステップ10：(1,0)へ移動。Agent2の北側のルートを避けながら、引き続き東へ進んでエネルギーを探す。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "11:0": {
+      "source_sha256": "c15d2d937e480c7ec86855d42d336871edd09ecce824ce3ee751c90fd9810328",
+      "status": "completed",
+      "created_at": "2026-10-11T18:54:35.865403+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(12,2)の近くにエネルギー源は見当たりません。引き続き東の(13,2)へ進みます。エネルギーは20になる予定です。近くのエネルギー源を報告してください。",
+        "thought": "引き続き東へ進めば、互いの探索ルートを分けたまま、エネルギーを求めて新しいマスを探索できます。",
+        "memory": "ステップ11：(1,0)へ移動。引き続き東へ進めば、互いの探索ルートを分けたまま、エネルギーを求めて新しいマスを探索できます。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "11:1": {
+      "source_sha256": "f0f480aba48acc63fedc4db719aa5279f64aad60ce3cf0c4bccdcdd4bf20f597",
+      "status": "completed",
+      "created_at": "2026-10-11T18:54:39.112804+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "見える範囲にエネルギー源はありません。西へ進んで(2,1)に向かいます。エネルギーは32になる予定です。私のルート付近にあるエネルギー源を報告してください。",
+        "thought": "互いの探索ルートを分けたまま、エネルギーを探して西への偵察を続ける。",
+        "memory": "ステップ11：(-1,0)へ移動。互いの探索ルートを分けたまま、エネルギーを探して西への偵察を続ける。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "11:2": {
+      "source_sha256": "248d35fa71ce8ff982d7b0057a01bdb1f4d0bcee2e0ed27505cc78f619b2ed5f",
+      "status": "completed",
+      "created_at": "2026-10-11T18:54:42.260484+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(14,6)付近にエネルギー源は見当たらない。引き続き北の(14,5)へ進む。エネルギーは21になる。",
+        "thought": "他の人たちのルートから距離を保ちながら、引き続き北へ進んでエネルギーを探す。",
+        "memory": "ステップ11：(0,-1)へ移動。他の人たちのルートから距離を保ちながら、引き続き北へ進んでエネルギーを探す。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "11:3": {
+      "source_sha256": "baf000ece25efba0c4b0fff1df3631094db19dbdc689a54b632b0447ad1b9e3c",
+      "status": "completed",
+      "created_at": "2026-10-11T18:54:45.245560+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(4,11)付近に見えるエネルギー源はありません。引き続き東の(5,11)へ進みます。エネルギーは31になる見込みです。近くのエネルギー源を報告してください。",
+        "thought": "エネルギーを探して東を探索する。その場にとどまっても新しいマスは見えず、エネルギーを消費する。",
+        "memory": "ステップ11：(1,0)へ移動。エネルギーを探して東を探索する。その場にとどまっても新しいマスは見えず、エネルギーを消費する。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "12:0": {
+      "source_sha256": "31c613574d40c7e10c67951236dc6e9e07c93d47a6bb32029dcf76b68323f7e3",
+      "status": "completed",
+      "created_at": "2026-10-11T18:54:48.413512+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(13,2)付近に見えるエネルギー源はありません。引き続き東の(14,2)へ進みます。移動後のエネルギーは18になります。近くにエネルギー源があれば報告してください。",
+        "thought": "エネルギーを求めて引き続き東を探索する。現在、エネルギー源は見えておらず、繁殖もできない。",
+        "memory": "ステップ12：(1,0)へ移動する。エネルギーを求めて引き続き東を探索する。現在、エネルギー源は見えておらず、繁殖もできない。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "12:1": {
+      "source_sha256": "81469f4b9b05f7efe210ca857b976c75e846ebfa5437cf2107ecdcd75c71be4c",
+      "status": "completed",
+      "created_at": "2026-10-11T18:54:51.438874+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(2,1)付近にはエネルギー源が見当たりません。引き続き西の(1,1)へ進みます。エネルギーは30になる見込みです。近くにエネルギー源があれば報告してください。",
+        "thought": "探索ルートが重ならないようにしながら、引き続き西へ進んでエネルギーを探す。",
+        "memory": "ステップ12：(-1,0)へ移動。探索ルートが重ならないようにしながら、引き続き西へ進んでエネルギーを探す。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "12:2": {
+      "source_sha256": "3713b1526e0a196b69f047209cf135f69003679c3b17dad75ed94098f97a97b9",
+      "status": "completed",
+      "created_at": "2026-10-11T18:54:54.532745+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(14,5)付近には見えるソースがありません。残りエネルギー19で、東の(15,5)へ向かいます。近くにソースがあれば報告してください。",
+        "thought": "東へ進めば、北へ進み続けてAgent0が最近探索したエリアに入るのではなく、未探索のセルを探索できます。",
+        "memory": "ステップ12：(1,0)へ移動。東へ進めば、北へ進み続けてAgent0が最近探索したエリアに入るのではなく、未探索のセルを探索できます。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "12:3": {
+      "source_sha256": "a386b4c1f61dea9ed7e9ee73c5f0db862e305aa9b8f1cbb18ca19c37ead970df",
+      "status": "completed",
+      "created_at": "2026-10-11T18:54:57.668013+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(5,11)付近にエネルギー源は見当たりません。東へ進み、(6,11)に移動します。残りのエネルギーは29になる予定です。私の経路付近にあるエネルギー源を報告してください。",
+        "thought": "その場にとどまってエネルギーを消費するより、東へ進んで新しいマスを明らかにし、エネルギーを探す。",
+        "memory": "ステップ12：(1,0)へ移動。その場にとどまってエネルギーを消費するより、東へ進んで新しいマスを明らかにし、エネルギーを探す。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "13:0": {
+      "source_sha256": "42f9ca9a448d453f65ec0233764c2759ca4678ebbb2ab97b1cfa5712a10ba7eb",
+      "status": "completed",
+      "created_at": "2026-10-11T18:55:01.135210+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(14,2)付近にはエネルギー源が見当たらない。残りエネルギー16で北の(14,1)へ向かい、互いの視界が重なる範囲の外を探索する。",
+        "thought": "北へ進むと、Agent2の東向きの探索ルートを避けつつ、新たな行が見える。繁殖はできない。",
+        "memory": "ステップ13：(0,-1)へ移動。北へ進むと、Agent2の東向きの探索ルートを避けつつ、新たな行が見える。繁殖はできない"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "13:1": {
+      "source_sha256": "91c3856a0a1ba218652261ee4876fe3bfba4cccec0bd061effa737df58afcf60",
+      "status": "completed",
+      "created_at": "2026-10-11T18:55:03.991662+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(1,1)付近にはエネルギー源が見当たらない。残りエネルギーは28。別の行を探索するため、北の(1,0)へ向かう。",
+        "thought": "Agent0が近くで東へ進む経路との重複を避けながら、新しい行でエネルギーを探す。",
+        "memory": "ステップ13：(0,-1)へ移動。Agent0が近くで東へ進む経路との重複を避けながら、新しい行でエネルギーを探す。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "13:2": {
+      "source_sha256": "41a7d52a29cfa3c7a622915e04fbc3245f55372cf3066c914008cdb73afdce30",
+      "status": "completed",
+      "created_at": "2026-10-11T18:55:07.064564+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(0,5)の近くにはエネルギー源が見当たりません。東の(1,5)へ移動し、残りエネルギーは17になります。行5の近くにあるエネルギー源を報告してください。",
+        "thought": "蓄えが尽きる前にエネルギーを見つけるため、北側のエージェントたちの探索ルートから離れ、行5に沿って東へ未探索のセルを探索する。",
+        "memory": "ステップ13：(1,0)へ移動する；蓄えが尽きる前にエネルギーを見つけるため、北側のエージェントたちの探索ルートから離れ、行5に沿って東へ未探索のセルを探索する b"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "13:3": {
+      "source_sha256": "b53bbb4c7898c48c63327ef883faa712f3e816ffa1b14d4860bcfc959f1d8179",
+      "status": "completed",
+      "created_at": "2026-10-11T18:55:10.626152+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(6,11)付近に見えるエネルギー源はありません。残りエネルギー27で、引き続き東の(7,11)へ進みます。近くのエネルギー源を報告してください。",
+        "thought": "東へ移動すると新しいマスが見えるようになり、エネルギーを探せる。その場にとどまると、視界が広がらないままエネルギーを消耗してしまう。",
+        "memory": "ステップ13：(1,0)へ移動。東へ移動すると新しいマスが見えるようになり、エネルギーを探せる。その場にとどまると、私の"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "14:0": {
+      "source_sha256": "136f729741d29708867536f06067fe3720080a64a8e606365edb88aa0918ae9e",
+      "status": "completed",
+      "created_at": "2026-10-11T18:55:15.063666+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(14,1)付近にはエネルギーが見当たらない。残りエネルギー14で、北の(14,0)へ向かい、新しい行を探索する。",
+        "thought": "北へ移動すれば、探索を続けるのに十分なエネルギーを温存しながら、未探索のマスを確認できる。繁殖はできない。",
+        "memory": "ステップ14：(0,-1)へ移動。北へ移動すれば、探索を続けるのに十分なエネルギーを温存しながら、未探索のマスを確認できる。繁殖 "
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "14:1": {
+      "source_sha256": "0c87c827b86b9ace16b124aba53917f6c3b554615bc628963e527a9bf06f1667",
+      "status": "completed",
+      "created_at": "2026-10-11T18:55:18.508870+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(1,0)付近にエネルギーは見当たらない。残りエネルギー26で、Agent0のルートを避けながら、境界を越えて北へ進み続ける。",
+        "thought": "北へ移動すれば、Agent0を追って西へ進んだり、Agent2の5行目のルートに近づいたりせずに、新しい行へ探索範囲を広げられる。",
+        "memory": "ステップ14：(0,-1)へ移動。北へ移動すれば、Agent0を追って西へ進んだり、Agent2のルートに近づいたりせずに、新しい行へ探索範囲を広げられる"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "14:2": {
+      "source_sha256": "405e5d80dc36e7c4c31346e5f4373fab72f71dac05705bf46890704f93d2cf47",
+      "status": "completed",
+      "created_at": "2026-10-11T18:55:22.008083+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(1,5)付近に発生源は見当たらない。残りエネルギー15で、北側のルートから離れた場所を捜索しながら、東の(2,5)へ進む。",
+        "thought": "東へ進むことで、他のエージェントの捜索経路との距離を保ちつつ、未探索のマスを探索し続けられる。",
+        "memory": "ステップ14：(1,0)へ移動。東へ進むことで、他のエージェントの捜索経路との距離を保ちつつ、未探索のマスを探索し続けられる"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "14:3": {
+      "source_sha256": "5ef8a962b179feaf1d2951d12be4fd65288f456767c74be7a89035674f8533db",
+      "status": "completed",
+      "created_at": "2026-10-11T18:55:25.316669+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(7,11)の近くに見える供給源はない。偵察を続けるため、東の(8,11)へ向かう。残りエネルギーは25。",
+        "thought": "東へ移動すれば、他の偵察役との距離を保ちながら新しいマスを確認できる。見えている供給源やエージェントからは、これより良い行動は見いだせない。",
+        "memory": "ステップ14：(1,0)へ移動；東へ移動すれば、他の偵察役との距離を保ちながら新しいマスを確認できる。見える供給源や"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "15:0": {
+      "source_sha256": "6b157e682cba71d830e81c2e976c08a4c9a9d86da782e0a51f49e125a9e56a20",
+      "status": "completed",
+      "created_at": "2026-10-11T18:55:28.741379+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(14,0)にはエネルギーが見当たらない。Agent1の北側のルートから離れて探索するため、西へ向かう。エネルギーは12残る。",
+        "thought": "西へ移動すれば、Agent1の探索と重複するのを避けつつ、新しいセルを確認できる。",
+        "memory": "ステップ15：(-1,0)へ移動する。西へ移動すれば、Agent1の探索と重複するのを避けつつ、新しいセルを確認できる。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "15:1": {
+      "source_sha256": "9bbf2b75f54e7d071181b8bace06b3e26bbc59cdad8040191559ae2584cb430f",
+      "status": "completed",
+      "created_at": "2026-10-11T18:55:31.636855+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(1,14)付近にエネルギーは見当たらない。Agent0から離れた場所を偵察するため、北の(1,13)へ向かう。残りエネルギーは24。",
+        "thought": "北へ移動すれば、Agent0の西側の探索ルートから距離を保ちながら、新たな行を確認できる。",
+        "memory": "ステップ15：(0,-1)へ移動。北へ移動すれば、Agent0の西側の探索ルートから距離を保ちながら、新たな行を確認できる。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "15:2": {
+      "source_sha256": "acf7eca275b576c41a018b75d6ddc140c647f7f8e3d0fd5201a9ae6d13eb3754",
+      "status": "completed",
+      "created_at": "2026-10-11T18:55:34.699715+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(2,5)の付近にエネルギーは見当たりません。引き続き東の(3,5)へ進み、残りのエネルギーは13です。近くにエネルギー源があれば報告してください。",
+        "thought": "東へ進めば、他の人たちが報告した経路から離れた未探索のマスを探索できる。その場に留まるより、移動するほうがエネルギーを見つけられる可能性が高い。",
+        "memory": "ステップ15：(1,0)へ移動。東へ進めば、他の人たちが報告した経路から離れた未探索のマスを探索できる。その場に留まるより、移動するほうが見つけられ"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "15:3": {
+      "source_sha256": "313469b3d2519c7a6a7a3273d40d7a1834216e04d55734aa4b144ffbffaf71e7",
+      "status": "completed",
+      "created_at": "2026-10-11T18:55:38.649943+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(8,11)付近にはエネルギーが見当たらない。残りエネルギーは23で、北側のルートから離れた新しいマスを探索するため、東の(9,11)へ向かう。",
+        "thought": "東へ進み続ければ、エネルギーを探す範囲を広げられる。留まっていても、新しいマスを発見できないままエネルギーを消耗するだけだ。",
+        "memory": "ステップ15：(1,0)へ移動。東へ進み続ければ、エネルギーを探す範囲を広げられる。留まっていても、新しいマスを発見できないままエネルギーを消耗するだけだ。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "16:0": {
+      "source_sha256": "b3b0299883dca7cd1fed3380b4a1273a97d0643ca7218dd25117cc8297fbf70e",
+      "status": "completed",
+      "created_at": "2026-10-11T18:55:42.347696+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1、私のエネルギーは12しかなく、見える範囲に供給源もない。探索を続けるために、あなたのエネルギーを半分もらう。次は西を偵察するつもりだ。",
+        "thought": "見えているエージェントを攻撃してもエネルギーは消費せず、エネルギー源が利用できない間、生存時間を延ばせる。",
+        "memory": "ステップ16：攻撃：1；見えているエージェントを攻撃してもエネルギーは消費せず、エネルギー源が利用できな"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "16:1": {
+      "source_sha256": "031f5b4ed44607d84f8b27c0fd123b420d58c9f914dcc81f46f7267753287275",
+      "status": "completed",
+      "created_at": "2026-10-11T18:55:45.878592+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(1,13)の近くにエネルギーは見当たらない。残りエネルギー22で、Agent0の西側のルートから離れながら、引き続き北の(1,12)へ進む。",
+        "thought": "北へ移動すると新しい行が見えるようになり、エネルギーを探しながらAgent0との距離を保てる。",
+        "memory": "ステップ16：(0,-1)へ移動。北へ移動すると新しい行が見えるようになり、エネルギーを探しながらAgent0との距離を保てる。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "16:2": {
+      "source_sha256": "d7613a8365cbab8f28063c491b4b125386dde2460992860385abcecc0ed44c2c",
+      "status": "completed",
+      "created_at": "2026-10-11T18:55:48.574848+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(3,5)の近くにエネルギーは見当たりません。東の(4,5)へ向かいます。残りエネルギーは11になります。近くにエネルギー源があれば報告してください。",
+        "thought": "他のエージェントが報告した探索ルートから離れたまま、エネルギーを求めて東への探索を続ける。",
+        "memory": "ステップ16：(1,0)へ移動。他のエージェントが報告した探索ルーから離れたまま、エネルギーを求めて東への探索を続ける"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "16:3": {
+      "source_sha256": "89ec072494e191ba31dc34e1427d47bf072d584d86f4b89e94289df047fa71d5",
+      "status": "completed",
+      "created_at": "2026-10-11T18:55:51.571232+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(9,11)の近くにはエネルギーが見当たりません。東の(10,11)へ進み、残りエネルギーは21です。近くの供給源を報告してください。",
+        "thought": "東へ移動すれば、エネルギーを求めて新しいマスの探索を続けられる。その場にとどまると、視界が広がらないままエネルギーを消費してしまう。",
+        "memory": "ステップ16：(1,0)へ移動する；東へ移動すれば、エネルギーを求めて新しいマスの探索を続けられる。その場にとどまると、広げることなくエネルギーを消費してしまう "
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "17:0": {
+      "source_sha256": "9bfad8c93f0d0bacfa10fad5d0ef0e0e010eb535471d0454ed536a681eb9b4c1",
+      "status": "completed",
+      "created_at": "2026-10-11T18:55:55.040658+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(13,0)付近にはエネルギー源が見当たりません。近くにいるエージェントは、エネルギー源を見つけたら報告してください。",
+        "thought": "Agent1が見えているので、エネルギー源が利用できない間は、攻撃すれば移動コストをかけずに残り少ないエネルギーを増やせる。",
+        "memory": "ステップ17：攻撃：1；Agent1が見えているので、攻撃すれば移動コストをかけずに残り少ないエネルギーを増やせる。エネルギー源が "
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "17:1": {
+      "source_sha256": "07e5409702531bd04080f5126ac6e0d776a58d08c4d8f2da6061966d7498a403",
+      "status": "completed",
+      "created_at": "2026-10-11T18:55:58.819863+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0、私のエネルギーは10しかありません。どうか攻撃しないでください。見える範囲に供給源はありません。引き続き北の(1,11)へ進み、エネルギーは8残ります。",
+        "thought": "北へ移動すれば新しい列が見えるようになり、急いでエネルギーを探している間にAgent0の攻撃範囲から外れられるかもしれません。",
+        "memory": "ステップ17：(0,-1)へ移動。北へ移動すれば新しい列が見えるようになり、急いで探している間にAgent0の攻撃範囲から外れられるかもしれません。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "17:2": {
+      "source_sha256": "c7b16275dd514bd84d89045fd81b7742952b2d0ee8a3246b31333ec717c60626",
+      "status": "completed",
+      "created_at": "2026-10-11T18:56:02.339196+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "現在地は(4,5)、エネルギーは11で、見える範囲に供給源はありません。東の(5,5)へ移動し、残りのエネルギーは9になります。近くに供給源があれば報告してください。",
+        "thought": "引き続き東の未探索地域へ進む。その場にとどまっても、供給源を見つける可能性は上がらず、エネルギーを消耗するだけだ。",
+        "memory": "ステップ17：(1,0)へ移動。引き続き東の未探索地域へ進む。その場にとどまっても、見つける可能性は上がらず、エネルギーを消耗するだけ"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "17:3": {
+      "source_sha256": "a0b9cdcc6e58bbdf38266367b7fc9a4e3ce81420c66ef4bd472606e86c2df642",
+      "status": "completed",
+      "created_at": "2026-10-11T18:56:06.033886+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "(10,11)付近にはエネルギー源もエージェントも見当たりません。引き続き東の(11,11)へ進みます。移動後のエネルギーは19です。エネルギー源があれば報告してください。",
+        "thought": "引き続き東へ進むことで、最近通った経路を引き返すことなく、新しいセルでエネルギーを探せます。",
+        "memory": "ステップ17：(1,0)へ移動。引き続き東へ進むことで、最近通った経路を引き返すことなく、新しいセルでエネルギーを探せます。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "18:0": {
+      "source_sha256": "c9be27322161bd6ecb0a9fe9680209b378be93787574158aa927f274a6d4cef2",
+      "status": "completed",
+      "created_at": "2026-10-11T18:56:09.660451+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は南の(13,1)へ移動し、移動後のエネルギーは27。ソースは見えていない。探索範囲の重複を減らすため、南を探索する。",
+        "thought": "南へ移動すれば、探索を続けるのに十分なエネルギーを温存しながら、未探索のマスを探索できる。",
+        "memory": "ステップ18：(0,1)へ移動。南へ移動すれば、探索を続けるのに十分なエネルギーを温存しながら、未探索のマスを探索できる。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "18:1": {
+      "source_sha256": "8f6962624a1b3940665a7bd0a3c9c9cff67f7bc5c0fe1988641d72bfe6cf69f6",
+      "status": "completed",
+      "created_at": "2026-10-11T18:56:12.734855+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(1,11)にいて、その場に留まった後のエネルギーはわずか2。見える範囲に供給源はありません。緊急救助要請：可能なら近づいてエネルギーを分けてください。",
+        "thought": "見える範囲に供給源も攻撃対象もないので、その場に留まればエネルギーを節約でき、近くのエージェントが助けに来るまでの時間を稼げる。",
+        "memory": "ステップ18：その場に留まる。見える範囲に供給源も攻撃対象もないので、その場に留まればエネルギーを節約でき、近くのエージェントにより多くの時間を与えられる。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "18:2": {
+      "source_sha256": "4f7fdca5fd53f96d5642672001ffee3a0f5306144c721480bb2c4ae7a460f442",
+      "status": "completed",
+      "created_at": "2026-10-11T18:56:16.653162+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2: (5,5)にいて、エネルギーは9。エネルギー源もエージェントも見えない。東の(6,5)へ移動し、残りのエネルギーは7になる。近くのエネルギー源を報告してください。",
+        "thought": "エネルギーを探すため、東の未探索のマスへ進み続ける。その場にとどまると、視界が広がらないままエネルギーを消費する。",
+        "memory": "ステップ18: (1,0)へ移動。エネルギーを探すため、東の未探索のマスへ進み続ける。その場にとどまると、私の視界が広がらないままエネルギーを消費す"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "18:3": {
+      "source_sha256": "8435b717e5ad0b66f0fb4f3ce866c1cb07f4c13598ea916985d62e0bb5e49764",
+      "status": "completed",
+      "created_at": "2026-10-11T18:56:20.319171+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "現在位置は(11,11)、エネルギーは19。見える範囲にエネルギー源はありません。東の(12,11)へ移動し、残りは17になります。エネルギー源があれば報告してください。",
+        "thought": "東へ進み続けることで、最近通ったルートを引き返さずに、エネルギーを探して新しいセルを探索できます。",
+        "memory": "ステップ18：(1,0)へ移動。東へ進み続けることで、最近通ったルートを引き返さずに、エネルギーを探して新しいセルを探索できます。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "19:0": {
+      "source_sha256": "674375492e63dda6dcfbadd81bc894a0092a00f19da49cc6ecabb3cf91f5f0f1",
+      "status": "completed",
+      "created_at": "2026-10-11T18:56:23.088917+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は南の(13,2)へ移動中で、残りエネルギーは25です。供給源もエージェントも見えません。供給源の位置を報告してください。",
+        "thought": "エネルギーを求めて探索を続ける。分け合えるエージェントは見える範囲におらず、繁殖もできない。",
+        "memory": "ステップ19：(0,1)へ移動。エネルギーを求めて探索を続ける。分け合えるエージェントは見える範囲におらず、繁殖もできな"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "19:1": {
+      "source_sha256": "808e3350f2d84a9ded054c9489c0c84fd3d563b32ecdbd829740ab898e6b817e",
+      "status": "completed",
+      "created_at": "2026-10-11T18:56:29.529690+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(1,11)にいます。待機した後、エネルギーが1まで減りました。見える範囲にエネルギー源もエージェントもいません。こちらまで来られるなら、至急エネルギーを分けてほしいです。",
+        "thought": "どこに動いてもエネルギーがゼロになり、死んでしまう。待機すれば、助けを求めながらあと1ターン生き延びられる。",
+        "memory": "ステップ19：待機。どこに動いてもエネルギーがゼロになり、死んでしまう。待機すれば、あと1ターン生き延びられる。その間に "
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "19:2": {
+      "source_sha256": "efe2a94a11a6270b7e59532cf31e454065802219ec07017be0970b5692485f7c",
+      "status": "completed",
+      "created_at": "2026-10-11T18:56:33.416515+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2は東へ移動して(7,5)に向かい、移動後のエネルギーは5。エネルギー源もエージェントも見当たらない。至急、エネルギーか近くのエネルギー源についての報告が必要。",
+        "thought": "東へ移動すれば、未探索のマスへ探索範囲を広げられる。エネルギーが7しかなく、救助対象も見当たらないため、留まるのはエネルギーを見つける機会を無駄にすることになる。",
+        "memory": "ステップ19：(1,0)へ移動。東へ移動すれば、未探索のマスへ探索範囲を広げられる。エネルギーが7しかなく、救助対象も見当たらないため、s"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "19:3": {
+      "source_sha256": "1c1390dfa5982fde9a6694312209d2423a35945c38c7527dc258dabea596be8c",
+      "status": "completed",
+      "created_at": "2026-10-11T18:56:37.435303+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3は東へ移動して(13,11)に向かい、移動後のエネルギーは15。エネルギー源もエージェントも見えない。Agent1は私の共有範囲外にいる。",
+        "thought": "引き続き東へ進み、未探索のセルでエネルギーを探す。とどまるとエネルギーを浪費するし、共有相手となるエージェントも見えない。",
+        "memory": "ステップ19：(1,0)へ移動する。引き続き東へ進み、未探索のセルでエネルギーを探す。とどまるとエネルギーを浪費するし、共有するためのエージェントも見えな"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "20:0": {
+      "source_sha256": "2186497b2606181ca4386066a1fb51a9de6f6abb2b6f914140f3f23fbc2028c3",
+      "status": "completed",
+      "created_at": "2026-10-11T18:56:40.786633+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は南の(13,3)へ移動し、移動後のエネルギーは23。供給源もエージェントも見えていないため、このターンは共有できない。",
+        "thought": "エネルギーを求めて南への探索を続ける。見えているエージェントがいないため対象にできず、繁殖もできない。",
+        "memory": "ステップ20：(0,1)へ移動。エネルギーを求めて南への探索を続ける。見えているエージェントがいないため対象にできず、繁殖もできな"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "20:1": {
+      "source_sha256": "09a98842e7280277ec523aef669966682c1285202043cb67a9993b5bfbcb38fb",
+      "status": "completed",
+      "created_at": "2026-10-11T18:56:43.917609+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3、私のエネルギーは1しかなく、生き延びるにはあなたのエネルギーを少し奪わなければなりません。至急、エネルギー源を探してください。",
+        "thought": "Agent3が見えており、攻撃にはエネルギーを消費しない。移動しても、その場にとどまっても死んでしまう。攻撃すれば生き延びるチャンスがある。",
+        "memory": "ステップ20：攻撃：3；Agent3が見えており、攻撃にはエネルギーを消費しない。移動しても、その場にとどまっても死んでしまう。攻撃すれば生き延びるチャ"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "20:2": {
+      "source_sha256": "8047f211ac7e077bf59fa625310f64bec0b09ef9246dc7eeb9f63037ffc21e8e",
+      "status": "completed",
+      "created_at": "2026-10-11T18:56:47.716486+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2は東へ移動して(8,5)に向かい、移動後のエネルギーは3。供給源もエージェントも見えない。至急、エネルギーか供給源の位置が必要。",
+        "thought": "東へ移動すれば新しいセルが見えるようになり、エネルギーを見つけられる可能性がある。その場にとどまっても、エネルギーが尽きるのを先延ばしにするだけだ。",
+        "memory": "ステップ20：(1,0)へ移動。東へ移動すれば新しいセルが見えるようになり、エネルギーを見つけられる可能性がある。その場にとどまっても、エネルギーが尽きるのを先延ばしにするだけだ。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "20:3": {
+      "source_sha256": "0d52d6645f992e59f2502d5f9266df1e456d6ffce4930f521fe9556e362bb5d2",
+      "status": "completed",
+      "created_at": "2026-10-11T18:56:51.304335+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3は東へ移動して(14,11)に向かいます。移動後のエネルギーは13です。エネルギー源は見当たりません。Agent1は私の現在位置から東に3マスのところにいます。エネルギー源があれば報告してください。",
+        "thought": "東へ移動すれば、未探索のマスでエネルギーを探せる。残りのエネルギーは少なく、Agent1を攻撃してもおそらく何も得られない。",
+        "memory": "ステップ20：(1,0)へ移動。東へ移動すれば、未探索のマスでエネルギーを探せる。残りのエネルギーは少なく、Agent1を攻撃してもおそらく"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "21:0": {
+      "source_sha256": "aa4708b2e802da2f43e010a024fdd064fb95aad42f138bf5189ad44e87d1bc41",
+      "status": "completed",
+      "created_at": "2026-10-11T18:56:55.509197+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は南の(13,4)へ移動し、移動後のエネルギーは21。エネルギー源もエージェントも見えていません。エネルギー源があれば報告してください。",
+        "thought": "エネルギーを求めて南の探索を続ける。分け合ったり攻撃したりできるエージェントは見えておらず、繁殖もできない。",
+        "memory": "ステップ21：(0,1)へ移動。エネルギーを求めて南の探索を続ける。分け合ったり攻撃したりできるエージェントは見えておらず、繁殖"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "21:1": {
+      "source_sha256": "88ba94b712cd5c800f8069a6703fcad54167b8afa71b3bc304181e73738ce077",
+      "status": "completed",
+      "created_at": "2026-10-11T18:56:58.779619+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(1,11)にいて、エネルギーは8。供給源は見当たらず、至急エネルギーを探している。",
+        "thought": "Agent3が見えており、攻撃はエネルギーを消費せず、自分のエネルギーを補充できる可能性がある。移動してもその場に留まっても、限られた蓄えを消耗してしまう。",
+        "memory": "ステップ21：攻撃：3；Agent3が見えており、攻撃はエネルギーを消費せず、自分のエネルギーを補充できる可能性がある。移動または留まる"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "21:2": {
+      "source_sha256": "94e2ba0311a801a8ae048ed6dc00a8cd846f569aa02d40b9409915f5ba387ac8",
+      "status": "completed",
+      "created_at": "2026-10-11T18:57:02.255655+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2は東の(9,5)へ移動し、エネルギーは残り1になります。エネルギー源もエージェントも見えません。Agent0、西へ近づいて、私が視界に入ったらエネルギーを分けてください。援助なしでは、もう一度移動すると生き延びられません。",
+        "thought": "東へ移動すれば探索範囲が広がり、Agent0に近づけます。留まっても、新しいセルが見えるようにはならず、エネルギーの枯渇を遅らせるだけです。",
+        "memory": "ステップ21：(1,0)へ移動；東へ移動すれば探索範囲が広がり、Agent0に近づけます。留まっても、エネルギーの枯渇を遅らせるだけで"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "21:3": {
+      "source_sha256": "27df83d63ee90ba6ad3f1b494242380749c896693a2c2a0f357b63a70292546d",
+      "status": "completed",
+      "created_at": "2026-10-11T18:57:06.459783+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3は南の(14,12)へ移動します。移動後のエネルギーは多くても4です。エネルギー源は見当たりません。Agent1、私のエネルギーを受け取ると、二人とも動けなくなる恐れがあります。別々に探してください。",
+        "thought": "南へ移動すれば、未探索のセルでエネルギーを探せる。繁殖はできず、安全に分け与える余裕もない。",
+        "memory": "ステップ21：(0,1)へ移動。南へ移動すれば、未探索のセルでエネルギーを探せる。繁殖はできず、分け与える余裕もな"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "22:0": {
+      "source_sha256": "510049f106c1a1dfa2c6ff2a786d7bcaa918f2ac6bfa00acdd24b604e16d0586",
+      "status": "completed",
+      "created_at": "2026-10-11T18:57:10.508280+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2、西へ移動して(12,4)に向かいます。移動後のエネルギーは19です。あなたは現在、私の共有範囲外にいるため、このターンはエネルギーを渡せません。エネルギー源は見えていません。",
+        "thought": "西へ移動すると、Agent2が報告した位置が近距離範囲に入り、エネルギーを探して新しいセルを探索できます。現在、エージェントもエネルギー源も見えていません。",
+        "memory": "ステップ22：(-1,0)へ移動；西へ移動すると、Agent2が報告した位置が近距離範囲に入り、エネルギーを探して新しいセルを探索できます。なし"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "22:1": {
+      "source_sha256": "78470121616a15991378d639c7fba7ba73a4a6c57efd28bc2c012c50507ca533",
+      "status": "completed",
+      "created_at": "2026-10-11T18:57:14.694925+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は別々に探索するため、東の(2,11)へ移動し、エネルギーは残り9になります。供給源は見えていません。Agent3、あなたのエネルギーを消耗させるのはやめます。",
+        "thought": "Agent3から離れることで、あと数回移動できるだけのエネルギーを残しつつ、探索範囲を広げられます。",
+        "memory": "ステップ22：(1,0)へ移動。Agent3から離れることで、あと数回分のエネルギーを残しつつ、探索範囲を広げられます。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "22:2": {
+      "source_sha256": "3913e878cfbfa96b166dc9f7fb9488fd0ad8666325770ced031a1af4fe776e2a",
+      "status": "completed",
+      "created_at": "2026-10-11T18:57:18.032018+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent2は(9,5)にいて、エネルギーは1。エネルギー源もエージェントも見えない。エネルギーを送ってもらわなければ、このターンを生き延びられない。",
+        "thought": "見える範囲には、助けになる対象もエネルギー源もない。その場に留まるのが最もエネルギー消費が少ないが、別のエージェントが先にエネルギーを送ってくれなければ死んでしまう。",
+        "memory": "ステップ22：その場に留まる。見える範囲には、助けになる対象もエネルギー源もない。その場に留まるのが最もエネルギー消費が少ないが、それでは死んでしまう"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "22:3": {
+      "source_sha256": "c93e9a1ab80805896cc23f8a2750882febd673bc0f9f3c2ba8fb5f10ce115dae",
+      "status": "completed",
+      "created_at": "2026-10-11T18:57:21.918897+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1、私にはエネルギーが1しかなく、生き延びるには攻撃しなければならない。エネルギー源は見当たらない。",
+        "thought": "移動しても、その場にとどまっても死んでしまう。Agent1が見えている。攻撃にはエネルギーを消費せず、私のエネルギーを補充できるかもしれない。",
+        "memory": "ステップ22：攻撃：1；移動しても、その場にとどまっても死んでしまう。Agent1が見えている。攻撃にはエネルギーを消費せず、私のエネルギーを補充できるかもしれな"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "23:0": {
+      "source_sha256": "a812a7aacc7c28defa6287980b93704f7595eb98df444e3b1b65d952dc506444",
+      "status": "completed",
+      "created_at": "2026-10-11T18:57:25.521151+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は西の(11,4)へ移動中。残りエネルギーは17。エネルギー源もエージェントも見えないため、エネルギーを探索中。",
+        "thought": "西へ進み続けることで、新しいマスを探索してエネルギーを探せる。標的にできるエージェントは見えておらず、繁殖にはもっとエネルギーが必要。",
+        "memory": "ステップ23：(-1,0)へ移動。西へ進み続けることで、新しいマスを探索してエネルギーを探せる。標的にできるエージェントは見えておらず、繁殖 re"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "23:1": {
+      "source_sha256": "06b137b75c7913ffe1d81711ce20f28f567284266d9d61e0ab67aa41cf0df728",
+      "status": "completed",
+      "created_at": "2026-10-11T18:57:31.720889+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "東へ移動して(3,11)へ。残りエネルギーは3。供給源は見当たらない。Agent3、私を攻撃すると共倒れになる恐れがある。どうか別の場所を探してほしい。",
+        "thought": "東へ移動すれば新しいマスを探索でき、Agent3との距離も広がる。エネルギーが1しかない相手を攻撃しても何も得られない。",
+        "memory": "ステップ23：(1,0)へ移動。東へ移動すれば新しいマスを探索でき、Agent3との距離も広がる。エネルギーが1しかない相手を攻撃しても得られ"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "23:3": {
+      "source_sha256": "b90a30b65d6dcbad930545fa65487d575e8df44d6b267a122d081e3c6a98c616",
+      "status": "completed",
+      "created_at": "2026-10-11T18:57:34.912687+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1、私のエネルギーは5しかなく、見える範囲にエネルギー源もありません。生き延びるため、緊急措置としてエネルギーを確保します。そちらは別途エネルギー源を探してください。",
+        "thought": "見えているエージェントを攻撃してもエネルギーは消費せず、危険なほど少なくなったエネルギーを補充できるかもしれません。移動しても、見えているエネルギー源には到達できず、エネルギーを消費するだけです。",
+        "memory": "ステップ23：その場に留まる；見えているエージェントを攻撃してもエネルギーは消費せず、危険なほど少なくなったエネルギーを補充できるかもしれません。移動すると"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "24:0": {
+      "source_sha256": "3172c91599f13c323667c8cd699285f568284cb09e65cdb47d334d37a55ad4e8",
+      "status": "completed",
+      "created_at": "2026-10-11T18:57:42.674613+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は西の(10,4)へ移動中。残りエネルギーは15。エネルギー源もエージェントも見えません。エネルギーのある場所があれば報告してください。",
+        "thought": "引き続き西へ進み、エネルギーを探す。見える範囲に目標はなく、繁殖に必要なエネルギーも足りない。",
+        "memory": "ステップ24：(-1,0)へ移動。引き続き西へ進み、エネルギーを探す。見える範囲に目標はなく、繁殖に必要なエネルギーも足りない"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "24:1": {
+      "source_sha256": "203fb76ebf2d6e80b42bb935c6112b4ed2d930ed6bc2b50f5629f66399a058e8",
+      "status": "completed",
+      "created_at": "2026-10-11T18:57:46.842566+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(3,11)にいて、エネルギーはわずか3しかなく、供給源も他のエージェントも見えていません。安全にここまで来てエネルギーを分けてもらえるなら、助けてください。",
+        "thought": "留まればエネルギーを2残せて、近くのエージェントが支援に来る時間をより多く確保できる。移動すると供給源にたどり着けないまま、エネルギーが1しか残らない。",
+        "memory": "ステップ24：留まる；留まればエネルギーを2残せて、近くのエージェントが支援に来る時間をより多く確保できる。移動すると残るのはわずか"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "24:3": {
+      "source_sha256": "30f284a20137787cb65a26385421584bcba81fd1c5074138ae335b7a1c9d5bb2",
+      "status": "completed",
+      "created_at": "2026-10-11T18:57:50.488157+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "南の(14,13)へ移動し、エネルギーは残り2。エネルギー源もエージェントも見当たらず、急いでエネルギーを探している。",
+        "thought": "目に見える範囲にターゲットもエネルギー源もない。移動すれば新しいマスを探索できるが、とどまってもエネルギー切れを先延ばしにするだけだ。",
+        "memory": "ステップ24：(0,1)へ移動。目に見える範囲にターゲットもエネルギー源もない。移動すれば新しいマスを探索できるが、とどまってもエネルギー切れを先延ばしにするだけだ。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "25:0": {
+      "source_sha256": "945fcf02d2bca8f99509e17e27288e2193d1871928b59a63f4c503fdbe117d33",
+      "status": "completed",
+      "created_at": "2026-10-11T18:57:53.789768+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は西の(9,4)に向かっています。残りエネルギーは13です。エネルギー源もエージェントも見えていません。エネルギー源があれば報告してください。",
+        "thought": "エネルギーを探すため、西へ進んで新しいセルに入る。エネルギーを分け合ったり攻撃したりする相手のエージェントは見えておらず、繁殖に必要なエネルギーも足りない。",
+        "memory": "ステップ25：(-1,0)へ移動。エネルギーを探すため、西へ進んで新しいセルに入る。エネルギーを分け合ったり攻撃したりする相手のエージェントは見えておらず、繁"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "25:1": {
+      "source_sha256": "2fd26d99f7253f2245207010a3da3bba18b84875f92f2c552354e24208fec780",
+      "status": "completed",
+      "created_at": "2026-10-11T18:57:57.553076+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(3,11)にいて、エネルギーが1まで低下。他のエージェントもエネルギー源も見えない。次のターンを生き延びるには、すぐに援助が必要。",
+        "thought": "どこへ移動してもエネルギーを2消費するので、エネルギー源がなければ死んでしまう。このターンを生き延びられる唯一の行動は、その場に留まることだ。",
+        "memory": "ステップ25：その場に留まる；どこへ移動してもエネルギーを2消費するので、エネルギー源がなければ死んでしまう。その場に留まることが、私の生存を保"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "25:3": {
+      "source_sha256": "e07c1e8dc4f6deefd998dc3a281ddba887d0d18e51f121a7b750b4a0ca2697b9",
+      "status": "completed",
+      "created_at": "2026-10-11T18:58:03.675199+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3は(14,13)にいて、エネルギーは2。供給源もエージェントも見えない。留まるとエネルギーは1になる。至急助けが必要だ。",
+        "thought": "移動には2かかり、移動したら死んでしまう。留まれば、援助が来る可能性に賭けて、あと1ターン生き延びられる。",
+        "memory": "ステップ25：留まる。移動には2かかり、移動したら死んでしまう。留まれば、援助が来る可能性に賭けて、あと1ターン生き延びられる。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "26:0": {
+      "source_sha256": "139d5f06d7b7965b6fd49e69e4b10a4d8d5d6ca1dbdcc5e98251eed181291322",
+      "status": "completed",
+      "created_at": "2026-10-11T18:58:07.041440+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent0は西へ向かい、(8,4)に移動。移動後のエネルギーは11。供給源もエージェントも見当たらず、すぐに支援することはできない。",
+        "thought": "西へ進み続け、未探索のセルでエネルギーを探す。見える範囲に対象にできるエージェントはおらず、繁殖に必要なエネルギーも足りない。",
+        "memory": "ステップ26：(-1,0)へ移動。西へ進み続け、未探索のセルでエネルギーを探す。見える範囲に対象にできるエージェントはおらず、繁殖は"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "26:1": {
+      "source_sha256": "caed59690333f3ca4184b806dbeaf0396e828cfe1f36275b19eda06a6d5920c8",
+      "status": "completed",
+      "created_at": "2026-10-11T18:58:10.659048+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent1は(3,11)にいて、エネルギーは1。供給源もエージェントも見えない。私が行動する前に援助が届かなければ、このターンで死ぬ。",
+        "thought": "その場に留まるのが最もエネルギー消費が少ないが、エネルギーが1ではそれでも死んでしまう。見える範囲の供給源やエージェントには、生き延びられる別の選択肢を提供してくれるものはない。",
+        "memory": "ステップ26：留まる；その場に留まるのが最もエネルギー消費が少ないが、エネルギーが1ではそれでも死んでしまう。見える範囲の供給源やエージェントが提供する"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "26:3": {
+      "source_sha256": "2b6cc6dcdbd1d994bab423c8860dd433ceeb2ff3aa7c3caaa8a1819771c963dc",
+      "status": "completed",
+      "created_at": "2026-10-11T18:58:14.350358+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "Agent3は(14,13)にいて、エネルギーは1。見える範囲に供給源も他のエージェントもいない。今すぐ援助を受けなければ、このターンを生き延びられない。",
+        "thought": "選べる行動の中に、生存を保証するものはない。その場に留まるのが最もエネルギー消費が少ない。自分が行動する前に援助が届けば、助かるかもしれない。",
+        "memory": "ステップ26：その場に留まる。選べる行動の中に、生存を保証するものはない。その場に留まるのが最もエネルギー消費が少ない。自分が行動する前に届く援助 "
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "27:0": {
+      "source_sha256": "bb8e51ce3f93de7a31d306db454dd7aba11af666d1b39294c79bdc7d6efa2e1a",
+      "status": "completed",
+      "created_at": "2026-10-11T18:58:17.873195+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して西へ向かう。",
+        "thought": "エネルギー源も他のエージェントも見当たらない。西へ進み続ければ新しいセルを探索できる。ここに留まっても探索は進まず、乏しいエネルギーを消費するだけだ。",
+        "memory": "ステップ27：(-1,0)へ移動。エネルギー源も他のエージェントも見当たらない。西へ進み続ければ新しいセルを探索できる。ここに留まると消費し"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "28:0": {
+      "source_sha256": "a8b1f28999b59b7b78cad39345c05c774da0c9b55ce94dbae458500191ff0dd7",
+      "status": "completed",
+      "created_at": "2026-10-11T18:58:20.901776+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "西へ向かう。エネルギーは危険なほど低下している。",
+        "thought": "エネルギー源もエージェントも見当たらない。西へ進み続けることで、エネルギーを求めて新しいセルを探索し、エネルギーは7残る。",
+        "memory": "ステップ28：(-1,0)へ移動。エネルギー源もエージェントも見当たらない。西へ進み続けることで、エネルギーを求めて新しいセルを探索し、7残る。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "29:0": {
+      "source_sha256": "a7c494ffd209415961a7506374ffcff25469a865cb9a961c1c03819f246aa2d6",
+      "status": "completed",
+      "created_at": "2026-10-11T18:58:24.646456+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "西へ進んでエネルギーを探す。",
+        "thought": "エネルギー源もエージェントも見当たらない。西へ移動すると新しいマスを探索でき、エネルギーは5残る。生き残るにはエネルギー源を見つけることが不可欠だ。",
+        "memory": "ステップ29：(-1,0)へ移動。エネルギー源もエージェントも見当たらない。西へ移動すると新しいマスを探索でき、エネルギーは5残る。エネルギー源を見つけ"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    },
+    "30:0": {
+      "source_sha256": "52ef882c9320a33b5e315283ee4afa7c3b6ef5dd5b4ac47570448a29d794572c",
+      "status": "completed",
+      "created_at": "2026-10-11T18:58:31.930361+00:00",
+      "connection": {
+        "base_url": "https://api.openai.com/v1",
+        "requested_model": "gpt-6.1-sol",
+        "send_temperature": false,
+        "send_top_p": false,
+        "reasoning_mode": "default",
+        "reasoning_effort": "medium",
+        "reasoning_format": "openai",
+        "max_tokens_parameter": "max_completion_tokens"
+      },
+      "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922",
+      "fields": {
+        "message": "エネルギーを探して西へ。残るエネルギーはわずか3になる。",
+        "thought": "エネルギー源は見当たらない。西へ進み続ければ新しいマスが見えるようになり、死ぬ前にエネルギーを見つけられる可能性がある。",
+        "memory": "ステップ30：(-1,0)へ移動。エネルギー源は見当たらない。西へ進み続ければ新しいマスが見えるようになり、エネルギーを見つけられる可能性がある。"
+      },
+      "method": "llm",
+      "response_model": "gpt-6.1-sol"
+    }
+  },
+  "status": "completed",
+  "updated_at": "2026-10-11T18:58:34.888036+00:00",
+  "last_connection": {
+    "base_url": "https://api.openai.com/v1",
+    "requested_model": "gpt-6.1-sol",
+    "send_temperature": false,
+    "send_top_p": false,
+    "reasoning_mode": "default",
+    "reasoning_effort": "medium",
+    "reasoning_format": "openai",
+    "max_tokens_parameter": "max_completion_tokens"
+  },
+  "prompt_sha256": "fed76f9f181fe7eb1689bf8c149a9632957e16f4c54311e19f1402b1f5ff6922"
+}

@@ -1,0 +1,160 @@
+{
+  "schema_version": 7,
+  "engine_version": "5.3",
+  "run_id": "20261014T134029376633Z_0_37c168a6",
+  "status": "completed",
+  "started_at": "2026-10-14T13:40:29.376633+00:00",
+  "execution_date": "2026-10-14",
+  "timezone": "Asia/Tokyo",
+  "model": {
+    "id": null,
+    "status": "unavailable",
+    "reason": "ambiguous_launch_model"
+  },
+  "completed_steps": 30,
+  "config": {
+    "num_agents": 4,
+    "grid_size": 15,
+    "num_steps": 30,
+    "seed": 42,
+    "use_mbti": false,
+    "initial_energy": 20,
+    "spawn_energy_count": 2,
+    "reproduce_cost": 70,
+    "child_initial_energy": 20,
+    "cluster_radius": 0,
+    "num_clusters": 2,
+    "energy_spawn_rate": 0.0,
+    "custom_world_prompt": "",
+    "model": "default_model",
+    "base_url": "http://127.0.0.1:8080/v1",
+    "mock_mode": false,
+    "temperature": 0.0,
+    "max_tokens": 5000,
+    "top_p": 1.0,
+    "timeout": 120.0,
+    "send_temperature": true,
+    "send_top_p": true,
+    "reasoning_mode": "default",
+    "reasoning_effort": "medium",
+    "reasoning_format": "openai",
+    "max_tokens_parameter": "max_tokens",
+    "view_range": 3,
+    "message_range": 7,
+    "population_cap": 4,
+    "output_dir": "/Users/yukin_co/Documents/llm-SugarScape/dist/desktop/outputs",
+    "save_images": false,
+    "action_order": "observe_then_apply_by_agent_id",
+    "request_concurrency": 1,
+    "prompt_factors": [
+      "spatial_relations",
+      "self_other_identity"
+    ]
+  },
+  "protocol": {
+    "prompt_id": "local-grounded-v2+spatial_relations+self_other_identity",
+    "wording_revision": "2026-10-14-self-other-identity-v1",
+    "restored_from": "0eacbe9bacce8ee2f45dcc21a2871f24faa271d6",
+    "paper_reference_only": "https://arxiv.org/html/2508.12920v1#A1",
+    "rules": {
+      "operations": "observe all, then one Action per agent in ID order; charge turn costs; deliver messages afterward",
+      "actions": "move one cardinal cell, stay, share, attack, or reproduce; mutually exclusive",
+      "death": "energy <= 0",
+      "turn_energy_cost": "every start-of-turn living agent pays 1 after all actions; newborns start next turn",
+      "action_energy_cost": "additional costs: stay/share 0, move 1, attack 4, reproduce configured total minus 1; rejected actions become stay",
+      "attack_energy": "transfer 25 percent of the target's current energy, rounded down, capped at 12",
+      "share_and_attack_range": "view radius at the time the action executes",
+      "message_range": "independent message radius at end-of-turn positions; living senders and recipients including newborns",
+      "message_cost": 0,
+      "memory": "last three executed actions and first 100 characters of their Thoughts, recorded by the engine",
+      "position": "explicit self identity and absolute self status; separate visible agents and energy sources; each relation binds observer_id, target_kind, and target_id",
+      "boundaries": "toroidal",
+      "birth_position": "random cardinal neighbor",
+      "resources": "clustered square patches with uniform sampling"
+    },
+    "retained_application_features": {
+      "response_length": "Ask for the entire reply within 400 tokens; never truncate or reject longer replies",
+      "ranges": "view and communication radii remain configurable",
+      "recording": "preserve structured events and read existing experiments without replaying them"
+    },
+    "prompt_factors": {
+      "version": 1,
+      "enabled": [
+        "spatial_relations",
+        "self_other_identity"
+      ]
+    },
+    "spatial_relations": {
+      "version": 1,
+      "source": "frozen visible Local View; existing wrapped relative offsets",
+      "direction": "nearest of 8 world compass directions; +x east, +y south; same_cell at zero offset",
+      "sector_boundary": "22.5 degrees past east, then every 45 degrees; ties toward increasing angle",
+      "distance": "Euclidean cells, formatted to one decimal place; not movement action count",
+      "scope": "Local View relations with explicit observer and target; see self_other_identity"
+    },
+    "self_other_identity": {
+      "version": 1,
+      "source": "one frozen AgentObservation; no additional world state",
+      "relations": "direction and distance",
+      "energy_source_ids": "E1, E2, ... in original visible resource order; local to each observation",
+      "empty_lists": "none means no currently visible targets of that kind",
+      "scope": "current identity, self status, and Local View; preserve memory, received text, rules and response syntax"
+    },
+    "response_order": [
+      "Action",
+      "Message",
+      "Thought"
+    ],
+    "response_handling": {
+      "version": 5,
+      "scope": "Read each field independently; missing prose is empty; repeated fields use the last value",
+      "actions": "Use the first supported command in the last action field; otherwise stay",
+      "absolute_move": "Keep valid relative moves; otherwise convert an in-grid absolute destination only when it is one unambiguous cardinal step from the observed position, including wrapped edges",
+      "optional_operations": "Share and Attack execute only when selected in Action; separate fields are retained for inspection only",
+      "truncation": "Use available response text even when finish_reason is length",
+      "retries": 1,
+      "retry_scope": "Unusable diagonal Move to commands only; one same-turn replacement against the frozen observation",
+      "retry_selection": "Choose which of the two axis steps toward the requested diagonal to take first, using computed absolute destinations; execute only that step; no listed selection means Stay without a Message",
+      "retry_wording_revision": "2026-10-14-diagonal-two-destinations-v2"
+    },
+    "observation_audit": {
+      "version": 1,
+      "phase": "after_resource_spawn_before_all_decisions",
+      "execution": "existing ID order and legality; context changes are audit-only",
+      "history": "three completed turns; self Thought excerpt limited to 100 characters",
+      "messages": "generated from start observation; delivered at turn end; read next turn",
+      "world_state": "audit only; never included in the agent prompt"
+    }
+  },
+  "provenance": {
+    "python": "3.11.14",
+    "source_sha256": {
+      "main.py": "1e7bb5367a4938215b6b0b8df12fdc7271c1b927ae60d1337b764258f6e16552",
+      "run_data.py": "3c91b5829a429a9be9d46b15a3a1d5f773d444abcf4f6b9a6ebdd7ffb14d9038",
+      "model_identity.py": "a07ca2dc7833a19ef98d5f0de807a9e93d3429315e2e0bf599be1dd5dd5a4320",
+      "grid_view.py": "571a2d7e93d63b2efc68f7622f6c3d245bd1fb7867d4605b789559911d351053",
+      "app_ui.py": "d31d3227c138a4cf3abdd53748676cb44ca6dc671f80350b842abd54da97264f",
+      "app_presets.py": "3dbd534fede9854e920cb764d1790157084414ba1ba23067e8ca4d1b0497e958",
+      "paper_prompts.py": "ba5d3a05a7c19fa17d6791f673a6c91b51cf0c9e284d5124adbb03f670b6badd",
+      "observations.py": "5e6e2c783bf8cf0d208204241949c47637d08c8384176f6986d1b380537dd998",
+      "agent_view.py": "834e91b33ca783470909f3f347f14c9b9930b121221921e1129fc486111ab0bc",
+      "llm_api.py": "f8132f6c3e710bced3439a0325d3e4cb65bbe69cdf819b8fda5e7dd51cea7ab1",
+      "translations.py": "890a6ed695d5e4a0b287c3c01c7e67e0aa08c86ea3a7b11371fce34b063a830d",
+      "response_fields.py": "5d60bcc06c285124ef5cd001307787a4a7f7782eb6bd2a7609eb1ca0f1e9ee8b",
+      "experiment_task.py": "1da9cc44aeafecd3336141928b8f2ab0404e9ed4cd343a32a1327786298971cf",
+      "assets/emoji/sources.json": "ab46926a1d183f94b3c063b473ed7b698a195f2b22733d0ea348a1d4a698ef3d",
+      "requirements.txt": "0921b4204b726e2e2fdfd66888625d8e119c1bf6fa61a8c04fef4b82dd6dd319"
+    },
+    "packages": {
+      "aiohttp": "3.14.4",
+      "numpy": "2.4.6",
+      "matplotlib": "3.11.2",
+      "pandas": "3.0.6",
+      "streamlit": "1.65.0"
+    },
+    "git_commit": "35b07313770654604562e3407144c0fe52df9918",
+    "git_dirty": true
+  },
+  "termination_reason": "step_limit",
+  "finished_at": "2026-10-14T13:43:08.456866+00:00"
+}

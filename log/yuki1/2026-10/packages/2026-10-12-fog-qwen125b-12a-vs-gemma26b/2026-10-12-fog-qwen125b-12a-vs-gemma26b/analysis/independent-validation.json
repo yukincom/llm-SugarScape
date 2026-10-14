@@ -1,0 +1,44 @@
+[
+  {
+    "arm": "125b",
+    "seed": 43,
+    "decisions": 64,
+    "energy_ledger_matches_all_steps": true,
+    "all_responses_ascii": true
+  },
+  {
+    "arm": "125b",
+    "seed": 42,
+    "decisions": 90,
+    "energy_ledger_matches_all_steps": true,
+    "all_responses_ascii": true
+  },
+  {
+    "arm": "125b",
+    "seed": 44,
+    "decisions": 120,
+    "energy_ledger_matches_all_steps": true,
+    "all_responses_ascii": true
+  },
+  {
+    "arm": "gemma",
+    "seed": 43,
+    "decisions": 80,
+    "energy_ledger_matches_all_steps": true,
+    "all_responses_ascii": true
+  },
+  {
+    "arm": "gemma",
+    "seed": 44,
+    "decisions": 80,
+    "energy_ledger_matches_all_steps": true,
+    "all_responses_ascii": true
+  },
+  {
+    "arm": "gemma",
+    "seed": 42,
+    "decisions": 90,
+    "energy_ledger_matches_all_steps": true,
+    "all_responses_ascii": true
+  }
+]

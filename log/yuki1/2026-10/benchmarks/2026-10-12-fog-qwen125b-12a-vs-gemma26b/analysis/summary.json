@@ -1,0 +1,150 @@
+{
+  "125b": {
+    "runs": 3,
+    "decisions": 274,
+    "final_survivors": [
+      1,
+      0,
+      4
+    ],
+    "median_response_seconds": 1.5228707499336451,
+    "p95_response_seconds": 2.8656139916041856,
+    "sum_response_seconds": 477.88811027957126,
+    "mean_response_characters": 305.7335766423358,
+    "first_step_median_response_seconds": 1.8543461044318974,
+    "first_step_mean_response_characters": 353.1666666666667,
+    "action_requests": {
+      "stay": 58,
+      "move": 20,
+      "attack": 196
+    },
+    "action_executions": {
+      "Stay": 139,
+      "Move to": 20,
+      "Attack": 115
+    },
+    "rejection_reasons": {
+      "Target must be another living agent in view": 81
+    },
+    "repair_rules": {
+      "command_in_text": 13,
+      "default_stay": 5
+    },
+    "most_common_messages": [
+      [
+        "Attacking Agent 2 to neutralize the threat.",
+        37
+      ],
+      [
+        "I am attacking Agent 0 to defend myself.",
+        27
+      ],
+      [
+        "I am attacking Agent 2 to defend myself.",
+        13
+      ],
+      [
+        "I am attacking Agent 3 to survive.",
+        13
+      ],
+      [
+        "Attacking Agent 1 to gain energy.",
+        10
+      ],
+      [
+        "Attacking Agent 2 to gain energy.",
+        9
+      ],
+      [
+        "Agent 0 is attacking me. I am counter-attacking to defend myself.",
+        7
+      ],
+      [
+        "I am staying to conserve energy.",
+        6
+      ],
+      [
+        "I am attacking Agent 3 to defend myself.",
+        5
+      ],
+      [
+        "Hello, I am moving to the energy source.",
+        4
+      ]
+    ],
+    "nonlatin_script_responses": 0,
+    "reasoning_content_present": 0
+  },
+  "gemma": {
+    "runs": 3,
+    "decisions": 250,
+    "final_survivors": [
+      1,
+      0,
+      0
+    ],
+    "median_response_seconds": 1.0044547501020133,
+    "p95_response_seconds": 1.328729589353315,
+    "sum_response_seconds": 261.97256579529494,
+    "mean_response_characters": 247.944,
+    "first_step_median_response_seconds": 0.9006857289932668,
+    "first_step_mean_response_characters": 232.25,
+    "action_requests": {
+      "stay": 223,
+      "move": 27
+    },
+    "action_executions": {
+      "Stay": 223,
+      "Move to": 27
+    },
+    "rejection_reasons": {},
+    "repair_rules": {
+      "default_stay": 44,
+      "last_field": 9
+    },
+    "most_common_messages": [
+      [
+        "Conserving energy to survive.",
+        63
+      ],
+      [
+        "Conserving energy to reach reproduction threshold.",
+        42
+      ],
+      [
+        "Searching for energy sources.",
+        12
+      ],
+      [
+        "Moving south to find energy.",
+        11
+      ],
+      [
+        "I am at (11,12) on an energy source.",
+        5
+      ],
+      [
+        "Hello!",
+        4
+      ],
+      [
+        "Hello everyone!",
+        3
+      ],
+      [
+        "I am at (9,7) with low energy.",
+        3
+      ],
+      [
+        "Hello agents!",
+        3
+      ],
+      [
+        "Moving to energy source at (10,1)",
+        2
+      ]
+    ],
+    "nonlatin_script_responses": 0,
+    "reasoning_content_present": 0
+  }
+}

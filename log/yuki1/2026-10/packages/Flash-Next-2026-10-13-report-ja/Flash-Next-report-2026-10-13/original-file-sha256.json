@@ -1,0 +1,326 @@
+[
+  {
+    "file": "README.md",
+    "original_sha256": "e20dd301fcdb2f5bac03cb7a2af8322377a1a2f553a3d5eef4fe7e028202781f",
+    "shared_sha256": "e20dd301fcdb2f5bac03cb7a2af8322377a1a2f553a3d5eef4fe7e028202781f",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "REPORT.ja.md",
+    "original_sha256": "19b7def34612b28c327930bd1d72808c8af86c590144c093c44c9f172a037449",
+    "shared_sha256": "19b7def34612b28c327930bd1d72808c8af86c590144c093c44c9f172a037449",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "analysis/analyze_capture.py",
+    "original_sha256": "185acf0d0c04b92477ecb37ab49d8969d757358c838c6491bbf5049d79f353db",
+    "shared_sha256": "185acf0d0c04b92477ecb37ab49d8969d757358c838c6491bbf5049d79f353db",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "analysis/behavior-evidence.json",
+    "original_sha256": "6b65d09a07d5dfdbceab90b1844065bddf746dee3d9f565d8583af6ffe8df821",
+    "shared_sha256": "6b65d09a07d5dfdbceab90b1844065bddf746dee3d9f565d8583af6ffe8df821",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "analysis/energy-reconciliation.csv",
+    "original_sha256": "2f79e7f6314f2910996d564706e5038c43a8fd6c590ae33a52c067d2b29d666d",
+    "shared_sha256": "2f79e7f6314f2910996d564706e5038c43a8fd6c590ae33a52c067d2b29d666d",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "analysis/events.csv",
+    "original_sha256": "151939c3ed6181ff8eaaeeddfe0ad26181588244ae514cac049d88227bf0bb41",
+    "shared_sha256": "151939c3ed6181ff8eaaeeddfe0ad26181588244ae514cac049d88227bf0bb41",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "analysis/render_figures.py",
+    "original_sha256": "5b0c26713823efa1efe08a40121a5530f78605694e23dd8c8cd917e72409e585",
+    "shared_sha256": "5b0c26713823efa1efe08a40121a5530f78605694e23dd8c8cd917e72409e585",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "analysis/resources.csv",
+    "original_sha256": "11d01b8f221df4702cbfa17babf541f7fa05d6d2bf3ce4300bf4ca92c41a6643",
+    "shared_sha256": "11d01b8f221df4702cbfa17babf541f7fa05d6d2bf3ce4300bf4ca92c41a6643",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "analysis/runtime-requests.csv",
+    "original_sha256": "8fa6ac83a48f9885d9cba14c89eb6b55808df820c93f744dfa2cae5655fd538e",
+    "shared_sha256": "8fa6ac83a48f9885d9cba14c89eb6b55808df820c93f744dfa2cae5655fd538e",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "analysis/runtime-requests.json",
+    "original_sha256": "c5c2f9f2c9eefe1a85e3d6ff538dfd6e829f7da9a4173dc068ee780c5317b1d7",
+    "shared_sha256": "c5c2f9f2c9eefe1a85e3d6ff538dfd6e829f7da9a4173dc068ee780c5317b1d7",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "analysis/runtime-warnings.json",
+    "original_sha256": "fb5df1cd16a09d4a80c8277373e26e67e13068ad230ef47fbd776bd6e37de23e",
+    "shared_sha256": "fb5df1cd16a09d4a80c8277373e26e67e13068ad230ef47fbd776bd6e37de23e",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "analysis/summary.json",
+    "original_sha256": "ef64ff808f971303b80f9ef431fbdc33d6d1c8be6da81da34aeb948939341e23",
+    "shared_sha256": "b05b5f6b369c2e130d6c4260398aaa328dace85df24c4f6314192c8715daad91",
+    "changed_in_shared_copy": true
+  },
+  {
+    "file": "analysis/validation.json",
+    "original_sha256": "c471ec5d35062be47b018a19e0e608d7be4a992e8ab72147597759898a24ab29",
+    "shared_sha256": "c471ec5d35062be47b018a19e0e608d7be4a992e8ab72147597759898a24ab29",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "baseline-seed42/manifest.json",
+    "original_sha256": "63bc90ee31ebc5be308663b39416f90595c3278341890820e9b5355249ce312e",
+    "shared_sha256": "918dbb1f7251cad2404b115faf898995e37e8c47a320b34329be2a63026e8964",
+    "changed_in_shared_copy": true
+  },
+  {
+    "file": "baseline-seed42/run.json",
+    "original_sha256": "f3f9709fd623a52c6b0b2c1b365b631b17262ebae15625cc5b51ae37570e08f0",
+    "shared_sha256": "37d3a8d29585b191fee08c7c515894f4edf1a8f5ac5e807dd368e680eb248ab7",
+    "changed_in_shared_copy": true
+  },
+  {
+    "file": "build-manifest.json",
+    "original_sha256": "47b4b7fe39d92881233335a505fd3201a6348cfb1d771447274f0513b1e615d7",
+    "shared_sha256": "f0f7fd44f059bf46f3e077701b1d2c16caf528fbd4c12aa7ba00a3b2176a6991",
+    "changed_in_shared_copy": true
+  },
+  {
+    "file": "capture-finished.json",
+    "original_sha256": "a1e702e8c31d96b586bc77081d8ed9068e81e06d31b0c6def064ae262aee2c11",
+    "shared_sha256": "4d8395182dd1f040bb66a3d064b936b4f5a8a4d431adc78f95681fa7015c9148",
+    "changed_in_shared_copy": true
+  },
+  {
+    "file": "capture-manifest.json",
+    "original_sha256": "3fd82ff991666003e59ac0cc0398e13bc185d362152d7aaa014871f94a049827",
+    "shared_sha256": "313f08e98385fd212cf8fd7420254bc9fb03c6e09491fdfffc671f7145732d23",
+    "changed_in_shared_copy": true
+  },
+  {
+    "file": "context/2026-10-12-absolute-move-repair.md",
+    "original_sha256": "b1cd895beb4220714553ce8cfce3109d0de2f57ee710dcf7da1a99b68a8c1574",
+    "shared_sha256": "b1cd895beb4220714553ce8cfce3109d0de2f57ee710dcf7da1a99b68a8c1574",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "context/2026-10-12-action-energy-balance.md",
+    "original_sha256": "648e9bc52e5310fb56738a5051501348d899e87885a9548b4c679c027ddbe9bb",
+    "shared_sha256": "648e9bc52e5310fb56738a5051501348d899e87885a9548b4c679c027ddbe9bb",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "context/2026-10-12-fog-qwen125b-12a-vs-gemma26b.md",
+    "original_sha256": "d9a2f53f6755e43ac2b7611f0be85eaf8657946902eeeb6c554d54a35663027b",
+    "shared_sha256": "d9a2f53f6755e43ac2b7611f0be85eaf8657946902eeeb6c554d54a35663027b",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "desktop.log",
+    "original_sha256": "054bb565de05c9da1085e9bf5c49be2811f5e12b84e7c4472e8f1c101f5b8aae",
+    "shared_sha256": "d827b3ee5cd5e5c9a07c43b192c266f4c43ab51c7284ee6357af57ec6e858700",
+    "changed_in_shared_copy": true
+  },
+  {
+    "file": "figures/behavior.png",
+    "original_sha256": "9294d46b66d0bd54e003ce4e7e335e730a206eb7781a7e16d4840563372c225f",
+    "shared_sha256": "9294d46b66d0bd54e003ce4e7e335e730a206eb7781a7e16d4840563372c225f",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "figures/runtime.png",
+    "original_sha256": "41fa22f2d4ecc78e45150986c38ee02a00ad48f7977aab42edf410f031f6306b",
+    "shared_sha256": "41fa22f2d4ecc78e45150986c38ee02a00ad48f7977aab42edf410f031f6306b",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "final-verification.json",
+    "original_sha256": "519a6800c6e70f617023ac1e744a6625d7123875d455d2f8cd3908fbf8639eac",
+    "shared_sha256": "af3d1bb3ed6052801be084b6a20832ffc25b0bdc6118d3cf36f71bde34812786",
+    "changed_in_shared_copy": true
+  },
+  {
+    "file": "frozen-app-source/__boot__.py",
+    "original_sha256": "72437a919b7afaca344e395b380a758c44c3ce9192376f2823f86324403b9324",
+    "shared_sha256": "72437a919b7afaca344e395b380a758c44c3ce9192376f2823f86324403b9324",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "frozen-app-source/agent_view.py",
+    "original_sha256": "834e91b33ca783470909f3f347f14c9b9930b121221921e1129fc486111ab0bc",
+    "shared_sha256": "834e91b33ca783470909f3f347f14c9b9930b121221921e1129fc486111ab0bc",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "frozen-app-source/app_presets.py",
+    "original_sha256": "214f4c1bf81889b3dbc5f993d579babde4d0301ba4e50f1895b7dfcabe873557",
+    "shared_sha256": "214f4c1bf81889b3dbc5f993d579babde4d0301ba4e50f1895b7dfcabe873557",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "frozen-app-source/app_ui.py",
+    "original_sha256": "a75972bc895bf052d26474bfad3ef2086f96bf51c870928d2288b761d72a33a5",
+    "shared_sha256": "a75972bc895bf052d26474bfad3ef2086f96bf51c870928d2288b761d72a33a5",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "frozen-app-source/desktop.py",
+    "original_sha256": "893bd4f11fb8dc9dd9743b78c452947bfdb977f7bfc11532f7793514a075604e",
+    "shared_sha256": "893bd4f11fb8dc9dd9743b78c452947bfdb977f7bfc11532f7793514a075604e",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "frozen-app-source/experiment_task.py",
+    "original_sha256": "1da9cc44aeafecd3336141928b8f2ab0404e9ed4cd343a32a1327786298971cf",
+    "shared_sha256": "1da9cc44aeafecd3336141928b8f2ab0404e9ed4cd343a32a1327786298971cf",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "frozen-app-source/folder_picker.py",
+    "original_sha256": "c4dc754b4c6d762eda49114b26acc1d9721ed690673be6869d244ea6bece052b",
+    "shared_sha256": "c4dc754b4c6d762eda49114b26acc1d9721ed690673be6869d244ea6bece052b",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "frozen-app-source/grid_view.py",
+    "original_sha256": "571a2d7e93d63b2efc68f7622f6c3d245bd1fb7867d4605b789559911d351053",
+    "shared_sha256": "571a2d7e93d63b2efc68f7622f6c3d245bd1fb7867d4605b789559911d351053",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "frozen-app-source/llm_api.py",
+    "original_sha256": "f8132f6c3e710bced3439a0325d3e4cb65bbe69cdf819b8fda5e7dd51cea7ab1",
+    "shared_sha256": "f8132f6c3e710bced3439a0325d3e4cb65bbe69cdf819b8fda5e7dd51cea7ab1",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "frozen-app-source/main.py",
+    "original_sha256": "9b174dc55d406a8929edfbf1d4c830fa1b6fa6a076c9b2516d49ac9db65d6524",
+    "shared_sha256": "9b174dc55d406a8929edfbf1d4c830fa1b6fa6a076c9b2516d49ac9db65d6524",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "frozen-app-source/model_identity.py",
+    "original_sha256": "a07ca2dc7833a19ef98d5f0de807a9e93d3429315e2e0bf599be1dd5dd5a4320",
+    "shared_sha256": "a07ca2dc7833a19ef98d5f0de807a9e93d3429315e2e0bf599be1dd5dd5a4320",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "frozen-app-source/paper_prompts.py",
+    "original_sha256": "6f929eab2c91e31c97cad05559972dc20acdf457f3a88147934096cbc0f063e9",
+    "shared_sha256": "6f929eab2c91e31c97cad05559972dc20acdf457f3a88147934096cbc0f063e9",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "frozen-app-source/response_fields.py",
+    "original_sha256": "a54fbb073acc074c438b423f9d82a99e4d6e277a2d784cf2e92e6d4135c132db",
+    "shared_sha256": "a54fbb073acc074c438b423f9d82a99e4d6e277a2d784cf2e92e6d4135c132db",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "frozen-app-source/run_data.py",
+    "original_sha256": "e86fe4c2c2d2e1ac4df7611dafc2f07122234d733fc36637c574f1aca5608be8",
+    "shared_sha256": "e86fe4c2c2d2e1ac4df7611dafc2f07122234d733fc36637c574f1aca5608be8",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "frozen-app-source/translations.py",
+    "original_sha256": "890a6ed695d5e4a0b287c3c01c7e67e0aa08c86ea3a7b11371fce34b063a830d",
+    "shared_sha256": "890a6ed695d5e4a0b287c3c01c7e67e0aa08c86ea3a7b11371fce34b063a830d",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "log-chunks.jsonl",
+    "original_sha256": "87c60c65f9afa0b5b0edb5637c31a86667c360cf08de3b217591da45928fe5fc",
+    "shared_sha256": "87c60c65f9afa0b5b0edb5637c31a86667c360cf08de3b217591da45928fe5fc",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "models-manifest.json",
+    "original_sha256": "49744a15a288861a5f6eb304f04f15223dd5af835a42d6f8afb0491d9611c877",
+    "shared_sha256": "9cd3e85be2ecda51364de43052359d7d85c5ba0563ee8d9276025feb1f7f31e4",
+    "changed_in_shared_copy": true
+  },
+  {
+    "file": "previous-weight-verification.json",
+    "original_sha256": "edcc2a1415329bc74b484f96c134e22e0bca5be28402f4d4594797bf500f713b",
+    "shared_sha256": "b64332d006a9c7fc8fe8c430e08d26f4a4591695997bca57359fb58b5da6e5a1",
+    "changed_in_shared_copy": true
+  },
+  {
+    "file": "progress.jsonl",
+    "original_sha256": "07faa6e9c88e0f618ee036402ad1bc66d80c3c9da3df6b52299b7b25ea70d4bb",
+    "shared_sha256": "07faa6e9c88e0f618ee036402ad1bc66d80c3c9da3df6b52299b7b25ea70d4bb",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "resource-samples.jsonl",
+    "original_sha256": "c47d0c38707999c7ad9a5a87f5c7fe8c4aa410213a178a1e73b77dbdb4e70345",
+    "shared_sha256": "c47d0c38707999c7ad9a5a87f5c7fe8c4aa410213a178a1e73b77dbdb4e70345",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "run/agents.csv",
+    "original_sha256": "be4a4efb46c43931f1bedcfeb2da665456bf1a50057ecf8cd62a632f4fa28c1e",
+    "shared_sha256": "be4a4efb46c43931f1bedcfeb2da665456bf1a50057ecf8cd62a632f4fa28c1e",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "run/events.csv",
+    "original_sha256": "9c6e67626396983311110f2256e73c4f53a31122e25dafb0f06848dd9bd03083",
+    "shared_sha256": "9c6e67626396983311110f2256e73c4f53a31122e25dafb0f06848dd9bd03083",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "run/manifest.json",
+    "original_sha256": "c1097a426abcc3a228bc52187804cd10768af4fbaff96f85a5d830972d92ec57",
+    "shared_sha256": "6482b49009208ce9fd7c9ee08b1400c158210a7af039ff5381b8c29c18918255",
+    "changed_in_shared_copy": true
+  },
+  {
+    "file": "run/run.json",
+    "original_sha256": "618c2cf76b26a54726d9d45cbf01eb26a3e6822cf023a816ab7e8e8987ff3008",
+    "shared_sha256": "a4eb89e0346413c582f407ad26c8e886e773efcf8e7a52d9a070fab7b764c290",
+    "changed_in_shared_copy": true
+  },
+  {
+    "file": "run/steps.csv",
+    "original_sha256": "80070bf2e796407a0d1a689ddf96dad370b507a928be22f8e8cf67e5e780d692",
+    "shared_sha256": "80070bf2e796407a0d1a689ddf96dad370b507a928be22f8e8cf67e5e780d692",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "run/steps.jsonl",
+    "original_sha256": "bccfcf03b688c140c284e9a71995c4da7cc4a07b9f32efbeadbb971a3c862693",
+    "shared_sha256": "bccfcf03b688c140c284e9a71995c4da7cc4a07b9f32efbeadbb971a3c862693",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "run/translations.ja.json",
+    "original_sha256": "ed1cf6e8308c545039647202402a13e105545eb447272e4d8e8e9371a7ee903d",
+    "shared_sha256": "0f6f5bbdc9eeb740592d862fe5fd40ec45e4ce8a06fdb646fd21484faef4baf2",
+    "changed_in_shared_copy": true
+  },
+  {
+    "file": "runtime.log",
+    "original_sha256": "a5f323ffbe15661f9c136deee378c9825a0eae1cd16239b0eb478ecde581f19e",
+    "shared_sha256": "a5f323ffbe15661f9c136deee378c9825a0eae1cd16239b0eb478ecde581f19e",
+    "changed_in_shared_copy": false
+  },
+  {
+    "file": "selected-run.json",
+    "original_sha256": "c8b0e5b35898f680eb053e37416251eea8bae18ed773942f789dc83cbeadebce",
+    "shared_sha256": "9b6caee825f0a95382b12b6e25050ed75114fd076317bd2166c95160c3ab3cdd",
+    "changed_in_shared_copy": true
+  }
+]

@@ -1,0 +1,87 @@
+{
+  "schema_version": 2,
+  "engine_version": "2.0",
+  "run_id": "20261009T070325983183Z_0_6911cf84",
+  "status": "completed",
+  "started_at": "2026-10-09T07:03:25.983183+00:00",
+  "execution_date": "2026-10-09",
+  "timezone": "Asia/Tokyo",
+  "model": {
+    "id": "isetnefret/Huihui-gemma-4-26B-A4B-it-qat-q4_0-unquantized-abliterated-mlx-4Bit",
+    "revision": "0305104730dfd6729d44a5caa06a06c0ba8520e2",
+    "snapshot": "/Users/yukin_co/.cache/huggingface/hub/models--isetnefret--Huihui-gemma-4-26B-A4B-it-qat-q4_0-unquantized-abliterated-mlx-4Bit/snapshots/0305104730dfd6729d44a5caa06a06c0ba8520e2",
+    "weights": [
+      {
+        "file": "model-00001-of-00003.safetensors",
+        "bytes": 5320218461,
+        "sha256": "27941e2dd486a1030930c8645677c3f452529e69b40189a606d35b1617eeee68"
+      },
+      {
+        "file": "model-00002-of-00003.safetensors",
+        "bytes": 5363328390,
+        "sha256": "7b8f6eb294756e634e92c15476333fd2cd903be264d8779fa5f7c265d65101d1"
+      },
+      {
+        "file": "model-00003-of-00003.safetensors",
+        "bytes": 3516685659,
+        "sha256": "9265a02b69b1fa5c667e4ede2c69fee1494b68599730f66118c30dd34b374a8e"
+      }
+    ],
+    "quantization": {
+      "bits": 4,
+      "group_size": 64,
+      "mode": "affine"
+    },
+    "status": "recorded",
+    "source": "local_server_launch_and_cache",
+    "server_pid": 11365
+  },
+  "completed_steps": 5,
+  "config": {
+    "num_agents": 5,
+    "grid_size": 30,
+    "num_steps": 5,
+    "seed": 30,
+    "use_mbti": false,
+    "initial_energy": 150,
+    "spawn_energy_count": 20,
+    "reproduce_cost": 70,
+    "child_initial_energy": 150,
+    "cluster_radius": 5,
+    "num_clusters": 3,
+    "energy_spawn_rate": 0.001,
+    "custom_world_prompt": "",
+    "model": "default_model",
+    "base_url": "http://127.0.0.1:8080/v1",
+    "mock_mode": false,
+    "temperature": 0.0,
+    "max_tokens": 384,
+    "timeout": 120.0,
+    "population_cap": 60,
+    "output_dir": "outputs",
+    "save_images": false,
+    "action_order": "observe_then_apply_by_agent_id",
+    "request_concurrency": 1
+  },
+  "provenance": {
+    "python": "3.11.14",
+    "source_sha256": {
+      "main.py": "750995a8729be6a363b39f412dd2e23ab602bd4a6f9872e54aa7c75f46161008",
+      "run_data.py": "2a68fdb3c5687b2a4cdf1479dee095c3601ab47280ac61ff4f2b390318746e42",
+      "model_identity.py": "a07ca2dc7833a19ef98d5f0de807a9e93d3429315e2e0bf599be1dd5dd5a4320",
+      "grid_view.py": "4da1e94a633069a7c75d6c4e3cd7bd317b8dbacd4c82995c992be9df1e04a95f",
+      "requirements.txt": "0921b4204b726e2e2fdfd66888625d8e119c1bf6fa61a8c04fef4b82dd6dd319"
+    },
+    "packages": {
+      "aiohttp": "3.14.4",
+      "numpy": "2.4.6",
+      "matplotlib": "3.11.2",
+      "pandas": "3.0.6",
+      "streamlit": "1.65.0"
+    },
+    "git_commit": "613cda3e306ed16aaa9b5a5aaaf1b07d6a6e8cae",
+    "git_dirty": true
+  },
+  "termination_reason": "step_limit",
+  "finished_at": "2026-10-09T07:03:51.981811+00:00"
+}

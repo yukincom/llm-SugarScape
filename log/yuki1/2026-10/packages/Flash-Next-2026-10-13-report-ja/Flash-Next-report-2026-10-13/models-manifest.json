@@ -1,0 +1,32 @@
+{
+  "source_repository": "https://github.com/hokar3361/moe-on-a-desk",
+  "source_revision": "24d5d9c19b070c0f1c15a8a83df536a91d151e20",
+  "llama_cpp_base": "781dbc5ac98921dbdb5e5b2ec5b7a50960e937d4",
+  "patch_count": 51,
+  "files": [
+    {
+      "repo": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+      "revision": "ed59f92082b1e93c0e96d60a8b11aab089b52f09",
+      "file": "IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00001-of-00002.gguf",
+      "directory": "target",
+      "bytes": 47039860096,
+      "sha256": "219ea929900dfa9ef091f3aa473fdba6874b65fcb36526d7d851ac9e95856d15"
+    },
+    {
+      "repo": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+      "revision": "ed59f92082b1e93c0e96d60a8b11aab089b52f09",
+      "file": "IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00002-of-00002.gguf",
+      "directory": "target",
+      "bytes": 28800138432,
+      "sha256": "316b46f3a2dbd68c900f43136ab9449f9dcc3725dfd8c794847c204bc161e113"
+    },
+    {
+      "repo": "ggml-org/Qwen3.8-Flash-Next-GGUF",
+      "revision": "052beeaca7bec4a303e59cc7bc630c4f3a1b845d",
+      "file": "mtp-Qwen3.8-Flash-Next-Q8_0.gguf",
+      "directory": "mtp",
+      "bytes": 4137429280,
+      "sha256": "6be8a94e2d94107b7f38fdc957c3460ffeb6ff6302edef92c50738682f9dc0e0"
+    }
+  ]
+}

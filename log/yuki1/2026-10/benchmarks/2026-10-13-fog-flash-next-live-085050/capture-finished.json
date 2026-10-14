@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-12T23:58:07.765635+00:00",
+  "reason": "experiment_and_translation_finished",
+  "run": "/Users/yukin_co/Documents/llm-SugarScape/dist/desktop/outputs/2026-10-13_08-51-17_default_model",
+  "log_offsets": {
+    "runtime": 577202,
+    "desktop": 34302
+  },
+  "initial_log_offsets": {
+    "runtime": 428492,
+    "desktop": 66
+  },
+  "elapsed_seconds": 437.44381120894104
+}

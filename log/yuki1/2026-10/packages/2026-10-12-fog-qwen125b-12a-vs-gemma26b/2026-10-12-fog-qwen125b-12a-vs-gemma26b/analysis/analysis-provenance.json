@@ -1,0 +1,14 @@
+{
+  "script_sha256": "5881163ac19de5f4cb91765a84932a31c64917c8d3680ff3a54c71c122489362",
+  "language_method": "Script-range screening only; candidates need human reading to distinguish Chinese, Japanese, and other languages. ASCII English is not automatically identified.",
+  "percentiles": "Linear interpolation over pooled per-request wall times; model loading excluded",
+  "validated": [
+    "six completed runs",
+    "initial worlds",
+    "first step prompts",
+    "source hashes",
+    "all request/response to event matches",
+    "generation controls",
+    "server restored"
+  ]
+}

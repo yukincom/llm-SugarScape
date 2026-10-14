@@ -1,0 +1,38 @@
+{
+  "only_additional_instructions_changed": true,
+  "original_system_suffix_unchanged": true,
+  "initial_four_user_prompts_equal": true,
+  "protocol_equal": true,
+  "source_hashes_equal": true,
+  "initial_agents_equal": true,
+  "initial_environment_equal": true,
+  "simulation_events_matched_to_runtime": 71,
+  "completion_tokens_all_equal": true,
+  "app_source_matches": {
+    "main.py": true,
+    "run_data.py": true,
+    "model_identity.py": true,
+    "grid_view.py": true,
+    "app_ui.py": true,
+    "app_presets.py": true,
+    "paper_prompts.py": true,
+    "agent_view.py": true,
+    "llm_api.py": true,
+    "translations.py": true,
+    "response_fields.py": true,
+    "experiment_task.py": true
+  },
+  "all_turns_energy_reconciled": true,
+  "all_common_costs_one": true,
+  "unique_runtime_mapping": true,
+  "unmatched_runtime_task_ids": [
+    198,
+    391
+  ],
+  "full_context_token_differences": {
+    "-1": 61,
+    "0": 10
+  },
+  "run_sha256": "452c92a4e5a46d6a489d76903e7e66656976d74dcdfc818b554d8212b5399097",
+  "old_run_sha256": "618c2cf76b26a54726d9d45cbf01eb26a3e6822cf023a816ab7e8e8987ff3008"
+}

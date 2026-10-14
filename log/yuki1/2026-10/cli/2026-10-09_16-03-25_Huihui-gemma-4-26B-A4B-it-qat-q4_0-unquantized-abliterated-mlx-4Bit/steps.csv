@@ -1,0 +1,7 @@
+run_id,step,alive,total_born,total_died,total_energy,avg_energy,avg_age,energy_sources,total_actions,valid_decisions,llm_errors,parse_errors,rejected_actions,attacks,shares,reproductions,coop_rate,attack_rate,repro_rate,alive_start,births_this_step,deaths_this_step,decisions_this_step,shares_this_step,attacks_this_step,reproductions_this_step,llm_errors_this_step,parse_errors_this_step,rejected_actions_this_step
+20261009T070325983183Z_0_6911cf84,0,5,0,0,750,150.0,0.0,20,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0
+20261009T070325983183Z_0_6911cf84,1,5,0,0,742,148.4,1.0,20,5,5,0,0,1,0,0,0,0.0,0.0,0.0,5,0,0,5,0,0,0,0,0,1
+20261009T070325983183Z_0_6911cf84,2,5,0,0,733,146.6,2.0,20,10,10,0,0,2,0,0,0,0.0,0.0,0.0,5,0,0,5,0,0,0,0,0,1
+20261009T070325983183Z_0_6911cf84,3,5,0,0,774,154.8,3.0,19,15,15,0,0,3,0,0,0,0.0,0.0,0.0,5,0,0,5,0,0,0,0,0,1
+20261009T070325983183Z_0_6911cf84,4,5,0,0,864,172.8,4.0,17,20,20,0,0,3,0,0,0,0.0,0.0,0.0,5,0,0,5,0,0,0,0,0,0
+20261009T070325983183Z_0_6911cf84,5,5,0,0,854,170.8,5.0,17,25,25,0,0,3,0,0,0,0.0,0.0,0.0,5,0,0,5,0,0,0,0,0,0

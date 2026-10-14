@@ -1,0 +1,67 @@
+[
+  {
+    "line": "10.09.700.401 W srv          stop: cancel task, id_task = 198",
+    "kind": "other",
+    "phase": "simulation"
+  },
+  {
+    "line": "11.29.867.344 W srv          stop: cancel task, id_task = 391",
+    "kind": "other",
+    "phase": "simulation"
+  },
+  {
+    "line": "15.32.222.428 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 611.441 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "15.43.550.807 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 427.728 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "15.55.381.918 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 477.710 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "15.59.278.772 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 348.589 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "16.30.586.151 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 350.468 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "16.42.154.885 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 349.448 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "16.46.662.277 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 351.200 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "16.49.870.954 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 349.766 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "16.52.613.709 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 350.627 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "16.55.421.372 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 352.086 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  },
+  {
+    "line": "17.07.684.970 W srv         alloc:  - making room for prompt cache entry, removing oldest entry (size = 349.357 MiB)",
+    "kind": "prompt_cache_eviction",
+    "phase": "display_translation"
+  }
+]

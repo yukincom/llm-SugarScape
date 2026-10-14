@@ -1,0 +1,31 @@
+{
+  "event": {
+    "agent_id": 0,
+    "decision_source": "llm",
+    "decision_status": "ok",
+    "error_kind": "",
+    "reason": "",
+    "http_status": 200,
+    "finish_reason": "stop",
+    "prompt_tokens": 442,
+    "completion_tokens": 70,
+    "raw_response": "Action: Stay\nMessage: Hello, I am Agent0.\nThought: I am the only agent in the world. Moving costs energy (2), while staying costs less (1). Since there are no other agents to interact with and no immediate threats, staying is the most energy-efficient action to preserve my current energy of 20.",
+    "requested_action": "Stay",
+    "normalized_action": "stay",
+    "response_repairs": [],
+    "system_prompt": "You can move one cell: Move to (1,0), Move to (-1,0), Move to (0,1), Move to (0,-1) (costs 2 energy), or Stay (costs 1 energy). Diagonal or longer moves are invalid.\nReproduce costs 70 energy, requires at least that energy and fewer than 4 living agents.\nMoving onto an Energy Source (E) gives 50 energy and consumes that source.\nAt zero or negative energy you die.\nShare: {id}-{amount} transfers a positive integer amount you can afford to another agent in your local view. Attack: {id} takes half (rounded down) of another visible agent's energy.\nShare and Attack have no additional energy cost. You cannot target yourself. Choose only one Action per turn.\nYour Message will be delivered to nearby living agents for the next step, at no energy cost. Local view extends 3 cells in each axis; messages reach 7 cells in each axis. Share and Attack use positions when your Action executes; messages use positions after all Actions.\nM=(x,y) is your absolute position; E=(dx,dy) and agent IDs use relative positions. x-1 is west, x+1 east, y-1 north, y+1 south; grid edges wrap.",
+    "user_prompt": "Global Info: Total Agents in the World: 1\nLocal View:\nM=(4,3)\nLATEST Status: Agent0, Energy: 20, Position: (4, 3), Cycles: 0\nMemory:\nNo previous memory\nMessages:\nNo messages\nOutput exactly these three fields (choose one action; give brief reasoning):\nAction: [Move to (dx,dy) | Stay | Share: {id}-{amount} | Attack: {id} | Reproduce]\nMessage: [Your message to nearby agents]\nThought: [Brief reasoning for your action]\nKeep the entire response within 400 tokens, including all field labels. Be concise.",
+    "latency_ms": 2945.346,
+    "summary": "",
+    "thought": "I am the only agent in the world. Moving costs energy (2), while staying costs less (1). Since there are no other agents to interact with and no immediate threats, staying is the most energy-efficient action to preserve my current energy of 20.",
+    "memory": "",
+    "message": "Hello, I am Agent0.",
+    "requested_share": "",
+    "requested_attack": "",
+    "share": null,
+    "attack": null,
+    "kind": "stay"
+  },
+  "seconds": 2.965922416187823,
+  "excluded_from_results": true
+}

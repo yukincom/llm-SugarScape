@@ -1,0 +1,17 @@
+[
+  {
+    "seed": 42,
+    "initial_snapshot_matches": true,
+    "first_step_prompts_match": true
+  },
+  {
+    "seed": 43,
+    "initial_snapshot_matches": true,
+    "first_step_prompts_match": true
+  },
+  {
+    "seed": 44,
+    "initial_snapshot_matches": true,
+    "first_step_prompts_match": true
+  }
+]

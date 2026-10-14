@@ -1,0 +1,178 @@
+{
+  "started_at": "2026-10-12T23:50:50.245962+00:00",
+  "observer_pid": 30548,
+  "server": {
+    "running": true,
+    "pid": 43459,
+    "trusted": true,
+    "command": "/Users/USER/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local/runtime/llama.cpp/build-12a/bin/llama-server -m /Users/USER/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local/models/target/IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00001-of-00002.gguf -md /Users/USER/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local/models/mtp/mtp-Qwen3.8-Flash-Next-Q8_0.gguf --spec-type draft-mtp --spec-draft-n-max 7 --reasoning off -ngl 99 -c 16384 -np 1 --host 127.0.0.1 --port 8080 --alias default_model",
+    "active_model": "Qwen3.8-Flash-Next-125B-IQ3_XXS",
+    "format": "GGUF",
+    "names_version": 1791820399240716341,
+    "active_name": "Qwen3.8-Flash-Next-125B"
+  },
+  "process_identity": "Tue Oct 13 02:39:32 2026     /Users/USER/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local/runtime/llama.cpp/build-12a/bin/llama-server -m /Users/USER/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local/models/target/IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00001-of-00002.gguf -md /Users/USER/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local/models/mtp/mtp-Qwen3.8-Flash-Next-Q8_0.gguf --spec-type draft-mtp --spec-draft-n-max 7 --reasoning off -ngl 99 -c 16384 -np 1 --host 127.0.0.1 --port 8080 --alias default_model",
+  "runtime_cwd_and_logs": {
+    "returncode": 0,
+    "stdout": "p43459\nfcwd\nn/Users/USER/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local\nf1\nn/Users/USER/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local/logs/llama-server.log\nf2\nn/Users/USER/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local/logs/llama-server.log",
+    "stderr": ""
+  },
+  "models_response": {
+    "models": [
+      {
+        "name": "default_model",
+        "model": "default_model",
+        "modified_at": "",
+        "size": "",
+        "digest": "",
+        "type": "model",
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "capabilities": [
+          "completion"
+        ],
+        "parameters": "",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "",
+          "families": [
+            ""
+          ],
+          "parameter_size": "",
+          "quantization_level": ""
+        }
+      }
+    ],
+    "object": "list",
+    "data": [
+      {
+        "id": "default_model",
+        "aliases": [
+          "default_model"
+        ],
+        "tags": [],
+        "object": "model",
+        "architecture": {
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ]
+        },
+        "created": 1791849050,
+        "owned_by": "llamacpp",
+        "meta": {
+          "vocab_type": 2,
+          "n_vocab": 248320,
+          "n_ctx": 16384,
+          "n_ctx_train": 262144,
+          "n_embd": 2560,
+          "n_params": 176943899520,
+          "size": 75828974080,
+          "ftype": "IQ3_XXS - 3.0625 bpw"
+        }
+      }
+    ]
+  },
+  "binary_sha256": "109983187ba2f14b60da7d28028d85b8d402bb70771bfdb29aa9a45f495a5f87",
+  "weights": [
+    {
+      "file": "IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00001-of-00002.gguf",
+      "bytes": 47039860096,
+      "mtime_ns": 1791735255899952624,
+      "expected_sha256": "219ea929900dfa9ef091f3aa473fdba6874b65fcb36526d7d851ac9e95856d15",
+      "full_hash_recomputed_this_run": false
+    },
+    {
+      "file": "IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00002-of-00002.gguf",
+      "bytes": 28800138432,
+      "mtime_ns": 1791733092964518862,
+      "expected_sha256": "316b46f3a2dbd68c900f43136ab9449f9dcc3725dfd8c794847c204bc161e113",
+      "full_hash_recomputed_this_run": false
+    },
+    {
+      "file": "mtp-Qwen3.8-Flash-Next-Q8_0.gguf",
+      "bytes": 4137429280,
+      "mtime_ns": 1791736044390331328,
+      "expected_sha256": "6be8a94e2d94107b7f38fdc957c3460ffeb6ff6302edef92c50738682f9dc0e0",
+      "full_hash_recomputed_this_run": false
+    }
+  ],
+  "app_version": "33",
+  "app_source_sha256": {
+    "response_fields.py": "a54fbb073acc074c438b423f9d82a99e4d6e277a2d784cf2e92e6d4135c132db",
+    "paper_prompts.py": "6f929eab2c91e31c97cad05559972dc20acdf457f3a88147934096cbc0f063e9",
+    "grid_view.py": "571a2d7e93d63b2efc68f7622f6c3d245bd1fb7867d4605b789559911d351053",
+    "run_data.py": "e86fe4c2c2d2e1ac4df7611dafc2f07122234d733fc36637c574f1aca5608be8",
+    "experiment_task.py": "1da9cc44aeafecd3336141928b8f2ab0404e9ed4cd343a32a1327786298971cf",
+    "app_presets.py": "214f4c1bf81889b3dbc5f993d579babde4d0301ba4e50f1895b7dfcabe873557",
+    "model_identity.py": "a07ca2dc7833a19ef98d5f0de807a9e93d3429315e2e0bf599be1dd5dd5a4320",
+    "llm_api.py": "f8132f6c3e710bced3439a0325d3e4cb65bbe69cdf819b8fda5e7dd51cea7ab1",
+    "folder_picker.py": "c4dc754b4c6d762eda49114b26acc1d9721ed690673be6869d244ea6bece052b",
+    "translations.py": "890a6ed695d5e4a0b287c3c01c7e67e0aa08c86ea3a7b11371fce34b063a830d",
+    "agent_view.py": "834e91b33ca783470909f3f347f14c9b9930b121221921e1129fc486111ab0bc",
+    "app_ui.py": "a75972bc895bf052d26474bfad3ef2086f96bf51c870928d2288b761d72a33a5",
+    "__boot__.py": "72437a919b7afaca344e395b380a758c44c3ce9192376f2823f86324403b9324",
+    "main.py": "9b174dc55d406a8929edfbf1d4c830fa1b6fa6a076c9b2516d49ac9db65d6524",
+    "desktop.py": "893bd4f11fb8dc9dd9743b78c452947bfdb977f7bfc11532f7793514a075604e"
+  },
+  "repository_head": "169b2b2f5617d24e6585db03db3011d0c3fcf97e",
+  "hardware": {
+    "returncode": 0,
+    "stdout": "hw.model: Mac16,9\nhw.memsize: 68719476736\nmachdep.cpu.brand_string: Apple M4 Max",
+    "stderr": ""
+  },
+  "os": {
+    "returncode": 0,
+    "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t26.6.1\nBuildVersion:\t\t25G76",
+    "stderr": ""
+  },
+  "run_root": "/Users/USER/Documents/llm-SugarScape/dist/desktop/outputs",
+  "baseline_runs": [
+    "2026-10-09_18-15-32_Huihui-gemma-4-26B-A4B-it-qat-q4_0-unquantized-abliterated-mlx-4Bit",
+    "2026-10-09_23-49-31_Huihui-gemma-4-26B-A4B-it-qat-q4_0-unquantized-abliterated-mlx-4Bit",
+    "2026-10-10_00-50-15_Huihui-gemma-4-26B-A4B-it-qat-q4_0-unquantized-abliterated-mlx-4Bit",
+    "2026-10-10_00-56-22_Qwen3.5-2B-6bit",
+    "2026-10-10_07-47-40_Qwen3.5-2B-6bit",
+    "2026-10-10_23-56-29_ee0ef6023621cff504d758262d4e04895a5af4a2",
+    "2026-10-11_00-02-29_ee0ef6023621cff504d758262d4e04895a5af4a2",
+    "2026-10-11_20-55-09_gemma-4-26B-A4B-it-QAT-MLX-4bit",
+    "2026-10-11_20-56-59_gemma-4-26B-A4B-it-QAT-MLX-4bit",
+    "2026-10-11_21-51-03_gemma-4-26B-A4B-it-QAT-MLX-4bit",
+    "2026-10-12_02-37-45_gemma-4-26B-A4B-it-QAT-MLX-4bit",
+    "2026-10-12_02-46-22_Josiefied-Qwen3-14B-abliterated-v3-4bit",
+    "2026-10-12_02-51-31_Qwen3.8-27B-8bit",
+    "2026-10-12_03-43-06_gpt-6.1-sol",
+    "2026-10-12_03-46-33_gpt-6.1-sol",
+    "2026-10-12_12-03-18_gemini-3.8-flash",
+    "2026-10-12_12-04-03_gemini-3.8-flash",
+    "2026-10-12_23-28-29_gemma-4-26B-A4B-it-QAT-MLX-4bit",
+    "2026-10-13_00-01-51_gemma-4-26B-A4B-it-QAT-MLX-4bit",
+    "2026-10-13_00-18-19_gemma-4-26B-A4B-it-QAT-MLX-4bit",
+    "2026-10-13_00-39-35_gemma-4-26B-A4B-it-QAT-MLX-4bit",
+    "2026-10-13_00-55-42_gemma-4-26B-A4B-it-QAT-MLX-4bit",
+    "2026-10-13_01-13-40_default_model",
+    "2026-10-13_02-01-22_default_model",
+    "2026-10-13_02-01-34_default_model",
+    "2026-10-13_02-03-58_gemma-4-26B-A4B-it-QAT-MLX-4bit"
+  ],
+  "log_sources": {
+    "runtime": {
+      "path": "/Users/USER/Documents/ChatGPT/Hermes改造/moe-on-a-desk-local/logs/llama-server.log",
+      "offset": 428492,
+      "inode": 55726091
+    },
+    "desktop": {
+      "path": "/Users/USER/Library/Application Support/LLM SugarScape/logs/window-20261013-023913-8fe1ec42.log",
+      "offset": 66,
+      "inode": 56571639
+    }
+  },
+  "measurement_policy": "Passive collection only. No requests for generation, no warmup, no cache reset, no server restart. UI starts one experiment. Sample process RSS/CPU and host VM every 5 seconds. Simulation requests and later display translations must be separated. Weights use previous full verification, current sizes/metadata; no fresh 80GB hashing during measurement.",
+  "comparison_limit": "Current attack costs, common turn energy, and absolute-coordinate response repair differ from the earlier fog comparison. This is not an isolated causal A/B test.",
+  "unrelated_worktree_details_omitted": true
+}

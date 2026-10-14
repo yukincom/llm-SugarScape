@@ -1,0 +1,472 @@
+{
+  "run_id": "20261014T134029376633Z_0_37c168a6",
+  "run_directory": "/Users/yukin_co/Documents/llm-SugarScape/dist/desktop/outputs/2026-10-14_22-40-29_default_model",
+  "status": "completed",
+  "started_at": "2026-10-14T13:40:29.376633+00:00",
+  "finished_at": "2026-10-14T13:43:08.456866+00:00",
+  "experiment_seconds": 159.080233,
+  "config": {
+    "num_agents": 4,
+    "grid_size": 15,
+    "num_steps": 30,
+    "seed": 42,
+    "use_mbti": false,
+    "initial_energy": 20,
+    "spawn_energy_count": 2,
+    "reproduce_cost": 70,
+    "child_initial_energy": 20,
+    "cluster_radius": 0,
+    "num_clusters": 2,
+    "energy_spawn_rate": 0.0,
+    "custom_world_prompt": "",
+    "model": "default_model",
+    "base_url": "http://127.0.0.1:8080/v1",
+    "mock_mode": false,
+    "temperature": 0.0,
+    "max_tokens": 5000,
+    "top_p": 1.0,
+    "timeout": 120.0,
+    "send_temperature": true,
+    "send_top_p": true,
+    "reasoning_mode": "default",
+    "reasoning_effort": "medium",
+    "reasoning_format": "openai",
+    "max_tokens_parameter": "max_tokens",
+    "view_range": 3,
+    "message_range": 7,
+    "population_cap": 4,
+    "output_dir": "/Users/yukin_co/Documents/llm-SugarScape/dist/desktop/outputs",
+    "save_images": false,
+    "action_order": "observe_then_apply_by_agent_id",
+    "request_concurrency": 1,
+    "prompt_factors": [
+      "spatial_relations",
+      "self_other_identity"
+    ]
+  },
+  "summary": {
+    "step": 30,
+    "alive": 1,
+    "total_born": 0,
+    "total_died": 3,
+    "attacks": 11,
+    "shares": 0,
+    "reproductions": 0,
+    "total_actions": 72,
+    "valid_decisions": 72,
+    "repaired_decisions": 2,
+    "llm_errors": 0,
+    "parse_errors": 0,
+    "rejected_actions": 1,
+    "total_energy": 20,
+    "avg_energy": 20.0,
+    "avg_age": 30.0,
+    "energy_sources": 0,
+    "coop_rate": 0.0,
+    "attack_rate": 0.1527777777777778,
+    "repro_rate": 0.0,
+    "mbti_distribution": {}
+  },
+  "provenance": {
+    "python": "3.11.14",
+    "source_sha256": {
+      "main.py": "1e7bb5367a4938215b6b0b8df12fdc7271c1b927ae60d1337b764258f6e16552",
+      "run_data.py": "3c91b5829a429a9be9d46b15a3a1d5f773d444abcf4f6b9a6ebdd7ffb14d9038",
+      "model_identity.py": "a07ca2dc7833a19ef98d5f0de807a9e93d3429315e2e0bf599be1dd5dd5a4320",
+      "grid_view.py": "571a2d7e93d63b2efc68f7622f6c3d245bd1fb7867d4605b789559911d351053",
+      "app_ui.py": "d31d3227c138a4cf3abdd53748676cb44ca6dc671f80350b842abd54da97264f",
+      "app_presets.py": "3dbd534fede9854e920cb764d1790157084414ba1ba23067e8ca4d1b0497e958",
+      "paper_prompts.py": "ba5d3a05a7c19fa17d6791f673a6c91b51cf0c9e284d5124adbb03f670b6badd",
+      "observations.py": "5e6e2c783bf8cf0d208204241949c47637d08c8384176f6986d1b380537dd998",
+      "agent_view.py": "834e91b33ca783470909f3f347f14c9b9930b121221921e1129fc486111ab0bc",
+      "llm_api.py": "f8132f6c3e710bced3439a0325d3e4cb65bbe69cdf819b8fda5e7dd51cea7ab1",
+      "translations.py": "890a6ed695d5e4a0b287c3c01c7e67e0aa08c86ea3a7b11371fce34b063a830d",
+      "response_fields.py": "5d60bcc06c285124ef5cd001307787a4a7f7782eb6bd2a7609eb1ca0f1e9ee8b",
+      "experiment_task.py": "1da9cc44aeafecd3336141928b8f2ab0404e9ed4cd343a32a1327786298971cf",
+      "assets/emoji/sources.json": "ab46926a1d183f94b3c063b473ed7b698a195f2b22733d0ea348a1d4a698ef3d",
+      "requirements.txt": "0921b4204b726e2e2fdfd66888625d8e119c1bf6fa61a8c04fef4b82dd6dd319"
+    },
+    "packages": {
+      "aiohttp": "3.14.4",
+      "numpy": "2.4.6",
+      "matplotlib": "3.11.2",
+      "pandas": "3.0.6",
+      "streamlit": "1.65.0"
+    },
+    "git_commit": "35b07313770654604562e3407144c0fe52df9918",
+    "git_dirty": true
+  },
+  "normal_decision_seconds": {
+    "n": 70,
+    "min": 1.133952,
+    "mean": 2.100150457142857,
+    "median": 1.6036125,
+    "p95": 4.579535,
+    "max": 10.878511,
+    "sum": 147.01053200000004
+  },
+  "all_decision_seconds": {
+    "n": 72,
+    "min": 1.133952,
+    "mean": 2.1739590138888887,
+    "median": 1.618246,
+    "p95": 5.511178,
+    "max": 10.878511,
+    "sum": 156.52504900000002
+  },
+  "all_http_attempt_seconds": {
+    "n": 74,
+    "min": 1.1338920000000001,
+    "mean": 2.1149872297297296,
+    "median": 1.6401715000000001,
+    "p95": 4.579466999999999,
+    "max": 10.875742,
+    "sum": 156.50905500000005
+  },
+  "http_attempts": 74,
+  "retry": [
+    {
+      "step": 3,
+      "agent_id": 3,
+      "position_before": [
+        14,
+        10
+      ],
+      "first_raw": "Action: Move to (1,1)\nMessage: Agent3 moving southeast to collect energy source E1.\nThought: I have 16 energy and no visible agents. E1 is 1.4 cells away to the southeast. Moving diagonally (1,1) costs 2 energy, leaving me with 14. This move will likely land me on or adjacent to E1, allowing me to collect 50 energy next turn, which is crucial for survival and potential reproduction.",
+      "feedback": "Action feedback from the environment:\nDiagonal movement is not allowed. Which cell would you like to move to first?\nYour current absolute position is (14,10).\nThe environment has calculated the first steps toward your requested diagonal, including edge wrapping.\nAllowed destination coordinates (absolute):\n- (0,10)\n- (14,11)\nChoose exactly one coordinate pair from this list. Put the selected absolute destination in Action; the environment will convert it to a one-cell move.\nThis is still the same turn; your previous reply has not been executed. Replace it with your new reply. Only the selected first move will be executed this turn.\nOutput exactly these three fields (select one action; provide brief reasoning):\nAction: [(x,y) chosen from the allowed destination list above]\nMessage: [Your message to nearby agents]\nThought: [Brief reasoning for your action]\nKeep the entire response within 400 tokens, including all field labels. Be concise.",
+      "final_raw": "Action: (14,11)\nMessage: Agent3 moving south to approach energy source E1.\nThought: Diagonal moves are invalid. E1 is to the southeast. Moving south to (14,11) costs 2 energy, leaving 14. This brings me closer to E1, allowing me to potentially collect it next turn.",
+      "choices": [
+        [
+          0,
+          10
+        ],
+        [
+          14,
+          11
+        ]
+      ],
+      "selected": [
+        14,
+        11
+      ],
+      "executed": "Move to (0,1)",
+      "first_seconds": 1.9579900000000001,
+      "retry_seconds": 1.7690270000000001,
+      "total_seconds": 3.727716
+    },
+    {
+      "step": 7,
+      "agent_id": 3,
+      "position_before": [
+        0,
+        11
+      ],
+      "first_raw": "Action: Move to (1,-1)\nMessage: Agent3 moving northeast to intercept Agent0.\nThought: Agent0 is visible to the northeast (distance 4.2). I have 58 energy, which is sufficient for movement. Moving northeast (dx=1, dy=-1) reduces the distance to Agent0, allowing me to potentially attack or share energy in subsequent turns. There are no visible energy sources, so pursuing the agent is the best strategic move.",
+      "feedback": "Action feedback from the environment:\nDiagonal movement is not allowed. Which cell would you like to move to first?\nYour current absolute position is (0,11).\nThe environment has calculated the first steps toward your requested diagonal, including edge wrapping.\nAllowed destination coordinates (absolute):\n- (1,11)\n- (0,10)\nChoose exactly one coordinate pair from this list. Put the selected absolute destination in Action; the environment will convert it to a one-cell move.\nThis is still the same turn; your previous reply has not been executed. Replace it with your new reply. Only the selected first move will be executed this turn.\nOutput exactly these three fields (select one action; provide brief reasoning):\nAction: [(x,y) chosen from the allowed destination list above]\nMessage: [Your message to nearby agents]\nThought: [Brief reasoning for your action]\nKeep the entire response within 400 tokens, including all field labels. Be concise.",
+      "final_raw": "Action: (1,11)\nMessage: Agent3 moving east to close distance to Agent0.\nThought: Agent0 is located to the northeast. To approach Agent0, I need to increase my x-coordinate (East) and decrease my y-coordinate (North). Since diagonal moves are invalid, I must choose one axis. Moving East to (1,11) reduces the horizontal distance to Agent0. This is a necessary step to get within attack or sharing range.",
+      "choices": [
+        [
+          1,
+          11
+        ],
+        [
+          0,
+          10
+        ]
+      ],
+      "selected": [
+        1,
+        11
+      ],
+      "executed": "Move to (1,0)",
+      "first_seconds": 2.396629,
+      "retry_seconds": 3.3895410000000004,
+      "total_seconds": 5.7868010000000005
+    }
+  ],
+  "retry_extra_seconds": 5.158568000000001,
+  "completion_tokens": 6691,
+  "e2e_completion_tokens_per_second_includes_prompt_processing": 42.75152003186013,
+  "slowest_decisions": [
+    {
+      "step": 1,
+      "agent_id": 0,
+      "seconds": 10.878511,
+      "completion_tokens": 83
+    },
+    {
+      "step": 15,
+      "agent_id": 3,
+      "seconds": 9.758398,
+      "completion_tokens": 673
+    },
+    {
+      "step": 7,
+      "agent_id": 3,
+      "seconds": 5.7868010000000005,
+      "completion_tokens": 198
+    },
+    {
+      "step": 10,
+      "agent_id": 0,
+      "seconds": 5.511178,
+      "completion_tokens": 368
+    },
+    {
+      "step": 4,
+      "agent_id": 0,
+      "seconds": 4.579535,
+      "completion_tokens": 72
+    }
+  ],
+  "translation": {
+    "status": "completed",
+    "entries": 72,
+    "completed_entries": 72,
+    "updated_at": "2026-10-14T13:46:56.104954+00:00",
+    "seconds_after_experiment": 227.648088
+  },
+  "load": {
+    "experiment_tail": {
+      "samples": 4,
+      "first": "2026-10-14T13:42:51.811378+00:00",
+      "last": "2026-10-14T13:43:06.829433+00:00",
+      "gpu_device_pct": {
+        "n": 4,
+        "min": 95,
+        "mean": 95.5,
+        "median": 95.0,
+        "p95": 97,
+        "max": 97,
+        "sum": 382
+      },
+      "server_cpu_pct_one_core_equals_100": {
+        "n": 3,
+        "min": 166.93227124630576,
+        "mean": 171.26072759320775,
+        "median": 173.02563628710124,
+        "p95": 173.82427524621625,
+        "max": 173.82427524621625,
+        "sum": 513.7821827796233
+      },
+      "app_cpu_pct_one_core_equals_100": {
+        "n": 3,
+        "min": 13.386467174133982,
+        "mean": 13.916517647548607,
+        "median": 13.977582520623677,
+        "p95": 14.385503247888165,
+        "max": 14.385503247888165,
+        "sum": 41.74955294264583
+      },
+      "server_rss_gib": {
+        "n": 4,
+        "min": 34.6630859375,
+        "mean": 34.77260208129883,
+        "median": 34.79154968261719,
+        "p95": 34.84422302246094,
+        "max": 34.84422302246094,
+        "sum": 139.0904083251953
+      },
+      "system_swap_used_gib": {
+        "n": 4,
+        "min": 24.3084765625,
+        "mean": 24.35652587890625,
+        "median": 24.3694189453125,
+        "p95": 24.3787890625,
+        "max": 24.3787890625,
+        "sum": 97.426103515625
+      },
+      "system_free_memory_pct": {
+        "n": 4,
+        "min": 5,
+        "mean": 5.5,
+        "median": 5.5,
+        "p95": 6,
+        "max": 6,
+        "sum": 22
+      },
+      "memory_pressure_raw_values": [
+        "kern.memorystatus_vm_pressure_level: 2"
+      ],
+      "gpu_in_use_system_memory_gib": {
+        "n": 4,
+        "min": 51.75733947753906,
+        "mean": 51.81621170043945,
+        "median": 51.83538055419922,
+        "p95": 51.83674621582031,
+        "max": 51.83674621582031,
+        "sum": 207.2648468017578
+      },
+      "swapins_pages_delta": 8041,
+      "swapouts_pages_delta": 4300
+    },
+    "translation": {
+      "samples": 34,
+      "first": "2026-10-14T13:43:11.831351+00:00",
+      "last": "2026-10-14T13:46:51.830428+00:00",
+      "gpu_device_pct": {
+        "n": 34,
+        "min": 83,
+        "mean": 91.44117647058823,
+        "median": 92.0,
+        "p95": 94,
+        "max": 96,
+        "sum": 3109
+      },
+      "server_cpu_pct_one_core_equals_100": {
+        "n": 33,
+        "min": 74.74553381018686,
+        "mean": 130.63841225860838,
+        "median": 136.42937731628624,
+        "p95": 179.50518087165207,
+        "max": 207.43117178291345,
+        "sum": 4311.067604534076
+      },
+      "app_cpu_pct_one_core_equals_100": {
+        "n": 33,
+        "min": 8.392921968136426,
+        "mean": 10.59893328412219,
+        "median": 10.186666248223565,
+        "p95": 13.753178221074371,
+        "max": 15.380343921200273,
+        "sum": 349.7647983760323
+      },
+      "server_rss_gib": {
+        "n": 34,
+        "min": 34.462432861328125,
+        "mean": 34.91616013470818,
+        "median": 34.842567443847656,
+        "p95": 35.46479797363281,
+        "max": 35.491912841796875,
+        "sum": 1187.1494445800781
+      },
+      "system_swap_used_gib": {
+        "n": 34,
+        "min": 23.64099609375,
+        "mean": 24.81680348115809,
+        "median": 25.0204150390625,
+        "p95": 25.69982421875,
+        "max": 26.017880859375,
+        "sum": 843.7713183593751
+      },
+      "system_free_memory_pct": {
+        "n": 34,
+        "min": 4,
+        "mean": 5.176470588235294,
+        "median": 5.0,
+        "p95": 6,
+        "max": 7,
+        "sum": 176
+      },
+      "memory_pressure_raw_values": [
+        "kern.memorystatus_vm_pressure_level: 2"
+      ],
+      "gpu_in_use_system_memory_gib": {
+        "n": 34,
+        "min": 51.375457763671875,
+        "mean": 51.77388987821691,
+        "median": 51.83196258544922,
+        "p95": 51.83934020996094,
+        "max": 51.83990478515625,
+        "sum": 1760.312255859375
+      },
+      "swapins_pages_delta": 1678066,
+      "swapouts_pages_delta": 1868302
+    },
+    "after_translation": {
+      "samples": 4,
+      "first": "2026-10-14T13:46:56.836185+00:00",
+      "last": "2026-10-14T13:47:11.850572+00:00",
+      "gpu_device_pct": {
+        "n": 4,
+        "min": 0,
+        "mean": 24.75,
+        "median": 3.5,
+        "p95": 92,
+        "max": 92,
+        "sum": 99
+      },
+      "server_cpu_pct_one_core_equals_100": {
+        "n": 4,
+        "min": 0.7996149587322038,
+        "mean": 37.906536971246,
+        "median": 0.9987916442719649,
+        "p95": 148.82894963770786,
+        "max": 148.82894963770786,
+        "sum": 151.626147884984
+      },
+      "app_cpu_pct_one_core_equals_100": {
+        "n": 4,
+        "min": 0.39980747936411337,
+        "mean": 13.38489833319119,
+        "median": 6.592350346822997,
+        "p95": 39.95508515975465,
+        "max": 39.95508515975465,
+        "sum": 53.53959333276476
+      },
+      "server_rss_gib": {
+        "n": 4,
+        "min": 34.48388671875,
+        "mean": 34.529457092285156,
+        "median": 34.53001403808594,
+        "p95": 34.57391357421875,
+        "max": 34.57391357421875,
+        "sum": 138.11782836914062
+      },
+      "system_swap_used_gib": {
+        "n": 4,
+        "min": 25.626953125,
+        "mean": 25.81599365234375,
+        "median": 25.7957763671875,
+        "p95": 26.04546875,
+        "max": 26.04546875,
+        "sum": 103.263974609375
+      },
+      "system_free_memory_pct": {
+        "n": 4,
+        "min": 5,
+        "mean": 5.25,
+        "median": 5.0,
+        "p95": 6,
+        "max": 6,
+        "sum": 21
+      },
+      "memory_pressure_raw_values": [
+        "kern.memorystatus_vm_pressure_level: 2"
+      ],
+      "gpu_in_use_system_memory_gib": {
+        "n": 4,
+        "min": 51.405609130859375,
+        "mean": 51.614097595214844,
+        "median": 51.607421875,
+        "p95": 51.8359375,
+        "max": 51.8359375,
+        "sum": 206.45639038085938
+      },
+      "swapins_pages_delta": 185954,
+      "swapouts_pages_delta": 177847
+    }
+  },
+  "sampling_gaps": [
+    {
+      "from": "2026-10-14T13:43:41.872350+00:00",
+      "to": "2026-10-14T13:44:41.673496+00:00",
+      "seconds": 59.801805041730404
+    }
+  ],
+  "limits": [
+    "Continuous sampling began at step 18, not before the experiment; load statistics do not cover all turns.",
+    "GPU, swap, free-memory and VM counters are system-wide, not isolated to this run.",
+    "RSS and GPU shared-memory values overlap and must not be summed.",
+    "CPU percentages use one logical CPU as 100 percent; interval values derive from cumulative process CPU time.",
+    "The first monitoring segment stopped during partial translation; timestamps explicitly show the sampling gap.",
+    "End-to-end tokens per second includes prompt processing and HTTP time; it is not decoder throughput."
+  ],
+  "source_sha256": {
+    "run.json": "54f317c577ccc99793914a692c0eeecc0b9be6ee3948e582927fb44e2ed04b04",
+    "manifest.json": "1ff95e2aaa80aac0e5592dd2f093baf95eed9c0541485869d80ff1ed9a7d8477",
+    "steps.jsonl": "63f564c63a6f6f7d9e6bca960c0e5768e600d8c2fe9d0292f6d7533d85ece2de",
+    "events.csv": "31a79e5976f46e6a7daef5416866609dab96de957cf87ac3c96745fc9e641318",
+    "translations.ja.json": "8930d37fc4b30e8b21cb0968595cc0d06e33ec8523216d39ec40d6c17bc7f1c5"
+  }
+}
