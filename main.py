@@ -222,6 +222,7 @@ class LLMAgent:
             rules += "\n\n" + PROVENANCE_INSTRUCTIONS
         system_prompt = "\n\n".join(part for part in (
             self.custom_world_prompt, self.personality_prompt, rules) if part)
+        step_header = f"Current Step: {observation.step}\n" if observation is not None else ""
         current_header = (f"Current Observation (Step {observation.step}; source: environment):\n"
                           if "provenance" in factors else "")
         memory_header = "Past Records (engine actions and Past Self Reports)" if "provenance" in factors else "Memory"
@@ -236,6 +237,7 @@ class LLMAgent:
                          f"LATEST Status: Agent{agent_id}, Energy: {energy}, Position: {position}, Cycles: {age}\n")
         user_prompt = (
             f"Global Info: Total Agents in the World: {num_agents}\n"
+            f"{step_header}"
             f"{current_header}"
             f"{current_state}"
             f"{memory_header}:\n{memory_text}\n"
@@ -769,9 +771,10 @@ class Simulation:
                                               for (x, y), energy in sorted(self.environment.energy_sources.items())]},
                 "stats": self.stats.copy(), "summary": self.get_summary(), "events": events or []}
 
-    def visualize(self, save_path):
+    def visualize(self, save_path, snapshot=None):
         with PLOT_LOCK:
-            fig = draw_grid(self.snapshot(), self.grid_size, self.reproduce_cost)
+            fig = draw_grid(self.snapshot() if snapshot is None else snapshot,
+                            self.grid_size, self.reproduce_cost)
             fig.savefig(save_path, dpi=120)
             fig.clear()
 
@@ -786,7 +789,7 @@ DEFAULT_PARAMS = {
     "mock_mode": False, "temperature": 0.0, "max_tokens": 5000, "top_p": 1.0, "timeout": 120.0,
     **REQUEST_OPTION_DEFAULTS,
     "view_range": VIEW_RANGE, "message_range": MESSAGE_RANGE,
-    "population_cap": 60, "output_dir": "outputs", "save_images": False,
+    "population_cap": 60, "output_dir": "outputs", "save_images": True,
     "action_order": "observe_then_apply_by_agent_id", "request_concurrency": 1,
     "prompt_factors": (),
 }
@@ -857,15 +860,15 @@ async def main(run_id=0, params=None, on_decision=None, on_snapshot=None, stop_r
 
     image_dir = recorder.directory / "img"
     try:
+        if config["save_images"]:
+            image_dir.mkdir()
+            sim.visualize(image_dir / "step000.png", initial_snapshot)
         # Deliver a UI cancellation even when Mock or preparation did not await.
         await asyncio.sleep(0)
         if stop_requested and stop_requested():
             raise asyncio.CancelledError
         if on_snapshot is not None:
             on_snapshot(deepcopy(initial_snapshot))
-        if config["save_images"]:
-            image_dir.mkdir()
-            sim.visualize(image_dir / "step_000.png")
         async with aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=config["timeout"])) as session:
             for _ in range(config["num_steps"]):
                 await asyncio.sleep(0)
@@ -873,19 +876,17 @@ async def main(run_id=0, params=None, on_decision=None, on_snapshot=None, stop_r
                     raise asyncio.CancelledError
                 snapshot = await sim.step(session, on_decision=report_decision)
                 recorder.record(snapshot)
+                if config["save_images"]:
+                    sim.visualize(image_dir / f"step{sim.step_count:03d}.png", snapshot)
                 if on_snapshot is not None:
                     on_snapshot(deepcopy(snapshot))
                 summary = snapshot["summary"]
                 print(f"Step {sim.step_count}: alive={summary['alive']}, "
                       f"decisions_this_step={snapshot['step_stats']['total_actions']}, decisions_total={summary['total_actions']}, "
                       f"llm_errors={summary['llm_errors']}, parse_errors={summary['parse_errors']}", flush=True)
-                if config["save_images"] and sim.step_count % 5 == 0:
-                    sim.visualize(image_dir / f"step_{sim.step_count:03d}.png")
                 if not summary["alive"]:
                     break
             model_info = await identity.finish(session)
-        if config["save_images"]:
-            sim.visualize(image_dir / "final.png")
         errors = sim.stats["llm_errors"] + sim.stats["parse_errors"]
         status = "completed_with_errors" if errors else "completed"
         reason = "extinction" if not sim.get_summary()["alive"] else "step_limit"
@@ -996,7 +997,9 @@ def cli():
                      default=DEFAULT_PARAMS["max_tokens_parameter"])
     run.add_argument("--timeout", type=float, default=120.0)
     run.add_argument("--output", default="outputs")
-    run.add_argument("--images", action="store_true")
+    run.add_argument("--images", action=argparse.BooleanOptionalAction,
+                     default=DEFAULT_PARAMS["save_images"],
+                     help="Save the initial board and every completed step (default: on)")
     aggregate = commands.add_parser("aggregate", help="Rebuild tables and export one row per run")
     aggregate.add_argument("--input", default="outputs")
     aggregate.add_argument("--output")

@@ -7,7 +7,7 @@ import unittest
 from unittest.mock import patch
 
 from main import Simulation
-from observations import spatial_local_view
+from observations import spatial_local_view, prompt_hashes
 from paper_prompts import normalize_prompt_factors, prompt_protocol
 from tools.preview_grounded_prompts import build_review
 
@@ -104,7 +104,7 @@ class SpatialRelationTests(unittest.TestCase):
 
 
 class LegacyPromptCompatibilityTests(unittest.IsolatedAsyncioTestCase):
-    async def test_original_42_review_prompts_remain_byte_identical(self):
+    async def test_original_42_review_prompts_change_only_current_step(self):
         path = Path(__file__).resolve().parents[1] / "docs/data/2026-10-13-grounded-prompt-previews-v2.json"
         expected = json.loads(path.read_text())
         with patch("main.aiohttp.ClientSession", side_effect=AssertionError("offline only")):
@@ -114,10 +114,16 @@ class LegacyPromptCompatibilityTests(unittest.IsolatedAsyncioTestCase):
             self.assertEqual(set(actual["scenarios"][scenario]), set(conditions))
             for condition, record in conditions.items():
                 new = actual["scenarios"][scenario][condition]
-                self.assertEqual(new["protocol"], record["protocol"])
+                expected_protocol = {**record["protocol"], "rules": {
+                    **record["protocol"]["rules"],
+                    "current_step": "1-based world step at decision time; shared by all agents, including newborns"}}
+                self.assertEqual(new["protocol"], expected_protocol)
                 for old_agent, new_agent in zip(record["agents"], new["agents"], strict=True):
-                    for key in ("system_prompt", "user_prompt", "prompt_sha256"):
-                        self.assertEqual(new_agent[key], old_agent[key], (scenario, condition, key))
+                    expected_user = old_agent["user_prompt"].replace(
+                        "\n", f"\nCurrent Step: {record['step']}\n", 1)
+                    self.assertEqual(new_agent["system_prompt"], old_agent["system_prompt"], (scenario, condition))
+                    self.assertEqual(new_agent["user_prompt"], expected_user, (scenario, condition))
+                    self.assertEqual(new_agent["prompt_sha256"], prompt_hashes(old_agent["system_prompt"], expected_user))
                     checked += 1
         self.assertEqual(checked, 42)
 

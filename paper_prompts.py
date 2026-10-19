@@ -27,6 +27,7 @@ PROTOCOL_NOTES = {
         "share_and_attack_range": "view radius at the time the action executes",
         "message_range": "independent message radius at end-of-turn positions; living senders and recipients including newborns",
         "message_cost": 0,
+        "current_step": "1-based world step at decision time; shared by all agents, including newborns",
         "memory": "last three executed actions and first 100 characters of their Thoughts, recorded by the engine",
         "position": "absolute self position; other objects use relative offsets",
         "boundaries": "toroidal",

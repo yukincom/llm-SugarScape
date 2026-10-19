@@ -49,6 +49,7 @@ class DiagonalRetryTests(unittest.IsolatedAsyncioTestCase):
         sim = self.simulation()
         def inspect(count, body):
             self.assertEqual(sim.step_count, 1)
+            self.assertIn("\nCurrent Step: 1\n", body["messages"][1]["content"])
             self.assertEqual(sim.agents[0].position, (14, 10))
             self.assertEqual(sim.agents[0].energy, 20)
             self.assertEqual(sim.agents[0].age, 0)

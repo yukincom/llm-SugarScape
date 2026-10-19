@@ -7,7 +7,7 @@ import unittest
 from unittest.mock import patch
 
 from main import Simulation
-from observations import identified_observation
+from observations import identified_observation, prompt_hashes
 from paper_prompts import APPLICATION_USER_INSTRUCTIONS, normalize_prompt_factors, prompt_protocol
 from tools.preview_grounded_prompts import build_identity_review, build_spatial_review
 
@@ -116,7 +116,7 @@ class SelfOtherIdentityTests(unittest.TestCase):
 
 
 class IdentityReviewTests(unittest.IsolatedAsyncioTestCase):
-    async def test_previous_50_spatial_review_inputs_remain_byte_identical(self):
+    async def test_previous_50_spatial_review_inputs_change_only_current_step(self):
         path = Path(__file__).resolve().parents[1] / "docs/data/2026-10-14-spatial-relations-prompt-previews.json"
         expected = json.loads(path.read_text())
         with patch("main.aiohttp.ClientSession", side_effect=AssertionError("offline only")):
@@ -125,10 +125,16 @@ class IdentityReviewTests(unittest.IsolatedAsyncioTestCase):
         for scenario, conditions in expected["scenarios"].items():
             for name, record in conditions.items():
                 current = actual["scenarios"][scenario][name]
-                self.assertEqual(current["protocol"], record["protocol"])
+                expected_protocol = {**record["protocol"], "rules": {
+                    **record["protocol"]["rules"],
+                    "current_step": "1-based world step at decision time; shared by all agents, including newborns"}}
+                self.assertEqual(current["protocol"], expected_protocol)
                 for old, new in zip(record["agents"], current["agents"], strict=True):
-                    for key in ("system_prompt", "user_prompt", "prompt_sha256"):
-                        self.assertEqual(old[key], new[key], (scenario, name, key))
+                    expected_user = old["user_prompt"].replace(
+                        "\n", f"\nCurrent Step: {record['step']}\n", 1)
+                    self.assertEqual(new["system_prompt"], old["system_prompt"], (scenario, name))
+                    self.assertEqual(new["user_prompt"], expected_user, (scenario, name))
+                    self.assertEqual(new["prompt_sha256"], prompt_hashes(old["system_prompt"], expected_user))
                     count += 1
         self.assertEqual(count, 50)
 

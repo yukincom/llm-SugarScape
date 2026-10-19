@@ -294,7 +294,7 @@ class RepairedExecutionTests(unittest.IsolatedAsyncioTestCase):
             result = recorder.finish("completed", "max_steps")
             self.assertEqual(read_run(recorder.directory / "run.json")["logs"], result["logs"])
             self.assertEqual(result["schema_version"], 7)
-            self.assertEqual(result["engine_version"], "5.3")
+            self.assertEqual(result["engine_version"], "5.4")
             self.assertEqual(result["protocol"]["response_handling"]["version"], 5)
             event = result["logs"][1]["events"][0]
             self.assertEqual(event["raw_response"], raw)

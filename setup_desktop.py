@@ -33,7 +33,7 @@ setup(
             "CFBundleIdentifier": "com.yukincom.llm-sugarscape",
             "CFBundleDisplayName": "LLM SugarScape",
             "CFBundleShortVersionString": "0.1.0",
-            "CFBundleVersion": "35",
+            "CFBundleVersion": "37",
             "CFBundleDevelopmentRegion": "ja",
             "CFBundleLocalizations": ["ja"],
             "LSMinimumSystemVersion": "26.2",

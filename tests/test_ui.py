@@ -247,7 +247,7 @@ class StreamlitTests(unittest.TestCase):
                     patch.object(aiohttp.ClientSession, "_request", side_effect=AssertionError("No network in Mock")):
                 app = AppTest.from_file(str(APP_PATH)).run(timeout=20)
                 widget(app.selectbox, "動作モード").set_value("Mock（待機のみ・通信なし）").run()
-                widget(app.checkbox, "盤面画像も保存する").check().run()
+                self.assertTrue(widget(app.checkbox, "盤面画像も保存する").value)
                 picker.return_value = str(chosen)
                 app.run()
                 self.assertEqual(len(app.exception), 0)
@@ -264,7 +264,8 @@ class StreamlitTests(unittest.TestCase):
                 result = app.session_state["result"]
                 self.assertEqual(Path(result["output_dir"]).parent, chosen)
                 self.assertTrue(result["config"]["save_images"])
-                self.assertTrue(list((Path(result["output_dir"]) / "img").glob("*.png")))
+                self.assertEqual(sorted(path.name for path in (Path(result["output_dir"]) / "img").glob("*.png")),
+                                 ["step000.png", "step001.png"])
 
     def test_repaired_action_runs_normally_and_retains_details(self):
         from test_simulation import Response, completion, reply

@@ -580,12 +580,13 @@ class DataTests(unittest.IsolatedAsyncioTestCase):
             path = Path(first["output_dir"])
             self.assertEqual(first["status"], "completed")
             self.assertEqual(first["schema_version"], 7)
-            self.assertEqual(first["engine_version"], "5.3")
+            self.assertEqual(first["engine_version"], "5.4")
             self.assertIn("paper_prompts.py", first["provenance"]["source_sha256"])
             self.assertIn("response_fields.py", first["provenance"]["source_sha256"])
             self.assertEqual([s["step"] for s in first["logs"]], [0, 1, 2])
-            for file in path.iterdir():
-                self.assertNotIn("not-in-artifacts", file.read_text())
+            for file in path.rglob("*"):
+                if file.is_file():
+                    self.assertNotIn(b"not-in-artifacts", file.read_bytes())
             with (path / "events.csv").open() as handle:
                 rows = list(csv.DictReader(handle))
             self.assertEqual(len(rows), 4)

@@ -64,7 +64,9 @@ def draw_grid(snapshot, grid_size, reproduce_cost):
                 add_icon(ax, states[1], point, size * 0.6, f"damage-{agent['id']}",
                          zorder=5, offset=(size * 0.4, size * 0.3))
             ax.annotate(f"{agent['id']:02d}", point, xytext=(size * 0.35, -size * 0.6),
-                        textcoords="offset points", fontsize=7, color="#475569", zorder=6)
+                        textcoords="offset points", fontsize=13, fontweight="bold", color="#1e293b",
+                        bbox={"boxstyle": "round,pad=0.12", "facecolor": "white",
+                              "edgecolor": "none", "alpha": 0.92}, zorder=6)
 
     spacing = max(1, grid_size // 10)
     ax.set_xticks(range(0, grid_size, spacing))

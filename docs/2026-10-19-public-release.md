@@ -8,10 +8,10 @@
 
 ## 配布物
 
-- バージョン：`0.1.0-preview.35`。
-- アプリ：`LLM-SugarScape-0.1.0-preview.35-Mac-arm64.zip`。
-- SHA-256：`b37865cf2adbaab64f1aff73a3186d6353b5ff9da6268b83256dd4c3629ca9ef`。
-- ソース：公開リポジトリの `v0.1.0-preview.35` タグ。
+- バージョン：`0.1.0-preview.37`。
+- アプリ：`LLM-SugarScape-0.1.0-preview.37-Mac-arm64.zip`。
+- SHA-256：`d1bf59152cb301a3b8f34f84a03d194ba723153c8e7b4497b4e15a912c620289`。
+- ソース：公開リポジトリの `v0.1.0-preview.37` タグ。
 
 作成済みの販売用ZIPを再圧縮せず、そのままGitHub Releaseへ添付する。ZIP内の製品ソース・素材と公開ソースを照合し、チェックサムをReleaseへ添付する。配布用のDeveloper ID署名・公証の状況も販売用ZIPと同じで、未実施。
 
@@ -28,7 +28,7 @@
 ReleaseのSHA-256ファイルは次のコマンドで確認できる。
 
 ```sh
-shasum -a 256 -c LLM-SugarScape-0.1.0-preview.35-Mac-arm64.zip.sha256
+shasum -a 256 -c LLM-SugarScape-0.1.0-preview.37-Mac-arm64.zip.sha256
 ```
 
 公開前のZIP・ソース照合結果とテスト結果は、対応するReleaseの説明と添付の検証記録に残す。

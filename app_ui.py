@@ -534,7 +534,8 @@ def storage_settings(st, defaults):
                 # another click, rather than waiting for another widget change.
                 st.rerun()
         output_root = st.text_input("保存先", key="output_root")
-        save_images = st.checkbox("盤面画像も保存する", key="setting_save_images")
+        save_images = st.checkbox("盤面画像も保存する", key="setting_save_images",
+                                  help="各実験フォルダのimgに、初期盤面をstep000.png、以後は毎ターンstep001.pngのように保存します。")
     return output_root, save_images
 
 
