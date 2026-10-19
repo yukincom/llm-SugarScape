@@ -1,0 +1,5 @@
+run_id,step,alive,total_born,total_died,total_energy,avg_energy,avg_age,energy_sources,total_actions,valid_decisions,llm_errors,parse_errors,rejected_actions,attacks,shares,reproductions,coop_rate,attack_rate,repro_rate,alive_start,births_this_step,deaths_this_step,decisions_this_step,shares_this_step,attacks_this_step,reproductions_this_step,llm_errors_this_step,parse_errors_this_step,rejected_actions_this_step
+sample-first-look-v1,0,4,0,0,600,150.0,0.0,6,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0
+sample-first-look-v1,1,4,1,1,678,169.5,0.75,6,4,4,0,0,0,0,2,1,0.5,0.0,0.25,4,1,1,4,2,0,1,0,0,0
+sample-first-look-v1,2,5,2,1,754,150.8,1.4,6,8,8,0,0,0,0,2,2,0.25,0.0,0.25,4,1,0,4,0,0,1,0,0,0
+sample-first-look-v1,3,5,2,1,750,150.0,2.4,6,13,13,0,0,0,0,3,2,0.23076923076923078,0.0,0.15384615384615385,5,0,0,5,1,0,0,0,0,0

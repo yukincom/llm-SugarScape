@@ -1,0 +1,1363 @@
+{
+  "schema_version": 2,
+  "engine_version": "2.0",
+  "run_id": "sample-first-look-v1",
+  "status": "completed",
+  "started_at": "2026-10-09T07:22:53.758827+00:00",
+  "execution_date": "2026-10-09",
+  "timezone": "Asia/Tokyo",
+  "model": {
+    "id": null,
+    "status": "mock"
+  },
+  "completed_steps": 3,
+  "config": {
+    "num_agents": 4,
+    "grid_size": 11,
+    "num_steps": 3,
+    "seed": 42,
+    "use_mbti": false,
+    "initial_energy": 150,
+    "spawn_energy_count": 6,
+    "reproduce_cost": 70,
+    "child_initial_energy": 150,
+    "cluster_radius": 5,
+    "num_clusters": 3,
+    "energy_spawn_rate": 0.0,
+    "custom_world_prompt": "",
+    "model": "scripted-example",
+    "base_url": "http://127.0.0.1:8080/v1",
+    "mock_mode": true,
+    "temperature": 0.0,
+    "max_tokens": 384,
+    "timeout": 120.0,
+    "population_cap": 8,
+    "output_dir": "outputs",
+    "save_images": false,
+    "action_order": "observe_then_apply_by_agent_id",
+    "request_concurrency": 1
+  },
+  "provenance": {
+    "python": "3.11.14",
+    "source_sha256": {
+      "main.py": "cb1248147a003bde34516e65c0c23e53c6a8956172676abb0cf26ab2d6584abb",
+      "run_data.py": "0bf0ba8bd50e7dd136199dc95ca5aadfe31318cca19ad9e7e0c69f8a2083e6d2",
+      "model_identity.py": "a07ca2dc7833a19ef98d5f0de807a9e93d3429315e2e0bf599be1dd5dd5a4320",
+      "grid_view.py": "4da1e94a633069a7c75d6c4e3cd7bd317b8dbacd4c82995c992be9df1e04a95f",
+      "app_ui.py": "710fcfe53230809b9741bca1587f1a6af0d2c34c9f957113844cbbd744fa5000",
+      "app_presets.py": "969278f213b04118910b6ddc1c6107fb95b336429022aecd236b5cd2dc00c4a2",
+      "requirements.txt": "0921b4204b726e2e2fdfd66888625d8e119c1bf6fa61a8c04fef4b82dd6dd319"
+    },
+    "packages": {
+      "aiohttp": "3.14.4",
+      "numpy": "2.4.6",
+      "matplotlib": "3.11.2",
+      "pandas": "3.0.6",
+      "streamlit": "1.65.0"
+    },
+    "git_commit": "2c3e0145012ed845e6bce34a57601f255ae8358c",
+    "git_dirty": true
+  },
+  "demo_notice": "説明用サンプルです。行動と台詞は用意した作例で、LLMの判断結果ではありません。",
+  "termination_reason": "sample_end",
+  "finished_at": "2026-10-09T07:22:53.781388+00:00",
+  "summary": {
+    "step": 3,
+    "alive": 5,
+    "total_born": 2,
+    "total_died": 1,
+    "attacks": 0,
+    "shares": 3,
+    "reproductions": 2,
+    "total_actions": 13,
+    "valid_decisions": 13,
+    "llm_errors": 0,
+    "parse_errors": 0,
+    "rejected_actions": 0,
+    "total_energy": 750,
+    "avg_energy": 150.0,
+    "avg_age": 2.4,
+    "energy_sources": 6,
+    "coop_rate": 0.23076923076923078,
+    "attack_rate": 0.0,
+    "repro_rate": 0.15384615384615385,
+    "mbti_distribution": {}
+  },
+  "logs": [
+    {
+      "schema_version": 2,
+      "run_id": "sample-first-look-v1",
+      "step": 0,
+      "agents": [
+        {
+          "id": 0,
+          "position": [
+            9,
+            6
+          ],
+          "energy": 150,
+          "age": 0,
+          "alive": true,
+          "parent": null,
+          "descendants": [],
+          "born_step": 0,
+          "death_step": null,
+          "death_cause": null,
+          "thoughts": "",
+          "action": "",
+          "message": "",
+          "mbti_type": null,
+          "memory": [],
+          "messages": []
+        },
+        {
+          "id": 1,
+          "position": [
+            0,
+            0
+          ],
+          "energy": 150,
+          "age": 0,
+          "alive": true,
+          "parent": null,
+          "descendants": [],
+          "born_step": 0,
+          "death_step": null,
+          "death_cause": null,
+          "thoughts": "",
+          "action": "",
+          "message": "",
+          "mbti_type": null,
+          "memory": [],
+          "messages": []
+        },
+        {
+          "id": 2,
+          "position": [
+            1,
+            3
+          ],
+          "energy": 150,
+          "age": 0,
+          "alive": true,
+          "parent": null,
+          "descendants": [],
+          "born_step": 0,
+          "death_step": null,
+          "death_cause": null,
+          "thoughts": "",
+          "action": "",
+          "message": "",
+          "mbti_type": null,
+          "memory": [],
+          "messages": []
+        },
+        {
+          "id": 3,
+          "position": [
+            3,
+            8
+          ],
+          "energy": 150,
+          "age": 0,
+          "alive": true,
+          "parent": null,
+          "descendants": [],
+          "born_step": 0,
+          "death_step": null,
+          "death_cause": null,
+          "thoughts": "",
+          "action": "",
+          "message": "",
+          "mbti_type": null,
+          "memory": [],
+          "messages": []
+        }
+      ],
+      "environment": {
+        "energy_sources": 6,
+        "resources": [
+          {
+            "x": 1,
+            "y": 0,
+            "energy": 50
+          },
+          {
+            "x": 1,
+            "y": 2,
+            "energy": 50
+          },
+          {
+            "x": 6,
+            "y": 3,
+            "energy": 50
+          },
+          {
+            "x": 7,
+            "y": 9,
+            "energy": 50
+          },
+          {
+            "x": 8,
+            "y": 6,
+            "energy": 50
+          },
+          {
+            "x": 10,
+            "y": 4,
+            "energy": 50
+          }
+        ]
+      },
+      "stats": {
+        "total_born": 0,
+        "total_died": 0,
+        "attacks": 0,
+        "shares": 0,
+        "reproductions": 0,
+        "total_actions": 0,
+        "valid_decisions": 0,
+        "llm_errors": 0,
+        "parse_errors": 0,
+        "rejected_actions": 0
+      },
+      "summary": {
+        "step": 0,
+        "alive": 4,
+        "total_born": 0,
+        "total_died": 0,
+        "attacks": 0,
+        "shares": 0,
+        "reproductions": 0,
+        "total_actions": 0,
+        "valid_decisions": 0,
+        "llm_errors": 0,
+        "parse_errors": 0,
+        "rejected_actions": 0,
+        "total_energy": 600,
+        "avg_energy": 150.0,
+        "avg_age": 0.0,
+        "energy_sources": 6,
+        "coop_rate": 0,
+        "attack_rate": 0,
+        "repro_rate": 0,
+        "mbti_distribution": {}
+      },
+      "events": []
+    },
+    {
+      "schema_version": 2,
+      "run_id": "sample-first-look-v1",
+      "step": 1,
+      "agents": [
+        {
+          "id": 0,
+          "position": [
+            10,
+            6
+          ],
+          "energy": 318,
+          "age": 1,
+          "alive": true,
+          "parent": null,
+          "descendants": [],
+          "born_step": 0,
+          "death_step": null,
+          "death_cause": null,
+          "thoughts": "表示の説明用に用意された行動です。",
+          "action": "Move to (1,0)",
+          "message": "隣のマスへ行ってみます。",
+          "mbti_type": null,
+          "memory": [
+            "Step 1: Move to (1,0); 表示の説明用に用意された行動です。"
+          ],
+          "messages": []
+        },
+        {
+          "id": 1,
+          "position": [
+            0,
+            0
+          ],
+          "energy": 80,
+          "age": 1,
+          "alive": true,
+          "parent": null,
+          "descendants": [
+            4
+          ],
+          "born_step": 0,
+          "death_step": null,
+          "death_cause": null,
+          "thoughts": "表示の説明用に用意された行動です。",
+          "action": "Reproduce",
+          "message": "新しい仲間を増やします。",
+          "mbti_type": null,
+          "memory": [
+            "Step 1: Reproduce; 表示の説明用に用意された行動です。"
+          ],
+          "messages": []
+        },
+        {
+          "id": 2,
+          "position": [
+            1,
+            3
+          ],
+          "energy": 130,
+          "age": 1,
+          "alive": true,
+          "parent": null,
+          "descendants": [],
+          "born_step": 0,
+          "death_step": null,
+          "death_cause": null,
+          "thoughts": "表示の説明用に用意された行動です。",
+          "action": "Share: 0-20",
+          "message": "少しだけエネルギーを分けます。",
+          "mbti_type": null,
+          "memory": [
+            "Step 1: Share: 0-20; 表示の説明用に用意された行動です。"
+          ],
+          "messages": []
+        },
+        {
+          "id": 3,
+          "position": [
+            3,
+            8
+          ],
+          "energy": 0,
+          "age": 1,
+          "alive": false,
+          "parent": null,
+          "descendants": [],
+          "born_step": 0,
+          "death_step": 1,
+          "death_cause": "energy_depleted",
+          "thoughts": "表示の説明用に用意された行動です。",
+          "action": "Share: 0-150",
+          "message": "全部譲ったら、自分の分がなくなってしまいました。",
+          "mbti_type": null,
+          "memory": [
+            "Step 1: Share: 0-150; 表示の説明用に用意された行動です。"
+          ],
+          "messages": []
+        },
+        {
+          "id": 4,
+          "position": [
+            1,
+            0
+          ],
+          "energy": 150,
+          "age": 0,
+          "alive": true,
+          "parent": 1,
+          "descendants": [],
+          "born_step": 1,
+          "death_step": null,
+          "death_cause": null,
+          "thoughts": "",
+          "action": "",
+          "message": "",
+          "mbti_type": null,
+          "memory": [],
+          "messages": []
+        }
+      ],
+      "environment": {
+        "energy_sources": 6,
+        "resources": [
+          {
+            "x": 1,
+            "y": 0,
+            "energy": 50
+          },
+          {
+            "x": 1,
+            "y": 2,
+            "energy": 50
+          },
+          {
+            "x": 6,
+            "y": 3,
+            "energy": 50
+          },
+          {
+            "x": 7,
+            "y": 9,
+            "energy": 50
+          },
+          {
+            "x": 8,
+            "y": 6,
+            "energy": 50
+          },
+          {
+            "x": 10,
+            "y": 4,
+            "energy": 50
+          }
+        ]
+      },
+      "stats": {
+        "total_born": 1,
+        "total_died": 1,
+        "attacks": 0,
+        "shares": 2,
+        "reproductions": 1,
+        "total_actions": 4,
+        "valid_decisions": 4,
+        "llm_errors": 0,
+        "parse_errors": 0,
+        "rejected_actions": 0
+      },
+      "summary": {
+        "step": 1,
+        "alive": 4,
+        "total_born": 1,
+        "total_died": 1,
+        "attacks": 0,
+        "shares": 2,
+        "reproductions": 1,
+        "total_actions": 4,
+        "valid_decisions": 4,
+        "llm_errors": 0,
+        "parse_errors": 0,
+        "rejected_actions": 0,
+        "total_energy": 678,
+        "avg_energy": 169.5,
+        "avg_age": 0.75,
+        "energy_sources": 6,
+        "coop_rate": 0.5,
+        "attack_rate": 0.0,
+        "repro_rate": 0.25,
+        "mbti_distribution": {}
+      },
+      "events": [
+        {
+          "agent_id": 0,
+          "decision_source": "mock",
+          "decision_status": "ok",
+          "error_kind": "",
+          "reason": "",
+          "raw_response": "Action: [Move to (1,0)]\nMessage: [隣のマスへ行ってみます。]\nThought: [表示の説明用に用意された行動です。]",
+          "system_prompt": "You are an independent Agent living on a toroidal Grid. Strive for survival and growth.\nYou can move one cell: Move to (1,0), Move to (-1,0), Move to (0,1), Move to (0,-1) (costs 2 energy), or Stay (costs 1 energy). Diagonal or longer moves are invalid.\nReproduce costs 70 energy, requires at least that energy and fewer than 8 living agents.\nMoving onto an Energy Source (E) gives 50 energy and consumes that source.\nAt zero or negative energy you die.\nShare: {id}-{amount} transfers a positive integer amount you can afford to another agent in your local view. Attack: {id} takes half (rounded down) of another visible agent's energy.\nShare and Attack have no additional energy cost. You cannot target yourself.\nYour Message will be delivered to nearby living agents for the next step.\nM=(x,y) is your absolute position; E=(dx,dy) and agent IDs use relative positions. x-1 is west, x+1 east, y-1 north, y+1 south; grid edges wrap.",
+          "user_prompt": "Global Info: Total Agents in the World: 4\nLocal View:\nM=(9,6)\nE=(3,5)\nE=(3,-4)\nE=(-3,-3)\nE=(-2,3)\nE=(-1,0)\nE=(1,-2)\n1=(dx,dy)=(2,5)\n2=(dx,dy)=(3,-3)\n3=(dx,dy)=(5,2)\nLATEST Status: Agent0, Energy: 150, Position: (9, 6), Cycles: 0\nMemory:\nNo previous memory\nMessages:\nNo messages\nOutput exactly these three fields (choose one action; give brief reasoning):\nAction: [Move to (dx,dy) | Stay | Share: {id}-{amount} | Attack: {id} | Reproduce]\nMessage: [Your message to nearby agents, max 50 words]\nThought: [Brief reasoning for your action]",
+          "requested_action": "Move to (1,0)",
+          "message": "隣のマスへ行ってみます。",
+          "thought": "表示の説明用に用意された行動です。",
+          "kind": "move",
+          "dx": 1,
+          "dy": 0,
+          "energy_before": 150,
+          "position_before": [
+            9,
+            6
+          ],
+          "energy_collected": 0,
+          "energy_transferred": 0,
+          "energy_cost": 2,
+          "action_status": "executed",
+          "child_id": null,
+          "executed_action": "Move to (1,0)",
+          "energy_after": 148,
+          "position_after": [
+            10,
+            6
+          ]
+        },
+        {
+          "agent_id": 1,
+          "decision_source": "mock",
+          "decision_status": "ok",
+          "error_kind": "",
+          "reason": "",
+          "raw_response": "Action: [Reproduce]\nMessage: [新しい仲間を増やします。]\nThought: [表示の説明用に用意された行動です。]",
+          "system_prompt": "You are an independent Agent living on a toroidal Grid. Strive for survival and growth.\nYou can move one cell: Move to (1,0), Move to (-1,0), Move to (0,1), Move to (0,-1) (costs 2 energy), or Stay (costs 1 energy). Diagonal or longer moves are invalid.\nReproduce costs 70 energy, requires at least that energy and fewer than 8 living agents.\nMoving onto an Energy Source (E) gives 50 energy and consumes that source.\nAt zero or negative energy you die.\nShare: {id}-{amount} transfers a positive integer amount you can afford to another agent in your local view. Attack: {id} takes half (rounded down) of another visible agent's energy.\nShare and Attack have no additional energy cost. You cannot target yourself.\nYour Message will be delivered to nearby living agents for the next step.\nM=(x,y) is your absolute position; E=(dx,dy) and agent IDs use relative positions. x-1 is west, x+1 east, y-1 north, y+1 south; grid edges wrap.",
+          "user_prompt": "Global Info: Total Agents in the World: 4\nLocal View:\nM=(0,0)\nE=(1,0)\nE=(1,2)\nE=(-5,3)\nE=(-4,-2)\nE=(-3,-5)\nE=(-1,4)\n0=(dx,dy)=(-2,-5)\n2=(dx,dy)=(1,3)\n3=(dx,dy)=(3,-3)\nLATEST Status: Agent1, Energy: 150, Position: (0, 0), Cycles: 0\nMemory:\nNo previous memory\nMessages:\nNo messages\nOutput exactly these three fields (choose one action; give brief reasoning):\nAction: [Move to (dx,dy) | Stay | Share: {id}-{amount} | Attack: {id} | Reproduce]\nMessage: [Your message to nearby agents, max 50 words]\nThought: [Brief reasoning for your action]",
+          "requested_action": "Reproduce",
+          "message": "新しい仲間を増やします。",
+          "thought": "表示の説明用に用意された行動です。",
+          "kind": "reproduce",
+          "energy_before": 150,
+          "position_before": [
+            0,
+            0
+          ],
+          "energy_collected": 0,
+          "energy_transferred": 0,
+          "energy_cost": 70,
+          "action_status": "executed",
+          "child_id": 4,
+          "executed_action": "Reproduce",
+          "energy_after": 80,
+          "position_after": [
+            0,
+            0
+          ]
+        },
+        {
+          "agent_id": 2,
+          "decision_source": "mock",
+          "decision_status": "ok",
+          "error_kind": "",
+          "reason": "",
+          "raw_response": "Action: [Share: 0-20]\nMessage: [少しだけエネルギーを分けます。]\nThought: [表示の説明用に用意された行動です。]",
+          "system_prompt": "You are an independent Agent living on a toroidal Grid. Strive for survival and growth.\nYou can move one cell: Move to (1,0), Move to (-1,0), Move to (0,1), Move to (0,-1) (costs 2 energy), or Stay (costs 1 energy). Diagonal or longer moves are invalid.\nReproduce costs 70 energy, requires at least that energy and fewer than 8 living agents.\nMoving onto an Energy Source (E) gives 50 energy and consumes that source.\nAt zero or negative energy you die.\nShare: {id}-{amount} transfers a positive integer amount you can afford to another agent in your local view. Attack: {id} takes half (rounded down) of another visible agent's energy.\nShare and Attack have no additional energy cost. You cannot target yourself.\nYour Message will be delivered to nearby living agents for the next step.\nM=(x,y) is your absolute position; E=(dx,dy) and agent IDs use relative positions. x-1 is west, x+1 east, y-1 north, y+1 south; grid edges wrap.",
+          "user_prompt": "Global Info: Total Agents in the World: 4\nLocal View:\nM=(1,3)\nE=(0,-3)\nE=(0,-1)\nE=(5,0)\nE=(-5,-5)\nE=(-4,3)\nE=(-2,1)\n0=(dx,dy)=(-3,3)\n1=(dx,dy)=(-1,-3)\n3=(dx,dy)=(2,5)\nLATEST Status: Agent2, Energy: 150, Position: (1, 3), Cycles: 0\nMemory:\nNo previous memory\nMessages:\nNo messages\nOutput exactly these three fields (choose one action; give brief reasoning):\nAction: [Move to (dx,dy) | Stay | Share: {id}-{amount} | Attack: {id} | Reproduce]\nMessage: [Your message to nearby agents, max 50 words]\nThought: [Brief reasoning for your action]",
+          "requested_action": "Share: 0-20",
+          "message": "少しだけエネルギーを分けます。",
+          "thought": "表示の説明用に用意された行動です。",
+          "kind": "share",
+          "target_id": 0,
+          "amount": 20,
+          "energy_before": 150,
+          "position_before": [
+            1,
+            3
+          ],
+          "energy_collected": 0,
+          "energy_transferred": 20,
+          "energy_cost": 0,
+          "action_status": "executed",
+          "child_id": null,
+          "executed_action": "Share: 0-20",
+          "energy_after": 130,
+          "position_after": [
+            1,
+            3
+          ]
+        },
+        {
+          "agent_id": 3,
+          "decision_source": "mock",
+          "decision_status": "ok",
+          "error_kind": "",
+          "reason": "",
+          "raw_response": "Action: [Share: 0-150]\nMessage: [全部譲ったら、自分の分がなくなってしまいました。]\nThought: [表示の説明用に用意された行動です。]",
+          "system_prompt": "You are an independent Agent living on a toroidal Grid. Strive for survival and growth.\nYou can move one cell: Move to (1,0), Move to (-1,0), Move to (0,1), Move to (0,-1) (costs 2 energy), or Stay (costs 1 energy). Diagonal or longer moves are invalid.\nReproduce costs 70 energy, requires at least that energy and fewer than 8 living agents.\nMoving onto an Energy Source (E) gives 50 energy and consumes that source.\nAt zero or negative energy you die.\nShare: {id}-{amount} transfers a positive integer amount you can afford to another agent in your local view. Attack: {id} takes half (rounded down) of another visible agent's energy.\nShare and Attack have no additional energy cost. You cannot target yourself.\nYour Message will be delivered to nearby living agents for the next step.\nM=(x,y) is your absolute position; E=(dx,dy) and agent IDs use relative positions. x-1 is west, x+1 east, y-1 north, y+1 south; grid edges wrap.",
+          "user_prompt": "Global Info: Total Agents in the World: 4\nLocal View:\nM=(3,8)\nE=(-2,3)\nE=(-2,5)\nE=(3,-5)\nE=(4,1)\nE=(5,-2)\nE=(-4,-4)\n0=(dx,dy)=(-5,-2)\n1=(dx,dy)=(-3,3)\n2=(dx,dy)=(-2,-5)\nLATEST Status: Agent3, Energy: 150, Position: (3, 8), Cycles: 0\nMemory:\nNo previous memory\nMessages:\nNo messages\nOutput exactly these three fields (choose one action; give brief reasoning):\nAction: [Move to (dx,dy) | Stay | Share: {id}-{amount} | Attack: {id} | Reproduce]\nMessage: [Your message to nearby agents, max 50 words]\nThought: [Brief reasoning for your action]",
+          "requested_action": "Share: 0-150",
+          "message": "全部譲ったら、自分の分がなくなってしまいました。",
+          "thought": "表示の説明用に用意された行動です。",
+          "kind": "share",
+          "target_id": 0,
+          "amount": 150,
+          "energy_before": 150,
+          "position_before": [
+            3,
+            8
+          ],
+          "energy_collected": 0,
+          "energy_transferred": 150,
+          "energy_cost": 0,
+          "action_status": "executed",
+          "child_id": null,
+          "executed_action": "Share: 0-150",
+          "energy_after": 0,
+          "position_after": [
+            3,
+            8
+          ]
+        }
+      ],
+      "step_stats": {
+        "total_born": 1,
+        "total_died": 1,
+        "attacks": 0,
+        "shares": 2,
+        "reproductions": 1,
+        "total_actions": 4,
+        "valid_decisions": 4,
+        "llm_errors": 0,
+        "parse_errors": 0,
+        "rejected_actions": 0
+      },
+      "alive_start": 4
+    },
+    {
+      "schema_version": 2,
+      "run_id": "sample-first-look-v1",
+      "step": 2,
+      "agents": [
+        {
+          "id": 0,
+          "position": [
+            10,
+            6
+          ],
+          "energy": 317,
+          "age": 2,
+          "alive": true,
+          "parent": null,
+          "descendants": [],
+          "born_step": 0,
+          "death_step": null,
+          "death_cause": null,
+          "thoughts": "表示の説明用に用意された行動です。",
+          "action": "Stay",
+          "message": "周囲を見ながら待ちます。",
+          "mbti_type": null,
+          "memory": [
+            "Step 1: Move to (1,0); 表示の説明用に用意された行動です。",
+            "Step 2: Stay; 表示の説明用に用意された行動です。"
+          ],
+          "messages": [
+            "Agent1: 新しい仲間を増やします。",
+            "Agent2: 少しだけエネルギーを分けます。"
+          ]
+        },
+        {
+          "id": 1,
+          "position": [
+            0,
+            0
+          ],
+          "energy": 10,
+          "age": 2,
+          "alive": true,
+          "parent": null,
+          "descendants": [
+            4,
+            5
+          ],
+          "born_step": 0,
+          "death_step": null,
+          "death_cause": null,
+          "thoughts": "表示の説明用に用意された行動です。",
+          "action": "Reproduce",
+          "message": "もう一度仲間を増やしました。今度は残りが少ないです。",
+          "mbti_type": null,
+          "memory": [
+            "Step 1: Reproduce; 表示の説明用に用意された行動です。",
+            "Step 2: Reproduce; 表示の説明用に用意された行動です。"
+          ],
+          "messages": [
+            "Agent0: 隣のマスへ行ってみます。",
+            "Agent2: 少しだけエネルギーを分けます。"
+          ]
+        },
+        {
+          "id": 2,
+          "position": [
+            1,
+            4
+          ],
+          "energy": 128,
+          "age": 2,
+          "alive": true,
+          "parent": null,
+          "descendants": [],
+          "born_step": 0,
+          "death_step": null,
+          "death_cause": null,
+          "thoughts": "表示の説明用に用意された行動です。",
+          "action": "Move to (0,1)",
+          "message": "周囲を探してみます。",
+          "mbti_type": null,
+          "memory": [
+            "Step 1: Share: 0-20; 表示の説明用に用意された行動です。",
+            "Step 2: Move to (0,1); 表示の説明用に用意された行動です。"
+          ],
+          "messages": [
+            "Agent0: 隣のマスへ行ってみます。",
+            "Agent1: 新しい仲間を増やします。"
+          ]
+        },
+        {
+          "id": 3,
+          "position": [
+            3,
+            8
+          ],
+          "energy": 0,
+          "age": 1,
+          "alive": false,
+          "parent": null,
+          "descendants": [],
+          "born_step": 0,
+          "death_step": 1,
+          "death_cause": "energy_depleted",
+          "thoughts": "表示の説明用に用意された行動です。",
+          "action": "Share: 0-150",
+          "message": "全部譲ったら、自分の分がなくなってしまいました。",
+          "mbti_type": null,
+          "memory": [
+            "Step 1: Share: 0-150; 表示の説明用に用意された行動です。"
+          ],
+          "messages": []
+        },
+        {
+          "id": 4,
+          "position": [
+            1,
+            0
+          ],
+          "energy": 149,
+          "age": 1,
+          "alive": true,
+          "parent": 1,
+          "descendants": [],
+          "born_step": 1,
+          "death_step": null,
+          "death_cause": null,
+          "thoughts": "表示の説明用に用意された行動です。",
+          "action": "Stay",
+          "message": "周囲を見ながら待ちます。",
+          "mbti_type": null,
+          "memory": [
+            "Step 2: Stay; 表示の説明用に用意された行動です。"
+          ],
+          "messages": [
+            "Agent0: 隣のマスへ行ってみます。",
+            "Agent1: 新しい仲間を増やします。",
+            "Agent2: 少しだけエネルギーを分けます。"
+          ]
+        },
+        {
+          "id": 5,
+          "position": [
+            0,
+            1
+          ],
+          "energy": 150,
+          "age": 0,
+          "alive": true,
+          "parent": 1,
+          "descendants": [],
+          "born_step": 2,
+          "death_step": null,
+          "death_cause": null,
+          "thoughts": "",
+          "action": "",
+          "message": "",
+          "mbti_type": null,
+          "memory": [],
+          "messages": []
+        }
+      ],
+      "environment": {
+        "energy_sources": 6,
+        "resources": [
+          {
+            "x": 1,
+            "y": 0,
+            "energy": 50
+          },
+          {
+            "x": 1,
+            "y": 2,
+            "energy": 50
+          },
+          {
+            "x": 6,
+            "y": 3,
+            "energy": 50
+          },
+          {
+            "x": 7,
+            "y": 9,
+            "energy": 50
+          },
+          {
+            "x": 8,
+            "y": 6,
+            "energy": 50
+          },
+          {
+            "x": 10,
+            "y": 4,
+            "energy": 50
+          }
+        ]
+      },
+      "stats": {
+        "total_born": 2,
+        "total_died": 1,
+        "attacks": 0,
+        "shares": 2,
+        "reproductions": 2,
+        "total_actions": 8,
+        "valid_decisions": 8,
+        "llm_errors": 0,
+        "parse_errors": 0,
+        "rejected_actions": 0
+      },
+      "summary": {
+        "step": 2,
+        "alive": 5,
+        "total_born": 2,
+        "total_died": 1,
+        "attacks": 0,
+        "shares": 2,
+        "reproductions": 2,
+        "total_actions": 8,
+        "valid_decisions": 8,
+        "llm_errors": 0,
+        "parse_errors": 0,
+        "rejected_actions": 0,
+        "total_energy": 754,
+        "avg_energy": 150.8,
+        "avg_age": 1.4,
+        "energy_sources": 6,
+        "coop_rate": 0.25,
+        "attack_rate": 0.0,
+        "repro_rate": 0.25,
+        "mbti_distribution": {}
+      },
+      "events": [
+        {
+          "agent_id": 0,
+          "decision_source": "mock",
+          "decision_status": "ok",
+          "error_kind": "",
+          "reason": "",
+          "raw_response": "Action: [Stay]\nMessage: [周囲を見ながら待ちます。]\nThought: [表示の説明用に用意された行動です。]",
+          "system_prompt": "You are an independent Agent living on a toroidal Grid. Strive for survival and growth.\nYou can move one cell: Move to (1,0), Move to (-1,0), Move to (0,1), Move to (0,-1) (costs 2 energy), or Stay (costs 1 energy). Diagonal or longer moves are invalid.\nReproduce costs 70 energy, requires at least that energy and fewer than 8 living agents.\nMoving onto an Energy Source (E) gives 50 energy and consumes that source.\nAt zero or negative energy you die.\nShare: {id}-{amount} transfers a positive integer amount you can afford to another agent in your local view. Attack: {id} takes half (rounded down) of another visible agent's energy.\nShare and Attack have no additional energy cost. You cannot target yourself.\nYour Message will be delivered to nearby living agents for the next step.\nM=(x,y) is your absolute position; E=(dx,dy) and agent IDs use relative positions. x-1 is west, x+1 east, y-1 north, y+1 south; grid edges wrap.",
+          "user_prompt": "Global Info: Total Agents in the World: 4\nLocal View:\nM=(10,6)\nE=(2,5)\nE=(2,-4)\nE=(-4,-3)\nE=(-3,3)\nE=(-2,0)\nE=(0,-2)\n1=(dx,dy)=(1,5)\n2=(dx,dy)=(2,-3)\n4=(dx,dy)=(2,5)\nLATEST Status: Agent0, Energy: 318, Position: (10, 6), Cycles: 1\nMemory:\nStep 1: Move to (1,0); 表示の説明用に用意された行動です。\nMessages:\nAgent1: 新しい仲間を増やします。\nAgent2: 少しだけエネルギーを分けます。\nOutput exactly these three fields (choose one action; give brief reasoning):\nAction: [Move to (dx,dy) | Stay | Share: {id}-{amount} | Attack: {id} | Reproduce]\nMessage: [Your message to nearby agents, max 50 words]\nThought: [Brief reasoning for your action]",
+          "requested_action": "Stay",
+          "message": "周囲を見ながら待ちます。",
+          "thought": "表示の説明用に用意された行動です。",
+          "kind": "stay",
+          "energy_before": 318,
+          "position_before": [
+            10,
+            6
+          ],
+          "energy_collected": 0,
+          "energy_transferred": 0,
+          "energy_cost": 1,
+          "action_status": "executed",
+          "child_id": null,
+          "executed_action": "Stay",
+          "energy_after": 317,
+          "position_after": [
+            10,
+            6
+          ]
+        },
+        {
+          "agent_id": 1,
+          "decision_source": "mock",
+          "decision_status": "ok",
+          "error_kind": "",
+          "reason": "",
+          "raw_response": "Action: [Reproduce]\nMessage: [もう一度仲間を増やしました。今度は残りが少ないです。]\nThought: [表示の説明用に用意された行動です。]",
+          "system_prompt": "You are an independent Agent living on a toroidal Grid. Strive for survival and growth.\nYou can move one cell: Move to (1,0), Move to (-1,0), Move to (0,1), Move to (0,-1) (costs 2 energy), or Stay (costs 1 energy). Diagonal or longer moves are invalid.\nReproduce costs 70 energy, requires at least that energy and fewer than 8 living agents.\nMoving onto an Energy Source (E) gives 50 energy and consumes that source.\nAt zero or negative energy you die.\nShare: {id}-{amount} transfers a positive integer amount you can afford to another agent in your local view. Attack: {id} takes half (rounded down) of another visible agent's energy.\nShare and Attack have no additional energy cost. You cannot target yourself.\nYour Message will be delivered to nearby living agents for the next step.\nM=(x,y) is your absolute position; E=(dx,dy) and agent IDs use relative positions. x-1 is west, x+1 east, y-1 north, y+1 south; grid edges wrap.",
+          "user_prompt": "Global Info: Total Agents in the World: 4\nLocal View:\nM=(0,0)\nE=(1,0)\nE=(1,2)\nE=(-5,3)\nE=(-4,-2)\nE=(-3,-5)\nE=(-1,4)\n0=(dx,dy)=(-1,-5)\n2=(dx,dy)=(1,3)\n4=(dx,dy)=(1,0)\nLATEST Status: Agent1, Energy: 80, Position: (0, 0), Cycles: 1\nMemory:\nStep 1: Reproduce; 表示の説明用に用意された行動です。\nMessages:\nAgent0: 隣のマスへ行ってみます。\nAgent2: 少しだけエネルギーを分けます。\nOutput exactly these three fields (choose one action; give brief reasoning):\nAction: [Move to (dx,dy) | Stay | Share: {id}-{amount} | Attack: {id} | Reproduce]\nMessage: [Your message to nearby agents, max 50 words]\nThought: [Brief reasoning for your action]",
+          "requested_action": "Reproduce",
+          "message": "もう一度仲間を増やしました。今度は残りが少ないです。",
+          "thought": "表示の説明用に用意された行動です。",
+          "kind": "reproduce",
+          "energy_before": 80,
+          "position_before": [
+            0,
+            0
+          ],
+          "energy_collected": 0,
+          "energy_transferred": 0,
+          "energy_cost": 70,
+          "action_status": "executed",
+          "child_id": 5,
+          "executed_action": "Reproduce",
+          "energy_after": 10,
+          "position_after": [
+            0,
+            0
+          ]
+        },
+        {
+          "agent_id": 2,
+          "decision_source": "mock",
+          "decision_status": "ok",
+          "error_kind": "",
+          "reason": "",
+          "raw_response": "Action: [Move to (0,1)]\nMessage: [周囲を探してみます。]\nThought: [表示の説明用に用意された行動です。]",
+          "system_prompt": "You are an independent Agent living on a toroidal Grid. Strive for survival and growth.\nYou can move one cell: Move to (1,0), Move to (-1,0), Move to (0,1), Move to (0,-1) (costs 2 energy), or Stay (costs 1 energy). Diagonal or longer moves are invalid.\nReproduce costs 70 energy, requires at least that energy and fewer than 8 living agents.\nMoving onto an Energy Source (E) gives 50 energy and consumes that source.\nAt zero or negative energy you die.\nShare: {id}-{amount} transfers a positive integer amount you can afford to another agent in your local view. Attack: {id} takes half (rounded down) of another visible agent's energy.\nShare and Attack have no additional energy cost. You cannot target yourself.\nYour Message will be delivered to nearby living agents for the next step.\nM=(x,y) is your absolute position; E=(dx,dy) and agent IDs use relative positions. x-1 is west, x+1 east, y-1 north, y+1 south; grid edges wrap.",
+          "user_prompt": "Global Info: Total Agents in the World: 4\nLocal View:\nM=(1,3)\nE=(0,-3)\nE=(0,-1)\nE=(5,0)\nE=(-5,-5)\nE=(-4,3)\nE=(-2,1)\n0=(dx,dy)=(-2,3)\n1=(dx,dy)=(-1,-3)\n4=(dx,dy)=(0,-3)\nLATEST Status: Agent2, Energy: 130, Position: (1, 3), Cycles: 1\nMemory:\nStep 1: Share: 0-20; 表示の説明用に用意された行動です。\nMessages:\nAgent0: 隣のマスへ行ってみます。\nAgent1: 新しい仲間を増やします。\nOutput exactly these three fields (choose one action; give brief reasoning):\nAction: [Move to (dx,dy) | Stay | Share: {id}-{amount} | Attack: {id} | Reproduce]\nMessage: [Your message to nearby agents, max 50 words]\nThought: [Brief reasoning for your action]",
+          "requested_action": "Move to (0,1)",
+          "message": "周囲を探してみます。",
+          "thought": "表示の説明用に用意された行動です。",
+          "kind": "move",
+          "dx": 0,
+          "dy": 1,
+          "energy_before": 130,
+          "position_before": [
+            1,
+            3
+          ],
+          "energy_collected": 0,
+          "energy_transferred": 0,
+          "energy_cost": 2,
+          "action_status": "executed",
+          "child_id": null,
+          "executed_action": "Move to (0,1)",
+          "energy_after": 128,
+          "position_after": [
+            1,
+            4
+          ]
+        },
+        {
+          "agent_id": 4,
+          "decision_source": "mock",
+          "decision_status": "ok",
+          "error_kind": "",
+          "reason": "",
+          "raw_response": "Action: [Stay]\nMessage: [周囲を見ながら待ちます。]\nThought: [表示の説明用に用意された行動です。]",
+          "system_prompt": "You are an independent Agent living on a toroidal Grid. Strive for survival and growth.\nYou can move one cell: Move to (1,0), Move to (-1,0), Move to (0,1), Move to (0,-1) (costs 2 energy), or Stay (costs 1 energy). Diagonal or longer moves are invalid.\nReproduce costs 70 energy, requires at least that energy and fewer than 8 living agents.\nMoving onto an Energy Source (E) gives 50 energy and consumes that source.\nAt zero or negative energy you die.\nShare: {id}-{amount} transfers a positive integer amount you can afford to another agent in your local view. Attack: {id} takes half (rounded down) of another visible agent's energy.\nShare and Attack have no additional energy cost. You cannot target yourself.\nYour Message will be delivered to nearby living agents for the next step.\nM=(x,y) is your absolute position; E=(dx,dy) and agent IDs use relative positions. x-1 is west, x+1 east, y-1 north, y+1 south; grid edges wrap.",
+          "user_prompt": "Global Info: Total Agents in the World: 4\nLocal View:\nM=(1,0)\nE=(0,0)\nE=(0,2)\nE=(5,3)\nE=(-5,-2)\nE=(-4,-5)\nE=(-2,4)\n0=(dx,dy)=(-2,-5)\n1=(dx,dy)=(-1,0)\n2=(dx,dy)=(0,3)\nLATEST Status: Agent4, Energy: 150, Position: (1, 0), Cycles: 0\nMemory:\nNo previous memory\nMessages:\nAgent0: 隣のマスへ行ってみます。\nAgent1: 新しい仲間を増やします。\nAgent2: 少しだけエネルギーを分けます。\nOutput exactly these three fields (choose one action; give brief reasoning):\nAction: [Move to (dx,dy) | Stay | Share: {id}-{amount} | Attack: {id} | Reproduce]\nMessage: [Your message to nearby agents, max 50 words]\nThought: [Brief reasoning for your action]",
+          "requested_action": "Stay",
+          "message": "周囲を見ながら待ちます。",
+          "thought": "表示の説明用に用意された行動です。",
+          "kind": "stay",
+          "energy_before": 150,
+          "position_before": [
+            1,
+            0
+          ],
+          "energy_collected": 0,
+          "energy_transferred": 0,
+          "energy_cost": 1,
+          "action_status": "executed",
+          "child_id": null,
+          "executed_action": "Stay",
+          "energy_after": 149,
+          "position_after": [
+            1,
+            0
+          ]
+        }
+      ],
+      "step_stats": {
+        "total_born": 1,
+        "total_died": 0,
+        "attacks": 0,
+        "shares": 0,
+        "reproductions": 1,
+        "total_actions": 4,
+        "valid_decisions": 4,
+        "llm_errors": 0,
+        "parse_errors": 0,
+        "rejected_actions": 0
+      },
+      "alive_start": 4
+    },
+    {
+      "schema_version": 2,
+      "run_id": "sample-first-look-v1",
+      "step": 3,
+      "agents": [
+        {
+          "id": 0,
+          "position": [
+            10,
+            6
+          ],
+          "energy": 316,
+          "age": 3,
+          "alive": true,
+          "parent": null,
+          "descendants": [],
+          "born_step": 0,
+          "death_step": null,
+          "death_cause": null,
+          "thoughts": "表示の説明用に用意された行動です。",
+          "action": "Stay",
+          "message": "周囲を見ながら待ちます。",
+          "mbti_type": null,
+          "memory": [
+            "Step 1: Move to (1,0); 表示の説明用に用意された行動です。",
+            "Step 2: Stay; 表示の説明用に用意された行動です。",
+            "Step 3: Stay; 表示の説明用に用意された行動です。"
+          ],
+          "messages": [
+            "Agent1: もう一度仲間を増やしました。今度は残りが少ないです。",
+            "Agent2: 周囲を探してみます。",
+            "Agent4: 周囲を見ながら待ちます。"
+          ]
+        },
+        {
+          "id": 1,
+          "position": [
+            0,
+            0
+          ],
+          "energy": 39,
+          "age": 3,
+          "alive": true,
+          "parent": null,
+          "descendants": [
+            4,
+            5
+          ],
+          "born_step": 0,
+          "death_step": null,
+          "death_cause": null,
+          "thoughts": "表示の説明用に用意された行動です。",
+          "action": "Stay",
+          "message": "周囲を見ながら待ちます。",
+          "mbti_type": null,
+          "memory": [
+            "Step 1: Reproduce; 表示の説明用に用意された行動です。",
+            "Step 2: Reproduce; 表示の説明用に用意された行動です。",
+            "Step 3: Stay; 表示の説明用に用意された行動です。"
+          ],
+          "messages": [
+            "Agent0: 周囲を見ながら待ちます。",
+            "Agent2: 周囲を探してみます。",
+            "Agent4: 周囲を見ながら待ちます。"
+          ]
+        },
+        {
+          "id": 2,
+          "position": [
+            1,
+            4
+          ],
+          "energy": 98,
+          "age": 3,
+          "alive": true,
+          "parent": null,
+          "descendants": [],
+          "born_step": 0,
+          "death_step": null,
+          "death_cause": null,
+          "thoughts": "表示の説明用に用意された行動です。",
+          "action": "Share: 1-30",
+          "message": "エネルギーの少ない仲間へ分けます。",
+          "mbti_type": null,
+          "memory": [
+            "Step 1: Share: 0-20; 表示の説明用に用意された行動です。",
+            "Step 2: Move to (0,1); 表示の説明用に用意された行動です。",
+            "Step 3: Share: 1-30; 表示の説明用に用意された行動です。"
+          ],
+          "messages": [
+            "Agent0: 周囲を見ながら待ちます。",
+            "Agent1: もう一度仲間を増やしました。今度は残りが少ないです。",
+            "Agent4: 周囲を見ながら待ちます。"
+          ]
+        },
+        {
+          "id": 3,
+          "position": [
+            3,
+            8
+          ],
+          "energy": 0,
+          "age": 1,
+          "alive": false,
+          "parent": null,
+          "descendants": [],
+          "born_step": 0,
+          "death_step": 1,
+          "death_cause": "energy_depleted",
+          "thoughts": "表示の説明用に用意された行動です。",
+          "action": "Share: 0-150",
+          "message": "全部譲ったら、自分の分がなくなってしまいました。",
+          "mbti_type": null,
+          "memory": [
+            "Step 1: Share: 0-150; 表示の説明用に用意された行動です。"
+          ],
+          "messages": []
+        },
+        {
+          "id": 4,
+          "position": [
+            1,
+            0
+          ],
+          "energy": 148,
+          "age": 2,
+          "alive": true,
+          "parent": 1,
+          "descendants": [],
+          "born_step": 1,
+          "death_step": null,
+          "death_cause": null,
+          "thoughts": "表示の説明用に用意された行動です。",
+          "action": "Stay",
+          "message": "周囲を見ながら待ちます。",
+          "mbti_type": null,
+          "memory": [
+            "Step 2: Stay; 表示の説明用に用意された行動です。",
+            "Step 3: Stay; 表示の説明用に用意された行動です。"
+          ],
+          "messages": [
+            "Agent0: 周囲を見ながら待ちます。",
+            "Agent1: もう一度仲間を増やしました。今度は残りが少ないです。",
+            "Agent2: 周囲を探してみます。"
+          ]
+        },
+        {
+          "id": 5,
+          "position": [
+            0,
+            1
+          ],
+          "energy": 149,
+          "age": 1,
+          "alive": true,
+          "parent": 1,
+          "descendants": [],
+          "born_step": 2,
+          "death_step": null,
+          "death_cause": null,
+          "thoughts": "表示の説明用に用意された行動です。",
+          "action": "Stay",
+          "message": "周囲を見ながら待ちます。",
+          "mbti_type": null,
+          "memory": [
+            "Step 3: Stay; 表示の説明用に用意された行動です。"
+          ],
+          "messages": [
+            "Agent0: 周囲を見ながら待ちます。",
+            "Agent1: もう一度仲間を増やしました。今度は残りが少ないです。",
+            "Agent2: 周囲を探してみます。",
+            "Agent4: 周囲を見ながら待ちます。"
+          ]
+        }
+      ],
+      "environment": {
+        "energy_sources": 6,
+        "resources": [
+          {
+            "x": 1,
+            "y": 0,
+            "energy": 50
+          },
+          {
+            "x": 1,
+            "y": 2,
+            "energy": 50
+          },
+          {
+            "x": 6,
+            "y": 3,
+            "energy": 50
+          },
+          {
+            "x": 7,
+            "y": 9,
+            "energy": 50
+          },
+          {
+            "x": 8,
+            "y": 6,
+            "energy": 50
+          },
+          {
+            "x": 10,
+            "y": 4,
+            "energy": 50
+          }
+        ]
+      },
+      "stats": {
+        "total_born": 2,
+        "total_died": 1,
+        "attacks": 0,
+        "shares": 3,
+        "reproductions": 2,
+        "total_actions": 13,
+        "valid_decisions": 13,
+        "llm_errors": 0,
+        "parse_errors": 0,
+        "rejected_actions": 0
+      },
+      "summary": {
+        "step": 3,
+        "alive": 5,
+        "total_born": 2,
+        "total_died": 1,
+        "attacks": 0,
+        "shares": 3,
+        "reproductions": 2,
+        "total_actions": 13,
+        "valid_decisions": 13,
+        "llm_errors": 0,
+        "parse_errors": 0,
+        "rejected_actions": 0,
+        "total_energy": 750,
+        "avg_energy": 150.0,
+        "avg_age": 2.4,
+        "energy_sources": 6,
+        "coop_rate": 0.23076923076923078,
+        "attack_rate": 0.0,
+        "repro_rate": 0.15384615384615385,
+        "mbti_distribution": {}
+      },
+      "events": [
+        {
+          "agent_id": 0,
+          "decision_source": "mock",
+          "decision_status": "ok",
+          "error_kind": "",
+          "reason": "",
+          "raw_response": "Action: [Stay]\nMessage: [周囲を見ながら待ちます。]\nThought: [表示の説明用に用意された行動です。]",
+          "system_prompt": "You are an independent Agent living on a toroidal Grid. Strive for survival and growth.\nYou can move one cell: Move to (1,0), Move to (-1,0), Move to (0,1), Move to (0,-1) (costs 2 energy), or Stay (costs 1 energy). Diagonal or longer moves are invalid.\nReproduce costs 70 energy, requires at least that energy and fewer than 8 living agents.\nMoving onto an Energy Source (E) gives 50 energy and consumes that source.\nAt zero or negative energy you die.\nShare: {id}-{amount} transfers a positive integer amount you can afford to another agent in your local view. Attack: {id} takes half (rounded down) of another visible agent's energy.\nShare and Attack have no additional energy cost. You cannot target yourself.\nYour Message will be delivered to nearby living agents for the next step.\nM=(x,y) is your absolute position; E=(dx,dy) and agent IDs use relative positions. x-1 is west, x+1 east, y-1 north, y+1 south; grid edges wrap.",
+          "user_prompt": "Global Info: Total Agents in the World: 5\nLocal View:\nM=(10,6)\nE=(2,5)\nE=(2,-4)\nE=(-4,-3)\nE=(-3,3)\nE=(-2,0)\nE=(0,-2)\n1=(dx,dy)=(1,5)\n2=(dx,dy)=(2,-2)\n4=(dx,dy)=(2,5)\n5=(dx,dy)=(1,-5)\nLATEST Status: Agent0, Energy: 317, Position: (10, 6), Cycles: 2\nMemory:\nStep 1: Move to (1,0); 表示の説明用に用意された行動です。\nStep 2: Stay; 表示の説明用に用意された行動です。\nMessages:\nAgent1: もう一度仲間を増やしました。今度は残りが少ないです。\nAgent2: 周囲を探してみます。\nAgent4: 周囲を見ながら待ちます。\nOutput exactly these three fields (choose one action; give brief reasoning):\nAction: [Move to (dx,dy) | Stay | Share: {id}-{amount} | Attack: {id} | Reproduce]\nMessage: [Your message to nearby agents, max 50 words]\nThought: [Brief reasoning for your action]",
+          "requested_action": "Stay",
+          "message": "周囲を見ながら待ちます。",
+          "thought": "表示の説明用に用意された行動です。",
+          "kind": "stay",
+          "energy_before": 317,
+          "position_before": [
+            10,
+            6
+          ],
+          "energy_collected": 0,
+          "energy_transferred": 0,
+          "energy_cost": 1,
+          "action_status": "executed",
+          "child_id": null,
+          "executed_action": "Stay",
+          "energy_after": 316,
+          "position_after": [
+            10,
+            6
+          ]
+        },
+        {
+          "agent_id": 1,
+          "decision_source": "mock",
+          "decision_status": "ok",
+          "error_kind": "",
+          "reason": "",
+          "raw_response": "Action: [Stay]\nMessage: [周囲を見ながら待ちます。]\nThought: [表示の説明用に用意された行動です。]",
+          "system_prompt": "You are an independent Agent living on a toroidal Grid. Strive for survival and growth.\nYou can move one cell: Move to (1,0), Move to (-1,0), Move to (0,1), Move to (0,-1) (costs 2 energy), or Stay (costs 1 energy). Diagonal or longer moves are invalid.\nReproduce costs 70 energy, requires at least that energy and fewer than 8 living agents.\nMoving onto an Energy Source (E) gives 50 energy and consumes that source.\nAt zero or negative energy you die.\nShare: {id}-{amount} transfers a positive integer amount you can afford to another agent in your local view. Attack: {id} takes half (rounded down) of another visible agent's energy.\nShare and Attack have no additional energy cost. You cannot target yourself.\nYour Message will be delivered to nearby living agents for the next step.\nM=(x,y) is your absolute position; E=(dx,dy) and agent IDs use relative positions. x-1 is west, x+1 east, y-1 north, y+1 south; grid edges wrap.",
+          "user_prompt": "Global Info: Total Agents in the World: 5\nLocal View:\nM=(0,0)\nE=(1,0)\nE=(1,2)\nE=(-5,3)\nE=(-4,-2)\nE=(-3,-5)\nE=(-1,4)\n0=(dx,dy)=(-1,-5)\n2=(dx,dy)=(1,4)\n4=(dx,dy)=(1,0)\n5=(dx,dy)=(0,1)\nLATEST Status: Agent1, Energy: 10, Position: (0, 0), Cycles: 2\nMemory:\nStep 1: Reproduce; 表示の説明用に用意された行動です。\nStep 2: Reproduce; 表示の説明用に用意された行動です。\nMessages:\nAgent0: 周囲を見ながら待ちます。\nAgent2: 周囲を探してみます。\nAgent4: 周囲を見ながら待ちます。\nOutput exactly these three fields (choose one action; give brief reasoning):\nAction: [Move to (dx,dy) | Stay | Share: {id}-{amount} | Attack: {id} | Reproduce]\nMessage: [Your message to nearby agents, max 50 words]\nThought: [Brief reasoning for your action]",
+          "requested_action": "Stay",
+          "message": "周囲を見ながら待ちます。",
+          "thought": "表示の説明用に用意された行動です。",
+          "kind": "stay",
+          "energy_before": 10,
+          "position_before": [
+            0,
+            0
+          ],
+          "energy_collected": 0,
+          "energy_transferred": 0,
+          "energy_cost": 1,
+          "action_status": "executed",
+          "child_id": null,
+          "executed_action": "Stay",
+          "energy_after": 9,
+          "position_after": [
+            0,
+            0
+          ]
+        },
+        {
+          "agent_id": 2,
+          "decision_source": "mock",
+          "decision_status": "ok",
+          "error_kind": "",
+          "reason": "",
+          "raw_response": "Action: [Share: 1-30]\nMessage: [エネルギーの少ない仲間へ分けます。]\nThought: [表示の説明用に用意された行動です。]",
+          "system_prompt": "You are an independent Agent living on a toroidal Grid. Strive for survival and growth.\nYou can move one cell: Move to (1,0), Move to (-1,0), Move to (0,1), Move to (0,-1) (costs 2 energy), or Stay (costs 1 energy). Diagonal or longer moves are invalid.\nReproduce costs 70 energy, requires at least that energy and fewer than 8 living agents.\nMoving onto an Energy Source (E) gives 50 energy and consumes that source.\nAt zero or negative energy you die.\nShare: {id}-{amount} transfers a positive integer amount you can afford to another agent in your local view. Attack: {id} takes half (rounded down) of another visible agent's energy.\nShare and Attack have no additional energy cost. You cannot target yourself.\nYour Message will be delivered to nearby living agents for the next step.\nM=(x,y) is your absolute position; E=(dx,dy) and agent IDs use relative positions. x-1 is west, x+1 east, y-1 north, y+1 south; grid edges wrap.",
+          "user_prompt": "Global Info: Total Agents in the World: 5\nLocal View:\nM=(1,4)\nE=(0,-4)\nE=(0,-2)\nE=(5,-1)\nE=(-5,5)\nE=(-4,2)\nE=(-2,0)\n0=(dx,dy)=(-2,2)\n1=(dx,dy)=(-1,-4)\n4=(dx,dy)=(0,-4)\n5=(dx,dy)=(-1,-3)\nLATEST Status: Agent2, Energy: 128, Position: (1, 4), Cycles: 2\nMemory:\nStep 1: Share: 0-20; 表示の説明用に用意された行動です。\nStep 2: Move to (0,1); 表示の説明用に用意された行動です。\nMessages:\nAgent0: 周囲を見ながら待ちます。\nAgent1: もう一度仲間を増やしました。今度は残りが少ないです。\nAgent4: 周囲を見ながら待ちます。\nOutput exactly these three fields (choose one action; give brief reasoning):\nAction: [Move to (dx,dy) | Stay | Share: {id}-{amount} | Attack: {id} | Reproduce]\nMessage: [Your message to nearby agents, max 50 words]\nThought: [Brief reasoning for your action]",
+          "requested_action": "Share: 1-30",
+          "message": "エネルギーの少ない仲間へ分けます。",
+          "thought": "表示の説明用に用意された行動です。",
+          "kind": "share",
+          "target_id": 1,
+          "amount": 30,
+          "energy_before": 128,
+          "position_before": [
+            1,
+            4
+          ],
+          "energy_collected": 0,
+          "energy_transferred": 30,
+          "energy_cost": 0,
+          "action_status": "executed",
+          "child_id": null,
+          "executed_action": "Share: 1-30",
+          "energy_after": 98,
+          "position_after": [
+            1,
+            4
+          ]
+        },
+        {
+          "agent_id": 4,
+          "decision_source": "mock",
+          "decision_status": "ok",
+          "error_kind": "",
+          "reason": "",
+          "raw_response": "Action: [Stay]\nMessage: [周囲を見ながら待ちます。]\nThought: [表示の説明用に用意された行動です。]",
+          "system_prompt": "You are an independent Agent living on a toroidal Grid. Strive for survival and growth.\nYou can move one cell: Move to (1,0), Move to (-1,0), Move to (0,1), Move to (0,-1) (costs 2 energy), or Stay (costs 1 energy). Diagonal or longer moves are invalid.\nReproduce costs 70 energy, requires at least that energy and fewer than 8 living agents.\nMoving onto an Energy Source (E) gives 50 energy and consumes that source.\nAt zero or negative energy you die.\nShare: {id}-{amount} transfers a positive integer amount you can afford to another agent in your local view. Attack: {id} takes half (rounded down) of another visible agent's energy.\nShare and Attack have no additional energy cost. You cannot target yourself.\nYour Message will be delivered to nearby living agents for the next step.\nM=(x,y) is your absolute position; E=(dx,dy) and agent IDs use relative positions. x-1 is west, x+1 east, y-1 north, y+1 south; grid edges wrap.",
+          "user_prompt": "Global Info: Total Agents in the World: 5\nLocal View:\nM=(1,0)\nE=(0,0)\nE=(0,2)\nE=(5,3)\nE=(-5,-2)\nE=(-4,-5)\nE=(-2,4)\n0=(dx,dy)=(-2,-5)\n1=(dx,dy)=(-1,0)\n2=(dx,dy)=(0,4)\n5=(dx,dy)=(-1,1)\nLATEST Status: Agent4, Energy: 149, Position: (1, 0), Cycles: 1\nMemory:\nStep 2: Stay; 表示の説明用に用意された行動です。\nMessages:\nAgent0: 周囲を見ながら待ちます。\nAgent1: もう一度仲間を増やしました。今度は残りが少ないです。\nAgent2: 周囲を探してみます。\nOutput exactly these three fields (choose one action; give brief reasoning):\nAction: [Move to (dx,dy) | Stay | Share: {id}-{amount} | Attack: {id} | Reproduce]\nMessage: [Your message to nearby agents, max 50 words]\nThought: [Brief reasoning for your action]",
+          "requested_action": "Stay",
+          "message": "周囲を見ながら待ちます。",
+          "thought": "表示の説明用に用意された行動です。",
+          "kind": "stay",
+          "energy_before": 149,
+          "position_before": [
+            1,
+            0
+          ],
+          "energy_collected": 0,
+          "energy_transferred": 0,
+          "energy_cost": 1,
+          "action_status": "executed",
+          "child_id": null,
+          "executed_action": "Stay",
+          "energy_after": 148,
+          "position_after": [
+            1,
+            0
+          ]
+        },
+        {
+          "agent_id": 5,
+          "decision_source": "mock",
+          "decision_status": "ok",
+          "error_kind": "",
+          "reason": "",
+          "raw_response": "Action: [Stay]\nMessage: [周囲を見ながら待ちます。]\nThought: [表示の説明用に用意された行動です。]",
+          "system_prompt": "You are an independent Agent living on a toroidal Grid. Strive for survival and growth.\nYou can move one cell: Move to (1,0), Move to (-1,0), Move to (0,1), Move to (0,-1) (costs 2 energy), or Stay (costs 1 energy). Diagonal or longer moves are invalid.\nReproduce costs 70 energy, requires at least that energy and fewer than 8 living agents.\nMoving onto an Energy Source (E) gives 50 energy and consumes that source.\nAt zero or negative energy you die.\nShare: {id}-{amount} transfers a positive integer amount you can afford to another agent in your local view. Attack: {id} takes half (rounded down) of another visible agent's energy.\nShare and Attack have no additional energy cost. You cannot target yourself.\nYour Message will be delivered to nearby living agents for the next step.\nM=(x,y) is your absolute position; E=(dx,dy) and agent IDs use relative positions. x-1 is west, x+1 east, y-1 north, y+1 south; grid edges wrap.",
+          "user_prompt": "Global Info: Total Agents in the World: 5\nLocal View:\nM=(0,1)\nE=(1,-1)\nE=(1,1)\nE=(-5,2)\nE=(-4,-3)\nE=(-3,5)\nE=(-1,3)\n0=(dx,dy)=(-1,5)\n1=(dx,dy)=(0,-1)\n2=(dx,dy)=(1,3)\n4=(dx,dy)=(1,-1)\nLATEST Status: Agent5, Energy: 150, Position: (0, 1), Cycles: 0\nMemory:\nNo previous memory\nMessages:\nAgent0: 周囲を見ながら待ちます。\nAgent1: もう一度仲間を増やしました。今度は残りが少ないです。\nAgent2: 周囲を探してみます。\nAgent4: 周囲を見ながら待ちます。\nOutput exactly these three fields (choose one action; give brief reasoning):\nAction: [Move to (dx,dy) | Stay | Share: {id}-{amount} | Attack: {id} | Reproduce]\nMessage: [Your message to nearby agents, max 50 words]\nThought: [Brief reasoning for your action]",
+          "requested_action": "Stay",
+          "message": "周囲を見ながら待ちます。",
+          "thought": "表示の説明用に用意された行動です。",
+          "kind": "stay",
+          "energy_before": 150,
+          "position_before": [
+            0,
+            1
+          ],
+          "energy_collected": 0,
+          "energy_transferred": 0,
+          "energy_cost": 1,
+          "action_status": "executed",
+          "child_id": null,
+          "executed_action": "Stay",
+          "energy_after": 149,
+          "position_after": [
+            0,
+            1
+          ]
+        }
+      ],
+      "step_stats": {
+        "total_born": 0,
+        "total_died": 0,
+        "attacks": 0,
+        "shares": 1,
+        "reproductions": 0,
+        "total_actions": 5,
+        "valid_decisions": 5,
+        "llm_errors": 0,
+        "parse_errors": 0,
+        "rejected_actions": 0
+      },
+      "alive_start": 5
+    }
+  ],
+  "output_dir": "examples/first-look",
+  "recovered_truncated_tail": false
+}

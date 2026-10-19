@@ -1,0 +1,22 @@
+run_id,step,id,x,y,energy,age,alive,mbti_type,parent,born_step,death_step,death_cause,action
+sample-first-look-v1,0,0,9,6,150,0,True,,,0,,,
+sample-first-look-v1,0,1,0,0,150,0,True,,,0,,,
+sample-first-look-v1,0,2,1,3,150,0,True,,,0,,,
+sample-first-look-v1,0,3,3,8,150,0,True,,,0,,,
+sample-first-look-v1,1,0,10,6,318,1,True,,,0,,,"Move to (1,0)"
+sample-first-look-v1,1,1,0,0,80,1,True,,,0,,,Reproduce
+sample-first-look-v1,1,2,1,3,130,1,True,,,0,,,Share: 0-20
+sample-first-look-v1,1,3,3,8,0,1,False,,,0,1,energy_depleted,Share: 0-150
+sample-first-look-v1,1,4,1,0,150,0,True,,1,1,,,
+sample-first-look-v1,2,0,10,6,317,2,True,,,0,,,Stay
+sample-first-look-v1,2,1,0,0,10,2,True,,,0,,,Reproduce
+sample-first-look-v1,2,2,1,4,128,2,True,,,0,,,"Move to (0,1)"
+sample-first-look-v1,2,3,3,8,0,1,False,,,0,1,energy_depleted,Share: 0-150
+sample-first-look-v1,2,4,1,0,149,1,True,,1,1,,,Stay
+sample-first-look-v1,2,5,0,1,150,0,True,,1,2,,,
+sample-first-look-v1,3,0,10,6,316,3,True,,,0,,,Stay
+sample-first-look-v1,3,1,0,0,39,3,True,,,0,,,Stay
+sample-first-look-v1,3,2,1,4,98,3,True,,,0,,,Share: 1-30
+sample-first-look-v1,3,3,3,8,0,1,False,,,0,1,energy_depleted,Share: 0-150
+sample-first-look-v1,3,4,1,0,148,2,True,,1,1,,,Stay
+sample-first-look-v1,3,5,0,1,149,1,True,,1,2,,,Stay

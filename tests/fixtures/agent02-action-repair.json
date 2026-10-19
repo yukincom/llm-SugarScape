@@ -1,0 +1,45 @@
+{
+  "source_run": "2026-10-09_23-49-31_Huihui-gemma-4-26B-A4B-it-qat-q4_0-unquantized-abliterated-mlx-4Bit",
+  "cases": [
+    {
+      "step": 3,
+      "action_block": "Next Action: x+1, y-1",
+      "expected_action": null
+    },
+    {
+      "step": 4,
+      "action_block": "Next Action: x+1, y-1 (Note: The prompt asks for a single move command. To get to (1,-1), I must move x+1 then y-1. Since I must choose one, I will move toward the nearest source.)\nNext Action: x+1",
+      "expected_action": "x+1"
+    },
+    {
+      "step": 5,
+      "action_block": "Next Action: x+1, y-1 (Note: The prompt asks for a single move command from the set [x+1, x-1, y+1, y-1, stay, reproduce]. To get to (1,-1), I must move x+1 first, then y-1. Since I can only choose one move per step, I will move toward the source.)\nNext Action: x+1",
+      "expected_action": "x+1"
+    },
+    {
+      "step": 6,
+      "action_block": "Next Action (choose only one; y-1|x-1|y+1|x+1|stay|reproduce):\nx+1, y-1 (Note: The prompt requires a single move command, but since (1,-1) is at relative position (1,-1), I must move east then north. I will start by moving east.)\nx+1",
+      "expected_action": "x+1"
+    },
+    {
+      "step": 7,
+      "action_block": "Next Action (choose only one; y-1|x-1|y+1|x+1|stay|reproduce):\nx+1, y-1 (Note: The prompt asks for one move, but since (1,-1) is a single move away, I will move to x+1, y-1 or simply move toward it. Re-reading: The move options are [x+1, x-1, y+1, y-1]. To get to (1,-1), I must move x+1 then y-1. Since I can only choose one, I will move x+1 first or y-1 first. Let's move x+1 to get closer to the source at (1,-1)). \nWait, the move options provided are single directions. To get to (1,-1), I need to move x+1 then y-1. I will move x+1.\n\nActually, let's pick a single move: x+1.",
+      "expected_action": "x+1"
+    },
+    {
+      "step": 8,
+      "action_block": "Next Action (choose only one; y-1|x-1|y+1|x+1|stay|reproduce):\nx+1, y-1 (Note: The prompt requires a single move command, but since (1,-1) is at relative position (1,-1), it requires two steps: x+1 then y-1. I will move toward it step-by-step. I will start with x+1 or y-1. Let's choose x+1 to move toward the source at (1,-1)).\nWait, the instruction says \"choose only one\". To get to (1,-1), I must move x+1 then y-1. I will move x+1 first.\n\nNext Action: x+1",
+      "expected_action": "x+1"
+    },
+    {
+      "step": 9,
+      "action_block": "Next Action: x+1, y-1 (Note: The prompt asks for a single move command from the set [x+1, x-1, y+1, y-1, stay, reproduce]. To get to (1,-1), I must move x+1 then y-1. I will start with x+1 or y-1. Let's choose x+1 to move toward the source at (1,-1)).\nWait, the instruction says \"choose only one\". To get to (1,-1), I need to move east then north. I will move x+1 first.\n\nNext Action: x+1",
+      "expected_action": "x+1"
+    },
+    {
+      "step": 10,
+      "action_block": "Next Action (choose only one; y-1|x-1|y+1|x+1|stay|reproduce):\nx+1, y-1 (Note: The prompt asks for a single move command, but to get to (1,-1) from (0,0), I must move east then north. Since I must choose one, I will move toward the closest source.)\nx+1",
+      "expected_action": "x+1"
+    }
+  ]
+}

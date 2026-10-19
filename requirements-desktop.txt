@@ -1,0 +1,3 @@
+-r requirements.txt
+pywebview==6.2.1
+py2app==0.28.10; sys_platform == "darwin"

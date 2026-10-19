@@ -1,0 +1,14 @@
+run_id,step,agent_id,decision_source,decision_status,requested_action,kind,dx,dy,amount,executed_action,action_status,reason,error_kind,http_status,finish_reason,latency_ms,prompt_tokens,completion_tokens,energy_before,energy_after,energy_collected,energy_transferred,energy_cost,target_id,child_id,x_before,y_before,x_after,y_after,message,thought
+sample-first-look-v1,1,0,mock,ok,"Move to (1,0)",move,1,0,,"Move to (1,0)",executed,,,,,,,,150,148,0,0,2,,,9,6,10,6,隣のマスへ行ってみます。,表示の説明用に用意された行動です。
+sample-first-look-v1,1,1,mock,ok,Reproduce,reproduce,,,,Reproduce,executed,,,,,,,,150,80,0,0,70,,4,0,0,0,0,新しい仲間を増やします。,表示の説明用に用意された行動です。
+sample-first-look-v1,1,2,mock,ok,Share: 0-20,share,,,20,Share: 0-20,executed,,,,,,,,150,130,0,20,0,0,,1,3,1,3,少しだけエネルギーを分けます。,表示の説明用に用意された行動です。
+sample-first-look-v1,1,3,mock,ok,Share: 0-150,share,,,150,Share: 0-150,executed,,,,,,,,150,0,0,150,0,0,,3,8,3,8,全部譲ったら、自分の分がなくなってしまいました。,表示の説明用に用意された行動です。
+sample-first-look-v1,2,0,mock,ok,Stay,stay,,,,Stay,executed,,,,,,,,318,317,0,0,1,,,10,6,10,6,周囲を見ながら待ちます。,表示の説明用に用意された行動です。
+sample-first-look-v1,2,1,mock,ok,Reproduce,reproduce,,,,Reproduce,executed,,,,,,,,80,10,0,0,70,,5,0,0,0,0,もう一度仲間を増やしました。今度は残りが少ないです。,表示の説明用に用意された行動です。
+sample-first-look-v1,2,2,mock,ok,"Move to (0,1)",move,0,1,,"Move to (0,1)",executed,,,,,,,,130,128,0,0,2,,,1,3,1,4,周囲を探してみます。,表示の説明用に用意された行動です。
+sample-first-look-v1,2,4,mock,ok,Stay,stay,,,,Stay,executed,,,,,,,,150,149,0,0,1,,,1,0,1,0,周囲を見ながら待ちます。,表示の説明用に用意された行動です。
+sample-first-look-v1,3,0,mock,ok,Stay,stay,,,,Stay,executed,,,,,,,,317,316,0,0,1,,,10,6,10,6,周囲を見ながら待ちます。,表示の説明用に用意された行動です。
+sample-first-look-v1,3,1,mock,ok,Stay,stay,,,,Stay,executed,,,,,,,,10,9,0,0,1,,,0,0,0,0,周囲を見ながら待ちます。,表示の説明用に用意された行動です。
+sample-first-look-v1,3,2,mock,ok,Share: 1-30,share,,,30,Share: 1-30,executed,,,,,,,,128,98,0,30,0,1,,1,4,1,4,エネルギーの少ない仲間へ分けます。,表示の説明用に用意された行動です。
+sample-first-look-v1,3,4,mock,ok,Stay,stay,,,,Stay,executed,,,,,,,,149,148,0,0,1,,,1,0,1,0,周囲を見ながら待ちます。,表示の説明用に用意された行動です。
+sample-first-look-v1,3,5,mock,ok,Stay,stay,,,,Stay,executed,,,,,,,,150,149,0,0,1,,,0,1,0,1,周囲を見ながら待ちます。,表示の説明用に用意された行動です。

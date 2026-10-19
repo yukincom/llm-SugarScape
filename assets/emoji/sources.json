@@ -1,0 +1,53 @@
+{
+  "1f607.png": {
+    "url": "https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f607.png",
+    "sha256": "872aa7cb9054653cf230e04ce27232d9322b3f93c911e7ee8e7fe4d19bce50e6"
+  },
+  "1f631.png": {
+    "url": "https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f631.png",
+    "sha256": "42e6b438eba01cf441e8e1bdde37ddb2bd9278ac26526acbb930c1557a75e0b7"
+  },
+  "1f642.png": {
+    "url": "https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f642.png",
+    "sha256": "c7a2c052f383509ac9ec9da7f34cccc4c1d35040799426588c54a0d83cd9628f"
+  },
+  "1f60a.png": {
+    "url": "https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f60a.png",
+    "sha256": "5dc76062acc5a80d95fdd823db908640d52dac05ad1a4899ab9e723bfa0bbbfb"
+  },
+  "1f621.png": {
+    "url": "https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f621.png",
+    "sha256": "f65d755195cfb95f5c3e38a33d5ccd935236ff2869a720cdbcb8ac667c073e7e"
+  },
+  "1f62d.png": {
+    "url": "https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f62d.png",
+    "sha256": "c22c89c24607d04f39094af2216b611d1d033055b31afafbc6a185990982b844"
+  },
+  "1f970.png": {
+    "url": "https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f970.png",
+    "sha256": "d1b268344fa3a7ee27d6efbbcabd6d4f5214294120de1c2c85b6b0979e22e9ab"
+  },
+  "1f36c.png": {
+    "url": "https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f36c.png",
+    "sha256": "9cfc39ffe5295c4af8ea1e676baf92b4ad150942b123f2fd59eb24613620295b"
+  },
+  "LICENSE-GRAPHICS": {
+    "url": "https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/LICENSE-GRAPHICS",
+    "sha256": "8ae9438818c26e4873b91d8c6ad620526c011e27e125677f13031eda903f007c"
+  },
+  "candy-pink.png": {
+    "method": "Built-in image_gen; resized to 72x72 with macOS sips",
+    "original": "../artwork/candy-pink-original.png",
+    "original_sha256": "51000ca66802f20717b0fd5852ad8271b79783821e83e20cc3e85ac37519f751",
+    "prompt": "../../docs/2026-10-09-pink-candy-icon.md",
+    "sha256": "bcca9b2196438efe8b9f8d2744396956cad40e609be1ebbce65cf9d80edbf126"
+  },
+  "1f635-200d-1f4ab.png": {
+    "url": "https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f635-200d-1f4ab.png",
+    "sha256": "ef4045e626f3482914fd780dd83571aee059968bb2a90aee7589b3c32f12714b"
+  },
+  "1f618.png": {
+    "url": "https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f618.png",
+    "sha256": "cfed922412955d0a799efd8a55c27bd26423db41334d429ce3e037d726545a22"
+  }
+}

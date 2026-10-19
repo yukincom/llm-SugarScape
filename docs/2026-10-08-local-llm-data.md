@@ -10,7 +10,7 @@
 
 ## ファイルと結合キー
 
-データ形式は `schema_version=1`、修正後のルールは `engine_version=2.0`。UTC時刻とランダム識別子から一意run IDを作り、再実行でも上書きしない。
+この時点のデータ形式は `schema_version=1`、修正後のルールは `engine_version=2.0`。UTC時刻とランダム識別子から一意run IDを作り、再実行でも上書きしない。2026-10-09に実施日・モデル情報を追加してschema 2へ更新した。現在のモデル記録と旧形式の扱いは [追加仕様](2026-10-09-experiment-model-records.md) を参照。
 
 | ファイル | 粒度・用途 |
 | --- | --- |
@@ -43,7 +43,7 @@
 
 エラー・不正行動は待機（cost 1）として進行し、モデルが選んだ待機と区別する。エラーを含むrunは `completed_with_errors`。拒否のみなら `completed` であり、拒否率も観測対象となる。エラー後の状態はfallbackの影響を受けるため、モデル比較には原則 `completed`、`mode=llm`、同設定・同実装のrunを使う。`aggregate` は比較表のみを作り、条件の違う実験を自動平均したり有意差を計算したりしない。
 
-`response_model` はサーバー報告値そのもの。今回のMLXは別名 `default_model` を返すため、これだけでは実モデルを識別できない。起動引数・ログで確認したモデル名を研究記録にも併記する。seedは環境・MBTI・繁殖の乱数用であり、LLM出力の完全再現を保証しない。
+schema 1の `response_model` はサーバー報告値そのもの。この時のMLXは別名 `default_model` を返すため、これだけでは実モデルを識別できない。schema 2ではこの重複値を削除し、API指定名を `config.model`、照合した実モデルを `model.id` に記録する。seedは環境・MBTI・繁殖の乱数用であり、LLM出力の完全再現を保証しない。
 
 ## ルールと修正
 

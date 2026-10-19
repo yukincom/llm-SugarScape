@@ -1,0 +1,210 @@
+{
+  "run_id": "20261014T130442881976Z_0_713efb6a",
+  "method": "Two Codex reviewers read all stored English raw responses against user prompts and frozen observations. This is a qualitative review, not a validated automatic semantic classifier.",
+  "responses_reviewed": 69,
+  "explicit_self_other_identity_swaps_found": 0,
+  "self_state_ownership_swaps_found": 0,
+  "share_attack_target_accuracy": null,
+  "coverage": {
+    "visible_other_decisions": 0,
+    "received_message_decisions": 53,
+    "received_message_entries": 122,
+    "memory_decisions": 65,
+    "share_attack_requests": 0
+  },
+  "examples": [
+    {
+      "step": 10,
+      "agent_id": 2,
+      "classification": "correct_self_status",
+      "quote": "Agent2 staying at (10,5) with 2 energy.",
+      "self_status": {
+        "agent_id": 2,
+        "energy": 2,
+        "position": [
+          10,
+          5
+        ]
+      },
+      "requested_action": "Stay",
+      "executed_action": "Stay",
+      "explanation": "Own identity, position and current energy match the frozen observation."
+    },
+    {
+      "step": 11,
+      "agent_id": 1,
+      "classification": "correct_self_despite_other_message",
+      "quote": "I have 50 energy",
+      "self_status": {
+        "agent_id": 1,
+        "energy": 50,
+        "position": [
+          10,
+          10
+        ]
+      },
+      "requested_action": "Move to (0,1)",
+      "executed_action": "Move to (0,1)",
+      "explanation": "Received Agent2 reporting 2 energy, but uses own current energy 50."
+    },
+    {
+      "step": 2,
+      "agent_id": 1,
+      "classification": "correct_sender_attribution",
+      "quote": "especially since Agent0 mentioned moving south",
+      "self_status": {
+        "agent_id": 1,
+        "energy": 68,
+        "position": [
+          10,
+          1
+        ]
+      },
+      "requested_action": "Move to (0,1)",
+      "executed_action": "Move to (0,1)",
+      "explanation": "The sender and message content match the received Agent0 statement."
+    },
+    {
+      "step": 2,
+      "agent_id": 0,
+      "classification": "direction_sign_error",
+      "quote": "Moving north (0,1)",
+      "self_status": {
+        "agent_id": 0,
+        "energy": 18,
+        "position": [
+          3,
+          3
+        ]
+      },
+      "requested_action": "Move to (0,1)",
+      "executed_action": "Move to (0,1)",
+      "explanation": "The system specifies +y south. This is a direction error, not an identity swap."
+    },
+    {
+      "step": 7,
+      "agent_id": 0,
+      "classification": "missed_visible_resource",
+      "quote": "no visible agents or energy sources",
+      "self_status": {
+        "agent_id": 0,
+        "energy": 8,
+        "position": [
+          3,
+          8
+        ]
+      },
+      "requested_action": "Move to (0,1)",
+      "executed_action": "Move to (0,1)",
+      "explanation": "E1 southwest, distance 4.2 is present in the delivered input."
+    },
+    {
+      "step": 9,
+      "agent_id": 0,
+      "classification": "spatial_reasoning_error",
+      "quote": "west/northwest (distance 3.2)",
+      "self_status": {
+        "agent_id": 0,
+        "energy": 4,
+        "position": [
+          3,
+          10
+        ]
+      },
+      "requested_action": "Move to (0,-1)",
+      "executed_action": "Move to (0,-1)",
+      "explanation": "The delivered direction is west; source offset is (-3,+1), so moving north increases distance."
+    },
+    {
+      "step": 3,
+      "agent_id": 3,
+      "classification": "invalid_move_repeated",
+      "quote": "Moving diagonally (1,1) costs 2 energy",
+      "self_status": {
+        "agent_id": 3,
+        "energy": 16,
+        "position": [
+          14,
+          10
+        ]
+      },
+      "requested_action": "Move to (1,1)",
+      "executed_action": "Stay",
+      "explanation": "Same forbidden diagonal requested at steps 3 through 18; all became default_stay. Not an identity error."
+    },
+    {
+      "step": 10,
+      "agent_id": 0,
+      "classification": "thought_action_conflict",
+      "quote": "I must Stay.",
+      "self_status": {
+        "agent_id": 0,
+        "energy": 2,
+        "position": [
+          3,
+          9
+        ]
+      },
+      "requested_action": "Move to (0,1)",
+      "executed_action": "Move to (0,1)",
+      "explanation": "Final Thought says Stay while Action and executed action are Move to (0,1)."
+    },
+    {
+      "step": 24,
+      "agent_id": 1,
+      "classification": "thought_action_conflict",
+      "quote": "I will Stay to conserve energy.",
+      "self_status": {
+        "agent_id": 1,
+        "energy": 25,
+        "position": [
+          10,
+          7
+        ]
+      },
+      "requested_action": "Move to (0,1)",
+      "executed_action": "Move to (0,1)",
+      "explanation": "Final Thought says Stay while Action and executed action are Move to (0,1)."
+    },
+    {
+      "step": 26,
+      "agent_id": 1,
+      "classification": "reproduction_rule_misreading",
+      "quote": "reproduction is impossible due to the requirement of fewer than 4 living agents",
+      "self_status": {
+        "agent_id": 1,
+        "energy": 21,
+        "position": [
+          10,
+          9
+        ]
+      },
+      "requested_action": "Move to (0,1)",
+      "executed_action": "Move to (0,1)",
+      "explanation": "One living agent meets the population condition; the agent is below the required 70 energy."
+    },
+    {
+      "step": 8,
+      "agent_id": 0,
+      "classification": "local_resource_label_inference",
+      "quote": "Agent3 is already moving to collect E1.",
+      "self_status": {
+        "agent_id": 0,
+        "energy": 6,
+        "position": [
+          3,
+          9
+        ]
+      },
+      "requested_action": "Move to (0,1)",
+      "executed_action": "Move to (0,1)",
+      "explanation": "E1 labels are not persistent across agents. Here both refer to the same remaining resource, so this is not a demonstrated target mix-up."
+    }
+  ],
+  "limits": [
+    "One seed, one run, no paired 30-turn old-format condition",
+    "All Visible Other Agents lists are empty; visual target binding is untested",
+    "Zero findings do not establish absence across other situations",
+    "Other logical and spatial failures are kept separate from identity confusion"
+  ]
+}
