@@ -71,7 +71,7 @@ def _ca_certificates(path):
     """Read complete PEM blocks, preserving OpenSSL X509_AUX trust/reject."""
     data = Path(path).read_bytes()
     certificates = []
-    for match in re.finditer(rb"-----BEGIN (CERTIFICATE|TRUSTED CERTIFICATE)-----\s+"
+    for match in re.finditer(rb"-----BEGIN (CERTIFICATE|TRUSTED CERTIFICATE|X509 CERTIFICATE)-----\s+"
                              rb"(.*?)-----END \1-----", data, re.DOTALL):
         der = base64.b64decode(re.sub(rb"\s", b"", match[2]), validate=True)
         # A TRUSTED CERTIFICATE appends X509_AUX after the certificate DER.
