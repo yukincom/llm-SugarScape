@@ -1,11 +1,18 @@
 """Build and verify a standalone Mac app before archiving it."""
 
 from pathlib import Path
+import os
 import shutil
 import subprocess
 import sys
+import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from app_presets import APP_VERSION
+from tls_security import checked_ca_file, require_build_environment
+from tools.verify_desktop import refresh_bundle_ca, verify_bundle
 
 
 def sign_bundle(app):
@@ -29,10 +36,25 @@ def sign_bundle(app):
 def build():
     if sys.platform != "darwin":
         raise RuntimeError("Build this Mac app on macOS")
-    subprocess.run([sys.executable, "setup_desktop.py", "py2app", "--dist-dir", "dist/desktop",
-                    "--bdist-base", "build/desktop"], cwd=ROOT, check=True)
-    app = ROOT / "dist/desktop/LLM SugarScape.app"
+    require_build_environment()
+    destination = ROOT / "dist" / f"desktop-{APP_VERSION}"
+    if destination.exists():
+        raise FileExistsError(f"Refusing to reuse a previous build: {destination}")
+    (ROOT / "build").mkdir(exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix=f"desktop-{APP_VERSION}-", dir=ROOT / "build") as temporary:
+        ca_directory = Path(temporary) / "trusted-ca"
+        (ca_directory / "certs").mkdir(parents=True)
+        shutil.copyfile(checked_ca_file(), ca_directory / "cert.pem")
+        environment = os.environ.copy()
+        environment.update({"SSL_CERT_FILE": str(ca_directory / "cert.pem"),
+                            "SSL_CERT_DIR": str(ca_directory / "certs")})
+        subprocess.run([sys.executable, "setup_desktop.py", "py2app", "--dist-dir", str(destination),
+                        "--bdist-base", str(Path(temporary) / "objects")],
+                       cwd=ROOT, env=environment, check=True)
+    app = destination / "LLM SugarScape.app"
+    refresh_bundle_ca(app)
     sign_bundle(app)
+    verify_bundle(app)
     return app
 
 

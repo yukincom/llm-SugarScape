@@ -5,8 +5,7 @@
 ## 開発環境と実行
 
 ```bash
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
+python3.11 tools/bootstrap_environment.py
 .venv/bin/streamlit run main.py
 ```
 
@@ -57,13 +56,15 @@ Temperature/Top-pの送信、推論のオン・オフと強さ、OpenAI方式・
 ### Macアプリのビルド
 
 ```bash
-.venv/bin/python -m pip install -r requirements-desktop.txt
+python3.11 tools/bootstrap_environment.py --desktop
 .venv/bin/python desktop.py
 .venv/bin/python tools/build_desktop.py
 .venv/bin/python tools/build_release.py
 ```
 
-pywebview + py2appのstandalone方式でPythonを同梱し、`dist/desktop/LLM SugarScape.app` と配布ZIP・SHA-256を作ります。開発用aliasビルドは配布しません。既存ZIPと同名の場合、アーカイブ処理は上書きせず停止します。
+pywebview + py2appのstandalone方式でPythonを同梱し、`dist/desktop-<version>/LLM SugarScape.app` と配布ZIP・SHA-256・検証JSONを作ります。毎回新しいビルド領域を使い、既存の同名アプリ・ZIPは上書きしません。開発用aliasビルドは配布しません。
+
+certifi 2026.10.19以降、pip 26.2.2以降が必須です。uvはこの手順で使用せず、同じ仮想環境へ導入する場合は0.13.4以降が必要です。ビルドではpy2appのOpenSSL用CA束も現在のcertifiへ置き換え、同梱Python・aiohttpの実際の信頼先と製品ソースを検証します。古いCA・環境へのフォールバックはありません。[2026-10-23のセキュリティ更新](docs/2026-10-23-ca-security.md)を参照してください。
 
 アプリは専用のローカル画面プロセスを起動し、終了時には自分の子プロセスだけを終了します。既存のLLMサーバーは停止しません。現在のビルドはアドホック署名を検証しますが、配布用の開発者署名・公証は未実施です。依存関係・配布上の制約は [アプリ化の記録](docs/2026-10-09-desktop-app.md) を参照してください。
 

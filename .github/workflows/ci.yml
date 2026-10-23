@@ -39,16 +39,15 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install -r requirements-desktop.txt
-          python -m pip check
+          python tools/bootstrap_environment.py --desktop
 
       - name: Run regression and Streamlit tests
-        run: python -m unittest discover -s tests -v
+        run: .venv/bin/python -m unittest discover -s tests -v
 
       - name: Smoke test CLI, images and CSV aggregation
         run: |
-          python main.py run --mock --agents 3 --steps 3 --seed 42 --runs 2 --images --output "$RUNNER_TEMP/sugarscape-ci"
-          python main.py aggregate --input "$RUNNER_TEMP/sugarscape-ci"
+          .venv/bin/python main.py run --mock --agents 3 --steps 3 --seed 42 --runs 2 --images --output "$RUNNER_TEMP/sugarscape-ci"
+          .venv/bin/python main.py aggregate --input "$RUNNER_TEMP/sugarscape-ci"
 
       - name: Upload mock experiment data
         if: ${{ always() }}

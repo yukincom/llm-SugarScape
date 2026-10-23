@@ -49,11 +49,11 @@
 Python 3.11を使用します。Macアプリと同じコードをブラウザ画面で起動できます。
 
 ```bash
-python3.11 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
+python3.11 tools/bootstrap_environment.py
 .venv/bin/streamlit run main.py
 ```
 
+certifi 2026.10.19以降・pip 26.2.2以降が必須です。上記のセットアップは公式ハッシュでpipを検証してから依存を導入します。古い環境は再作成してください。
 APIを使わず確認する場合は「動作モード」で **Mock（待機のみ・通信なし）** を選びます。
 Macアプリのビルド、CLI、テスト、詳細な仕様は [開発者向けガイド](agent.md) を参照してください。
 公開方針と配布物の照合方法は [公開・配布の記録](docs/2026-10-19-public-release.md) にまとめています。

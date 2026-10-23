@@ -152,14 +152,16 @@ class ProductTests(unittest.TestCase):
                 if command[0] == "/usr/bin/codesign":
                     return subprocess.CompletedProcess(command, 0)
                 return run(command, **kwargs)
-            with patch("tools.build_release.subprocess.run", side_effect=run_with_fixture_signature):
+            with patch("tools.build_release.subprocess.run", side_effect=run_with_fixture_signature), \
+                    patch("tools.build_release.verify_bundle", return_value={"fixture": True}):
                 archive = build_release(app=app, destination=root / "release")
             with zipfile.ZipFile(archive) as bundle:
                 self.assertIn("LLM SugarScape.app/Contents/Frameworks/libpython3.11.dylib", bundle.namelist())
                 self.assertFalse(any("private-experiment" in name for name in bundle.namelist()))
             digest = archive.with_suffix(".zip.sha256").read_text().split()[0]
             self.assertEqual(digest, hashlib.sha256(archive.read_bytes()).hexdigest())
-            with patch("tools.build_release.subprocess.run", side_effect=run_with_fixture_signature):
+            with patch("tools.build_release.subprocess.run", side_effect=run_with_fixture_signature), \
+                    patch("tools.build_release.verify_bundle", return_value={"fixture": True}):
                 with self.assertRaises(FileExistsError):
                     build_release(app=app, destination=root / "release")
             info.write_bytes(plistlib.dumps({"PythonInfoDict": {"py2app": {"alias": True}}}))

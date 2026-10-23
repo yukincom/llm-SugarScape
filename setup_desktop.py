@@ -6,11 +6,14 @@
 from pathlib import Path
 
 from setuptools import setup
+from tls_security import require_build_environment
+
+require_build_environment()
 
 ROOT = Path(__file__).resolve().parent
 APP_FILES = ["main.py", "app_ui.py", "app_presets.py", "run_data.py", "model_identity.py", "grid_view.py",
              "paper_prompts.py", "agent_view.py", "llm_api.py", "translations.py", "response_fields.py", "folder_picker.py",
-             "experiment_task.py", "observations.py",
+             "experiment_task.py", "observations.py", "tls_security.py",
              "requirements.txt", "requirements-desktop.txt", "LICENSE"]
 
 setup(
@@ -23,17 +26,17 @@ setup(
     options={"py2app": {
         "argv_emulation": False,
         "iconfile": "assets/branding/AppIcon.icns",
-        "packages": ["streamlit", "aiohttp", "numpy", "matplotlib", "pandas", "webview",
+        "packages": ["streamlit", "aiohttp", "certifi", "numpy", "matplotlib", "pandas", "webview",
                      "uvicorn", "starlette", "websockets", "h11", "anyio"],
         # pandas._libs.testing imports cmath from compiled code, outside the
         # module graph py2app can discover from Python source.
         "includes": ["WebKit", "Foundation", "Security", "UniformTypeIdentifiers", "cmath"],
-        "excludes": ["tkinter", "PySide6", "PyQt6", "pytest", "IPython"],
+        "excludes": ["tkinter", "PySide6", "PyQt6", "pytest", "IPython", "pip", "ensurepip", "uv"],
         "plist": {
             "CFBundleIdentifier": "com.yukincom.llm-sugarscape",
             "CFBundleDisplayName": "LLM SugarScape",
             "CFBundleShortVersionString": "0.1.0",
-            "CFBundleVersion": "37",
+            "CFBundleVersion": "38",
             "CFBundleDevelopmentRegion": "ja",
             "CFBundleLocalizations": ["ja"],
             "LSMinimumSystemVersion": "26.2",

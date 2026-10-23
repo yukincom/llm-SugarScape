@@ -10,7 +10,7 @@ from desktop import data_directory
 from llm_api import REQUEST_OPTION_DEFAULTS, request_options
 from run_data import locate_run_directory, utc_now, write_json
 
-APP_VERSION = "0.1.0-preview.37"
+APP_VERSION = "0.1.0-preview.38"
 
 STARTER = {
     "num_agents": 3, "num_steps": 5, "population_cap": 60, "seed": 42,

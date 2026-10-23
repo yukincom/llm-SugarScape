@@ -4,6 +4,12 @@ from urllib.parse import urlsplit
 
 import aiohttp
 
+from tls_security import tls_context
+
+# Validate once before the UI/CLI can send a request, including on HTTP-only
+# setups. Outdated environments must be rebuilt, not silently kept alive.
+TLS_CONTEXT = tls_context()
+
 
 class ServerConnectionError(ConnectionError):
     """The configured server could not be reached before an experiment."""
@@ -15,7 +21,7 @@ async def ensure_server_reachable(session, *, base_url, timeout):
     try:
         async with session.head(f"{base_url.rstrip('/')}/chat/completions",
                                 timeout=aiohttp.ClientTimeout(total=min(timeout, 5)),
-                                allow_redirects=False):
+                                allow_redirects=False, ssl=TLS_CONTEXT):
             # Even 404/405 proves reachability when the provider has no HEAD
             # handler. Model/authentication checks remain in the normal POST.
             pass
@@ -76,4 +82,5 @@ def chat_completion_request(session, *, base_url, model, messages, api_key=None,
         else:
             payload["reasoning_effort"] = "none" if reasoning_mode == "off" else reasoning_effort
     headers = {"Authorization": f"Bearer {api_key}"} if api_key else {}
-    return session.post(f"{base_url.rstrip('/')}/chat/completions", json=payload, headers=headers)
+    return session.post(f"{base_url.rstrip('/')}/chat/completions", json=payload, headers=headers,
+                        ssl=TLS_CONTEXT)
