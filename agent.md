@@ -5,6 +5,7 @@
 ## 開発環境と実行
 
 ```bash
+rustup toolchain install 1.99.1 --profile minimal
 python3.11 tools/bootstrap_environment.py
 .venv/bin/streamlit run main.py
 ```
@@ -12,6 +13,7 @@ python3.11 tools/bootstrap_environment.py
 | 主なファイル | 役割 |
 | --- | --- |
 | `main.py` | 実験エンジン、CLI、画面の入口 |
+| `native_geometry.py` / `rust-core/` | 必須のRust計算コア。トーラス座標、視界、隣接移動 |
 | `app_ui.py` / `app_presets.py` | 画面、設定、初期値、プリセットの登録・削除、接続結果の案内 |
 | `experiment_task.py` | 画面を応答可能に保つ実験処理、停止、日本語訳の進捗 |
 | `llm_api.py` / `response_fields.py` | API通信、応答の読み取り・表示用フィールド |
@@ -66,6 +68,8 @@ pywebview + py2appのstandalone方式でPythonを同梱し、`dist/desktop-<vers
 
 certifi 2026.10.19以降、pip 26.2.2以降が必須です。uvはこの手順で使用せず、同じ仮想環境へ導入する場合は0.13.4以降が必要です。ビルドではpy2appのOpenSSL用CA束も現在のcertifiへ置き換え、同梱Python・aiohttpの実際の信頼先と製品ソースを検証します。古いCA・環境へのフォールバックはありません。[2026-10-23のセキュリティ更新](docs/2026-10-23-ca-security.md)を参照してください。
 
+Rustコアは外部crate依存なしのcdylibで、Pythonからctypes経由で使用します。セットアップ時にRust 1.99.1で構築し、Rustソースを変更した場合は `.venv/bin/python tools/build_native.py` で再構築してください。バイナリ欠落・古いソース・ABI不一致では起動エラーになり、Python計算へのフォールバックはしません。Macアプリには構築済みコアを同梱するため、利用者側のRust導入は不要です。[移行境界と同等性の検証](docs/2026-10-23-rust-geometry.md)を参照してください。
+
 アプリは専用のローカル画面プロセスを起動し、終了時には自分の子プロセスだけを終了します。既存のLLMサーバーは停止しません。現在のビルドはアドホック署名を検証しますが、配布用の開発者署名・公証は未実施です。依存関係・配布上の制約は [アプリ化の記録](docs/2026-10-09-desktop-app.md) を参照してください。
 
 保存先の選択にはpywebviewの標準フォルダダイアログを使い、Streamlit Components v2のボタンから呼びます。初回はアプリの親フォルダ、一度選択した後は現在の保存先を開きます。画面とアプリの連携はpywebviewの公開APIを使い、追加のHTTPサーバーは設けません。ブラウザで開く開発画面ではパス入力を使用します。日本語表示はアプリの対応言語とpywebviewのメニュー翻訳で指定します。
@@ -73,6 +77,7 @@ certifi 2026.10.19以降、pip 26.2.2以降が必須です。uvはこの手順�
 ### テスト
 
 ```bash
+cargo test --manifest-path rust-core/Cargo.toml --locked --offline
 .venv/bin/python -m unittest discover -s tests -v
 ```
 

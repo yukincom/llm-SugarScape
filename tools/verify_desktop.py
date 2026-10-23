@@ -83,6 +83,8 @@ def verify_bundle(app):
                  and any(isinstance(target, ast.Name) and target.id == "APP_FILES" for target in node.targets))
     files += ["desktop.py", "assets/branding/app-icon.png", "assets/branding/llm-sugar-scape-logo.png"]
     files += [str(path.relative_to(ROOT)) for path in (ROOT / "assets/emoji").iterdir() if path.is_file()]
+    from native_geometry import LIBRARY_NAME, SOURCE_FILES
+    files += list(SOURCE_FILES) + [f"native/{LIBRARY_NAME}", "native/build.json"]
     hashes = {}
     for name in files:
         raw = (resources / name).read_bytes()
@@ -121,9 +123,13 @@ def verify_bundle(app):
     probe = '''import hashlib, importlib.util, json, ssl, sys
 from tls_security import REJECTED_ROOT_SHA256, security_report
 from llm_api import TLS_CONTEXT
+import native_geometry
 import aiohttp.connector
 report = security_report()
 report["python"] = sys.version.split()[0]
+assert native_geometry.relative((9, 0), (0, 9), 10) == (1, -1)
+assert native_geometry.absolute_move((1, 0), (0, 0), 2) is None
+report["native_core"] = native_geometry.build_report()
 report["installers_present"] = [name for name in ("pip", "ensurepip", "uv") if importlib.util.find_spec(name)]
 for name, context in (("default", ssl.create_default_context()), ("aiohttp_default", aiohttp.connector._SSL_CONTEXT_VERIFIED), ("api", TLS_CONTEXT)):
     hashes = {hashlib.sha256(root).hexdigest() for root in context.get_ca_certs(binary_form=True)}

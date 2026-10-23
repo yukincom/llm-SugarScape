@@ -123,12 +123,13 @@ _setup_openssl()
                     patch.object(bootstrap_environment, 'PIP_SHA256', hashlib.sha256(payload).hexdigest()), \
                     patch.object(bootstrap_environment.subprocess, 'run') as execute:
                 bootstrap_environment.install_environment(root, desktop=True)
-            bootstrap, install, check, verify = execute.call_args_list
+            bootstrap, install, check, verify, native = execute.call_args_list
             self.assertIn('--no-index', bootstrap.args[0])
             self.assertIn('--no-deps', bootstrap.args[0])
             self.assertIn('--force-reinstall', bootstrap.args[0])
             self.assertIn('--use-deprecated=legacy-certs', install.args[0])
             self.assertTrue(install.args[0][-1].endswith('requirements-desktop.txt'))
+            self.assertTrue(native.args[0][-1].endswith('tools/build_native.py'))
             for call in execute.call_args_list:
                 self.assertNotIn('REQUESTS_CA_BUNDLE', call.kwargs['env'])
                 self.assertNotIn('--trusted-host', call.args[0])

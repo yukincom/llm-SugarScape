@@ -13,7 +13,7 @@ require_build_environment()
 ROOT = Path(__file__).resolve().parent
 APP_FILES = ["main.py", "app_ui.py", "app_presets.py", "run_data.py", "model_identity.py", "grid_view.py",
              "paper_prompts.py", "agent_view.py", "llm_api.py", "translations.py", "response_fields.py", "folder_picker.py",
-             "experiment_task.py", "observations.py", "tls_security.py",
+             "experiment_task.py", "observations.py", "tls_security.py", "native_geometry.py",
              "requirements.txt", "requirements-desktop.txt", "LICENSE"]
 
 setup(
@@ -21,6 +21,9 @@ setup(
     version="0.1.0",
     app=[{"script": "desktop.py", "dest_base": "LLM SugarScape"}],
     data_files=[("", APP_FILES),
+                ("native", ["native/libsugarscape_core.dylib", "native/build.json"]),
+                ("rust-core", ["rust-core/Cargo.toml", "rust-core/Cargo.lock", "rust-core/rust-toolchain.toml"]),
+                ("rust-core/src", ["rust-core/src/lib.rs"]),
                 ("assets/emoji", [str(path.relative_to(ROOT)) for path in sorted((ROOT / "assets/emoji").iterdir()) if path.is_file()]),
                 ("assets/branding", ["assets/branding/app-icon.png", "assets/branding/llm-sugar-scape-logo.png"])],
     options={"py2app": {

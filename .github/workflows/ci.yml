@@ -22,6 +22,7 @@ jobs:
       MPLCONFIGDIR: .mplconfig
       PYTHONUTF8: "1"
       STREAMLIT_BROWSER_GATHER_USAGE_STATS: "false"
+      RUSTUP_TOOLCHAIN: "1.99.1"
     steps:
       - name: Check out repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -37,12 +38,17 @@ jobs:
             requirements.txt
             requirements-desktop.txt
 
+      - name: Set up pinned Rust
+        run: rustup toolchain install 1.99.1 --profile minimal
+
       - name: Install dependencies
         run: |
           python tools/bootstrap_environment.py --desktop
 
       - name: Run regression and Streamlit tests
-        run: .venv/bin/python -m unittest discover -s tests -v
+        run: |
+          cargo test --manifest-path rust-core/Cargo.toml --locked --offline
+          .venv/bin/python -m unittest discover -s tests -v
 
       - name: Smoke test CLI, images and CSV aggregation
         run: |

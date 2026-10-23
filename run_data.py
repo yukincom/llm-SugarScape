@@ -198,13 +198,16 @@ def write_csv(path, rows, fields):
 
 
 def provenance():
+    from native_geometry import SOURCE_FILES, build_report
     root = Path(__file__).resolve().parent
     info = {"python": platform.python_version(), "source_sha256": {}, "packages": {}}
     for filename in ("main.py", "run_data.py", "model_identity.py", "grid_view.py", "app_ui.py", "app_presets.py",
                      "paper_prompts.py", "observations.py", "agent_view.py", "llm_api.py", "translations.py", "response_fields.py", "experiment_task.py",
+                     "tls_security.py", "native_geometry.py", *SOURCE_FILES,
                      "assets/emoji/sources.json", "requirements.txt"):
         info["source_sha256"][filename] = hashlib.sha256((root / filename).read_bytes()).hexdigest()
-    for package in ("aiohttp", "numpy", "matplotlib", "pandas", "streamlit"):
+    info["native_core"] = build_report()
+    for package in ("aiohttp", "certifi", "numpy", "matplotlib", "pandas", "streamlit"):
         try:
             info["packages"][package] = importlib.metadata.version(package)
         except importlib.metadata.PackageNotFoundError:

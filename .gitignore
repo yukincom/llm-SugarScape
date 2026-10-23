@@ -210,3 +210,4 @@ __marimo__/
 outputs/
 .mplconfig/
 .DS_Store
+native/

@@ -16,6 +16,7 @@ from uuid import uuid4
 
 import aiohttp
 import numpy as np
+import native_geometry
 
 from run_data import RunRecorder, collect_runs, export_run, provenance
 from model_identity import ModelIdentity
@@ -129,8 +130,7 @@ class Environment:
         return all(0 <= coordinate < self.size for coordinate in pos)
 
     def relative(self, origin, target):
-        return tuple((b - a + self.size // 2) % self.size - self.size // 2
-                     for a, b in zip(origin, target))
+        return native_geometry.relative(origin, target, self.size)
 
     def random_spawn(self):
         if self.rng.random() < self.energy_spawn_rate:
@@ -173,15 +173,14 @@ class LLMAgent:
 
     def get_local_view(self, environment, agents, view_range=VIEW_RANGE):
         view = [f"M=({self.position[0]},{self.position[1]})"]
-        for pos in sorted(environment.energy_sources):
-            dx, dy = environment.relative(self.position, pos)
-            if abs(dx) <= view_range and abs(dy) <= view_range:
+        resources = sorted(environment.energy_sources)
+        others = [other for other in agents if other.id != self.id and other.alive]
+        targets = resources + [other.position for other in others]
+        for index, dx, dy in native_geometry.visible_offsets(self.position, targets, environment.size, view_range):
+            if index < len(resources):
                 view.append(f"E=({dx},{dy})")
-        for other in agents:
-            if other.id == self.id or not other.alive:
-                continue
-            dx, dy = environment.relative(self.position, other.position)
-            if abs(dx) <= view_range and abs(dy) <= view_range:
+            else:
+                other = others[index - len(resources)]
                 hint = f" (MBTI: {other.mbti_type})" if other.mbti_type else ""
                 view.append(f"{other.id}=({dx},{dy}){hint}")
         return view, list(self.messages)
@@ -399,7 +398,7 @@ class Simulation:
 
     def _in_view_range(self, pos1, pos2, range_val=None):
         radius = self.view_range if range_val is None else range_val
-        return all(abs(d) <= radius for d in self.environment.relative(pos1, pos2))
+        return native_geometry.in_range(pos1, pos2, self.environment.size, radius)
 
     async def _request_decision(self, session, agent, system_prompt, user_prompt):
         # Resolve permissive absolute-move notation against the request's pose,

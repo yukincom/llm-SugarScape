@@ -52,6 +52,7 @@ def install_environment(directory, *, desktop=False):
         subprocess.run([*command, "check"], env=environment, check=True)
     subprocess.run([str(python), "-c", "from tls_security import require_build_environment, tls_context; "
                     "print(require_build_environment()); tls_context()"], cwd=ROOT, env=environment, check=True)
+    subprocess.run([str(python), str(ROOT / "tools/build_native.py")], cwd=ROOT, env=environment, check=True)
     return directory
 
 

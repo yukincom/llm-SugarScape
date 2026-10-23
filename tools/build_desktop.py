@@ -29,7 +29,9 @@ def sign_bundle(app):
         subprocess.run(["/usr/bin/install_name_tool", "-id", "@executable_path/../Frameworks/liblzma.5.dylib",
                         str(destination)], check=True)
         subprocess.run(["/usr/bin/codesign", "--force", "--sign", "-", str(destination)], check=True)
-    subprocess.run(["/usr/bin/codesign", "--force", "--deep", "--sign", "-", str(app)], check=True)
+    # py2app already signed nested code; liblzma is signed above and the Rust
+    # core below. Re-sign only the root so the native binary hash stays fixed.
+    subprocess.run(["/usr/bin/codesign", "--force", "--sign", "-", str(app)], check=True)
     subprocess.run(["/usr/bin/codesign", "--verify", "--deep", "--strict", str(app)], check=True)
 
 
@@ -53,6 +55,11 @@ def build():
                        cwd=ROOT, env=environment, check=True)
     app = destination / "LLM SugarScape.app"
     refresh_bundle_ca(app)
+    # py2app strips/re-signs data_files dylibs. Restore the exact reviewed,
+    # signed Rust artifact and its manifest before the final root signature.
+    from native_geometry import LIBRARY_NAME
+    for name in (LIBRARY_NAME, "build.json"):
+        shutil.copyfile(ROOT / "native" / name, app / "Contents/Resources/native" / name)
     sign_bundle(app)
     verify_bundle(app)
     return app

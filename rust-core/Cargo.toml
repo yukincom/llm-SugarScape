@@ -1,0 +1,16 @@
+[package]
+name = "sugarscape-core"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.99.1"
+license = "MIT"
+
+[lib]
+name = "sugarscape_core"
+crate-type = ["cdylib", "rlib"]
+
+[profile.release]
+overflow-checks = true
+lto = true
+codegen-units = 1
+strip = "none"

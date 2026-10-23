@@ -2,6 +2,7 @@
 
 import re
 import unicodedata
+from native_geometry import absolute_move, cardinal_destinations
 
 READING_LABELS = {"message": "message", "thought": "thoughts", "summary": "summary", "memory": "memory"}
 ACTION_PATTERN = r"(?:[xy]\s*[+-]\s*1|stay|reproduce)"
@@ -50,23 +51,9 @@ def _absolute_move(target, position, grid_size):
         return None
     if len(position) != 2 or any(type(n) is not int or not 0 <= n < grid_size for n in (*position, *target)):
         return None
-    matches = [delta for delta in MOVE_DIRECTIONS
-               if tuple((position[axis] + delta[axis]) % grid_size for axis in (0, 1)) == target]
     # On a two-cell axis, east and west reach the same destination. Keep such
     # ambiguous absolute commands uncorrected; explicit relative moves work.
-    return matches[0] if len(matches) == 1 else None
-
-
-def cardinal_destinations(position, grid_size, *, toward_delta=None):
-    """Enumerate reachable cells once; small wrapped grids may share destinations."""
-    choices = []
-    for delta in MOVE_DIRECTIONS:
-        if toward_delta is not None and not any(delta[axis] * toward_delta[axis] > 0 for axis in (0, 1)):
-            continue
-        target = [(position[axis] + delta[axis]) % grid_size for axis in (0, 1)]
-        if not any(choice["position"] == target for choice in choices):
-            choices.append({"position": target, "delta": list(delta)})
-    return choices
+    return absolute_move(target, position, grid_size)
 
 
 def resolve_next_action(values, *, position=None, grid_size=None, destination_choices=None):
