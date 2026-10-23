@@ -1,7 +1,5 @@
 # LLM SugarScape
 
-[![CI](https://github.com/yukincom/llm-SugarScape/actions/workflows/ci.yml/badge.svg)](https://github.com/yukincom/llm-SugarScape/actions/workflows/ci.yml)
-
 砂糖のある小さな世界で、LLMが動かすエージェントたちの行動や会話を観察するMacアプリです。
 モデルや世界の設定を変えて、生存戦略や他の個体とのやりとりを試せます。
 
@@ -10,11 +8,13 @@
 これまでいただいたご支援への還元として、**Macアプリとソースコードを無料で公開しています。**
 **同じバージョンの無料配布版とBOOTH販売版は、アプリの内容・機能が同じです。**
 
-- **[Macアプリを無料ダウンロード（0.1.0-preview.37）](https://github.com/yukincom/llm-SugarScape/releases/tag/v0.1.0-preview.37)**
-- [ソースコード](https://github.com/yukincom/llm-SugarScape/tree/v0.1.0-preview.37)
+- **[Macアプリを無料ダウンロード（0.1.0-preview.38）](https://github.com/yukincom/llm-SugarScape/releases/tag/v0.1.0-preview.38)**
+- [ソースコード](https://github.com/yukincom/llm-SugarScape/tree/v0.1.0-preview.38)
 - [研究・開発への応援として購入する（BOOTH）](https://graviton.booth.pm/items/8972362)
 
 購入は必須ではありません。この取り組みを気に入っていただけたら、研究・開発への応援として購入してもらえるとうれしいです。
+
+preview.38では同梱証明書を更新しています。preview.37をご利用中の場合は、アプリを入れ替えてください。[更新内容](docs/2026-10-23-ca-security.md)
 
 [![実験の画面。クリックで動画を開く](img/apri-preview.jpg)](img/apri.mov)
 
@@ -26,7 +26,7 @@
 - Pythonは同梱しています。モデル・推論サーバー、またはOpenAI互換APIは別途ご用意ください。
 - 外部APIを使う場合、接続テスト・実験・日本語翻訳の利用料が別途かかることがあります。
 
-1. Releaseの `LLM-SugarScape-0.1.0-preview.37-Mac-arm64.zip` をダウンロードして展開します。
+1. Releaseの `LLM-SugarScape-0.1.0-preview.38-Mac-arm64.zip` をダウンロードして展開します。
 2. `LLM SugarScape.app` を「アプリケーション」フォルダなどへ配置して開きます。
 3. 「保存設定」で、書類フォルダなど書き込みできる実験保存先を選びます。初期の保存先はアプリと同じフォルダ内の `outputs` です。
 4. 「LLM設定」にベースURL・モデルID・必要に応じてAPIキーを入力し、「接続テスト」を実行します。
