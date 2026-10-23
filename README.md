@@ -1,5 +1,7 @@
 # LLM SugarScape
 
+[![CI](https://github.com/yukincom/llm-SugarScape/actions/workflows/ci.yml/badge.svg)](https://github.com/yukincom/llm-SugarScape/actions/workflows/ci.yml)
+
 砂糖のある小さな世界で、LLMが動かすエージェントたちの行動や会話を観察するMacアプリです。
 モデルや世界の設定を変えて、生存戦略や他の個体とのやりとりを試せます。
 
