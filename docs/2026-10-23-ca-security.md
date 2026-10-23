@@ -61,4 +61,4 @@ preview.37のタグ・公開ZIPは保持し、preview.38を新規配布対象と
 
 GitHub Actionsは利用量に関する指示に従って一時停止した。今回の241テスト・Rustテスト・アプリ検証はローカル実行結果であり、この更新に対するGitHub CI成功を示すものではない。
 
-同日、利用者からMac実機での動作確認成功とBOOTHの更新完了の報告を受けた。その後の再開指示に従ってGitHub ActionsとCIワークフローを再有効化し、READMEのCIバッジを戻した。以後はmainへのpush・PRで既存のPython/RustテストとMock出力検証を実行する。
+同日、利用者からMac実機での動作確認成功とBOOTHの更新完了の報告を受けた。その後の再開指示に従ってGitHub ActionsとCIワークフローを再有効化し、READMEのCIバッジを戻した。追加指示に合わせ、既存のPython/RustテストとMock出力検証はpush時だけ実行する。定期実行・PR・手動実行のトリガーは設けない。

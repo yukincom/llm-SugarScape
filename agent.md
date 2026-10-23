@@ -81,7 +81,7 @@ cargo test --manifest-path rust-core/Cargo.toml --locked --offline
 .venv/bin/python -m unittest discover -s tests -v
 ```
 
-GitHub Actionsではpush・PR時に自動テストとMockのCSV出力・集約を実行します。実LLM接続と配布アプリの実画面はローカルで別途確認します。Mockは全個体の待機によるデータ処理の確認で、モデルの行動評価には使いません。
+GitHub Actionsではpush時だけ自動テストとMockのCSV出力・集約を実行します。定期実行・PR・手動実行のトリガーは設けません。実LLM接続と配布アプリの実画面はローカルで別途確認します。Mockは全個体の待機によるデータ処理の確認で、モデルの行動評価には使いません。
 
 ## 実験の仕様
 
